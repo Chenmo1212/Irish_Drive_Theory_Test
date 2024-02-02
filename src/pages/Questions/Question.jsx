@@ -3,11 +3,34 @@ import {useParams} from 'react-router-dom';
 import {QUESTIONS} from "../../questions_data";
 import './Question.css'
 import {getIcon} from "../../styles/icons";
+import {loadFromLocalStorage, saveToLocalStorage} from '../../common/common'
+
+const initializeQuestions = () => {
+  const questions = QUESTIONS;
+  const favorites = Array.from({ length: questions.length }, () => false);
+
+  return {
+    questions: loadFromLocalStorage('allQuestions', questions),
+    favorites: loadFromLocalStorage('allFavorites', favorites),
+  };
+};
+
+const initializeCurrQuestionIndex = (index) => {
+  const storedCurrQuestionIdx = loadFromLocalStorage('currQuestionIdx');
+  if (index) {
+    const idx = parseInt(index) - 1;
+    saveToLocalStorage('currQuestionIdx', idx);
+    return idx;
+  } else {
+    return storedCurrQuestionIdx ? storedCurrQuestionIdx : 0;
+  }
+};
 
 const OPTION_LABELS = ['A', "B", "C", "D"]
 const Question = () => {
   const [currQuestion, setCurrQuestion] = useState({})
   const [allQuestions, setAllQuestions] = useState([])
+  const [allFavorites, setAllFavorites] = useState([])
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
   const [chosenAnswerIndex, setAnswerIndex] = useState(0);
   const [isShowAnswer, setIsShowAnswer] = useState(false);
@@ -15,16 +38,21 @@ const Question = () => {
   const [isCheck, setIsCheck] = useState(false);
   const [isStick, setIsStick] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [themeColor] = useState('rgb(83, 109, 254)')
-  const [errorColor] = useState('rgb(245, 108, 108)')
+  const [themeColor] = useState('rgb(83, 109, 254)');
+  const [errorColor] = useState('rgb(245, 108, 108)');
 
   const {index} = useParams();
 
   useEffect(() => {
-    setAllQuestions(QUESTIONS);
-    setCurrQuestionIndex(parseInt(index) - 1);
-    setCurrQuestion(QUESTIONS[index - 1]);
-  }, [index, QUESTIONS])
+    const { questions, favorites } = initializeQuestions();
+    const idx = initializeCurrQuestionIndex(index);
+
+    setAllQuestions(questions);
+    setAllFavorites(favorites);
+    setCurrQuestionIndex(idx);
+    setCurrQuestion(questions[idx]);
+    setIsFavourite(favorites[idx]);
+  }, [index]);
 
   const projectName = "123"
   const chapterName = "123"
@@ -37,7 +65,12 @@ const Question = () => {
   }
 
   const toggleShowAnswer = () => setIsShowAnswer(!isShowAnswer);
-  const toggleFavourite = () => setIsFavourite(!isFavourite);
+  const toggleFavourite = () => {
+    setIsFavourite(!isFavourite);
+    let updatedFavorites = [...allFavorites];
+    updatedFavorites[currQuestionIndex] = !isFavourite;
+    saveToLocalStorage('allFavorites', updatedFavorites);
+  }
   const handleStick = () => setIsStick(!isStick);
   const handleCheck = () => setIsCheck(!isCheck);
 
@@ -76,7 +109,7 @@ const Question = () => {
         </div>
         <div className={`favourite ${isFavourite ? 'active' : ''}`}
              onClick={toggleFavourite}>
-          {getIcon("fav")}
+          {getIcon(`${isFavourite ? 'fav_fill' : 'fav'}`)}
         </div>
       </div>
 

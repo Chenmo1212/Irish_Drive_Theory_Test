@@ -3,13 +3,24 @@ import './Home.css'
 import {QUESTIONS} from "../../questions_data";
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
+import {loadFromLocalStorage} from '../../common/common';
+
+const initializeLocalStorage = () => {
+  return {
+    allQuestions: loadFromLocalStorage('allQuestions', QUESTIONS),
+    currQuestionIdx: loadFromLocalStorage('currQuestionIdx', 1),
+  };
+};
 
 const Home = () => {
-  const [projects, setProjects] = useState([])
+  const [allQuestions, setAllQuestions] = useState([]);
+  const [currQuestionIdx, setCurrQuestionIdx] = useState(1);
 
-  useEffect(()=>{
-    if (QUESTIONS) setProjects(QUESTIONS);
-  }, [QUESTIONS])
+  useEffect(() => {
+    const {allQuestions, currQuestionIdx} = initializeLocalStorage();
+    setAllQuestions(allQuestions);
+    setCurrQuestionIdx(currQuestionIdx);
+  }, []);
 
   return <div className="home">
     <div className="project">
@@ -19,14 +30,14 @@ const Home = () => {
         </div>
         <div className="title">Test</div>
         <div className="question_type">
-          <span> Question Amount: <span className="text-blue">{projects.length}</span></span>
+          <span> Question Amount: <span className="text-blue">{allQuestions.length}</span></span>
         </div>
         <div className="progress">
           <div className="card-progress__back"></div>
           <div className="card-progress__line" style={{width: '2%', backgroundColor: 'rgb(83, 109, 254)'}}></div>
         </div>
 
-        <Link to={`/question/1`}>
+        <Link to={`/question/${currQuestionIdx}`}>
           <div className="btn">
             <button className="btn begin text-blue">
           <span className="icon-container">

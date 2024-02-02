@@ -55,6 +55,11 @@
   margin-right: 20px;
 }
 
+.question .header .favourite.active {
+  color: #f0a732;
+}
+
+
 .question .content {
   padding: 20px;
   height: calc(95vh - 150px);
