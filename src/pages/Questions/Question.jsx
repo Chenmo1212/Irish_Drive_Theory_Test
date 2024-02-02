@@ -60,6 +60,8 @@ const Question = () => {
     setIsFavourite(favorites[idx]);
     setIsCheck(isAnswerCheck);
     setIsStick(isAnswerStick);
+    setIsShowAnswer(isAnswerStick);
+    setIsError(answers[idx] !== questions[idx].correct_answer);
   }, [index]);
 
   const projectName = "123"
@@ -79,8 +81,14 @@ const Question = () => {
     updatedFavorites[currQuestionIndex] = !isFavourite;
     saveToLocalStorage('allFavorites', updatedFavorites);
   }
-  const handleStick = () => setIsStick(!isStick);
-  const handleCheck = () => setIsCheck(!isCheck);
+  const handleStick = () => {
+    setIsStick(!isStick);
+    saveToLocalStorage('isAnswerStick', !isStick);
+  };
+  const handleCheck = () => {
+    setIsCheck(!isCheck);
+    saveToLocalStorage('isAnswerCheck', !isCheck);
+  };
 
   const handleOptionClick = (idx) => {
     setAnswerIndex(idx);
@@ -88,12 +96,15 @@ const Question = () => {
     let updatedAnswers = loadFromLocalStorage('allAnswers', []);
     updatedAnswers[currQuestionIndex] = idx;
     saveToLocalStorage('allAnswers', updatedAnswers);
+
+    if (isCheck) setIsShowAnswer(true);
   }
 
   const changeQuestion = (Increment) => {
     if (currQuestionIndex <= 0 && Increment === -1) return;
 
     setAnswerIndex(-1);
+    setIsShowAnswer(false);
     navigate(`/question/${currQuestionIndex + 1 + Increment}`);
   };
 
