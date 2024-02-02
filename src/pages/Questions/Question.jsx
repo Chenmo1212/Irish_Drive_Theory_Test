@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import {QUESTIONS} from "../../questions_data";
 import './Question.css'
 import {getIcon} from "../../styles/icons";
@@ -7,11 +7,15 @@ import {loadFromLocalStorage, saveToLocalStorage} from '../../common/common'
 
 const initializeQuestions = () => {
   const questions = QUESTIONS;
-  const favorites = Array.from({ length: questions.length }, () => false);
+  const favorites = Array.from({length: questions.length}, () => false);
+  const answers = Array.from({length: questions.length}, () => -1);
 
   return {
     questions: loadFromLocalStorage('allQuestions', questions),
     favorites: loadFromLocalStorage('allFavorites', favorites),
+    answers: loadFromLocalStorage('allAnswers', answers),
+    isAnswerCheck: loadFromLocalStorage('isAnswerCheck', false),
+    isAnswerStick: loadFromLocalStorage('isAnswerStick', false),
   };
 };
 
@@ -42,16 +46,20 @@ const Question = () => {
   const [errorColor] = useState('rgb(245, 108, 108)');
 
   const {index} = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const { questions, favorites } = initializeQuestions();
+    const {questions, favorites, answers, isAnswerCheck, isAnswerStick} = initializeQuestions();
     const idx = initializeCurrQuestionIndex(index);
 
     setAllQuestions(questions);
     setAllFavorites(favorites);
     setCurrQuestionIndex(idx);
+    setAnswerIndex(answers[idx]);
     setCurrQuestion(questions[idx]);
     setIsFavourite(favorites[idx]);
+    setIsCheck(isAnswerCheck);
+    setIsStick(isAnswerStick);
   }, [index]);
 
   const projectName = "123"
@@ -77,10 +85,16 @@ const Question = () => {
   const handleOptionClick = (idx) => {
     setAnswerIndex(idx);
     setIsError(idx !== currQuestion.correct_answer);
+    let updatedAnswers = loadFromLocalStorage('allAnswers', []);
+    updatedAnswers[currQuestionIndex] = idx;
+    saveToLocalStorage('allAnswers', updatedAnswers);
   }
 
-  const changeQuestion = () => {
-    setIsStick(!isStick);
+  const changeQuestion = (Increment) => {
+    if (currQuestionIndex <= 0 && Increment === -1) return;
+
+    setAnswerIndex(-1);
+    navigate(`/question/${currQuestionIndex + 1 + Increment}`);
   };
 
   const answerStyle = {
