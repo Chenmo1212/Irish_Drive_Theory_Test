@@ -1,19 +1,15 @@
 .home {
-  background-color: #f4f6f8;
-  min-height: 95vh;
-  padding: 2.5vh 0;
-}
-
-.project {
-  width: 50%;
-  height: 95vh;
-  margin: 0 auto;
-  border-radius: 7px;
-  box-shadow: 5px 5px 6px #d1d3db, -5px -5px 6px #f4f4f6;
-  background-color: #fff;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .project .cover {
@@ -31,22 +27,22 @@
   width: 100%;
 }
 
-.title {
+.project .title {
   font-size: 18px;
   font-weight: 700;
 }
 
-.question_type {
+.project .question_type {
   margin-top: 10px;
   font-size: 13px;
 }
 
-.progress {
+.project .progress {
   width: 90%;
   margin: 8% auto;
 }
 
-.progress .card-progress__back {
+.project .progress .card-progress__back {
   height: 16px;
   background-color: #e7e9ef;
   border-radius: 13px;
@@ -54,7 +50,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 4px rgba(255, 255, 255, 0), inset 2px 2px 2px rgba(55, 84, 170, 0.15), inset 35px 28px 64px #fff !important;
 }
 
-.progress .card-progress__line {
+.project .progress .card-progress__line {
   height: 16px;
   margin-top: -20px;
   margin-left: 4px;
@@ -63,25 +59,25 @@
   animation: sliding 3s ease infinite;
 }
 
-.text-blue {
+.project .text-blue {
   color: rgb(83, 109, 254);
 }
 
-.btn {
+.project .btn {
   margin-top: 10px;
 }
 
-.btn button {
+.project .btn button {
   border: 0;
 }
 
-.btn button:focus {
+.project .btn button:focus {
   border: none;
   outline: 0 !important;
   outline-style: none;
 }
 
-.btn .btn {
+.project .btn .btn {
   position: relative;
   width: 90%;
   height: 36px;
@@ -92,7 +88,7 @@
   cursor: pointer;
 }
 
-.btn .btn:after {
+.project .btn .btn:after {
   content: "";
   position: absolute;
   left: 0;
@@ -103,15 +99,15 @@
   z-index: 2;
 }
 
-.btn .btn:active {
+.project .btn .btn:active {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
 }
 
-.btn .btn:active:after {
+.project .btn .btn:active:after {
   box-shadow: inset 0px -2px 5px white, inset 0px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.btn .btn .icon-container {
+.project .btn .btn .icon-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -123,10 +119,3 @@
   */
   font-weight: 700;
 }
-
-@media screen and (max-width: 400px) {
-  .project {
-    width: 95%;
-  }
-}
- 

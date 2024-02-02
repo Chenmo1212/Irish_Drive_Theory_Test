@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(()=>{
     if (QUESTIONS) setProjects(QUESTIONS);
-  }, QUESTIONS)
+  }, [QUESTIONS])
 
   return <div className="home">
     <div className="project">
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="card-progress__line" style={{width: '2%', backgroundColor: 'rgb(83, 109, 254)'}}></div>
         </div>
 
-        <Link to={`/questions/0`}>
+        <Link to={`/question/1`}>
           <div className="btn">
             <button className="btn begin text-blue">
           <span className="icon-container">
