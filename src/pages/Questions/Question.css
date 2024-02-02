@@ -74,7 +74,7 @@
 
 .question .content .content-head > div {
   height: 30px;
-  width: 100px;
+  padding: 0 10px;
   border-radius: 5px;
   text-align: center;
   background: #f4f6f8;

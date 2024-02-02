@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef6277b7-54d0-4f0c-99ab-fc7c75992b1b" name="Changes" comment="" />
+    <list default="true" id="ef6277b7-54d0-4f0c-99ab-fc7c75992b1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Overview/Overview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Overview/Overview.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Questions/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Questions/Question.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Questions/Question.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Questions/Question.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questions_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/questions_data.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="ProjectId" id="2bo5ex3mIK9v7FttBgIbZTJabJr" />
   <component name="ProjectViewState">
@@ -17,9 +39,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Project/01_Frontend/29_General-Question-Practicer/general-question-practicer",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "ts.external.directory.path": "D:\\Program\\webstorm\\WebStorm 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\01_Frontend\29_General-Question-Practicer\general-question-practicer" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -30,9 +61,71 @@
       <updated>1706868691041</updated>
       <workItem from="1706868693326" duration="11000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: done home">
+      <created>1706873165057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706873165057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: done question">
+      <created>1706888066916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706888066917</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: done localstorage">
+      <created>1706891661960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706891661960</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: done localstorage">
+      <created>1706891837800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706891837800</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: done change question">
+      <created>1706893274848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706893274848</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: done stick &amp; check">
+      <created>1706894119354</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706894119354</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: done home" />
+    <MESSAGE value="feat: done question" />
+    <MESSAGE value="feat: done localstorage" />
+    <MESSAGE value="feat: done change question" />
+    <MESSAGE value="feat: done stick &amp; check" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: done stick &amp; check" />
   </component>
 </project>

@@ -64,10 +64,8 @@ const Question = () => {
     setIsError(answers[idx] !== questions[idx].correct_answer);
   }, [index]);
 
-  const projectName = "123"
-  const chapterName = "123"
   const toOverview = () => {
-    console.log("123")
+    navigate('/overview')
   }
 
   const getOptionLabel = (idx) => {
@@ -118,18 +116,19 @@ const Question = () => {
     color: themeColor
   }
 
+  const handlerBack = () => {
+    navigate(-1);
+  }
+
   return (
     <div className="question">
       <div className="header">
         <div className="return">
-          <div className="circle">
+          <div className="circle" onClick={handlerBack}>
             {getIcon('back')}
           </div>
           <div className="page-title">
-            章节背题 |
-            <span style={{color: themeColor}} className="pageName">
-              &nbsp;{projectName} - {chapterName}
-            </span>
+            Question
           </div>
         </div>
         <div className={`favourite ${isFavourite ? 'active' : ''}`}
@@ -141,7 +140,7 @@ const Question = () => {
       <div className="content">
         <div className="content-head">
           <div className="question-type" style={{color: themeColor}}>
-            <span>单选题</span>
+            <span>{currQuestion.section}</span>
           </div>
           <div className="question-num">
             <span className="question-index" style={{color: themeColor}}>
