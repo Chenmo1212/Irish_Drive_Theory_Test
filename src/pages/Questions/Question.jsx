@@ -19,14 +19,13 @@ const initializeQuestions = () => {
   };
 };
 
-const initializeCurrQuestionIndex = (index) => {
+const initializeCurrQuestionIndex = (pageIdx) => {
   const storedCurrQuestionIdx = loadFromLocalStorage('currQuestionIdx');
-  if (index) {
-    const idx = parseInt(index) - 1;
-    saveToLocalStorage('currQuestionIdx', idx);
-    return idx;
+  if (pageIdx) {
+    saveToLocalStorage('currQuestionIdx', pageIdx - 1);
+    return pageIdx - 1;
   } else {
-    return storedCurrQuestionIdx ? storedCurrQuestionIdx : 0;
+    return storedCurrQuestionIdx >= 0 ? storedCurrQuestionIdx : 0;
   }
 };
 
@@ -50,12 +49,13 @@ const Question = () => {
 
   useEffect(() => {
     const {questions, favorites, answers, isAnswerCheck, isAnswerStick} = initializeQuestions();
-    const idx = initializeCurrQuestionIndex(index);
+    if (parseInt(index) <= 0) navigate('/question/1')
+    const idx = initializeCurrQuestionIndex(parseInt(index));
 
     setAllQuestions(questions);
     setAllFavorites(favorites);
     setCurrQuestionIndex(idx);
-    setAnswerIndex(answers[idx]);
+    setAnswerIndex(answers[idx + 1]);
     setCurrQuestion(questions[idx]);
     setIsFavourite(favorites[idx]);
     setIsCheck(isAnswerCheck);
@@ -92,7 +92,7 @@ const Question = () => {
     setAnswerIndex(idx);
     setIsError(idx !== currQuestion.correct_answer);
     let updatedAnswers = loadFromLocalStorage('allAnswers', []);
-    updatedAnswers[currQuestionIndex] = idx;
+    updatedAnswers[currQuestionIndex + 1] = idx;
     saveToLocalStorage('allAnswers', updatedAnswers);
 
     if (isCheck) setIsShowAnswer(true);
@@ -117,7 +117,7 @@ const Question = () => {
   }
 
   const handlerBack = () => {
-    navigate(-1);
+    navigate('/');
   }
 
   return (
@@ -156,6 +156,8 @@ const Question = () => {
         <div className="content-container">
           <div className="question-text">
             Q: {currQuestion.question}
+
+            {currQuestion.question_img_url ? <p className="question-img"><img src={currQuestion.question_img_url} alt=""/></p> : <></>}
           </div>
 
           <div className="options">

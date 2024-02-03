@@ -111,6 +111,15 @@
   box-shadow: 2px 2px 5px #c1d3ea, -2px -2px 5px white, -0.4px -0.4px 0.4px white;
 }
 
+.question .content .content-container .question-img {
+  display: flex;
+  justify-content: center;
+}
+
+.question .content .content-container .question-img img {
+  width: 40%;
+}
+
 .question .content .content-container .options .c-button {
   font-size: 14px;
   text-align: left;

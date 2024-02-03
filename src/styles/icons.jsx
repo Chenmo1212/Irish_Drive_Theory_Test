@@ -10,6 +10,7 @@ import {
   FaArrowRight,
   FaCheckCircle,
   FaThumbtack,
+  FaEraser,
 } from 'react-icons/fa';
 
 const icons = new Map([
@@ -23,6 +24,7 @@ const icons = new Map([
   ['arrow_right', <FaArrowRight />],
   ['check', <FaCheckCircle />],
   ['thumb_tack', <FaThumbtack />],
+  ['clear', <FaEraser />],
 ]);
 
 export function getIcon(iconName) {

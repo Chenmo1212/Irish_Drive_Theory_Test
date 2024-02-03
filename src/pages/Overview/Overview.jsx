@@ -47,7 +47,7 @@ const Overview = () => {
     setAllAnswers(answers);
     setAllQuestions(questions);
     setAllFavorites(favorites);
-  }, []);
+}, []);
 
   const getStyle = (idx) => {
     return {
@@ -62,6 +62,16 @@ const Overview = () => {
 
   const toDetail = (idx) => {
     navigate(`/question/${idx}`);
+  }
+
+  const clearLocalStorage = () => {
+    localStorage.removeItem("isAnswerStick");
+    localStorage.removeItem("isAnswerCheck");
+    localStorage.removeItem("currQuestionIdx");
+    localStorage.removeItem("allAnswers");
+    localStorage.removeItem("allQuestions");
+    localStorage.removeItem("allFavorites");
+    alert("LocalStorage has been cleared!")
   }
 
   const getQuestionNumber = (index, sectionIdx) => {
@@ -90,6 +100,9 @@ const Overview = () => {
             Overview
           </div>
         </div>
+        <div className="clear" onClick={clearLocalStorage}>
+          {getIcon('clear')}
+        </div>
       </div>
 
       <div className="container">
@@ -106,7 +119,8 @@ const Overview = () => {
                          onClick={() => toDetail(getQuestionNumber(index + 1, sectionIdx))}
                     >
                       {getQuestionNumber(index + 1, sectionIdx)}
-                      {allFavorites[getQuestionNumber(index + 1, sectionIdx) - 1] && <div className='svg-box'>{getIcon('fav_fill')}</div>}
+                      {allFavorites[getQuestionNumber(index + 1, sectionIdx) - 1] &&
+                        <div className='svg-box'>{getIcon('fav_fill')}</div>}
                     </div>
                   </div>
                 ))}

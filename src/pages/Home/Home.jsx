@@ -8,7 +8,7 @@ import {loadFromLocalStorage} from '../../common/common';
 const initializeLocalStorage = () => {
   return {
     allQuestions: loadFromLocalStorage('allQuestions', QUESTIONS),
-    currQuestionIdx: loadFromLocalStorage('currQuestionIdx', 1),
+    currQuestionIdx: loadFromLocalStorage('currQuestionIdx', 0),
   };
 };
 
@@ -28,7 +28,7 @@ const Home = () => {
         <div className="cover">
           <img src={DRIVER} alt=""/>
         </div>
-        <div className="title">Test</div>
+        <div className="title">Irish Theory Test</div>
         <div className="question_type">
           <span> Question Amount: <span className="text-blue">{allQuestions.length}</span></span>
         </div>

@@ -7,14 +7,16 @@
   line-height: 60px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: #f4f6f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .overview .header .return {
-  float: left;
   display: flex;
   align-items: center;
   padding-left: 20px;
-  width: 90vw;
+  width: 90%;
   overflow: hidden;
 }
 
@@ -45,9 +47,17 @@
   text-align: left;
 }
 
+.overview .header .clear {
+  margin-right: 20px;
+  color: rgb(245, 108, 108);
+}
+
 .overview .container {
-  min-height: 90vh;
-  padding: 0 5% 5%;
+  height: calc(95vh - 80px);
+  padding: 0 20px 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .overview .container .section {
@@ -111,4 +121,10 @@
 .overview .container .content .circle-box .svg-box svg {
   font-size: 9px;
   color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .overview {
+    height: calc(100vh - 60px);
+  }
 }
