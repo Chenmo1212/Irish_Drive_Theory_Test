@@ -81,7 +81,7 @@ const Question = () => {
     setQuestionsEN(questions_EN);
     setAllFavorites(favorites);
     setCurrQuestionIndex(idx);
-    setAnswerIndex(answers[idx + 1]);
+    setAnswerIndex(answers[idx]);
     setIsFavourite(favorites[idx]);
     setIsCheck(isAnswerCheck);
     setIsStick(isAnswerStick);
@@ -124,7 +124,7 @@ const Question = () => {
     setAnswerIndex(idx);
     setIsError(idx !== currQuestion.correct_answer);
     let updatedAnswers = loadFromLocalStorage('allAnswers', []);
-    updatedAnswers[currQuestionIndex + 1] = idx;
+    updatedAnswers[currQuestionIndex] = idx;
     saveToLocalStorage('allAnswers', updatedAnswers);
 
     if (isCheck) setIsShowAnswer(true);

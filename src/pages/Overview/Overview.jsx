@@ -56,10 +56,10 @@ const Overview = () => {
     setAllFavorites(favorites);
   }, []);
 
-  const getStyle = (idx) => {
+  const getStyle = (questionNumber) => {
     return {
-      background: allAnswers[idx] === -1 ? "" : THEME_COLOR,
-      color: allAnswers[idx] !== -1 ? '#fff' : '#000'
+      background: allAnswers[questionNumber - 1] === -1 ? "" : THEME_COLOR,
+      color: allAnswers[questionNumber - 1] !== -1 ? '#fff' : '#000'
     };
   }
 
@@ -84,17 +84,17 @@ const Overview = () => {
   const getQuestionNumber = (index, sectionIdx) => {
     switch (sectionIdx) {
       case 0:
-        return index;
+        return index + 1;
       case 1:
-        return questionTypes[0].amount + index
+        return questionTypes[0].amount + index + 1
       case 2:
-        return questionTypes[0].amount + questionTypes[1].amount + index
+        return questionTypes[0].amount + questionTypes[1].amount + index + 1
       case 3:
-        return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + index
+        return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + index + 1
       case 4:
-        return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + questionTypes[3].amount + index
+        return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + questionTypes[3].amount + index + 1
       default:
-        return index
+        return index + 1
     }
   }
 
@@ -124,11 +124,11 @@ const Overview = () => {
                 {Array.from({length: section.amount}, (_, index) => (
                   <div className="circle-box" key={index}>
                     <div className={`circle ${allQuestions[index] !== -1 ? 'active' : ''}`}
-                         style={getStyle(getQuestionNumber(index + 1, sectionIdx))}
-                         onClick={() => toDetail(getQuestionNumber(index + 1, sectionIdx))}
+                         style={getStyle(getQuestionNumber(index, sectionIdx))}
+                         onClick={() => toDetail(getQuestionNumber(index, sectionIdx))}
                     >
-                      {getQuestionNumber(index + 1, sectionIdx)}
-                      {allFavorites[getQuestionNumber(index + 1, sectionIdx) - 1] &&
+                      {getQuestionNumber(index, sectionIdx)}
+                      {allFavorites[getQuestionNumber(index, sectionIdx) - 1] &&
                         <div className='svg-box'>{getIcon('fav_fill')}</div>}
                     </div>
                   </div>
