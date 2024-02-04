@@ -1,19 +1,38 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
-import {QUESTIONS} from "../../questions_data";
+import {QUESTIONS} from "../../data/questions_data";
+import {QUESTIONS_CN} from "../../data/questions_data_CN";
 import './Question.css'
 import {getIcon} from "../../styles/icons";
-import {loadFromLocalStorage, saveToLocalStorage} from '../../common/common'
+import {
+  DEFAULT_VERSION,
+  ERROR_COLOR,
+  loadFromLocalStorage,
+  NEW_VERSION,
+  OPTION_LABELS,
+  saveToLocalStorage,
+  THEME_COLOR,
+  updateDataIfNewVersion
+} from '../../common/common';
 
 const initializeQuestions = () => {
-  const questions = QUESTIONS;
-  const favorites = Array.from({length: questions.length}, () => false);
-  const answers = Array.from({length: questions.length}, () => -1);
+  const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
+  let questions = loadFromLocalStorage('allQuestions', QUESTIONS);
+  let questions_CN = loadFromLocalStorage('allQuestions_CN', QUESTIONS_CN);
+  const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
+
+  if (isUpdate) {
+    questions = QUESTIONS;
+    saveToLocalStorage("allQuestions", QUESTIONS);
+    saveToLocalStorage("allQuestions_CN", QUESTIONS_CN);
+    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
+  }
 
   return {
-    questions: loadFromLocalStorage('allQuestions', questions),
-    favorites: loadFromLocalStorage('allFavorites', favorites),
-    answers: loadFromLocalStorage('allAnswers', answers),
+    questions,
+    questions_CN,
+    favorites: loadFromLocalStorage('allFavorites', Array.from({length: questions.length}, () => false)),
+    answers: loadFromLocalStorage('allAnswers', Array.from({length: questions.length}, () => -1)),
     isAnswerCheck: loadFromLocalStorage('isAnswerCheck', false),
     isAnswerStick: loadFromLocalStorage('isAnswerStick', false),
   };
@@ -29,7 +48,6 @@ const initializeCurrQuestionIndex = (pageIdx) => {
   }
 };
 
-const OPTION_LABELS = ['A', "B", "C", "D"]
 const Question = () => {
   const [currQuestion, setCurrQuestion] = useState({})
   const [allQuestions, setAllQuestions] = useState([])
@@ -41,8 +59,6 @@ const Question = () => {
   const [isCheck, setIsCheck] = useState(false);
   const [isStick, setIsStick] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [themeColor] = useState('rgb(83, 109, 254)');
-  const [errorColor] = useState('rgb(245, 108, 108)');
 
   const {index} = useParams();
   const navigate = useNavigate();
@@ -107,13 +123,13 @@ const Question = () => {
   };
 
   const answerStyle = {
-    border: `1px solid ${isError ? errorColor : themeColor}`,
-    color: isError ? errorColor : themeColor
+    border: `1px solid ${isError ? ERROR_COLOR : THEME_COLOR}`,
+    color: isError ? ERROR_COLOR : THEME_COLOR
   }
 
   const chosenOptionStyle = {
-    border: `1px solid ${themeColor}`,
-    color: themeColor
+    border: `1px solid ${THEME_COLOR}`,
+    color: THEME_COLOR
   }
 
   const handlerBack = () => {
@@ -139,11 +155,11 @@ const Question = () => {
 
       <div className="content">
         <div className="content-head">
-          <div className="question-type" style={{color: themeColor}}>
+          <div className="question-type" style={{color: THEME_COLOR}}>
             <span>{currQuestion.section}</span>
           </div>
           <div className="question-num">
-            <span className="question-index" style={{color: themeColor}}>
+            <span className="question-index" style={{color: THEME_COLOR}}>
               {currQuestionIndex + 1}
             </span>
             /
@@ -157,7 +173,8 @@ const Question = () => {
           <div className="question-text">
             Q: {currQuestion.question}
 
-            {currQuestion.question_img_url ? <p className="question-img"><img src={currQuestion.question_img_url} alt=""/></p> : <></>}
+            {currQuestion.question_img_url ?
+              <p className="question-img"><img src={currQuestion.question_img_url} alt=""/></p> : <></>}
           </div>
 
           <div className="options">
@@ -193,7 +210,7 @@ const Question = () => {
       </div>
 
       <div className="question-footer">
-        <div className="menu-card" style={{color: themeColor}}>
+        <div className="menu-card" style={{color: THEME_COLOR}}>
           <div className="menu-item all-question" onClick={toOverview}>
             {getIcon('fa_th')}
           </div>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
-import {QUESTIONS} from "../../questions_data";
-import {loadFromLocalStorage} from '../../common/common';
+import {QUESTIONS} from "../../data/questions_data";
+import {loadFromLocalStorage, THEME_COLOR} from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
@@ -18,8 +18,6 @@ const initializeLocalStorage = () => {
 };
 
 const Overview = () => {
-  const [themeColor] = useState('rgb(83, 109, 254)');
-  const [errorColor] = useState('rgb(245, 108, 108)');
   const [allFavorites, setAllFavorites] = useState([])
   const [allQuestions, setAllQuestions] = useState([]);
   const [allAnswers, setAllAnswers] = useState([]);
@@ -51,7 +49,7 @@ const Overview = () => {
 
   const getStyle = (idx) => {
     return {
-      background: allAnswers[idx] === -1 ? "" : themeColor,
+      background: allAnswers[idx] === -1 ? "" : THEME_COLOR,
       color: allAnswers[idx] !== -1 ? '#fff' : '#000'
     };
   }
@@ -86,6 +84,8 @@ const Overview = () => {
         return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + index
       case 4:
         return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + questionTypes[3].amount + index
+      default:
+        return index
     }
   }
 
@@ -93,7 +93,7 @@ const Overview = () => {
     <div className="overview">
       <div className="header">
         <div className="return">
-          <div className="circle" style={{color: themeColor}} onClick={backDetail}>
+          <div className="circle" style={{color: THEME_COLOR}} onClick={backDetail}>
             {getIcon('arrow_left')}
           </div>
           <div className="page-title">
@@ -108,7 +108,7 @@ const Overview = () => {
       <div className="container">
         {questionTypes.map((section, sectionIdx,) => (
             <div className="section" key={sectionIdx}>
-              <div className="title" style={{color: themeColor}}>
+              <div className="title" style={{color: THEME_COLOR}}>
                 <span>{section.sectionName}</span>
               </div>
               <div className="content">

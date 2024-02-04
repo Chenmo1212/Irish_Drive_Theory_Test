@@ -1,20 +1,27 @@
 import React, {useEffect, useState} from "react"
 import './Home.css'
-import {QUESTIONS} from "../../questions_data";
+import {QUESTIONS} from "../../data/questions_data";
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
-import {loadFromLocalStorage, saveToLocalStorage, updateDataIfNewVersion} from '../../common/common';
+import {
+  loadFromLocalStorage,
+  saveToLocalStorage,
+  updateDataIfNewVersion,
+  THEME_COLOR,
+  DEFAULT_VERSION,
+  NEW_VERSION
+} from '../../common/common';
 
-const initializeLocalStorage = (newVersion) => {
-  const currentVersion = loadFromLocalStorage('appVersion', '1.2.1.240204');
+const initializeLocalStorage = () => {
+  const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
   const currQuestionIdx = loadFromLocalStorage('currQuestionIdx', 0);
-  const isUpdate = updateDataIfNewVersion(currentVersion, newVersion);
+  const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
   let allQuestions = loadFromLocalStorage('allQuestions', QUESTIONS);
 
   if (isUpdate) {
     allQuestions = QUESTIONS;
     saveToLocalStorage("allQuestions", QUESTIONS);
-    console.info(`App Updated: ${currentVersion} => ${newVersion}`)
+    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
   }
 
   return {allQuestions, currQuestionIdx};
@@ -23,10 +30,9 @@ const initializeLocalStorage = (newVersion) => {
 const Home = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [currQuestionIdx, setCurrQuestionIdx] = useState(1);
-  const newVersion = "1.2.2.240204";
 
   useEffect(() => {
-    const {allQuestions, currQuestionIdx} = initializeLocalStorage(newVersion);
+    const {allQuestions, currQuestionIdx} = initializeLocalStorage();
     setAllQuestions(allQuestions);
     setCurrQuestionIdx(currQuestionIdx);
   }, []);
@@ -43,7 +49,7 @@ const Home = () => {
         </div>
         <div className="progress">
           <div className="card-progress__back"></div>
-          <div className="card-progress__line" style={{width: '2%', backgroundColor: 'rgb(83, 109, 254)'}}></div>
+          <div className="card-progress__line" style={{width: '2%', backgroundColor: THEME_COLOR}}></div>
         </div>
 
         <Link to={`/question/${currQuestionIdx}`}>
@@ -57,14 +63,14 @@ const Home = () => {
           </div>
         </Link>
 
-        <div className="btn">
-          <button className="btn mock text-blue">
-          <span className="icon-container">
-            <i className="fa fa-flag"></i>
-            Mock Exam
-          </span>
-          </button>
-        </div>
+        {/*<div className="btn">*/}
+        {/*  <button className="btn mock text-blue">*/}
+        {/*  <span className="icon-container">*/}
+        {/*    <i className="fa fa-flag"></i>*/}
+        {/*    Mock Exam*/}
+        {/*  </span>*/}
+        {/*  </button>*/}
+        {/*</div>*/}
       </div>
     </div>
   </div>
