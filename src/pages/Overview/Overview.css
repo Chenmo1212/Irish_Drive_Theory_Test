@@ -1,0 +1,130 @@
+.overview {
+  background-color: #f4f6f8;
+}
+
+.overview .header {
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #f4f6f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview .header .return {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 90%;
+  overflow: hidden;
+}
+
+.overview .header .return .circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0;
+  box-shadow: 3px 3px 5px #ebebeb, -3px -3px 5px #fff;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview .header .return i {
+  font-size: 30px;
+  margin-right: 4px;
+  display: block;
+}
+
+.overview .header .return .page-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  margin-left: 2%;
+  text-align: left;
+}
+
+.overview .header .clear {
+  margin-right: 20px;
+  color: rgb(245, 108, 108);
+}
+
+.overview .container {
+  height: calc(95vh - 20px);
+  padding: 0 20px 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.overview .container .section {
+  margin-top: 5%;
+}
+
+.overview .container .title {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
+  margin-bottom: 5%;
+}
+
+.overview .container .content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.overview .container .content .circle-box {
+  width: 20%;
+  margin: 2% 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview .container .content .circle-box .circle {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: inset 3px 3px 10px #eaecee, inset -3px -3px 10px #feffff;
+}
+
+.overview .container .content .circle-box .active {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
+}
+
+.overview .container .content .circle-box .svg-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #f0a732;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview .container .content .circle-box .svg-box svg {
+  font-size: 9px;
+  color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .overview {
+    height: 100vh;
+  }
+}
