@@ -57,11 +57,13 @@ const Overview = () => {
   }, []);
 
   const getStyle = (questionNumber) => {
+    const isAnswered = allAnswers.length && allAnswers[questionNumber - 1] !== -1;
+
     return {
-      background: allAnswers[questionNumber - 1] === -1 ? "" : THEME_COLOR,
-      color: allAnswers[questionNumber - 1] !== -1 ? '#fff' : '#000'
+      background: isAnswered ? THEME_COLOR : "",
+      color: isAnswered ? '#fff' : '#000'
     };
-  }
+  };
 
   const backDetail = () => {
     navigate(-1);
@@ -82,21 +84,12 @@ const Overview = () => {
   }
 
   const getQuestionNumber = (index, sectionIdx) => {
-    switch (sectionIdx) {
-      case 0:
-        return index + 1;
-      case 1:
-        return questionTypes[0].amount + index + 1
-      case 2:
-        return questionTypes[0].amount + questionTypes[1].amount + index + 1
-      case 3:
-        return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + index + 1
-      case 4:
-        return questionTypes[0].amount + questionTypes[1].amount + questionTypes[2].amount + questionTypes[3].amount + index + 1
-      default:
-        return index + 1
+    let accumulatedAmount = 0;
+    for (let i = 0; i < sectionIdx; i++) {
+      accumulatedAmount += questionTypes[i].amount;
     }
-  }
+    return accumulatedAmount + index + 1;
+  };
 
   return (
     <div className="overview">
