@@ -5,6 +5,7 @@ import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
 import {
   DEFAULT_VERSION,
+  IS_UPDATED_QUESTIONS,
   loadFromLocalStorage,
   NEW_VERSION,
   saveToLocalStorage,
@@ -21,11 +22,13 @@ const initializeLocalStorage = () => {
   let allQuestions = loadFromLocalStorage('allQuestions', QUESTIONS_EN);
   const allAnswers = loadFromLocalStorage('allAnswers', Array.from({length: allQuestions.length}, () => -1));
 
-  if (isUpdate) {
+  if (isUpdate) console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
+
+  if (isUpdate && IS_UPDATED_QUESTIONS) {
     allQuestions = QUESTIONS_EN;
     saveToLocalStorage("allQuestions", QUESTIONS_EN);
-    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
   }
+
 
   return {isCN, allQuestions, allAnswers, currQuestionIdx};
 };
