@@ -10,3 +10,13 @@ export const loadFromLocalStorage = (key, defaultValue) => {
 export const saveToLocalStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
+
+export const compareVersions = (version1, version2) => version1.localeCompare(version2);
+
+export const updateDataIfNewVersion = (currentVersion, newVersion) => {
+  if (compareVersions(currentVersion, newVersion) < 0) {
+    saveToLocalStorage('appVersion', newVersion);
+    return true;
+  }
+  return false;
+};

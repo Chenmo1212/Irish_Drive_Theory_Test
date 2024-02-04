@@ -3,21 +3,30 @@ import './Home.css'
 import {QUESTIONS} from "../../questions_data";
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
-import {loadFromLocalStorage} from '../../common/common';
+import {loadFromLocalStorage, saveToLocalStorage, updateDataIfNewVersion} from '../../common/common';
 
-const initializeLocalStorage = () => {
-  return {
-    allQuestions: loadFromLocalStorage('allQuestions', QUESTIONS),
-    currQuestionIdx: loadFromLocalStorage('currQuestionIdx', 0),
-  };
+const initializeLocalStorage = (newVersion) => {
+  const currentVersion = loadFromLocalStorage('appVersion', '1.2.1.240204');
+  const currQuestionIdx = loadFromLocalStorage('currQuestionIdx', 0);
+  const isUpdate = updateDataIfNewVersion(currentVersion, newVersion);
+  let allQuestions = loadFromLocalStorage('allQuestions', QUESTIONS);
+
+  if (isUpdate) {
+    allQuestions = QUESTIONS;
+    saveToLocalStorage("allQuestions", QUESTIONS);
+    console.info(`App Updated: ${currentVersion} => ${newVersion}`)
+  }
+
+  return {allQuestions, currQuestionIdx};
 };
 
 const Home = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [currQuestionIdx, setCurrQuestionIdx] = useState(1);
+  const newVersion = "1.2.2.240204";
 
   useEffect(() => {
-    const {allQuestions, currQuestionIdx} = initializeLocalStorage();
+    const {allQuestions, currQuestionIdx} = initializeLocalStorage(newVersion);
     setAllQuestions(allQuestions);
     setCurrQuestionIdx(currQuestionIdx);
   }, []);

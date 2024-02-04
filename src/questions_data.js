@@ -1,15 +1,15 @@
 export const QUESTIONS = [
     {
-      "question": "What is the effect of an incorrectly adjusted driver?s seat?",
+      "question": "What is the effect of an incorrectly adjusted driver's seat?",
       "options": [
         "It can delay the driver from operating a control.",
-        "It improves the driver?s ability to operate the clutch.",
+        "It improves the driver's ability to operate the clutch.",
         "It enables the driver to relax more on a long journey.",
         "It gives the driver a better view in the rear-view mirror."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before starting a journey, you should adopt a suitable and comfortable driving position by adjusting the drivers seat to a position where all the vehicle controls can be operated efficiently.",
+      "explanation": "Explanation: Before starting a journey, you should adopt a suitable and comfortable driving position by adjusting the drivers seat to a position where all the vehicle controls can be operated efficiently.",
       "section": "Control of Vehicle"
     },
     {
@@ -22,20 +22,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If you drive around a corner too fast, the tyres begin to lose contact with the surface of the road, and this causes a squealing sound. If you continue driving in this way, you can lose control of the vehicle.",
+      "explanation": "Explanation: If you drive around a corner too fast, the tyres begin to lose contact with the surface of the road, and this causes a squealing sound. If you continue driving in this way, you can lose control of the vehicle.",
       "section": "Control of Vehicle"
     },
     {
       "question": "What is a likely consequence of sudden braking?",
       "options": [
-        "There will be no consequences as the vehicle?s brake lights will come on.",
+        "There will be no consequences as the vehicle's brake lights will come on.",
         "The vehicle could be hit from behind.",
-        "The vehicle?s braking system could overheat.",
+        "The vehicle's braking system could overheat.",
         "The vehicle could be overtaken."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: As well as reading the road ahead, you should also be aware of traffic travelling behind you. This will help you react correctly in a situation where you need to brake suddenly.",
+      "explanation": "Explanation: As well as reading the road ahead, you should also be aware of traffic travelling behind you. This will help you react correctly in a situation where you need to brake suddenly.",
       "section": "Control of Vehicle"
     },
     {
@@ -48,7 +48,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If the brake pedal feels soft or spongy when pressed, it could indicate that the brake fluid level is low and there is a fault in the system. Each time a driver sets out on a journey, they should test the brakes. If a fault is detected, have it checked by a competent person. Drivers should check brake fluid levels regularly.",
+      "explanation": "Explanation: If the brake pedal feels soft or spongy when pressed, it could indicate that the brake fluid level is low and there is a fault in the system. Each time a driver sets out on a journey, they should test the brakes. If a fault is detected, have it checked by a competent person. Drivers should check brake fluid levels regularly.",
       "section": "Control of Vehicle"
     },
     {
@@ -61,7 +61,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If the brake pedal feels soft or spongy when pressed, it could indicate that the brake fluid level is low and there is a fault in the system. Each time a driver sets out on a journey, they should test the brakes. If a fault is detected, have it checked by a competent person. Drivers should check brake fluid levels regularly.",
+      "explanation": "Explanation: If the brake pedal feels soft or spongy when pressed, it could indicate that the brake fluid level is low and there is a fault in the system. Each time a driver sets out on a journey, they should test the brakes. If a fault is detected, have it checked by a competent person. Drivers should check brake fluid levels regularly.",
       "section": "Control of Vehicle"
     },
     {
@@ -74,20 +74,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Drivers should test their brakes regularly and particularly before setting out on a journey. However, if when driving they hear a scraping noise when they press the brake, the most likely reason is that the brake linings or pads are worn. In this case, brakes wont work as well as they should and the driver should have them replaced by a competent person immediately.",
+      "explanation": "Explanation: Drivers should test their brakes regularly and particularly before setting out on a journey. However, if when driving they hear a scraping noise when they press the brake, the most likely reason is that the brake linings or pads are worn. In this case, brakes wont work as well as they should and the driver should have them replaced by a competent person immediately.",
       "section": "Control of Vehicle"
     },
     {
-      "question": "What may indicate a problem with the vehicle?s braking system?",
+      "question": "What may indicate a problem with the vehicle's braking system?",
       "options": [
-        "The vehicle?s parking brake is more effective.",
-        "The vehicle?s suspension is affected.",
-        "The vehicle?s fuel consumption is reduced.",
-        "The vehicle?s stopping ability is affected."
+        "The vehicle's parking brake is more effective.",
+        "The vehicle's suspension is affected.",
+        "The vehicle's fuel consumption is reduced.",
+        "The vehicle's stopping ability is affected."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Drivers should test their brakes before setting out on a journey. If when driving they notice that it is taking longer than usual to bring the vehicle to a stop, they should have the brakes checked immediately by a competent person.",
+      "explanation": "Explanation: Drivers should test their brakes before setting out on a journey. If when driving they notice that it is taking longer than usual to bring the vehicle to a stop, they should have the brakes checked immediately by a competent person.",
       "section": "Control of Vehicle"
     },
     {
@@ -100,7 +100,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Heavy braking can cause a vehicle to skid, particularly if the road surface is wet or uneven, or if the tyres are worn or incorrectly inflated. Read the road well ahead and try to avoid heavy braking, particularly in wet or slippery conditions.",
+      "explanation": "Explanation: Heavy braking can cause a vehicle to skid, particularly if the road surface is wet or uneven, or if the tyres are worn or incorrectly inflated. Read the road well ahead and try to avoid heavy braking, particularly in wet or slippery conditions.",
       "section": "Control of Vehicle"
     },
     {
@@ -113,7 +113,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Drivers should drive more slowly on an uneven road surface because driving a tractor at speed could cause the vehicle or the trailer to become unstable and difficult to control. During severe bouncing the tractor?s wheels can lose contact with the road, negatively affecting steering and braking.",
+      "explanation": "Explanation: Drivers should drive more slowly on an uneven road surface because driving a tractor at speed could cause the vehicle or the trailer to become unstable and difficult to control. During severe bouncing the tractor's wheels can lose contact with the road, negatively affecting steering and braking.",
       "section": "Control of Vehicle"
     },
     {
@@ -126,7 +126,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: In general the handbrake should never be used to bring a vehicle to a halt. This practice is potentially dangerous, as the rear wheels could lock up and the vehicle could skid out of control. In addition, using the handbrake does not operate the rear brake lights to warn following traffic.",
+      "explanation": "Explanation: In general the handbrake should never be used to bring a vehicle to a halt. This practice is potentially dangerous, as the rear wheels could lock up and the vehicle could skid out of control. In addition, using the handbrake does not operate the rear brake lights to warn following traffic.",
       "section": "Control of Vehicle"
     },
     {
@@ -139,7 +139,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Except in an emergency, the handbrake (parking brake) should never be used when the vehicle is moving. This practice is potentially dangerous, as the wheels could lock up and the vehicle could skid out of control. In addition there is no warning to following traffic from the brake lights.",
+      "explanation": "Explanation: Except in an emergency, the handbrake (parking brake) should never be used when the vehicle is moving. This practice is potentially dangerous, as the wheels could lock up and the vehicle could skid out of control. In addition there is no warning to following traffic from the brake lights.",
       "section": "Control of Vehicle"
     },
     {
@@ -152,7 +152,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: In most vehicles, the parking brake operates on the rear wheels only. The function of the parking brake (handbrake) is to stop the vehicle from moving when it is parked or when it is stopped on a hill. Drivers normally use the parking brake when the vehicle is already stationary and should generally not use it to stop the vehicle. It is even more important to use the parking brake when parked on a hill or when stationary in a vehicle with automatic transmission to prevent creep.",
+      "explanation": "Explanation: In most vehicles, the parking brake operates on the rear wheels only. The function of the parking brake (handbrake) is to stop the vehicle from moving when it is parked or when it is stopped on a hill. Drivers normally use the parking brake when the vehicle is already stationary and should generally not use it to stop the vehicle. It is even more important to use the parking brake when parked on a hill or when stationary in a vehicle with automatic transmission to prevent creep.",
       "section": "Control of Vehicle"
     },
     {
@@ -165,7 +165,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving a car with automatic transmission, drivers should use the right foot to operate both the accelerator and the brake, just as in vehicles with a manual gear box. In general it is important to avoid using the accelerator and the brake at the same time.",
+      "explanation": "Explanation: When driving a car with automatic transmission, drivers should use the right foot to operate both the accelerator and the brake, just as in vehicles with a manual gear box. In general it is important to avoid using the accelerator and the brake at the same time.",
       "section": "Control of Vehicle"
     },
     {
@@ -178,7 +178,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: L-plates should be displayed front and rear. The plates should be a red L on a white background and should be not less than 15\u00a0cm high with a border of at least 2\u00a0cm. A learner motorcyclist must wear a yellow tabard displaying L-plates front and rear. The L-plates must be not less than 15\u00a0cm high on a white background.",
+      "explanation": "Explanation: L-plates should be displayed front and rear. The plates should be a red L on a white background and should be not less than 15\u00a0cm high with a border of at least 2\u00a0cm. A learner motorcyclist must wear a yellow tabard displaying L-plates front and rear. The L-plates must be not less than 15\u00a0cm high on a white background.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -191,7 +191,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: In the course of their duty Garda\u00ed, Fire Brigade and ambulance personnel are exempt from some traffic laws including speed limits, as long as they do not put other road users in danger. If you hear or see a Garda or emergency vehicle approaching under emergency conditions, be extra careful and give way, if it is safe to do so.",
+      "explanation": "Explanation: In the course of their duty Garda\u00ed, Fire Brigade and ambulance personnel are exempt from some traffic laws including speed limits, as long as they do not put other road users in danger. If you hear or see a Garda or emergency vehicle approaching under emergency conditions, be extra careful and give way, if it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -204,7 +204,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: In the course of their duty Garda\u00ed, Fire Brigade and ambulance personnel are exempt from some traffic laws including speed limits, as long as they do not put other road users in danger. If you hear or see a Garda or emergency vehicle approaching under emergency conditions, be extra careful and give way, if it is safe to do so.",
+      "explanation": "Explanation: In the course of their duty Garda\u00ed, Fire Brigade and ambulance personnel are exempt from some traffic laws including speed limits, as long as they do not put other road users in danger. If you hear or see a Garda or emergency vehicle approaching under emergency conditions, be extra careful and give way, if it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -217,7 +217,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: In the course of their duty Garda\u00ed, Fire Brigade and ambulance personnel are exempt from some traffic laws including speed limits, as long as they do not put other road users in danger. If you hear or see a Garda or emergency vehicle approaching under emergency conditions, be extra careful and give way, if it is safe to do so.",
+      "explanation": "Explanation: In the course of their duty Garda\u00ed, Fire Brigade and ambulance personnel are exempt from some traffic laws including speed limits, as long as they do not put other road users in danger. If you hear or see a Garda or emergency vehicle approaching under emergency conditions, be extra careful and give way, if it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -225,12 +225,12 @@ export const QUESTIONS = [
       "options": [
         "On the front only.",
         "Both front and rear.",
-        "On the driver?s side only.",
+        "On the driver's side only.",
         "On the rear only."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The holder of a learner permit must display L-plates on the front and rear of their car at all times when driving on public roads.",
+      "explanation": "Explanation: The holder of a learner permit must display L-plates on the front and rear of their car at all times when driving on public roads.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -243,7 +243,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The holder of a Category B driving licence is not permitted to drive a vehicle with a design gross vehicle weight of more than 3,500\u00a0kg. This restriction is noted on the licence.",
+      "explanation": "Explanation: The holder of a Category B driving licence is not permitted to drive a vehicle with a design gross vehicle weight of more than 3,500\u00a0kg. This restriction is noted on the licence.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -256,7 +256,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Persons under 16\u00a0years of age are not permitted to drive a tractor in a public place.",
+      "explanation": "Explanation: Persons under 16\u00a0years of age are not permitted to drive a tractor in a public place.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -269,7 +269,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: It is illegal to exceed 120\u00a0km/h when driving on a motorway.",
+      "explanation": "Explanation: It is illegal to exceed 120\u00a0km/h when driving on a motorway.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -282,7 +282,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: It is illegal to exceed 100\u00a0km/h when driving on a single carriageway national road.",
+      "explanation": "Explanation: It is illegal to exceed 100\u00a0km/h when driving on a single carriageway national road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -295,7 +295,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When towing a caravan on a national road, it is illegal to exceed 80\u00a0km/h ? excessive speed will make such a vehicle unstable.",
+      "explanation": "Explanation: When towing a caravan on a national road, it is illegal to exceed 80\u00a0km/h ? excessive speed will make such a vehicle unstable.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -308,7 +308,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When towing a caravan on a motorway it is illegal to exceed 80\u00a0km/h ? excessive speed will make such a vehicle unstable.",
+      "explanation": "Explanation: When towing a caravan on a motorway it is illegal to exceed 80\u00a0km/h ? excessive speed will make such a vehicle unstable.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -321,7 +321,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When towing a trailer on a national road, it is illegal to exceed 80\u00a0km/h ? exceeding this speed will make the vehicle unstable.",
+      "explanation": "Explanation: When towing a trailer on a national road, it is illegal to exceed 80\u00a0km/h ? exceeding this speed will make the vehicle unstable.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -334,7 +334,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When towing a trailer on a motorway it is illegal to exceed 80\u00a0km/h ? excessive speed will make such a vehicle unstable.",
+      "explanation": "Explanation: When towing a trailer on a motorway it is illegal to exceed 80\u00a0km/h ? excessive speed will make such a vehicle unstable.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -347,7 +347,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: It is an offence to park at the side of a road that has a single or double continuous white line along its centre. Parking on such a road could create an obstruction and may cause inconvenience or danger to other road users.",
+      "explanation": "Explanation: It is an offence to park at the side of a road that has a single or double continuous white line along its centre. Parking on such a road could create an obstruction and may cause inconvenience or danger to other road users.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -360,7 +360,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: It is an offence to park 15\u00a0metres before or 5\u00a0metres after a pedestrian crossing. Parking in this manner may restrict the zone of vision of drivers approaching the crossing and endanger pedestrians.",
+      "explanation": "Explanation: It is an offence to park 15\u00a0metres before or 5\u00a0metres after a pedestrian crossing. Parking in this manner may restrict the zone of vision of drivers approaching the crossing and endanger pedestrians.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -373,7 +373,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: It is an offence to park within 5\u00a0metres of a road junction unless parking spaces are clearly marked. Parking in that area may restrict the zone of vision of drivers approaching the junction and may cause an obstruction to large vehicles wishing to turn.",
+      "explanation": "Explanation: It is an offence to park within 5\u00a0metres of a road junction unless parking spaces are clearly marked. Parking in that area may restrict the zone of vision of drivers approaching the junction and may cause an obstruction to large vehicles wishing to turn.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -381,12 +381,12 @@ export const QUESTIONS = [
       "options": [
         "Yes, for 1\u00a0hour between 23.30\u00a0hrs to 07.00\u00a0hrs.",
         "Yes, for 1\u00a0hour between 07.00\u00a0hrs to 23.30\u00a0hrs.",
-        "Yes, with the property owner?s consent.",
+        "Yes, with the property owner's consent.",
         "Yes, outside business hours."
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You may park across the entrance to a property only with the owners consent. Parking across an entrance may cause inconvenience and danger to persons entering or leaving the property.",
+      "explanation": "Explanation: You may park across the entrance to a property only with the owners consent. Parking across an entrance may cause inconvenience and danger to persons entering or leaving the property.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -399,7 +399,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: It is an offence to park on a footpath. Where a vehicle is parked on a footpath, pedestrians may have to step onto the road to go around the vehicle and so place themselves in danger.",
+      "explanation": "Explanation: It is an offence to park on a footpath. Where a vehicle is parked on a footpath, pedestrians may have to step onto the road to go around the vehicle and so place themselves in danger.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -412,7 +412,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Double parking is never permitted. Parking is never permitted where it might interfere in any way with the normal flow of traffic or obstruct or endanger other road users.",
+      "explanation": "Explanation: Double parking is never permitted. Parking is never permitted where it might interfere in any way with the normal flow of traffic or obstruct or endanger other road users.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -425,7 +425,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Stopping or parking within an area marked as a taxi rank is prohibited as this may obstruct taxis entering or leaving the rank.",
+      "explanation": "Explanation: Stopping or parking within an area marked as a taxi rank is prohibited as this may obstruct taxis entering or leaving the rank.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -438,7 +438,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Parking is never permitted where it might interfere in any way with the normal flow of traffic or obstruct or endanger other road users ? for example, by forcing other drivers into the path of oncoming traffic.",
+      "explanation": "Explanation: Parking is never permitted where it might interfere in any way with the normal flow of traffic or obstruct or endanger other road users ? for example, by forcing other drivers into the path of oncoming traffic.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -451,7 +451,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Parking on the brow of a hill or on a humpbacked bridge is prohibited. Parking in such a place may restrict the zone of vision of drivers approaching the hill and force them into the path of oncoming traffic.",
+      "explanation": "Explanation: Parking on the brow of a hill or on a humpbacked bridge is prohibited. Parking in such a place may restrict the zone of vision of drivers approaching the hill and force them into the path of oncoming traffic.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -464,7 +464,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The purpose of traffic calming measures is to slow down fast-moving traffic to a speed more suitable for the area they are entering. These measures are usually found in rural areas on the entry points to towns or villages.",
+      "explanation": "Explanation: The purpose of traffic calming measures is to slow down fast-moving traffic to a speed more suitable for the area they are entering. These measures are usually found in rural areas on the entry points to towns or villages.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -477,7 +477,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The law requires all motorised vehicles to display a rear number plate that is clean and legible.",
+      "explanation": "Explanation: The law requires all motorised vehicles to display a rear number plate that is clean and legible.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -490,7 +490,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A cycle track is for the use of cyclists and motorised wheelchairs. No other vehicles may cross into or over a mandatory cycle track unless this is necessary in order to leave a side road or a property adjacent to the cycle track.",
+      "explanation": "Explanation: A cycle track is for the use of cyclists and motorised wheelchairs. No other vehicles may cross into or over a mandatory cycle track unless this is necessary in order to leave a side road or a property adjacent to the cycle track.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -503,7 +503,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Drivers may make temporary use of a cycle track with a broken white line on the right hand side if it is not occupied.",
+      "explanation": "Explanation: Drivers may make temporary use of a cycle track with a broken white line on the right hand side if it is not occupied.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -516,7 +516,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You must stop safely when the amber light shows. Flashing red lights have the same meaning as a steady red traffic light - stop safely when they show.",
+      "explanation": "Explanation: You must stop safely when the amber light shows. Flashing red lights have the same meaning as a steady red traffic light - stop safely when they show.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -529,7 +529,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: At a level crossing with unattended gates a driver must stop, look for trains and listen for the sound of a horn or approaching trains. If it is safe, open both gates, complete the crossing and then close both gates.",
+      "explanation": "Explanation: At a level crossing with unattended gates a driver must stop, look for trains and listen for the sound of a horn or approaching trains. If it is safe, open both gates, complete the crossing and then close both gates.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -542,7 +542,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When you meet a flashing amber arrow at a junction, you should proceed in the direction indicated provided it is safe to do so.",
+      "explanation": "Explanation: When you meet a flashing amber arrow at a junction, you should proceed in the direction indicated provided it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -555,7 +555,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Temporary speed limits at road works apply for the duration of the works. When road works are completed, normal speed limits apply.",
+      "explanation": "Explanation: Temporary speed limits at road works apply for the duration of the works. When road works are completed, normal speed limits apply.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -568,7 +568,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should park only where it is safe, legal and convenient to do so. Your parked vehicle must not cause a danger or an obstruction to other road users. The use of hazard warning lights does not excuse unsafe or illegal parking.",
+      "explanation": "Explanation: You should park only where it is safe, legal and convenient to do so. Your parked vehicle must not cause a danger or an obstruction to other road users. The use of hazard warning lights does not excuse unsafe or illegal parking.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -581,11 +581,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A clearway is an area of road that must be kept clear for moving traffic during certain times of the day ( usually busy periods). The times when stopping or parking is prohibited are shown on an information plate under the sign.",
+      "explanation": "Explanation: A clearway is an area of road that must be kept clear for moving traffic during certain times of the day ( usually busy periods). The times when stopping or parking is prohibited are shown on an information plate under the sign.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
-      "question": "What restriction applies to a driver?s full licence if they have passed their test on a vehicle with automatic transmission?",
+      "question": "What restriction applies to a driver's full licence if they have passed their test on a vehicle with automatic transmission?",
       "options": [
         "They may not drive vehicles with manual transmission.",
         "They may not drive on motorways.",
@@ -594,7 +594,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If you pass your driving test in a vehicle fitted with automatic transmission, a code 78 will be noted on the full licence in the restrictions/information column.",
+      "explanation": "Explanation: If you pass your driving test in a vehicle fitted with automatic transmission, a code 78 will be noted on the full licence in the restrictions/information column.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -607,7 +607,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A learner permit holder must not drive on a motorway. It is a serious offence to do so.",
+      "explanation": "Explanation: A learner permit holder must not drive on a motorway. It is a serious offence to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -620,7 +620,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A learner permit holder must not drive on a motorway. It is a serious offence to do so.",
+      "explanation": "Explanation: A learner permit holder must not drive on a motorway. It is a serious offence to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -633,7 +633,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A motor vehicle must be taxed and must display the up-to-date tax disk before it may be taken on the road.",
+      "explanation": "Explanation: A motor vehicle must be taxed and must display the up-to-date tax disk before it may be taken on the road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -646,7 +646,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A motor vehicle must be taxed and must display the up-to-date tax disc before it may be taken on the road.",
+      "explanation": "Explanation: A motor vehicle must be taxed and must display the up-to-date tax disc before it may be taken on the road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -659,7 +659,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A motor vehicle must be taxed and must display its own current tax disc before it may be taken on the road. The tax disc includes information about the vehicle, including its make and model, colour and registration number.",
+      "explanation": "Explanation: A motor vehicle must be taxed and must display its own current tax disc before it may be taken on the road. The tax disc includes information about the vehicle, including its make and model, colour and registration number.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -672,7 +672,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If you are the owner or the driver of a vehicle, you must ensure that it is taxed and that it displays an up-to-date tax disc before you take it on the road.",
+      "explanation": "Explanation: If you are the owner or the driver of a vehicle, you must ensure that it is taxed and that it displays an up-to-date tax disc before you take it on the road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -685,11 +685,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A motor vehicle must be taxed before it may be taken on the road, and it must always display an up-to-date tax disc.",
+      "explanation": "Explanation: A motor vehicle must be taxed before it may be taken on the road, and it must always display an up-to-date tax disc.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
-      "question": "Who is entitled to see a driver?s vehicle registration document?",
+      "question": "Who is entitled to see a driver's vehicle registration document?",
       "options": [
         "Any fire brigade or ambulance personnel at the scene of a collision the driver has been involved in.",
         "A Garda may ask you to produce the vehicles registration document at a named Garda station.",
@@ -698,11 +698,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A Garda may demand to see your driving licence at any time, and you should always carry this with you when driving. A Garda may also examine your insurance disc, tax disc and NCT disc (if applicable). A Garda may ask you to produce other documents (including the vehicles registration document) at a named Garda station within 10\u00a0days.",
+      "explanation": "Explanation: A Garda may demand to see your driving licence at any time, and you should always carry this with you when driving. A Garda may also examine your insurance disc, tax disc and NCT disc (if applicable). A Garda may ask you to produce other documents (including the vehicles registration document) at a named Garda station within 10\u00a0days.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
-      "question": "If a vehicle is being driven by someone who is not the owner but has the owner?s consent, who should ensure that the driver is properly insured?",
+      "question": "If a vehicle is being driven by someone who is not the owner but has the owner's consent, who should ensure that the driver is properly insured?",
       "options": [
         "The insurance company.",
         "The vehicle owner only.",
@@ -711,7 +711,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: All drivers must have insurance covering them to drive a vehicle on a public road. It is a serious offence to drive a vehicle that is not insured. It is also an offence to allow a vehicle that you own to be driven by an uninsured driver.",
+      "explanation": "Explanation: All drivers must have insurance covering them to drive a vehicle on a public road. It is a serious offence to drive a vehicle that is not insured. It is also an offence to allow a vehicle that you own to be driven by an uninsured driver.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -724,7 +724,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: All drivers must have insurance covering them to drive a vehicle on a public road. The vehicle must display an up-to-date insurance disc.",
+      "explanation": "Explanation: All drivers must have insurance covering them to drive a vehicle on a public road. The vehicle must display an up-to-date insurance disc.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -737,7 +737,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If you are in any doubt about your insurance cover, you should discuss the matter with your insurance company. It is a serious offence to drive without insurance.",
+      "explanation": "Explanation: If you are in any doubt about your insurance cover, you should discuss the matter with your insurance company. It is a serious offence to drive without insurance.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -750,7 +750,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If you are in any doubt about your insurance cover, you should discuss the matter with your insurance company. It is a serious offence to drive without insurance.",
+      "explanation": "Explanation: If you are in any doubt about your insurance cover, you should discuss the matter with your insurance company. It is a serious offence to drive without insurance.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -763,7 +763,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: As a motorist, you must have a minimum of third party insurance.",
+      "explanation": "Explanation: As a motorist, you must have a minimum of third party insurance.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -776,7 +776,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you pass your driving test in an automatic or adapted vehicle, your full licence will apply to that type of vehicle only. A licence restricted to automatic vehicles will have a code 78 indicated in the restrictions/information column of the licence.",
+      "explanation": "Explanation: If you pass your driving test in an automatic or adapted vehicle, your full licence will apply to that type of vehicle only. A licence restricted to automatic vehicles will have a code 78 indicated in the restrictions/information column of the licence.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -789,7 +789,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The plate displaying the maximum Authorised Mass (MAM) of a vehicle is normally located under the bonnet or in the passenger compartment. If you are not sure where it is located on your vehicle, check the drivers handbook supplied with the vehicle.",
+      "explanation": "Explanation: The plate displaying the maximum Authorised Mass (MAM) of a vehicle is normally located under the bonnet or in the passenger compartment. If you are not sure where it is located on your vehicle, check the drivers handbook supplied with the vehicle.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -802,7 +802,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The normal sequence of traffic lights is red?green?amber.",
+      "explanation": "Explanation: The normal sequence of traffic lights is red?green?amber.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -815,7 +815,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The normal sequence of traffic lights is red?green?amber.",
+      "explanation": "Explanation: The normal sequence of traffic lights is red?green?amber.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -828,7 +828,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A flashing amber light at a pelican crossing means you must yield to pedestrians. You may proceed, however, if the crossing is clear.",
+      "explanation": "Explanation: A flashing amber light at a pelican crossing means you must yield to pedestrians. You may proceed, however, if the crossing is clear.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -841,7 +841,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: As road users, pedestrians must comply with traffic controls. Drivers should be aware that traffic lights and pedestrian lights can be combined at junctions and should show caution and consideration to pedestrians.",
+      "explanation": "Explanation: As road users, pedestrians must comply with traffic controls. Drivers should be aware that traffic lights and pedestrian lights can be combined at junctions and should show caution and consideration to pedestrians.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -854,7 +854,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A cycle track is for the use of cyclists and motorised wheelchairs only. No other vehicles may cross into or over a mandatory cycle track unless this is necessary in order to leave or enter a side road or a property adjacent to the cycle track.",
+      "explanation": "Explanation: A cycle track is for the use of cyclists and motorised wheelchairs only. No other vehicles may cross into or over a mandatory cycle track unless this is necessary in order to leave or enter a side road or a property adjacent to the cycle track.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -867,7 +867,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A zebra crossing is indicated by amber flashing beacons on poles and black and white stripes on the road. You must stop for pedestrians on the crossing and for those about to cross.",
+      "explanation": "Explanation: A zebra crossing is indicated by amber flashing beacons on poles and black and white stripes on the road. You must stop for pedestrians on the crossing and for those about to cross.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -880,7 +880,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You must comply with any temporary traffic lights used to control vehicle movements at or near road works. It is an offence not to obey these lights.",
+      "explanation": "Explanation: You must comply with any temporary traffic lights used to control vehicle movements at or near road works. It is an offence not to obey these lights.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -893,7 +893,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The holder of a learner permit must display L-plates on the front and rear of their car at all times when driving on public roads.",
+      "explanation": "Explanation: The holder of a learner permit must display L-plates on the front and rear of their car at all times when driving on public roads.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -906,7 +906,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The maximum permitted weight of a vehicle is the sum of the unladen weight of the vehicle plus the maximum load that may be carried in it. It is an offence to overload a vehicle, as it reduces your ability to control it effectively.",
+      "explanation": "Explanation: The maximum permitted weight of a vehicle is the sum of the unladen weight of the vehicle plus the maximum load that may be carried in it. It is an offence to overload a vehicle, as it reduces your ability to control it effectively.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -919,7 +919,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The holder of a Category B driving licence is not permitted to drive a vehicle with a MAM of more than 3,500\u00a0kg. This restriction is noted on the licence.",
+      "explanation": "Explanation: The holder of a Category B driving licence is not permitted to drive a vehicle with a MAM of more than 3,500\u00a0kg. This restriction is noted on the licence.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -932,7 +932,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The holder of a Category B driving licence is not permitted to drive a vehicle that has seating for more than 8 passengers excluding the driver.",
+      "explanation": "Explanation: The holder of a Category B driving licence is not permitted to drive a vehicle that has seating for more than 8 passengers excluding the driver.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -945,7 +945,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The holder of a Category W learner permit may carry a passenger in the vehicle only if: the vehicle is designed to take a passenger, and the passenger has held a full driving licence in Category W for two or more years.",
+      "explanation": "Explanation: The holder of a Category W learner permit may carry a passenger in the vehicle only if: the vehicle is designed to take a passenger, and the passenger has held a full driving licence in Category W for two or more years.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -958,7 +958,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If, in its normal use, a vehicle is used on a public road, it must use unmarked (white) diesel, as the appropriate excise duties are included in the purchase price. Drivers can be prosecuted for using green diesel in a vehicle on a public road.",
+      "explanation": "Explanation: If, in its normal use, a vehicle is used on a public road, it must use unmarked (white) diesel, as the appropriate excise duties are included in the purchase price. Drivers can be prosecuted for using green diesel in a vehicle on a public road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -971,7 +971,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: All vehicles used on a public road must have a rear-view mirror. The mirror should be used to enable the driver to see the traffic and road conditions behind and to each side.",
+      "explanation": "Explanation: All vehicles used on a public road must have a rear-view mirror. The mirror should be used to enable the driver to see the traffic and road conditions behind and to each side.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -984,7 +984,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Although a green traffic light means proceed with caution, you should not enter a junction if the way is not clear or if by doing so you would cause an obstruction to other road users.",
+      "explanation": "Explanation: Although a green traffic light means proceed with caution, you should not enter a junction if the way is not clear or if by doing so you would cause an obstruction to other road users.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -997,7 +997,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_fxMbi.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign appears at junctions where a minor road joins a major road. You must stop your vehicle completely at a STOP sign.",
+      "explanation": "Explanation: This sign appears at junctions where a minor road joins a major road. You must stop your vehicle completely at a STOP sign.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1010,7 +1010,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_6OMto.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When accompanied by a STOP sign, the white stop line indicates the point at which you must stop your vehicle.",
+      "explanation": "Explanation: When accompanied by a STOP sign, the white stop line indicates the point at which you must stop your vehicle.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1023,7 +1023,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_kAG3V.png",
       "correct_answer": 1,
-      "explanation": "Explantion: Where a STOP sign is not accompanied by a white stop line, you must stop at the sign.",
+      "explanation": "Explanation: Where a STOP sign is not accompanied by a white stop line, you must stop at the sign.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1036,7 +1036,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Zei0V.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you that you must proceed straight ahead. This sign is usually displayed on the entry to a one-way street.",
+      "explanation": "Explanation: This sign tells you that you must proceed straight ahead. This sign is usually displayed on the entry to a one-way street.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1049,7 +1049,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_QOMuv.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you that you must turn left. It is usually displayed at a junction where all traffic must turn left ? for example, in a one-way system that incorporates a junction.",
+      "explanation": "Explanation: This sign tells you that you must turn left. It is usually displayed at a junction where all traffic must turn left ? for example, in a one-way system that incorporates a junction.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1062,7 +1062,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_sPbHD.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you that you must turn left ahead. It is usually displayed on the approach to a one-way system.",
+      "explanation": "Explanation: This sign tells you that you must turn left ahead. It is usually displayed on the approach to a one-way system.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1075,7 +1075,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_fMlk8.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign is displayed at a junction where you may not turn right.",
+      "explanation": "Explanation: This sign is displayed at a junction where you may not turn right.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1088,7 +1088,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_c14p8.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you that parking is prohibited in both directions.",
+      "explanation": "Explanation: This sign tells you that parking is prohibited in both directions.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1101,7 +1101,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_8FwMf.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you there is a tram lane on the left. Be aware that there might be pedestrians in the area and crossing the road.",
+      "explanation": "Explanation: This sign tells you there is a tram lane on the left. Be aware that there might be pedestrians in the area and crossing the road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1114,7 +1114,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_IfFxN.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a junction ahead with minor roads on either side. Be aware that vehicles may be emerging from the minor roads.",
+      "explanation": "Explanation: This sign gives advance warning of a junction ahead with minor roads on either side. Be aware that vehicles may be emerging from the minor roads.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1127,7 +1127,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_kdYOn.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning of a staggered junction ahead with roads to the left and right. Be aware that vehicles may be emerging from these roads.",
+      "explanation": "Explanation: This sign gives advance warning of a staggered junction ahead with roads to the left and right. Be aware that vehicles may be emerging from these roads.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1140,7 +1140,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_0KQNH.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning of the end of a dual carriageway. You will soon be entering a 2-way road.",
+      "explanation": "Explanation: This sign gives advance warning of the end of a dual carriageway. You will soon be entering a 2-way road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1153,7 +1153,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_kG2na.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of electric cables overhead. Drivers with a high load should be particularly careful.",
+      "explanation": "Explanation: This sign gives advance warning of electric cables overhead. Drivers with a high load should be particularly careful.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1166,7 +1166,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_IrLnA.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advanced warning of an unguarded level crossing ahead. This is a crossing without gates or barriers and you should cross it with extreme caution.",
+      "explanation": "Explanation: This sign gives advanced warning of an unguarded level crossing ahead. This is a crossing without gates or barriers and you should cross it with extreme caution.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1179,7 +1179,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_jlYhn.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a railway crossing ahead that is protected by gates or lifting barriers. You should be prepared to stop and follow the required procedure.",
+      "explanation": "Explanation: This sign gives advance warning of a railway crossing ahead that is protected by gates or lifting barriers. You should be prepared to stop and follow the required procedure.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1192,7 +1192,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_FS5NA.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning that you must stop when red lights show. This sign may be displayed at a railway level crossing.",
+      "explanation": "Explanation: This sign gives advance warning that you must stop when red lights show. This sign may be displayed at a railway level crossing.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1205,7 +1205,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Zi2Qg.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning of a hump in the road. You should adjust your speed accordingly.",
+      "explanation": "Explanation: This sign gives advance warning of a hump in the road. You should adjust your speed accordingly.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1218,7 +1218,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_DE2nF.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning that there may be horses on the road ahead. You should show due regard for horses and their riders.",
+      "explanation": "Explanation: This sign gives advance warning that there may be horses on the road ahead. You should show due regard for horses and their riders.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1231,7 +1231,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_uJYfQ.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a pedestrian crossing ahead. You should show caution and be prepared to stop.",
+      "explanation": "Explanation: This sign gives advance warning of a pedestrian crossing ahead. You should show caution and be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1244,7 +1244,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MxIHY.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This is a motorway information sign that tells you that the next exit off the motorway is 300\u00a0metres ahead.",
+      "explanation": "Explanation: This is a motorway information sign that tells you that the next exit off the motorway is 300\u00a0metres ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1257,7 +1257,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ZT0jZ.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This is a motorway information sign that tells you that the next exit off the motorway is 200\u00a0metres ahead.",
+      "explanation": "Explanation: This is a motorway information sign that tells you that the next exit off the motorway is 200\u00a0metres ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1270,7 +1270,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_dmGzK.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This is a motorway information sign that tells you that the next exit off the motorway is 100\u00a0metres ahead.",
+      "explanation": "Explanation: This is a motorway information sign that tells you that the next exit off the motorway is 100\u00a0metres ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1283,7 +1283,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_VITYL.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This roadworks warning sign tells you that the surface ahead is uneven and you should approach with caution.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the surface ahead is uneven and you should approach with caution.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1296,7 +1296,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_DdkJr.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This roadworks warning sign tells you that the road ahead has been resurfaced and there may be loose chippings. You should reduce speed while driving through this area as the loose chippings could affect your vehicles road holding and braking.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the road ahead has been resurfaced and there may be loose chippings. You should reduce speed while driving through this area as the loose chippings could affect your vehicles road holding and braking.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1309,7 +1309,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ND6nN.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This roadworks warning sign tells you that there may be traffic queues ahead, possibly due to temporary traffic lights at the works. Proceed with caution.",
+      "explanation": "Explanation: This roadworks warning sign tells you that there may be traffic queues ahead, possibly due to temporary traffic lights at the works. Proceed with caution.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1322,7 +1322,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Qbvht.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This roadworks warning sign tells you that two-way traffic will separate to avoid an obstruction.",
+      "explanation": "Explanation: This roadworks warning sign tells you that two-way traffic will separate to avoid an obstruction.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1335,7 +1335,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_lYIrN.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This hand signal informs other road users that the cyclists intends to proceed straight ahead at a junction and drivers should show caution.",
+      "explanation": "Explanation: This hand signal informs other road users that the cyclists intends to proceed straight ahead at a junction and drivers should show caution.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1348,7 +1348,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ZkMAn.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This hand signal informs other road users that the cyclist intends to make a left?hand turn.",
+      "explanation": "Explanation: This hand signal informs other road users that the cyclist intends to make a left?hand turn.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1361,7 +1361,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_2ozvy.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This hand signal informs other road users that the cyclist intends to turn left.",
+      "explanation": "Explanation: This hand signal informs other road users that the cyclist intends to turn left.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1374,7 +1374,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_iFLbD.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This hand signal informs other road users that the driver intends to turn left and the vehicle will change direction.",
+      "explanation": "Explanation: This hand signal informs other road users that the driver intends to turn left and the vehicle will change direction.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1387,7 +1387,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ummVD.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This hand signal informs other road users that the driver intends to move out or turn right and the vehicle will change direction.",
+      "explanation": "Explanation: This hand signal informs other road users that the driver intends to move out or turn right and the vehicle will change direction.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1400,7 +1400,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_SpBug.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This hand signal informs other road users that the driver intends to slow down or stop and following traffic should be prepared to slow down also.",
+      "explanation": "Explanation: This hand signal informs other road users that the driver intends to slow down or stop and following traffic should be prepared to slow down also.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1413,7 +1413,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_c20b8.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This hand signal informs other road users or a Garda directing traffic (facing this vehicle), that the driver intends to make a left hand turn.",
+      "explanation": "Explanation: This hand signal informs other road users or a Garda directing traffic (facing this vehicle), that the driver intends to make a left hand turn.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1426,7 +1426,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_zSBx4.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This hand signal informs other road users or a Garda directing traffic (facing this vehicle) that the driver intends to turn right.",
+      "explanation": "Explanation: This hand signal informs other road users or a Garda directing traffic (facing this vehicle) that the driver intends to turn right.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1439,7 +1439,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_PTZTH.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When approaching a Garda giving this signal you must stop.",
+      "explanation": "Explanation: When approaching a Garda giving this signal you must stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1452,7 +1452,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_mQfyw.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When approaching a Garda giving this signal you must stop.",
+      "explanation": "Explanation: When approaching a Garda giving this signal you must stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1465,7 +1465,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Cliv4.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When approaching a Garda giving this signal you must stop.",
+      "explanation": "Explanation: When approaching a Garda giving this signal you must stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1478,7 +1478,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_nPGUn.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When approaching a Garda giving this signal you may proceed.",
+      "explanation": "Explanation: When approaching a Garda giving this signal you may proceed.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1491,7 +1491,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_S679v.png",
       "correct_answer": 1,
-      "explanation": "Explantion: When approaching a Garda giving this signal you may proceed.",
+      "explanation": "Explanation: When approaching a Garda giving this signal you may proceed.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1504,7 +1504,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_YIVoz.png",
       "correct_answer": 2,
-      "explanation": "Explantion: A zebra crossing is a designated area for pedestrians to cross the road. As a driver you must always yield to pedestrians on a zebra crossing.",
+      "explanation": "Explanation: A zebra crossing is a designated area for pedestrians to cross the road. As a driver you must always yield to pedestrians on a zebra crossing.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1517,7 +1517,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_PJERf.png",
       "correct_answer": 3,
-      "explanation": "Explantion: A zebra crossing is a designated area for pedestrians to cross the road. As a driver you must always yield to pedestrians on a zebra crossing",
+      "explanation": "Explanation: A zebra crossing is a designated area for pedestrians to cross the road. As a driver you must always yield to pedestrians on a zebra crossing",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1530,7 +1530,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_GPEYd.png",
       "correct_answer": 3,
-      "explanation": "Explantion: White zig zag lines indicate that you are approaching a pedestrian crossing. You must not park or overtake within this area.",
+      "explanation": "Explanation: White zig zag lines indicate that you are approaching a pedestrian crossing. You must not park or overtake within this area.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1543,7 +1543,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_lAZbk.png",
       "correct_answer": 1,
-      "explanation": "Explantion: A single yellow line along the edge of a road means that you must not park there during the times shown on the accompanying information plate.",
+      "explanation": "Explanation: A single yellow line along the edge of a road means that you must not park there during the times shown on the accompanying information plate.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1556,7 +1556,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_pC86x.png",
       "correct_answer": 1,
-      "explanation": "Explantion: A broken white line along the centre of the road means you must not cross the line unless it is safe to do so when overtaking or passing.",
+      "explanation": "Explanation: A broken white line along the centre of the road means you must not cross the line unless it is safe to do so when overtaking or passing.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1569,7 +1569,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_qTod8.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Where there is a broken white line and a continuous white line along the centre of the road, you must obey the line that is nearest to you. In this case you may cross the lines as long as it is safe to do so.",
+      "explanation": "Explanation: Where there is a broken white line and a continuous white line along the centre of the road, you must obey the line that is nearest to you. In this case you may cross the lines as long as it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1582,7 +1582,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_zrO1T.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Where there is a broken white line and a continuous white line along the centre of the road, you must obey the line that is nearest to you. In this case you may not cross the lines.",
+      "explanation": "Explanation: Where there is a broken white line and a continuous white line along the centre of the road, you must obey the line that is nearest to you. In this case you may not cross the lines.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1595,7 +1595,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MDQXs.png",
       "correct_answer": 3,
-      "explanation": "Explantion: A double yellow line along the edge of the road means parking is not allowed at any time.",
+      "explanation": "Explanation: A double yellow line along the edge of the road means parking is not allowed at any time.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1608,7 +1608,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_lrgGu.png",
       "correct_answer": 0,
-      "explanation": "Explantion: A single continuous white line along the centre of the road means all traffic must keep to the left of the line. You are not permitted to overtake or perform a U-turn on this section of road.",
+      "explanation": "Explanation: A single continuous white line along the centre of the road means all traffic must keep to the left of the line. You are not permitted to overtake or perform a U-turn on this section of road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1621,7 +1621,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ReH5e.png",
       "correct_answer": 1,
-      "explanation": "Explantion: A single broken yellow line along the side of the road marks the edge of the carriageway/hard shoulder. This is normally for the use of pedestrians and cyclists. As a driver, however, you may use it briefly to allow faster traffic to overtake, but only where it is safe to do so.",
+      "explanation": "Explanation: A single broken yellow line along the side of the road marks the edge of the carriageway/hard shoulder. This is normally for the use of pedestrians and cyclists. As a driver, however, you may use it briefly to allow faster traffic to overtake, but only where it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1634,7 +1634,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_3YMhV.png",
       "correct_answer": 1,
-      "explanation": "Explantion: When the traffic light is showing amber you must not go beyond the stop line unless you so close to the traffic lights that stopping would be dangerous.",
+      "explanation": "Explanation: When the traffic light is showing amber you must not go beyond the stop line unless you so close to the traffic lights that stopping would be dangerous.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1647,7 +1647,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_HuDPE.png",
       "correct_answer": 0,
-      "explanation": "Explantion: A green arrow (filter light) means that traffic may proceed in the direction of the arrow if it is safe to do so.",
+      "explanation": "Explanation: A green arrow (filter light) means that traffic may proceed in the direction of the arrow if it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1660,7 +1660,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ItOCQ.png",
       "correct_answer": 2,
-      "explanation": "Explantion: A red light means STOP. You must not go beyond the stop line or (if there is no stop line) beyond the light.",
+      "explanation": "Explanation: A red light means STOP. You must not go beyond the stop line or (if there is no stop line) beyond the light.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1673,7 +1673,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_SlcuO.png",
       "correct_answer": 3,
-      "explanation": "Explantion: You may proceed on a green traffic light if it is safe to do so.",
+      "explanation": "Explanation: You may proceed on a green traffic light if it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1686,7 +1686,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_BmdoR.png",
       "correct_answer": 3,
-      "explanation": "Explantion: It is an offence to park within 15\u00a0metres before or 5\u00a0metres after a pedestrian crossing. Parking in this manner may restrict the zone of vision of drivers approaching the crossing and endanger pedestrians.",
+      "explanation": "Explanation: It is an offence to park within 15\u00a0metres before or 5\u00a0metres after a pedestrian crossing. Parking in this manner may restrict the zone of vision of drivers approaching the crossing and endanger pedestrians.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1699,7 +1699,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_SmQrz.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When you are approaching a set of traffic lights showing green, you should take care and be prepared to stop if the amber light comes on.",
+      "explanation": "Explanation: When you are approaching a set of traffic lights showing green, you should take care and be prepared to stop if the amber light comes on.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1712,7 +1712,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_GUHZC.png",
       "correct_answer": 2,
-      "explanation": "Explantion: By law you must stop at an amber traffic light if it is safe to do so.",
+      "explanation": "Explanation: By law you must stop at an amber traffic light if it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1725,7 +1725,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_GYqoQ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: At a junction, the YIELD sign tells you that you must give way to traffic on a major road ahead. This means that you must slow down and be prepared to stop.",
+      "explanation": "Explanation: At a junction, the YIELD sign tells you that you must give way to traffic on a major road ahead. This means that you must slow down and be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1738,7 +1738,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_QbRyY.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a T-junction ahead with a road of equal importance. You must give way to traffic already on the road you are joining.",
+      "explanation": "Explanation: This sign gives advance warning of a T-junction ahead with a road of equal importance. You must give way to traffic already on the road you are joining.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1751,7 +1751,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_nA2WB.png",
       "correct_answer": 1,
-      "explanation": "Explantion: At a roundabout, the YIELD sign tells you that you must slow down and be prepared to stop. You must yield (give way) to traffic already on the roundabout or coming from the right.",
+      "explanation": "Explanation: At a roundabout, the YIELD sign tells you that you must slow down and be prepared to stop. You must yield (give way) to traffic already on the roundabout or coming from the right.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1764,7 +1764,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_3mubU.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you that you must turn right. It is usually displayed at a junction where all traffic must turn right ? for example, in a one-way system that incorporates a junction.",
+      "explanation": "Explanation: This sign tells you that you must turn right. It is usually displayed at a junction where all traffic must turn right ? for example, in a one-way system that incorporates a junction.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1777,7 +1777,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_e4kxv.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you that you must turn right ahead. It is usually displayed on the approach to a one-way system.",
+      "explanation": "Explanation: This sign tells you that you must turn right ahead. It is usually displayed on the approach to a one-way system.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1790,7 +1790,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_pQobZ.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign tells you that you must keep left. It is usually displayed at a traffic island in the centre of the road and also used on occasion to control traffic at roadworks.",
+      "explanation": "Explanation: This sign tells you that you must keep left. It is usually displayed at a traffic island in the centre of the road and also used on occasion to control traffic at roadworks.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1803,7 +1803,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_bZGHf.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you that you must keep right. It is usually found in a one-way system where the traffic is required to keep to the right and also used on occasion to control traffic at roadworks.",
+      "explanation": "Explanation: This sign tells you that you must keep right. It is usually found in a one-way system where the traffic is required to keep to the right and also used on occasion to control traffic at roadworks.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1816,7 +1816,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_851bi.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you that traffic may pass on either side of the traffic island.",
+      "explanation": "Explanation: This sign tells you that traffic may pass on either side of the traffic island.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1829,7 +1829,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Vf5oN.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you that you must not proceed in the direction of the arrow. This is displayed to prevent traffic going in the wrong direction ? for example, the wrong way up a one-way street.",
+      "explanation": "Explanation: This sign tells you that you must not proceed in the direction of the arrow. This is displayed to prevent traffic going in the wrong direction ? for example, the wrong way up a one-way street.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1842,7 +1842,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_CCsk3.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign is displayed at a junction where you may not turn right.",
+      "explanation": "Explanation: This sign is displayed at a junction where you may not turn right.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1855,7 +1855,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_b0YrO.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign is displayed at a junction where you may not turn left.",
+      "explanation": "Explanation: This sign is displayed at a junction where you may not turn left.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1868,7 +1868,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MrkZr.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign tells you that you are not permitted to make a U-turn. It is commonly displayed on approach to junctions on dual carriageways. Drivers should also be aware that U-turns are also not permitted anywhere there is a continuous white line along the centre of the road or on a one-way street.",
+      "explanation": "Explanation: This sign tells you that you are not permitted to make a U-turn. It is commonly displayed on approach to junctions on dual carriageways. Drivers should also be aware that U-turns are also not permitted anywhere there is a continuous white line along the centre of the road or on a one-way street.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1881,7 +1881,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_KS6Ih.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you that the maximum legal speed limit permitted for this section of road is 30\u00a0km/h. These signs are commonly found in slow zones in residential areas.",
+      "explanation": "Explanation: This sign tells you that the maximum legal speed limit permitted for this section of road is 30\u00a0km/h. These signs are commonly found in slow zones in residential areas.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1894,7 +1894,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ZbMEo.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you that the maximum legal speed limit permitted for this section of road is 50\u00a0km/h.",
+      "explanation": "Explanation: This sign tells you that the maximum legal speed limit permitted for this section of road is 50\u00a0km/h.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1907,7 +1907,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_1citr.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you that the maximum legal speed limit permitted for this section of road is 60\u00a0km/h.",
+      "explanation": "Explanation: This sign tells you that the maximum legal speed limit permitted for this section of road is 60\u00a0km/h.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1920,7 +1920,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_sNYhN.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you that the maximum legal speed limit permitted for this section of road is 80\u00a0km/h.",
+      "explanation": "Explanation: This sign tells you that the maximum legal speed limit permitted for this section of road is 80\u00a0km/h.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1933,7 +1933,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_7nDhk.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you that the maximum legal speed limit permitted for this section of road is 100\u00a0km/h.",
+      "explanation": "Explanation: This sign tells you that the maximum legal speed limit permitted for this section of road is 100\u00a0km/h.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1946,7 +1946,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_xM4EU.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign tells you that the maximum legal speed limit permitted for this section of road is 120\u00a0km/h.",
+      "explanation": "Explanation: This sign tells you that the maximum legal speed limit permitted for this section of road is 120\u00a0km/h.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1959,7 +1959,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MVpcZ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: These signs tells you that parking is permitted in both directions, but only at the times shown on the information plate.",
+      "explanation": "Explanation: These signs tells you that parking is permitted in both directions, but only at the times shown on the information plate.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1972,7 +1972,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_IrwbK.png",
       "correct_answer": 1,
-      "explanation": "Explantion: A Clearway sign means that stopping or parking is not permitted in this area during the times shown on the information plate.",
+      "explanation": "Explanation: A Clearway sign means that stopping or parking is not permitted in this area during the times shown on the information plate.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1985,7 +1985,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_C2RsG.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you that vehicles must display a parking disc when parked during the hours shown on the information plate.",
+      "explanation": "Explanation: This sign tells you that vehicles must display a parking disc when parked during the hours shown on the information plate.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -1998,7 +1998,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_y09SC.png",
       "correct_answer": 1,
-      "explanation": "Explantion: A Taxi Rank sign indicates that this is an area reserved for taxis, and parking or stopping by other road users is not permitted.",
+      "explanation": "Explanation: A Taxi Rank sign indicates that this is an area reserved for taxis, and parking or stopping by other road users is not permitted.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2011,7 +2011,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_HUqWm.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign indicates the start of a cycle track. If the track is bounded by a broken white line, other road users should avoid using it wherever possible. If it is bounded by a continuous white line, drivers of cars and other vehicles must not drive on it.",
+      "explanation": "Explanation: This sign indicates the start of a cycle track. If the track is bounded by a broken white line, other road users should avoid using it wherever possible. If it is bounded by a continuous white line, drivers of cars and other vehicles must not drive on it.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2024,7 +2024,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MVY8B.png",
       "correct_answer": 0,
-      "explanation": "Explantion: When posted together these signs tells you that there is a Pedestrianised street ahead and that traffic is not allowed to enter except during the times stated on the information plate.",
+      "explanation": "Explanation: When posted together these signs tells you that there is a Pedestrianised street ahead and that traffic is not allowed to enter except during the times stated on the information plate.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2037,7 +2037,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_QNamA.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you that that you must not enter this area if your vehicle is over 3\u00a0tonnes or 3,000\u00a0kg",
+      "explanation": "Explanation: This sign tells you that that you must not enter this area if your vehicle is over 3\u00a0tonnes or 3,000\u00a0kg",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2050,7 +2050,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_D3OSS.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you that you must not park in this area if your vehicle is over the weight limit indicated.",
+      "explanation": "Explanation: This sign tells you that you must not park in this area if your vehicle is over the weight limit indicated.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2063,7 +2063,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_yQdyl.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you that overtaking is prohibited. These signs are usually found in places where overtaking may be dangerous, such as in areas with reduced visibility.",
+      "explanation": "Explanation: This sign tells you that overtaking is prohibited. These signs are usually found in places where overtaking may be dangerous, such as in areas with reduced visibility.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2076,7 +2076,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_4BkAP.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign tells you there is a with-flow near side bus lane ahead on the left ? that is, one where the buses move in the same direction as the traffic to their right. The information plate tells the times when the bus lane is in operation. Only buses, taxis and cyclists may use the bus lane during those hours.",
+      "explanation": "Explanation: This sign tells you there is a with-flow near side bus lane ahead on the left ? that is, one where the buses move in the same direction as the traffic to their right. The information plate tells the times when the bus lane is in operation. Only buses, taxis and cyclists may use the bus lane during those hours.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2089,7 +2089,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_BGmj0.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign tells you there is a with-flow near side bus lane ahead to the left. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
+      "explanation": "Explanation: This sign tells you there is a with-flow near side bus lane ahead to the left. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2102,7 +2102,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_uFBIl.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign indicates a near side with-flow bus lane on the left. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
+      "explanation": "Explanation: This sign indicates a near side with-flow bus lane on the left. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2115,20 +2115,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_56XCB.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you that there is an off side bus lane ahead on the right. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
+      "explanation": "Explanation: This sign tells you that there is an off side bus lane ahead on the right. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
       "question": "What does this sign mean?",
       "options": [
         "With-flow bus lane on the left.",
-        "Buses may block the driver?s view of cyclists.",
+        "Buses may block the driver's view of cyclists.",
         "With-flow bus lane on the right.",
         "Contra-flow bus lane ahead."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_qWtiU.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign indicates a with-flow off-side bus lane on the right. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
+      "explanation": "Explanation: This sign indicates a with-flow off-side bus lane on the right. Only buses, taxis and cyclists may use the bus lane during the stated operational hours.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2141,7 +2141,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_bn6QX.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you that you must drive on the left and not use the contra-flow bus lane day or night. A contraflow bus lane is one where the buses are going in the opposite direction.",
+      "explanation": "Explanation: This sign tells you that you must drive on the left and not use the contra-flow bus lane day or night. A contraflow bus lane is one where the buses are going in the opposite direction.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2154,7 +2154,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_rFbEL.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign tells you that you must drive on the left and not use the contra-flow bus lane day or night. A contra-flow bus lane is one where the buses are going in the opposite direction.",
+      "explanation": "Explanation: This sign tells you that you must drive on the left and not use the contra-flow bus lane day or night. A contra-flow bus lane is one where the buses are going in the opposite direction.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2167,7 +2167,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Dr4ft.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign tells you there is an off-side tram lane on the right. Drivers should also be aware that there might be pedestrians in the area.",
+      "explanation": "Explanation: This sign tells you there is an off-side tram lane on the right. Drivers should also be aware that there might be pedestrians in the area.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2180,7 +2180,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_yncoq.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advance warning of a Y-junction with a minor road ahead. The wider arm of the Y indicates the course of the main road.",
+      "explanation": "Explanation: This sign gives advance warning of a Y-junction with a minor road ahead. The wider arm of the Y indicates the course of the main road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2193,7 +2193,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_t45cv.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a crossroad junction ahead where the roads are of equal importance. At this type of junction you should yield to traffic approaching from the right and traffic already turning.",
+      "explanation": "Explanation: This sign gives advance warning of a crossroad junction ahead where the roads are of equal importance. At this type of junction you should yield to traffic approaching from the right and traffic already turning.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2206,7 +2206,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_4VihN.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a Y-junction ahead with roads of equal importance. Approach such a junction with caution and be prepared to react to any changes in the traffic situation.",
+      "explanation": "Explanation: This sign gives advance warning of a Y-junction ahead with roads of equal importance. Approach such a junction with caution and be prepared to react to any changes in the traffic situation.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2219,7 +2219,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_mSQmh.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a Y-junction ahead with a road of equal importance. Approach such a junction with caution and be prepared to react to any changes in the traffic situation.",
+      "explanation": "Explanation: This sign gives advance warning of a Y-junction ahead with a road of equal importance. Approach such a junction with caution and be prepared to react to any changes in the traffic situation.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2232,7 +2232,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_IIvmJ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advance warning of a crossroads junction with a major road ahead. Be prepared to stop.",
+      "explanation": "Explanation: This sign gives advance warning of a crossroads junction with a major road ahead. Be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2245,7 +2245,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_2CXS0.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a T-junction ahead with a major road. Be prepared to yield or stop as necessary.",
+      "explanation": "Explanation: This sign gives advance warning of a T-junction ahead with a major road. Be prepared to yield or stop as necessary.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2258,7 +2258,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_wlTjp.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a crossroads junction at a dual carriageway ahead. Drivers need to be observant, taking extra care for traffic coming from each direction. Yield and/or stop as appropriate.",
+      "explanation": "Explanation: This sign gives advance warning of a crossroads junction at a dual carriageway ahead. Drivers need to be observant, taking extra care for traffic coming from each direction. Yield and/or stop as appropriate.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2271,7 +2271,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_x8knf.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a T-junction at a dual carriageway ahead. Drivers need to be observant, taking extra care for traffic coming from each direction. Yield and/or stop as appropriate.",
+      "explanation": "Explanation: This sign gives advance warning of a T-junction at a dual carriageway ahead. Drivers need to be observant, taking extra care for traffic coming from each direction. Yield and/or stop as appropriate.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2284,7 +2284,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ehjR2.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advance warning of traffic merging from the left. You should expect vehicles to join from the left. You may need to slow down, allowing them to merge safely.",
+      "explanation": "Explanation: This sign gives advance warning of traffic merging from the left. You should expect vehicles to join from the left. You may need to slow down, allowing them to merge safely.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2297,7 +2297,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_2qq6t.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning of roads both merging (entering onto the main road) and diverging (exiting the main road). Drivers should be prepared for traffic changing speed and direction as vehicles enter or exit at the junctions on the left ahead.",
+      "explanation": "Explanation: This sign gives advance warning of roads both merging (entering onto the main road) and diverging (exiting the main road). Drivers should be prepared for traffic changing speed and direction as vehicles enter or exit at the junctions on the left ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2310,7 +2310,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Y2jW3.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a roundabout ahead. You must be prepared to yield to vehicles already on the roundabout or coming from the right.",
+      "explanation": "Explanation: This sign gives advance warning of a roundabout ahead. You must be prepared to yield to vehicles already on the roundabout or coming from the right.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2323,7 +2323,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_fvo8m.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a mini-roundabout ahead. You must be prepared to yield to vehicles already on the roundabout or coming from the right.",
+      "explanation": "Explanation: This sign gives advance warning of a mini-roundabout ahead. You must be prepared to yield to vehicles already on the roundabout or coming from the right.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2336,7 +2336,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_oKsQB.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a dangerous corner to the left. You may need to slow down and react to any changes in the traffic situation ahead.",
+      "explanation": "Explanation: This sign gives advance warning of a dangerous corner to the left. You may need to slow down and react to any changes in the traffic situation ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2349,7 +2349,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_VjE4C.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a dangerous bend to the left. You may need to slow down and react to any changes in the traffic situation ahead.",
+      "explanation": "Explanation: This sign gives advance warning of a dangerous bend to the left. You may need to slow down and react to any changes in the traffic situation ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2362,7 +2362,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_LlVtA.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning of a series of dangerous corners ahead. You should slow down and react to any changes in the traffic situation.",
+      "explanation": "Explanation: This sign gives advance warning of a series of dangerous corners ahead. You should slow down and react to any changes in the traffic situation.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2375,7 +2375,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ICHik.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a series of dangerous bends ahead. You should slow down and react to any changes in the traffic situation.",
+      "explanation": "Explanation: This sign gives advance warning of a series of dangerous bends ahead. You should slow down and react to any changes in the traffic situation.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2388,7 +2388,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_AQRua.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a sharp change of direction to the right. You should slow down as you approach the hazard.",
+      "explanation": "Explanation: This sign gives advance warning of a sharp change of direction to the right. You should slow down as you approach the hazard.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2401,7 +2401,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_tyPWr.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning that the road narrows on the left ahead. You should show caution and prepare to adjust your road position.",
+      "explanation": "Explanation: This sign gives advance warning that the road narrows on the left ahead. You should show caution and prepare to adjust your road position.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2414,7 +2414,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_kUdMn.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning that the road is narrowing on both sides ahead. You should show caution and prepare to slow down.",
+      "explanation": "Explanation: This sign gives advance warning that the road is narrowing on both sides ahead. You should show caution and prepare to slow down.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2427,7 +2427,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_XL2iz.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning that the road divides ahead. You should prepare to move to the left.",
+      "explanation": "Explanation: This sign gives advance warning that the road divides ahead. You should prepare to move to the left.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2440,7 +2440,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_o87Gx.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of two-way traffic ahead, with oncoming traffic in the opposite lane.",
+      "explanation": "Explanation: This sign gives advance warning of two-way traffic ahead, with oncoming traffic in the opposite lane.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2453,7 +2453,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_l92cj.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a steep descent/downward slope ahead. You should react accordingly by adjusting speed and selecting the appropriate gear.",
+      "explanation": "Explanation: This sign gives advance warning of a steep descent/downward slope ahead. You should react accordingly by adjusting speed and selecting the appropriate gear.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2466,7 +2466,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_amt40.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign gives advance warning of a steep ascent/upward hill ahead. You should react by selecting the appropriate gear.",
+      "explanation": "Explanation: This sign gives advance warning of a steep ascent/upward hill ahead. You should react by selecting the appropriate gear.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2479,7 +2479,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_XRLh5.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advance warning that you are approaching a low bridge, with restricted headroom as shown on the sign.",
+      "explanation": "Explanation: This sign gives advance warning that you are approaching a low bridge, with restricted headroom as shown on the sign.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2492,7 +2492,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Dk5gi.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a railway level crossing ahead protected by lights and barriers. The crossing may also have an audible warning alarm. You should be prepared to stop.",
+      "explanation": "Explanation: This sign gives advance warning of a railway level crossing ahead protected by lights and barriers. The crossing may also have an audible warning alarm. You should be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2505,7 +2505,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_neLqo.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of an automatic level crossing ahead. Drivers should approach with caution and be prepared to slow down or stop as necessary.",
+      "explanation": "Explanation: This sign gives advance warning of an automatic level crossing ahead. Drivers should approach with caution and be prepared to slow down or stop as necessary.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2518,7 +2518,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_s0Af7.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a dip or depression in the road ahead which may be hidden and could obscure your view of oncoming traffic. You should reduce your speed accordingly and be aware that overtaking is dangerous in these areas.",
+      "explanation": "Explanation: This sign gives advance warning of a dip or depression in the road ahead which may be hidden and could obscure your view of oncoming traffic. You should reduce your speed accordingly and be aware that overtaking is dangerous in these areas.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2531,7 +2531,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_0ZjbZ.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a series of bumps or hollows ahead. Be prepared to reduce your speed as necessary.",
+      "explanation": "Explanation: This sign gives advance warning of a series of bumps or hollows ahead. Be prepared to reduce your speed as necessary.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2544,7 +2544,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_nnx6N.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advance warning of the potential danger of slippery road surfaces ahead.",
+      "explanation": "Explanation: This sign gives advance warning of the potential danger of slippery road surfaces ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2557,7 +2557,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_R6XFF.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of an unprotected area of water ahead. You should be cautious due to the extreme danger.",
+      "explanation": "Explanation: This sign gives advance warning of an unprotected area of water ahead. You should be cautious due to the extreme danger.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2570,20 +2570,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_qfFqO.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a traffic light controlled junction ahead. This sign is generally found in areas where the lights may not be visible to drivers in good time ? for example, following a bend in the road.",
+      "explanation": "Explanation: This sign gives advance warning of a traffic light controlled junction ahead. This sign is generally found in areas where the lights may not be visible to drivers in good time ? for example, following a bend in the road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
       "question": "What does this sign mean?",
       "options": [
-        "Children?s play area ahead.",
+        "Children's play area ahead.",
         "Pedestrian crossing ahead.",
         "School ahead.",
         "Picnic area ahead."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_qpAlj.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning of a school ahead. You should adjust your speed and react accordingly as there may be children in the area.",
+      "explanation": "Explanation: This sign gives advance warning of a school ahead. You should adjust your speed and react accordingly as there may be children in the area.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2596,20 +2596,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_NBohf.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning that there may be school children crossing the road ahead, slow down if required and be prepared to stop.",
+      "explanation": "Explanation: This sign gives advance warning that there may be school children crossing the road ahead, slow down if required and be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
       "question": "What does this sign mean?",
       "options": [
-        "Children?s play area ahead.",
+        "Children's play area ahead.",
         "School playground ahead.",
         "Railway crossing ahead.",
         "School children crossing ahead."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Nkego.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning that there may be school children crossing the road ahead, slow down if required and be prepared to stop.",
+      "explanation": "Explanation: This sign gives advance warning that there may be school children crossing the road ahead, slow down if required and be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2622,7 +2622,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_iyXXN.png",
       "correct_answer": 1,
-      "explanation": "Explantion: These signs are usually displayed in residential areas, and they give advance warning that children might be crossing ahead. You should proceed cautiously and be prepared to stop suddenly.",
+      "explanation": "Explanation: These signs are usually displayed in residential areas, and they give advance warning that children might be crossing ahead. You should proceed cautiously and be prepared to stop suddenly.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2635,7 +2635,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_uEMh2.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning that there may be cattle or other farm animals on the road ahead. Slow down if required and be prepared to stop.",
+      "explanation": "Explanation: This sign gives advance warning that there may be cattle or other farm animals on the road ahead. Slow down if required and be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2648,7 +2648,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_C7qOp.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning that there may be sheep on the road ahead. Slow down if required and be prepared to stop.",
+      "explanation": "Explanation: This sign gives advance warning that there may be sheep on the road ahead. Slow down if required and be prepared to stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2661,7 +2661,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Ph7kw.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning that there may be deer or other wild animals coming onto the roadway. Be prepared to slow down or stop suddenly if required.",
+      "explanation": "Explanation: This sign gives advance warning that there may be deer or other wild animals coming onto the roadway. Be prepared to slow down or stop suddenly if required.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2674,7 +2674,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Vsmy0.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning that there may be crosswinds ahead. Crosswinds can affect the stability of your vehicle on the road. Be prepared to slow down if necessary.",
+      "explanation": "Explanation: This sign gives advance warning that there may be crosswinds ahead. Crosswinds can affect the stability of your vehicle on the road. Be prepared to slow down if necessary.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2687,7 +2687,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_VeMVl.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign gives advance warning of a tunnel ahead. You should be aware of the procedures to follow when entering a tunnel ? which include keeping a safe distance from the vehicle ahead or removing sunglasses.",
+      "explanation": "Explanation: This sign gives advance warning of a tunnel ahead. You should be aware of the procedures to follow when entering a tunnel ? which include keeping a safe distance from the vehicle ahead or removing sunglasses.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2700,7 +2700,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_HtlUe.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advance warning that there is a danger of rocks and other debris falling onto the road. Drive with caution.",
+      "explanation": "Explanation: This sign gives advance warning that there is a danger of rocks and other debris falling onto the road. Drive with caution.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2713,7 +2713,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_uhxHQ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign gives advance warning that there may be low-flying aircraft in the area. Low-flying aircraft can cause distraction due to a sudden loud noise.",
+      "explanation": "Explanation: This sign gives advance warning that there may be low-flying aircraft in the area. Low-flying aircraft can cause distraction due to a sudden loud noise.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2726,7 +2726,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_IpRgP.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign is generally in areas where tourists might be travelling and reminds motorists to drive on the left. These signs are commonly found around airports and ferry ports.",
+      "explanation": "Explanation: This sign is generally in areas where tourists might be travelling and reminds motorists to drive on the left. These signs are commonly found around airports and ferry ports.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2739,7 +2739,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ZibK2.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This sign gives advance warning sign of a tram crossing ahead. You should be prepared to stop and yield to the tram, if required.",
+      "explanation": "Explanation: This sign gives advance warning sign of a tram crossing ahead. You should be prepared to stop and yield to the tram, if required.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2752,7 +2752,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_6jLIz.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This is a motorway information sign informing road users they are now entering the motorway and must obey motorway rules. This sign usually appears beside a motorway ahead sign.",
+      "explanation": "Explanation: This is a motorway information sign informing road users they are now entering the motorway and must obey motorway rules. This sign usually appears beside a motorway ahead sign.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2765,7 +2765,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_6WnuP.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This is a motorway information sign that tells you that the motorway will end in 500\u00a0metres ahead. Motorway rules will no longer apply, for example a lower speed limit may be applicable.",
+      "explanation": "Explanation: This is a motorway information sign that tells you that the motorway will end in 500\u00a0metres ahead. Motorway rules will no longer apply, for example a lower speed limit may be applicable.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2778,7 +2778,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_cehjt.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This sign indicates the end of the motorway. You are leaving the motorway and its rules will no longer apply.",
+      "explanation": "Explanation: This sign indicates the end of the motorway. You are leaving the motorway and its rules will no longer apply.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2791,7 +2791,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_s8iRQ.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This warning sign tells you that there are roadworks ahead. You should approach with caution and be alert for a change in the road surface, and for the presence of machinery and road workers.",
+      "explanation": "Explanation: This warning sign tells you that there are roadworks ahead. You should approach with caution and be alert for a change in the road surface, and for the presence of machinery and road workers.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2804,7 +2804,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_w0iZc.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This roadworks warning sign tells you that the surface ahead is slippery due to mud or debris and there is an increased risk of skidding.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the surface ahead is slippery due to mud or debris and there is an increased risk of skidding.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2817,7 +2817,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_UkNyl.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This warning sign tells you that there are roadworks up ahead where the road narrows from the left creating a potential hazard.",
+      "explanation": "Explanation: This warning sign tells you that there are roadworks up ahead where the road narrows from the left creating a potential hazard.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2830,7 +2830,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_hKKYA.png",
       "correct_answer": 1,
-      "explanation": "Explantion: Where there are roadworks up ahead, this warning sign tells you that the road narrows from the right creating a potential hazard.",
+      "explanation": "Explanation: Where there are roadworks up ahead, this warning sign tells you that the road narrows from the right creating a potential hazard.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2843,7 +2843,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_xNF2x.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This roadworks warning sign tells you that the road narrows on both sides creating a potential hazard. Be prepared to slow down and drive with extra care.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the road narrows on both sides creating a potential hazard. Be prepared to slow down and drive with extra care.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2856,7 +2856,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_1gKSk.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This roadworks warning sign tells you that the traffic flow ahead is controlled manually by a flagman. Be aware and follow directions given by the flagman.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the traffic flow ahead is controlled manually by a flagman. Be aware and follow directions given by the flagman.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2869,7 +2869,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_RQY4i.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This roadworks warning sign tells you that temporary traffic signals are in use ahead. You should prepare to slow down, approach with caution and comply with the signal displayed.",
+      "explanation": "Explanation: This roadworks warning sign tells you that temporary traffic signals are in use ahead. You should prepare to slow down, approach with caution and comply with the signal displayed.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2882,7 +2882,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MNAxK.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This warning sign tells you that during roadworks there will be two-way traffic in operation ahead. Continue to drive with extra care.",
+      "explanation": "Explanation: This warning sign tells you that during roadworks there will be two-way traffic in operation ahead. Continue to drive with extra care.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2895,7 +2895,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_3yPcS.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This roadworks warning sign tells you that that the nearside (left hand) lane is closed ahead. If you are in this lane you will need to move to the offside (right hand) lane when it is safe to do so.",
+      "explanation": "Explanation: This roadworks warning sign tells you that that the nearside (left hand) lane is closed ahead. If you are in this lane you will need to move to the offside (right hand) lane when it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2908,7 +2908,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_pzmxt.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This roadworks warning sign tells you that that the nearside (left hand) lane of three is closed up ahead. If you are in this lane you will need to move to the centre (middle) lane when it is safe to do so.",
+      "explanation": "Explanation: This roadworks warning sign tells you that that the nearside (left hand) lane of three is closed up ahead. If you are in this lane you will need to move to the centre (middle) lane when it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2921,7 +2921,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_JT79P.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This roadworks warning sign tells you that that the offside (right hand) lane of three is closed ahead. Drivers in the nearside or centre lanes should be aware that traffic may merge from the right.",
+      "explanation": "Explanation: This roadworks warning sign tells you that that the offside (right hand) lane of three is closed ahead. Drivers in the nearside or centre lanes should be aware that traffic may merge from the right.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2934,7 +2934,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Vh4MJ.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This traffic control sign tells you that you may proceed with caution through road works.",
+      "explanation": "Explanation: This traffic control sign tells you that you may proceed with caution through road works.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2947,7 +2947,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_LjQuf.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This traffic control sign at roadworks means you must stop.",
+      "explanation": "Explanation: This traffic control sign at roadworks means you must stop.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2960,7 +2960,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_FymIO.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Together these two signs indicate that a detour has ended.",
+      "explanation": "Explanation: Together these two signs indicate that a detour has ended.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2973,7 +2973,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_kmmkI.png",
       "correct_answer": 2,
-      "explanation": "Explantion: This roadworks warning sign tells you that the course of the road will return to the left ahead. This usually appears after a stretch where traffic was diverted to a right-hand lane.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the course of the road will return to the left ahead. This usually appears after a stretch where traffic was diverted to a right-hand lane.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2986,7 +2986,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_3bLy2.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This roadworks warning sign tells you that the course of the road will divert to the right ahead.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the course of the road will divert to the right ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -2999,7 +2999,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_6wXny.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This roadworks warning sign tells you that traffic previously separated by the central reserve or an obstruction will revert to two-way traffic.",
+      "explanation": "Explanation: This roadworks warning sign tells you that traffic previously separated by the central reserve or an obstruction will revert to two-way traffic.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3012,7 +3012,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_7PJ6r.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This hand signal tells other road users that the cyclist intends to either move out or make a right hand turn. Drivers should be aware that cyclists could move out into the path of their vehicle without looking.",
+      "explanation": "Explanation: This hand signal tells other road users that the cyclist intends to either move out or make a right hand turn. Drivers should be aware that cyclists could move out into the path of their vehicle without looking.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3025,7 +3025,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_9CHci.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This hand signal informs other road users that cyclist intends to slow down or stop. This may indicate that the cyclist is aware of some hazard ahead, so drive with extra care.",
+      "explanation": "Explanation: This hand signal informs other road users that cyclist intends to slow down or stop. This may indicate that the cyclist is aware of some hazard ahead, so drive with extra care.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3038,7 +3038,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_2Gw9a.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This hand signal tells other road users that the cyclist intends to either move out or make a right hand turn. Drivers should be aware that cyclists could cross the path of their vehicle.",
+      "explanation": "Explanation: This hand signal tells other road users that the cyclist intends to either move out or make a right hand turn. Drivers should be aware that cyclists could cross the path of their vehicle.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3051,7 +3051,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_X3wb8.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This hand signal informs other road users or a Garda directing traffic that the driver intends to proceed straight ahead.",
+      "explanation": "Explanation: This hand signal informs other road users or a Garda directing traffic that the driver intends to proceed straight ahead.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3064,7 +3064,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_XpQuV.png",
       "correct_answer": 1,
-      "explanation": "Explantion: You must not enter the yellow box junction unless you can clear it without stopping or unless you are turning right and are prevented from doing so by oncoming traffic.",
+      "explanation": "Explanation: You must not enter the yellow box junction unless you can clear it without stopping or unless you are turning right and are prevented from doing so by oncoming traffic.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3077,7 +3077,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_jPKwt.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Where there is a continuous white line in the centre of the road, you are not permitted to: 1. Straddle or cross the white line; 2. Overtake another vehicle; 3. Perform a U-turn; or 4. Park on the road.",
+      "explanation": "Explanation: Where there is a continuous white line in the centre of the road, you are not permitted to: 1. Straddle or cross the white line; 2. Overtake another vehicle; 3. Perform a U-turn; or 4. Park on the road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3090,7 +3090,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_YzzCK.png",
       "correct_answer": 0,
-      "explanation": "Explantion: A single yellow line along the edge of a road means that you must not park there during the times shown on the accompanying information plate",
+      "explanation": "Explanation: A single yellow line along the edge of a road means that you must not park there during the times shown on the accompanying information plate",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3103,7 +3103,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Yu52y.png",
       "correct_answer": 0,
-      "explanation": "Explantion: Double broken white lines along the centre of the road alert you to continuous white lines ahead. Do not cross them unless it is safe to do so.",
+      "explanation": "Explanation: Double broken white lines along the centre of the road alert you to continuous white lines ahead. Do not cross them unless it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3116,7 +3116,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_SRFmp.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This road marking indicates a one-way street. You may not enter this street.",
+      "explanation": "Explanation: This road marking indicates a one-way street. You may not enter this street.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3129,7 +3129,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_N9neK.png",
       "correct_answer": 1,
-      "explanation": "Explantion: A green arrow (filter light) means that traffic may proceed in the direction of the arrow if it is safe to do so",
+      "explanation": "Explanation: A green arrow (filter light) means that traffic may proceed in the direction of the arrow if it is safe to do so",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3142,7 +3142,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_6jroR.png",
       "correct_answer": 2,
-      "explanation": "Explantion: You must never do a U-turn on any stretch of road with a continuous white line along its centre. The restricted vision at such places would make doing a U-turn very unsafe.",
+      "explanation": "Explanation: You must never do a U-turn on any stretch of road with a continuous white line along its centre. The restricted vision at such places would make doing a U-turn very unsafe.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3155,7 +3155,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_YIZ8d.png",
       "correct_answer": 2,
-      "explanation": "Explantion: You must not cross or straddle a continuous white line in the centre of the road unless you wish to enter land or premises and it is safe to do so.",
+      "explanation": "Explanation: You must not cross or straddle a continuous white line in the centre of the road unless you wish to enter land or premises and it is safe to do so.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3168,7 +3168,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_BtfSM.png",
       "correct_answer": 0,
-      "explanation": "Explantion: This sign is used at toll plazas to direct traffic into a lane where the toll charge may be paid directly to a cashier. This lane would normally be used by motorists who have neither the exact change nor an electronic tag on their vehicle.",
+      "explanation": "Explanation: This sign is used at toll plazas to direct traffic into a lane where the toll charge may be paid directly to a cashier. This lane would normally be used by motorists who have neither the exact change nor an electronic tag on their vehicle.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3181,7 +3181,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ccZlL.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign is used at toll plazas to direct traffic into a lane where the toll charge may be paid by putting the exact change into an automatic coin machine. This lane usually has a height barrier fitted to prevent large vehicles using it.",
+      "explanation": "Explanation: This sign is used at toll plazas to direct traffic into a lane where the toll charge may be paid by putting the exact change into an automatic coin machine. This lane usually has a height barrier fitted to prevent large vehicles using it.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3194,7 +3194,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_TRToe.png",
       "correct_answer": 1,
-      "explanation": "Explantion: This sign is used at toll plazas to direct traffic into a lane where the toll charge is collected electronically. When the vehicle passes through the plaza it is identified by means of an electronic tag fitted to the front windscreen. Payment will be collected via the users account. Only vehicles fitted with the tags are allowed to use those lanes.",
+      "explanation": "Explanation: This sign is used at toll plazas to direct traffic into a lane where the toll charge is collected electronically. When the vehicle passes through the plaza it is identified by means of an electronic tag fitted to the front windscreen. Payment will be collected via the users account. Only vehicles fitted with the tags are allowed to use those lanes.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3207,7 +3207,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_eyEUV.png",
       "correct_answer": 3,
-      "explanation": "Explantion: This roadworks warning sign tells you that the road surface may be uneven, possibly due to the resurfacing of part of a lane. Proceed with caution.",
+      "explanation": "Explanation: This roadworks warning sign tells you that the road surface may be uneven, possibly due to the resurfacing of part of a lane. Proceed with caution.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
@@ -3220,11 +3220,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_wu3FV.png",
       "correct_answer": 0,
-      "explanation": "Explantion: A flashing left amber arrow at a junction means you may proceed left but must give way to pedestrians and traffic already coming through the junction on the other road.",
+      "explanation": "Explanation: A flashing left amber arrow at a junction means you may proceed left but must give way to pedestrians and traffic already coming through the junction on the other road.",
       "section": "Legal Matters/Rules of the Road"
     },
     {
-      "question": "How does driving at high speed affect a vehicle?s road holding?",
+      "question": "How does driving at high speed affect a vehicle's road holding?",
       "options": [
         "The road holding ability of the vehicle is increased.",
         "The road holding ability of the vehicle is reduced.",
@@ -3233,20 +3233,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Driving at high speed is a factor that affects road holding. At higher speeds the airflow under a vehicle reduces tyre grip on the road and when you are approaching a bend or corner, the momentum of the vehicle makes it more difficult to change direction.",
+      "explanation": "Explanation: Driving at high speed is a factor that affects road holding. At higher speeds the airflow under a vehicle reduces tyre grip on the road and when you are approaching a bend or corner, the momentum of the vehicle makes it more difficult to change direction.",
       "section": "Managing Risk"
     },
     {
       "question": "Who should first be contacted where a person has been injured in a collision?",
       "options": [
-        "The person?s relatives.",
-        "The injured person?s insurance company.",
-        "The injured person?s solicitor.",
+        "The person's relatives.",
+        "The injured person's insurance company.",
+        "The injured person's solicitor.",
         "The emergency services."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Where somebody has been injured in a collision, it is important to call the emergency services immediately on 999 or 112. Trained emergency services personnel know best how to attend to injured persons.",
+      "explanation": "Explanation: Where somebody has been injured in a collision, it is important to call the emergency services immediately on 999 or 112. Trained emergency services personnel know best how to attend to injured persons.",
       "section": "Managing Risk"
     },
     {
@@ -3259,7 +3259,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If you are working at the rear of a tractor, you should bear in mind that if the power take-off shaft is not covered, loose clothing might get caught in it and lead to injury or death.",
+      "explanation": "Explanation: If you are working at the rear of a tractor, you should bear in mind that if the power take-off shaft is not covered, loose clothing might get caught in it and lead to injury or death.",
       "section": "Managing Risk"
     },
     {
@@ -3272,7 +3272,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When changing a wheel at the side of the road, switch on the vehicle hazard warning lights, and wear reflective or light-coloured clothing. This will help other motorists to react and slow down when passing.",
+      "explanation": "Explanation: When changing a wheel at the side of the road, switch on the vehicle hazard warning lights, and wear reflective or light-coloured clothing. This will help other motorists to react and slow down when passing.",
       "section": "Managing Risk"
     },
     {
@@ -3285,20 +3285,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You should not take a vehicle that you believe to be overloaded onto a public road. Overloading is dangerous, as it affects the stability and braking capabilities of the vehicle.",
+      "explanation": "Explanation: You should not take a vehicle that you believe to be overloaded onto a public road. Overloading is dangerous, as it affects the stability and braking capabilities of the vehicle.",
       "section": "Managing Risk"
     },
     {
       "question": "How could towing an overloaded trailer affect a vehicle?",
       "options": [
-        "It could impair the vehicle?s steering and braking.",
+        "It could impair the vehicle's steering and braking.",
         "It could improve road holding on bends.",
-        "It could improve the vehicle?s fuel consumption.",
+        "It could improve the vehicle's fuel consumption.",
         "It could improve braking ability when going downhill."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should not take an overloaded trailer onto a public road. An overloaded trailer impairs the stability, steering and braking of the towing vehicle.",
+      "explanation": "Explanation: You should not take an overloaded trailer onto a public road. An overloaded trailer impairs the stability, steering and braking of the towing vehicle.",
       "section": "Managing Risk"
     },
     {
@@ -3311,7 +3311,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before unhitching a trailer, apply the handbrake, switch off the ignition and engage a lower gear, so that the towing vehicle does not move while you are unhitching the trailer.",
+      "explanation": "Explanation: Before unhitching a trailer, apply the handbrake, switch off the ignition and engage a lower gear, so that the towing vehicle does not move while you are unhitching the trailer.",
       "section": "Managing Risk"
     },
     {
@@ -3324,7 +3324,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: All road vehicles, except motorcycles and vintage vehicles, must have a minimum tyre tread depth of 1.6\u00a0mm over the main tread. However, for safety reasons, you should replace the vehicles tyres before they become this worn.",
+      "explanation": "Explanation: All road vehicles, except motorcycles and vintage vehicles, must have a minimum tyre tread depth of 1.6\u00a0mm over the main tread. However, for safety reasons, you should replace the vehicles tyres before they become this worn.",
       "section": "Managing Risk"
     },
     {
@@ -3337,7 +3337,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The load index indicates the maximum weight that a tyre can support safely. When replacing a tyre on your vehicle, you should make sure that the new tyre maintains the proper load index for the vehicle.",
+      "explanation": "Explanation: The load index indicates the maximum weight that a tyre can support safely. When replacing a tyre on your vehicle, you should make sure that the new tyre maintains the proper load index for the vehicle.",
       "section": "Managing Risk"
     },
     {
@@ -3350,11 +3350,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver should ensure their headlights are properly aligned so as not to dazzle oncoming drivers and also to see properly themselves.",
+      "explanation": "Explanation: A driver should ensure their headlights are properly aligned so as not to dazzle oncoming drivers and also to see properly themselves.",
       "section": "Managing Risk"
     },
     {
-      "question": "What effect does carrying a load have on a vehicle?s braking ability?",
+      "question": "What effect does carrying a load have on a vehicle's braking ability?",
       "options": [
         "It reduces the distance required to stop.",
         "It increases the efficiency of the brakes.",
@@ -3363,7 +3363,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When driving a vehicle which is carrying a load, the driver should be aware that the forces acting on the vehicle will increase the distance required to stop. The driver should allow for this by increasing the distance from the vehicle in front.",
+      "explanation": "Explanation: When driving a vehicle which is carrying a load, the driver should be aware that the forces acting on the vehicle will increase the distance required to stop. The driver should allow for this by increasing the distance from the vehicle in front.",
       "section": "Managing Risk"
     },
     {
@@ -3376,7 +3376,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If you are towing a loaded trailer, you need to be aware that your braking distance could be considerably greater, depending on the weight and size of the trailer. The driver should allow for this by increasing the distance from the vehicle in front.",
+      "explanation": "Explanation: If you are towing a loaded trailer, you need to be aware that your braking distance could be considerably greater, depending on the weight and size of the trailer. The driver should allow for this by increasing the distance from the vehicle in front.",
       "section": "Managing Risk"
     },
     {
@@ -3385,11 +3385,11 @@ export const QUESTIONS = [
         "The driver should increase the rear tyre pressure in order to cope with sustained high speed.",
         "The driver should increase the front tyre pressure in order to cope with sustained high speed.",
         "The driver should reduce tyre pressure because high speeds will cause them to heat up.",
-        "The driver should ensure that tyre pressure is correct, in line with the manufacturer?s recommendations."
+        "The driver should ensure that tyre pressure is correct, in line with the manufacturer's recommendations."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The driver should ensure that the tyre pressure of their vehicle is correct at all times. Correct tyre pressure is especially important when travelling long distances, on motorways and at speed.",
+      "explanation": "Explanation: The driver should ensure that the tyre pressure of their vehicle is correct at all times. Correct tyre pressure is especially important when travelling long distances, on motorways and at speed.",
       "section": "Managing Risk"
     },
     {
@@ -3402,7 +3402,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: In a collision where nobody is injured and there is only minor damage to vehicles, the vehicles should be moved to the side of the road to ensure that they do not cause an obstruction or endanger other road users.",
+      "explanation": "Explanation: In a collision where nobody is injured and there is only minor damage to vehicles, the vehicles should be moved to the side of the road to ensure that they do not cause an obstruction or endanger other road users.",
       "section": "Managing Risk"
     },
     {
@@ -3415,7 +3415,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If the incident causes damage to property only and there is a Garda present, it must be reported to the Garda. If there is no Garda present, the owner or the person in charge of the property must be informed. If neither are present then the relevant information must be provided at a Garda Station as soon as possible.",
+      "explanation": "Explanation: If the incident causes damage to property only and there is a Garda present, it must be reported to the Garda. If there is no Garda present, the owner or the person in charge of the property must be informed. If neither are present then the relevant information must be provided at a Garda Station as soon as possible.",
       "section": "Managing Risk"
     },
     {
@@ -3428,7 +3428,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Never move an injured person at the scene of a collision unless there is a risk of fire or further injury. Moving an injured person could add to their injuries. Trained personnel know best how to attend to injured persons. Call the emergency services (on 999 or 112) or make sure that someone else has called them.",
+      "explanation": "Explanation: Never move an injured person at the scene of a collision unless there is a risk of fire or further injury. Moving an injured person could add to their injuries. Trained personnel know best how to attend to injured persons. Call the emergency services (on 999 or 112) or make sure that someone else has called them.",
       "section": "Managing Risk"
     },
     {
@@ -3441,20 +3441,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A person who has been injured in a collision should not be given anything to drink, as this could cause them to choke. Ideally trained personnel should be consulted before attending to an injured person. Call the emergency services (on 999 or 112) or make sure that someone else has called them.",
+      "explanation": "Explanation: A person who has been injured in a collision should not be given anything to drink, as this could cause them to choke. Ideally trained personnel should be consulted before attending to an injured person. Call the emergency services (on 999 or 112) or make sure that someone else has called them.",
       "section": "Managing Risk"
     },
     {
       "question": "What should a driver do to assist a person who is unconscious following a collision?",
       "options": [
-        "Raise the person?s head and hold it in that position.",
+        "Raise the person's head and hold it in that position.",
         "Try to keep the person warm with a blanket or overcoat.",
         "Try and get the person to drink something warm.",
         "Move the person to the nearest hospital immediately."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If a person is unconscious following a collision, a driver should try to keep them warm with a blanket or overcoat until the emergency services arrive. Call the emergency services (on 999 or 112) or make sure that someone else has called them.",
+      "explanation": "Explanation: If a person is unconscious following a collision, a driver should try to keep them warm with a blanket or overcoat until the emergency services arrive. Call the emergency services (on 999 or 112) or make sure that someone else has called them.",
       "section": "Managing Risk"
     },
     {
@@ -3462,12 +3462,12 @@ export const QUESTIONS = [
       "options": [
         "The Irish Insurance Federation.",
         "The National Driver Licence Service (NDLS)",
-        "The driver?s insurance company and the Garda\u00ed.",
+        "The driver's insurance company and the Garda\u00ed.",
         "The local Motor Taxation Office."
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you are involved in a serious collision, you should always report it to the Garda\u00ed and to your insurance company.",
+      "explanation": "Explanation: If you are involved in a serious collision, you should always report it to the Garda\u00ed and to your insurance company.",
       "section": "Managing Risk"
     },
     {
@@ -3480,7 +3480,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a you are involved in a collision with another vehicle where nobody is injured, you should exchange all the relevant details with the other driver ? including name, address, vehicle registration, make and model and all insurance details.",
+      "explanation": "Explanation: If a you are involved in a collision with another vehicle where nobody is injured, you should exchange all the relevant details with the other driver ? including name, address, vehicle registration, make and model and all insurance details.",
       "section": "Managing Risk"
     },
     {
@@ -3493,33 +3493,33 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If a driver arrives at the scene of a collision involving a vehicle carrying hazardous materials, they should keep well clear of the scene. Call the emergency services on 999 or 112 and give them as much information as you can about the marking labels on the vehicle. You should also warn other road users about the danger. Allow the emergency services to do any rescuing.",
+      "explanation": "Explanation: If a driver arrives at the scene of a collision involving a vehicle carrying hazardous materials, they should keep well clear of the scene. Call the emergency services on 999 or 112 and give them as much information as you can about the marking labels on the vehicle. You should also warn other road users about the danger. Allow the emergency services to do any rescuing.",
       "section": "Managing Risk"
     },
     {
-      "question": "How does the driver know the vehicle?s total load-carrying capacity?",
+      "question": "How does the driver know the vehicle's total load-carrying capacity?",
       "options": [
         "By checking the horse power of the engine.",
         "By measuring the size of the boot.",
-        "By referring to the vehicle manufacturer?s specification.",
+        "By referring to the vehicle manufacturer's specification.",
         "By counting the number of seats."
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Design Gross Vehicle Weight is the term used by manufacturers for the weight of the vehicle together with the maximum load it is designed to carry. Drivers must understand the carrying capacity of their vehicle. Overloading your vehicle will make it more difficult to control, and its an offence.",
+      "explanation": "Explanation: Design Gross Vehicle Weight is the term used by manufacturers for the weight of the vehicle together with the maximum load it is designed to carry. Drivers must understand the carrying capacity of their vehicle. Overloading your vehicle will make it more difficult to control, and its an offence.",
       "section": "Managing Risk"
     },
     {
       "question": "What determines the maximum allowed towing capacity of a vehicle?",
       "options": [
-        "The manufacturer?s specifications.",
+        "The manufacturer's specifications.",
         "The strength of the tow bar.",
         "The size of the tyres on the vehicle.",
         "The combined weight of the vehicle and its trailer."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The maximum weight that your vehicle can safely tow is specified by the manufacturer, and is usually set out in the drivers handbook for the vehicle, and in some cases on a plate attached to the vehicle. This is the safe towing limit for the vehicle and you should not exceed it.",
+      "explanation": "Explanation: The maximum weight that your vehicle can safely tow is specified by the manufacturer, and is usually set out in the drivers handbook for the vehicle, and in some cases on a plate attached to the vehicle. This is the safe towing limit for the vehicle and you should not exceed it.",
       "section": "Managing Risk"
     },
     {
@@ -3532,20 +3532,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Overloading your vehicle will make it more difficult to control. Remember: its an offence to overload a vehicle.",
+      "explanation": "Explanation: Overloading your vehicle will make it more difficult to control. Remember: its an offence to overload a vehicle.",
       "section": "Managing Risk"
     },
     {
       "question": "What would be the effect of overloading a vehicle with passengers or goods?",
       "options": [
         "It would not have any effect provided speed is reduced.",
-        "It would reduce the driver?s ability to control the vehicle.",
-        "It would improve the vehicle?s road-holding ability.",
+        "It would reduce the driver's ability to control the vehicle.",
+        "It would improve the vehicle's road-holding ability.",
         "Overloading will not reduce the ability to control the vehicle."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Overloading your vehicle will make it more difficult to control, and will increase the risk of a collision.",
+      "explanation": "Explanation: Overloading your vehicle will make it more difficult to control, and will increase the risk of a collision.",
       "section": "Managing Risk"
     },
     {
@@ -3558,7 +3558,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When loading a vehicle you should ensure that the load is distributed evenly. An unevenly distributed load may change the vehicles centre of gravity and this could affect the braking and steering.",
+      "explanation": "Explanation: When loading a vehicle you should ensure that the load is distributed evenly. An unevenly distributed load may change the vehicles centre of gravity and this could affect the braking and steering.",
       "section": "Managing Risk"
     },
     {
@@ -3571,11 +3571,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver should ensure their headlights are properly aligned so as not to dazzle oncoming drivers and also to see properly themselves.",
+      "explanation": "Explanation: A driver should ensure their headlights are properly aligned so as not to dazzle oncoming drivers and also to see properly themselves.",
       "section": "Managing Risk"
     },
     {
-      "question": "In general, how frequently should a vehicle?s lights be checked?",
+      "question": "In general, how frequently should a vehicle's lights be checked?",
       "options": [
         "At major service intervals.",
         "Daily before driving.",
@@ -3584,7 +3584,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver is responsible for their vehicles roadworthiness and they should check it daily before driving. Among the checks they should make are that all the lights are clean and in working order.",
+      "explanation": "Explanation: A driver is responsible for their vehicles roadworthiness and they should check it daily before driving. Among the checks they should make are that all the lights are clean and in working order.",
       "section": "Managing Risk"
     },
     {
@@ -3597,7 +3597,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver is responsible for their vehicles roadworthiness and they should check it at regular intervals. Among the checks they should make are that all the lights are in working order. If they find defects in the lights, such as a broken lens, they should have them repaired or replaced as soon as possible.",
+      "explanation": "Explanation: A driver is responsible for their vehicles roadworthiness and they should check it at regular intervals. Among the checks they should make are that all the lights are in working order. If they find defects in the lights, such as a broken lens, they should have them repaired or replaced as soon as possible.",
       "section": "Managing Risk"
     },
     {
@@ -3610,7 +3610,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A driver is responsible for their vehicles roadworthiness and they should check it at regular intervals. Drivers must not drive on the road unless their vehicles headlights are in good working order, adjusted properly and clean.",
+      "explanation": "Explanation: A driver is responsible for their vehicles roadworthiness and they should check it at regular intervals. Drivers must not drive on the road unless their vehicles headlights are in good working order, adjusted properly and clean.",
       "section": "Managing Risk"
     },
     {
@@ -3623,7 +3623,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: In order for a driver to know that the rear brake lights are working correctly, they should stand at the rear of the vehicle and check that the brake lights come on while another person presses the brakes.",
+      "explanation": "Explanation: In order for a driver to know that the rear brake lights are working correctly, they should stand at the rear of the vehicle and check that the brake lights come on while another person presses the brakes.",
       "section": "Managing Risk"
     },
     {
@@ -3636,7 +3636,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A driver must always ensure that their vehicles brake-lights are clean and working correctly before driving on a public road. Never drive a vehicle when the brake lights are not working properly.",
+      "explanation": "Explanation: A driver must always ensure that their vehicles brake-lights are clean and working correctly before driving on a public road. Never drive a vehicle when the brake lights are not working properly.",
       "section": "Managing Risk"
     },
     {
@@ -3649,7 +3649,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If a system warning light lights up while you are driving, you should stop in a safe place as soon as possible and investigate the problem before deciding what action to take. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
+      "explanation": "Explanation: If a system warning light lights up while you are driving, you should stop in a safe place as soon as possible and investigate the problem before deciding what action to take. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
       "section": "Managing Risk"
     },
     {
@@ -3662,7 +3662,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If a red system warning light comes on while you are driving, you should stop in a safe place as soon as possible and investigate the problem before deciding what action to take. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
+      "explanation": "Explanation: If a red system warning light comes on while you are driving, you should stop in a safe place as soon as possible and investigate the problem before deciding what action to take. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
       "section": "Managing Risk"
     },
     {
@@ -3670,12 +3670,12 @@ export const QUESTIONS = [
       "options": [
         "They reflect light at night to make other road users aware of the vehicle.",
         "They warn the driver behind to switch to main beam.",
-        "They warn pedestrians of the vehicle?s location.",
+        "They warn pedestrians of the vehicle's location.",
         "They are a substitute in case of brake-light failure."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Motor vehicles are fitted with red reflectors to make it easier to be seen by other road users. Drivers should keep reflectors clean, intact and check them by shining a light on them to make sure that they are working effectively. Whilst driving, drivers should be cautious as red reflectors may be an indication of both parked/stationery or moving vehicles ahead.",
+      "explanation": "Explanation: Motor vehicles are fitted with red reflectors to make it easier to be seen by other road users. Drivers should keep reflectors clean, intact and check them by shining a light on them to make sure that they are working effectively. Whilst driving, drivers should be cautious as red reflectors may be an indication of both parked/stationery or moving vehicles ahead.",
       "section": "Managing Risk"
     },
     {
@@ -3688,7 +3688,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If the driver notices that the vehicle seems underpowered when driving, this could present a number of problems, e.g. lack of power when overtaking. The driver should have it checked by a competent person as soon as possible as there may be a number of causes, some of which may deteriorate further.",
+      "explanation": "Explanation: If the driver notices that the vehicle seems underpowered when driving, this could present a number of problems, e.g. lack of power when overtaking. The driver should have it checked by a competent person as soon as possible as there may be a number of causes, some of which may deteriorate further.",
       "section": "Managing Risk"
     },
     {
@@ -3701,7 +3701,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A strong smell of fuel is usually an indication that something is wrong, and drivers should stop and investigate as soon as possible. Leaking or spilling petrol can be dangerous because it is so combustible, and leaking diesel fuel can make the road very slippery.",
+      "explanation": "Explanation: A strong smell of fuel is usually an indication that something is wrong, and drivers should stop and investigate as soon as possible. Leaking or spilling petrol can be dangerous because it is so combustible, and leaking diesel fuel can make the road very slippery.",
       "section": "Managing Risk"
     },
     {
@@ -3714,7 +3714,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Many vehicles are fitted with various warning lights and gauges. A warning light or a red zone on a temperature gauge means the engine is starting to overheat and the vehicle should not be driven until the problem is rectified. Refer to the vehicle handbook for further information and guidance or seek advice from a competent person.",
+      "explanation": "Explanation: Many vehicles are fitted with various warning lights and gauges. A warning light or a red zone on a temperature gauge means the engine is starting to overheat and the vehicle should not be driven until the problem is rectified. Refer to the vehicle handbook for further information and guidance or seek advice from a competent person.",
       "section": "Managing Risk"
     },
     {
@@ -3727,11 +3727,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a driver notices steam rising from the engine compartment of their vehicle, they should stop where safe and only investigate the cause once it has cooled down. Do not remove a radiator or header tank cap when the engine is hot. Steam rising from the engine is an indication that the engine is overheating and it should not continue to be driven. Refer to the vehicle handbook for further information and guidance or seek advice from a competent person.",
+      "explanation": "Explanation: If a driver notices steam rising from the engine compartment of their vehicle, they should stop where safe and only investigate the cause once it has cooled down. Do not remove a radiator or header tank cap when the engine is hot. Steam rising from the engine is an indication that the engine is overheating and it should not continue to be driven. Refer to the vehicle handbook for further information and guidance or seek advice from a competent person.",
       "section": "Managing Risk"
     },
     {
-      "question": "If a driver notices that structural parts of their vehicle?s body have been affected by rust, what should they do?",
+      "question": "If a driver notices that structural parts of their vehicle's body have been affected by rust, what should they do?",
       "options": [
         "Treat the area with grease and paint over it.",
         "Have paint sprayed over it of the same colour.",
@@ -3740,7 +3740,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Over time vehicles may become affected by rust to various degrees. Drivers should inspect their vehicles periodically and if they find signs of rust they should have it assessed and repaired if necessary to prevent further deterioration. A weakened vehicle structure may have serious consequences in the event of a collision.",
+      "explanation": "Explanation: Over time vehicles may become affected by rust to various degrees. Drivers should inspect their vehicles periodically and if they find signs of rust they should have it assessed and repaired if necessary to prevent further deterioration. A weakened vehicle structure may have serious consequences in the event of a collision.",
       "section": "Managing Risk"
     },
     {
@@ -3753,7 +3753,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: After changing a wheel on a vehicle it is recommended to check the wheel nuts after a short period of driving to ensure they are still properly secured.",
+      "explanation": "Explanation: After changing a wheel on a vehicle it is recommended to check the wheel nuts after a short period of driving to ensure they are still properly secured.",
       "section": "Managing Risk"
     },
     {
@@ -3766,7 +3766,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Drivers have a legal responsibility to make sure that their vehicle is roadworthy. To do this, they should carry out regular, weekly and periodic checks, including a weekly tyre pressure check. Incorrectly inflated tyres may cause vehicle instability, uneven tyre wear and longer stopping distances.",
+      "explanation": "Explanation: Drivers have a legal responsibility to make sure that their vehicle is roadworthy. To do this, they should carry out regular, weekly and periodic checks, including a weekly tyre pressure check. Incorrectly inflated tyres may cause vehicle instability, uneven tyre wear and longer stopping distances.",
       "section": "Managing Risk"
     },
     {
@@ -3779,7 +3779,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The vehicle manufacturer specifies the pressure to which tyres on a vehicle should be inflated. This is the pressure that gives the best performance in road holding, efficient braking and fuel consumption. Some manufacturers specify different pressures for front and rear tyres.",
+      "explanation": "Explanation: The vehicle manufacturer specifies the pressure to which tyres on a vehicle should be inflated. This is the pressure that gives the best performance in road holding, efficient braking and fuel consumption. Some manufacturers specify different pressures for front and rear tyres.",
       "section": "Managing Risk"
     },
     {
@@ -3792,7 +3792,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a vehicle has a worn suspension it may lead to uneven or excessive tyre wear. If drivers notice that their tyres are unevenly worn, they should investigate the reason and have it repaired by a competent person.",
+      "explanation": "Explanation: If a vehicle has a worn suspension it may lead to uneven or excessive tyre wear. If drivers notice that their tyres are unevenly worn, they should investigate the reason and have it repaired by a competent person.",
       "section": "Managing Risk"
     },
     {
@@ -3805,7 +3805,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Incorrect tyre pressure adversely affects many of a vehicles systems, including brakes, suspension and steering. In particular, under-inflated tyres can increase the vehicles fuel consumption. Check tyre pressures regularly and ensure they are inflated as per manufacturer?s recommendations.",
+      "explanation": "Explanation: Incorrect tyre pressure adversely affects many of a vehicles systems, including brakes, suspension and steering. In particular, under-inflated tyres can increase the vehicles fuel consumption. Check tyre pressures regularly and ensure they are inflated as per manufacturer's recommendations.",
       "section": "Managing Risk"
     },
     {
@@ -3818,7 +3818,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Drivers should check the tyre pressure in their vehicle at least once a week and before commencing a long journey. For accuracy, do this when the tyres are cold and using a reliable gauge. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
+      "explanation": "Explanation: Drivers should check the tyre pressure in their vehicle at least once a week and before commencing a long journey. For accuracy, do this when the tyres are cold and using a reliable gauge. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
       "section": "Managing Risk"
     },
     {
@@ -3831,7 +3831,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The tyres are the vehicles only contact with the road, the area of contact is small and, if worn, will not grip properly and safely. The quality of the tyres on a vehicle is an important factor in the vehicles road holding and braking ability. Drivers should check their tyres regularly and if they notice that a tyre is badly worn, they should replace it immediately. Whilst the minimum legal tread depth for tyres on most vehicles is 1.6\u00a0mm (1\u00a0mm for motorcycles), drivers should replace a tyre before it becomes this worn.",
+      "explanation": "Explanation: The tyres are the vehicles only contact with the road, the area of contact is small and, if worn, will not grip properly and safely. The quality of the tyres on a vehicle is an important factor in the vehicles road holding and braking ability. Drivers should check their tyres regularly and if they notice that a tyre is badly worn, they should replace it immediately. Whilst the minimum legal tread depth for tyres on most vehicles is 1.6\u00a0mm (1\u00a0mm for motorcycles), drivers should replace a tyre before it becomes this worn.",
       "section": "Managing Risk"
     },
     {
@@ -3844,7 +3844,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If a driver notices the inside edge of the tyre is worn, this may indicate a problem with the steering alignment. This is a potentially dangerous problem, and should be fixed by a competent person as soon as possible. Failure to do so may result in a blow-out and loss of control of the vehicle.",
+      "explanation": "Explanation: If a driver notices the inside edge of the tyre is worn, this may indicate a problem with the steering alignment. This is a potentially dangerous problem, and should be fixed by a competent person as soon as possible. Failure to do so may result in a blow-out and loss of control of the vehicle.",
       "section": "Managing Risk"
     },
     {
@@ -3857,7 +3857,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: It is important to check the tyre pressure before starting a long journey as incorrect air pressure can adversely affect many of the vehicles systems, including brakes, steering, suspension and fuel consumption. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
+      "explanation": "Explanation: It is important to check the tyre pressure before starting a long journey as incorrect air pressure can adversely affect many of the vehicles systems, including brakes, steering, suspension and fuel consumption. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
       "section": "Managing Risk"
     },
     {
@@ -3870,7 +3870,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before starting a journey with extra passengers or loads, drivers should check the air pressure and when they inflate the tyres, they should increase the vehicles tyre pressures in accordance with the vehicle manufacturers recommended tyre pressure. This information can be found in the vehicle manufacturers handbook.",
+      "explanation": "Explanation: Before starting a journey with extra passengers or loads, drivers should check the air pressure and when they inflate the tyres, they should increase the vehicles tyre pressures in accordance with the vehicle manufacturers recommended tyre pressure. This information can be found in the vehicle manufacturers handbook.",
       "section": "Managing Risk"
     },
     {
@@ -3883,7 +3883,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If a driver has to change a front nearside (left-hand side) wheel, make sure to do it in a safe place on level ground. Take care, wear high visibility vest/jacket, use a warning triangle and hazard warning lights as appropriate. The vehicle should be secured by applying the parking brake (hand brake), switching off the engine, engaging a low gear and using a wheel chock if necessary. If unfamiliar with how to change a wheel seek assistance from a competent person.",
+      "explanation": "Explanation: If a driver has to change a front nearside (left-hand side) wheel, make sure to do it in a safe place on level ground. Take care, wear high visibility vest/jacket, use a warning triangle and hazard warning lights as appropriate. The vehicle should be secured by applying the parking brake (hand brake), switching off the engine, engaging a low gear and using a wheel chock if necessary. If unfamiliar with how to change a wheel seek assistance from a competent person.",
       "section": "Managing Risk"
     },
     {
@@ -3896,7 +3896,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Heavy steering is when a driver needs to use more effort than usual to turn the steering wheel, this may be as a direct result of under-inflated tyres. Check your tyre pressures but be aware there may be other causes of heavy steering such as low power steering fluid level. Seek advice from a competent person and have this investigated immediately.",
+      "explanation": "Explanation: Heavy steering is when a driver needs to use more effort than usual to turn the steering wheel, this may be as a direct result of under-inflated tyres. Check your tyre pressures but be aware there may be other causes of heavy steering such as low power steering fluid level. Seek advice from a competent person and have this investigated immediately.",
       "section": "Managing Risk"
     },
     {
@@ -3909,7 +3909,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers are responsible for their vehicles roadworthiness and should check them at regular intervals. Among the checks they should make are that all the seatbelts (drivers and passengers) are clean, untangled and in good working order.",
+      "explanation": "Explanation: Drivers are responsible for their vehicles roadworthiness and should check them at regular intervals. Among the checks they should make are that all the seatbelts (drivers and passengers) are clean, untangled and in good working order.",
       "section": "Managing Risk"
     },
     {
@@ -3917,16 +3917,16 @@ export const QUESTIONS = [
       "options": [
         "Ensure that only adult passengers are seated in the caravan.",
         "Ensure all passengers are securely seated in the caravan.",
-        "Have an extended mirror fitted to the driver?s side of the vehicle only.",
+        "Have an extended mirror fitted to the driver's side of the vehicle only.",
         "Have extended mirrors fitted to the towing vehicle."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a driver intends towing a caravan, they should fit extended mirrors to both sides of the towing vehicle. This will allow the driver to better observe the traffic situation behind and to the sides.",
+      "explanation": "Explanation: If a driver intends towing a caravan, they should fit extended mirrors to both sides of the towing vehicle. This will allow the driver to better observe the traffic situation behind and to the sides.",
       "section": "Managing Risk"
     },
     {
-      "question": "What should a driver do if condensation is affecting the vehicle?s windows?",
+      "question": "What should a driver do if condensation is affecting the vehicle's windows?",
       "options": [
         "Make sure that all demister vents and windows are closed.",
         "Drive for a few kilometres with a window open.",
@@ -3935,7 +3935,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Make sure the windows are clear and clean at all times so that the driver can see the road and traffic conditions all around. Condensation on the window can seriously impair your ability to make proper observations. Drivers should familiarise themselves with how to correctly set the vehicle?s ventilation system in order to keep the windows clear.",
+      "explanation": "Explanation: Make sure the windows are clear and clean at all times so that the driver can see the road and traffic conditions all around. Condensation on the window can seriously impair your ability to make proper observations. Drivers should familiarise themselves with how to correctly set the vehicle's ventilation system in order to keep the windows clear.",
       "section": "Managing Risk"
     },
     {
@@ -3948,7 +3948,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: It is essential that all vehicle windows are clear and clean at all times so that drivers can see road and traffic conditions all around. Dirty windows are a particular hazard when the sun is low in the sky. Dirty windows also decrease visibility during hours of twilight and darkness.",
+      "explanation": "Explanation: It is essential that all vehicle windows are clear and clean at all times so that drivers can see road and traffic conditions all around. Dirty windows are a particular hazard when the sun is low in the sky. Dirty windows also decrease visibility during hours of twilight and darkness.",
       "section": "Managing Risk"
     },
     {
@@ -3961,7 +3961,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Vehicles (except motorcycles) are required by law to have right and left headlights. Faulty lights should be repaired immediately. A vehicle with only one headlight can cause a hazard to other road users or be mistaken for a motorcycle.",
+      "explanation": "Explanation: Vehicles (except motorcycles) are required by law to have right and left headlights. Faulty lights should be repaired immediately. A vehicle with only one headlight can cause a hazard to other road users or be mistaken for a motorcycle.",
       "section": "Managing Risk"
     },
     {
@@ -3974,20 +3974,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: In general all cars, tractors and works vehicles are required by law to have headlights, front and rear side lights, rear number plate light, rear reflectors, brake lights and indicators. There are some exceptions to this, such as Electric cars with a maximum speed of 38\u00a0km/h.",
+      "explanation": "Explanation: In general all cars, tractors and works vehicles are required by law to have headlights, front and rear side lights, rear number plate light, rear reflectors, brake lights and indicators. There are some exceptions to this, such as Electric cars with a maximum speed of 38\u00a0km/h.",
       "section": "Managing Risk"
     },
     {
       "question": "What danger could be associated with driving a tractor and trailer over a humpbacked bridge?",
       "options": [
-        "The trailer?s parking brake could automatically engage.",
+        "The trailer's parking brake could automatically engage.",
         "The trailer could become detached.",
-        "The tractor?s suspension could smooth out the bump.",
+        "The tractor's suspension could smooth out the bump.",
         "The trailer could jack-knife."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before towing a trailer, a driver should ensure that the tow hitch has sufficient ground clearance. If this hits the road, for example when travelling over a humpbacked bridge, there is a danger that the trailer will become detached. Drivers should also plan and carry out their journey with an awareness of this risk.",
+      "explanation": "Explanation: Before towing a trailer, a driver should ensure that the tow hitch has sufficient ground clearance. If this hits the road, for example when travelling over a humpbacked bridge, there is a danger that the trailer will become detached. Drivers should also plan and carry out their journey with an awareness of this risk.",
       "section": "Managing Risk"
     },
     {
@@ -4000,7 +4000,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: In this situation, the driver and all passengers should get out of the vehicle and immediately use the emergency phone at the crossing to contact the signal operator so that trains can be stopped. If necessary, warn other motorists. Do not return to the vehicle until instructed by the signal operator or emergency services.",
+      "explanation": "Explanation: In this situation, the driver and all passengers should get out of the vehicle and immediately use the emergency phone at the crossing to contact the signal operator so that trains can be stopped. If necessary, warn other motorists. Do not return to the vehicle until instructed by the signal operator or emergency services.",
       "section": "Managing Risk"
     },
     {
@@ -4013,7 +4013,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: In this situation, you and all passengers should get out of the vehicle and immediately use the emergency phone at the crossing to contact the signal operator so that trains can be stopped. If necessary, warn other motorists. Do not return to the vehicle until instructed by the signal operator or emergency services.",
+      "explanation": "Explanation: In this situation, you and all passengers should get out of the vehicle and immediately use the emergency phone at the crossing to contact the signal operator so that trains can be stopped. If necessary, warn other motorists. Do not return to the vehicle until instructed by the signal operator or emergency services.",
       "section": "Managing Risk"
     },
     {
@@ -4026,7 +4026,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: In a head-on collision passengers in both vehicles are propelled forwards, and if they are not wearing seatbelts they may go through the windscreen. It is the drivers responsibility to ensure that all passengers under the age of 17 wear seatbelts. Older passengers are themselves responsible for wearing seatbelts.",
+      "explanation": "Explanation: In a head-on collision passengers in both vehicles are propelled forwards, and if they are not wearing seatbelts they may go through the windscreen. It is the drivers responsibility to ensure that all passengers under the age of 17 wear seatbelts. Older passengers are themselves responsible for wearing seatbelts.",
       "section": "Managing Risk"
     },
     {
@@ -4039,7 +4039,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Proper weight distribution helps to ensure the stability of both the towing vehicle and the trailer. In the trailer, the bulk of the load should be over the axles. If a heavy load is positioned at the front of the trailer, this will result in too much nose weight on the hitch of the towing vehicle and make it difficult to steer. If a heavy load is positioned at the rear of the trailer, this will result in reduced weight on the rear axle of the towing vehicle, which will make it more unstable.",
+      "explanation": "Explanation: Proper weight distribution helps to ensure the stability of both the towing vehicle and the trailer. In the trailer, the bulk of the load should be over the axles. If a heavy load is positioned at the front of the trailer, this will result in too much nose weight on the hitch of the towing vehicle and make it difficult to steer. If a heavy load is positioned at the rear of the trailer, this will result in reduced weight on the rear axle of the towing vehicle, which will make it more unstable.",
       "section": "Managing Risk"
     },
     {
@@ -4052,7 +4052,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before towing a trailer or a caravan, check that the tow bar is securely attached to the towing vehicle, that the trailer coupling is properly attached to the tow bar and locked in place, and that the breakaway cable is properly connected.",
+      "explanation": "Explanation: Before towing a trailer or a caravan, check that the tow bar is securely attached to the towing vehicle, that the trailer coupling is properly attached to the tow bar and locked in place, and that the breakaway cable is properly connected.",
       "section": "Managing Risk"
     },
     {
@@ -4065,7 +4065,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The hazard lights work independently of the other lights on the vehicle (except the direction indicators), and have no effect on the brake lights. Use the hazard warning lights to warn other road users of a danger ahead, when your vehicle is broken down and causing an obstruction, or when you needs to slow down sharply on a motorway.",
+      "explanation": "Explanation: The hazard lights work independently of the other lights on the vehicle (except the direction indicators), and have no effect on the brake lights. Use the hazard warning lights to warn other road users of a danger ahead, when your vehicle is broken down and causing an obstruction, or when you needs to slow down sharply on a motorway.",
       "section": "Managing Risk"
     },
     {
@@ -4078,11 +4078,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Use the hazard warning lights to warn other road users of a danger ahead. For example, if a drivers vehicle has broken down and is stopped on the hard shoulder, they should use the vehicles hazard warning lights to warn other road users of their presence.",
+      "explanation": "Explanation: Use the hazard warning lights to warn other road users of a danger ahead. For example, if a drivers vehicle has broken down and is stopped on the hard shoulder, they should use the vehicles hazard warning lights to warn other road users of their presence.",
       "section": "Managing Risk"
     },
     {
-      "question": "When should a driver use their vehicle?s hazard warning lights?",
+      "question": "When should a driver use their vehicle's hazard warning lights?",
       "options": [
         "When double parking.",
         "When causing an unavoidable obstruction.",
@@ -4091,11 +4091,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Use the hazard warning lights to warn other road users of a danger ahead. For example, if a drivers vehicle is causing an unavoidable obstruction such as being broken down, they should use the vehicles hazard warning lights to warn other road users of their presence.",
+      "explanation": "Explanation: Use the hazard warning lights to warn other road users of a danger ahead. For example, if a drivers vehicle is causing an unavoidable obstruction such as being broken down, they should use the vehicles hazard warning lights to warn other road users of their presence.",
       "section": "Managing Risk"
     },
     {
-      "question": "When should a driver use their vehicle?s hazard warning lights?",
+      "question": "When should a driver use their vehicle's hazard warning lights?",
       "options": [
         "When parked at a bend or corner.",
         "When reversing onto a narrow road.",
@@ -4104,7 +4104,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Use the hazard warning lights to warn other road users of a danger ahead. For example, if a drivers vehicle is causing an unavoidable obstruction such as being broken down, they should use the vehicles hazard warning lights to warn other road users of their presence.",
+      "explanation": "Explanation: Use the hazard warning lights to warn other road users of a danger ahead. For example, if a drivers vehicle is causing an unavoidable obstruction such as being broken down, they should use the vehicles hazard warning lights to warn other road users of their presence.",
       "section": "Managing Risk"
     },
     {
@@ -4117,7 +4117,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: All vehicles, including trailers, must have rear indicators, brake lights, a rear number plate light, red reflectors and rear tail lights.",
+      "explanation": "Explanation: All vehicles, including trailers, must have rear indicators, brake lights, a rear number plate light, red reflectors and rear tail lights.",
       "section": "Managing Risk"
     },
     {
@@ -4130,7 +4130,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A trailer being towed by a tractor must have rear indicators, brake lights, a rear number plate light, red reflectors and rear tail lights whilst being towed on a public road.",
+      "explanation": "Explanation: A trailer being towed by a tractor must have rear indicators, brake lights, a rear number plate light, red reflectors and rear tail lights whilst being towed on a public road.",
       "section": "Managing Risk"
     },
     {
@@ -4143,7 +4143,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: It is essential that head restraints be properly adjusted for both the driver and the passengers. Head restraints are designed to protect the neck and spine in a collision and thus prevent or reduce whiplash. If head restraints are not properly adjusted there is an increased risk to the vehicles occupants.",
+      "explanation": "Explanation: It is essential that head restraints be properly adjusted for both the driver and the passengers. Head restraints are designed to protect the neck and spine in a collision and thus prevent or reduce whiplash. If head restraints are not properly adjusted there is an increased risk to the vehicles occupants.",
       "section": "Managing Risk"
     },
     {
@@ -4156,7 +4156,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Use the windscreen wipers to keep the windscreen clear of rain, spray, snow or fog. Check them regularly to ensure that they are in good working order, and replace them when they become worn, before they become ineffective.",
+      "explanation": "Explanation: Use the windscreen wipers to keep the windscreen clear of rain, spray, snow or fog. Check them regularly to ensure that they are in good working order, and replace them when they become worn, before they become ineffective.",
       "section": "Managing Risk"
     },
     {
@@ -4169,7 +4169,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Use the windscreen wipers to keep the windscreen clear of rain, spray, snow or fog. Check them regularly to ensure that they are in good working order, and replace them when they become worn, before they become ineffective.",
+      "explanation": "Explanation: Use the windscreen wipers to keep the windscreen clear of rain, spray, snow or fog. Check them regularly to ensure that they are in good working order, and replace them when they become worn, before they become ineffective.",
       "section": "Managing Risk"
     },
     {
@@ -4182,7 +4182,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When a vehicle breaks down on a motorway, a driver should move the vehicle to the hard shoulder, use the roadside phone to contact the Garda\u00ed, and do not place a warning device on the motorway. The driver should never try to do repairs themselves in the hard shoulder.",
+      "explanation": "Explanation: When a vehicle breaks down on a motorway, a driver should move the vehicle to the hard shoulder, use the roadside phone to contact the Garda\u00ed, and do not place a warning device on the motorway. The driver should never try to do repairs themselves in the hard shoulder.",
       "section": "Managing Risk"
     },
     {
@@ -4195,7 +4195,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The driver and all passengers in a car must wear a safety belt or, in the case of a child, a suitable restraint system.",
+      "explanation": "Explanation: The driver and all passengers in a car must wear a safety belt or, in the case of a child, a suitable restraint system.",
       "section": "Managing Risk"
     },
     {
@@ -4208,7 +4208,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Where the passenger is over the age of 17 and travelling in a car it is their legal responsibility to comply with the seat belt regulations. Below that age, it is the drivers responsibility.",
+      "explanation": "Explanation: Where the passenger is over the age of 17 and travelling in a car it is their legal responsibility to comply with the seat belt regulations. Below that age, it is the drivers responsibility.",
       "section": "Managing Risk"
     },
     {
@@ -4217,11 +4217,11 @@ export const QUESTIONS = [
         "The driver only.",
         "The driver, but only when the passenger is in the front seat.",
         "The passenger only.",
-        "The passenger?s parents."
+        "The passenger's parents."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Where the passenger is over the age of 17 and travelling in a car it is their legal responsibility to comply with the seat belt regulations. Below that age, it is the drivers responsibility.",
+      "explanation": "Explanation: Where the passenger is over the age of 17 and travelling in a car it is their legal responsibility to comply with the seat belt regulations. Below that age, it is the drivers responsibility.",
       "section": "Managing Risk"
     },
     {
@@ -4234,7 +4234,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Where the passenger is over the age of 17 and travelling in a car it is their legal responsibility to comply with the child restraint regulations. Below that age, it is the drivers responsibility.",
+      "explanation": "Explanation: Where the passenger is over the age of 17 and travelling in a car it is their legal responsibility to comply with the child restraint regulations. Below that age, it is the drivers responsibility.",
       "section": "Managing Risk"
     },
     {
@@ -4243,15 +4243,15 @@ export const QUESTIONS = [
         "They should always be secured in the correct child seat.",
         "They should always sit on the rear passenger seat.",
         "They should always be placed in the front passenger seat wearing a seat belt.",
-        "They should always be carried in an adult?s lap."
+        "They should always be carried in an adult's lap."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Safety belts are designed mainly for adults and older children. Children under 3\u00a0years of age must be restrained in an appropriate child restraint system. Warning; Never use a rearward facing child car seat in a seat protected by an active frontal airbag.",
+      "explanation": "Explanation: Safety belts are designed mainly for adults and older children. Children under 3\u00a0years of age must be restrained in an appropriate child restraint system. Warning; Never use a rearward facing child car seat in a seat protected by an active frontal airbag.",
       "section": "Managing Risk"
     },
     {
-      "question": "Can a child under the age of 3\u00a0years be carried unrestrained in the vehicle?s front passenger seat.",
+      "question": "Can a child under the age of 3\u00a0years be carried unrestrained in the vehicle's front passenger seat.",
       "options": [
         "No, unless the child is using a child booster seat.",
         "Yes, provided the infant is held securely by an adult.",
@@ -4260,7 +4260,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Generally, children must never travel unrestrained in a vehicle. Children under 3\u00a0years of age must be restrained in an appropriate child restraint system. Warning; Never use a rearward facing child car seat in a seat protected by an active frontal airbag.",
+      "explanation": "Explanation: Generally, children must never travel unrestrained in a vehicle. Children under 3\u00a0years of age must be restrained in an appropriate child restraint system. Warning; Never use a rearward facing child car seat in a seat protected by an active frontal airbag.",
       "section": "Managing Risk"
     },
     {
@@ -4273,7 +4273,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: It is recommended to fit the child seat correctly, according to the manufacturers instructions, it is safer to fit the seat in the back seat of the car and to buy a child car seat only from a retailer who will check that it fits both the car and the child.",
+      "explanation": "Explanation: It is recommended to fit the child seat correctly, according to the manufacturers instructions, it is safer to fit the seat in the back seat of the car and to buy a child car seat only from a retailer who will check that it fits both the car and the child.",
       "section": "Managing Risk"
     },
     {
@@ -4286,7 +4286,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Use the hazard warning lights to warn other road users of a danger ahead. For example, if your vehicle has broken down and is stopped on the hard shoulder, you can use the hazard warning lights to warn following vehicles of your presence.",
+      "explanation": "Explanation: Use the hazard warning lights to warn other road users of a danger ahead. For example, if your vehicle has broken down and is stopped on the hard shoulder, you can use the hazard warning lights to warn following vehicles of your presence.",
       "section": "Managing Risk"
     },
     {
@@ -4299,7 +4299,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Move the vehicle to the hard shoulder. Park as near to the left as possible. If this is not possible, take steps to warn other drivers, such as switching on the hazard warning lights.",
+      "explanation": "Explanation: Move the vehicle to the hard shoulder. Park as near to the left as possible. If this is not possible, take steps to warn other drivers, such as switching on the hazard warning lights.",
       "section": "Managing Risk"
     },
     {
@@ -4312,7 +4312,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Move the vehicle to the hard shoulder. Park as near to the left as possible. If this is not possible, take steps to warn other drivers, such as switching on the hazard warning lights. Wear a high visibility vest. Always carry at least two in the vehicle.",
+      "explanation": "Explanation: Move the vehicle to the hard shoulder. Park as near to the left as possible. If this is not possible, take steps to warn other drivers, such as switching on the hazard warning lights. Wear a high visibility vest. Always carry at least two in the vehicle.",
       "section": "Managing Risk"
     },
     {
@@ -4325,7 +4325,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When a vehicle breaks down it is important to move as far in to the left as possible for the convenience of other road users and the safety of the vehicles occupants",
+      "explanation": "Explanation: When a vehicle breaks down it is important to move as far in to the left as possible for the convenience of other road users and the safety of the vehicles occupants",
       "section": "Managing Risk"
     },
     {
@@ -4338,7 +4338,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If you arrive at the scene of a crash, find a safe place to stop so that you don?t endanger yourself or others, warn other road users of the incident by using hazard lights.",
+      "explanation": "Explanation: If you arrive at the scene of a crash, find a safe place to stop so that you don?t endanger yourself or others, warn other road users of the incident by using hazard lights.",
       "section": "Managing Risk"
     },
     {
@@ -4351,7 +4351,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If a driver arrives at or is involved in a crash it may be essential to obtain the assistance of the emergency services as a matter of urgency. The common European emergency number is 112 however in Ireland you may also use 999.",
+      "explanation": "Explanation: If a driver arrives at or is involved in a crash it may be essential to obtain the assistance of the emergency services as a matter of urgency. The common European emergency number is 112 however in Ireland you may also use 999.",
       "section": "Managing Risk"
     },
     {
@@ -4364,7 +4364,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The emergency telephones at the side of a motorway are linked directly to An Garda S\u00edoch\u00e1na in order for them to respond appropriately as soon as possible. The Garda\u00ed know precisely the location of each call using these phones.",
+      "explanation": "Explanation: The emergency telephones at the side of a motorway are linked directly to An Garda S\u00edoch\u00e1na in order for them to respond appropriately as soon as possible. The Garda\u00ed know precisely the location of each call using these phones.",
       "section": "Managing Risk"
     },
     {
@@ -4377,7 +4377,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If a person discovered lying in the road is not breathing, it may be essential to move them in order to safely carry out emergency CPR. It may also be necessary to move them under other circumstances but an urgent assessment of the situation should be carried out first.",
+      "explanation": "Explanation: If a person discovered lying in the road is not breathing, it may be essential to move them in order to safely carry out emergency CPR. It may also be necessary to move them under other circumstances but an urgent assessment of the situation should be carried out first.",
       "section": "Managing Risk"
     },
     {
@@ -4390,7 +4390,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: In assessing a crash victims vital signs the following basic procedure should be used First check the victims Airway is clear, then check they are Breathing and then check their Circulation (ABC)",
+      "explanation": "Explanation: In assessing a crash victims vital signs the following basic procedure should be used First check the victims Airway is clear, then check they are Breathing and then check their Circulation (ABC)",
       "section": "Managing Risk"
     },
     {
@@ -4403,7 +4403,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: In assessing a crash victims vital signs, the following basic procedure should be used: First check the victims Airway is clear, then check they are Breathing and then check their Circulation (ABC)",
+      "explanation": "Explanation: In assessing a crash victims vital signs, the following basic procedure should be used: First check the victims Airway is clear, then check they are Breathing and then check their Circulation (ABC)",
       "section": "Managing Risk"
     },
     {
@@ -4416,11 +4416,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When a person has been burned firstly check the person for shock, then try to cool the burn if you can. Try to find water or other liquid that is clean, cold and non-toxic to pour on it. The cool liquid may cool the affected area down and reduce damage. The person should be advised to seek medical advice as soon as possible.",
+      "explanation": "Explanation: When a person has been burned firstly check the person for shock, then try to cool the burn if you can. Try to find water or other liquid that is clean, cold and non-toxic to pour on it. The cool liquid may cool the affected area down and reduce damage. The person should be advised to seek medical advice as soon as possible.",
       "section": "Managing Risk"
     },
     {
-      "question": "What effect could hitting or mounting the kerb have on a vehicle?s tyres?",
+      "question": "What effect could hitting or mounting the kerb have on a vehicle's tyres?",
       "options": [
         "It could wear the tread.",
         "It could increase the air pressure.",
@@ -4429,7 +4429,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers should avoid hitting or mounting the kerb as it causes damage to the sidewalls of the tyre. The damage caused could cause the tyre to blow-out later. If this happens at high speed the driver may lose control of the vehicle with dangerous consequences.",
+      "explanation": "Explanation: Drivers should avoid hitting or mounting the kerb as it causes damage to the sidewalls of the tyre. The damage caused could cause the tyre to blow-out later. If this happens at high speed the driver may lose control of the vehicle with dangerous consequences.",
       "section": "Managing Risk"
     },
     {
@@ -4442,7 +4442,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_PHcHC.png",
       "correct_answer": 1,
-      "explanation": "Explantion: If the battery warning light comes on whilst driving, it means there is some kind of problem with the electrical charging system of the vehicle and the battery is not being charged properly. The driver should get this checked by a professional as soon as possible. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
+      "explanation": "Explanation: If the battery warning light comes on whilst driving, it means there is some kind of problem with the electrical charging system of the vehicle and the battery is not being charged properly. The driver should get this checked by a professional as soon as possible. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
       "section": "Managing Risk"
     },
     {
@@ -4455,7 +4455,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_IpaGp.png",
       "correct_answer": 0,
-      "explanation": "Explantion: All vehicles are fitted with warning lights to alert the driver to different things. This light comes on when the full beam headlights are turned on. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
+      "explanation": "Explanation: All vehicles are fitted with warning lights to alert the driver to different things. This light comes on when the full beam headlights are turned on. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
       "section": "Managing Risk"
     },
     {
@@ -4468,7 +4468,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_YmMBQ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: If the engine oil warning light comes on, it means that the engine oil level/pressure has dropped. You should not drive the vehicle until the problem is fixed. If the light comes on while driving, pull over and stop in a safe place as soon as possible. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
+      "explanation": "Explanation: If the engine oil warning light comes on, it means that the engine oil level/pressure has dropped. You should not drive the vehicle until the problem is fixed. If the light comes on while driving, pull over and stop in a safe place as soon as possible. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
       "section": "Managing Risk"
     },
     {
@@ -4481,7 +4481,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_wlpn9.png",
       "correct_answer": 1,
-      "explanation": "Explantion: All vehicles are fitted with warning lights to alert you to different things. This light tells you that the directional indicator is on. If this light is still on after you have completed your manoeuvre, cancel it to avoid misleading other road users. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
+      "explanation": "Explanation: All vehicles are fitted with warning lights to alert you to different things. This light tells you that the directional indicator is on. If this light is still on after you have completed your manoeuvre, cancel it to avoid misleading other road users. It is important to understand the meaning of your vehicles warning lights, information on which can be found in the vehicles handbook.",
       "section": "Managing Risk"
     },
     {
@@ -4494,7 +4494,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: As you approach a sharp dip in the road, you should be aware that there might be hidden dangers ahead. For example, there might be pedestrians, cyclists or other approaching traffic, or the road could be flooded in the dip. You should always read the road ahead and be prepared to react to changing traffic situations ? you might need to reduce your speed and drive with extra care.",
+      "explanation": "Explanation: As you approach a sharp dip in the road, you should be aware that there might be hidden dangers ahead. For example, there might be pedestrians, cyclists or other approaching traffic, or the road could be flooded in the dip. You should always read the road ahead and be prepared to react to changing traffic situations ? you might need to reduce your speed and drive with extra care.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4507,7 +4507,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should always read the road ahead and be prepared to react to changing traffic situations. Where traffic lights have been green for some time, you should be prepared to stop, as the lights are probably about to change to amber.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. Where traffic lights have been green for some time, you should be prepared to stop, as the lights are probably about to change to amber.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4520,7 +4520,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: You should always read the road ahead and be prepared to react to changing traffic situations. If the traffic lights are not working, you should approach the junction with extra care, and you should proceed only if it is safe to do so.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. If the traffic lights are not working, you should approach the junction with extra care, and you should proceed only if it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4533,7 +4533,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet cattle or other animals on the road, you should slow down and be prepared to stop. Don?t use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet cattle or other animals on the road, you should slow down and be prepared to stop. Don?t use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4546,7 +4546,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet horses or other animals on the road, you should slow down and be prepared to stop. Don?t use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet horses or other animals on the road, you should slow down and be prepared to stop. Don?t use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4559,7 +4559,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: As you approach a humpbacked bridge or hill, you should be aware that there might be hidden dangers ahead ? for example, overtaking traffic coming towards you. You should always read the road ahead and be prepared to react to changing traffic situations such as this.",
+      "explanation": "Explanation: As you approach a humpbacked bridge or hill, you should be aware that there might be hidden dangers ahead ? for example, overtaking traffic coming towards you. You should always read the road ahead and be prepared to react to changing traffic situations such as this.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4572,7 +4572,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Flashing amber beacons are used by recovery vehicles and vehicles carrying abnormal loads. You should be aware that these vehicles may need extra room and could conceal following traffic. When you come across such vehicles, slow down and be prepared to stop if necessary.",
+      "explanation": "Explanation: Flashing amber beacons are used by recovery vehicles and vehicles carrying abnormal loads. You should be aware that these vehicles may need extra room and could conceal following traffic. When you come across such vehicles, slow down and be prepared to stop if necessary.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4585,7 +4585,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Flashing amber beacons are used by recovery vehicles and vehicles carrying abnormal loads. You should be aware that these vehicles may need extra room and could conceal following traffic. When you come across such vehicles, slow down and be prepared to stop if necessary.",
+      "explanation": "Explanation: Flashing amber beacons are used by recovery vehicles and vehicles carrying abnormal loads. You should be aware that these vehicles may need extra room and could conceal following traffic. When you come across such vehicles, slow down and be prepared to stop if necessary.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4598,7 +4598,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You should be aware of the impact of changes in the road surface. For example, at railway and tram crossings the uneven surface or oil deposits could reduce the grip of your tyres. Slow down as you approach railway or tram crossings and increase your distance from the vehicle in front.",
+      "explanation": "Explanation: You should be aware of the impact of changes in the road surface. For example, at railway and tram crossings the uneven surface or oil deposits could reduce the grip of your tyres. Slow down as you approach railway or tram crossings and increase your distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4611,7 +4611,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You should be aware of the impact of changes in the road surface. For example, road markings and directional arrows can become slippery when wet. Where possible, avoid driving on road markings, and be aware of the increased risk of skidding.",
+      "explanation": "Explanation: You should be aware of the impact of changes in the road surface. For example, road markings and directional arrows can become slippery when wet. Where possible, avoid driving on road markings, and be aware of the increased risk of skidding.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4624,7 +4624,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You should always be prepared to react to hazards ahead. When you meet a vehicle coming against you on a narrow road, you should show consideration and slow down to a appropriate speed so that the two vehicles can pass each other safely.",
+      "explanation": "Explanation: You should always be prepared to react to hazards ahead. When you meet a vehicle coming against you on a narrow road, you should show consideration and slow down to a appropriate speed so that the two vehicles can pass each other safely.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4637,7 +4637,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You should always allow sufficient distance between your vehicle and the vehicle in front. This will enable you to stop safely (within the distance you can see clear). It will also give overtaking vehicles enough room to pull in safely to the left lane after they have passed you.",
+      "explanation": "Explanation: You should always allow sufficient distance between your vehicle and the vehicle in front. This will enable you to stop safely (within the distance you can see clear). It will also give overtaking vehicles enough room to pull in safely to the left lane after they have passed you.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4650,20 +4650,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should always allow sufficient distance between your vehicle and the vehicle in front. This will enable you to stop safely (within the distance you can see clear). It will also give overtaking vehicles enough room to pull in safely to the left lane after they have passed you.",
+      "explanation": "Explanation: You should always allow sufficient distance between your vehicle and the vehicle in front. This will enable you to stop safely (within the distance you can see clear). It will also give overtaking vehicles enough room to pull in safely to the left lane after they have passed you.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "Why is tailgating (driving too close behind the vehicle in front) dangerous?",
       "options": [
         "The braking system is less efficient in the slipstream of the vehicle in front.",
-        "The engine may overheat because of restricted air flow over the vehicle?s engine.",
+        "The engine may overheat because of restricted air flow over the vehicle's engine.",
         "The vehicle will not have sufficient distance to stop safely in an emergency.",
         "The vehicle will exceed the speed limit."
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you drive too close to the vehicle in front and it brakes suddenly, you will not have enough time to react. For that reason you should always keep a safe distance from the vehicle in front. One way of calculating a safe distance in dry weather is the two-second rule: allow at least two seconds to elapse between the vehicle in front and your own vehicle passing a fixed point such as a lamp post or sign post.",
+      "explanation": "Explanation: If you drive too close to the vehicle in front and it brakes suddenly, you will not have enough time to react. For that reason you should always keep a safe distance from the vehicle in front. One way of calculating a safe distance in dry weather is the two-second rule: allow at least two seconds to elapse between the vehicle in front and your own vehicle passing a fixed point such as a lamp post or sign post.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4676,7 +4676,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you drive too close to the vehicle in front and it brakes suddenly, you will not have enough time to react. For that reason you should always keep a safe distance from the vehicle in front. One way of calculating a safe distance in dry weather is the two-second rule: allow at least two seconds to elapse between the vehicle in front and your own vehicle passing a fixed point such as a lamp post or sign post.",
+      "explanation": "Explanation: If you drive too close to the vehicle in front and it brakes suddenly, you will not have enough time to react. For that reason you should always keep a safe distance from the vehicle in front. One way of calculating a safe distance in dry weather is the two-second rule: allow at least two seconds to elapse between the vehicle in front and your own vehicle passing a fixed point such as a lamp post or sign post.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4684,12 +4684,12 @@ export const QUESTIONS = [
       "options": [
         "Visibility could suddenly be reduced.",
         "The vehicle engine could suddenly run cold.",
-        "The vehicle?s windscreen could fog up.",
+        "The vehicle's windscreen could fog up.",
         "The tyre pressure could be reduced."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When you enter a heavily shaded area after driving in bright sunlight, it might take a while for your eyes to adjust to the change, and you might not see a hazard immediately ahead.",
+      "explanation": "Explanation: When you enter a heavily shaded area after driving in bright sunlight, it might take a while for your eyes to adjust to the change, and you might not see a hazard immediately ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4702,7 +4702,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When you meet approaching traffic at a narrow gap, you should show consideration and slow down to an appropriate speed so that you and the other vehicles can pass each other safely. If necessary, give way to the other vehicles.",
+      "explanation": "Explanation: When you meet approaching traffic at a narrow gap, you should show consideration and slow down to an appropriate speed so that you and the other vehicles can pass each other safely. If necessary, give way to the other vehicles.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4715,7 +4715,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Giving signals is a way of telling other road users what you intend to do. So, you should signal properly before moving off, turning right or left, changing lanes, overtaking, slowing down or stopping. Signal clearly and in good time, and keep in mind that giving a signal does not give you the right of way. Late signals may confuse other road users.",
+      "explanation": "Explanation: Giving signals is a way of telling other road users what you intend to do. So, you should signal properly before moving off, turning right or left, changing lanes, overtaking, slowing down or stopping. Signal clearly and in good time, and keep in mind that giving a signal does not give you the right of way. Late signals may confuse other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4728,7 +4728,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: On approach to traffic lights that are stuck on red, a driver should stop and proceed with caution when the way is clear.",
+      "explanation": "Explanation: On approach to traffic lights that are stuck on red, a driver should stop and proceed with caution when the way is clear.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4741,7 +4741,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers need to see and be seen during all periods of low light levels ? for example, at dusk and dawn and in some bad weather conditions. At times of low light, you should turn on dipped headlights.",
+      "explanation": "Explanation: Drivers need to see and be seen during all periods of low light levels ? for example, at dusk and dawn and in some bad weather conditions. At times of low light, you should turn on dipped headlights.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4754,7 +4754,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Heavy goods vehicles need extra space on the road, and when they are turning the overhang of the vehicle may swing out into the path of overtaking or passing traffic. For that reason, it is a good idea to stay back and let the heavy goods vehicle complete its turn unless there is sufficient space to overtake safely.",
+      "explanation": "Explanation: Heavy goods vehicles need extra space on the road, and when they are turning the overhang of the vehicle may swing out into the path of overtaking or passing traffic. For that reason, it is a good idea to stay back and let the heavy goods vehicle complete its turn unless there is sufficient space to overtake safely.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4767,7 +4767,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Always allow a bus to complete a left-hand turn, because your field of view is restricted, and it could be dangerous to attempt overtaking it.",
+      "explanation": "Explanation: Always allow a bus to complete a left-hand turn, because your field of view is restricted, and it could be dangerous to attempt overtaking it.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4780,7 +4780,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A blind spot is an area that a driver cannot see when looking forward or when looking in the mirrors. You should check your blind spots before changing direction or changing lane. The bigger the vehicle, the bigger the blind spots, and you should keep this in mind if you are driving behind a large vehicle, such as one towing a loaded trailer. In this situation, if you cannot see the towing vehicles mirror, then the driver of that vehicle cannot see you.",
+      "explanation": "Explanation: A blind spot is an area that a driver cannot see when looking forward or when looking in the mirrors. You should check your blind spots before changing direction or changing lane. The bigger the vehicle, the bigger the blind spots, and you should keep this in mind if you are driving behind a large vehicle, such as one towing a loaded trailer. In this situation, if you cannot see the towing vehicles mirror, then the driver of that vehicle cannot see you.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4793,7 +4793,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You may overtake on the left when the driver in front has moved out and signalled their intent to turn right and you intend to go straight ahead ? provided there is enough room to do so safely and your path will not be obstructed by the swing of a large vehicle turning right.",
+      "explanation": "Explanation: You may overtake on the left when the driver in front has moved out and signalled their intent to turn right and you intend to go straight ahead ? provided there is enough room to do so safely and your path will not be obstructed by the swing of a large vehicle turning right.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4806,7 +4806,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You may overtake on the left when the driver in front has moved out and signalled their intent to turn right and you intend to go straight ahead ? provided there is enough room to do so safely and your path will not be obstructed by the swing of a large vehicle turning right.",
+      "explanation": "Explanation: You may overtake on the left when the driver in front has moved out and signalled their intent to turn right and you intend to go straight ahead ? provided there is enough room to do so safely and your path will not be obstructed by the swing of a large vehicle turning right.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4819,20 +4819,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If you want to do a U-turn you must first choose a place where it is safe and legal to do it. Check all around for other road users and do not impede their right of way. Complete the manoeuvre efficiently and safely.",
+      "explanation": "Explanation: If you want to do a U-turn you must first choose a place where it is safe and legal to do it. Check all around for other road users and do not impede their right of way. Complete the manoeuvre efficiently and safely.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What should a driver who wishes to perform a turnabout do?",
       "options": [
         "Check ahead and behind for oncoming traffic and turn briskly while still keeping a look out.",
-        "Drive into somebody?s driveway and reverse back onto the road.",
+        "Drive into somebody's driveway and reverse back onto the road.",
         "It is not permissible to perform a turnabout in any circumstance.",
         "Drive onto a footpath if necessary in order to ensure that they have sufficient room to turn."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If you want to do a turnabout, you must first choose a place where it is safe and legal to do so. Check all around for other road users and do not impede their right of way. Complete the manoeuvre efficiently and safely.",
+      "explanation": "Explanation: If you want to do a turnabout, you must first choose a place where it is safe and legal to do so. Check all around for other road users and do not impede their right of way. Complete the manoeuvre efficiently and safely.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4845,7 +4845,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Always read the road ahead and be prepared to react to any traffic situation. You should not drive so slowly that your vehicle unnecessarily blocks other road users. Keep as near to the left as is safe to allow other vehicles to pass safely if they wish.",
+      "explanation": "Explanation: Always read the road ahead and be prepared to react to any traffic situation. You should not drive so slowly that your vehicle unnecessarily blocks other road users. Keep as near to the left as is safe to allow other vehicles to pass safely if they wish.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4858,7 +4858,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Always read the road ahead and be prepared to react to any traffic situation. In this case, do not proceed until it is clear and safe to do so. Do not assume that you have the right of way.",
+      "explanation": "Explanation: Always read the road ahead and be prepared to react to any traffic situation. In this case, do not proceed until it is clear and safe to do so. Do not assume that you have the right of way.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4871,7 +4871,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Always read the road and be prepared to react to any traffic situation ? in this case, be aware of vulnerable road users such as school children boarding or alighting from school buses.",
+      "explanation": "Explanation: Always read the road and be prepared to react to any traffic situation ? in this case, be aware of vulnerable road users such as school children boarding or alighting from school buses.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4884,7 +4884,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You should always be prepared to react to hazards ahead. If the vehicle in front is moving from side to side, it may indicate that the driver is not paying full attention or that their driving is impaired by drink, drugs or tiredness. If you think the vehicle is a risk to the public safety, the matter should be reported to the Garda\u00ed or to traffic watch (lo-call 1890 205 805), but not while driving.",
+      "explanation": "Explanation: You should always be prepared to react to hazards ahead. If the vehicle in front is moving from side to side, it may indicate that the driver is not paying full attention or that their driving is impaired by drink, drugs or tiredness. If you think the vehicle is a risk to the public safety, the matter should be reported to the Garda\u00ed or to traffic watch (lo-call 1890 205 805), but not while driving.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4897,7 +4897,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Always read the road ahead and be prepared to react to any traffic situation. In this case, you should be aware that the heavy goods vehicle will need extra space to complete the left-hand turn and you should remain behind the vehicle until it has completed its turn.",
+      "explanation": "Explanation: Always read the road ahead and be prepared to react to any traffic situation. In this case, you should be aware that the heavy goods vehicle will need extra space to complete the left-hand turn and you should remain behind the vehicle until it has completed its turn.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4910,7 +4910,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Always read the road ahead and be prepared to react to any traffic situation. In this case, you should be aware that the bus will need extra space to make the turn. So you should not overtake it if by doing so you would cause oncoming traffic to alter speed or course. Remember, you should never overtake when approaching a junction.",
+      "explanation": "Explanation: Always read the road ahead and be prepared to react to any traffic situation. In this case, you should be aware that the bus will need extra space to make the turn. So you should not overtake it if by doing so you would cause oncoming traffic to alter speed or course. Remember, you should never overtake when approaching a junction.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4923,7 +4923,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Always read the road ahead and be prepared to react to any traffic situation. You should be aware of the difficulties that drivers of large vehicles can have reversing into a side entrance. In this case, a large vehicle reversing could obstruct your view of the road ahead as you approach, and you should afford the truck driver adequate space to manoeuvre.",
+      "explanation": "Explanation: Always read the road ahead and be prepared to react to any traffic situation. You should be aware of the difficulties that drivers of large vehicles can have reversing into a side entrance. In this case, a large vehicle reversing could obstruct your view of the road ahead as you approach, and you should afford the truck driver adequate space to manoeuvre.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4936,7 +4936,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you wish to turn right at a set of traffic lights, drive into the junction when you see a green light, taking care not to block any oncoming traffic. Then complete the turn when it is safe to do so.",
+      "explanation": "Explanation: If you wish to turn right at a set of traffic lights, drive into the junction when you see a green light, taking care not to block any oncoming traffic. Then complete the turn when it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4949,7 +4949,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: On national roads, the hard shoulder is normally for the use of pedestrians and cyclists only. If you want to allow a vehicle behind to overtake, you may pull into the hard shoulder briefly as long as no pedestrians or cyclists are using it and there are no junctions or entrances nearby. In the case of motorways, however, you must not drive on the hard shoulder, except in an emergency.",
+      "explanation": "Explanation: On national roads, the hard shoulder is normally for the use of pedestrians and cyclists only. If you want to allow a vehicle behind to overtake, you may pull into the hard shoulder briefly as long as no pedestrians or cyclists are using it and there are no junctions or entrances nearby. In the case of motorways, however, you must not drive on the hard shoulder, except in an emergency.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4962,7 +4962,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: On national roads, the hard shoulder is normally for the use of pedestrians and cyclists only. If you want to allow a vehicle behind to overtake, you may pull into the hard shoulder briefly as long as no pedestrians or cyclists are using it and there are no junctions or entrances nearby. In the case of motorways, however, you must not drive on the hard shoulder, except in an emergency.",
+      "explanation": "Explanation: On national roads, the hard shoulder is normally for the use of pedestrians and cyclists only. If you want to allow a vehicle behind to overtake, you may pull into the hard shoulder briefly as long as no pedestrians or cyclists are using it and there are no junctions or entrances nearby. In the case of motorways, however, you must not drive on the hard shoulder, except in an emergency.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4975,24 +4975,24 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Always read the road ahead and be prepared to react to any traffic situation. From time to time you may have to queue in traffic. In this situation, you should try to remain patient and considerate of other road users. Jumping the queue is inconsiderate, it could be dangerous, and it could even provoke a road rage incident or cause a collision.",
+      "explanation": "Explanation: Always read the road ahead and be prepared to react to any traffic situation. From time to time you may have to queue in traffic. In this situation, you should try to remain patient and considerate of other road users. Jumping the queue is inconsiderate, it could be dangerous, and it could even provoke a road rage incident or cause a collision.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What should the driver do when driving a vehicle they are not familiar with?",
       "options": [
         "Initially drive with extra care and at a lower speed until fully familiar with the vehicle.",
-        "Drive at a normal speed as all vehicle?s features are the same.",
+        "Drive at a normal speed as all vehicle's features are the same.",
         "Only drive at night until familiar with the vehicle.",
-        "Drive faster than normal in order to assess the vehicle?s capability."
+        "Drive faster than normal in order to assess the vehicle's capability."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should know where to find and how to operate all the controls on your vehicle, including all of its safety features and warning lamps. When you are driving, you need to be able to concentrate on what?s happening around you and operating the vehicle controls should be second nature to you. When you sit into the drivers seat of a vehicle you are not familiar with, you should do a thorough cockpit drill before you move off.",
+      "explanation": "Explanation: You should know where to find and how to operate all the controls on your vehicle, including all of its safety features and warning lamps. When you are driving, you need to be able to concentrate on what's happening around you and operating the vehicle controls should be second nature to you. When you sit into the drivers seat of a vehicle you are not familiar with, you should do a thorough cockpit drill before you move off.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "Subject to the speed limit, what is the ?safest? speed to drive at?",
+      "question": "Subject to the speed limit, what is the 'safest? speed to drive at?",
       "options": [
         "The speed of the slowest vehicle on the road.",
         "A driver should always try to drive at the speed of other road users, regardless of the speed limit.",
@@ -5001,7 +5001,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You should always drive at a speed that allows you to stop within the distance that you can see to be clear ahead. If you don?t think you could safely bring the vehicle to a stop within the range of what you can see, then you?re driving too fast ? slow down.",
+      "explanation": "Explanation: You should always drive at a speed that allows you to stop within the distance that you can see to be clear ahead. If you don?t think you could safely bring the vehicle to a stop within the range of what you can see, then you?re driving too fast ? slow down.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5014,7 +5014,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: It is an offence and very unsafe to use a hand-held mobile phone while driving a vehicle or riding a motorbike as it prevents you from concentrating fully on your driving. While using a hands-free phone kit is not illegal, in some circumstances it could be a dangerous distraction, and you could be prosecuted for dangerous driving, careless driving or driving without due care and attention. If a driver needs to make a call they should pull in and stop in a place where it is safe to do so.",
+      "explanation": "Explanation: It is an offence and very unsafe to use a hand-held mobile phone while driving a vehicle or riding a motorbike as it prevents you from concentrating fully on your driving. While using a hands-free phone kit is not illegal, in some circumstances it could be a dangerous distraction, and you could be prosecuted for dangerous driving, careless driving or driving without due care and attention. If a driver needs to make a call they should pull in and stop in a place where it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5027,7 +5027,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When stopped at traffic lights and the green light comes on, you should check to ensure the way is clear and proceed only if it is safe to do so.",
+      "explanation": "Explanation: When stopped at traffic lights and the green light comes on, you should check to ensure the way is clear and proceed only if it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5040,7 +5040,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should always try to show restraint. It is important to understand that the right of way is not an absolute right of way, and you must always proceed with caution and with regard for other road users. It?s safer and more socially responsible.",
+      "explanation": "Explanation: You should always try to show restraint. It is important to understand that the right of way is not an absolute right of way, and you must always proceed with caution and with regard for other road users. It's safer and more socially responsible.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5053,7 +5053,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If you drive when you are angry or upset, you are more likely to be involved in a collision, and more likely to react to other drivers bad behaviour. Take the time to calm down and compose yourself before you set out on a journey.",
+      "explanation": "Explanation: If you drive when you are angry or upset, you are more likely to be involved in a collision, and more likely to react to other drivers bad behaviour. Take the time to calm down and compose yourself before you set out on a journey.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5066,7 +5066,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When you are being overtaken and there are oncoming vehicles, you should show consideration for all the other traffic and allow the overtaking vehicle to move in front of you to avoid the risk of a collision.",
+      "explanation": "Explanation: When you are being overtaken and there are oncoming vehicles, you should show consideration for all the other traffic and allow the overtaking vehicle to move in front of you to avoid the risk of a collision.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5079,7 +5079,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If another driver behaves badly, you should not let it annoy you ? show restraint and don?t react. Road rage only increases the risk of a collision.",
+      "explanation": "Explanation: If another driver behaves badly, you should not let it annoy you ? show restraint and don?t react. Road rage only increases the risk of a collision.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5092,7 +5092,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you get a puncture while driving, find a suitable and safe place to stop and change the wheel. If you cant find a suitable place immediately, drive slowly (with your hazard warning lights turned on) to avoid further damage to the tyre or rim until a safe place is found.",
+      "explanation": "Explanation: If you get a puncture while driving, find a suitable and safe place to stop and change the wheel. If you cant find a suitable place immediately, drive slowly (with your hazard warning lights turned on) to avoid further damage to the tyre or rim until a safe place is found.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5105,20 +5105,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Any time you change lanes, you should use the Mirror?Signal?Mirror (blind spots)?Manoeuvre routine. Check your mirrors, signal your intention, check your mirrors again (and your blind spots), and when a suitable gap becomes available manoeuvre the vehicle into the next lane, giving way to traffic already in that lane.",
+      "explanation": "Explanation: Any time you change lanes, you should use the Mirror'signal?Mirror (blind spots)?Manoeuvre routine. Check your mirrors, signal your intention, check your mirrors again (and your blind spots), and when a suitable gap becomes available manoeuvre the vehicle into the next lane, giving way to traffic already in that lane.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What effect does alcohol have on driver behaviour?",
       "options": [
-        "It slows down a driver?s reactions.",
+        "It slows down a driver's reactions.",
         "It does not affect driver behaviour or ability.",
         "It can increase perception and awareness.",
-        "It can reduce a driver?s confidence."
+        "It can reduce a driver's confidence."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Alcohol is a major factor in collisions that can lead to death and injury. Even small amounts of alcohol affect your judgement and ability to drive.",
+      "explanation": "Explanation: Alcohol is a major factor in collisions that can lead to death and injury. Even small amounts of alcohol affect your judgement and ability to drive.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5131,7 +5131,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Alcohol is a major factor in collisions that lead to death and injury. Even small amounts of alcohol affect your judgement, your concentration and your ability to react to hazards. A driver should never ever drink and drive.",
+      "explanation": "Explanation: Alcohol is a major factor in collisions that lead to death and injury. Even small amounts of alcohol affect your judgement, your concentration and your ability to react to hazards. A driver should never ever drink and drive.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5144,11 +5144,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Some medication can affect a drivers ability to drive safely. If you are on medication of any kind, you should ask your doctor or pharmacist to tell you if it is safe to drive while taking it. Read the patient information leaflet supplied with the medication.",
+      "explanation": "Explanation: Some medication can affect a drivers ability to drive safely. If you are on medication of any kind, you should ask your doctor or pharmacist to tell you if it is safe to drive while taking it. Read the patient information leaflet supplied with the medication.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What effect does a wet road surface have on a vehicle?s braking ability?",
+      "question": "What effect does a wet road surface have on a vehicle's braking ability?",
       "options": [
         "It makes no difference to the required braking distance.",
         "Modern tyres provide grip on a wet road as effectively as on a dry road.",
@@ -5157,7 +5157,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When it is wet, your tyres do not grip the road surface as well as when it is dry and your stopping distance is increased. For these reasons you should slow down during or after rain and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: When it is wet, your tyres do not grip the road surface as well as when it is dry and your stopping distance is increased. For these reasons you should slow down during or after rain and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5170,7 +5170,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: After overtaking, check your mirrors, signal and return to your normal lane position as soon as it is safe. Take a smooth easy line, gradually moving back in and allowing the other vehicle plenty of space and don?t cut in sharply.",
+      "explanation": "Explanation: After overtaking, check your mirrors, signal and return to your normal lane position as soon as it is safe. Take a smooth easy line, gradually moving back in and allowing the other vehicle plenty of space and don?t cut in sharply.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5183,7 +5183,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When overtaking make sure the road ahead is clear so you have enough distance to overtake and get back to your own side of the road without forcing any other road user to adjust speed or direction. When you are well past the vehicle, check the mirrors, signal and gradually return to the original lane, making sure not to cut across the vehicle you have passed.",
+      "explanation": "Explanation: When overtaking make sure the road ahead is clear so you have enough distance to overtake and get back to your own side of the road without forcing any other road user to adjust speed or direction. When you are well past the vehicle, check the mirrors, signal and gradually return to the original lane, making sure not to cut across the vehicle you have passed.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5196,7 +5196,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When you are passing parked vehicles in a residential area, move into a safe overtaking position in good time and leave plenty of clearance between your vehicle and the parked vehicles to increase visibility of small children in the area and in case someone opens their car door in front of you.",
+      "explanation": "Explanation: When you are passing parked vehicles in a residential area, move into a safe overtaking position in good time and leave plenty of clearance between your vehicle and the parked vehicles to increase visibility of small children in the area and in case someone opens their car door in front of you.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5209,7 +5209,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When driving in snow or icy conditions a driver should allow a greater distance from the vehicle in front as stopping distances can be increased by up to ten times the normal.",
+      "explanation": "Explanation: When driving in snow or icy conditions a driver should allow a greater distance from the vehicle in front as stopping distances can be increased by up to ten times the normal.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5222,7 +5222,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When you are passing parked vehicles, you should leave at least a door?s width of clearance in case somebody opens their car door unexpectedly, this will also increase visibility of pedestrians in the area.",
+      "explanation": "Explanation: When you are passing parked vehicles, you should leave at least a door's width of clearance in case somebody opens their car door unexpectedly, this will also increase visibility of pedestrians in the area.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5235,11 +5235,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving on wet road surfaces the grip of your tyres is reduced which may lead to significantly longer stopping distances. Drivers should be aware of these conditions and reduce speed as stopping quickly may result in skidding.",
+      "explanation": "Explanation: When driving on wet road surfaces the grip of your tyres is reduced which may lead to significantly longer stopping distances. Drivers should be aware of these conditions and reduce speed as stopping quickly may result in skidding.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What is the effect on the control of the vehicle if there is a film of water between the vehicle?s tyres and the road surface?",
+      "question": "What is the effect on the control of the vehicle if there is a film of water between the vehicle's tyres and the road surface?",
       "options": [
         "Steering will be more effective.",
         "Steering and braking will be more effective.",
@@ -5248,7 +5248,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When driving on a road where there is a lot of surface water, a film of water can build up between the tyres and the road surface. When this occurs it is called aquaplaning, it reduces the grip of the tyres on the road and can result in the total loss of control over the vehicles steering and braking.",
+      "explanation": "Explanation: When driving on a road where there is a lot of surface water, a film of water can build up between the tyres and the road surface. When this occurs it is called aquaplaning, it reduces the grip of the tyres on the road and can result in the total loss of control over the vehicles steering and braking.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5261,7 +5261,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Where there are loose chippings on the road, you should slow down and comply with any reduced speed limit and leave extra room (or clearance) between your vehicle and other traffic. This will also give you more time to stop if you need to, and it will help to reduce the amount of chippings your vehicle throws up against other vehicles and possible injury to pedestrians.",
+      "explanation": "Explanation: Where there are loose chippings on the road, you should slow down and comply with any reduced speed limit and leave extra room (or clearance) between your vehicle and other traffic. This will also give you more time to stop if you need to, and it will help to reduce the amount of chippings your vehicle throws up against other vehicles and possible injury to pedestrians.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5270,24 +5270,24 @@ export const QUESTIONS = [
         "It increases tyre noise.",
         "It makes the road more slippery.",
         "It improves tyre grip on bends.",
-        "It improves the vehicle?s braking ability."
+        "It improves the vehicle's braking ability."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Diesel spilt on the road can make the road surface extremely slippery, particularly if the road is wet.",
+      "explanation": "Explanation: Diesel spilt on the road can make the road surface extremely slippery, particularly if the road is wet.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What effect does patches of oil or diesel have on a road surface?",
       "options": [
         "It improves tyre surface grip.",
-        "It improves the vehicle?s braking ability.",
+        "It improves the vehicle's braking ability.",
         "It increases tyre surface noise.",
         "It reduces the tyre surface grip."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A patch of oil or diesel on the road can seriously reduce the grip of your tyres on the road, which may result in a possible skid.",
+      "explanation": "Explanation: A patch of oil or diesel on the road can seriously reduce the grip of your tyres on the road, which may result in a possible skid.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5300,7 +5300,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving in slippery road conditions, drivers should be particularly smooth and gradual in the way they accelerate and brake. This will help to avoid skidding or slipping and helps to maintain control of the vehicle.",
+      "explanation": "Explanation: When driving in slippery road conditions, drivers should be particularly smooth and gradual in the way they accelerate and brake. This will help to avoid skidding or slipping and helps to maintain control of the vehicle.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5313,7 +5313,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When travelling downhill in snow or ice, you should select a lower gear to take advantage of engine braking and use the brakes very gently when you need to.",
+      "explanation": "Explanation: When travelling downhill in snow or ice, you should select a lower gear to take advantage of engine braking and use the brakes very gently when you need to.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5326,7 +5326,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The total minimum stopping distance of a vehicle depends on four things; perception time, reaction time, the vehicles reaction time and the vehicle braking capability. The recommend minimum stopping distance of a car driving at 50\u00a0km/h under dry conditions is 25\u00a0metres.",
+      "explanation": "Explanation: The total minimum stopping distance of a vehicle depends on four things; perception time, reaction time, the vehicles reaction time and the vehicle braking capability. The recommend minimum stopping distance of a car driving at 50\u00a0km/h under dry conditions is 25\u00a0metres.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5339,7 +5339,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The total minimum stopping distance of a vehicle depends on four things; perception time, reaction time, the vehicles reaction time and the vehicle braking capability. The recommend minimum stopping distance of a car driving at 50\u00a0km/h under wet conditions is 36\u00a0metres.",
+      "explanation": "Explanation: The total minimum stopping distance of a vehicle depends on four things; perception time, reaction time, the vehicles reaction time and the vehicle braking capability. The recommend minimum stopping distance of a car driving at 50\u00a0km/h under wet conditions is 36\u00a0metres.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5352,7 +5352,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The total minimum stopping distance of a vehicle depends on four things; perception time, reaction time, the vehicles reaction time and the vehicle braking capability. The recommend minimum stopping distance of a car driving at 100\u00a0km/h under dry conditions is 70\u00a0metres.",
+      "explanation": "Explanation: The total minimum stopping distance of a vehicle depends on four things; perception time, reaction time, the vehicles reaction time and the vehicle braking capability. The recommend minimum stopping distance of a car driving at 100\u00a0km/h under dry conditions is 70\u00a0metres.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5365,20 +5365,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying ?only a fool breaks the two second rule?. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
+      "explanation": "Explanation: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying ?only a fool breaks the two second rule?. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "In wet weather how might a driver judge what is a safe following distance from the vehicle in front?",
       "options": [
-        "By allowing at least two seconds to elapse between the vehicle in front and the driver?s own vehicle passing a fixed point.",
+        "By allowing at least two seconds to elapse between the vehicle in front and the driver's own vehicle passing a fixed point.",
         "By allowing two vehicle lengths between the vehicles.",
-        "By allowing at least four seconds to elapse between the vehicle in front and the driver?s own vehicle passing a fixed point.",
+        "By allowing at least four seconds to elapse between the vehicle in front and the driver's own vehicle passing a fixed point.",
         "By allowing four vehicle lengths between the vehicles."
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: In wet conditions you should maintain a gap of at least four seconds from the vehicle in front ? at least twice as long as in dry conditions.",
+      "explanation": "Explanation: In wet conditions you should maintain a gap of at least four seconds from the vehicle in front ? at least twice as long as in dry conditions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5391,7 +5391,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying ?only a fool breaks the two second rule?. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
+      "explanation": "Explanation: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying ?only a fool breaks the two second rule?. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5404,7 +5404,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: In dense fog you should use dipped headlights and fog lights (where fitted). Sidelights are not strong enough in fog, and full headlights can reflect off the fog and make it harder to see where you are going.",
+      "explanation": "Explanation: In dense fog you should use dipped headlights and fog lights (where fitted). Sidelights are not strong enough in fog, and full headlights can reflect off the fog and make it harder to see where you are going.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5417,7 +5417,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: At night in good driving conditions the full headlights of a car will typically let you see 100\u00a0metres ahead. So, you should travel at a speed that allows you to stop within that distance.",
+      "explanation": "Explanation: At night in good driving conditions the full headlights of a car will typically let you see 100\u00a0metres ahead. So, you should travel at a speed that allows you to stop within that distance.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5430,7 +5430,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When driving at night in good driving conditions the dipped headlights of a car will typically let you see 30\u00a0metres ahead. So, you should travel at a speed that allows you to stop in that distance.",
+      "explanation": "Explanation: When driving at night in good driving conditions the dipped headlights of a car will typically let you see 30\u00a0metres ahead. So, you should travel at a speed that allows you to stop in that distance.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5443,7 +5443,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You are responsible for making sure that your vehicle is roadworthy and that its headlights are adjusted correctly. If the headlights are out of line they are less effective and may dazzle oncoming traffic, even when dipped.",
+      "explanation": "Explanation: You are responsible for making sure that your vehicle is roadworthy and that its headlights are adjusted correctly. If the headlights are out of line they are less effective and may dazzle oncoming traffic, even when dipped.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5456,7 +5456,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If you are dazzled by the lights of an oncoming vehicle, look towards the verge until the vehicle has passed. Slow down and stop if necessary.",
+      "explanation": "Explanation: If you are dazzled by the lights of an oncoming vehicle, look towards the verge until the vehicle has passed. Slow down and stop if necessary.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5469,7 +5469,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you are not familiar with driving at night time, it can take quite a while to adjust to conditions. For that reason, you might need to drive slower until you get used to the reduced visibility at night.",
+      "explanation": "Explanation: If you are not familiar with driving at night time, it can take quite a while to adjust to conditions. For that reason, you might need to drive slower until you get used to the reduced visibility at night.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5482,7 +5482,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving at night in good driving conditions the full headlights of a car will typically let you see 100\u00a0metres ahead. So, you should travel at a speed that allows you to stop in that distance.",
+      "explanation": "Explanation: When driving at night in good driving conditions the full headlights of a car will typically let you see 100\u00a0metres ahead. So, you should travel at a speed that allows you to stop in that distance.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5495,20 +5495,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving at night in good driving conditions the dipped headlights of a car will typically let you see 30\u00a0metres ahead. So, you should travel at a speed that allows you to stop in that distance.",
+      "explanation": "Explanation: When driving at night in good driving conditions the dipped headlights of a car will typically let you see 30\u00a0metres ahead. So, you should travel at a speed that allows you to stop in that distance.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "When meeting an oncoming vehicle at night, what should a driver do?",
       "options": [
-        "Avoid looking directly at the oncoming vehicle?s lights.",
+        "Avoid looking directly at the oncoming vehicle's lights.",
         "Focus eyes directly on the steering.",
-        "Focus eyes directly on the oncoming vehicle?s lights.",
+        "Focus eyes directly on the oncoming vehicle's lights.",
         "Increase speed to pass the oncoming vehicle."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If you are dazzled by the lights of an oncoming vehicle, look towards the verge until the vehicle has passed and/or slow down and stop if necessary.",
+      "explanation": "Explanation: If you are dazzled by the lights of an oncoming vehicle, look towards the verge until the vehicle has passed and/or slow down and stop if necessary.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5521,7 +5521,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers should use the main beam headlights, to improve visibility, when driving at night in unlit rural areas ? this will enable them to see as far ahead as possible. Making sure, however, that these lights are dimmed where necessary to avoid dazzling or inconveniencing other road users.",
+      "explanation": "Explanation: Drivers should use the main beam headlights, to improve visibility, when driving at night in unlit rural areas ? this will enable them to see as far ahead as possible. Making sure, however, that these lights are dimmed where necessary to avoid dazzling or inconveniencing other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5534,7 +5534,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers should dip their headlights when driving behind another vehicle so the driver in front is not dazzled by your lights in their mirror.",
+      "explanation": "Explanation: Drivers should dip their headlights when driving behind another vehicle so the driver in front is not dazzled by your lights in their mirror.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5547,7 +5547,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving at night drivers should dip their main beam headlights when meeting or following traffic to avoid dazzling or endangering other road users.",
+      "explanation": "Explanation: When driving at night drivers should dip their main beam headlights when meeting or following traffic to avoid dazzling or endangering other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5560,7 +5560,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Driving when tired can be very dangerous and driver fatigue is one of the main causes of serious road collisions. If a driver becomes drowsy while driving, they should stop in a safe place take a caffeine-based drink and take a short nap. After this they should then get some fresh air and stretch their legs for a few minutes before setting off again. The only cure for fatigue is proper sleep. Never ever drive when tired.",
+      "explanation": "Explanation: Driving when tired can be very dangerous and driver fatigue is one of the main causes of serious road collisions. If a driver becomes drowsy while driving, they should stop in a safe place take a caffeine-based drink and take a short nap. After this they should then get some fresh air and stretch their legs for a few minutes before setting off again. The only cure for fatigue is proper sleep. Never ever drive when tired.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5573,7 +5573,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If dazzled by the lights of an oncoming vehicle, do not look directly at the oncoming lights. Instead glance towards the verge until the vehicle has passed and/or slow down and stop if necessary. This will avoid any temporary blindness caused by the brightness of the oncoming lights.",
+      "explanation": "Explanation: If dazzled by the lights of an oncoming vehicle, do not look directly at the oncoming lights. Instead glance towards the verge until the vehicle has passed and/or slow down and stop if necessary. This will avoid any temporary blindness caused by the brightness of the oncoming lights.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5586,7 +5586,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A driver should use fog lights only during dense fog or falling snow. They must be switched off at all other times.",
+      "explanation": "Explanation: A driver should use fog lights only during dense fog or falling snow. They must be switched off at all other times.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5599,7 +5599,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Black ice is an almost invisible and thin coating of ice on the surface of the road. Sometimes it can look like a sheet of water or as if the road is wet.",
+      "explanation": "Explanation: Black ice is an almost invisible and thin coating of ice on the surface of the road. Sometimes it can look like a sheet of water or as if the road is wet.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5612,7 +5612,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If a driver suspects black ice, they should avoid harsh braking, steering and acceleration. This will help reduce the risk of skidding.",
+      "explanation": "Explanation: If a driver suspects black ice, they should avoid harsh braking, steering and acceleration. This will help reduce the risk of skidding.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5625,7 +5625,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Black ice is an almost invisible and thin coating of ice on the road surface. Because it is hard to see, it is particularly dangerous. When the temperature drops close to freezing you can expect to see black ice - particularly in sheltered or shaded areas of the roadway under trees or beside high walls. In wintry conditions, if you notice a reduction in tyre noise or if the steering becomes lighter, you should suspect that there may be black ice on the road.",
+      "explanation": "Explanation: Black ice is an almost invisible and thin coating of ice on the road surface. Because it is hard to see, it is particularly dangerous. When the temperature drops close to freezing you can expect to see black ice - particularly in sheltered or shaded areas of the roadway under trees or beside high walls. In wintry conditions, if you notice a reduction in tyre noise or if the steering becomes lighter, you should suspect that there may be black ice on the road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5638,7 +5638,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving on icy roads a driver should avoid harsh braking, steering and acceleration. This will help reduce the risk of skidding.",
+      "explanation": "Explanation: When driving on icy roads a driver should avoid harsh braking, steering and acceleration. This will help reduce the risk of skidding.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5651,7 +5651,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Icy roads can have a dramatic effect on the way a vehicle handles, and there can be an increased risk of skidding. When driving on icy roads a driver should avoid harsh braking, steering and acceleration. This will help reduce the risk of skidding.",
+      "explanation": "Explanation: Icy roads can have a dramatic effect on the way a vehicle handles, and there can be an increased risk of skidding. When driving on icy roads a driver should avoid harsh braking, steering and acceleration. This will help reduce the risk of skidding.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5664,7 +5664,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Tyres have less grip on the road when it is wet or icy. Slow down in slippery conditions, and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: Tyres have less grip on the road when it is wet or icy. Slow down in slippery conditions, and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5677,7 +5677,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Be extra careful when negotiating steep hills or humpbacked bridges in slippery conditions. Slow down gently on the approach, select the appropriate gear for the speed of the vehicle and use gentle steering and acceleration.",
+      "explanation": "Explanation: Be extra careful when negotiating steep hills or humpbacked bridges in slippery conditions. Slow down gently on the approach, select the appropriate gear for the speed of the vehicle and use gentle steering and acceleration.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5690,7 +5690,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Road signs and road markings may become obscured by snow. If this happens you may have difficulty reading regulatory, warning and information signs. This is the main reason why these signs are different shapes. Drivers should pay particular attention when travelling in these conditions.",
+      "explanation": "Explanation: Road signs and road markings may become obscured by snow. If this happens you may have difficulty reading regulatory, warning and information signs. This is the main reason why these signs are different shapes. Drivers should pay particular attention when travelling in these conditions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5703,7 +5703,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: On a wet road, a film of water can build up between the tyres and the road surface. This is called aquaplaning and it has the effect of reducing the grip of the tyres on the road, and this affects the steering and braking. For these reasons the driver should slow down during and after rain and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: On a wet road, a film of water can build up between the tyres and the road surface. This is called aquaplaning and it has the effect of reducing the grip of the tyres on the road, and this affects the steering and braking. For these reasons the driver should slow down during and after rain and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5716,7 +5716,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The driver should moderate their speed during heavy rain or where water is building up on the road surface. This will help to avoid ?aquaplaning? which has the effect of reducing the grip of the tyres on the road, and this affects the steering and braking. For these reasons the driver should slow down during and after rain and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: The driver should moderate their speed during heavy rain or where water is building up on the road surface. This will help to avoid ?aquaplaning? which has the effect of reducing the grip of the tyres on the road, and this affects the steering and braking. For these reasons the driver should slow down during and after rain and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5729,7 +5729,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Where there is mud on the road you should slow down and be aware that there is a danger of skidding. Your stopping distance will also be greater where there is mud on the road.",
+      "explanation": "Explanation: Where there is mud on the road you should slow down and be aware that there is a danger of skidding. Your stopping distance will also be greater where there is mud on the road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5742,7 +5742,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Riding on just 2 wheels, riders need to be on the constant lookout for irregularities and other problems with the road surface. This can include all road markings.",
+      "explanation": "Explanation: Riding on just 2 wheels, riders need to be on the constant lookout for irregularities and other problems with the road surface. This can include all road markings.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5755,7 +5755,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving through a flooded section of road, brakes may become less effective. If this happens, test brakes to ensure that they have not been affected by the water ? check mirrors before doing so. If they have been affected, press gently on the brake pedal when driving until they dry out and return to normal.",
+      "explanation": "Explanation: When driving through a flooded section of road, brakes may become less effective. If this happens, test brakes to ensure that they have not been affected by the water ? check mirrors before doing so. If they have been affected, press gently on the brake pedal when driving until they dry out and return to normal.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5768,7 +5768,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When approaching a stretch of road with shallow flooding, reduce speed and assess the area for any danger. When driving through surface water, drive in a low gear as slowly as possible keeping the revs high to avoid stalling.",
+      "explanation": "Explanation: When approaching a stretch of road with shallow flooding, reduce speed and assess the area for any danger. When driving through surface water, drive in a low gear as slowly as possible keeping the revs high to avoid stalling.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5781,7 +5781,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver should always approach roadworks with caution as there are many possible hazards to deal with ? including road workers, works vehicles, uneven road surfaces and temporary traffic controls.",
+      "explanation": "Explanation: A driver should always approach roadworks with caution as there are many possible hazards to deal with ? including road workers, works vehicles, uneven road surfaces and temporary traffic controls.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5794,7 +5794,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When travelling through a section of roadworks, a driver needs to be extra careful, as the road surface area may be considerably reduced. It may be narrower, uneven, slippery or there may be loose chippings which may pose a danger for road workers and other road users.",
+      "explanation": "Explanation: When travelling through a section of roadworks, a driver needs to be extra careful, as the road surface area may be considerably reduced. It may be narrower, uneven, slippery or there may be loose chippings which may pose a danger for road workers and other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5807,7 +5807,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When a driver wants to turn right on a one way street, they should check their mirrors, signal right and manoeuvre into the right-hand side when it is safe to do so. Then complete the turn into the appropriate lane of the street they are entering.",
+      "explanation": "Explanation: When a driver wants to turn right on a one way street, they should check their mirrors, signal right and manoeuvre into the right-hand side when it is safe to do so. Then complete the turn into the appropriate lane of the street they are entering.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5820,7 +5820,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If a driver needs to cross a bus lane on their left in order to enter a property, they should take extra care that there are no buses, taxis or cyclists in the bus lane. They should check mirrors, signal and turn into the property when it is safe to do so.",
+      "explanation": "Explanation: If a driver needs to cross a bus lane on their left in order to enter a property, they should take extra care that there are no buses, taxis or cyclists in the bus lane. They should check mirrors, signal and turn into the property when it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5833,7 +5833,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A contra-flow bus lane is one that runs in the opposite direction to traffic beside it. Only buses on a scheduled service may use a contra-flow bus lane.",
+      "explanation": "Explanation: A contra-flow bus lane is one that runs in the opposite direction to traffic beside it. Only buses on a scheduled service may use a contra-flow bus lane.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5846,7 +5846,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A bus lane is a special lane for the use of buses. A with-flow bus lane is one that runs in the same direction as the traffic beside it. Taxis and cyclists may also use with-flow bus lanes. Other traffic may use them outside the hours posted on the accompanying plate.",
+      "explanation": "Explanation: A bus lane is a special lane for the use of buses. A with-flow bus lane is one that runs in the same direction as the traffic beside it. Taxis and cyclists may also use with-flow bus lanes. Other traffic may use them outside the hours posted on the accompanying plate.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5859,7 +5859,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You must normally drive in the left-hand lane of a dual carriageway, except when overtaking or turning right a short distance ahead.",
+      "explanation": "Explanation: You must normally drive in the left-hand lane of a dual carriageway, except when overtaking or turning right a short distance ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5872,7 +5872,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A 2?plus-1 road consists of two lanes in one direction of travel and one lane in the other direction. The two-lane section allows for safe overtaking and alternates with a one-lane section roughly every 2\u00a0kilometres.",
+      "explanation": "Explanation: A 2?plus-1 road consists of two lanes in one direction of travel and one lane in the other direction. The two-lane section allows for safe overtaking and alternates with a one-lane section roughly every 2\u00a0kilometres.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5885,7 +5885,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Motorways and dual carriageways are designed to help traffic travel faster and more safely between destinations. Traffic conditions can change very quickly because of the speed and increased volumes of traffic and lanes, and you need to be particularly alert to other drivers changing lanes or reducing speed.",
+      "explanation": "Explanation: Motorways and dual carriageways are designed to help traffic travel faster and more safely between destinations. Traffic conditions can change very quickly because of the speed and increased volumes of traffic and lanes, and you need to be particularly alert to other drivers changing lanes or reducing speed.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5898,7 +5898,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The normal keep left rules apply when you are driving on a motorway ? a driver should stay in the nearside (left hand) lane unless they are overtaking.",
+      "explanation": "Explanation: The normal keep left rules apply when you are driving on a motorway ? a driver should stay in the nearside (left hand) lane unless they are overtaking.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5911,7 +5911,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When joining a motorway a driver should try to match their speed to that of the motorway traffic and merge into it when a suitable gap appears, avoiding driving in the hard shoulder, while yielding to traffic already on the motorway.",
+      "explanation": "Explanation: When joining a motorway a driver should try to match their speed to that of the motorway traffic and merge into it when a suitable gap appears, avoiding driving in the hard shoulder, while yielding to traffic already on the motorway.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5924,7 +5924,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Motorways are designed so that traffic can move faster and more freely. It is illegal and dangerous to stop a vehicle on any part of a motorway except in an emergency or when signalled to do so by a Garda.",
+      "explanation": "Explanation: Motorways are designed so that traffic can move faster and more freely. It is illegal and dangerous to stop a vehicle on any part of a motorway except in an emergency or when signalled to do so by a Garda.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5937,7 +5937,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If a driver misses their intended exit when driving on a motorway, they should proceed to the next junction exit where they can leave the motorway and then rejoin it on the opposite side of the motorway.",
+      "explanation": "Explanation: If a driver misses their intended exit when driving on a motorway, they should proceed to the next junction exit where they can leave the motorway and then rejoin it on the opposite side of the motorway.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5950,7 +5950,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When a driver is leaving a motorway, they should enter the deceleration lane and reduce their speed. They should comply with the speed limit of the road they are entering.",
+      "explanation": "Explanation: When a driver is leaving a motorway, they should enter the deceleration lane and reduce their speed. They should comply with the speed limit of the road they are entering.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5963,7 +5963,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If a driver misses their intended exit when driving on a motorway, they should proceed to the next junction exit where they can leave the motorway and then rejoin it in the opposite direction.",
+      "explanation": "Explanation: If a driver misses their intended exit when driving on a motorway, they should proceed to the next junction exit where they can leave the motorway and then rejoin it in the opposite direction.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5976,7 +5976,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Motorways are designed so that traffic can move faster and more freely, without traffic lights, crossroads, level crossings and other road features that might slow down traffic. There are also restrictions on who may use a motorway ? for example L-drivers and motorcycles under 50\u00a0cc are prohibited.",
+      "explanation": "Explanation: Motorways are designed so that traffic can move faster and more freely, without traffic lights, crossroads, level crossings and other road features that might slow down traffic. There are also restrictions on who may use a motorway ? for example L-drivers and motorcycles under 50\u00a0cc are prohibited.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5989,7 +5989,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When a driver wants to overtake on a motorway, they should generally only overtake on the right unless traffic is travelling in slow moving queues. The driver should use the Mirror?Signal?Mirror (blind spots)?Manoeuvre routine. Check mirrors, signal intention, check mirrors again (and blind spots), and complete the manoeuvre when it is safe to do so. They should pay particular attention to the speed of the traffic behind them before they move out. When they have finished overtaking, they should move back into the left-hand lane smoothly.",
+      "explanation": "Explanation: When a driver wants to overtake on a motorway, they should generally only overtake on the right unless traffic is travelling in slow moving queues. The driver should use the Mirror'signal?Mirror (blind spots)?Manoeuvre routine. Check mirrors, signal intention, check mirrors again (and blind spots), and complete the manoeuvre when it is safe to do so. They should pay particular attention to the speed of the traffic behind them before they move out. When they have finished overtaking, they should move back into the left-hand lane smoothly.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6002,7 +6002,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: There are extra dangers when driving on a motorway because of the increased volume of traffic and higher speed. For safety reasons a driver should not drive or stop on the hard shoulder of a motorway except in an emergency or breakdown.",
+      "explanation": "Explanation: There are extra dangers when driving on a motorway because of the increased volume of traffic and higher speed. For safety reasons a driver should not drive or stop on the hard shoulder of a motorway except in an emergency or breakdown.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6015,7 +6015,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The driver should check for signs showing a lower speed; Use the speedometer to make sure that they are obeying the reduced speed limit; remember that the slip roads and link roads between motorways may include sharp bends and that they may encounter junctions and other traffic. Remember that motorway rules no longer apply.",
+      "explanation": "Explanation: The driver should check for signs showing a lower speed; Use the speedometer to make sure that they are obeying the reduced speed limit; remember that the slip roads and link roads between motorways may include sharp bends and that they may encounter junctions and other traffic. Remember that motorway rules no longer apply.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6024,11 +6024,11 @@ export const QUESTIONS = [
         "Give way to traffic approaching from the left only.",
         "Give way to traffic approaching firstly from the left and then the right.",
         "Carry on as normal as they always have the right of way.",
-        "Traffic approaching from the driver?s right has right of way."
+        "Traffic approaching from the driver's right has right of way."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a driver is at a junction where the roads are of equal importance, traffic on the driver?s right has the right of way. The driver must let that traffic pass before moving on. It is important to understand that the right of way is not an absolute right. Drivers must proceed with caution whilst showing regard for other users of the road.",
+      "explanation": "Explanation: If a driver is at a junction where the roads are of equal importance, traffic on the driver's right has the right of way. The driver must let that traffic pass before moving on. It is important to understand that the right of way is not an absolute right. Drivers must proceed with caution whilst showing regard for other users of the road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6041,7 +6041,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers should always approach roundabouts with caution. They should be prepared to give way to traffic on the right, traffic already on the roundabout, pedestrians already crossing and to always stop if necessary.",
+      "explanation": "Explanation: Drivers should always approach roundabouts with caution. They should be prepared to give way to traffic on the right, traffic already on the roundabout, pedestrians already crossing and to always stop if necessary.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6054,7 +6054,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When a driver approaches a roundabout where two lanes are provided, they should choose the most suitable one based on the road markings and the exit they intend to take off the roundabout. The left lane is generally used for vehicles exiting to the left (9 o?clock) or straight ahead (12 o?clock) and the right is for vehicles exiting at any exit after 12 o?clock.",
+      "explanation": "Explanation: When a driver approaches a roundabout where two lanes are provided, they should choose the most suitable one based on the road markings and the exit they intend to take off the roundabout. The left lane is generally used for vehicles exiting to the left (9 o?clock) or straight ahead (12 o?clock) and the right is for vehicles exiting at any exit after 12 o?clock.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6067,7 +6067,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When a driver intends to take any exit between the 6 o?clock and 12 o?clock positions they should generally approach the roundabout in the left lane unless road markings dictate otherwise.",
+      "explanation": "Explanation: When a driver intends to take any exit between the 6 o?clock and 12 o?clock positions they should generally approach the roundabout in the left lane unless road markings dictate otherwise.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6080,7 +6080,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: In general, the correct position to be in before turning right is just left of the centre of the road. Where the road is wide enough, this position allows traffic coming from behind and going straight ahead to pass safely on the left. The driver should be alert for road markings which direct them to follow a certain course.",
+      "explanation": "Explanation: In general, the correct position to be in before turning right is just left of the centre of the road. Where the road is wide enough, this position allows traffic coming from behind and going straight ahead to pass safely on the left. The driver should be alert for road markings which direct them to follow a certain course.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6093,7 +6093,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The driver must yield to oncoming traffic and to pedestrians who are already crossing when turning right from a major road to a minor road.",
+      "explanation": "Explanation: The driver must yield to oncoming traffic and to pedestrians who are already crossing when turning right from a major road to a minor road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6106,7 +6106,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: In general, a driver should switch on their dipped headlights before entering a tunnel.",
+      "explanation": "Explanation: In general, a driver should switch on their dipped headlights before entering a tunnel.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6119,7 +6119,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: The driver should keep a safe distance from the vehicle in front remembering that they are entering a tunnel and tailgating could create an emergency. The minimum recommended safe distance for a car or motor cycle is 50\u00a0metres and is 100\u00a0metres for all other vehicles. Always remember the 2\u00a0second rule.",
+      "explanation": "Explanation: The driver should keep a safe distance from the vehicle in front remembering that they are entering a tunnel and tailgating could create an emergency. The minimum recommended safe distance for a car or motor cycle is 50\u00a0metres and is 100\u00a0metres for all other vehicles. Always remember the 2\u00a0second rule.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6132,7 +6132,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If there is traffic congestion in a tunnel, you should switch on hazard lights and remain patient. Keep a safe distance from the vehicle in front even in slow-moving traffic. Listen for traffic messages on the tunnel radio station, if available.",
+      "explanation": "Explanation: If there is traffic congestion in a tunnel, you should switch on hazard lights and remain patient. Keep a safe distance from the vehicle in front even in slow-moving traffic. Listen for traffic messages on the tunnel radio station, if available.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6145,7 +6145,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A green traffic light means you may go if the way is clear. If pedestrians are crossing, give way to them and let them safely cross before proceeding.",
+      "explanation": "Explanation: A green traffic light means you may go if the way is clear. If pedestrians are crossing, give way to them and let them safely cross before proceeding.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6158,7 +6158,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Show patience and courtesy when driving behind a learner driver. Learner drivers are not as experienced as other road users and may drive erratically when put under pressure.",
+      "explanation": "Explanation: Show patience and courtesy when driving behind a learner driver. Learner drivers are not as experienced as other road users and may drive erratically when put under pressure.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6171,7 +6171,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should be patient when driving behind a learner driver. Learners may not anticipate and react to unusual traffic situations as well as an experienced driver might.",
+      "explanation": "Explanation: You should be patient when driving behind a learner driver. Learners may not anticipate and react to unusual traffic situations as well as an experienced driver might.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6184,7 +6184,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Drivers should be aware that no vehicle has an automatic right of way at a junction. Drivers must pay particular attention to vulnerable road users such as motorcyclists whose presence on the road may be less visible than other vehicle types due to their smaller size or obstructions.",
+      "explanation": "Explanation: Drivers should be aware that no vehicle has an automatic right of way at a junction. Drivers must pay particular attention to vulnerable road users such as motorcyclists whose presence on the road may be less visible than other vehicle types due to their smaller size or obstructions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6197,7 +6197,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before moving off at traffic lights and particularly when turning left you should be aware of cyclists and motorcyclists coming up on the left in general ? in particular where there is an advanced stop line for cyclists ahead of that for other road users.",
+      "explanation": "Explanation: Before moving off at traffic lights and particularly when turning left you should be aware of cyclists and motorcyclists coming up on the left in general ? in particular where there is an advanced stop line for cyclists ahead of that for other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6210,7 +6210,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A green traffic light means you may go if the way is clear. If pedestrians are crossing at a pelican crossing, give way to them and let them safely cross before proceeding.",
+      "explanation": "Explanation: A green traffic light means you may go if the way is clear. If pedestrians are crossing at a pelican crossing, give way to them and let them safely cross before proceeding.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6223,7 +6223,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Drivers should be aware of and check blind spots before moving off and changing direction where appropriate. Cyclists can easily become hidden in a blind spot, and in slow-moving traffic, they might be moving faster than you are.",
+      "explanation": "Explanation: Drivers should be aware of and check blind spots before moving off and changing direction where appropriate. Cyclists can easily become hidden in a blind spot, and in slow-moving traffic, they might be moving faster than you are.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6236,7 +6236,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Before moving off at traffic lights you should be aware of motorcyclists unexpectedly coming up on the left hand side(nearside).",
+      "explanation": "Explanation: Before moving off at traffic lights you should be aware of motorcyclists unexpectedly coming up on the left hand side(nearside).",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6249,20 +6249,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Children can be unpredictable. When driving at a higher speed and children are present, drivers must expect the unexpected, slow down and be prepared to stop if necessary.",
+      "explanation": "Explanation: Children can be unpredictable. When driving at a higher speed and children are present, drivers must expect the unexpected, slow down and be prepared to stop if necessary.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What should a driver do when they see joggers ahead on the left?",
       "options": [
         "Check the mirrors, indicate and overtake, allowing them sufficient clearance.",
-        "Expect them to move in out of the driver?s path.",
+        "Expect them to move in out of the driver's path.",
         "Indicate and overtake allowing sufficient clearance.",
         "Sound the horn and flash the lights to warn them of your presence."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: People on the road are more vulnerable than vehicles so you should treat them with extra care. If you see people jogging ahead, use the mirror?signal?manouevre routine and give plenty of clearance to the joggers when you are overtaking them.",
+      "explanation": "Explanation: People on the road are more vulnerable than vehicles so you should treat them with extra care. If you see people jogging ahead, use the mirror'signal?manouevre routine and give plenty of clearance to the joggers when you are overtaking them.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6275,7 +6275,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: You should always be aware of how vulnerable cyclists are. When you are driving on a road with potholes or bad surfaces, give plenty of clearance to the cyclists when overtaking them. Take into account that they may swerve suddenly to avoid potholes.",
+      "explanation": "Explanation: You should always be aware of how vulnerable cyclists are. When you are driving on a road with potholes or bad surfaces, give plenty of clearance to the cyclists when overtaking them. Take into account that they may swerve suddenly to avoid potholes.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6288,7 +6288,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When turning left, drivers should be aware that cyclists and pedestrians may come up on the left (nearside) . Always check to your left (nearside) before you make a left turn.",
+      "explanation": "Explanation: When turning left, drivers should be aware that cyclists and pedestrians may come up on the left (nearside) . Always check to your left (nearside) before you make a left turn.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6301,7 +6301,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Where there is no footpath, pedestrians are required to walk on the side of the on-coming traffic and drivers should be aware of this. Pedestrians are vulnerable road users so drivers should always be aware of their presence, especially on country roads.",
+      "explanation": "Explanation: Where there is no footpath, pedestrians are required to walk on the side of the on-coming traffic and drivers should be aware of this. Pedestrians are vulnerable road users so drivers should always be aware of their presence, especially on country roads.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6314,7 +6314,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: While driving at night and even with the best headlights, it can be very difficult to see all the hazards that you might come across ? for example, pedestrians wearing dark clothing. As always drivers should drive at a speed that will enable them to stop safely within the distance they can see to be clear ahead.",
+      "explanation": "Explanation: While driving at night and even with the best headlights, it can be very difficult to see all the hazards that you might come across ? for example, pedestrians wearing dark clothing. As always drivers should drive at a speed that will enable them to stop safely within the distance they can see to be clear ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6327,7 +6327,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You should never park on a footpath. Pedestrians (including people with young children in pushchairs, prams and also wheelchair users) might have to go onto the road to get around your car, and this could put them in danger.",
+      "explanation": "Explanation: You should never park on a footpath. Pedestrians (including people with young children in pushchairs, prams and also wheelchair users) might have to go onto the road to get around your car, and this could put them in danger.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6340,7 +6340,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The sequence drivers should follow the mirror - signal - manoeuvre routine when overtaking. Drivers should overtake only when it is safe to do so. Give extra space to cyclists when overtaking them, as they may need to move out to avoid a pothole, or they could be blown into your path on windy days.",
+      "explanation": "Explanation: The sequence drivers should follow the mirror - signal - manoeuvre routine when overtaking. Drivers should overtake only when it is safe to do so. Give extra space to cyclists when overtaking them, as they may need to move out to avoid a pothole, or they could be blown into your path on windy days.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6348,12 +6348,12 @@ export const QUESTIONS = [
       "options": [
         "It is unnecessary to give signals provided observation is taken.",
         "Use a clear, decisive hand signal as well.",
-        "The driver?s position on the road is a sufficient enough signal.",
+        "The driver's position on the road is a sufficient enough signal.",
         "Shout your intentions out of the window."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If the driver is concerned that for whatever reason the indicators are not giving an adequate signal, they should use clear decisive hand signals as well to advise other road users of their intention.",
+      "explanation": "Explanation: If the driver is concerned that for whatever reason the indicators are not giving an adequate signal, they should use clear decisive hand signals as well to advise other road users of their intention.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6366,33 +6366,33 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When you are driving on a road without footpaths, drivers should take extra care when they come upon pedestrians on the road. When they intend to move out and overtake, they should check the mirrors and signal to following traffic in good time to alert drivers behind that they are changing direction because of the hazard ahead.",
+      "explanation": "Explanation: When you are driving on a road without footpaths, drivers should take extra care when they come upon pedestrians on the road. When they intend to move out and overtake, they should check the mirrors and signal to following traffic in good time to alert drivers behind that they are changing direction because of the hazard ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "When driving on dark winter mornings and evenings on unlit country roads, what should a driver be aware of?",
       "options": [
-        "An oncoming cyclist could never be dazzled by the vehicle lights and wobble off course into the driver?s path.",
+        "An oncoming cyclist could never be dazzled by the vehicle lights and wobble off course into the driver's path.",
         "Cyclists are much more vulnerable in poor lighting conditions.",
         "On country roads, cyclists have space in the margin of the road so that a driver can overtake them without reducing speed or moving out.",
         "Cyclists all wear reflective belts, have the correct lighting on their bicycles and are clearly visible."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Drivers should take extra care when driving on dark winter mornings and evenings ? vulnerable road users such as cyclists and pedestrians (particularly schoolchildren) might not be so easy to see in low light conditions.",
+      "explanation": "Explanation: Drivers should take extra care when driving on dark winter mornings and evenings ? vulnerable road users such as cyclists and pedestrians (particularly schoolchildren) might not be so easy to see in low light conditions.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "When driving on dark winter mornings and evenings on unlit country roads, what should a driver be aware of?",
       "options": [
         "That there could be vulnerable pedestrians walking on the road.",
-        "That the lack of light will not affect the driver?s ability to see vulnerable pedestrians.",
+        "That the lack of light will not affect the driver's ability to see vulnerable pedestrians.",
         "That there will be no pedestrians walking on the road.",
         "That all pedestrians will be wearing reflective armbands and bright clothing."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Drivers should take extra care when driving on dark winter mornings and evenings ? vulnerable road users such as cyclists and pedestrians (particularly schoolchildren) might not be so easy to see in low light conditions.",
+      "explanation": "Explanation: Drivers should take extra care when driving on dark winter mornings and evenings ? vulnerable road users such as cyclists and pedestrians (particularly schoolchildren) might not be so easy to see in low light conditions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6401,11 +6401,11 @@ export const QUESTIONS = [
         "That a driver should drive at all times with sidelights on in order to see pedestrians walking on unlit country roads.",
         "Schoolchildren are more vulnerable on unlit country roads on dark winter mornings and evenings.",
         "A driver should expect that pedestrians will be on the footpath and not be in danger of being hit.",
-        "That the lack of light will not effect the driver?s ability to see stray animals on the road."
+        "That the lack of light will not effect the driver's ability to see stray animals on the road."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Drivers should take extra care when driving on dark winter mornings and evenings ? vulnerable road users such as cyclists and pedestrians (particularly schoolchildren) might not be so easy to see in low light conditions.",
+      "explanation": "Explanation: Drivers should take extra care when driving on dark winter mornings and evenings ? vulnerable road users such as cyclists and pedestrians (particularly schoolchildren) might not be so easy to see in low light conditions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6418,7 +6418,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If a front tyre bursts on a vehicle, the steering on the vehicle will become unstable. Don?t panic ? slow down gradually while keeping a firm hold on the steering wheel. Stop in a safe place to change the wheel, and alert other road users by switching on your hazard warning lights.",
+      "explanation": "Explanation: If a front tyre bursts on a vehicle, the steering on the vehicle will become unstable. Don?t panic ? slow down gradually while keeping a firm hold on the steering wheel. Stop in a safe place to change the wheel, and alert other road users by switching on your hazard warning lights.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6431,7 +6431,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A strong smell of fuel is usually an indication that something is wrong, and you should stop and investigate as soon as possible. Leaking or spilling petrol can be dangerous because it is so combustible. It is good practice to carry a fire extinguisher in your vehicle, so that you can deal with any small fires",
+      "explanation": "Explanation: A strong smell of fuel is usually an indication that something is wrong, and you should stop and investigate as soon as possible. Leaking or spilling petrol can be dangerous because it is so combustible. It is good practice to carry a fire extinguisher in your vehicle, so that you can deal with any small fires",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6444,7 +6444,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If your vehicle breaks down on the road, always switch on the hazard warning lights and stand clear of the vehicle while awaiting assistance ? this will warn other traffic that there is a vehicle stopped on the road.",
+      "explanation": "Explanation: If your vehicle breaks down on the road, always switch on the hazard warning lights and stand clear of the vehicle while awaiting assistance ? this will warn other traffic that there is a vehicle stopped on the road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6457,11 +6457,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Where your view is obstructed at a junction, you should move carefully into a position where you can see, but without interfering with other road users. You should then assess the situation before you continue.",
+      "explanation": "Explanation: Where your view is obstructed at a junction, you should move carefully into a position where you can see, but without interfering with other road users. You should then assess the situation before you continue.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "When should a driver use the vehicle?s rear view mirror?",
+      "question": "When should a driver use the vehicle's rear view mirror?",
       "options": [
         "Before changing direction.",
         "Before reversing only.",
@@ -6470,7 +6470,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should use your mirrors to stay aware of traffic situations behind and around you. Always check your mirror before you change direction on a road, and before you signal or begin a manoeuvre.",
+      "explanation": "Explanation: You should use your mirrors to stay aware of traffic situations behind and around you. Always check your mirror before you change direction on a road, and before you signal or begin a manoeuvre.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6483,7 +6483,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: At junctions where the view is obstructed, move carefully into a position where you can see without interfering with other road users. Then assess the situation before you continue.",
+      "explanation": "Explanation: At junctions where the view is obstructed, move carefully into a position where you can see without interfering with other road users. Then assess the situation before you continue.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6496,7 +6496,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Driving when you are tired can be very dangerous, and tiredness is one of the main causes of serious road collisions. If you become drowsy while driving, stop in a safe place and take a short nap. Then get some fresh air and stretch your legs for a few minutes before setting off again. Taking a caffeine-based drink such as coffee may also help.",
+      "explanation": "Explanation: Driving when you are tired can be very dangerous, and tiredness is one of the main causes of serious road collisions. If you become drowsy while driving, stop in a safe place and take a short nap. Then get some fresh air and stretch your legs for a few minutes before setting off again. Taking a caffeine-based drink such as coffee may also help.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6509,7 +6509,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Driving when you are tired can be very dangerous, and it may cause you to micro-sleep (or nod off momentarily). At 100\u00a0km/h you travel at 28\u00a0metres a second, so if you micro-sleep for just 4\u00a0seconds you would travel over 100\u00a0metres without being in control of the vehicle. Never drive if you are fighting sleep.",
+      "explanation": "Explanation: Driving when you are tired can be very dangerous, and it may cause you to micro-sleep (or nod off momentarily). At 100\u00a0km/h you travel at 28\u00a0metres a second, so if you micro-sleep for just 4\u00a0seconds you would travel over 100\u00a0metres without being in control of the vehicle. Never drive if you are fighting sleep.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6522,7 +6522,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: You should always drive at a speed that allows you to stop safely within the distance you can see to be clear. Being late for an appointment is no excuse for exceeding speed limits or for driving at an unsafe speed. Arrive alive.",
+      "explanation": "Explanation: You should always drive at a speed that allows you to stop safely within the distance you can see to be clear. Being late for an appointment is no excuse for exceeding speed limits or for driving at an unsafe speed. Arrive alive.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6535,7 +6535,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Overtaking in the manner described here is dangerous. You should overtake another vehicle only when it is safe to do so, both for you and for all other traffic. Before you overtake, make sure the road ahead is clear and that you have enough room to complete the overtaking manoeuvre and return to your own side of the road without forcing any other road user to alter speed or course.",
+      "explanation": "Explanation: Overtaking in the manner described here is dangerous. You should overtake another vehicle only when it is safe to do so, both for you and for all other traffic. Before you overtake, make sure the road ahead is clear and that you have enough room to complete the overtaking manoeuvre and return to your own side of the road without forcing any other road user to alter speed or course.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6548,7 +6548,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Where earth-moving machinery is working, there are likely to be mud and gravel deposits on the road. Also the noise of such machines might make it hard for road workers to hear the approaching traffic. When you come across earth-moving machinery, slow down and proceed with extreme caution.",
+      "explanation": "Explanation: Where earth-moving machinery is working, there are likely to be mud and gravel deposits on the road. Also the noise of such machines might make it hard for road workers to hear the approaching traffic. When you come across earth-moving machinery, slow down and proceed with extreme caution.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6561,7 +6561,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The overall stopping distance of your vehicle depends on its speed and weight ? faster and heavier vehicles require greater stopping distances.",
+      "explanation": "Explanation: The overall stopping distance of your vehicle depends on its speed and weight ? faster and heavier vehicles require greater stopping distances.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6574,11 +6574,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: In dense fog you should reduce your speed and use dipped headlights and fog lights (where fitted). Sidelights are not strong enough in fog, and full headlights can reflect off the fog and make it harder to see where you are going.",
+      "explanation": "Explanation: In dense fog you should reduce your speed and use dipped headlights and fog lights (where fitted). Sidelights are not strong enough in fog, and full headlights can reflect off the fog and make it harder to see where you are going.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "When driving at night, when must a driver dip the vehicle?s full headlights?",
+      "question": "When driving at night, when must a driver dip the vehicle's full headlights?",
       "options": [
         "When entering a motorway.",
         "When there is no oncoming traffic.",
@@ -6587,7 +6587,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When driving at night you should dip your headlights when you meet oncoming vehicles so that you do not dazzle them. And you should also dip your headlights when you are driving behind another vehicle so the driver is not dazzled by your lights in their mirror.",
+      "explanation": "Explanation: When driving at night you should dip your headlights when you meet oncoming vehicles so that you do not dazzle them. And you should also dip your headlights when you are driving behind another vehicle so the driver is not dazzled by your lights in their mirror.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6600,7 +6600,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A 2-plus-1 road consists of two lanes in one direction of travel and one lane in the other direction. The two-lane section allows for safe overtaking and alternates with a one-lane section roughly every 2\u00a0kilometres.",
+      "explanation": "Explanation: A 2-plus-1 road consists of two lanes in one direction of travel and one lane in the other direction. The two-lane section allows for safe overtaking and alternates with a one-lane section roughly every 2\u00a0kilometres.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6613,7 +6613,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A 2-plus-1 road consists of two lanes in one direction of travel and one lane in the other direction. When you need to overtake, you should wait until you reach the 2-lane section which occurs approximately every 2\u00a0kilometres.",
+      "explanation": "Explanation: A 2-plus-1 road consists of two lanes in one direction of travel and one lane in the other direction. When you need to overtake, you should wait until you reach the 2-lane section which occurs approximately every 2\u00a0kilometres.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6626,7 +6626,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: By law you must enter a roundabout by turning to the left and giving way to traffic already on the roundabout.",
+      "explanation": "Explanation: By law you must enter a roundabout by turning to the left and giving way to traffic already on the roundabout.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6639,7 +6639,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If traffic comes to a halt in a tunnel, switch off your engine to prevent a build up of fumes in the tunnel. Stay patient and follow the instructions of the tunnel operators.",
+      "explanation": "Explanation: If traffic comes to a halt in a tunnel, switch off your engine to prevent a build up of fumes in the tunnel. Stay patient and follow the instructions of the tunnel operators.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6652,7 +6652,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If your vehicle breaks down or is involved in a collision in a tunnel, switch on your hazard warning lights, switch off your engine, go to an emergency station and use the emergency phone to alert the tunnel operator.",
+      "explanation": "Explanation: If your vehicle breaks down or is involved in a collision in a tunnel, switch on your hazard warning lights, switch off your engine, go to an emergency station and use the emergency phone to alert the tunnel operator.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6665,7 +6665,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Vehicles do not have an automatic right of way at junctions. As a driver you should pay particular attention to vulnerable road users such as pedestrians, cyclists and motorcyclists and be aware that they are entitled to use the road in safety.",
+      "explanation": "Explanation: Vehicles do not have an automatic right of way at junctions. As a driver you should pay particular attention to vulnerable road users such as pedestrians, cyclists and motorcyclists and be aware that they are entitled to use the road in safety.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6678,7 +6678,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You should know what speed you?re travelling at and you should always drive at a speed that is appropriate to the conditions you are driving in, and you should be able to stop smoothly and safely within the distance you can see to be clear ahead.",
+      "explanation": "Explanation: You should know what speed you?re travelling at and you should always drive at a speed that is appropriate to the conditions you are driving in, and you should be able to stop smoothly and safely within the distance you can see to be clear ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6691,7 +6691,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: One of the keys to good fuel efficiency is making sure that your vehicle is well maintained. Servicing should be carried out as recommended by the manufacturer. Checking the tyre pressure regularly can also help ensure good fuel efficiency.",
+      "explanation": "Explanation: One of the keys to good fuel efficiency is making sure that your vehicle is well maintained. Servicing should be carried out as recommended by the manufacturer. Checking the tyre pressure regularly can also help ensure good fuel efficiency.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6704,7 +6704,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Carbon monoxide is a poisonous gas emitted by vehicle exhausts into the atmosphere. Driving economically and keeping a vehicle well maintained can reduce the level of carbon monoxide emissions.",
+      "explanation": "Explanation: Carbon monoxide is a poisonous gas emitted by vehicle exhausts into the atmosphere. Driving economically and keeping a vehicle well maintained can reduce the level of carbon monoxide emissions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6717,7 +6717,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The advantages of eco-driving include improved road safety, improved fuel consumption and reduced emissions. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother drive.",
+      "explanation": "Explanation: The advantages of eco-driving include improved road safety, improved fuel consumption and reduced emissions. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother drive.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6730,7 +6730,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Eco-driving contributes to road safety and also reduces fuel consumption and harmful emissions. Eco-conscious drivers will read the road well in advance and avoid harsh acceleration and braking. Fuel consumption can be reduced by using the highest gear possible without causing the engine to labour.",
+      "explanation": "Explanation: Eco-driving contributes to road safety and also reduces fuel consumption and harmful emissions. Eco-conscious drivers will read the road well in advance and avoid harsh acceleration and braking. Fuel consumption can be reduced by using the highest gear possible without causing the engine to labour.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6743,7 +6743,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: As a driver you can do less damage to the environment if you drive smoothly and avoid harsh acceleration and braking. Vehicles travelling at 110\u00a0km/h use up to 30% more fuel than those travelling at 80\u00a0km/h. However, you should not drive so slow as to inconvenience other road users.",
+      "explanation": "Explanation: As a driver you can do less damage to the environment if you drive smoothly and avoid harsh acceleration and braking. Vehicles travelling at 110\u00a0km/h use up to 30% more fuel than those travelling at 80\u00a0km/h. However, you should not drive so slow as to inconvenience other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6756,7 +6756,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Don?t try to change a wheel on a motorway, as this could be very dangerous. Drive the car on to the hard shoulder, and when it is safe to do so, get out of the vehicle and move behind the barrier. Call for assistance from a motorway emergency phone or using a mobile phone (call the Garda\u00ed).",
+      "explanation": "Explanation: Don?t try to change a wheel on a motorway, as this could be very dangerous. Drive the car on to the hard shoulder, and when it is safe to do so, get out of the vehicle and move behind the barrier. Call for assistance from a motorway emergency phone or using a mobile phone (call the Garda\u00ed).",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6769,7 +6769,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If your vehicle breaks down on a motorway, drive it to the hard shoulder and switch on the hazard warning lights to warn following traffic. When it is safe to do so, get out of the vehicle and move behind the barrier. Call for assistance from a motorway emergency phone or using a mobile phone (call the Garda\u00ed).",
+      "explanation": "Explanation: If your vehicle breaks down on a motorway, drive it to the hard shoulder and switch on the hazard warning lights to warn following traffic. When it is safe to do so, get out of the vehicle and move behind the barrier. Call for assistance from a motorway emergency phone or using a mobile phone (call the Garda\u00ed).",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6782,7 +6782,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When you notice works vehicles ahead, slow down and be prepared to stop for the road works. Be extra careful driving through road works as the road surface could be uneven or slippery.",
+      "explanation": "Explanation: When you notice works vehicles ahead, slow down and be prepared to stop for the road works. Be extra careful driving through road works as the road surface could be uneven or slippery.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6795,7 +6795,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When a driver notices an emergency vehicle approaching in the distance, they should check their mirror and move to the left to allow the vehicle to pass. On some occasions it may be necessary to stop.",
+      "explanation": "Explanation: When a driver notices an emergency vehicle approaching in the distance, they should check their mirror and move to the left to allow the vehicle to pass. On some occasions it may be necessary to stop.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6808,7 +6808,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When you come upon an emergency vehicle stopped on the road, you should slow down and be prepared to stop. Do not stop to see what is happening as this could be dangerous and you might cause an obstruction to the flow of traffic.",
+      "explanation": "Explanation: When you come upon an emergency vehicle stopped on the road, you should slow down and be prepared to stop. Do not stop to see what is happening as this could be dangerous and you might cause an obstruction to the flow of traffic.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6821,7 +6821,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When carrying children in a car or goods vehicle, it is the drivers responsibility to make sure that they are suitably restrained.",
+      "explanation": "Explanation: When carrying children in a car or goods vehicle, it is the drivers responsibility to make sure that they are suitably restrained.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6834,7 +6834,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The holder of a Category W licence may carry a passenger in the vehicle only if: 1. the vehicle is designed to take a passenger, and 2. the passenger has held a full driving licence in Category W for two or more years.",
+      "explanation": "Explanation: The holder of a Category W licence may carry a passenger in the vehicle only if: 1. the vehicle is designed to take a passenger, and 2. the passenger has held a full driving licence in Category W for two or more years.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6847,7 +6847,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Children must not be left unattended in a vehicle, even for a short period of time. Children might interfere with the vehicles controls, and would not be able to deal with an emergency situation, such as a fire or electrical malfunction which could result in serious injury or death.",
+      "explanation": "Explanation: Children must not be left unattended in a vehicle, even for a short period of time. Children might interfere with the vehicles controls, and would not be able to deal with an emergency situation, such as a fire or electrical malfunction which could result in serious injury or death.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6860,7 +6860,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: During daylight hours, you must use a red flag to mark any load that is protruding more than one metre. At night, you must use a red light.",
+      "explanation": "Explanation: During daylight hours, you must use a red flag to mark any load that is protruding more than one metre. At night, you must use a red light.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6873,20 +6873,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Driving too fast on the approach to a bend and while driving through it with a fully loaded vehicle can lead to a loss of control. This can be prevented by driving in a safe and sensible manner and by reading the road ahead.",
+      "explanation": "Explanation: Driving too fast on the approach to a bend and while driving through it with a fully loaded vehicle can lead to a loss of control. This can be prevented by driving in a safe and sensible manner and by reading the road ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "When is a driver allowed to carry more passengers in a car than there are seat belts available?",
       "options": [
         "It is never allowed.",
-        "When the driver?s visibility is not interfered with.",
+        "When the driver's visibility is not interfered with.",
         "When the driver has the appropriate insurance cover.",
         "It is always allowed."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A driver must make sure that each passenger in the vehicle has a seatbelt. Failure to wear a seatbelt is an offence. It is the drivers responsibility to ensure that passengers under the age of 17 wear seatbelts. Older passengers are themselves responsible for wearing seatbelts.",
+      "explanation": "Explanation: A driver must make sure that each passenger in the vehicle has a seatbelt. Failure to wear a seatbelt is an offence. It is the drivers responsibility to ensure that passengers under the age of 17 wear seatbelts. Older passengers are themselves responsible for wearing seatbelts.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6899,7 +6899,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: It is the drivers responsibility to ensure that the load is properly secured and evenly distributed, so that the vehicle can be properly controlled when changing direction and when braking.",
+      "explanation": "Explanation: It is the drivers responsibility to ensure that the load is properly secured and evenly distributed, so that the vehicle can be properly controlled when changing direction and when braking.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6912,7 +6912,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When you are driving a tractor with a trailer, you need to take extra care because of the vehicles instability. Always drive at a safe speed, in particular when changing direction, such as on a roundabout.",
+      "explanation": "Explanation: When you are driving a tractor with a trailer, you need to take extra care because of the vehicles instability. Always drive at a safe speed, in particular when changing direction, such as on a roundabout.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6925,7 +6925,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Towing a trailer or caravan dramatically reduces the stability of the towing vehicle. If a driver brakes sharply or slows down quickly, the trailer may pivot around the tow hitch coupling, causing both vehicles to go off course, and possibly overturn.",
+      "explanation": "Explanation: Towing a trailer or caravan dramatically reduces the stability of the towing vehicle. If a driver brakes sharply or slows down quickly, the trailer may pivot around the tow hitch coupling, causing both vehicles to go off course, and possibly overturn.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6938,7 +6938,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before leaving your vehicle, apply the handbrake, switch off the engine and engage a low gear. If the vehicle is fitted with automatic transmission, select P (park).",
+      "explanation": "Explanation: Before leaving your vehicle, apply the handbrake, switch off the engine and engage a low gear. If the vehicle is fitted with automatic transmission, select P (park).",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6951,7 +6951,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a tyre bursts on your vehicle, keep a firm hold of the steering, slow down gradually and stop where it is safe to do so. Switch on the hazard warning lights.",
+      "explanation": "Explanation: If a tyre bursts on your vehicle, keep a firm hold of the steering, slow down gradually and stop where it is safe to do so. Switch on the hazard warning lights.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6964,7 +6964,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If your vehicle goes into a front-wheel sideways skid, release the accelerator and do not try to steer until the tyres regain some grip on the road.",
+      "explanation": "Explanation: If your vehicle goes into a front-wheel sideways skid, release the accelerator and do not try to steer until the tyres regain some grip on the road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6977,7 +6977,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If your vehicle goes into a rear-wheel sideways skid, turn the steering in the direction the rear wheels are heading. This should be done very gradually, as too much steering could cause the vehicle to skid in the opposite direction.",
+      "explanation": "Explanation: If your vehicle goes into a rear-wheel sideways skid, turn the steering in the direction the rear wheels are heading. This should be done very gradually, as too much steering could cause the vehicle to skid in the opposite direction.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6990,7 +6990,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a tyre on the vehicle you are driving blows out, slow down gradually and find a safe and suitable place to stop. Switch on your hazard warning lights and change the wheel or call for assistance.",
+      "explanation": "Explanation: If a tyre on the vehicle you are driving blows out, slow down gradually and find a safe and suitable place to stop. Switch on your hazard warning lights and change the wheel or call for assistance.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7003,7 +7003,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If the engine in the vehicle you are driving cuts out, signal and steer to the side of the road. Switch on the hazard warning lights and contact the relevant breakdown service to get assistance.",
+      "explanation": "Explanation: If the engine in the vehicle you are driving cuts out, signal and steer to the side of the road. Switch on the hazard warning lights and contact the relevant breakdown service to get assistance.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7016,7 +7016,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Hydraulic power steering is operated by a pump which is driven by the engine. If the engine stalls, the pump stops working, and the steering becomes heavy and requires much more effort to turn.",
+      "explanation": "Explanation: Hydraulic power steering is operated by a pump which is driven by the engine. If the engine stalls, the pump stops working, and the steering becomes heavy and requires much more effort to turn.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7029,7 +7029,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When driving in traffic, read the road ahead and keep a safe distance from the vehicle in front. Use the two-second rule to determine your safe distance from the vehicle in front.",
+      "explanation": "Explanation: When driving in traffic, read the road ahead and keep a safe distance from the vehicle in front. Use the two-second rule to determine your safe distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7042,7 +7042,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When driving in traffic, read the road ahead and keep a safe distance from the vehicle in front. Use the two-second rule to determine your safe distance from the vehicle in front.",
+      "explanation": "Explanation: When driving in traffic, read the road ahead and keep a safe distance from the vehicle in front. Use the two-second rule to determine your safe distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7055,7 +7055,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If your vehicle breaks down or is involved in a collision in a tunnel, switch on your hazard warning lights, switch off your engine, go to an emergency station and use the emergency phone to alert the tunnel operator.",
+      "explanation": "Explanation: If your vehicle breaks down or is involved in a collision in a tunnel, switch on your hazard warning lights, switch off your engine, go to an emergency station and use the emergency phone to alert the tunnel operator.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7068,7 +7068,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before opening any doors, check for other road users nearby, in particular motorcyclists and pedestrians",
+      "explanation": "Explanation: Before opening any doors, check for other road users nearby, in particular motorcyclists and pedestrians",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7081,7 +7081,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When parking make sure you do not interfere with normal traffic flow and that your vehicle does not disturb, block or endanger other road users.",
+      "explanation": "Explanation: When parking make sure you do not interfere with normal traffic flow and that your vehicle does not disturb, block or endanger other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7094,7 +7094,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Some car parks are designed for you to park forwards to make it easier to load shopping. In these cases take extra care as you reverse out of the parking space because pedestrians and vehicles may pass behind you.",
+      "explanation": "Explanation: Some car parks are designed for you to park forwards to make it easier to load shopping. In these cases take extra care as you reverse out of the parking space because pedestrians and vehicles may pass behind you.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7107,7 +7107,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If your vehicle goes on fire in a tunnel, you should stop the vehicle as soon as possible, evacuate any passengers to a safe place, go to an emergency station and use the emergency phone to alert the tunnel operator.",
+      "explanation": "Explanation: If your vehicle goes on fire in a tunnel, you should stop the vehicle as soon as possible, evacuate any passengers to a safe place, go to an emergency station and use the emergency phone to alert the tunnel operator.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7120,7 +7120,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: As a proportion of all 867 fatal collisions analysed, 38% cited alcohol as the main contributory factor. Of this number, 29% involved at least one driver or motorcyclist with a record of alcohol consumption prior to the collision. This highlights the fact that a high level of drink driving is still evident in Ireland. FACT: All of these drivers were deemed culpable or part culpable for the collision through their behaviour on the road prior to the collision.",
+      "explanation": "Explanation: As a proportion of all 867 fatal collisions analysed, 38% cited alcohol as the main contributory factor. Of this number, 29% involved at least one driver or motorcyclist with a record of alcohol consumption prior to the collision. This highlights the fact that a high level of drink driving is still evident in Ireland. FACT: All of these drivers were deemed culpable or part culpable for the collision through their behaviour on the road prior to the collision.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7133,7 +7133,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: All 28 of the female drivers who had consumed alcohol were driving a private car. Table 2 sets out the age band of the driver who had consumed alcohol by the vehicle driven. The group of Agricultural vehicles includes tractors. FACT: Almost half of the drivers of a private car were aged between 16 and 24\u00a0years.",
+      "explanation": "Explanation: All 28 of the female drivers who had consumed alcohol were driving a private car. Table 2 sets out the age band of the driver who had consumed alcohol by the vehicle driven. The group of Agricultural vehicles includes tractors. FACT: Almost half of the drivers of a private car were aged between 16 and 24\u00a0years.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7146,7 +7146,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: 178 drink drivers were killed in a single vehicle collision and 24 were seriously injured. FACT: Forty nine passengers were travelling in the car with someone who had consumed alcohol and were killed.",
+      "explanation": "Explanation: 178 drink drivers were killed in a single vehicle collision and 24 were seriously injured. FACT: Forty nine passengers were travelling in the car with someone who had consumed alcohol and were killed.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7159,7 +7159,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drink driving is dangerous regardless of when it takes place. Unfortunately, some drivers will drink on any day so we must always stay alert and expect the unexpected. FACT: Currently the evidence shows us that Saturday and Sunday were the most frequent days of collisions. Fifty seven percent of the motorcyclists crashed on a Sunday compared to 29% of the drivers.",
+      "explanation": "Explanation: Drink driving is dangerous regardless of when it takes place. Unfortunately, some drivers will drink on any day so we must always stay alert and expect the unexpected. FACT: Currently the evidence shows us that Saturday and Sunday were the most frequent days of collisions. Fifty seven percent of the motorcyclists crashed on a Sunday compared to 29% of the drivers.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7172,7 +7172,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Where a learner driver has failed to pay a fixed penalty notice they will be summonsed to court where a judge can apply a disqualification period of between 1-6\u00a0yrs.",
+      "explanation": "Explanation: Where a learner driver has failed to pay a fixed penalty notice they will be summonsed to court where a judge can apply a disqualification period of between 1-6\u00a0yrs.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7185,7 +7185,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Table 8 sets out the available blood alcohol concentrate (BAC) in drivers by the age group. In total 151 drivers had a record of a BAC. FACT: In total, 47% of the drivers aged between 16 and 24\u00a0years had a BAC of 201 to 251+.",
+      "explanation": "Explanation: Table 8 sets out the available blood alcohol concentrate (BAC) in drivers by the age group. In total 151 drivers had a record of a BAC. FACT: In total, 47% of the drivers aged between 16 and 24\u00a0years had a BAC of 201 to 251+.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7198,7 +7198,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: It is an offence not to comply with a request from a member of An Garda S\u00edoch\u00e1na to provide to provide a sample of breath, urine or blood.",
+      "explanation": "Explanation: It is an offence not to comply with a request from a member of An Garda S\u00edoch\u00e1na to provide to provide a sample of breath, urine or blood.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7211,7 +7211,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: For a variety of reasons, including the young drivers likelihood to drink, when accompanied by peers, passengers in a vehicle driven by a younger driver (17-24\u00a0yrs) are more likely to be killed.",
+      "explanation": "Explanation: For a variety of reasons, including the young drivers likelihood to drink, when accompanied by peers, passengers in a vehicle driven by a younger driver (17-24\u00a0yrs) are more likely to be killed.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7224,7 +7224,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: FACT: During the period 2008-2012 a total of 169 drivers were killed of which 92% had consume alcohol prior to the crash. Other fatalities were Pedestrians, Passengers etc.",
+      "explanation": "Explanation: FACT: During the period 2008-2012 a total of 169 drivers were killed of which 92% had consume alcohol prior to the crash. Other fatalities were Pedestrians, Passengers etc.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7237,7 +7237,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: FACT: During the period 2008-2012 a total of 80 pedestrians were killed where either the driver, the pedestrian or both had consumed alcohol prior to the collision.",
+      "explanation": "Explanation: FACT: During the period 2008-2012 a total of 80 pedestrians were killed where either the driver, the pedestrian or both had consumed alcohol prior to the collision.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7250,7 +7250,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Pedestrians should walk in single file on busy narrow roads. Drivers should be aware of the Rules of the Road for pedestrians, drive with caution and be prepared to react to any changes in the traffic situation.",
+      "explanation": "Explanation: Pedestrians should walk in single file on busy narrow roads. Drivers should be aware of the Rules of the Road for pedestrians, drive with caution and be prepared to react to any changes in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7263,7 +7263,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Outside built-up areas, pedestrians should wear reflective clothing at all times when walking at night. This is particularly important where there is no street lighting and no footpath for pedestrians.",
+      "explanation": "Explanation: Outside built-up areas, pedestrians should wear reflective clothing at all times when walking at night. This is particularly important where there is no street lighting and no footpath for pedestrians.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7276,7 +7276,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Lighting up hours are defined as the period of time during which drivers should turn on dipped headlights in order to be seen. This period normally starts half an hour after sunset and ends half an hour before sunrise.",
+      "explanation": "Explanation: Lighting up hours are defined as the period of time during which drivers should turn on dipped headlights in order to be seen. This period normally starts half an hour after sunset and ends half an hour before sunrise.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7289,7 +7289,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers need to see and be seen during all periods of low light levels ? for example, at dusk and dawn and in some bad weather conditions. At times of low light, you should turn on dipped headlights. The Road Safety Authority recommends that motorcyclists and drivers turn on their dipped headlights or daytime running lights during daylight hours.",
+      "explanation": "Explanation: Drivers need to see and be seen during all periods of low light levels ? for example, at dusk and dawn and in some bad weather conditions. At times of low light, you should turn on dipped headlights. The Road Safety Authority recommends that motorcyclists and drivers turn on their dipped headlights or daytime running lights during daylight hours.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7302,7 +7302,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Normally you must overtake on the right. There are, however, circumstances where you may overtake on the left ? for example, when the vehicle has moved out and signalled to turn right.",
+      "explanation": "Explanation: Normally you must overtake on the right. There are, however, circumstances where you may overtake on the left ? for example, when the vehicle has moved out and signalled to turn right.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7315,7 +7315,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Where there is no footpath provided, pedestrians should walk on the right-hand side of the road facing oncoming traffic. Drivers should be aware of the Rules of the Road for pedestrians, drive with caution and be prepared to react to any changes in the traffic situation.",
+      "explanation": "Explanation: Where there is no footpath provided, pedestrians should walk on the right-hand side of the road facing oncoming traffic. Drivers should be aware of the Rules of the Road for pedestrians, drive with caution and be prepared to react to any changes in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7328,7 +7328,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Warning triangles are used to alert approaching traffic that there is a vehicle breakdown or collision ahead. When you come across a warning triangle, you should slow down and be prepared to stop if necessary. Do not allow yourself to be distracted by the incident.",
+      "explanation": "Explanation: Warning triangles are used to alert approaching traffic that there is a vehicle breakdown or collision ahead. When you come across a warning triangle, you should slow down and be prepared to stop if necessary. Do not allow yourself to be distracted by the incident.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7341,7 +7341,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: You must know your responsibilities towards animal traffic on the road. Horses are easily startled and any sudden noises or activity could cause them to bolt.",
+      "explanation": "Explanation: You must know your responsibilities towards animal traffic on the road. Horses are easily startled and any sudden noises or activity could cause them to bolt.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7354,7 +7354,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Where oil is spilt on the road, your tyres will have reduced grip, and you might be at risk of skidding if you brake sharply. If you do come across oil on the road, brake gently and switch on your hazard warning lights for a short period to alert other traffic to the hazard.",
+      "explanation": "Explanation: Where oil is spilt on the road, your tyres will have reduced grip, and you might be at risk of skidding if you brake sharply. If you do come across oil on the road, brake gently and switch on your hazard warning lights for a short period to alert other traffic to the hazard.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7367,7 +7367,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: During wet conditions, you should be aware that surface water can affect the stability of your vehicle. This is particularly so where the water lies in pools. As you drive through surface water, you should show consideration to pedestrians and cyclists and try not to splash them as you pass.",
+      "explanation": "Explanation: During wet conditions, you should be aware that surface water can affect the stability of your vehicle. This is particularly so where the water lies in pools. As you drive through surface water, you should show consideration to pedestrians and cyclists and try not to splash them as you pass.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7380,7 +7380,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When you are slowing down or stopping, you should be mindful of the type of vehicle that is following you. For example, if the vehicle following you is a large vehicle or one towing a trailer, you should think of indicating a little earlier than normal to allow the following vehicle enough time to react safely.",
+      "explanation": "Explanation: When you are slowing down or stopping, you should be mindful of the type of vehicle that is following you. For example, if the vehicle following you is a large vehicle or one towing a trailer, you should think of indicating a little earlier than normal to allow the following vehicle enough time to react safely.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7393,7 +7393,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A driver should allow signalling buses back into the stream of traffic when they are moving out from a stop. Be careful of pedestrians getting on and off buses, particularly of children near schools.",
+      "explanation": "Explanation: A driver should allow signalling buses back into the stream of traffic when they are moving out from a stop. Be careful of pedestrians getting on and off buses, particularly of children near schools.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7406,7 +7406,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When you are being overtaken by another vehicle, you should continue at the same pace but be alert in case the overtaking vehicle suddenly pulls back in front you.",
+      "explanation": "Explanation: When you are being overtaken by another vehicle, you should continue at the same pace but be alert in case the overtaking vehicle suddenly pulls back in front you.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7419,7 +7419,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Giving signals is a way of telling other road users what you intend to do. So, you should signal properly before moving off, turning right or left, changing lanes, overtaking, slowing down or stopping. Signal clearly and in good time, and keep in mind that giving a signal does not give you the right of way.",
+      "explanation": "Explanation: Giving signals is a way of telling other road users what you intend to do. So, you should signal properly before moving off, turning right or left, changing lanes, overtaking, slowing down or stopping. Signal clearly and in good time, and keep in mind that giving a signal does not give you the right of way.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7432,7 +7432,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Properly adjusted vehicle mirrors enable drivers to see the road behind and to the sides. This helps drivers to take into account what?s happening behind them, so that they can make informed, correct and safer decisions.",
+      "explanation": "Explanation: Properly adjusted vehicle mirrors enable drivers to see the road behind and to the sides. This helps drivers to take into account what's happening behind them, so that they can make informed, correct and safer decisions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7445,11 +7445,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Exterior mirrors enable drivers to see the area on each side of the vehicle. Drivers must take into account all visible hazards in order to make informed, correct and safer decisions.",
+      "explanation": "Explanation: Exterior mirrors enable drivers to see the area on each side of the vehicle. Drivers must take into account all visible hazards in order to make informed, correct and safer decisions.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "The vehicle?s exterior mirrors are covered by a film of mud and dust. What should the driver do?",
+      "question": "The vehicle's exterior mirrors are covered by a film of mud and dust. What should the driver do?",
       "options": [
         "Continue on and clean them after reaching the destination.",
         "Drive in the slip stream of other traffic, as this will eventually clean the mirrors.",
@@ -7458,7 +7458,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The purpose of mirrors is to increase the drivers view to the rear and sides of the vehicle and to enable them to take into account all visible hazards. Proper use will enable drivers to make informed, correct and safer decisions. Drivers should ensure that all mirrors, including the exterior ones, are clean and properly adjusted at all times to ensure optimum view.",
+      "explanation": "Explanation: The purpose of mirrors is to increase the drivers view to the rear and sides of the vehicle and to enable them to take into account all visible hazards. Proper use will enable drivers to make informed, correct and safer decisions. Drivers should ensure that all mirrors, including the exterior ones, are clean and properly adjusted at all times to ensure optimum view.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7471,11 +7471,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When turning left, drivers should in particular be aware that cyclists and other vehicles may come up on their near side (left hand side). For that reason, when checking mirrors, it is particularly important to check both the left exterior and the interior mirror before turning. Drivers must always use the mirrors?signal?mirror?manouevre routine when turning. They should be particularly careful if crossing the path of a bus and/or cycle lane.",
+      "explanation": "Explanation: When turning left, drivers should in particular be aware that cyclists and other vehicles may come up on their near side (left hand side). For that reason, when checking mirrors, it is particularly important to check both the left exterior and the interior mirror before turning. Drivers must always use the mirrors'signal?mirror?manouevre routine when turning. They should be particularly careful if crossing the path of a bus and/or cycle lane.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What effect can wet weather have on a vehicle?s exterior mirrors?",
+      "question": "What effect can wet weather have on a vehicle's exterior mirrors?",
       "options": [
         "Water droplets can make the reflected object appear closer than it really is.",
         "Water droplets can obscure the reflected image.",
@@ -7484,11 +7484,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When driving in wet weather conditions, small water droplets can form on the glass of the exterior mirrors. This could make it more difficult to see the road behind and to the sides. Switch on the mirror demisters, if they are fitted. If necessary, stop and clear them.",
+      "explanation": "Explanation: When driving in wet weather conditions, small water droplets can form on the glass of the exterior mirrors. This could make it more difficult to see the road behind and to the sides. Switch on the mirror demisters, if they are fitted. If necessary, stop and clear them.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What does blue smoke coming from the vehicle?s exhaust generally mean?",
+      "question": "What does blue smoke coming from the vehicle's exhaust generally mean?",
       "options": [
         "The engine is overheating.",
         "The catalytic converter is worn out.",
@@ -7497,7 +7497,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A vehicle can give off blue smoke from the exhaust when it is burning oil. Poor maintenance and worn engines are typical causes. This blue smoke is harmful to the environment and may be costly. Drivers should have the vehicle checked by a competent person.",
+      "explanation": "Explanation: A vehicle can give off blue smoke from the exhaust when it is burning oil. Poor maintenance and worn engines are typical causes. This blue smoke is harmful to the environment and may be costly. Drivers should have the vehicle checked by a competent person.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7510,20 +7510,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A worn exhaust system can have a number of effects, including increased noise from the engine and more environmentally damaging fumes (as as they are not filtered properly). There are requirements to ensure vehicles are compliant with EU and Irish legislation. Vehicles are tested for compliance during road worthiness testing.",
+      "explanation": "Explanation: A worn exhaust system can have a number of effects, including increased noise from the engine and more environmentally damaging fumes (as as they are not filtered properly). There are requirements to ensure vehicles are compliant with EU and Irish legislation. Vehicles are tested for compliance during road worthiness testing.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What affect can a faulty exhaust system have?",
       "options": [
-        "It can improve the vehicle?s fuel consumption.",
-        "It can increase the vehicle?s noise and pollution levels.",
-        "It can reduce the vehicle?s engine noise.",
-        "It can increase wear on the vehicle?s engine."
+        "It can improve the vehicle's fuel consumption.",
+        "It can increase the vehicle's noise and pollution levels.",
+        "It can reduce the vehicle's engine noise.",
+        "It can increase wear on the vehicle's engine."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A worn exhaust system can have a number of negative effects, including increased noise from the engine and more environmentally damaging fumes (as they are not filtered properly). There are requirements to ensure vehicles are compliant with EU and Irish legislation. Vehicles are tested for compliance during road worthiness testing.",
+      "explanation": "Explanation: A worn exhaust system can have a number of negative effects, including increased noise from the engine and more environmentally damaging fumes (as they are not filtered properly). There are requirements to ensure vehicles are compliant with EU and Irish legislation. Vehicles are tested for compliance during road worthiness testing.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7536,7 +7536,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The purpose of a catalytic converter (CAT) is to remove toxic or polluting gases such as carbon monoxide, nitrogen oxide and unburned hydrocarbons from the exhaust emissions. When the CAT is faulty, an engine management warning light illuminates on the dashboard and drivers should seek advice from a competent person.",
+      "explanation": "Explanation: The purpose of a catalytic converter (CAT) is to remove toxic or polluting gases such as carbon monoxide, nitrogen oxide and unburned hydrocarbons from the exhaust emissions. When the CAT is faulty, an engine management warning light illuminates on the dashboard and drivers should seek advice from a competent person.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7549,7 +7549,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Harsh acceleration increases fuel consumption. Smooth acceleration helps to reduce fuel consumption and the emissions from vehicles. Try not to over-rev the engine and use the appropriate gear for the speed of the vehicle. When slowing down, take your foot off the accelerator and allow the vehicle to slow progressively before you brake.",
+      "explanation": "Explanation: Harsh acceleration increases fuel consumption. Smooth acceleration helps to reduce fuel consumption and the emissions from vehicles. Try not to over-rev the engine and use the appropriate gear for the speed of the vehicle. When slowing down, take your foot off the accelerator and allow the vehicle to slow progressively before you brake.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7562,7 +7562,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Driving smoothly will help reduce fuel consumption. Read the road ahead and adjust speed in good time, and avoid harsh acceleration and late braking.",
+      "explanation": "Explanation: Driving smoothly will help reduce fuel consumption. Read the road ahead and adjust speed in good time, and avoid harsh acceleration and late braking.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7575,7 +7575,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Driving at continuous high speeds increases your fuel consumption. Vehicles driving at 112\u00a0km/h consumes approximately 30% more fuel than a vehicle travelling at 80\u00a0km/h",
+      "explanation": "Explanation: Driving at continuous high speeds increases your fuel consumption. Vehicles driving at 112\u00a0km/h consumes approximately 30% more fuel than a vehicle travelling at 80\u00a0km/h",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7588,7 +7588,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A driver can contribute to their vehicles fuel efficiency by reading the road ahead and driving smoothly. This is achieved by accelerating gently, using the most appropriate gear for the speed they are travelling at and avoiding harsh braking.",
+      "explanation": "Explanation: A driver can contribute to their vehicles fuel efficiency by reading the road ahead and driving smoothly. This is achieved by accelerating gently, using the most appropriate gear for the speed they are travelling at and avoiding harsh braking.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7601,7 +7601,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A vehicle with a worn exhaust will probably be noisier and will produce more polluting emissions. There are strict regulations governing the noise and emission levels of vehicles, and these are rigorously checked during a vehicle?s NCT.",
+      "explanation": "Explanation: A vehicle with a worn exhaust will probably be noisier and will produce more polluting emissions. There are strict regulations governing the noise and emission levels of vehicles, and these are rigorously checked during a vehicle's NCT.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7614,7 +7614,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Drivers are not permitted to sound the horn in a built-up area between 11:30\u00a0pm and 7:00\u00a0am unless there is a traffic emergency. Only sound the horn to warn other road users of oncoming danger or if they need to be made aware of your presence for safety reasons. Sounding the horn does not give the driver an automatic right of way. Never sound the horn to provoke a reaction from or to rebuke another motorist.",
+      "explanation": "Explanation: Drivers are not permitted to sound the horn in a built-up area between 11:30\u00a0pm and 7:00\u00a0am unless there is a traffic emergency. Only sound the horn to warn other road users of oncoming danger or if they need to be made aware of your presence for safety reasons. Sounding the horn does not give the driver an automatic right of way. Never sound the horn to provoke a reaction from or to rebuke another motorist.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7627,7 +7627,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The more extra weight is in your vehicle, the more fuel you use. Using a roof rack or a roof box increases wind resistance and this also increases fuel consumption ? by as much as 15%. Remove roof racks and roof boxes when not in use.",
+      "explanation": "Explanation: The more extra weight is in your vehicle, the more fuel you use. Using a roof rack or a roof box increases wind resistance and this also increases fuel consumption ? by as much as 15%. Remove roof racks and roof boxes when not in use.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7640,7 +7640,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Harsh acceleration increases fuel consumption. Driving smoothly reduces wear and tear and also improves fuel consumption. Use the highest gear possible without causing the engine to labour.",
+      "explanation": "Explanation: Harsh acceleration increases fuel consumption. Driving smoothly reduces wear and tear and also improves fuel consumption. Use the highest gear possible without causing the engine to labour.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7653,7 +7653,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Using public transport helps to protect the environment. Buses, trams and trains are a more environmentally friendly way to move large numbers of people especially in urban areas. Consider using public transport where possible ? not only is it more environmentally friendly, but it can also be more cost-effective when you take the cost of fuel and parking charges into account.",
+      "explanation": "Explanation: Using public transport helps to protect the environment. Buses, trams and trains are a more environmentally friendly way to move large numbers of people especially in urban areas. Consider using public transport where possible ? not only is it more environmentally friendly, but it can also be more cost-effective when you take the cost of fuel and parking charges into account.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7666,7 +7666,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If you hear or see an emergency vehicle approaching sounding its siren or flashing lights, be extra careful and give way if it is safe to do so.",
+      "explanation": "Explanation: If you hear or see an emergency vehicle approaching sounding its siren or flashing lights, be extra careful and give way if it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7679,11 +7679,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When towing a high and wide-bodied trailer, a driver should use extended mirrors on both sides of the towing vehicle. This will allow the driver to better observe the traffic situation behind and to the sides.",
+      "explanation": "Explanation: When towing a high and wide-bodied trailer, a driver should use extended mirrors on both sides of the towing vehicle. This will allow the driver to better observe the traffic situation behind and to the sides.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "If the vehicle?s windows are covered with ice, what should the driver do?",
+      "question": "If the vehicle's windows are covered with ice, what should the driver do?",
       "options": [
         "Fully clear ice from all windows.",
         "Use boiling water to clear the ice.",
@@ -7692,11 +7692,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Make sure all the windows are completely clear of ice so that the driver can safely observe road and traffic conditions all around. This is especially important when driving in slippery conditions. It is good practice to carry a can of de-icer in the vehicle and if possible to fill the washer reservoir with a de-icing agent.",
+      "explanation": "Explanation: Make sure all the windows are completely clear of ice so that the driver can safely observe road and traffic conditions all around. This is especially important when driving in slippery conditions. It is good practice to carry a can of de-icer in the vehicle and if possible to fill the washer reservoir with a de-icing agent.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What should a driver do if the vehicle?s windows and mirrors are covered in ice?",
+      "question": "What should a driver do if the vehicle's windows and mirrors are covered in ice?",
       "options": [
         "Use boiling water with salt to clear the ice.",
         "Drive at a reduced speed until the heating system has cleared the ice.",
@@ -7705,7 +7705,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Make sure all the windows and mirrors are completely clear of ice so that the driver can safely observe road and traffic conditions all around. This is especially important when driving in slippery conditions. It is good practice to carry a can of de-icer in the vehicle and if possible to fill the washer reservoir with a de-icing agent.",
+      "explanation": "Explanation: Make sure all the windows and mirrors are completely clear of ice so that the driver can safely observe road and traffic conditions all around. This is especially important when driving in slippery conditions. It is good practice to carry a can of de-icer in the vehicle and if possible to fill the washer reservoir with a de-icing agent.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7718,7 +7718,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before reversing, look over both shoulders and to the rear to check all around that there are no children or other road users around the vehicle and that it is safe to reverse.",
+      "explanation": "Explanation: Before reversing, look over both shoulders and to the rear to check all around that there are no children or other road users around the vehicle and that it is safe to reverse.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7727,11 +7727,11 @@ export const QUESTIONS = [
         "Observations should be made to the front, sides and rear of the vehicle, including blind spots.",
         "Observations should be made only in blind spots.",
         "No specific observations needed, as bystanders will be aware of the vehicle.",
-        "Observations should be made by opening the driver?s door and looking behind."
+        "Observations should be made by opening the driver's door and looking behind."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Drivers should not rely solely on an external audible warning device to warn others that their vehicle is reversing. Before reversing, drivers must make sure it is safe to do so by taking all appropriate observations to the front, sides and rear of the vehicle, including the blind spots. Never assume it is safe to reverse just because the vehicle has an external audible warning device.",
+      "explanation": "Explanation: Drivers should not rely solely on an external audible warning device to warn others that their vehicle is reversing. Before reversing, drivers must make sure it is safe to do so by taking all appropriate observations to the front, sides and rear of the vehicle, including the blind spots. Never assume it is safe to reverse just because the vehicle has an external audible warning device.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7744,20 +7744,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before and while reversing into a side road, check all around to make sure it is safe and clear to carry out the manoeuvre, paying particular attention to pedestrians crossing behind the vehicle and any other road users.",
+      "explanation": "Explanation: Before and while reversing into a side road, check all around to make sure it is safe and clear to carry out the manoeuvre, paying particular attention to pedestrians crossing behind the vehicle and any other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What should a driver do if they intend to reverse their vehicle into an area which they cannot see?",
       "options": [
-        "Open driver?s door and look behind.",
+        "Open driver's door and look behind.",
         "Ask someone to guide you when reversing.",
         "Look in nearside (left) mirror when reversing.",
-        "Open driver?s window and look behind."
+        "Open driver's window and look behind."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Do not attempt to reverse into an area that you cannot see into properly. You should get assistance from somebody who can guide you safely into the area.",
+      "explanation": "Explanation: Do not attempt to reverse into an area that you cannot see into properly. You should get assistance from somebody who can guide you safely into the area.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7770,7 +7770,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: While on a long journey, a driver should take regular rest breaks. A short walk and a caffeinated drink (tea or coffee) can help to revive them. The vehicle should be kept cool and well ventilated with a steady flow of fresh air.",
+      "explanation": "Explanation: While on a long journey, a driver should take regular rest breaks. A short walk and a caffeinated drink (tea or coffee) can help to revive them. The vehicle should be kept cool and well ventilated with a steady flow of fresh air.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7783,7 +7783,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver must only use rear fog lights in dense fog or falling snow. Using fog lights in normal road and weather conditions can dazzle or blind following motorists. Also, fog lights may make brake lights harder to see.",
+      "explanation": "Explanation: A driver must only use rear fog lights in dense fog or falling snow. Using fog lights in normal road and weather conditions can dazzle or blind following motorists. Also, fog lights may make brake lights harder to see.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7796,7 +7796,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver must only use rear fog lights in dense fog or falling snow. Using fog lights in normal road and weather conditions can dazzle or blind following motorists. Also, fog lights may make brake lights harder to see.",
+      "explanation": "Explanation: A driver must only use rear fog lights in dense fog or falling snow. Using fog lights in normal road and weather conditions can dazzle or blind following motorists. Also, fog lights may make brake lights harder to see.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7809,7 +7809,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If a driver is being dazzled by the lights of following traffic, they should adjust their rear-view mirror to the night driving mode. This will allow them to concentrate on the road ahead and not be distracted by lights from following traffic.",
+      "explanation": "Explanation: If a driver is being dazzled by the lights of following traffic, they should adjust their rear-view mirror to the night driving mode. This will allow them to concentrate on the road ahead and not be distracted by lights from following traffic.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7822,7 +7822,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If the lights of following traffic reflecting in your interior mirror are dazzling you, activate the night driving/anti dazzle mode. If the vehicle is not equipped with this feature drivers should temporarily adjust the angle of the interior mirror to relieve the glare and allow them to drive without distraction.",
+      "explanation": "Explanation: If the lights of following traffic reflecting in your interior mirror are dazzling you, activate the night driving/anti dazzle mode. If the vehicle is not equipped with this feature drivers should temporarily adjust the angle of the interior mirror to relieve the glare and allow them to drive without distraction.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7835,7 +7835,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Motor vehicles (except motorcycles) are required by law to have two headlights. A vehicle with only one headlight could be mistaken for a motorcycle and other road users could believe that it is in a different position on the road than it actually is. Vehicle lights should be checked on a regular basis and repair faulty lighting immediately.",
+      "explanation": "Explanation: Motor vehicles (except motorcycles) are required by law to have two headlights. A vehicle with only one headlight could be mistaken for a motorcycle and other road users could believe that it is in a different position on the road than it actually is. Vehicle lights should be checked on a regular basis and repair faulty lighting immediately.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7848,7 +7848,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When leaving a vehicle on an unlit public road at night this creates a potential danger for other road users. Drivers should therefore leave side/parking lights on, so that the vehicle can be seen by other road users. Drivers should not leave headlights on when parked as this may cause other road users to become disoriented.",
+      "explanation": "Explanation: When leaving a vehicle on an unlit public road at night this creates a potential danger for other road users. Drivers should therefore leave side/parking lights on, so that the vehicle can be seen by other road users. Drivers should not leave headlights on when parked as this may cause other road users to become disoriented.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7861,7 +7861,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When carrying children in a car or goods vehicle, it is the drivers responsibility to make sure that they are suitably restrained.",
+      "explanation": "Explanation: When carrying children in a car or goods vehicle, it is the drivers responsibility to make sure that they are suitably restrained.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7874,7 +7874,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When you are driving a tractor, you should be aware that tractors are less stable than other vehicles and take extra care when manoeuvring.",
+      "explanation": "Explanation: When you are driving a tractor, you should be aware that tractors are less stable than other vehicles and take extra care when manoeuvring.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7887,7 +7887,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Towing a trailer or caravan dramatically reduces the stability of the towing vehicle. If a driver brakes sharply or slows down quickly, the trailer may pivot around the tow hitch coupling, causing both vehicles to go off course, and possibly overturn.",
+      "explanation": "Explanation: Towing a trailer or caravan dramatically reduces the stability of the towing vehicle. If a driver brakes sharply or slows down quickly, the trailer may pivot around the tow hitch coupling, causing both vehicles to go off course, and possibly overturn.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7900,7 +7900,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: When leaving a vehicle on an unlit public road at night this creates a potential danger for other road users. Drivers should therefore leave side/parking lights on, so that the vehicle can be seen by other road users. Drivers should not leave headlights on when parked as this may cause other road users to become disoriented.",
+      "explanation": "Explanation: When leaving a vehicle on an unlit public road at night this creates a potential danger for other road users. Drivers should therefore leave side/parking lights on, so that the vehicle can be seen by other road users. Drivers should not leave headlights on when parked as this may cause other road users to become disoriented.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7913,33 +7913,33 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: It is essential that the vehicles engine is not over filled with oil as this can permanently damage the Catalytic converter which is part of most vehicles exhaust systems and removes up to 75% of the carbon monoxide, nitrogen oxide and hydrocarbons from the vehicles exhaust. Damaging this increase exhaust emissions.",
+      "explanation": "Explanation: It is essential that the vehicles engine is not over filled with oil as this can permanently damage the Catalytic converter which is part of most vehicles exhaust systems and removes up to 75% of the carbon monoxide, nitrogen oxide and hydrocarbons from the vehicles exhaust. Damaging this increase exhaust emissions.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What could a driver do in order to avoid excessive exhaust pollution from their vehicle?",
       "options": [
         "Drive a diesel powered vehicle.",
-        "Have the vehicle?s air filters changed regularly.",
+        "Have the vehicle's air filters changed regularly.",
         "Drive at a higher speed in order to reduce the time spent on the road.",
         "Use a fuel additive to increase the fuel octane rating."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Drivers should have their vehicle serviced regularly in accordance with the manufacturers guidelines. A vehicle with a dirty air filter uses more fuel and creates more exhaust pollution. Air filters should be changed as part of normal servicing. If a vehicle is used in dusty conditions, the air filter may need to be changed more often. More information is available in the vehicle owners handbook.",
+      "explanation": "Explanation: Drivers should have their vehicle serviced regularly in accordance with the manufacturers guidelines. A vehicle with a dirty air filter uses more fuel and creates more exhaust pollution. Air filters should be changed as part of normal servicing. If a vehicle is used in dusty conditions, the air filter may need to be changed more often. More information is available in the vehicle owners handbook.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "In general how regularly should a vehicle be serviced?",
       "options": [
-        "As per the manufacturer?s recommendation.",
+        "As per the manufacturer's recommendation.",
         "Every 30\u00a0months.",
         "Once every year.",
         "Every 30,000\u00a0kilometres."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Drivers should have their vehicle serviced regularly in accordance with the manufacturers guidelines. This helps the vehicle to perform properly, and as a result saves fuel and reduces emissions. In addition, drivers should also carry out their own daily and weekly checks on fluid levels and tyres.",
+      "explanation": "Explanation: Drivers should have their vehicle serviced regularly in accordance with the manufacturers guidelines. This helps the vehicle to perform properly, and as a result saves fuel and reduces emissions. In addition, drivers should also carry out their own daily and weekly checks on fluid levels and tyres.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7952,7 +7952,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Catalytic converters are part of a vehicles exhaust system. They help to protect the environment by removing up to 75% of the carbon monoxide, nitrogen oxide and hydrocarbons from the vehicles exhaust.",
+      "explanation": "Explanation: Catalytic converters are part of a vehicles exhaust system. They help to protect the environment by removing up to 75% of the carbon monoxide, nitrogen oxide and hydrocarbons from the vehicles exhaust.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7965,7 +7965,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before opening any door, check for other road users passing, and in particular look out for pedestrians, cyclists and motorcyclists. Exit the vehicle only when it is safe to do so, and close the door as soon as possible. Where ever possible, passengers should exit on the side nearest the kerb wherever possible.",
+      "explanation": "Explanation: Before opening any door, check for other road users passing, and in particular look out for pedestrians, cyclists and motorcyclists. Exit the vehicle only when it is safe to do so, and close the door as soon as possible. Where ever possible, passengers should exit on the side nearest the kerb wherever possible.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7978,7 +7978,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before opening any door, check for other road users passing, and in particular look out for pedestrians, cyclists and motorcyclists. Exit the vehicle only when it is safe to do so, and close the door as soon as possible. Passengers should exit on the side nearest the kerb wherever possible.",
+      "explanation": "Explanation: Before opening any door, check for other road users passing, and in particular look out for pedestrians, cyclists and motorcyclists. Exit the vehicle only when it is safe to do so, and close the door as soon as possible. Passengers should exit on the side nearest the kerb wherever possible.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7991,7 +7991,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before allowing any door to be opened, check for other road users passing, and in particular look out for pedestrians, cyclists and motorcyclists. Passengers should exit on the side nearest the kerb, without getting in the way of pedestrians.",
+      "explanation": "Explanation: Before allowing any door to be opened, check for other road users passing, and in particular look out for pedestrians, cyclists and motorcyclists. Passengers should exit on the side nearest the kerb, without getting in the way of pedestrians.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8004,7 +8004,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If your vehicle is fitted with ABS, brake firmly. ABS will not stop the vehicle more quickly, it will only prevent the wheels from locking. This helps you to maintain control of the vehicle.",
+      "explanation": "Explanation: If your vehicle is fitted with ABS, brake firmly. ABS will not stop the vehicle more quickly, it will only prevent the wheels from locking. This helps you to maintain control of the vehicle.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8017,7 +8017,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If your vehicle goes into a four-wheel skid, turn the steering wheel in the same direction as the skid and ease off the accelerator. This should help to bring the wheels back into line and allow you to regain control.",
+      "explanation": "Explanation: If your vehicle goes into a four-wheel skid, turn the steering wheel in the same direction as the skid and ease off the accelerator. This should help to bring the wheels back into line and allow you to regain control.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8030,7 +8030,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If your vehicle does not have ABS and it goes into a straight-line front-wheel skid due to braking, press and release the brake pedal repeatedly and rapidly. This will help to restore tyre grip and enable you to regain control.",
+      "explanation": "Explanation: If your vehicle does not have ABS and it goes into a straight-line front-wheel skid due to braking, press and release the brake pedal repeatedly and rapidly. This will help to restore tyre grip and enable you to regain control.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8043,7 +8043,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If a front tyre on the vehicle you are driving blows out, you will feel the effect of it through the steering wheel. The wheel will generally pull to the side of the blown-out tyre.",
+      "explanation": "Explanation: If a front tyre on the vehicle you are driving blows out, you will feel the effect of it through the steering wheel. The wheel will generally pull to the side of the blown-out tyre.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8056,7 +8056,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a rear tyre on the vehicle you are driving blows out, the vehicle may sway from side to side, and this will affect its stability. Slow down, pull in where it is safe to do so, and switch on the hazard warning lights. Change the wheel or call for assistance.",
+      "explanation": "Explanation: If a rear tyre on the vehicle you are driving blows out, the vehicle may sway from side to side, and this will affect its stability. Slow down, pull in where it is safe to do so, and switch on the hazard warning lights. Change the wheel or call for assistance.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8069,7 +8069,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If there is an oncoming vehicle in your path, take evasive action and sound your horn to alert the other driver. Bring your vehicle to a halt immediately.",
+      "explanation": "Explanation: If there is an oncoming vehicle in your path, take evasive action and sound your horn to alert the other driver. Bring your vehicle to a halt immediately.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8082,7 +8082,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
+      "explanation": "Explanation: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8095,7 +8095,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
+      "explanation": "Explanation: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8108,7 +8108,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
+      "explanation": "Explanation: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8121,7 +8121,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
+      "explanation": "Explanation: To stop your vehicle in an emergency, apply the footbrake firmly, and maintain the pressure until the vehicle stops. Depress the clutch pedal just before stopping.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8134,11 +8134,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a driver continues to drive fighting sleep it can be the same as being over the drink driving limit. Stopping the vehicle in a safe place, drinking caffeine and taking a nap for 15\u00a0minutes will revive the driver allowing them to continue for a short period.",
+      "explanation": "Explanation: If a driver continues to drive fighting sleep it can be the same as being over the drink driving limit. Stopping the vehicle in a safe place, drinking caffeine and taking a nap for 15\u00a0minutes will revive the driver allowing them to continue for a short period.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What effect can wet weather have on the vehicle?s exterior mirrors?",
+      "question": "What effect can wet weather have on the vehicle's exterior mirrors?",
       "options": [
         "It has no effect.",
         "It can short-circuit the electrically heated mirrors.",
@@ -8147,7 +8147,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When driving in the rain, water droplets can adhere to the exterior mirrors and obscure the driver?s view to the side and rear of the vehicle. If the vehicle has heated mirrors, turn them on to clear them. Alternatively, stop periodically to clear them manually.",
+      "explanation": "Explanation: When driving in the rain, water droplets can adhere to the exterior mirrors and obscure the driver's view to the side and rear of the vehicle. If the vehicle has heated mirrors, turn them on to clear them. Alternatively, stop periodically to clear them manually.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8160,7 +8160,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Driving in adverse weather conditions is more dangerous and more tiring. Drivers should check the weather forecast and weather warnings and other sources for information on the expected conditions on the intended route, and allow extra time to complete the journey.",
+      "explanation": "Explanation: Driving in adverse weather conditions is more dangerous and more tiring. Drivers should check the weather forecast and weather warnings and other sources for information on the expected conditions on the intended route, and allow extra time to complete the journey.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8173,7 +8173,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Before starting a long journey in adverse weather the driver should ensure that there is sufficient fluid in the windscreen washer bottle in order to keep the windscreen clear in these conditions.",
+      "explanation": "Explanation: Before starting a long journey in adverse weather the driver should ensure that there is sufficient fluid in the windscreen washer bottle in order to keep the windscreen clear in these conditions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8186,7 +8186,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: In snow or ice, a vehicle takes longer to stop. Before starting a steep descent in a large vehicle, the driver should reduce speed and select a lower gear, brake gently and only when needed. If the vehicle is fitted with a manually selectable retarder, engage it before starting the descent.",
+      "explanation": "Explanation: In snow or ice, a vehicle takes longer to stop. Before starting a steep descent in a large vehicle, the driver should reduce speed and select a lower gear, brake gently and only when needed. If the vehicle is fitted with a manually selectable retarder, engage it before starting the descent.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8199,7 +8199,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before you leave your vehicle, apply the parking brake and switch off the ignition. Check to make sure that you can open the door safely without endangering others, and alight when it is safe to do so.",
+      "explanation": "Explanation: Before you leave your vehicle, apply the parking brake and switch off the ignition. Check to make sure that you can open the door safely without endangering others, and alight when it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8212,7 +8212,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If your route takes you through a tunnel, you must ensure that your vehicle has sufficient fuel to safely pass through.",
+      "explanation": "Explanation: If your route takes you through a tunnel, you must ensure that your vehicle has sufficient fuel to safely pass through.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8225,7 +8225,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Be aware that there is considerably less light available in a tunnel, even with the tunnel lights on. To improve your vision remove your sunglasses before entering the tunnel.",
+      "explanation": "Explanation: Be aware that there is considerably less light available in a tunnel, even with the tunnel lights on. To improve your vision remove your sunglasses before entering the tunnel.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8238,7 +8238,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If, when driving a vehicle through a tunnel, you meet traffic congestion, leave a safe distance between you and the vehicle in front and switch on your hazard warning lights when stationary.",
+      "explanation": "Explanation: If, when driving a vehicle through a tunnel, you meet traffic congestion, leave a safe distance between you and the vehicle in front and switch on your hazard warning lights when stationary.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8251,7 +8251,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: If, when driving a vehicle through a tunnel, you are halted in stationary traffic for any length of time, you should switch off the engine to reduce fumes in the tunnel and conserve fuel.",
+      "explanation": "Explanation: If, when driving a vehicle through a tunnel, you are halted in stationary traffic for any length of time, you should switch off the engine to reduce fumes in the tunnel and conserve fuel.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8264,7 +8264,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If there is a breakdown or crash in a tunnel, stop, switch off the engine, switch on the hazard warning lights, check the radio for instructions and use the emergency phone at the emergency station to call for help, check all electronic signs in the tunnel for information.",
+      "explanation": "Explanation: If there is a breakdown or crash in a tunnel, stop, switch off the engine, switch on the hazard warning lights, check the radio for instructions and use the emergency phone at the emergency station to call for help, check all electronic signs in the tunnel for information.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8277,7 +8277,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: If a driver?s vehicle stops in a tunnel due to a breakdown, switch off the engine, switch on the hazard warning lights, check the radio for instructions and use the emergency phone at the emergency station to call for help, check all electronic signs in the tunnel for information.",
+      "explanation": "Explanation: If a driver's vehicle stops in a tunnel due to a breakdown, switch off the engine, switch on the hazard warning lights, check the radio for instructions and use the emergency phone at the emergency station to call for help, check all electronic signs in the tunnel for information.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8290,7 +8290,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If a driver?s vehicle stops in a tunnel due to a breakdown, switch off the engine, switch on the hazard warning lights, check the radio for instructions and use the emergency phone at the emergency station to call for help, check all electronic signs in the tunnel for information.",
+      "explanation": "Explanation: If a driver's vehicle stops in a tunnel due to a breakdown, switch off the engine, switch on the hazard warning lights, check the radio for instructions and use the emergency phone at the emergency station to call for help, check all electronic signs in the tunnel for information.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8303,7 +8303,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If there is smoke or fire in the vehicle, switch off the engine, leave the vehicle immediately, go to the emergency station and use the emergency phone to alert the tunnel operator and leave the tunnel by the nearest available exit.",
+      "explanation": "Explanation: If there is smoke or fire in the vehicle, switch off the engine, leave the vehicle immediately, go to the emergency station and use the emergency phone to alert the tunnel operator and leave the tunnel by the nearest available exit.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8316,7 +8316,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When joining a motorway from a slip road, drivers should adjust their speed to that of the motorway traffic on the acceleration lane and merge into a suitable gap in Lane 1. Do not force other traffic to swerve or slow down to avoid your vehicle.",
+      "explanation": "Explanation: When joining a motorway from a slip road, drivers should adjust their speed to that of the motorway traffic on the acceleration lane and merge into a suitable gap in Lane 1. Do not force other traffic to swerve or slow down to avoid your vehicle.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8329,7 +8329,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: You must yield to pedestrians at a pelican crossing when the amber light is flashing.",
+      "explanation": "Explanation: You must yield to pedestrians at a pelican crossing when the amber light is flashing.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8342,7 +8342,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Lightness in steering indicates a loss of traction. This generally happens when the road surface is icy. Ice provides a harder, smoother surface than rain, or snow so it is difficult to avoid skidding and drivers should allow up to 10 times the normal braking distance in order to stop safely.",
+      "explanation": "Explanation: Lightness in steering indicates a loss of traction. This generally happens when the road surface is icy. Ice provides a harder, smoother surface than rain, or snow so it is difficult to avoid skidding and drivers should allow up to 10 times the normal braking distance in order to stop safely.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8355,7 +8355,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Report all aggressive driving incidents to Traffic Watch or a Garda station. They are the best people to deal with aggressive driving.",
+      "explanation": "Explanation: Report all aggressive driving incidents to Traffic Watch or a Garda station. They are the best people to deal with aggressive driving.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8368,7 +8368,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The blood alcohol concentrate limit for novice/learner drivers is much lower than that of a driver who has held their full licence for more than two years (not a novice driver). Therefore as little as one unit of alcohol would result in the driver exceeding the lower limit.",
+      "explanation": "Explanation: The blood alcohol concentrate limit for novice/learner drivers is much lower than that of a driver who has held their full licence for more than two years (not a novice driver). Therefore as little as one unit of alcohol would result in the driver exceeding the lower limit.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8381,7 +8381,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: According to the Pre-Crash Report 2008-2012, alcohol was cited as a contributing factor in 38% of the 867 collision on file.",
+      "explanation": "Explanation: According to the Pre-Crash Report 2008-2012, alcohol was cited as a contributing factor in 38% of the 867 collision on file.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8394,7 +8394,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Alcohol was a contributory factor in fatal collisions. See Report.",
+      "explanation": "Explanation: Alcohol was a contributory factor in fatal collisions. See Report.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8407,7 +8407,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Alcohol was a contributory factor in fatal collisions. See Report.",
+      "explanation": "Explanation: Alcohol was a contributory factor in fatal collisions. See Report.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8420,7 +8420,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The law allows for a driver to be tested at any time.",
+      "explanation": "Explanation: The law allows for a driver to be tested at any time.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8433,7 +8433,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits.",
+      "explanation": "Explanation: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8446,7 +8446,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits.",
+      "explanation": "Explanation: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8459,7 +8459,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits.",
+      "explanation": "Explanation: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8472,7 +8472,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol or drugs affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits, or while under the influence of drugs. It is an offence to refuse to give a breath, blood or urine sample.",
+      "explanation": "Explanation: Alcohol is a major factor in crashes that lead to death and injury. Research proves that even small amounts of alcohol or drugs affect your judgement and ability to drive. It is illegal to drive with alcohol levels above the legal limits, or while under the influence of drugs. It is an offence to refuse to give a breath, blood or urine sample.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8485,7 +8485,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: It is against the law to drive a car, motor bike, truck, bus, pedal bike or an animal-drawn vehicle while ?under the influence of an intoxicant to such an extent as to be incapable of having control of the vehicle?. Intoxicants include alcohol and drugs, whether taken separately or together. The word ?drugs? here includes legal prescribed and over-the-counter (OTC) medicines.",
+      "explanation": "Explanation: It is against the law to drive a car, motor bike, truck, bus, pedal bike or an animal-drawn vehicle while ?under the influence of an intoxicant to such an extent as to be incapable of having control of the vehicle?. Intoxicants include alcohol and drugs, whether taken separately or together. The word ?drugs? here includes legal prescribed and over-the-counter (OTC) medicines.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8493,12 +8493,12 @@ export const QUESTIONS = [
       "options": [
         "An insurance certificate.",
         "A saliva sample.",
-        "A driver?s licence.",
+        "A driver's licence.",
         "A breath sample."
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If a driver is stopped at a roadside check, they should be aware that, along with the impairment test, Garda\u00ed can also request a saliva sample if they suspect the driver is driving under the influence of drugs.",
+      "explanation": "Explanation: If a driver is stopped at a roadside check, they should be aware that, along with the impairment test, Garda\u00ed can also request a saliva sample if they suspect the driver is driving under the influence of drugs.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8511,7 +8511,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers should be aware of the severe penalties if they chose to drive having taken drugs and are detected. Drug driving is extremely dangerous due to the effect drugs have on the brain.",
+      "explanation": "Explanation: Drivers should be aware of the severe penalties if they chose to drive having taken drugs and are detected. Drug driving is extremely dangerous due to the effect drugs have on the brain.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8524,7 +8524,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The limits for drink and drug driving do not change depending on the time of the day drivers are checked. Drink and drugs remain in the body for a period of time. A driver should think carefully before driving a vehicle the morning after taking drink or drugs, and be aware that they could still be well over the limit. (Rewritten)",
+      "explanation": "Explanation: The limits for drink and drug driving do not change depending on the time of the day drivers are checked. Drink and drugs remain in the body for a period of time. A driver should think carefully before driving a vehicle the morning after taking drink or drugs, and be aware that they could still be well over the limit. (Rewritten)",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8537,7 +8537,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A driver needs to know what to do when they see an emergency vehicle. A driver must react quickly, safely and carefully to allow emergency service vehicles to pass. It is important to be alert and attentive at all times.",
+      "explanation": "Explanation: A driver needs to know what to do when they see an emergency vehicle. A driver must react quickly, safely and carefully to allow emergency service vehicles to pass. It is important to be alert and attentive at all times.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8550,7 +8550,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver needs to know what to do when they see an emergency vehicle. A driver must react quickly, safely and carefully to allow emergency service vehicles to pass. It is important to be alert and attentive at all times.",
+      "explanation": "Explanation: A driver needs to know what to do when they see an emergency vehicle. A driver must react quickly, safely and carefully to allow emergency service vehicles to pass. It is important to be alert and attentive at all times.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8563,7 +8563,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A driver needs to know what to do when they see an emergency vehicle. A driver must react quickly, safely and carefully to allow emergency service vehicles to pass. It is important to be alert and attentive at all times.",
+      "explanation": "Explanation: A driver needs to know what to do when they see an emergency vehicle. A driver must react quickly, safely and carefully to allow emergency service vehicles to pass. It is important to be alert and attentive at all times.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8576,7 +8576,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A driver should drive their vehicle far enough to the left to allow traffic to safely pass or overtake on the right, but not so far to the left that you are driving on a cycle lane or blocking or endangering cyclists or pedestrians. Where a driver wishes to overtake a cyclist and it is safe to do so, they should, if it is possible, give the recommended clearance depending on the speed limit area they are in.",
+      "explanation": "Explanation: A driver should drive their vehicle far enough to the left to allow traffic to safely pass or overtake on the right, but not so far to the left that you are driving on a cycle lane or blocking or endangering cyclists or pedestrians. Where a driver wishes to overtake a cyclist and it is safe to do so, they should, if it is possible, give the recommended clearance depending on the speed limit area they are in.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8589,7 +8589,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A driver should drive their vehicle far enough to the left to allow traffic to safely pass or overtake on the right, but not so far to the left that you are driving on a cycle lane or blocking or endangering cyclists or pedestrians. Where a driver wishes to overtake a cyclist and it is safe to do so, they should, if it is possible, give the recommended clearance depending on the speed limit area they are in.",
+      "explanation": "Explanation: A driver should drive their vehicle far enough to the left to allow traffic to safely pass or overtake on the right, but not so far to the left that you are driving on a cycle lane or blocking or endangering cyclists or pedestrians. Where a driver wishes to overtake a cyclist and it is safe to do so, they should, if it is possible, give the recommended clearance depending on the speed limit area they are in.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8602,7 +8602,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Even with the best headlights, drivers can see less at night than during the day. Pedestrians and unlit bicycles are extremely difficult to see in the dark, particularly if they have to deal with the glare of oncoming lights. Pedestrians should always wear bright and hi-viz clothing during the day and reflective clothing at night when walking outside built-up areas.",
+      "explanation": "Explanation: Even with the best headlights, drivers can see less at night than during the day. Pedestrians and unlit bicycles are extremely difficult to see in the dark, particularly if they have to deal with the glare of oncoming lights. Pedestrians should always wear bright and hi-viz clothing during the day and reflective clothing at night when walking outside built-up areas.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8615,7 +8615,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Pedestrians should only enter uncontrolled crossing places (courtesy crossing) ensuring that all traffic is aware of their presence if crossing the road. Motorists entering uncontrolled crossing places (courtesy crossing) should react by driving very slowly, and be aware of the potential dangers of pedestrians using the area.",
+      "explanation": "Explanation: Pedestrians should only enter uncontrolled crossing places (courtesy crossing) ensuring that all traffic is aware of their presence if crossing the road. Motorists entering uncontrolled crossing places (courtesy crossing) should react by driving very slowly, and be aware of the potential dangers of pedestrians using the area.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8628,7 +8628,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When approaching or being near to the scene of an incident, motorists are often seen ?rubbernecking?. This means turning your head and stretching your neck to get a better view of what?s happening. It can be the cause of traffic jams as drivers slow down to ?rubberneck?. It can also cause road incidents as drivers become distracted and change their speed and/or direction while other drivers are also distracted.",
+      "explanation": "Explanation: When approaching or being near to the scene of an incident, motorists are often seen ?rubbernecking?. This means turning your head and stretching your neck to get a better view of what's happening. It can be the cause of traffic jams as drivers slow down to ?rubberneck?. It can also cause road incidents as drivers become distracted and change their speed and/or direction while other drivers are also distracted.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8641,7 +8641,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If you see any emergency vehicle approaching with lights and/or sirens activated, check your rear view mirrors to gauge the speed of the emergency vehicle/s and also look out for pedestrians, cyclists, motorcyclists and other road users. Indicate your intention to pull over. Pull over only in a space that has enough space for the emergency vehicle/s to pass safely. Move off safely with appropriate observations and signals after the emergency vehicle has passed.",
+      "explanation": "Explanation: If you see any emergency vehicle approaching with lights and/or sirens activated, check your rear view mirrors to gauge the speed of the emergency vehicle/s and also look out for pedestrians, cyclists, motorcyclists and other road users. Indicate your intention to pull over. Pull over only in a space that has enough space for the emergency vehicle/s to pass safely. Move off safely with appropriate observations and signals after the emergency vehicle has passed.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8654,7 +8654,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A learner driver needs to be aware that driving unaccompanied in a vehicle, even where the owner has given their consent to drive, may result in the vehicle being seized.",
+      "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied in a vehicle, even where the owner has given their consent to drive, may result in the vehicle being seized.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8667,7 +8667,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A learner driver needs to be aware that there is a lower penalty point threshold for learner or novice drivers",
+      "explanation": "Explanation: A learner driver needs to be aware that there is a lower penalty point threshold for learner or novice drivers",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8680,7 +8680,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A learner driver needs to be aware that driving unaccompanied increases the penalty points to 4 on conviction.",
+      "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied increases the penalty points to 4 on conviction.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8693,7 +8693,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A learner driver needs to be aware that driving unaccompanied increases the fine to ?120 on conviction.",
+      "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied increases the fine to ?120 on conviction.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8706,7 +8706,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A learner driver needs to be aware that, if they are stopped by a Garda for driving unaccompanied, it will lead to a financial penalty.",
+      "explanation": "Explanation: A learner driver needs to be aware that, if they are stopped by a Garda for driving unaccompanied, it will lead to a financial penalty.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8719,7 +8719,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: A learner driver needs to be aware that driving unaccompanied in a vehicle which they do not own could see the owner facing a fine of up to ?1,000 and having the vehicle seized.",
+      "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied in a vehicle which they do not own could see the owner facing a fine of up to ?1,000 and having the vehicle seized.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8728,15 +8728,15 @@ export const QUESTIONS = [
         "Yes, provided the vehicle owner has given their consent.",
         "Yes, provided the vehicle owner has open drive insurance.",
         "Yes, provided the owner is a family member and has given their consent.",
-        "No, a learner driver is not permitted to drive unaccompanied even with the owner?s consent."
+        "No, a learner driver is not permitted to drive unaccompanied even with the owner's consent."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A learner driver needs to be aware that, even with the consent of the owner of the vehicle, they are not permitted to drive unaccompanied.",
+      "explanation": "Explanation: A learner driver needs to be aware that, even with the consent of the owner of the vehicle, they are not permitted to drive unaccompanied.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "For how long is a learner driver?s accompanying driver required to have held their full licence in Category B?",
+      "question": "For how long is a learner driver's accompanying driver required to have held their full licence in Category B?",
       "options": [
         "6\u00a0months.",
         "3\u00a0years.",
@@ -8745,7 +8745,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A learner driver needs to be aware that not just anyone can be an accompanying driver. An accompanying driver has to have held a full licence for at least 2\u00a0years and have built up good driving experience.",
+      "explanation": "Explanation: A learner driver needs to be aware that not just anyone can be an accompanying driver. An accompanying driver has to have held a full licence for at least 2\u00a0years and have built up good driving experience.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8758,7 +8758,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A learner driver needs to know that there are penalties for driving unaccompanied.",
+      "explanation": "Explanation: A learner driver needs to know that there are penalties for driving unaccompanied.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8771,7 +8771,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A learner driver needs to be aware that driving unaccompanied will result in a penalty point offence.",
+      "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied will result in a penalty point offence.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8784,7 +8784,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A learner driver who successfully passes their driving test needs to be aware that the rules that apply to learner permit holders still apply to them until they are in possession of a full driving licence in that category. A Certificate of Competency is not a full licence.",
+      "explanation": "Explanation: A learner driver who successfully passes their driving test needs to be aware that the rules that apply to learner permit holders still apply to them until they are in possession of a full driving licence in that category. A Certificate of Competency is not a full licence.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8797,7 +8797,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: A learner driver needs to be aware that they are not permitted under any circumstance to drive unaccompanied regardless of the amount of learner permits held.",
+      "explanation": "Explanation: A learner driver needs to be aware that they are not permitted under any circumstance to drive unaccompanied regardless of the amount of learner permits held.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8810,7 +8810,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: To be an accompanying driver for a learner driver, you must have a full driving licence for at least 2\u00a0years.",
+      "explanation": "Explanation: To be an accompanying driver for a learner driver, you must have a full driving licence for at least 2\u00a0years.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8823,7 +8823,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Learner drivers must be aware that they must be accompanied by a qualified driver at all times.",
+      "explanation": "Explanation: Learner drivers must be aware that they must be accompanied by a qualified driver at all times.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8836,7 +8836,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: If your vehicle breaks down or is involved in a collision in a tunnel, switch on your hazard warning lights, switch off your engine, go to an emergency station and use the emergency phone to alert the tunnel operator.",
+      "explanation": "Explanation: If your vehicle breaks down or is involved in a collision in a tunnel, switch on your hazard warning lights, switch off your engine, go to an emergency station and use the emergency phone to alert the tunnel operator.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8849,7 +8849,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Drivers are not allowed to use the horn in a built-up area between 11:30\u00a0pm and 7:00\u00a0am unless there is a traffic emergency. Only use a horn to warn other road users of danger or if needed to make them aware of your vehicles presence for safety reasons. Using the horn does not give drivers an automatic right of way. Never use the horn to provoke a reaction from or to rebuke another motorist.",
+      "explanation": "Explanation: Drivers are not allowed to use the horn in a built-up area between 11:30\u00a0pm and 7:00\u00a0am unless there is a traffic emergency. Only use a horn to warn other road users of danger or if needed to make them aware of your vehicles presence for safety reasons. Using the horn does not give drivers an automatic right of way. Never use the horn to provoke a reaction from or to rebuke another motorist.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8862,7 +8862,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: A learner driver needs to be aware of the legal requirements to display ?L? plates front and rear and the implications of not doing so.",
+      "explanation": "Explanation: A learner driver needs to be aware of the legal requirements to display ?L? plates front and rear and the implications of not doing so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8875,7 +8875,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Before moving off at traffic lights the driver should be aware of traffic, particularly cyclists and motorcyclists, coming up on the left, especially where there is an advanced stop line for cyclists ahead of that which applies to other road users.",
+      "explanation": "Explanation: Before moving off at traffic lights the driver should be aware of traffic, particularly cyclists and motorcyclists, coming up on the left, especially where there is an advanced stop line for cyclists ahead of that which applies to other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8888,7 +8888,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The vehicle does not have a greater right-of-way than any other road user. As a driver you should pay particular attention to vulnerable road users such as pedestrians, cyclists and motorcyclists and be aware that they are entitled to use the road in safety.",
+      "explanation": "Explanation: The vehicle does not have a greater right-of-way than any other road user. As a driver you should pay particular attention to vulnerable road users such as pedestrians, cyclists and motorcyclists and be aware that they are entitled to use the road in safety.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8901,7 +8901,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: In slow-moving city traffic, you should be aware of and check your blind spots before any manoeuvre. Motorcyclists can easily become hidden in a blind spot, and in slow-moving traffic, they might be moving faster than you are.",
+      "explanation": "Explanation: In slow-moving city traffic, you should be aware of and check your blind spots before any manoeuvre. Motorcyclists can easily become hidden in a blind spot, and in slow-moving traffic, they might be moving faster than you are.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8914,7 +8914,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: In slow-moving city traffic, you should be aware of and check your blind spots before any manoeuvre. Pedestrians can easily become hidden in a blind spot, and in slow-moving traffic, they might be moving faster than you are.",
+      "explanation": "Explanation: In slow-moving city traffic, you should be aware of and check your blind spots before any manoeuvre. Pedestrians can easily become hidden in a blind spot, and in slow-moving traffic, they might be moving faster than you are.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8927,7 +8927,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: While driving at night and even with the best headlights, it can be very difficult to see all the hazards that you might come across ? for example, stray animals or livestock on the road. At night you should drive at a speed that will enable you to stop safely within the distance you can see to be clear ahead.",
+      "explanation": "Explanation: While driving at night and even with the best headlights, it can be very difficult to see all the hazards that you might come across ? for example, stray animals or livestock on the road. At night you should drive at a speed that will enable you to stop safely within the distance you can see to be clear ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8940,7 +8940,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The advantages of eco-driving include improved road safety, improved fuel consumption and reduced emissions. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother drive.",
+      "explanation": "Explanation: The advantages of eco-driving include improved road safety, improved fuel consumption and reduced emissions. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother drive.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8953,7 +8953,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: One of the many advantages of an eco-driving style, includes; increased fuel efficiency, reduced emissions and improved driver safety. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother journey.",
+      "explanation": "Explanation: One of the many advantages of an eco-driving style, includes; increased fuel efficiency, reduced emissions and improved driver safety. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother journey.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8966,7 +8966,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: One of the many advantages of maintaining a steady speed includes: increased fuel efficiency, reduced emissions and improved driver safety. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother journey.",
+      "explanation": "Explanation: One of the many advantages of maintaining a steady speed includes: increased fuel efficiency, reduced emissions and improved driver safety. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother journey.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8979,7 +8979,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: One of the many advantages of an eco-driving style, includes; increased fuel efficiency, reduced emissions and improved driver safety. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother journey.",
+      "explanation": "Explanation: One of the many advantages of an eco-driving style, includes; increased fuel efficiency, reduced emissions and improved driver safety. The eco-conscious driver becomes a more efficient driver because they learn to read the road further ahead and display better anticipation skills. This reduces the need for harsh acceleration and braking which results in a more economical style of driving and a smoother journey.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8992,7 +8992,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When making a left-hand turn on a busy city street, drivers should pay particular attention to vulnerable road users such as pedestrians, cyclists and motorcyclists who may appear unexpectedly and may not be aware of the vehicle?s intention.",
+      "explanation": "Explanation: When making a left-hand turn on a busy city street, drivers should pay particular attention to vulnerable road users such as pedestrians, cyclists and motorcyclists who may appear unexpectedly and may not be aware of the vehicle's intention.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9005,7 +9005,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: It is illegal to use or handle a mobile phone while driving. Driving requires all of your attention, all of the time, so you should never use or handle a mobile phone while driving. If you want to use a mobile phone, the only safe thing to do is to find a safe place to stop.",
+      "explanation": "Explanation: It is illegal to use or handle a mobile phone while driving. Driving requires all of your attention, all of the time, so you should never use or handle a mobile phone while driving. If you want to use a mobile phone, the only safe thing to do is to find a safe place to stop.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9018,7 +9018,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When exiting from a parked vehicle on a busy road, the driver should check it is safe to do so before opening the door, as there could be cyclists or other traffic passing closely by.",
+      "explanation": "Explanation: When exiting from a parked vehicle on a busy road, the driver should check it is safe to do so before opening the door, as there could be cyclists or other traffic passing closely by.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9031,7 +9031,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_5Iezf.png",
       "correct_answer": 0,
-      "explanation": "Explantion: You may proceed, but you should be aware of the presence of the motorcyclist. You should always be prepared to react to a change in the traffic situation ? for example, the motorcyclist might not have seen your vehicle.",
+      "explanation": "Explanation: You may proceed, but you should be aware of the presence of the motorcyclist. You should always be prepared to react to a change in the traffic situation ? for example, the motorcyclist might not have seen your vehicle.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9044,7 +9044,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_sE5Ez.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When there are pedestrians at or near a zebra crossing, you should slow down on approach and be prepared to stop to allow the pedestrians to cross safely.",
+      "explanation": "Explanation: When there are pedestrians at or near a zebra crossing, you should slow down on approach and be prepared to stop to allow the pedestrians to cross safely.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9057,7 +9057,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_1oKgq.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When you reach the roundabout, you must give way to traffic approaching from the right ? unless signs, road markings or traffic lights tell you otherwise.",
+      "explanation": "Explanation: When you reach the roundabout, you must give way to traffic approaching from the right ? unless signs, road markings or traffic lights tell you otherwise.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9070,7 +9070,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Bj9tb.png",
       "correct_answer": 0,
-      "explanation": "Explantion: When you are turning right from a major road to a minor road, you must yield to oncoming traffic. You should proceed only when it is safe to do so.",
+      "explanation": "Explanation: When you are turning right from a major road to a minor road, you must yield to oncoming traffic. You should proceed only when it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9083,7 +9083,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_gYSEY.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When you are turning right from a major road to a minor road, you must yield to oncoming traffic and only proceed when it is safe to do so. However, the drivers on the minor roads must give way to the traffic on the major road.",
+      "explanation": "Explanation: When you are turning right from a major road to a minor road, you must yield to oncoming traffic and only proceed when it is safe to do so. However, the drivers on the minor roads must give way to the traffic on the major road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9096,7 +9096,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_9flx6.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When driving in a built-up area, you should drive with caution and be prepared to react to pedestrians crossing from between parked vehicles.",
+      "explanation": "Explanation: When driving in a built-up area, you should drive with caution and be prepared to react to pedestrians crossing from between parked vehicles.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9109,7 +9109,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Wf1Hy.png",
       "correct_answer": 0,
-      "explanation": "Explantion: Because it is difficult to predict children?s behaviour, you should always be prepared to react to a change in the traffic situation and be prepared to stop.",
+      "explanation": "Explanation: Because it is difficult to predict children's behaviour, you should always be prepared to react to a change in the traffic situation and be prepared to stop.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9122,7 +9122,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_eSwTt.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When you are turning right from a major road to a minor road, you must yield to oncoming traffic and proceed only when it is safe to do so. You should also be aware that there might be emerging from the minor road.",
+      "explanation": "Explanation: When you are turning right from a major road to a minor road, you must yield to oncoming traffic and proceed only when it is safe to do so. You should also be aware that there might be emerging from the minor road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9135,7 +9135,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_6dcE8.png",
       "correct_answer": 2,
-      "explanation": "Explantion: You should always read the road ahead and be prepared to react to the changing traffic situation. In particular, you should be aware that pedestrians might emerge at the rear of the bus. In this situation you should also look out for pedestrians making their way towards the waiting Bus",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to the changing traffic situation. In particular, you should be aware that pedestrians might emerge at the rear of the bus. In this situation you should also look out for pedestrians making their way towards the waiting Bus",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9148,7 +9148,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MtrDX.png",
       "correct_answer": 3,
-      "explanation": "Explantion: You should read the road and be extra careful while driving through an area where children might be playing. When a ball bounces out on the road you should expect that a child might follow to retrieve the ball.",
+      "explanation": "Explanation: You should read the road and be extra careful while driving through an area where children might be playing. When a ball bounces out on the road you should expect that a child might follow to retrieve the ball.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9156,12 +9156,12 @@ export const QUESTIONS = [
       "options": [
         "The driver of the silver car may decide to turn right.",
         "The driver should overtake both vehicles together.",
-        "The driver?s field of view is not good enough to allow safe overtaking.",
+        "The driver's field of view is not good enough to allow safe overtaking.",
         "The roadway markings forbid overtaking here."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_qhkpA.png",
       "correct_answer": 2,
-      "explanation": "Explantion: You should always make sure that the road ahead is clear so that there is enough distance to allow you to overtake and get back to the correct side of the road without forcing any other road user to alter speed or course. In this case, the brow of the hill is too close to allow a driver to overtake safely.",
+      "explanation": "Explanation: You should always make sure that the road ahead is clear so that there is enough distance to allow you to overtake and get back to the correct side of the road without forcing any other road user to alter speed or course. In this case, the brow of the hill is too close to allow a driver to overtake safely.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9174,7 +9174,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_MBz2z.png",
       "correct_answer": 0,
-      "explanation": "Explantion: When you approach a vehicle that is being parked on the roadway, you should be aware that its driver will probably be concentrating on parking the vehicle and may not be aware of moving out into the road to correct its position.",
+      "explanation": "Explanation: When you approach a vehicle that is being parked on the roadway, you should be aware that its driver will probably be concentrating on parking the vehicle and may not be aware of moving out into the road to correct its position.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9183,11 +9183,11 @@ export const QUESTIONS = [
         "Overtake the cyclist on the left and complete the turn.",
         "Increase speed to be able to complete the left turn before the cyclist.",
         "Allow the cyclist heading straight on to pass.",
-        "Sound the horn to alert the cyclist to the car?s presence."
+        "Sound the horn to alert the cyclist to the car's presence."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_GvLDK.png",
       "correct_answer": 2,
-      "explanation": "Explantion: Do not overtake a cyclist as you approach a junction at which you are turning left. The cyclist might be continuing ahead. Cyclists are vulnerable road users and may be unstable in slow-moving traffic and at junctions. Give them more room.",
+      "explanation": "Explanation: Do not overtake a cyclist as you approach a junction at which you are turning left. The cyclist might be continuing ahead. Cyclists are vulnerable road users and may be unstable in slow-moving traffic and at junctions. Give them more room.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9200,7 +9200,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_II6eN.png",
       "correct_answer": 1,
-      "explanation": "Explantion: At a cross junction of equal importance the traffic approaching from the right has priority. It is important to understand that the right of way is not an absolute right. You must proceed with caution while showing regard for other road users.",
+      "explanation": "Explanation: At a cross junction of equal importance the traffic approaching from the right has priority. It is important to understand that the right of way is not an absolute right. You must proceed with caution while showing regard for other road users.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9213,7 +9213,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_tZq7f.png",
       "correct_answer": 1,
-      "explanation": "Explantion: By law you must give way to other road users, including pedestrians and cyclists, when you are entering or leaving a driveway.",
+      "explanation": "Explanation: By law you must give way to other road users, including pedestrians and cyclists, when you are entering or leaving a driveway.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9226,7 +9226,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_98JFT.png",
       "correct_answer": 3,
-      "explanation": "Explantion: By law you must stop at a Stop line (or at a Stop sign if there is no Stop line), and wait for other traffic to clear before proceeding.",
+      "explanation": "Explanation: By law you must stop at a Stop line (or at a Stop sign if there is no Stop line), and wait for other traffic to clear before proceeding.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9239,7 +9239,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_xQAkY.png",
       "correct_answer": 3,
-      "explanation": "Explantion: You should always read the road ahead and be prepared to react to the changing traffic situation as you approach junctions.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to the changing traffic situation as you approach junctions.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9252,7 +9252,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_W4Fvi.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Where there are two lines in the centre of the road, you must obey the one closest to you. So, if the closest line is a broken white line, by law you may overtake, so long as it is safe to do so.",
+      "explanation": "Explanation: Where there are two lines in the centre of the road, you must obey the one closest to you. So, if the closest line is a broken white line, by law you may overtake, so long as it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9265,7 +9265,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_PoMFr.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Do not overtake a cyclist as you approach a junction at which you are turning left. The cyclist might be continuing ahead. Cyclists are vulnerable road users and may be unstable in slow-moving traffic and at junctions. Give them more room.",
+      "explanation": "Explanation: Do not overtake a cyclist as you approach a junction at which you are turning left. The cyclist might be continuing ahead. Cyclists are vulnerable road users and may be unstable in slow-moving traffic and at junctions. Give them more room.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9278,7 +9278,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_5nUU5.png",
       "correct_answer": 1,
-      "explanation": "Explantion: When you are driving along a poorly-lit street, you should take extra care and be prepared to react to hazards such as unlit parked vehicles.",
+      "explanation": "Explanation: When you are driving along a poorly-lit street, you should take extra care and be prepared to react to hazards such as unlit parked vehicles.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9291,7 +9291,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_4E7eI.png",
       "correct_answer": 3,
-      "explanation": "Explantion: You must stop at the line where a junction is controlled by a Stop sign and Stop line. Do not proceed until it is safe to do so.",
+      "explanation": "Explanation: You must stop at the line where a junction is controlled by a Stop sign and Stop line. Do not proceed until it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9304,7 +9304,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_psbYX.png",
       "correct_answer": 3,
-      "explanation": "Explantion: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9317,7 +9317,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_YTCIZ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9330,7 +9330,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ARYip.png",
       "correct_answer": 0,
-      "explanation": "Explantion: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9343,7 +9343,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_RRdGd.png",
       "correct_answer": 0,
-      "explanation": "Explantion: On approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: On approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9356,7 +9356,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_V3Etx.png",
       "correct_answer": 0,
-      "explanation": "Explantion: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: On the approach to the brow of a hill you should be extra careful and be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9369,7 +9369,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_am6Dx.png",
       "correct_answer": 2,
-      "explanation": "Explantion: On approach to an area with a restricted view you should be extra careful and be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: On approach to an area with a restricted view you should be extra careful and be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9382,7 +9382,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_sSMMr.png",
       "correct_answer": 2,
-      "explanation": "Explantion: You should always keep a safe distance from the vehicle in front especially when it is slowing down or stopping.",
+      "explanation": "Explanation: You should always keep a safe distance from the vehicle in front especially when it is slowing down or stopping.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9395,7 +9395,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_maQYO.png",
       "correct_answer": 0,
-      "explanation": "Explantion: When road priority is unclear you might have to yield to oncoming vehicles. Never drive a vehicle into an area that it might not be able to clear or where it could cause an obstruction or bottleneck.",
+      "explanation": "Explanation: When road priority is unclear you might have to yield to oncoming vehicles. Never drive a vehicle into an area that it might not be able to clear or where it could cause an obstruction or bottleneck.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9408,7 +9408,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_w4095.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Different road surfaces can affect your vehicles grip on the road and its stopping distances. You should be aware of this when driving on different surfaces.",
+      "explanation": "Explanation: Different road surfaces can affect your vehicles grip on the road and its stopping distances. You should be aware of this when driving on different surfaces.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9421,7 +9421,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_eZHtd.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When driving on a one-way street, you should be extra careful and should be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: When driving on a one-way street, you should be extra careful and should be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9434,7 +9434,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_U4GNM.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When driving on a one-way street, you should be extra careful and be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: When driving on a one-way street, you should be extra careful and be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9447,7 +9447,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Xl9Q7.png",
       "correct_answer": 0,
-      "explanation": "Explantion: Where there are fallen leaves on the road surface, your tyres might have reduced grip on the road surface and your braking distances might be greater.",
+      "explanation": "Explanation: Where there are fallen leaves on the road surface, your tyres might have reduced grip on the road surface and your braking distances might be greater.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9460,7 +9460,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_gzZOl.png",
       "correct_answer": 0,
-      "explanation": "Explantion: When you are turning right from a main road into a side road, you must give way to oncoming traffic on the main road even if they are turning left into the same road.",
+      "explanation": "Explanation: When you are turning right from a main road into a side road, you must give way to oncoming traffic on the main road even if they are turning left into the same road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9473,7 +9473,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_HvE3u.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When driving at night in an area where there is a variety of light sources, you need to be extra careful, as potential hazards might be more difficult to see.",
+      "explanation": "Explanation: When driving at night in an area where there is a variety of light sources, you need to be extra careful, as potential hazards might be more difficult to see.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9486,7 +9486,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_1ND7M.png",
       "correct_answer": 1,
-      "explanation": "Explantion: You should always be aware of other road users especially children, who can be unpredictable and show no road sense. You should drive with extra care in areas where there are children about ? for example, near schools, playgrounds and in residential areas.",
+      "explanation": "Explanation: You should always be aware of other road users especially children, who can be unpredictable and show no road sense. You should drive with extra care in areas where there are children about ? for example, near schools, playgrounds and in residential areas.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9499,7 +9499,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_9syf8.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When you are overtaking a parked vehicle or obstruction, you should yield to oncoming vehicles so that they don?t have to slow down or take evasive action.",
+      "explanation": "Explanation: When you are overtaking a parked vehicle or obstruction, you should yield to oncoming vehicles so that they don?t have to slow down or take evasive action.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9512,7 +9512,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_p1QV7.png",
       "correct_answer": 0,
-      "explanation": "Explantion: A vehicle driving on the main road has priority over vehicles emerging from side roads. However, you must understand that the right of way is not an absolute right of way and you should be considerate of other road users at all times.",
+      "explanation": "Explanation: A vehicle driving on the main road has priority over vehicles emerging from side roads. However, you must understand that the right of way is not an absolute right of way and you should be considerate of other road users at all times.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9525,7 +9525,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ThDoQ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: When approaching a zebra crossing, you must yield to pedestrians already on or about to cross the road.",
+      "explanation": "Explanation: When approaching a zebra crossing, you must yield to pedestrians already on or about to cross the road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9538,7 +9538,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_6NnSb.png",
       "correct_answer": 1,
-      "explanation": "Explantion: You should always read the road ahead and be prepared to react to changing traffic situations ? in this case paying attention to the warning sign clearly indicating a right-hand bend ahead.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations ? in this case paying attention to the warning sign clearly indicating a right-hand bend ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9551,7 +9551,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_OBJxm.png",
       "correct_answer": 2,
-      "explanation": "Explantion: The correct position from which to turn right from a major road to a minor road is just left of centre. You should take up the correct position in good time and avoid cutting the corner or swan necking ? that is going beyond the turning point as car 2 is in the picture.",
+      "explanation": "Explanation: The correct position from which to turn right from a major road to a minor road is just left of centre. You should take up the correct position in good time and avoid cutting the corner or swan necking ? that is going beyond the turning point as car 2 is in the picture.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9564,7 +9564,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_CI6Pg.png",
       "correct_answer": 2,
-      "explanation": "Explantion: The correct position from which to turn right from a minor road to a major road is just left of centre of the road. You should take up the correct position in good time and complete the turn by entering the left-hand side of the major road.",
+      "explanation": "Explanation: The correct position from which to turn right from a minor road to a major road is just left of centre of the road. You should take up the correct position in good time and complete the turn by entering the left-hand side of the major road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9577,7 +9577,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_9hTBI.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When it is wet, your tyres do not grip the road surface as well as when it is dry, your stopping distance is increased and you are more likely to skid. For these reasons you should slow down during or after rain and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: When it is wet, your tyres do not grip the road surface as well as when it is dry, your stopping distance is increased and you are more likely to skid. For these reasons you should slow down during or after rain and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9590,7 +9590,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_GTsyP.png",
       "correct_answer": 1,
-      "explanation": "Explantion: Different road surfaces can affect your vehicles grip on the road and its stopping distances. You should be aware of this when driving on different surfaces.",
+      "explanation": "Explanation: Different road surfaces can affect your vehicles grip on the road and its stopping distances. You should be aware of this when driving on different surfaces.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9603,7 +9603,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_z3oXp.png",
       "correct_answer": 2,
-      "explanation": "Explantion: On a wet road surface, your tyres do not grip the road surface as well as in dry conditions and your required stopping distance is increased. Because of that you should slow down during or after rain and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: On a wet road surface, your tyres do not grip the road surface as well as in dry conditions and your required stopping distance is increased. Because of that you should slow down during or after rain and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9616,11 +9616,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_i1Lw7.png",
       "correct_answer": 1,
-      "explanation": "Explantion: Because it is difficult to predict children?s behaviour, you should always be prepared to react to a change in the traffic situation or to stop.",
+      "explanation": "Explanation: Because it is difficult to predict children's behaviour, you should always be prepared to react to a change in the traffic situation or to stop.",
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "An approaching driver notices that the boy on the children?s bicycle has said goodbye to his friend. What is the correct action for the driver to take?",
+      "question": "An approaching driver notices that the boy on the children's bicycle has said goodbye to his friend. What is the correct action for the driver to take?",
       "options": [
         "Be prepared for the boy setting off at any moment.",
         "Slow down and beckon the boy to cross the road.",
@@ -9629,7 +9629,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_zJ5nn.png",
       "correct_answer": 0,
-      "explanation": "Explantion: Because it is difficult to predict children?s behaviour, you should always be prepared to react to a change in the traffic situation or to stop.",
+      "explanation": "Explanation: Because it is difficult to predict children's behaviour, you should always be prepared to react to a change in the traffic situation or to stop.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9642,7 +9642,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_ZPOLY.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When you are turning right from a major road to a minor road, you must yield to oncoming traffic, and you should proceed only when it is safe to do so.",
+      "explanation": "Explanation: When you are turning right from a major road to a minor road, you must yield to oncoming traffic, and you should proceed only when it is safe to do so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9655,7 +9655,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_eqdJp.png",
       "correct_answer": 2,
-      "explanation": "Explantion: Because it is difficult to predict children?s behaviour, you should always be prepared to react to a change in the traffic situation and be prepared to stop.",
+      "explanation": "Explanation: Because it is difficult to predict children's behaviour, you should always be prepared to react to a change in the traffic situation and be prepared to stop.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9668,7 +9668,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_jGROR.png",
       "correct_answer": 3,
-      "explanation": "Explantion: On approaching a crossroads you should check the road sign to see which traffic has priority and be prepared for emerging traffic from either side. Vehicles do not have an automatic right of way on the road. The overriding rule is to proceed with caution in all circumstances. .",
+      "explanation": "Explanation: On approaching a crossroads you should check the road sign to see which traffic has priority and be prepared for emerging traffic from either side. Vehicles do not have an automatic right of way on the road. The overriding rule is to proceed with caution in all circumstances. .",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9681,7 +9681,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_NNQFP.png",
       "correct_answer": 3,
-      "explanation": "Explantion: You may turn right if there no oncoming traffic but you should also be aware that there might be traffic emerging from the minor roads.",
+      "explanation": "Explanation: You may turn right if there no oncoming traffic but you should also be aware that there might be traffic emerging from the minor roads.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9694,7 +9694,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_4Mwlf.png",
       "correct_answer": 3,
-      "explanation": "Explantion: You should read the road ahead and expect extra pedestrian activity when the tram is at the stop.",
+      "explanation": "Explanation: You should read the road ahead and expect extra pedestrian activity when the tram is at the stop.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9707,7 +9707,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_gP1kC.png",
       "correct_answer": 3,
-      "explanation": "Explantion: When driving in icy conditions, you should always reduce speed and allow a bigger gap to the vehicle in front in order to be able to stop safely if necessary.",
+      "explanation": "Explanation: When driving in icy conditions, you should always reduce speed and allow a bigger gap to the vehicle in front in order to be able to stop safely if necessary.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9720,20 +9720,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_NWYeb.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When driving in dense fog you should switch on your front and rear fog lights along with dipped headlights. You should not drive in fog with main beam headlights on.",
+      "explanation": "Explanation: When driving in dense fog you should switch on your front and rear fog lights along with dipped headlights. You should not drive in fog with main beam headlights on.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What should the driver be most conscious of in this situation?",
       "options": [
         "No vehicles should be parked on the left hand side of the road.",
-        "One of the parked vehicles may reverse into the driver?s path.",
+        "One of the parked vehicles may reverse into the driver's path.",
         "The pedestrian may suddenly cross the road in front of the vehicle.",
         "The pedestrian always has right of way to cross the road."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_2tYh6.png",
       "correct_answer": 2,
-      "explanation": "Explantion: It is often difficult to predict other road users behaviour. Where there are parked vehicles on both sides of the road you should approach with caution, and be prepared to react to a change in the traffic situation and to stop.",
+      "explanation": "Explanation: It is often difficult to predict other road users behaviour. Where there are parked vehicles on both sides of the road you should approach with caution, and be prepared to react to a change in the traffic situation and to stop.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9746,7 +9746,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_NeSbw.png",
       "correct_answer": 2,
-      "explanation": "Explantion: It is often difficult to predict other road users behaviour. You should be prepared in case the pedestrian steps onto the road and the silver car stops suddenly.",
+      "explanation": "Explanation: It is often difficult to predict other road users behaviour. You should be prepared in case the pedestrian steps onto the road and the silver car stops suddenly.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9759,7 +9759,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_WyAyY.png",
       "correct_answer": 0,
-      "explanation": "Explantion: You should show extra care when approaching cyclists who are about to exit from a cycle lane and join the roadway.",
+      "explanation": "Explanation: You should show extra care when approaching cyclists who are about to exit from a cycle lane and join the roadway.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9772,7 +9772,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_iTN5K.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When you are driving along a poorly-lit street, you should take extra care ? vulnerable road users such as pedestrians might not be so easy to see. You should always be prepared to react to a change in the traffic situation.",
+      "explanation": "Explanation: When you are driving along a poorly-lit street, you should take extra care ? vulnerable road users such as pedestrians might not be so easy to see. You should always be prepared to react to a change in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9785,7 +9785,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_5mZ7c.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When you are turning right at a junction, you should yield to traffic on the major road, and to oncoming traffic at the junction.",
+      "explanation": "Explanation: When you are turning right at a junction, you should yield to traffic on the major road, and to oncoming traffic at the junction.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9798,7 +9798,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_n0tCZ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: If you are dazzled by the lights of oncoming traffic, turn your eyes to the left edge (nearside) of the road. If necessary, stop and allow your eyes to recover before driving on.",
+      "explanation": "Explanation: If you are dazzled by the lights of oncoming traffic, turn your eyes to the left edge (nearside) of the road. If necessary, stop and allow your eyes to recover before driving on.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9811,7 +9811,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_x7nN6.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When you are turning right from a main road onto a side road, you must by law give way to oncoming traffic on the main road.",
+      "explanation": "Explanation: When you are turning right from a main road onto a side road, you must by law give way to oncoming traffic on the main road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9824,7 +9824,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_TDNfn.png",
       "correct_answer": 0,
-      "explanation": "Explantion: You should always keep a safe distance from the vehicle in front if it is slowing down or stopping. Always read the road and be prepared to react correctly to changes in the traffic ahead.",
+      "explanation": "Explanation: You should always keep a safe distance from the vehicle in front if it is slowing down or stopping. Always read the road and be prepared to react correctly to changes in the traffic ahead.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9837,7 +9837,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_BtlA8.png",
       "correct_answer": 3,
-      "explanation": "Explantion: Heavy rain can affect how well you can see and how well you can be seen by other road users. Because of that you should slow down in heavy rain and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: Heavy rain can affect how well you can see and how well you can be seen by other road users. Because of that you should slow down in heavy rain and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9850,7 +9850,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_G9cmZ.png",
       "correct_answer": 1,
-      "explanation": "Explantion: By law you must yield to pedestrians already crossing at a junction. Pedestrians are vulnerable road users and you should be extra careful driving at places where pedestrians are attempting to cross the road.",
+      "explanation": "Explanation: By law you must yield to pedestrians already crossing at a junction. Pedestrians are vulnerable road users and you should be extra careful driving at places where pedestrians are attempting to cross the road.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9863,20 +9863,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_Y3vGw.png",
       "correct_answer": 0,
-      "explanation": "Explantion: When you are approaching a bend or corner with a restricted view you should slow down if necessary and be prepared to react to any changes in the traffic situation.",
+      "explanation": "Explanation: When you are approaching a bend or corner with a restricted view you should slow down if necessary and be prepared to react to any changes in the traffic situation.",
       "section": "Safe and Responsible Driving"
     },
     {
       "question": "What should a driver be most aware of in this situation?",
       "options": [
-        "One of the parked vehicles may reverse into the driver?s path.",
+        "One of the parked vehicles may reverse into the driver's path.",
         "A car might appear unexpectedly at the brow of the hill.",
         "Children may unexpectedly run out from between parked cars.",
         "Parking opposite double yellow lines is prohibited."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_55awe.png",
       "correct_answer": 2,
-      "explanation": "Explantion: When driving in a residential area you need to take account of the danger you might pose to children playing. You should always observe warning signs relating to children and drive accordingly.",
+      "explanation": "Explanation: When driving in a residential area you need to take account of the danger you might pose to children playing. You should always observe warning signs relating to children and drive accordingly.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9889,7 +9889,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_8Q3Ka.png",
       "correct_answer": 2,
-      "explanation": "Explantion: As you approach a junction where you want to turn right, you should read the road ahead and take up the correct position for turning in good time.",
+      "explanation": "Explanation: As you approach a junction where you want to turn right, you should read the road ahead and take up the correct position for turning in good time.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9902,7 +9902,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_bbn66.png",
       "correct_answer": 3,
-      "explanation": "Explantion: The rev counter measures the speed of the engine, in revolutions per minute. Generally, the higher the revs, the more fuel the engine is using, so drivers should keep an eye on the rev counter to help drive in a more eco-friendly manner.",
+      "explanation": "Explanation: The rev counter measures the speed of the engine, in revolutions per minute. Generally, the higher the revs, the more fuel the engine is using, so drivers should keep an eye on the rev counter to help drive in a more eco-friendly manner.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9915,7 +9915,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_jvL0s.png",
       "correct_answer": 0,
-      "explanation": "Explantion: The rev counter measures the speed of the engine, in revolutions per minute. Generally, the higher the revs, the more fuel the engine is using, so drivers should keep an eye on the rev counter to help drive in a more eco-friendly manner.",
+      "explanation": "Explanation: The rev counter measures the speed of the engine, in revolutions per minute. Generally, the higher the revs, the more fuel the engine is using, so drivers should keep an eye on the rev counter to help drive in a more eco-friendly manner.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9928,7 +9928,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_TRBdh.png",
       "correct_answer": 1,
-      "explanation": "Explantion: When driving in wet and windy conditions, a driver should be aware that these conditions can affect the stability of vulnerable road users such as motorcyclists or cyclists. These road users may be blown into the driver?s path particularly in open and exposed areas.",
+      "explanation": "Explanation: When driving in wet and windy conditions, a driver should be aware that these conditions can affect the stability of vulnerable road users such as motorcyclists or cyclists. These road users may be blown into the driver's path particularly in open and exposed areas.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -9941,7 +9941,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Many vehicles are fitted with various warning lights and gauges. A red zone or a warning light on a fuel gauge means the vehicle is low in fuel and should be refuelled as soon as possible.",
+      "explanation": "Explanation: Many vehicles are fitted with various warning lights and gauges. A red zone or a warning light on a fuel gauge means the vehicle is low in fuel and should be refuelled as soon as possible.",
       "section": "Techincal Matters"
     },
     {
@@ -9954,7 +9954,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The speed rating of a tyre is the maximum speed for which the tyre is designed. This relates to the speed capability of the tyre. It does not relate to the speed at which the tyre should or could legally be driven.",
+      "explanation": "Explanation: The speed rating of a tyre is the maximum speed for which the tyre is designed. This relates to the speed capability of the tyre. It does not relate to the speed at which the tyre should or could legally be driven.",
       "section": "Techincal Matters"
     },
     {
@@ -9967,7 +9967,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Use the hazard warning lights to warn other road users of a danger ahead. For example, if you have to slow down sharply because of a build-up of traffic ahead, you can use the hazard warning lights to warn following vehicles that they need to slow down.",
+      "explanation": "Explanation: Use the hazard warning lights to warn other road users of a danger ahead. For example, if you have to slow down sharply because of a build-up of traffic ahead, you can use the hazard warning lights to warn following vehicles that they need to slow down.",
       "section": "Techincal Matters"
     },
     {
@@ -9980,7 +9980,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: The fuel system can become air-locked if you let the fuel get too low or if there is a leak in the system. You should have the problem corrected before driving. The solution may be as simple as bleeding the fuel system to release the air.",
+      "explanation": "Explanation: The fuel system can become air-locked if you let the fuel get too low or if there is a leak in the system. You should have the problem corrected before driving. The solution may be as simple as bleeding the fuel system to release the air.",
       "section": "Techincal Matters"
     },
     {
@@ -9993,7 +9993,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: In general, you should fit the same type of tyres all round the vehicle. However if you need to fit a mix of cross-ply and radials, the tyres on any axle should be of the same type.",
+      "explanation": "Explanation: In general, you should fit the same type of tyres all round the vehicle. However if you need to fit a mix of cross-ply and radials, the tyres on any axle should be of the same type.",
       "section": "Techincal Matters"
     },
     {
@@ -10006,7 +10006,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A rapid clicking noise when you turn on an indicator is usually a sign that one of the indicator bulbs has failed. Drivers are responsible for making sure that their vehicle is roadworthy. This should include a regular check that all lights, reflectors and indicators, are working properly.",
+      "explanation": "Explanation: A rapid clicking noise when you turn on an indicator is usually a sign that one of the indicator bulbs has failed. Drivers are responsible for making sure that their vehicle is roadworthy. This should include a regular check that all lights, reflectors and indicators, are working properly.",
       "section": "Techincal Matters"
     },
     {
@@ -10019,7 +10019,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Anti-lock braking system (ABS) is a type of braking system found in most modern cars. It comes into play automatically when the driver brakes harshly. In the wet it can help prevent the wheels from skidding so that, if necessary, the driver can continue to steer while braking. Be aware that ABS does not reduce the braking distance.",
+      "explanation": "Explanation: Anti-lock braking system (ABS) is a type of braking system found in most modern cars. It comes into play automatically when the driver brakes harshly. In the wet it can help prevent the wheels from skidding so that, if necessary, the driver can continue to steer while braking. Be aware that ABS does not reduce the braking distance.",
       "section": "Techincal Matters"
     },
     {
@@ -10032,7 +10032,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When driving an automatic vehicle, it may not slow at the same rate as a vehicle with a manual gearbox when the driver releases the accelerator. Drivers should be aware of this, as they may need to apply the brake earlier in order to stop where required.",
+      "explanation": "Explanation: When driving an automatic vehicle, it may not slow at the same rate as a vehicle with a manual gearbox when the driver releases the accelerator. Drivers should be aware of this, as they may need to apply the brake earlier in order to stop where required.",
       "section": "Techincal Matters"
     },
     {
@@ -10045,7 +10045,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: When driving an automatic vehicle, it may not slow at the same rate as a vehicle with a manual gearbox when the driver releases the accelerator. Drivers should be aware of this, as they may need to apply the brake earlier in order to stop where required.",
+      "explanation": "Explanation: When driving an automatic vehicle, it may not slow at the same rate as a vehicle with a manual gearbox when the driver releases the accelerator. Drivers should be aware of this, as they may need to apply the brake earlier in order to stop where required.",
       "section": "Techincal Matters"
     },
     {
@@ -10058,20 +10058,20 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers should check the oil level in their vehicle regularly, and if it is low, top it up. If it needs to be topped up very often, have the vehicle checked by a competent person to see if there is a problem.",
+      "explanation": "Explanation: Drivers should check the oil level in their vehicle regularly, and if it is low, top it up. If it needs to be topped up very often, have the vehicle checked by a competent person to see if there is a problem.",
       "section": "Techincal Matters"
     },
     {
-      "question": "What may happen if the vehicle?s engine oil is not changed as required?",
+      "question": "What may happen if the vehicle's engine oil is not changed as required?",
       "options": [
         "Parts of the engine may suffer increased wear.",
-        "The vehicle?s fuel consumption may increase.",
-        "The vehicle?s fuel consumption may decrease.",
+        "The vehicle's fuel consumption may increase.",
+        "The vehicle's fuel consumption may decrease.",
         "The engine may overheat."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: Engine oil becomes inefficient over time, losing its viscosity and lubricating qualities, and therefore must be changed as required in accordance with the manufacturer?s recommendations. Failure to do so may result in costly and extensive engine damage. The oil change is usually done when the vehicle is being serviced.",
+      "explanation": "Explanation: Engine oil becomes inefficient over time, losing its viscosity and lubricating qualities, and therefore must be changed as required in accordance with the manufacturer's recommendations. Failure to do so may result in costly and extensive engine damage. The oil change is usually done when the vehicle is being serviced.",
       "section": "Techincal Matters"
     },
     {
@@ -10084,11 +10084,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Low oil pressure is usually related to low oil level or to a faulty oil pump. Low engine oil level should be topped up in accordance with the manufacturer?s recommendations. Failure to do so may result in costly and extensive engine damage.",
+      "explanation": "Explanation: Low oil pressure is usually related to low oil level or to a faulty oil pump. Low engine oil level should be topped up in accordance with the manufacturer's recommendations. Failure to do so may result in costly and extensive engine damage.",
       "section": "Techincal Matters"
     },
     {
-      "question": "If the vehicle?s oil-pressure gauge is reading low or the red oil-pressure warning light comes on, what should a driver do?",
+      "question": "If the vehicle's oil-pressure gauge is reading low or the red oil-pressure warning light comes on, what should a driver do?",
       "options": [
         "Drive at lower speeds until the oil level is topped up.",
         "Drive in a low gear until the oil level is topped up.",
@@ -10097,7 +10097,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Oil circulation is essential for the safe running of the vehicles engine. If the warning lights or gauges indicate that the oil or the oil-pressure is low, the driver should stop as soon as they can in safe place, check the oil level, and top up if necessary. Continuing to drive may damage the engine. If the problem is not just related to the oil level, have the vehicle checked by a competent person.",
+      "explanation": "Explanation: Oil circulation is essential for the safe running of the vehicles engine. If the warning lights or gauges indicate that the oil or the oil-pressure is low, the driver should stop as soon as they can in safe place, check the oil level, and top up if necessary. Continuing to drive may damage the engine. If the problem is not just related to the oil level, have the vehicle checked by a competent person.",
       "section": "Techincal Matters"
     },
     {
@@ -10110,7 +10110,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Drivers need a basic knowledge of the regular checks that should be carried out on their vehicle. Checking the engine oil level is important ? do this with the vehicle parked on level ground with the engine switched off and cold for a more accurate reading. Refer to the vehicle handbook for further information and guidance.",
+      "explanation": "Explanation: Drivers need a basic knowledge of the regular checks that should be carried out on their vehicle. Checking the engine oil level is important ? do this with the vehicle parked on level ground with the engine switched off and cold for a more accurate reading. Refer to the vehicle handbook for further information and guidance.",
       "section": "Techincal Matters"
     },
     {
@@ -10123,7 +10123,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The purpose of engine oil is to lubricate and cool the moving parts of the engine. Refer to the vehicle handbook for further information and guidance.",
+      "explanation": "Explanation: The purpose of engine oil is to lubricate and cool the moving parts of the engine. Refer to the vehicle handbook for further information and guidance.",
       "section": "Techincal Matters"
     },
     {
@@ -10136,7 +10136,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: The purpose of coolant is to keep the engine cool during operation. Coolant is usually a mixture of water and anti-freeze ? this ensures that the engine is kept cool and that the coolant does not freeze in very cold weather.",
+      "explanation": "Explanation: The purpose of coolant is to keep the engine cool during operation. Coolant is usually a mixture of water and anti-freeze ? this ensures that the engine is kept cool and that the coolant does not freeze in very cold weather.",
       "section": "Techincal Matters"
     },
     {
@@ -10149,7 +10149,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explantion: All motor vehicles have a battery to supply power, primarily to start the engine. If the battery is flat, the driver will not be able to start the engine in the normal way. When the engine is running, it produces its own electricity to recharge the battery and run the various electrical components, including lights, heating, the radio and so on. If the battery is completely dead it will have to be replaced.",
+      "explanation": "Explanation: All motor vehicles have a battery to supply power, primarily to start the engine. If the battery is flat, the driver will not be able to start the engine in the normal way. When the engine is running, it produces its own electricity to recharge the battery and run the various electrical components, including lights, heating, the radio and so on. If the battery is completely dead it will have to be replaced.",
       "section": "Techincal Matters"
     },
     {
@@ -10162,11 +10162,11 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: The primary purpose of the battery is to start the engine. When the engine is running, it produces its own electricity to charge the battery and run the various electrical components, including lights, heating, radio and so on.",
+      "explanation": "Explanation: The primary purpose of the battery is to start the engine. When the engine is running, it produces its own electricity to charge the battery and run the various electrical components, including lights, heating, radio and so on.",
       "section": "Techincal Matters"
     },
     {
-      "question": "What effect would a weak battery have on a vehicle?s driving performance?",
+      "question": "What effect would a weak battery have on a vehicle's driving performance?",
       "options": [
         "The headlights would not function.",
         "Uphill acceleration would be reduced.",
@@ -10175,7 +10175,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: It might be difficult to start a car with a weak battery, but once the engine is running, it makes no difference. If the battery fails to charge or maintain its full charge seek advice from a competent person.",
+      "explanation": "Explanation: It might be difficult to start a car with a weak battery, but once the engine is running, it makes no difference. If the battery fails to charge or maintain its full charge seek advice from a competent person.",
       "section": "Techincal Matters"
     },
     {
@@ -10188,7 +10188,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: A worn shock absorber can seriously affect the control of the vehicle especially on uneven surfaces or when cornering and can cause unnecessary wear and tear on tyres. It may increase stopping distance by not keeping the tyres in proper contact with the road under harsh braking.",
+      "explanation": "Explanation: A worn shock absorber can seriously affect the control of the vehicle especially on uneven surfaces or when cornering and can cause unnecessary wear and tear on tyres. It may increase stopping distance by not keeping the tyres in proper contact with the road under harsh braking.",
       "section": "Techincal Matters"
     },
     {
@@ -10201,7 +10201,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: When fitting a new tubeless tyre to a vehicle it is recommended to change the valve. This is because the old valve has been on the wheel since the old tyre was fitted. The old valve may break down, leak or cause air to escape.",
+      "explanation": "Explanation: When fitting a new tubeless tyre to a vehicle it is recommended to change the valve. This is because the old valve has been on the wheel since the old tyre was fitted. The old valve may break down, leak or cause air to escape.",
       "section": "Techincal Matters"
     },
     {
@@ -10214,7 +10214,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Incorrect tyre pressure adversely affects many of a vehicles systems, including suspension, steering and fuel consumption. In particular, under-inflated tyres can affect the vehicles braking ability and its effectiveness when cornering. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
+      "explanation": "Explanation: Incorrect tyre pressure adversely affects many of a vehicles systems, including suspension, steering and fuel consumption. In particular, under-inflated tyres can affect the vehicles braking ability and its effectiveness when cornering. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
       "section": "Techincal Matters"
     },
     {
@@ -10222,12 +10222,12 @@ export const QUESTIONS = [
       "options": [
         "Improved fuel economy and braking.",
         "Improved braking and steering.",
-        "Increased wear on the vehicle?s engine.",
+        "Increased wear on the vehicle's engine.",
         "Impaired braking and steering."
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explantion: Drivers should check their vehicle?s tyre pressures (including the spare) regularly at least once a week. Under-inflated tyres adversely affect many of a vehicle?s systems, including braking ability, suspension, steering, fuel consumption and premature tyre wear. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
+      "explanation": "Explanation: Drivers should check their vehicle's tyre pressures (including the spare) regularly at least once a week. Under-inflated tyres adversely affect many of a vehicle's systems, including braking ability, suspension, steering, fuel consumption and premature tyre wear. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
       "section": "Techincal Matters"
     },
     {
@@ -10240,7 +10240,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: When driving a driver should rest their left foot on the floor or foot rest but not under the pedals. To do so may cause delayed response time in an emergency. Resting the foot on the pedal may result in coasting, which may inadvertently increase the speed of the vehicle, or clutch mechanism damage.",
+      "explanation": "Explanation: When driving a driver should rest their left foot on the floor or foot rest but not under the pedals. To do so may cause delayed response time in an emergency. Resting the foot on the pedal may result in coasting, which may inadvertently increase the speed of the vehicle, or clutch mechanism damage.",
       "section": "Techincal Matters"
     },
     {
@@ -10253,7 +10253,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: If a driver feels a continuous vibration in the steering, particularly at higher speeds, this could typically indicate that the balance of the vehicle wheels is uneven. This can lead to instability in the handling of the vehicle. If this is the case, have it investigated by a competent person.",
+      "explanation": "Explanation: If a driver feels a continuous vibration in the steering, particularly at higher speeds, this could typically indicate that the balance of the vehicle wheels is uneven. This can lead to instability in the handling of the vehicle. If this is the case, have it investigated by a competent person.",
       "section": "Techincal Matters"
     },
     {
@@ -10266,7 +10266,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: After changing a wheel on a vehicle, check the tightness of the wheel nuts or studs on the replacement wheel after driving a short distance to ensure they are securely fitted. If in doubt seek assistance from a competent person.",
+      "explanation": "Explanation: After changing a wheel on a vehicle, check the tightness of the wheel nuts or studs on the replacement wheel after driving a short distance to ensure they are securely fitted. If in doubt seek assistance from a competent person.",
       "section": "Techincal Matters"
     },
     {
@@ -10279,7 +10279,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explantion: Under-inflated tyres may adversely affect many of the vehicle?s systems, including its braking ability, suspension, steering and fuel consumption. In particular, under-inflated tyres can affect the vehicles braking ability and can result in premature tyre wear. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
+      "explanation": "Explanation: Under-inflated tyres may adversely affect many of the vehicle's systems, including its braking ability, suspension, steering and fuel consumption. In particular, under-inflated tyres can affect the vehicles braking ability and can result in premature tyre wear. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
       "section": "Techincal Matters"
     },
     {
@@ -10292,7 +10292,7 @@ export const QUESTIONS = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explantion: Brakes must be fitted to a trailer if its gross vehicle weight exceeds either 750\u00a0kg or half the weight of the towing vehicle.",
+      "explanation": "Explanation: Brakes must be fitted to a trailer if its gross vehicle weight exceeds either 750\u00a0kg or half the weight of the towing vehicle.",
       "section": "Techincal Matters"
     }
   ]
