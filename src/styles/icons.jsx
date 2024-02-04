@@ -12,6 +12,7 @@ import {
   FaThumbtack,
   FaEraser,
   FaLanguage,
+  FaRocket,
 } from 'react-icons/fa';
 
 const icons = new Map([
@@ -27,6 +28,7 @@ const icons = new Map([
   ['thumb_tack', <FaThumbtack />],
   ['clear', <FaEraser />],
   ['language', <FaLanguage />],
+  ['rocket', <FaRocket />],
 ]);
 
 export function getIcon(iconName) {

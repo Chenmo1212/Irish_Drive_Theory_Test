@@ -11,6 +11,7 @@ import {
   THEME_COLOR,
   updateDataIfNewVersion
 } from '../../common/common';
+import {getIcon} from "../../styles/icons";
 
 const initializeLocalStorage = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
@@ -70,10 +71,10 @@ const Home = () => {
         <Link to={`/question/${currQuestionIdx}`}>
           <div className="btn">
             <button className="btn begin text-blue">
-          <span className="icon-container">
-            <i className="fa fa-rocket"></i>
-            {isCN ? "开始" : "Start"}
-          </span>
+              <span className="icon-container">
+                <span>{getIcon('rocket')}</span>
+                <span>{isCN ? "开始" : "Start"}</span>
+              </span>
             </button>
           </div>
         </Link>
