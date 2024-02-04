@@ -50,12 +50,17 @@
   text-align: left;
 }
 
-.question .header .favourite {
-  height: 100%;
-  margin-right: 20px;
+.question .header .icon-group {
+  display: flex;
 }
 
-.question .header .favourite.active {
+.question .header .icon-group > div {
+  height: 100%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.question .header .icon-group > div.active {
   color: #f0a732;
 }
 

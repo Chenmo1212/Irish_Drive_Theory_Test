@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
-import {QUESTIONS} from "../../data/questions_data";
+import {QUESTIONS_EN} from "../../data/questions_data";
 import {QUESTIONS_CN} from "../../data/questions_data_CN";
 import './Question.css'
 import {getIcon} from "../../styles/icons";
@@ -17,22 +17,24 @@ import {
 
 const initializeQuestions = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
-  let questions = loadFromLocalStorage('allQuestions', QUESTIONS);
+  const isCN = loadFromLocalStorage('isCN', false);
+  let questions_EN = loadFromLocalStorage('allQuestions', QUESTIONS_EN);
   let questions_CN = loadFromLocalStorage('allQuestions_CN', QUESTIONS_CN);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
 
   if (isUpdate) {
-    questions = QUESTIONS;
-    saveToLocalStorage("allQuestions", QUESTIONS);
+    questions_EN = QUESTIONS_EN;
+    saveToLocalStorage("allQuestions", QUESTIONS_EN);
     saveToLocalStorage("allQuestions_CN", QUESTIONS_CN);
     console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
   }
 
   return {
-    questions,
+    isCN,
+    questions_EN,
     questions_CN,
-    favorites: loadFromLocalStorage('allFavorites', Array.from({length: questions.length}, () => false)),
-    answers: loadFromLocalStorage('allAnswers', Array.from({length: questions.length}, () => -1)),
+    favorites: loadFromLocalStorage('allFavorites', Array.from({length: questions_EN.length}, () => false)),
+    answers: loadFromLocalStorage('allAnswers', Array.from({length: questions_EN.length}, () => -1)),
     isAnswerCheck: loadFromLocalStorage('isAnswerCheck', false),
     isAnswerStick: loadFromLocalStorage('isAnswerStick', false),
   };
@@ -50,7 +52,9 @@ const initializeCurrQuestionIndex = (pageIdx) => {
 
 const Question = () => {
   const [currQuestion, setCurrQuestion] = useState({})
-  const [allQuestions, setAllQuestions] = useState([])
+  const [questionsCN, setQuestionsCN] = useState([])
+  const [questionsEN, setQuestionsEN] = useState([])
+  const [displayedQuestions, setDisplayedQuestions] = useState([])
   const [allFavorites, setAllFavorites] = useState([])
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
   const [chosenAnswerIndex, setAnswerIndex] = useState(0);
@@ -59,25 +63,29 @@ const Question = () => {
   const [isCheck, setIsCheck] = useState(false);
   const [isStick, setIsStick] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [isCN, setIsCN] = useState(false);
 
   const {index} = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
-    const {questions, favorites, answers, isAnswerCheck, isAnswerStick} = initializeQuestions();
+    const {isCN, questions_EN, questions_CN, favorites, answers, isAnswerCheck, isAnswerStick} = initializeQuestions();
     if (parseInt(index) <= 0) navigate('/question/1')
     const idx = initializeCurrQuestionIndex(parseInt(index));
 
-    setAllQuestions(questions);
+    setDisplayedQuestions(isCN ? questions_CN : questions_EN);
+    setCurrQuestion(isCN ? questions_CN[idx] : questions_EN[idx]);
+    setQuestionsCN(questions_CN);
+    setQuestionsEN(questions_EN);
     setAllFavorites(favorites);
     setCurrQuestionIndex(idx);
     setAnswerIndex(answers[idx + 1]);
-    setCurrQuestion(questions[idx]);
     setIsFavourite(favorites[idx]);
     setIsCheck(isAnswerCheck);
     setIsStick(isAnswerStick);
     setIsShowAnswer(isAnswerStick);
-    setIsError(answers[idx] !== questions[idx].correct_answer);
+    setIsCN(isCN);
+    setIsError(answers[idx] !== questions_EN[idx].correct_answer);
   }, [index]);
 
   const toOverview = () => {
@@ -94,6 +102,12 @@ const Question = () => {
     let updatedFavorites = [...allFavorites];
     updatedFavorites[currQuestionIndex] = !isFavourite;
     saveToLocalStorage('allFavorites', updatedFavorites);
+  }
+  const toggleLanguage = () => {
+    setIsCN(!isCN);
+    setDisplayedQuestions(!isCN ? questionsCN : questionsEN);
+    setCurrQuestion(!isCN ? questionsCN[currQuestionIndex] : questionsEN[currQuestionIndex]);
+    saveToLocalStorage('isCN', !isCN);
   }
   const handleStick = () => {
     setIsStick(!isStick);
@@ -144,12 +158,18 @@ const Question = () => {
             {getIcon('back')}
           </div>
           <div className="page-title">
-            Question
+            {isCN ? "问题" : "Question"}
           </div>
         </div>
-        <div className={`favourite ${isFavourite ? 'active' : ''}`}
-             onClick={toggleFavourite}>
-          {getIcon(`${isFavourite ? 'fav_fill' : 'fav'}`)}
+        <div className="icon-group">
+          <div className={`language ${isCN ? 'active' : ''}`}
+               onClick={toggleLanguage}>
+            {getIcon('language')}
+          </div>
+          <div className={`favourite ${isFavourite ? 'active' : ''}`}
+               onClick={toggleFavourite}>
+            {getIcon(`${isFavourite ? 'fav_fill' : 'fav'}`)}
+          </div>
         </div>
       </div>
 
@@ -164,7 +184,7 @@ const Question = () => {
             </span>
             /
             <span className="question-num-item">
-              {allQuestions.length}
+              {displayedQuestions.length}
             </span>
           </div>
         </div>
@@ -193,7 +213,7 @@ const Question = () => {
           {isShowAnswer ? (<div className="answer" style={answerStyle}>
             <div className="answer-content">
               <div className="answer-text">
-                <span>正确答案：</span>
+                <span>{isCN ? "正确答案：" : "Answer: "}</span>
                 <span>{OPTION_LABELS[currQuestion.correct_answer]}</span>
               </div>
               <div className="stick-box">
@@ -221,14 +241,16 @@ const Question = () => {
                onClick={() => changeQuestion(-1)}>
             {getIcon('arrow_left')}
           </div>
-          <div className={`menu-item next-question ${currQuestionIndex >= allQuestions.length - 1 ? 'disable' : ''}`}
-               onClick={() => changeQuestion(1)}>
+          <div
+            className={`menu-item next-question ${currQuestionIndex >= displayedQuestions.length - 1 ? 'disable' : ''}`}
+            onClick={() => changeQuestion(1)}>
             {getIcon('arrow_right')}
           </div>
         </div>
       </div>
     </div>
-  );
+  )
+    ;
 };
 
 

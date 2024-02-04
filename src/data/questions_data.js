@@ -1,4 +1,4 @@
-export const QUESTIONS = [
+export const QUESTIONS_EN = [
     {
       "question": "What is the effect of an incorrectly adjusted driver's seat?",
       "options": [

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import './Home.css'
-import {QUESTIONS} from "../../data/questions_data";
+import {QUESTIONS_EN} from "../../data/questions_data";
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
 import {
@@ -15,24 +15,28 @@ import {
 const initializeLocalStorage = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
   const currQuestionIdx = loadFromLocalStorage('currQuestionIdx', 0);
+  const isCN = loadFromLocalStorage('isCN', false);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
-  let allQuestions = loadFromLocalStorage('allQuestions', QUESTIONS);
+  let allQuestions = loadFromLocalStorage('allQuestions', QUESTIONS_EN);
 
   if (isUpdate) {
-    allQuestions = QUESTIONS;
-    saveToLocalStorage("allQuestions", QUESTIONS);
+    allQuestions = QUESTIONS_EN;
+    saveToLocalStorage("allQuestions", QUESTIONS_EN);
     console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
   }
 
-  return {allQuestions, currQuestionIdx};
+  return {isCN, allQuestions, currQuestionIdx};
 };
 
 const Home = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [currQuestionIdx, setCurrQuestionIdx] = useState(1);
+  const [isCN, setIsCN] = useState(false);
 
   useEffect(() => {
-    const {allQuestions, currQuestionIdx} = initializeLocalStorage();
+    const {isCN, allQuestions, currQuestionIdx} = initializeLocalStorage();
+    setIsCN(isCN);
+    setAllQuestions(allQuestions);
     setAllQuestions(allQuestions);
     setCurrQuestionIdx(currQuestionIdx);
   }, []);
@@ -43,9 +47,9 @@ const Home = () => {
         <div className="cover">
           <img src={DRIVER} alt=""/>
         </div>
-        <div className="title">Irish Theory Test</div>
+        <div className="title">{isCN ? "爱尔兰驾照理论测试题" : "Irish Theory Test"}</div>
         <div className="question_type">
-          <span> Question Amount: <span className="text-blue">{allQuestions.length}</span></span>
+          <span> {isCN ? "题目总数:" : "Question Amount:"} <span className="text-blue">{allQuestions.length}</span></span>
         </div>
         <div className="progress">
           <div className="card-progress__back"></div>
@@ -57,7 +61,7 @@ const Home = () => {
             <button className="btn begin text-blue">
           <span className="icon-container">
             <i className="fa fa-rocket"></i>
-            Start
+            {isCN ? "开始" : "Start"}
           </span>
             </button>
           </div>

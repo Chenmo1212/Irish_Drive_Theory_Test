@@ -11,6 +11,7 @@ import {
   FaCheckCircle,
   FaThumbtack,
   FaEraser,
+  FaLanguage,
 } from 'react-icons/fa';
 
 const icons = new Map([
@@ -25,6 +26,7 @@ const icons = new Map([
   ['check', <FaCheckCircle />],
   ['thumb_tack', <FaThumbtack />],
   ['clear', <FaEraser />],
+  ['language', <FaLanguage />],
 ]);
 
 export function getIcon(iconName) {

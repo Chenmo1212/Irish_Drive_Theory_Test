@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react"
-import {QUESTIONS} from "../../data/questions_data";
+import {QUESTIONS_EN} from "../../data/questions_data";
 import {loadFromLocalStorage, THEME_COLOR} from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
 
 const initializeLocalStorage = () => {
-  const questions = QUESTIONS;
+  const questions = QUESTIONS_EN;
   const favorites = Array.from({length: questions.length}, () => false);
   const answers = Array.from({length: questions.length}, () => -1);
 
