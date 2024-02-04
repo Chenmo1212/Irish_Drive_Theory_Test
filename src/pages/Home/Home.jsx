@@ -77,18 +77,22 @@ const Home = () => {
             </button>
           </div>
         </Link>
-
-        {/*<div className="btn">*/}
-        {/*  <button className="btn mock text-blue">*/}
-        {/*  <span className="icon-container">*/}
-        {/*    <i className="fa fa-flag"></i>*/}
-        {/*    Mock Exam*/}
-        {/*  </span>*/}
-        {/*  </button>*/}
-        {/*</div>*/}
       </div>
+
+      <Footer/>
     </div>
   </div>
+}
+
+const Footer = () => {
+  const currYear = new Date().getFullYear();
+  return (
+    <footer>
+      <p className="footer">All rights reserved ©{currYear} <a
+        href="https://chenmo1212.cn?f=irish-questions">ChenMo1212</a>
+      </p>
+    </footer>
+  )
 }
 
 export default Home
