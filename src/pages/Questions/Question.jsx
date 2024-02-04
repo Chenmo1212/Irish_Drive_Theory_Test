@@ -88,7 +88,7 @@ const Question = () => {
     setIsShowAnswer(isAnswerStick);
     setIsCN(isCN);
     setIsError(answers[idx] !== questions_EN[idx].correct_answer);
-  }, [index]);
+  }, [index, navigate]);
 
   const toOverview = () => {
     navigate('/overview')
