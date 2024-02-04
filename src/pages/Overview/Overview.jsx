@@ -9,8 +9,10 @@ const initializeLocalStorage = () => {
   const questions = QUESTIONS_EN;
   const favorites = Array.from({length: questions.length}, () => false);
   const answers = Array.from({length: questions.length}, () => -1);
+  const isCN = loadFromLocalStorage('isCN', false);
 
   return {
+    isCN,
     questions: loadFromLocalStorage('allQuestions', questions),
     favorites: loadFromLocalStorage('allFavorites', favorites),
     answers: loadFromLocalStorage('allAnswers', answers),
@@ -21,31 +23,38 @@ const Overview = () => {
   const [allFavorites, setAllFavorites] = useState([])
   const [allQuestions, setAllQuestions] = useState([]);
   const [allAnswers, setAllAnswers] = useState([]);
+  const [isCN, setIsCN] = useState(false);
   const navigate = useNavigate();
 
   const questionTypes = [{
     "sectionName": "Control of Vehicle",
+    "sectionNameCN": "车辆控制",
     "amount": 13,
   }, {
     "sectionName": "Legal Matters/Rules of the Road",
+    "sectionNameCN": "法律事务/交通规则",
     "amount": 235,
   }, {
     "sectionName": "Managing Risk",
+    "sectionNameCN": "管理风险",
     "amount": 97,
   }, {
     "sectionName": "Safe and Responsible Driving",
+    "sectionNameCN": "安全和负责任的驾驶",
     "amount": 419,
   }, {
-    "sectionName": "Techincal Matters",
+    "sectionName": "Technical Matters",
+    "sectionNameCN": "技术问题",
     "amount": 28,
   },]
 
   useEffect(() => {
-    const {questions, favorites, answers} = initializeLocalStorage();
+    const {isCN, questions, favorites, answers} = initializeLocalStorage();
+    setIsCN(isCN);
     setAllAnswers(answers);
     setAllQuestions(questions);
     setAllFavorites(favorites);
-}, []);
+  }, []);
 
   const getStyle = (idx) => {
     return {
@@ -97,7 +106,7 @@ const Overview = () => {
             {getIcon('arrow_left')}
           </div>
           <div className="page-title">
-            Overview
+            {isCN ? "总览" : "Overview"}
           </div>
         </div>
         <div className="clear" onClick={clearLocalStorage}>
@@ -109,7 +118,7 @@ const Overview = () => {
         {questionTypes.map((section, sectionIdx,) => (
             <div className="section" key={sectionIdx}>
               <div className="title" style={{color: THEME_COLOR}}>
-                <span>{section.sectionName}</span>
+                <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
               </div>
               <div className="content">
                 {Array.from({length: section.amount}, (_, index) => (
