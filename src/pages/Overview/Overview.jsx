@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import {QUESTIONS_EN} from "../../data/questions_data";
-import {loadFromLocalStorage, THEME_COLOR} from '../../common/common';
+import {ERROR_COLOR, loadFromLocalStorage, THEME_COLOR} from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
@@ -58,9 +58,10 @@ const Overview = () => {
 
   const getStyle = (questionNumber) => {
     const isAnswered = allAnswers.length && allAnswers[questionNumber - 1] !== -1;
+    const isError = allAnswers.length && allAnswers[questionNumber - 1] !== allQuestions[questionNumber - 1].correct_answer;
 
     return {
-      background: isAnswered ? THEME_COLOR : "",
+      background: isAnswered ? (isError ? ERROR_COLOR : THEME_COLOR) : "",
       color: isAnswered ? '#fff' : '#000'
     };
   };
@@ -73,6 +74,12 @@ const Overview = () => {
     navigate(`/question/${idx}`);
   }
 
+  const clearLocalAnswers = () => {
+    localStorage.removeItem("allAnswers");
+    alert("All your answers have been cleared!");
+    window.location.reload();
+  }
+
   const clearLocalStorage = () => {
     localStorage.removeItem("isAnswerStick");
     localStorage.removeItem("isAnswerCheck");
@@ -80,7 +87,8 @@ const Overview = () => {
     localStorage.removeItem("allAnswers");
     localStorage.removeItem("allQuestions");
     localStorage.removeItem("allFavorites");
-    alert("LocalStorage has been cleared!")
+    alert("All data have been cleared!");
+    window.location.reload();
   }
 
   const getQuestionNumber = (index, sectionIdx) => {
@@ -102,8 +110,11 @@ const Overview = () => {
             {isCN ? "总览" : "Overview"}
           </div>
         </div>
-        <div className="clear" onClick={clearLocalStorage}>
+        <div className="clear icon" onClick={clearLocalAnswers}>
           {getIcon('clear')}
+        </div>
+        <div className="trash icon" onClick={clearLocalStorage}>
+          {getIcon('trash')}
         </div>
       </div>
 

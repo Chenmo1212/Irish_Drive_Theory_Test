@@ -13,6 +13,7 @@ import {
   FaEraser,
   FaLanguage,
   FaRocket,
+  FaTrashAlt,
 } from 'react-icons/fa';
 
 const icons = new Map([
@@ -29,6 +30,7 @@ const icons = new Map([
   ['clear', <FaEraser />],
   ['language', <FaLanguage />],
   ['rocket', <FaRocket />],
+  ['trash', <FaTrashAlt />],
 ]);
 
 export function getIcon(iconName) {

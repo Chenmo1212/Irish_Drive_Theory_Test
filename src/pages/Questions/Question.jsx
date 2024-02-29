@@ -130,13 +130,58 @@ const Question = () => {
     if (isCheck) setIsShowAnswer(true);
   }
 
-  const changeQuestion = (Increment) => {
-    if (currQuestionIndex <= 0 && Increment === -1) return;
+  const changeQuestion = (increment) => {
+    if (index <= 0 && increment === -1) return;
 
     setAnswerIndex(-1);
     setIsShowAnswer(false);
-    navigate(`/question/${currQuestionIndex + 1 + Increment}`);
+    navigate(`/question/${parseInt(window.location.href.split('/').pop()) + increment}`);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      switch (event.key) {
+        case '1':
+        case 'A':
+        case 'a':
+          handleOptionClick(0);
+          break;
+        case '2':
+        case 'B':
+        case 'b':
+          handleOptionClick(1);
+          break;
+        case '3':
+        case 'C':
+        case 'c':
+          handleOptionClick(2);
+          break;
+        case '4':
+        case 'D':
+        case 'd':
+          handleOptionClick(3);
+          break;
+        case 'ArrowLeft':
+          changeQuestion(-1);
+          break;
+        case 'ArrowRight':
+          changeQuestion(1);
+          break;
+        case ' ':
+          toggleShowAnswer();
+          break;
+        default:
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+    // eslint-disable-next-line
+  }, []);
 
   const answerStyle = {
     border: `1px solid ${isError ? ERROR_COLOR : THEME_COLOR}`,
