@@ -74,6 +74,12 @@ const Overview = () => {
     navigate(`/question/${idx}`);
   }
 
+  const clearLocalAnswers = () => {
+    localStorage.removeItem("allAnswers");
+    alert("All your answers have been cleared!");
+    window.location.reload();
+  }
+
   const clearLocalStorage = () => {
     localStorage.removeItem("isAnswerStick");
     localStorage.removeItem("isAnswerCheck");
@@ -81,7 +87,8 @@ const Overview = () => {
     localStorage.removeItem("allAnswers");
     localStorage.removeItem("allQuestions");
     localStorage.removeItem("allFavorites");
-    alert("LocalStorage has been cleared!")
+    alert("All data have been cleared!");
+    window.location.reload();
   }
 
   const getQuestionNumber = (index, sectionIdx) => {
@@ -103,8 +110,11 @@ const Overview = () => {
             {isCN ? "总览" : "Overview"}
           </div>
         </div>
-        <div className="clear" onClick={clearLocalStorage}>
+        <div className="clear icon" onClick={clearLocalAnswers}>
           {getIcon('clear')}
+        </div>
+        <div className="trash icon" onClick={clearLocalStorage}>
+          {getIcon('trash')}
         </div>
       </div>
 
