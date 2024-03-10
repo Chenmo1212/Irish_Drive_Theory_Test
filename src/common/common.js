@@ -1,3 +1,5 @@
+import { Howl } from "howler"
+
 export const IS_UPDATED_QUESTIONS = false;
 export const NEW_VERSION = "1.2.8.240204";
 export const DEFAULT_VERSION = "1.0.0.240202";
@@ -27,3 +29,31 @@ export const updateDataIfNewVersion = (currentVersion, newVersion) => {
   }
   return false;
 };
+
+
+export const NORMAL_SOUND = "normal";
+export const CORRECT_SOUND = "correct";
+export const WRONG_SOUND = "wrong";
+export const CLICK_SOUND = "click";
+
+export const playSound = (type) => {
+  let sound = null;
+  switch (type) {
+    case NORMAL_SOUND:
+      sound = new Howl({src: [NORMAL_SOUND + ".mp3"]});
+      break;
+    case CORRECT_SOUND:
+      sound = new Howl({src: [CORRECT_SOUND + ".mp3"]});
+      break;
+    case WRONG_SOUND:
+      sound = new Howl({src: [WRONG_SOUND + ".mp3"]});
+      break;
+    case CLICK_SOUND:
+      sound = new Howl({src: [CLICK_SOUND + ".mp3"]});
+      break;
+    default:
+      break
+  }
+
+  sound && sound.play();
+}

@@ -11,9 +11,14 @@ import {
   loadFromLocalStorage,
   NEW_VERSION,
   OPTION_LABELS,
+  playSound,
   saveToLocalStorage,
   THEME_COLOR,
-  updateDataIfNewVersion
+  updateDataIfNewVersion,
+  NORMAL_SOUND,
+  CORRECT_SOUND,
+  WRONG_SOUND,
+  CLICK_SOUND
 } from '../../common/common';
 
 const initializeQuestions = () => {
@@ -114,20 +119,26 @@ const Question = () => {
   const handleStick = () => {
     setIsStick(!isStick);
     saveToLocalStorage('isAnswerStick', !isStick);
+    playSound(CLICK_SOUND);
   };
   const handleCheck = () => {
     setIsCheck(!isCheck);
     saveToLocalStorage('isAnswerCheck', !isCheck);
+    playSound(CLICK_SOUND);
   };
 
   const handleOptionClick = (idx) => {
     setAnswerIndex(idx);
-    setIsError(idx !== currQuestion.correct_answer);
+    const isError = idx !== currQuestion.correct_answer;
+    setIsError(isError);
+
     let updatedAnswers = loadFromLocalStorage('allAnswers', []);
     updatedAnswers[currQuestionIndex] = idx;
     saveToLocalStorage('allAnswers', updatedAnswers);
 
     if (isCheck) setIsShowAnswer(true);
+
+    playSound(isCheck ? (isError ? WRONG_SOUND : CORRECT_SOUND) : NORMAL_SOUND);
   }
 
   const changeQuestion = (increment) => {
