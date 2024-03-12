@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from "react"
 import {QUESTIONS_EN} from "../../data/questions_data";
-import {ERROR_COLOR, loadFromLocalStorage, THEME_COLOR} from '../../common/common';
+import {
+  DELETE_SOUND,
+  ERROR_COLOR,
+  loadFromLocalStorage,
+  playSound,
+  THEME_COLOR
+} from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
@@ -78,6 +84,7 @@ const Overview = () => {
     localStorage.removeItem("allAnswers");
     alert("All your answers have been cleared!");
     window.location.reload();
+    playSound(DELETE_SOUND);
   }
 
   const clearLocalStorage = () => {
@@ -89,6 +96,7 @@ const Overview = () => {
     localStorage.removeItem("allFavorites");
     alert("All data have been cleared!");
     window.location.reload();
+    playSound(DELETE_SOUND);
   }
 
   const getQuestionNumber = (index, sectionIdx) => {

@@ -1,7 +1,6 @@
 import { Howl } from "howler"
 
-export const IS_UPDATED_QUESTIONS = false;
-export const NEW_VERSION = "1.2.9.240312";
+export const NEW_VERSION = "1.2.10.240312";
 export const DEFAULT_VERSION = "1.0.0.240202";
 export const THEME_COLOR = "rgb(83, 109, 254)"
 export const ERROR_COLOR = "rgb(245, 108, 108)"
@@ -35,6 +34,7 @@ export const NORMAL_SOUND = "normal";
 export const CORRECT_SOUND = "correct";
 export const WRONG_SOUND = "wrong";
 export const CLICK_SOUND = "click";
+export const DELETE_SOUND = "delete";
 
 export const playSound = (type) => {
   let sound = null;
@@ -50,6 +50,9 @@ export const playSound = (type) => {
       break;
     case CLICK_SOUND:
       sound = new Howl({src: [CLICK_SOUND + ".mp3"]});
+      break;
+    case DELETE_SOUND:
+      sound = new Howl({src: [DELETE_SOUND + ".mp3"]});
       break;
     default:
       break
