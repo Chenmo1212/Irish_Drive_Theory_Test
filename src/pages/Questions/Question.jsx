@@ -97,25 +97,31 @@ const Question = () => {
   }, [index, currQuestionIndex]);
 
   const toOverview = () => {
-    navigate('/overview')
+    navigate('/overview');
+    playSound(CLICK_SOUND);
   }
 
   const getOptionLabel = (idx) => {
     return OPTION_LABELS[idx] + ": "
   }
 
-  const toggleShowAnswer = () => setIsShowAnswer(!isShowAnswer);
+  const toggleShowAnswer = () => {
+    setIsShowAnswer(!isShowAnswer);
+    playSound(CLICK_SOUND);
+  }
   const toggleFavourite = () => {
     setIsFavourite(!isFavourite);
     let updatedFavorites = [...allFavorites];
     updatedFavorites[currQuestionIndex] = !isFavourite;
     saveToLocalStorage('allFavorites', updatedFavorites);
+    playSound(CLICK_SOUND);
   }
   const toggleLanguage = () => {
     setIsCN(!isCN);
     setDisplayedQuestions(!isCN ? questionsCN : questionsEN);
     setCurrQuestion(!isCN ? questionsCN[currQuestionIndex] : questionsEN[currQuestionIndex]);
     saveToLocalStorage('isCN', !isCN);
+    playSound(CLICK_SOUND);
   }
   const handleStick = () => {
     setIsStick(!isStick);
