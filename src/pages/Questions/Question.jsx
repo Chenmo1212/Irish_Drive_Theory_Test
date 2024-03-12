@@ -7,7 +7,6 @@ import {getIcon} from "../../styles/icons";
 import {
   DEFAULT_VERSION,
   ERROR_COLOR,
-  IS_UPDATED_QUESTIONS,
   loadFromLocalStorage,
   NEW_VERSION,
   OPTION_LABELS,
@@ -28,12 +27,13 @@ const initializeQuestions = () => {
   let questions_CN = loadFromLocalStorage('allQuestions_CN', QUESTIONS_CN);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
 
-  if (isUpdate) console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
-
-  if (isUpdate && IS_UPDATED_QUESTIONS) {
+  if (isUpdate) {
+    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
     questions_EN = QUESTIONS_EN;
     saveToLocalStorage("allQuestions", QUESTIONS_EN);
     saveToLocalStorage("allQuestions_CN", QUESTIONS_CN);
+  } else {
+    console.info(`App Current Version: ${currentVersion}`);
   }
 
   return {

@@ -4992,7 +4992,7 @@ export const QUESTIONS_EN = [
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "Subject to the speed limit, what is the 'safest? speed to drive at?",
+      "question": "Subject to the speed limit, what is the 'safest' speed to drive at?",
       "options": [
         "The speed of the slowest vehicle on the road.",
         "A driver should always try to drive at the speed of other road users, regardless of the speed limit.",
