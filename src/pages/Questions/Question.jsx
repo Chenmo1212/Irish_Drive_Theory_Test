@@ -93,7 +93,8 @@ const Question = () => {
     setIsShowAnswer(isAnswerStick);
     setIsCN(isCN);
     setIsError(answers[idx] !== questions_EN[idx].correct_answer);
-  }, [index, navigate]);
+    // eslint-disable-next-line
+  }, [index, currQuestionIndex]);
 
   const toOverview = () => {
     navigate('/overview')
@@ -146,7 +147,7 @@ const Question = () => {
 
     setAnswerIndex(-1);
     setIsShowAnswer(false);
-    navigate(`/question/${parseInt(window.location.href.split('/').pop()) + increment}`);
+    navigate(`/question/${currQuestionIndex + 1 + increment}`);
   };
 
   useEffect(() => {
@@ -192,7 +193,7 @@ const Question = () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
     // eslint-disable-next-line
-  }, []);
+  }, [index, currQuestionIndex]);
 
   const answerStyle = {
     border: `1px solid ${isError ? ERROR_COLOR : THEME_COLOR}`,
