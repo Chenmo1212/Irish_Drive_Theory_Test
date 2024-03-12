@@ -173,6 +173,14 @@ const Question = () => {
         case 'd':
           handleOptionClick(3);
           break;
+        case 'F':
+        case 'f':
+          toggleFavourite();
+          break;
+        case 'T':
+        case 't':
+          toggleLanguage();
+          break;
         case 'ArrowLeft':
           changeQuestion(-1);
           break;
