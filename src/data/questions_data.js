@@ -2982,7 +2982,7 @@ export const QUESTIONS_EN = [
         "Traffic should cross out to the right-hand lane ahead.",
         "Traffic calming measures ahead.",
         "Bend in the road to the right ahead.",
-        "End of ?no overtaking? zone."
+        "End of 'no overtaking' zone."
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_3bLy2.png",
       "correct_answer": 0,
@@ -4338,7 +4338,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explanation: If you arrive at the scene of a crash, find a safe place to stop so that you don?t endanger yourself or others, warn other road users of the incident by using hazard lights.",
+      "explanation": "Explanation: If you arrive at the scene of a crash, find a safe place to stop so that you don't endanger yourself or others, warn other road users of the incident by using hazard lights.",
       "section": "Managing Risk"
     },
     {
@@ -4533,7 +4533,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet cattle or other animals on the road, you should slow down and be prepared to stop. Don?t use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet cattle or other animals on the road, you should slow down and be prepared to stop. don't use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4546,7 +4546,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet horses or other animals on the road, you should slow down and be prepared to stop. Don?t use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
+      "explanation": "Explanation: You should always read the road ahead and be prepared to react to changing traffic situations. If you meet horses or other animals on the road, you should slow down and be prepared to stop. don't use the horn or do anything that might frighten the animals. You must stop if directed to do so by the person in charge of animals.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -4943,7 +4943,7 @@ export const QUESTIONS_EN = [
       "question": "When meeting oncoming traffic on a national road, is it permitted to move into the hard shoulder to allow following traffic to overtake?",
       "options": [
         "Yes, when a truck or bus is oncoming.",
-        "No, except on ?2-plus-1 roads?.",
+        "No, except on '2-plus-1 roads'.",
         "No, it is never permitted to drive on a hard shoulder except in the case of an emergency.",
         "Yes, temporarily when the hard shoulder is clear and it is safe to drive there."
       ],
@@ -4956,7 +4956,7 @@ export const QUESTIONS_EN = [
       "question": "When driving on a national road is it permitted to drive on the hard shoulder in order to allow faster-moving traffic to overtake?",
       "options": [
         "Only when a truck or bus wants to overtake.",
-        "No, except when driving on a ?2-plus-1 road?.",
+        "No, except when driving on a '2-plus-1 road'.",
         "Yes, temporarily when the hard shoulder is clear and it is safe to drive there.",
         "Only when driving on a dual carriageway."
       ],
@@ -5001,7 +5001,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explanation: You should always drive at a speed that allows you to stop within the distance that you can see to be clear ahead. If you don?t think you could safely bring the vehicle to a stop within the range of what you can see, then you?re driving too fast ? slow down.",
+      "explanation": "Explanation: You should always drive at a speed that allows you to stop within the distance that you can see to be clear ahead. If you don't think you could safely bring the vehicle to a stop within the range of what you can see, then you?re driving too fast ? slow down.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5079,7 +5079,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explanation: If another driver behaves badly, you should not let it annoy you ? show restraint and don?t react. Road rage only increases the risk of a collision.",
+      "explanation": "Explanation: If another driver behaves badly, you should not let it annoy you ? show restraint and don't react. Road rage only increases the risk of a collision.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5170,7 +5170,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explanation: After overtaking, check your mirrors, signal and return to your normal lane position as soon as it is safe. Take a smooth easy line, gradually moving back in and allowing the other vehicle plenty of space and don?t cut in sharply.",
+      "explanation": "Explanation: After overtaking, check your mirrors, signal and return to your normal lane position as soon as it is safe. Take a smooth easy line, gradually moving back in and allowing the other vehicle plenty of space and don't cut in sharply.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5365,7 +5365,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explanation: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying ?only a fool breaks the two second rule?. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
+      "explanation": "Explanation: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying 'only a fool breaks the two second rule'. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5391,7 +5391,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explanation: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying ?only a fool breaks the two second rule?. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
+      "explanation": "Explanation: A driver can judge a safe distance from the vehicle in front by using the two second rule. This is measured by picking a fixed point. As the vehicle in front passes it, begin saying 'only a fool breaks the two second rule'. If you pass the fixed point before you have finished the phrase, then your vehicle is too close, safely slow and increase your distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -5699,7 +5699,7 @@ export const QUESTIONS_EN = [
         "Increase speed so that the vehicle will glide over any standing water.",
         "Weave the vehicle slightly in order to improve tyre grip.",
         "Maintain normal speeds as on a dry road.",
-        "Be aware that the vehicle may slide or ?aquaplane?."
+        "Be aware that the vehicle may slide or 'aquaplane'."
       ],
       "question_img_url": null,
       "correct_answer": 3,
@@ -5709,14 +5709,14 @@ export const QUESTIONS_EN = [
     {
       "question": "What is the danger in driving at high speeds on wet roads?",
       "options": [
-        "Danger of ?aquaplaning? or sliding across the road surface.",
+        "Danger of 'aquaplaning' or sliding across the road surface.",
         "Danger that tyre pressure will automatically increase.",
         "There is no danger provided that the tyre pressure has been increased to take account of weather conditions.",
         "There is no danger provided that the tyre pressure has been reduced to take account of weather conditions."
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explanation: The driver should moderate their speed during heavy rain or where water is building up on the road surface. This will help to avoid ?aquaplaning? which has the effect of reducing the grip of the tyres on the road, and this affects the steering and braking. For these reasons the driver should slow down during and after rain and keep a greater distance from the vehicle in front.",
+      "explanation": "Explanation: The driver should moderate their speed during heavy rain or where water is building up on the road surface. This will help to avoid 'aquaplaning' which has the effect of reducing the grip of the tyres on the road, and this affects the steering and braking. For these reasons the driver should slow down during and after rain and keep a greater distance from the vehicle in front.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6418,7 +6418,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explanation: If a front tyre bursts on a vehicle, the steering on the vehicle will become unstable. Don?t panic ? slow down gradually while keeping a firm hold on the steering wheel. Stop in a safe place to change the wheel, and alert other road users by switching on your hazard warning lights.",
+      "explanation": "Explanation: If a front tyre bursts on a vehicle, the steering on the vehicle will become unstable. don't panic ? slow down gradually while keeping a firm hold on the steering wheel. Stop in a safe place to change the wheel, and alert other road users by switching on your hazard warning lights.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -6708,7 +6708,7 @@ export const QUESTIONS_EN = [
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What can be achieved by the driving style known as ?Eco-Driving??",
+      "question": "What can be achieved by the driving style known as 'Eco-Driving'?",
       "options": [
         "Reduced fuel consumption.",
         "Reduced journey times.",
@@ -6756,7 +6756,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 1,
-      "explanation": "Explanation: Don?t try to change a wheel on a motorway, as this could be very dangerous. Drive the car on to the hard shoulder, and when it is safe to do so, get out of the vehicle and move behind the barrier. Call for assistance from a motorway emergency phone or using a mobile phone (call the Garda\u00ed).",
+      "explanation": "Explanation: don't try to change a wheel on a motorway, as this could be very dangerous. Drive the car on to the hard shoulder, and when it is safe to do so, get out of the vehicle and move behind the barrier. Call for assistance from a motorway emergency phone or using a mobile phone (call the Garda\u00ed).",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -7076,7 +7076,7 @@ export const QUESTIONS_EN = [
       "options": [
         "Avoid reversing your vehicle into a space.",
         "Drive into parking space as quickly as possible.",
-        "Don?t park it where it may endanger other road users.",
+        "don't park it where it may endanger other road users.",
         "Park your vehicle opposite another vehicle on a narrow road."
       ],
       "question_img_url": null,
@@ -7646,7 +7646,7 @@ export const QUESTIONS_EN = [
     {
       "question": "What alternatives can drivers take to help protect the environment?",
       "options": [
-        "Don?t use indicators when turning.",
+        "don't use indicators when turning.",
         "Only use low gears.",
         "Use public transport.",
         "Accelerate and brake harshly while driving."
@@ -8485,7 +8485,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 2,
-      "explanation": "Explanation: It is against the law to drive a car, motor bike, truck, bus, pedal bike or an animal-drawn vehicle while ?under the influence of an intoxicant to such an extent as to be incapable of having control of the vehicle?. Intoxicants include alcohol and drugs, whether taken separately or together. The word ?drugs? here includes legal prescribed and over-the-counter (OTC) medicines.",
+      "explanation": "Explanation: It is against the law to drive a car, motor bike, truck, bus, pedal bike or an animal-drawn vehicle while 'under the influence of an intoxicant to such an extent as to be incapable of having control of the vehicle'. Intoxicants include alcohol and drugs, whether taken separately or together. The word 'drugs' here includes legal prescribed and over-the-counter (OTC) medicines.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8608,7 +8608,7 @@ export const QUESTIONS_EN = [
     {
       "question": "What is a courtesy pedestrian crossing?",
       "options": [
-        "A pedestrian crossing with ?look right? painted on the roadway.",
+        "A pedestrian crossing with 'look right' painted on the roadway.",
         "A pedestrian crossing with flashing amber lights.",
         "An uncontrolled pedestrian crossing place.",
         "A pedestrian crossing on a pedestrian street."
@@ -8619,7 +8619,7 @@ export const QUESTIONS_EN = [
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What is the likely effect of motorists ?rubbernecking? at the scene of a traffic incident?",
+      "question": "What is the likely effect of motorists 'rubbernecking' at the scene of a traffic incident?",
       "options": [
         "It can cause additional incidents as drivers become distracted.",
         "It allows traffic to change course without attention.",
@@ -8628,7 +8628,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 0,
-      "explanation": "Explanation: When approaching or being near to the scene of an incident, motorists are often seen ?rubbernecking?. This means turning your head and stretching your neck to get a better view of what's happening. It can be the cause of traffic jams as drivers slow down to ?rubberneck?. It can also cause road incidents as drivers become distracted and change their speed and/or direction while other drivers are also distracted.",
+      "explanation": "Explanation: When approaching or being near to the scene of an incident, motorists are often seen 'rubbernecking'. This means turning your head and stretching your neck to get a better view of what's happening. It can be the cause of traffic jams as drivers slow down to 'rubberneck'. It can also cause road incidents as drivers become distracted and change their speed and/or direction while other drivers are also distracted.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8777,8 +8777,8 @@ export const QUESTIONS_EN = [
     {
       "question": "When a learner driver has passed their driving test, are they permitted to drive unaccompanied as the holder of a Certificate of Competency?",
       "options": [
-        "Yes, a learner driver is permitted to drive unaccompanied on a Certificate of Competency once they have ?N? plates displayed.",
-        "No, a learner driver is not permitted to drive unaccompanied on a Certificate of Competency unless they continue to display ?L? plates.",
+        "Yes, a learner driver is permitted to drive unaccompanied on a Certificate of Competency once they have 'N' plates displayed.",
+        "No, a learner driver is not permitted to drive unaccompanied on a Certificate of Competency unless they continue to display 'L' plates.",
         "Yes, a learner driver is permitted to drive unaccompanied on a Certificate of Competency once they have notified their insurance company.",
         "No, a learner driver is not permitted to drive unaccompanied until they have been issued with a full driving licence in that category."
       ],
@@ -8790,8 +8790,8 @@ export const QUESTIONS_EN = [
     {
       "question": "Can a learner driver drive unaccompanied if they are on their third or subsequent learner permit?",
       "options": [
-        "No, unless they display ?L? plates on the front and rear of the vehicle.",
-        "Yes, provided they display ?N? plates on the front and rear of the vehicle.",
+        "No, unless they display 'L' plates on the front and rear of the vehicle.",
+        "Yes, provided they display 'N' plates on the front and rear of the vehicle.",
         "No, they cannot drive unaccompanied on any learner permit.",
         "Yes, but not on motorways."
       ],
@@ -8853,7 +8853,7 @@ export const QUESTIONS_EN = [
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What is the minimum penalty point offence for a learner driver not displaying ?L? Plates both on the front and rear of the vehicle?",
+      "question": "What is the minimum penalty point offence for a learner driver not displaying 'L' Plates both on the front and rear of the vehicle?",
       "options": [
         "1 penalty point.",
         "3 penalty points.",
@@ -8862,7 +8862,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": null,
       "correct_answer": 3,
-      "explanation": "Explanation: A learner driver needs to be aware of the legal requirements to display ?L? plates front and rear and the implications of not doing so.",
+      "explanation": "Explanation: A learner driver needs to be aware of the legal requirements to display 'L' plates front and rear and the implications of not doing so.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -8931,7 +8931,7 @@ export const QUESTIONS_EN = [
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What can be achieved by the driving style known as ?Eco-Driving??",
+      "question": "What can be achieved by the driving style known as 'Eco-Driving'?",
       "options": [
         "Increased journey times.",
         "Increased emissions.",
@@ -8944,7 +8944,7 @@ export const QUESTIONS_EN = [
       "section": "Safe and Responsible Driving"
     },
     {
-      "question": "What can be achieved by the driving style known as ?Eco-Driving??",
+      "question": "What can be achieved by the driving style known as 'Eco-Driving'?",
       "options": [
         "Increased emissions.",
         "Increased fuel consumption.",
@@ -9499,7 +9499,7 @@ export const QUESTIONS_EN = [
       ],
       "question_img_url": "http://d1fohtyzq6kn2t.cloudfront.net/img/quiz-img/a_9syf8.png",
       "correct_answer": 2,
-      "explanation": "Explanation: When you are overtaking a parked vehicle or obstruction, you should yield to oncoming vehicles so that they don?t have to slow down or take evasive action.",
+      "explanation": "Explanation: When you are overtaking a parked vehicle or obstruction, you should yield to oncoming vehicles so that they don't have to slow down or take evasive action.",
       "section": "Safe and Responsible Driving"
     },
     {
@@ -10182,7 +10182,7 @@ export const QUESTIONS_EN = [
       "question": "What effect can a worn shock absorber have on a vehicle?",
       "options": [
         "It can cause an electrical short-circuit.",
-        "It can cause the vehicle to ?bounce? in an unstable manner.",
+        "It can cause the vehicle to 'bounce' in an unstable manner.",
         "It can trigger the release of the airbags.",
         "It can increase fuel consumption."
       ],
