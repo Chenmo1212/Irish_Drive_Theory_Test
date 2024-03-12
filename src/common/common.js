@@ -1,7 +1,7 @@
 import { Howl } from "howler"
 
 export const IS_UPDATED_QUESTIONS = false;
-export const NEW_VERSION = "1.2.8.240204";
+export const NEW_VERSION = "1.2.9.240312";
 export const DEFAULT_VERSION = "1.0.0.240202";
 export const THEME_COLOR = "rgb(83, 109, 254)"
 export const ERROR_COLOR = "rgb(245, 108, 108)"
