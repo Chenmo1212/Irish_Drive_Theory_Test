@@ -48,8 +48,9 @@ const Home = () => {
   }, []);
 
   const getProgressWidth = () => {
-    let res = allAnswers.filter(num => num !== -1).length / allAnswers.length;
-    return (res === 0 ? 0 : (res <= 3 ? 3 : res)) * 0.97 + "%";
+    let userAnswerAmount = allAnswers.filter(num => num !== -1).length;
+    userAnswerAmount = userAnswerAmount <= 3 ? 3 : userAnswerAmount;
+    return (userAnswerAmount / allAnswers.length) * 97 + "%";
   }
 
   return <div className="home">
