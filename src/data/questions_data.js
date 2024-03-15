@@ -8686,10 +8686,10 @@ export const QUESTIONS_EN = [
     {
       "question": "What is the fine for a learner driver for driving a vehicle unaccompanied?",
       "options": [
-        "?120",
-        "?140",
-        "?80",
-        "?100"
+        "€120",
+        "€140",
+        "€80",
+        "€100"
       ],
       "question_img_url": null,
       "correct_answer": 0,
@@ -8699,10 +8699,10 @@ export const QUESTIONS_EN = [
     {
       "question": "A learner driver who has been stopped by a Garda for driving unaccompanied faces a minimum fine of how much?",
       "options": [
-        "?120",
-        "?80",
-        "?100",
-        "?140"
+        "€120",
+        "€80",
+        "€100",
+        "€140"
       ],
       "question_img_url": null,
       "correct_answer": 1,
@@ -8712,10 +8712,10 @@ export const QUESTIONS_EN = [
     {
       "question": "If the owner of a vehicle allows a learner driver to drive their vehicle, what is the maximum fine the owner could face?",
       "options": [
-        "?1,000",
-        "?2,000",
-        "?1,500",
-        "?500"
+        "€1,000",
+        "€2,000",
+        "€1,500",
+        "€500"
       ],
       "question_img_url": null,
       "correct_answer": 0,
