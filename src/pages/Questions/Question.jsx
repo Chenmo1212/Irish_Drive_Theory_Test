@@ -153,7 +153,11 @@ const Question = () => {
 
     setAnswerIndex(-1);
     setIsShowAnswer(false);
-    navigate(`/question/${currQuestionIndex + 1 + increment}`);
+
+    let newIndex = currQuestionIndex + 1 + increment;
+    newIndex = newIndex <= 0 ? 0: newIndex;
+    newIndex = newIndex >= questionsCN.length ? questionsCN.length: newIndex;
+    navigate(`/question/${newIndex}`);
   };
 
   useEffect(() => {
