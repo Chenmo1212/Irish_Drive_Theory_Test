@@ -1,6 +1,6 @@
 import { Howl } from "howler"
 
-export const NEW_VERSION = "1.3.1.240315";
+export const NEW_VERSION = "1.3.2.240316";
 export const DEFAULT_VERSION = "1.0.0.240202";
 export const THEME_COLOR = "rgb(83, 109, 254)"
 export const ERROR_COLOR = "rgb(245, 108, 108)"
