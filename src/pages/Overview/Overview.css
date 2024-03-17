@@ -49,6 +49,9 @@
 
 .overview .header .icon {
   margin-right: 20px;
+}
+
+.overview .header .icon.active {
   color: rgb(245, 108, 108);
 }
 

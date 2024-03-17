@@ -1,64 +1,93 @@
 import React, {useEffect, useState} from "react"
-import {QUESTIONS_EN} from "../../data/questions_data";
-import {DELETE_SOUND, ERROR_COLOR, loadFromLocalStorage, playSound, THEME_COLOR} from '../../common/common';
+import {
+  DELETE_SOUND,
+  ERROR_COLOR,
+  loadFromLocalStorage,
+  playSound,
+  questionsEN,
+  saveToLocalStorage,
+  THEME_COLOR
+} from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
 
 const initializeLocalStorage = () => {
-  const questions = QUESTIONS_EN;
+  const questions = questionsEN;
   const isCN = loadFromLocalStorage('isCN', false);
+  let questionsConfig = loadFromLocalStorage('questionsConfig', {
+    isShowWrong: false, isShowFavorite: false, filteredQuestions: [], questionTypes: []
+  });
+  questionsConfig.filteredQuestions = questionsConfig.filteredQuestions.length ? questionsConfig.filteredQuestions : questions;
+  questionsConfig.questionTypes = questionsConfig.questionTypes.length ? questionsConfig.questionTypes : getQuestionTypes(questions);
 
   return {
     isCN,
     questions: loadFromLocalStorage('allQuestions', questions),
     userAnswers: loadFromLocalStorage('userAnswers', []),
+    questionsConfig
   };
 };
 
+const sectionTranslations = {
+  "Control of Vehicle": "车辆控制",
+  "Legal Matters/Rules of the Road": "法律事务/交通规则",
+  "Managing Risk": "管理风险",
+  "Safe and Responsible Driving": "安全和负责任的驾驶",
+  "Technical Matters": "技术问题",
+};
+
+const getQuestionTypes = (questions) => {
+  const res = questions.reduce((acc, question) => {
+    const section = question.section;
+    if (!acc[section]) {
+      acc[section] = {
+        sectionName: section,
+        sectionNameCN: sectionTranslations[section] || "未知",
+        amount: 0,
+        questions: []
+      };
+    }
+    acc[section].amount++;
+    acc[section].questions.push(question);
+    return acc;
+  }, {});
+  return Object.values(res);
+};
 const Overview = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
-  // const [currQuestionListType, setCurrQuestionListType] = useState("all");
+  const [isShowWrong, setShowWrong] = useState(false);
+  const [isShowFavorite, setShowFavorite] = useState(false);
+  const [filteredQuestions, setFilteredQuestions] = useState([]);
+  const [questionTypes, setQuestionTypes] = useState([]);
   const [isCN, setIsCN] = useState(false);
   const navigate = useNavigate();
 
-  const questionTypes = [{
-    "sectionName": "Control of Vehicle",
-    "sectionNameCN": "车辆控制",
-    "amount": 13,
-  }, {
-    "sectionName": "Legal Matters/Rules of the Road",
-    "sectionNameCN": "法律事务/交通规则",
-    "amount": 235,
-  }, {
-    "sectionName": "Managing Risk",
-    "sectionNameCN": "管理风险",
-    "amount": 97,
-  }, {
-    "sectionName": "Safe and Responsible Driving",
-    "sectionNameCN": "安全和负责任的驾驶",
-    "amount": 419,
-  }, {
-    "sectionName": "Technical Matters",
-    "sectionNameCN": "技术问题",
-    "amount": 28,
-  },]
-
   useEffect(() => {
-    const {isCN, questions, userAnswers} = initializeLocalStorage();
+    const {isCN, questions, userAnswers, questionsConfig} = initializeLocalStorage();
+    const {isShowWrong, isShowFavorite, filteredQuestions, questionTypes} = questionsConfig;
+
     setIsCN(isCN);
     setAllQuestions(questions);
     setUserAnswers(userAnswers);
+    setShowWrong(isShowWrong);
+    setShowFavorite(isShowFavorite);
+    setFilteredQuestions(filteredQuestions);
+    setQuestionTypes(questionTypes);
   }, []);
 
-  const getStyle = (questionNumber) => {
-    if(!allQuestions.length) return {};
+  useEffect(() => {
+    if (allQuestions.length) updateQuestionConfig();
+  }, [isShowWrong, isShowFavorite, allQuestions]);
 
-    const {id, correct_answer} = allQuestions[questionNumber - 1];
+  const getStyle = (question) => {
+    if (!filteredQuestions.length) return {};
+
+    const {id, correct_answer} = question;
     const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
 
-    const isAnswered = !!userAnswerObj;
+    const isAnswered = userAnswerObj && userAnswerObj.userAnswer !== -1;
     const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
 
     return {
@@ -67,8 +96,10 @@ const Overview = () => {
     };
   };
 
-  const getFavStatus = (questionNumber) => {
-    const {id} = allQuestions[questionNumber - 1] || {};
+  const getFavStatus = (question) => {
+    if (!filteredQuestions.length) return {};
+
+    const {id} = question;
     const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
     return userAnswerObj && userAnswerObj.isFavorite;
   }
@@ -98,18 +129,39 @@ const Overview = () => {
     playSound(DELETE_SOUND);
   }
 
-  const getQuestionNumber = (index, sectionIdx) => {
-    let accumulatedAmount = 0;
-    for (let i = 0; i < sectionIdx; i++) {
-      accumulatedAmount += questionTypes[i].amount;
-    }
-    return accumulatedAmount + index + 1;
-  };
+  const updateQuestionConfig = () => {
+    const filteredQuestions = getFilteredQuestions();
+    const questionTypes = getQuestionTypes(filteredQuestions);
+    const updatedConfig = {
+      isShowWrong, isShowFavorite, filteredQuestions, questionTypes
+    };
+    setFilteredQuestions(filteredQuestions);
+    setQuestionTypes(questionTypes);
+    saveToLocalStorage('questionsConfig', updatedConfig);
+  }
 
-  const setQuestionList = (type) => {
-    // if (type !== currQuestionListType) setCurrQuestionListType(type);
-    // else setCurrQuestionListType("all");
-    console.log(type)
+  const getFilteredQuestions = () => {
+    if (!isShowWrong && !isShowFavorite) {
+      return allQuestions;
+    }
+    let filteredQuestions = userAnswers
+      .filter(answer => {
+        return (isShowWrong && answer.userAnswer !== -1 && getUserAnswerStatus(answer.questionId, answer.userAnswer))
+          || (isShowFavorite && answer.isFavorite);
+      })
+      .map(answer => {
+        return allQuestions.find(question => question.id === answer.questionId);
+      });
+    filteredQuestions = filteredQuestions.filter((question, index, self) =>
+      index === self.findIndex((t) => t.id === question.id));
+
+    return filteredQuestions;
+  }
+
+  const getUserAnswerStatus = (id, answer) => {
+    if (!id) return false;
+    const question = allQuestions.find(q => q.id === id);
+    return question && question.correct_answer !== answer;
   }
 
   return (
@@ -124,10 +176,11 @@ const Overview = () => {
           </div>
         </div>
 
-        <div className="wrong icon" onClick={() => setQuestionList('wrong')}>
+        <div className={`wrong icon ${isShowWrong ? 'active' : ''}`} onClick={() => setShowWrong(!isShowWrong)}>
           {getIcon('wrong')}
         </div>
-        <div className="fav icon" onClick={() => setQuestionList('fav')}>
+        <div className={`favorite icon ${isShowFavorite ? 'active' : ''}`}
+             onClick={() => setShowFavorite(!isShowFavorite)}>
           {getIcon('fav')}
         </div>
         <div className="clear icon" onClick={clearLocalAnswers}>
@@ -145,14 +198,14 @@ const Overview = () => {
                 <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
               </div>
               <div className="content">
-                {Array.from({length: section.amount}, (_, index) => (
-                  <div className="circle-box" key={index}>
-                    <div className={`circle ${allQuestions[index] !== -1 ? 'active' : ''}`}
-                         style={getStyle(getQuestionNumber(index, sectionIdx))}
-                         onClick={() => toDetail(getQuestionNumber(index, sectionIdx))}
+                {section.questions.map(question => (
+                  <div className="circle-box" key={question.id}>
+                    <div className={`circle active`}
+                         style={getStyle(question)}
+                         onClick={() => toDetail(question.index)}
                     >
-                      {getQuestionNumber(index, sectionIdx)}
-                      {getFavStatus(getQuestionNumber(index, sectionIdx)) &&
+                      {question.index}
+                      {getFavStatus(question) &&
                         <div className='svg-box'>{getIcon('fav_fill')}</div>}
                     </div>
                   </div>
