@@ -79,6 +79,7 @@ const Overview = () => {
 
   useEffect(() => {
     if (allQuestions.length) updateQuestionConfig();
+    // eslint-disable-next-line
   }, [isShowWrong, isShowFavorite, allQuestions]);
 
   const getStyle = (question) => {
