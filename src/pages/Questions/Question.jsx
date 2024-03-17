@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
-import {QUESTIONS_EN} from "../../data/questions_data";
-import {QUESTIONS_CN} from "../../data/questions_data_CN";
 import './Question.css'
 import {getIcon} from "../../styles/icons";
 import {
@@ -17,21 +15,23 @@ import {
   saveToLocalStorage,
   THEME_COLOR,
   updateDataIfNewVersion,
-  WRONG_SOUND
+  WRONG_SOUND,
+  questionsCN,
+  questionsEN
 } from '../../common/common';
 
 const initializeQuestions = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
   const isCN = loadFromLocalStorage('isCN', false);
-  let questions_EN = loadFromLocalStorage('allQuestions', QUESTIONS_EN);
-  let questions_CN = loadFromLocalStorage('allQuestions_CN', QUESTIONS_CN);
+  let questions_EN = loadFromLocalStorage('allQuestions', questionsEN);
+  let questions_CN = loadFromLocalStorage('allQuestions_CN', questionsCN);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
 
   if (isUpdate) {
     console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
-    questions_EN = QUESTIONS_EN;
-    saveToLocalStorage("allQuestions", QUESTIONS_EN);
-    saveToLocalStorage("allQuestions_CN", QUESTIONS_CN);
+    questions_EN = questionsEN;
+    saveToLocalStorage("allQuestions", questionsEN);
+    saveToLocalStorage("allQuestions_CN", questionsCN);
   } else {
     console.info(`App Current Version: ${currentVersion}`);
   }

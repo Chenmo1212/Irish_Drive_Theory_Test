@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from "react"
 import './Home.css'
-import {QUESTIONS_EN} from "../../data/questions_data";
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
 import {
   DEFAULT_VERSION,
   loadFromLocalStorage,
   NEW_VERSION,
+  questionsEN,
+  questionsCN,
   saveToLocalStorage,
   THEME_COLOR,
   updateDataIfNewVersion
@@ -18,13 +19,14 @@ const initializeLocalStorage = () => {
   const currQuestionIdx = loadFromLocalStorage('currQuestionIdx', 0);
   const isCN = loadFromLocalStorage('isCN', false);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
-  let allQuestions = loadFromLocalStorage('allQuestions', QUESTIONS_EN);
+  let allQuestions = loadFromLocalStorage('allQuestions', questionsEN);
   const userAnswers = loadFromLocalStorage('userAnswers', []);
 
   if (isUpdate) {
     console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`);
-    allQuestions = QUESTIONS_EN;
-    saveToLocalStorage("allQuestions", QUESTIONS_EN);
+    allQuestions = questionsEN;
+    saveToLocalStorage("allQuestions", questionsEN);
+    saveToLocalStorage("allQuestions_CN", questionsCN);
   } else {
     console.info(`App Current Version: ${currentVersion}`);
   }
