@@ -1,34 +1,25 @@
 import React, {useEffect, useState} from "react"
 import {QUESTIONS_EN} from "../../data/questions_data";
-import {
-  DELETE_SOUND,
-  ERROR_COLOR,
-  loadFromLocalStorage,
-  playSound,
-  THEME_COLOR
-} from '../../common/common';
+import {DELETE_SOUND, ERROR_COLOR, loadFromLocalStorage, playSound, THEME_COLOR} from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
 
 const initializeLocalStorage = () => {
   const questions = QUESTIONS_EN;
-  const favorites = Array.from({length: questions.length}, () => false);
-  const answers = Array.from({length: questions.length}, () => -1);
   const isCN = loadFromLocalStorage('isCN', false);
 
   return {
     isCN,
     questions: loadFromLocalStorage('allQuestions', questions),
-    favorites: loadFromLocalStorage('allFavorites', favorites),
-    answers: loadFromLocalStorage('allAnswers', answers),
+    userAnswers: loadFromLocalStorage('userAnswers', []),
   };
 };
 
 const Overview = () => {
-  const [allFavorites, setAllFavorites] = useState([])
   const [allQuestions, setAllQuestions] = useState([]);
-  const [allAnswers, setAllAnswers] = useState([]);
+  const [userAnswers, setUserAnswers] = useState([]);
+  // const [currQuestionListType, setCurrQuestionListType] = useState("all");
   const [isCN, setIsCN] = useState(false);
   const navigate = useNavigate();
 
@@ -55,16 +46,20 @@ const Overview = () => {
   },]
 
   useEffect(() => {
-    const {isCN, questions, favorites, answers} = initializeLocalStorage();
+    const {isCN, questions, userAnswers} = initializeLocalStorage();
     setIsCN(isCN);
-    setAllAnswers(answers);
     setAllQuestions(questions);
-    setAllFavorites(favorites);
+    setUserAnswers(userAnswers);
   }, []);
 
   const getStyle = (questionNumber) => {
-    const isAnswered = allAnswers.length && allAnswers[questionNumber - 1] !== -1;
-    const isError = allAnswers.length && allAnswers[questionNumber - 1] !== allQuestions[questionNumber - 1].correct_answer;
+    if(!allQuestions.length) return {};
+
+    const {id, correct_answer} = allQuestions[questionNumber - 1];
+    const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
+
+    const isAnswered = !!userAnswerObj;
+    const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
 
     return {
       background: isAnswered ? (isError ? ERROR_COLOR : THEME_COLOR) : "",
@@ -72,6 +67,11 @@ const Overview = () => {
     };
   };
 
+  const getFavStatus = (questionNumber) => {
+    const {id} = allQuestions[questionNumber - 1] || {};
+    const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
+    return userAnswerObj && userAnswerObj.isFavorite;
+  }
   const backDetail = () => {
     navigate(-1);
   }
@@ -91,9 +91,8 @@ const Overview = () => {
     localStorage.removeItem("isAnswerStick");
     localStorage.removeItem("isAnswerCheck");
     localStorage.removeItem("currQuestionIdx");
-    localStorage.removeItem("allAnswers");
+    localStorage.removeItem("userAnswers");
     localStorage.removeItem("allQuestions");
-    localStorage.removeItem("allFavorites");
     alert("All data have been cleared!");
     window.location.reload();
     playSound(DELETE_SOUND);
@@ -107,6 +106,12 @@ const Overview = () => {
     return accumulatedAmount + index + 1;
   };
 
+  const setQuestionList = (type) => {
+    // if (type !== currQuestionListType) setCurrQuestionListType(type);
+    // else setCurrQuestionListType("all");
+    console.log(type)
+  }
+
   return (
     <div className="overview">
       <div className="header">
@@ -117,6 +122,13 @@ const Overview = () => {
           <div className="page-title">
             {isCN ? "总览" : "Overview"}
           </div>
+        </div>
+
+        <div className="wrong icon" onClick={() => setQuestionList('wrong')}>
+          {getIcon('wrong')}
+        </div>
+        <div className="fav icon" onClick={() => setQuestionList('fav')}>
+          {getIcon('fav')}
         </div>
         <div className="clear icon" onClick={clearLocalAnswers}>
           {getIcon('clear')}
@@ -140,7 +152,7 @@ const Overview = () => {
                          onClick={() => toDetail(getQuestionNumber(index, sectionIdx))}
                     >
                       {getQuestionNumber(index, sectionIdx)}
-                      {allFavorites[getQuestionNumber(index, sectionIdx) - 1] &&
+                      {getFavStatus(getQuestionNumber(index, sectionIdx)) &&
                         <div className='svg-box'>{getIcon('fav_fill')}</div>}
                     </div>
                   </div>
