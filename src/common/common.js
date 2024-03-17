@@ -1,6 +1,6 @@
-import { Howl } from "howler"
+import {Howl} from "howler"
 
-export const NEW_VERSION = "1.3.2.240316";
+export const NEW_VERSION = "1.3.4.240316";
 export const DEFAULT_VERSION = "1.0.0.240202";
 export const THEME_COLOR = "rgb(83, 109, 254)"
 export const ERROR_COLOR = "rgb(245, 108, 108)"
@@ -60,3 +60,29 @@ export const playSound = (type) => {
 
   sound && sound.play();
 }
+
+
+function migrateUserData() {
+  const currentVersion = JSON.parse(localStorage.getItem('appVersion')) || DEFAULT_VERSION;
+  if (compareVersions(currentVersion, NEW_VERSION) < 0) {
+    const allQuestions = JSON.parse(localStorage.getItem('allQuestions') || '[]');
+    const allAnswers = JSON.parse(localStorage.getItem('allAnswers') || '[]');
+    const allFavorites = JSON.parse(localStorage.getItem('allFavorites') || '[]');
+
+    let userAnswers = allQuestions.map((question, index) => ({
+      questionId: question.id,
+      userAnswer: allAnswers[index],
+      isFavorite: allFavorites[index] || false,
+    }));
+
+    userAnswers = userAnswers.filter(item => item.userAnswer !== -1 || item.isFavorite);
+
+    localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+    localStorage.setItem('appVersion', JSON.stringify(NEW_VERSION));
+
+    console.log('数据迁移完成。');
+    console.log('Data migration completed.');
+  }
+}
+
+migrateUserData();

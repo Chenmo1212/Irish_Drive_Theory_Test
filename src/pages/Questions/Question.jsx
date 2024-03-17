@@ -5,19 +5,19 @@ import {QUESTIONS_CN} from "../../data/questions_data_CN";
 import './Question.css'
 import {getIcon} from "../../styles/icons";
 import {
+  CLICK_SOUND,
+  CORRECT_SOUND,
   DEFAULT_VERSION,
   ERROR_COLOR,
   loadFromLocalStorage,
   NEW_VERSION,
+  NORMAL_SOUND,
   OPTION_LABELS,
   playSound,
   saveToLocalStorage,
   THEME_COLOR,
   updateDataIfNewVersion,
-  NORMAL_SOUND,
-  CORRECT_SOUND,
-  WRONG_SOUND,
-  CLICK_SOUND
+  WRONG_SOUND
 } from '../../common/common';
 
 const initializeQuestions = () => {
@@ -40,8 +40,7 @@ const initializeQuestions = () => {
     isCN,
     questions_EN,
     questions_CN,
-    favorites: loadFromLocalStorage('allFavorites', Array.from({length: questions_EN.length}, () => false)),
-    answers: loadFromLocalStorage('allAnswers', Array.from({length: questions_EN.length}, () => -1)),
+    userAnswers: loadFromLocalStorage('userAnswers', []),
     isAnswerCheck: loadFromLocalStorage('isAnswerCheck', false),
     isAnswerStick: loadFromLocalStorage('isAnswerStick', false),
   };
@@ -62,7 +61,7 @@ const Question = () => {
   const [questionsCN, setQuestionsCN] = useState([])
   const [questionsEN, setQuestionsEN] = useState([])
   const [displayedQuestions, setDisplayedQuestions] = useState([])
-  const [allFavorites, setAllFavorites] = useState([])
+  const [userAnswers, setUserAnswers] = useState([]);
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
   const [chosenAnswerIndex, setAnswerIndex] = useState(0);
   const [isShowAnswer, setIsShowAnswer] = useState(false);
@@ -76,23 +75,25 @@ const Question = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const {isCN, questions_EN, questions_CN, favorites, answers, isAnswerCheck, isAnswerStick} = initializeQuestions();
+    const {isCN, questions_EN, questions_CN, userAnswers, isAnswerCheck, isAnswerStick} = initializeQuestions();
     if (parseInt(index) <= 0) navigate('/question/1')
     const idx = initializeCurrQuestionIndex(parseInt(index));
+    const {id, correct_answer: correctAnswer} = questions_EN[idx];
+    const userAnswer = userAnswers.find(answer => answer.questionId === id);
 
     setDisplayedQuestions(isCN ? questions_CN : questions_EN);
     setCurrQuestion(isCN ? questions_CN[idx] : questions_EN[idx]);
     setQuestionsCN(questions_CN);
     setQuestionsEN(questions_EN);
-    setAllFavorites(favorites);
+    setUserAnswers(userAnswers);
     setCurrQuestionIndex(idx);
-    setAnswerIndex(answers[idx]);
-    setIsFavourite(favorites[idx]);
+    setAnswerIndex(userAnswer ? userAnswer.userAnswer : -1);
+    setIsFavourite(userAnswer ? userAnswer.isFavorite : false);
     setIsCheck(isAnswerCheck);
     setIsStick(isAnswerStick);
     setIsShowAnswer(isAnswerStick);
     setIsCN(isCN);
-    setIsError(answers[idx] !== questions_EN[idx].correct_answer);
+    setIsError(userAnswer ? userAnswer.userAnswer !== correctAnswer : false);
     // eslint-disable-next-line
   }, [index, currQuestionIndex]);
 
@@ -105,15 +106,33 @@ const Question = () => {
     return OPTION_LABELS[idx] + ": "
   }
 
+  const updateUserAnswers = (newValue, isFavoriteUpdate = false) => {
+    const questionId = currQuestion.id;
+    const answerIndex = userAnswers.findIndex(answer => answer.questionId === questionId);
+    if (answerIndex > -1) {
+      if (!isFavoriteUpdate) {
+        userAnswers[answerIndex].userAnswer = newValue;
+      } else {
+        userAnswers[answerIndex].isFavorite = newValue;
+      }
+    } else {
+      userAnswers.push({
+        questionId: questionId,
+        userAnswer: isFavoriteUpdate ? -1 : newValue,
+        isFavorite: isFavoriteUpdate ? newValue : isFavourite,
+      });
+    }
+    setUserAnswers(userAnswers);
+    saveToLocalStorage('userAnswers', userAnswers);
+  }
+
   const toggleShowAnswer = () => {
     setIsShowAnswer(!isShowAnswer);
     playSound(CLICK_SOUND);
   }
   const toggleFavourite = () => {
+    updateUserAnswers(!isFavourite, true);
     setIsFavourite(!isFavourite);
-    let updatedFavorites = [...allFavorites];
-    updatedFavorites[currQuestionIndex] = !isFavourite;
-    saveToLocalStorage('allFavorites', updatedFavorites);
     playSound(CLICK_SOUND);
   }
   const toggleLanguage = () => {
@@ -138,11 +157,7 @@ const Question = () => {
     setAnswerIndex(idx);
     const isError = idx !== currQuestion.correct_answer;
     setIsError(isError);
-
-    let updatedAnswers = loadFromLocalStorage('allAnswers', []);
-    updatedAnswers[currQuestionIndex] = idx;
-    saveToLocalStorage('allAnswers', updatedAnswers);
-
+    updateUserAnswers(idx);
     if (isCheck) setIsShowAnswer(true);
 
     playSound(isCheck ? (isError ? WRONG_SOUND : CORRECT_SOUND) : NORMAL_SOUND);
@@ -155,8 +170,8 @@ const Question = () => {
     setIsShowAnswer(false);
 
     let newIndex = currQuestionIndex + 1 + increment;
-    newIndex = newIndex <= 0 ? 0: newIndex;
-    newIndex = newIndex >= questionsCN.length ? questionsCN.length: newIndex;
+    newIndex = newIndex <= 0 ? 0 : newIndex;
+    newIndex = newIndex >= questionsCN.length ? questionsCN.length : newIndex;
     navigate(`/question/${newIndex}`);
   };
 

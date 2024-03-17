@@ -19,7 +19,7 @@ const initializeLocalStorage = () => {
   const isCN = loadFromLocalStorage('isCN', false);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
   let allQuestions = loadFromLocalStorage('allQuestions', QUESTIONS_EN);
-  const allAnswers = loadFromLocalStorage('allAnswers', Array.from({length: allQuestions.length}, () => -1));
+  const userAnswers = loadFromLocalStorage('userAnswers', []);
 
   if (isUpdate) {
     console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`);
@@ -29,27 +29,27 @@ const initializeLocalStorage = () => {
     console.info(`App Current Version: ${currentVersion}`);
   }
 
-  return {isCN, allQuestions, allAnswers, currQuestionIdx};
+  return {isCN, allQuestions, userAnswers, currQuestionIdx};
 };
 
 const Home = () => {
   const [allQuestions, setAllQuestions] = useState([]);
-  const [allAnswers, setAllAnswers] = useState([]);
+  const [userAnswers, setUserAnswers] = useState([]);
   const [currQuestionIdx, setCurrQuestionIdx] = useState(1);
   const [isCN, setIsCN] = useState(false);
 
   useEffect(() => {
-    const {isCN, allQuestions, allAnswers, currQuestionIdx} = initializeLocalStorage();
+    const {isCN, allQuestions, userAnswers, currQuestionIdx} = initializeLocalStorage();
     setIsCN(isCN);
     setAllQuestions(allQuestions);
-    setAllAnswers(allAnswers);
+    setUserAnswers(userAnswers);
     setCurrQuestionIdx(currQuestionIdx);
   }, []);
 
   const getProgressWidth = () => {
-    let userAnswerAmount = allAnswers.filter(num => num !== -1).length;
+    let userAnswerAmount = userAnswers.length;
     userAnswerAmount = userAnswerAmount <= 3 ? 3 : userAnswerAmount;
-    return (userAnswerAmount / allAnswers.length) * 97 + "%";
+    return (userAnswerAmount / allQuestions.length) * 97 + "%";
   }
 
   return <div className="home">
