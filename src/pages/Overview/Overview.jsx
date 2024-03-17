@@ -58,7 +58,7 @@ const Overview = () => {
     const {id, correct_answer} = allQuestions[questionNumber - 1];
     const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
 
-    const isAnswered = !!userAnswerObj;
+    const isAnswered = userAnswerObj && userAnswerObj.userAnswer !== -1;
     const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
 
     return {
@@ -68,7 +68,9 @@ const Overview = () => {
   };
 
   const getFavStatus = (questionNumber) => {
-    const {id} = allQuestions[questionNumber - 1] || {};
+    if (!allQuestions.length) return {};
+
+    const {id} = allQuestions[questionNumber - 1];
     const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
     return userAnswerObj && userAnswerObj.isFavorite;
   }
