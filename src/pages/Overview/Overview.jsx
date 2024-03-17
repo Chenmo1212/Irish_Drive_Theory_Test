@@ -29,6 +29,7 @@ const Overview = () => {
   const [allFavorites, setAllFavorites] = useState([])
   const [allQuestions, setAllQuestions] = useState([]);
   const [allAnswers, setAllAnswers] = useState([]);
+  // const [currQuestionListType, setCurrQuestionListType] = useState("all");
   const [isCN, setIsCN] = useState(false);
   const navigate = useNavigate();
 
@@ -107,6 +108,12 @@ const Overview = () => {
     return accumulatedAmount + index + 1;
   };
 
+  const setQuestionList = (type) => {
+    // if (type !== currQuestionListType) setCurrQuestionListType(type);
+    // else setCurrQuestionListType("all");
+    console.log(type)
+  }
+
   return (
     <div className="overview">
       <div className="header">
@@ -117,6 +124,13 @@ const Overview = () => {
           <div className="page-title">
             {isCN ? "总览" : "Overview"}
           </div>
+        </div>
+
+        <div className="wrong icon" onClick={() => setQuestionList('wrong')}>
+          {getIcon('wrong')}
+        </div>
+        <div className="fav icon" onClick={() => setQuestionList('fav')}>
+          {getIcon('fav')}
         </div>
         <div className="clear icon" onClick={clearLocalAnswers}>
           {getIcon('clear')}
