@@ -12,12 +12,12 @@ import {
   NORMAL_SOUND,
   OPTION_LABELS,
   playSound,
+  questionsCN,
+  questionsEN,
   saveToLocalStorage,
   THEME_COLOR,
   updateDataIfNewVersion,
-  WRONG_SOUND,
-  questionsCN,
-  questionsEN
+  WRONG_SOUND
 } from '../../common/common';
 
 const initializeQuestions = () => {
@@ -40,6 +40,7 @@ const initializeQuestions = () => {
     isCN,
     questions_EN,
     questions_CN,
+    questionsConfig: loadFromLocalStorage('questionsConfig', {}),
     userAnswers: loadFromLocalStorage('userAnswers', []),
     isAnswerCheck: loadFromLocalStorage('isAnswerCheck', false),
     isAnswerStick: loadFromLocalStorage('isAnswerStick', false),
@@ -60,6 +61,7 @@ const Question = () => {
   const [currQuestion, setCurrQuestion] = useState({})
   const [questionsCN, setQuestionsCN] = useState([])
   const [questionsEN, setQuestionsEN] = useState([])
+  const [filteredQuestions, setFilteredQuestions] = useState([])
   const [displayedQuestions, setDisplayedQuestions] = useState([])
   const [userAnswers, setUserAnswers] = useState([]);
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
@@ -75,16 +77,26 @@ const Question = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const {isCN, questions_EN, questions_CN, userAnswers, isAnswerCheck, isAnswerStick} = initializeQuestions();
+    const {
+      isCN,
+      questions_EN,
+      questions_CN,
+      questionsConfig,
+      userAnswers,
+      isAnswerCheck,
+      isAnswerStick
+    } = initializeQuestions();
     if (parseInt(index) <= 0) navigate('/question/1')
     const idx = initializeCurrQuestionIndex(parseInt(index));
     const {id, correct_answer: correctAnswer} = questions_EN[idx];
     const userAnswer = userAnswers.find(answer => answer.questionId === id);
+    const {filteredQuestions} = questionsConfig;
 
     setDisplayedQuestions(isCN ? questions_CN : questions_EN);
     setCurrQuestion(isCN ? questions_CN[idx] : questions_EN[idx]);
     setQuestionsCN(questions_CN);
     setQuestionsEN(questions_EN);
+    setFilteredQuestions(filteredQuestions);
     setUserAnswers(userAnswers);
     setCurrQuestionIndex(idx);
     setAnswerIndex(userAnswer ? userAnswer.userAnswer : -1);
@@ -169,10 +181,11 @@ const Question = () => {
     setAnswerIndex(-1);
     setIsShowAnswer(false);
 
-    let newIndex = currQuestionIndex + 1 + increment;
+    const filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
+    let newIndex = filteredIndex + increment;
     newIndex = newIndex <= 0 ? 0 : newIndex;
-    newIndex = newIndex >= questionsCN.length ? questionsCN.length : newIndex;
-    navigate(`/question/${newIndex}`);
+    newIndex = newIndex >= filteredQuestions.length ? filteredQuestions.length : newIndex;
+    navigate(`/question/${filteredQuestions[newIndex].index}`);
   };
 
   useEffect(() => {
@@ -240,6 +253,16 @@ const Question = () => {
 
   const handlerBack = () => {
     navigate('/');
+  }
+
+  const isFirstQuestion = () => {
+    let filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
+    return filteredIndex === 0;
+  }
+
+  const isLastQuestion = () => {
+    let filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
+    return filteredIndex === filteredQuestions.length - 1;
   }
 
   return (
@@ -329,13 +352,17 @@ const Question = () => {
           <div className="menu-item show-answer" onClick={toggleShowAnswer}>
             {getIcon(isShowAnswer ? 'eye_slash' : 'eye')}
           </div>
-          <div className={`menu-item pre-question ${currQuestionIndex <= 0 ? 'disable' : ''}`}
-               onClick={() => changeQuestion(-1)}>
+          <div className={`menu-item pre-question ${isFirstQuestion() ? 'disable' : ''}`}
+               onClick={() => {
+                 if (!isFirstQuestion()) changeQuestion(-1)
+               }}>
             {getIcon('arrow_left')}
           </div>
           <div
-            className={`menu-item next-question ${currQuestionIndex >= displayedQuestions.length - 1 ? 'disable' : ''}`}
-            onClick={() => changeQuestion(1)}>
+            className={`menu-item next-question ${isLastQuestion() ? 'disable' : ''}`}
+            onClick={() => {
+              if (!isLastQuestion()) changeQuestion(1)
+            }}>
             {getIcon('arrow_right')}
           </div>
         </div>

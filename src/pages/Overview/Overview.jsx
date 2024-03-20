@@ -152,7 +152,8 @@ const Overview = () => {
       })
       .map(answer => {
         return allQuestions.find(question => question.id === answer.questionId);
-      });
+      })
+      .sort((a, b) => a.index - b.index)
     filteredQuestions = filteredQuestions.filter((question, index, self) =>
       index === self.findIndex((t) => t.id === question.id));
 

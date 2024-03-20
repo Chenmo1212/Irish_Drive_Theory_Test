@@ -2,7 +2,7 @@ import {Howl} from "howler"
 import {QUESTIONS_EN} from "../data/questions_data";
 import {QUESTIONS_CN} from "../data/questions_data_CN";
 
-export const NEW_VERSION = "1.3.4.240316";
+export const NEW_VERSION = "1.3.7.240320";
 export const DEFAULT_VERSION = "1.0.0.240202";
 export const THEME_COLOR = "rgb(83, 109, 254)";
 export const ERROR_COLOR = "rgb(245, 108, 108)";
@@ -26,7 +26,6 @@ export const compareVersions = (version1, version2) => version1.localeCompare(ve
 export const updateDataIfNewVersion = (currentVersion, newVersion) => {
   if (compareVersions(currentVersion, newVersion) < 0) {
     saveToLocalStorage('appVersion', newVersion);
-    migrateUserData();
     return true;
   }
   return false;
@@ -83,7 +82,7 @@ function migrateUserData() {
   console.log('数据迁移完成。');
   console.log('Data migration completed.');
 }
-
+if (updateDataIfNewVersion(loadFromLocalStorage('appVersion', DEFAULT_VERSION), NEW_VERSION)) migrateUserData();
 
 // Insert question index
 const updateQuestionIndex = (questions) => questions.map((q, i) => {
