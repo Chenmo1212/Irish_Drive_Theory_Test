@@ -42,6 +42,7 @@ const initializeQuestions = () => {
     questions_CN,
     questionsConfig: loadFromLocalStorage('questionsConfig', {}),
     userAnswers: loadFromLocalStorage('userAnswers', []),
+    isShowAnswerInErrorMode: loadFromLocalStorage('isShowAnswerInErrorMode', true),
     isAnswerCheck: loadFromLocalStorage('isAnswerCheck', false),
     isAnswerStick: loadFromLocalStorage('isAnswerStick', false),
   };
@@ -67,6 +68,7 @@ const Question = () => {
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
   const [chosenAnswerIndex, setAnswerIndex] = useState(0);
   const [isShowAnswer, setIsShowAnswer] = useState(false);
+  const [isShowAnswerInErrorMode, setIsShowAnswerInErrorMode] = useState(true);
   const [isFavourite, setIsFavourite] = useState(false);
   const [isCheck, setIsCheck] = useState(false);
   const [isStick, setIsStick] = useState(false);
@@ -83,6 +85,7 @@ const Question = () => {
       questions_CN,
       questionsConfig,
       userAnswers,
+      isShowAnswerInErrorMode,
       isAnswerCheck,
       isAnswerStick
     } = initializeQuestions();
@@ -99,7 +102,7 @@ const Question = () => {
     setFilteredQuestions(filteredQuestions);
     setUserAnswers(userAnswers);
     setCurrQuestionIndex(idx);
-    setAnswerIndex(userAnswer ? userAnswer.userAnswer : -1);
+    setAnswerIndex(isShowAnswerInErrorMode ? (userAnswer ? userAnswer.userAnswer : -1) : -1);
     setIsFavourite(userAnswer ? userAnswer.isFavorite : false);
     setIsCheck(isAnswerCheck);
     setIsStick(isAnswerStick);
@@ -164,6 +167,12 @@ const Question = () => {
     saveToLocalStorage('isAnswerCheck', !isCheck);
     playSound(CLICK_SOUND);
   };
+
+  const handleIsShowAnswerInErrorMode = () => {
+    setIsShowAnswerInErrorMode(!isShowAnswerInErrorMode);
+    saveToLocalStorage('isShowAnswerInErrorMode', !isShowAnswerInErrorMode);
+    playSound(CLICK_SOUND);
+  }
 
   const handleOptionClick = (idx) => {
     setAnswerIndex(idx);
@@ -332,6 +341,7 @@ const Question = () => {
                 <span>{OPTION_LABELS[currQuestion.correct_answer]}</span>
               </div>
               <div className="stick-box">
+                <div className={isShowAnswerInErrorMode ? 'active' : ''} onClick={handleIsShowAnswerInErrorMode}>{getIcon('eye_slash')}</div>
                 <div className={isCheck ? 'active' : ''} onClick={handleCheck}>{getIcon('check')}</div>
                 <div className={isStick ? 'active' : ''} onClick={handleStick}>{getIcon('thumb_tack')}</div>
               </div>
