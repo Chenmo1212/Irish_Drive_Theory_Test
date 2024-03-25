@@ -1,16 +1,12 @@
 import React, {useEffect, useState} from "react"
 import {
-  DELETE_SOUND,
   loadFromLocalStorage,
-  playSound,
   questionsEN,
-  removeFromLocalStorage,
   saveToLocalStorage
 } from '../../common/common';
-import "./Overview.css"
-import {useNavigate} from "react-router-dom";
-import PageHeader from "../../components/Header/PageHeader";
+import "./index.css"
 import QuestionsSection from "./QuestionsSection";
+import HeaderSection from "./HeaderSection";
 
 const initializeLocalStorage = () => {
   const questions = questionsEN;
@@ -55,7 +51,7 @@ const getQuestionTypes = (questions) => {
   return Object.values(res);
 };
 
-const Overview = () => {
+const Index = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
   const [isShowWrong, setShowWrong] = useState(false);
@@ -63,7 +59,6 @@ const Overview = () => {
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [questionTypes, setQuestionTypes] = useState([]);
   const [isCN, setIsCN] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const {isCN, questions, userAnswers, questionsConfig} = initializeLocalStorage();
@@ -82,25 +77,6 @@ const Overview = () => {
     if (allQuestions.length) updateQuestionConfig();
     // eslint-disable-next-line
   }, [isShowWrong, isShowFavorite, allQuestions]);
-
-  const backDetail = () => {
-    navigate(-1);
-  }
-
-  const clearLocalAnswers = () => {
-    removeFromLocalStorage(['allAnswers', 'userAnswers'])
-    alert("All your answers have been cleared!");
-    window.location.reload();
-    playSound(DELETE_SOUND);
-  }
-
-  const clearLocalStorage = () => {
-    removeFromLocalStorage(['isAnswerStick', 'isAnswerCheck', 'currQuestionIdx',
-      'userAnswers', 'allQuestions', 'questionsConfig']);
-    alert("All data have been cleared!");
-    window.location.reload();
-    playSound(DELETE_SOUND);
-  }
 
   const updateQuestionConfig = () => {
     const filteredQuestions = getFilteredQuestions();
@@ -138,30 +114,14 @@ const Overview = () => {
     return question && question.correct_answer !== answer;
   }
 
-  const rightIcons = [
-    {
-      name: 'wrong',
-      action: () => setShowWrong(!isShowWrong),
-      active: isShowWrong,
-    }, {
-      name: 'fav',
-      action: () => setShowFavorite(!isShowFavorite),
-      active: isShowFavorite,
-    }, {
-      name: 'clear',
-      action: clearLocalAnswers,
-    }, {
-      name: 'trash',
-      action: clearLocalStorage,
-    },
-  ]
-
   return (
     <div className="overview">
-      <PageHeader
-        pageTitle="Overview"
-        handleBack={backDetail}
-        rightIcons={rightIcons}
+      <HeaderSection
+        isShowWrong={isShowWrong}
+        setShowWrong={setShowWrong}
+        isShowFavorite={isShowFavorite}
+        setShowFavorite={setShowFavorite}
+        isCN={isCN}
       />
 
       <QuestionsSection
@@ -174,4 +134,4 @@ const Overview = () => {
   )
 }
 
-export default Overview;
+export default Index;

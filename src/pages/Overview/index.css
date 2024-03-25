@@ -4,7 +4,7 @@
 
 .overview .page-body {
   height: calc(95vh - 20px);
-  padding: 0 20px 20px;
+  padding: 0 20px;
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
