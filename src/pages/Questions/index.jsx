@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useNavigate, useParams} from 'react-router-dom';
+import {useNavigate, useSearchParams} from 'react-router-dom';
 import './index.css'
 import {
   DEFAULT_VERSION,
@@ -55,8 +55,9 @@ const Question = () => {
   const [isStick, setIsStick] = useState(false);
   const [isCN, setIsCN] = useState(false);
 
-  const {index} = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
+  const index = searchParams.get("i") || "0"
 
   useEffect(() => {
     const {
@@ -68,7 +69,7 @@ const Question = () => {
       isAnswerCheck,
       isAnswerStick
     } = initializeQuestions();
-    if (parseInt(index) <= 0) navigate('/question/1')
+    if (parseInt(index) <= 0) navigate('/question?i=1')
     const idx = initializeCurrQuestionIndex(parseInt(index));
     const {id} = questions_EN[idx];
     const userAnswer = userAnswers.find(answer => answer.questionId === id);
@@ -117,6 +118,7 @@ const Question = () => {
       <BasicQuestion
         isCN={isCN}
         setIsCN={setIsCN}
+        setSearchParams={setSearchParams}
         isFavourite={isFavourite}
         setIsFavourite={setIsFavourite}
         questions={questions}

@@ -12,12 +12,13 @@ import {
   saveToLocalStorage,
   WRONG_SOUND
 } from "../../common/common";
-import {useNavigate, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import './index.css'
 
 const BasicQuestion = ({
                          isCN,
                          setIsCN,
+                         setSearchParams,
                          isFavourite,
                          setIsFavourite,
                          questions,
@@ -37,9 +38,7 @@ const BasicQuestion = ({
 
   const [isAnswerError, setIsAnswerError] = useState(false);
   const [currQuestion, setCurrQuestion] = useState({});
-
   const {index} = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
     let q = filteredQuestions.find(q => q.id === currQuestion?.id);
@@ -152,7 +151,7 @@ const BasicQuestion = ({
     let newIndex = filteredIndex + increment;
     newIndex = newIndex <= 0 ? 0 : newIndex;
     newIndex = newIndex >= filteredQuestions.length ? filteredQuestions.length : newIndex;
-    navigate(`/question/${filteredQuestions[newIndex].index}`);
+    setSearchParams({i: (newIndex + 1).toString()});
     playSound(CLICK_SOUND);
   };
 

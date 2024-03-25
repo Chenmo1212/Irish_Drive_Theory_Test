@@ -30,7 +30,7 @@ const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN})
 
 
   const toDetail = (idx) => {
-    navigate(`/question/${idx}`);
+    navigate(`/question?i=${idx}`);
   }
 
   return (

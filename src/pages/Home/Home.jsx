@@ -63,7 +63,7 @@ const Home = () => {
           }}></div>
         </div>
 
-        <Link to={`/question/${currQuestionIdx}`}>
+        <Link to={`/question?i=${currQuestionIdx}`}>
           <div className="btn">
             <button className="btn round-action-button begin text-blue">
               <span className="icon-container">
