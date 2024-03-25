@@ -25,14 +25,6 @@
   background: #f4f6f8;
 }
 
-.question-type {
-  box-shadow: inset 5px 5px 10px #eaecee, inset -5px -5px 10px #feffff;
-}
-
-.question .content .content-head .question-num {
-  box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
-}
-
 .question .content .content-container {
   max-height: 86%;
   padding: 0 7px 15px;
@@ -65,54 +57,10 @@
   width: 40%;
 }
 
-.question .content .content-container .options .c-button {
-  font-size: 14px;
-  text-align: left;
-  width: 100%;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #2c3e50;
-  background: transparent;
-  border: 1px solid #fff;
-  position: relative;
-  box-shadow: 2px 2px 5px #c1d3ea, -2px -2px 5px white, -0.4px -0.4px 0.4px white;
-  transition: all 200ms ease-out 0s;
-}
-
-.question .content .content-container .options .c-button:before {
-  content: '';
-  position: absolute;
-  border-radius: 5px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border: 2px solid transparent;
-  filter: blur(2px);
-  transition: all 200ms ease-out 0s;
-}
-
-.question .content .content-container .options .c-button:after {
-  content: '';
-  position: absolute;
-  border-radius: 5px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: all 200ms ease-out 0s;
-}
-
-.question .content .content-container .options div {
-  cursor: pointer;
-  font-family: inherit;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-.question .content .content-container .options .active {
-  background: linear-gradient(to top, #f4f6f8, #fafcfd);
-  box-shadow: inset .4px .4px 1.5px #f4f6f8, inset 1.5px 1.5px 3px #aec5e4, inset -0.8px -0.8px 1.5px white;
+.question .content .content-container .options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .question .content .content-container .answer {

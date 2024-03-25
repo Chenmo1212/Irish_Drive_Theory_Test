@@ -30,7 +30,7 @@ const QuestionContent = ({
 
       <div className="options">
         {currQuestion.options?.map((option, idx) => (
-          <div className={`btn c-button ${chosenAnswerIndex === idx ? " active" : ""}`}
+          <div className={`btn rect-round-button ${chosenAnswerIndex === idx ? " active" : ""}`}
                key={option + idx}
                style={chosenAnswerIndex === idx ? chosenOptionStyle : {}}
                onClick={() => handleOptionClick(idx)}

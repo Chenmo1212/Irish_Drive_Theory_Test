@@ -8,17 +8,17 @@ const QuestionInfo = ({
                         }) => {
   return (
     <div className="content-head">
-      <div className="question-type" style={{color: THEME_COLOR}}>
+      <div className="question-type rect-round-button active" style={{color: THEME_COLOR}}>
         <span>{currQuestion.section}</span>
       </div>
-      <div className="question-num">
-            <span className="question-index" style={{color: THEME_COLOR}}>
-              {currQuestionIndex + 1}
-            </span>
+      <div className="question-num rect-round-button">
+        <span className="question-index" style={{color: THEME_COLOR}}>
+          {currQuestionIndex + 1}
+        </span>
         /
         <span className="question-num-item">
-              {displayedQuestions.length}
-            </span>
+          {displayedQuestions.length}
+        </span>
       </div>
     </div>
   );
