@@ -1,17 +1,11 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {THEME_COLOR} from '../../common/common';
 
 const QuestionInfo = ({
                         currQuestion,
+                        currQuestionIndex,
                         filteredQuestions,
                       }) => {
-
-  const [questionIndex, setQuestionIndex] = React.useState(0);
-
-  useEffect(() => {
-    const idx = filteredQuestions.findIndex(q => q.id === currQuestion?.id);
-    setQuestionIndex(idx);
-  }, [filteredQuestions, currQuestion])
 
   return (
     <div className="content-head">
@@ -20,7 +14,7 @@ const QuestionInfo = ({
       </div>
       <div className="question-num rect-round-button">
         <span className="question-index" style={{color: THEME_COLOR}}>
-          {questionIndex + 1}
+          {currQuestionIndex + 1}
         </span>
         /
         <span className="question-num-item">
