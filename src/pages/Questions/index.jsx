@@ -51,7 +51,6 @@ const initializeCurrQuestionIndex = (pageIdx) => {
 };
 
 const Question = () => {
-  const [currQuestion, setCurrQuestion] = useState({});
   const [questions, setQuestions] = useState([]);
   const [questionsCN, setQuestionsCN] = useState([]);
   const [questionsEN, setQuestionsEN] = useState([]);
@@ -84,7 +83,7 @@ const Question = () => {
     const userAnswer = userAnswers.find(answer => answer.questionId === id);
     const {filteredQuestions} = questionsConfig;
 
-    setCurrQuestion(isCN ? questions_CN[idx] : questions_EN[idx]);
+    setQuestions(isCN ? questions_CN : questions_EN);
     setQuestionsCN(questions_CN);
     setQuestionsEN(questions_EN);
     setFilteredQuestions(filteredQuestions);
@@ -99,9 +98,8 @@ const Question = () => {
     // eslint-disable-next-line
   }, [index, currQuestionIndex]);
 
-  const updateUserAnswers = (newValue, isFavoriteUpdate = false) => {
-    const questionId = currQuestion.id;
-    const answerIndex = userAnswers.findIndex(answer => answer.questionId === questionId);
+  const updateUserAnswers = (id, newValue, isFavoriteUpdate = false) => {
+    const answerIndex = userAnswers.findIndex(answer => answer.questionId === id);
     if (answerIndex > -1) {
       if (!isFavoriteUpdate) {
         userAnswers[answerIndex].userAnswer = newValue;
@@ -110,7 +108,7 @@ const Question = () => {
       }
     } else {
       userAnswers.push({
-        questionId: questionId,
+        questionId: id,
         userAnswer: isFavoriteUpdate ? -1 : newValue,
         isFavorite: isFavoriteUpdate ? newValue : isFavourite,
       });
@@ -119,8 +117,8 @@ const Question = () => {
     saveToLocalStorage('userAnswers', userAnswers);
   }
 
-  const handleQuestions = (isEN) => {
-    setQuestions(isEN ? questionsEN : questionsCN);
+  const handleQuestions = (isCN) => {
+    setQuestions(isCN ? questionsCN : questionsEN);
   }
 
   return (
@@ -132,8 +130,6 @@ const Question = () => {
         setIsFavourite={setIsFavourite}
         questions={questions}
         handleQuestions={handleQuestions}
-        currQuestion={currQuestion}
-        setCurrQuestion={setCurrQuestion}
         currQuestionIndex={currQuestionIndex}
         updateUserAnswers={updateUserAnswers}
         chosenAnswerIndex={chosenAnswerIndex}

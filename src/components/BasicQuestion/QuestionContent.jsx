@@ -22,14 +22,14 @@ const QuestionContent = ({
   return (
     <div className="question-content">
       <div className="question-text">
-        Q: {currQuestion.question}
+        Q: {currQuestion?.question}
 
-        {currQuestion.question_img_url ?
-          <p className="question-img"><img src={currQuestion.question_img_url} alt=""/></p> : <></>}
+        {currQuestion?.question_img_url ?
+          <p className="question-img"><img src={currQuestion?.question_img_url} alt=""/></p> : <></>}
       </div>
 
       <div className="options">
-        {currQuestion.options?.map((option, idx) => (
+        {currQuestion?.options?.map((option, idx) => (
           <div className={`btn rect-round-button ${chosenAnswerIndex === idx ? " active" : ""}`}
                key={option + idx}
                style={chosenAnswerIndex === idx ? chosenOptionStyle : {}}

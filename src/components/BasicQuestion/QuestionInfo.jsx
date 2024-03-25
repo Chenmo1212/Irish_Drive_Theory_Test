@@ -9,14 +9,14 @@ const QuestionInfo = ({
   const [questionIndex, setQuestionIndex] = React.useState(0);
 
   useEffect(() => {
-    const idx = filteredQuestions.findIndex(q => q.id === currQuestion.id);
+    const idx = filteredQuestions.findIndex(q => q.id === currQuestion?.id);
     setQuestionIndex(idx);
   }, [filteredQuestions, currQuestion])
 
   return (
     <div className="content-head">
       <div className="question-type rect-round-button active" style={{color: THEME_COLOR}}>
-        <span>{currQuestion.section}</span>
+        <span>{currQuestion?.section}</span>
       </div>
       <div className="question-num rect-round-button">
         <span className="question-index" style={{color: THEME_COLOR}}>

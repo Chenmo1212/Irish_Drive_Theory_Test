@@ -22,8 +22,6 @@ const BasicQuestion = ({
                          setIsFavourite,
                          questions,
                          handleQuestions,
-                         currQuestion,
-                         setCurrQuestion,
                          currQuestionIndex,
                          updateUserAnswers,
                          chosenAnswerIndex,
@@ -38,14 +36,19 @@ const BasicQuestion = ({
                        }) => {
 
   const [isAnswerError, setIsAnswerError] = useState(false);
+  const [currQuestion, setCurrQuestion] = useState({});
 
   const {index} = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
-    let q = filteredQuestions.find(q => q.id === currQuestion.id);
+    let q = filteredQuestions.find(q => q.id === currQuestion?.id);
     if (q) setIsAnswerError(q['correct_answer'] !== chosenAnswerIndex);
   }, [filteredQuestions, chosenAnswerIndex, currQuestion])
+
+  useEffect(() => {
+    setCurrQuestion(questions[currQuestionIndex]);
+  }, [currQuestionIndex, questions])
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -111,7 +114,7 @@ const BasicQuestion = ({
   }
 
   const toggleFavourite = () => {
-    updateUserAnswers(!isFavourite, true);
+    updateUserAnswers(currQuestion.id, !isFavourite, true);
     setIsFavourite(!isFavourite);
     playSound(CLICK_SOUND);
   }
@@ -131,7 +134,7 @@ const BasicQuestion = ({
     setChosenAnswerIndex(idx);
     const isError = idx !== currQuestion.correct_answer;
     setIsAnswerError(isError);
-    updateUserAnswers(idx);
+    updateUserAnswers(currQuestion.id, idx);
     if (isCheck) setIsExplain(true);
 
     let sound = NORMAL_SOUND;

@@ -66,7 +66,7 @@
 }
 
 .overview .page-body .content .circle-box .active {
-  border: 2px solid #fff;
+  border: 2px solid #e7e9ef40;
   box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
 }
 
