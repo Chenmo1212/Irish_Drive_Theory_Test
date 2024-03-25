@@ -21,6 +21,12 @@ export const saveToLocalStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
 
+export const removeFromLocalStorage = (keys) => {
+  keys.forEach(key => {
+    localStorage.removeItem(key);
+  })
+}
+
 export const compareVersions = (version1, version2) => version1.localeCompare(version2);
 
 export const updateDataIfNewVersion = (currentVersion, newVersion) => {
