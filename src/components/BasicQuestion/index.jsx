@@ -146,15 +146,14 @@ const BasicQuestion = ({
 
   const changeQuestion = (increment) => {
     if (index <= 0 && increment === -1) return;
-
     setChosenAnswerIndex(-1);
     setIsExplain(false);
-
     const filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
     let newIndex = filteredIndex + increment;
     newIndex = newIndex <= 0 ? 0 : newIndex;
     newIndex = newIndex >= filteredQuestions.length ? filteredQuestions.length : newIndex;
     navigate(`/question/${filteredQuestions[newIndex].index}`);
+    playSound(CLICK_SOUND);
   };
 
   return (

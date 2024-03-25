@@ -7,8 +7,6 @@ import {
   loadFromLocalStorage,
   NEW_VERSION,
   questionsEN,
-  questionsCN,
-  saveToLocalStorage,
   THEME_COLOR,
   updateDataIfNewVersion
 } from '../../common/common';
@@ -22,15 +20,7 @@ const initializeLocalStorage = () => {
   let allQuestions = loadFromLocalStorage('allQuestions', questionsEN);
   const userAnswers = loadFromLocalStorage('userAnswers', []);
 
-  if (isUpdate) {
-    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`);
-    allQuestions = questionsEN;
-    saveToLocalStorage("allQuestions", questionsEN);
-    saveToLocalStorage("allQuestions_CN", questionsCN);
-  } else {
-    console.info(`App Current Version: ${currentVersion}`);
-  }
-
+  if (isUpdate) allQuestions = questionsEN;
   return {isCN, allQuestions, userAnswers, currQuestionIdx};
 };
 

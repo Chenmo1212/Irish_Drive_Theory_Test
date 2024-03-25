@@ -19,19 +19,10 @@ const initializeQuestions = () => {
   let questions_CN = loadFromLocalStorage('allQuestions_CN', questionsCN);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
 
-  if (isUpdate) {
-    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
-    questions_EN = questionsEN;
-    saveToLocalStorage("allQuestions", questionsEN);
-    saveToLocalStorage("allQuestions_CN", questionsCN);
-  } else {
-    console.info(`App Current Version: ${currentVersion}`);
-  }
-
   return {
     isCN,
-    questions_EN,
-    questions_CN,
+    questions_EN: isUpdate ? questionsEN : questions_EN,
+    questions_CN: isUpdate ? questionsCN : questions_CN,
     questionsConfig: loadFromLocalStorage('questionsConfig', {}),
     userAnswers: loadFromLocalStorage('userAnswers', []),
     isShowAnswerInErrorMode: loadFromLocalStorage('isShowAnswerInErrorMode', true),

@@ -2,7 +2,7 @@ import {Howl} from "howler"
 import {QUESTIONS_EN} from "../data/questions_data";
 import {QUESTIONS_CN} from "../data/questions_data_CN";
 
-export const NEW_VERSION = "1.3.7.240320";
+export const NEW_VERSION = "1.3.8.240320";
 export const DEFAULT_VERSION = "1.0.0.240202";
 export const THEME_COLOR = "rgb(83, 109, 254)";
 export const CORRECT_COLOR = "rgb(103, 194, 58)";
@@ -33,8 +33,13 @@ export const compareVersions = (version1, version2) => version1.localeCompare(ve
 export const updateDataIfNewVersion = (currentVersion, newVersion) => {
   if (compareVersions(currentVersion, newVersion) < 0) {
     saveToLocalStorage('appVersion', newVersion);
+
+    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`)
+    saveToLocalStorage("allQuestions", questionsEN);
+    saveToLocalStorage("allQuestions_CN", questionsCN);
     return true;
   }
+  console.info(`App Current Version: ${currentVersion}`);
   return false;
 };
 
@@ -69,27 +74,6 @@ export const playSound = (type) => {
 
   sound && sound.play();
 }
-
-
-function migrateUserData() {
-  const allQuestions = JSON.parse(localStorage.getItem('allQuestions') || '[]');
-  const allAnswers = JSON.parse(localStorage.getItem('allAnswers') || '[]');
-  const allFavorites = JSON.parse(localStorage.getItem('allFavorites') || '[]');
-
-  let userAnswers = allQuestions.map((question, index) => ({
-    questionId: question.id,
-    userAnswer: allAnswers[index],
-    isFavorite: allFavorites[index] || false,
-  }));
-
-  userAnswers = userAnswers.filter(item => item.userAnswer !== -1 || item.isFavorite);
-
-  localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
-
-  console.log('数据迁移完成。');
-  console.log('Data migration completed.');
-}
-if (updateDataIfNewVersion(loadFromLocalStorage('appVersion', DEFAULT_VERSION), NEW_VERSION)) migrateUserData();
 
 // Insert question index
 const updateQuestionIndex = (questions) => questions.map((q, i) => {
