@@ -1,5 +1,5 @@
 import React from 'react';
-import PageHeader from "../../components/Header/PageHeader";
+import PageHeader from "../Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 
 const QuestionHeader = ({

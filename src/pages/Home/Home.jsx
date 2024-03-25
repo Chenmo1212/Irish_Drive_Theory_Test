@@ -7,8 +7,6 @@ import {
   loadFromLocalStorage,
   NEW_VERSION,
   questionsEN,
-  questionsCN,
-  saveToLocalStorage,
   THEME_COLOR,
   updateDataIfNewVersion
 } from '../../common/common';
@@ -22,15 +20,7 @@ const initializeLocalStorage = () => {
   let allQuestions = loadFromLocalStorage('allQuestions', questionsEN);
   const userAnswers = loadFromLocalStorage('userAnswers', []);
 
-  if (isUpdate) {
-    console.info(`App Updated: ${currentVersion} => ${NEW_VERSION}`);
-    allQuestions = questionsEN;
-    saveToLocalStorage("allQuestions", questionsEN);
-    saveToLocalStorage("allQuestions_CN", questionsCN);
-  } else {
-    console.info(`App Current Version: ${currentVersion}`);
-  }
-
+  if (isUpdate) allQuestions = questionsEN;
   return {isCN, allQuestions, userAnswers, currQuestionIdx};
 };
 
@@ -62,7 +52,7 @@ const Home = () => {
         </div>
         <div className="title">{isCN ? "爱尔兰驾照理论测试题" : "Irish Theory Test"}</div>
         <div className="question_type">
-          <span> {isCN ? "题目总数:" : "Question Amount:"} <span
+          <span> {isCN ? "题目总数:" : "Index Amount:"} <span
             className="text-blue">{allQuestions.length}</span></span>
         </div>
         <div className="progress">
@@ -73,7 +63,7 @@ const Home = () => {
           }}></div>
         </div>
 
-        <Link to={`/question/${currQuestionIdx}`}>
+        <Link to={`/question?i=${currQuestionIdx}`}>
           <div className="btn">
             <button className="btn round-action-button begin text-blue">
               <span className="icon-container">

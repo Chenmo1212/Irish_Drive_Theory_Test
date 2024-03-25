@@ -1,6 +1,6 @@
 import React from 'react';
 import {getIcon} from "../../styles/icons";
-import {ERROR_COLOR, THEME_COLOR} from '../../common/common';
+import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
 import {useNavigate} from "react-router-dom";
 
 const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN}) => {
@@ -23,14 +23,14 @@ const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN})
     const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
 
     return {
-      background: isAnswered ? (isError ? ERROR_COLOR : THEME_COLOR) : "",
+      background: isAnswered ? (isError ? ERROR_COLOR : CORRECT_COLOR) : "",
       color: isAnswered ? '#fff' : '#000'
     };
   };
 
 
   const toDetail = (idx) => {
-    navigate(`/question/${idx}`);
+    navigate(`/question?i=${idx}`);
   }
 
   return (

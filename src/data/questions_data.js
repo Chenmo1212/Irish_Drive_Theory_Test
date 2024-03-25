@@ -9006,8 +9006,8 @@ export const QUESTIONS_EN = [
     "options": [
       "A three month disqualification from driving",
       "A one month disqualification from driving",
-      "A ?60 fine",
-      "A ?90 fine"
+      "A €60 fine",
+      "A €90 fine"
     ],
     "question_img_url": null,
     "correct_answer": 0,
@@ -9074,10 +9074,10 @@ export const QUESTIONS_EN = [
   {
     "question": "What are the drink driving penalties for a learner driver with a blood alcohol concentrate (BAC) of 20 mg to 80 mg per 100 millilitres of blood?",
     "options": [
-      "?200 fine and 3 months driving disqualification.",
-      "?200 fine and 6 months driving disqualification.",
-      "?200 fine and 3 penalty points.",
-      "?200 fine and 5 penalty points."
+      "€200 fine and 3 months driving disqualification.",
+      "€200 fine and 6 months driving disqualification.",
+      "€200 fine and 3 penalty points.",
+      "€200 fine and 5 penalty points."
     ],
     "question_img_url": null,
     "correct_answer": 0,
@@ -9088,10 +9088,10 @@ export const QUESTIONS_EN = [
   {
     "question": "What are the drink driving penalties for a professional driver holding a full car licence and found to have a blood alcohol concentrate (BAC) of 20 mg to 80 mg per 100 millilitres of blood?",
     "options": [
-      "?200 fine and 3 months driving disqualification.",
+      "€200 fine and 3 months driving disqualification.",
       "There are no penalties below 50 mg (BAC).",
       "The penalties only apply over 80 mg (BAC).",
-      "?100 fine and 6 months driving disqualification."
+      "€100 fine and 6 months driving disqualification."
     ],
     "question_img_url": null,
     "correct_answer": 0,
@@ -9102,10 +9102,10 @@ export const QUESTIONS_EN = [
   {
     "question": "What are the drink driving penalties for a driver with a blood alcohol concentrate (BAC) of 80 mg to 100 mg per 100 millilitres of blood?",
     "options": [
-      "?200 fine and 6 months driving disqualification.",
-      "?400 fine and 6 months driving disqualification.",
-      "?200 fine and 3 months driving disqualification.",
-      "?400 fine and 3 months driving disqualification."
+      "€200 fine and 6 months driving disqualification.",
+      "€400 fine and 6 months driving disqualification.",
+      "€200 fine and 3 months driving disqualification.",
+      "€400 fine and 3 months driving disqualification."
     ],
     "question_img_url": null,
     "correct_answer": 1,
@@ -9158,10 +9158,10 @@ export const QUESTIONS_EN = [
   {
     "question": "What is the maximum penalty on conviction for drug driving?",
     "options": [
-      "?3,000 fine and 12 months in prison.",
-      "?3,000 fine and 12 months driving disqualification.",
-      "?5,000 fine and 6 months in prison.",
-      "?5,000 fine and 6 months driving disqualification."
+      "€3,000 fine and 12 months in prison.",
+      "€3,000 fine and 12 months driving disqualification.",
+      "€5,000 fine and 6 months in prison.",
+      "€5,000 fine and 6 months driving disqualification."
     ],
     "question_img_url": null,
     "correct_answer": 2,
@@ -9313,7 +9313,7 @@ export const QUESTIONS_EN = [
     "question": "What is the penalty for a vehicle owner who allows a learner driver to drive their vehicle unaccompanied?",
     "options": [
       "They will lose their driving licence.",
-      "They will be fined ?2,000.",
+      "They will be fined €2,000.",
       "They will incur 2 penalty points on their licence.",
       "Their vehicle will be seized."
     ],
@@ -9361,7 +9361,7 @@ export const QUESTIONS_EN = [
     ],
     "question_img_url": null,
     "correct_answer": 0,
-    "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied increases the fine to ?120 on conviction.",
+    "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied increases the fine to €120 on conviction.",
     "section": "Safe and Responsible Driving",
     "id": 669
   },
@@ -9389,7 +9389,7 @@ export const QUESTIONS_EN = [
     ],
     "question_img_url": null,
     "correct_answer": 0,
-    "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied in a vehicle which they do not own could see the owner facing a fine of up to ?1,000 and having the vehicle seized.",
+    "explanation": "Explanation: A learner driver needs to be aware that driving unaccompanied in a vehicle which they do not own could see the owner facing a fine of up to €1,000 and having the vehicle seized.",
     "section": "Safe and Responsible Driving",
     "id": 671
   },
@@ -9424,10 +9424,10 @@ export const QUESTIONS_EN = [
   {
     "question": "What are the fixed charge amount and penalties incurred for a learner driver who drives unaccompanied?",
     "options": [
-      "?80 fine and 3 penalty points.",
-      "?100 fine and 2 penalty points.",
-      "?80 fine and 2 penalty points.",
-      "?60 fine and 5 penalty points."
+      "€80 fine and 3 penalty points.",
+      "€100 fine and 2 penalty points.",
+      "€80 fine and 2 penalty points.",
+      "€60 fine and 5 penalty points."
     ],
     "question_img_url": null,
     "correct_answer": 2,
