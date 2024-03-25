@@ -6,7 +6,6 @@ import {useNavigate} from "react-router-dom";
 const QuestionFooter = ({
                           toggleShowExplanation,
                           changeQuestion,
-                          isShowAnswer,
                           filteredQuestions,
                           currQuestionIndex
                         }) => {
@@ -18,37 +17,47 @@ const QuestionFooter = ({
   }
 
   const isFirstQuestion = () => {
-    let filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
-    return filteredIndex === 0;
+    return currQuestionIndex === 0;
   }
 
   const isLastQuestion = () => {
-    let filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
-    return filteredIndex === filteredQuestions.length - 1;
+    return currQuestionIndex === filteredQuestions.length - 1;
   }
+
+  const MENU_ITEM = [{
+    name: 'all',
+    action: toOverview,
+    activeIcon: 'fa_th',
+  }, {
+    name: 'explanation',
+    action: toggleShowExplanation,
+    activeIcon: 'eye_slash',
+    inactiveIcon: 'eye',
+  }, {
+    name: 'prev',
+    action: () => {
+      if (!isFirstQuestion()) changeQuestion(-1)
+    },
+    activeIcon: 'arrow_left',
+    disabled: isFirstQuestion()
+  }, {
+    name: 'next',
+    action: () => {
+      if (!isLastQuestion()) changeQuestion(1)
+    },
+    activeIcon: 'arrow_right',
+    disabled: isLastQuestion()
+  }]
 
   return (
     <div className="question-footer">
       <div className="menu-card" style={{color: THEME_COLOR}}>
-        <div className="menu-item all-question" onClick={toOverview}>
-          {getIcon('fa_th')}
-        </div>
-        <div className="menu-item show-answer" onClick={toggleShowExplanation}>
-          {getIcon(isShowAnswer ? 'eye_slash' : 'eye')}
-        </div>
-        <div className={`menu-item pre-question ${isFirstQuestion() ? 'disable' : ''}`}
-             onClick={() => {
-               if (!isFirstQuestion()) changeQuestion(-1)
-             }}>
-          {getIcon('arrow_left')}
-        </div>
-        <div
-          className={`menu-item next-question ${isLastQuestion() ? 'disable' : ''}`}
-          onClick={() => {
-            if (!isLastQuestion()) changeQuestion(1)
-          }}>
-          {getIcon('arrow_right')}
-        </div>
+        {MENU_ITEM.map((item, index) => (
+          <div key={index} onClick={item.action}
+               className={`menu-item ${item.name} ${item.disabled ? "disable" : ""}`}>
+            {getIcon(item.active ? item.activeIcon : (item.inactiveName || item.activeIcon))}
+          </div>
+        ))}
       </div>
     </div>
   );

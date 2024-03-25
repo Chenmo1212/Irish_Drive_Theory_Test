@@ -40,14 +40,17 @@ const BasicQuestion = ({
   const [currQuestion, setCurrQuestion] = useState({});
   const {index} = useParams();
 
+  // Choose Option
   useEffect(() => {
     let q = filteredQuestions.find(q => q.id === currQuestion?.id);
     if (q) setIsAnswerError(q['correct_answer'] !== chosenAnswerIndex);
   }, [filteredQuestions, chosenAnswerIndex, currQuestion])
 
+  // Toggle Language
   useEffect(() => {
-    setCurrQuestion(questions[currQuestionIndex]);
-  }, [currQuestionIndex, questions])
+    const q = questions.find(q => q.id === filteredQuestions[currQuestionIndex].id);
+    setCurrQuestion(q);
+  }, [currQuestionIndex, questions, filteredQuestions])
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -106,7 +109,6 @@ const BasicQuestion = ({
 
   const toggleLanguage = () => {
     setIsCN(!isCN);
-    setCurrQuestion(questions[currQuestionIndex]);
     saveToLocalStorage('isCN', !isCN);
     playSound(CLICK_SOUND);
     handleQuestions(!isCN);
@@ -147,8 +149,7 @@ const BasicQuestion = ({
     if (index <= 0 && increment === -1) return;
     setChosenAnswerIndex(-1);
     setIsExplain(false);
-    const filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
-    let newIndex = filteredIndex + increment;
+    let newIndex = currQuestionIndex + increment;
     newIndex = newIndex <= 0 ? 0 : newIndex;
     newIndex = newIndex >= filteredQuestions.length ? filteredQuestions.length : newIndex;
     setSearchParams({i: (newIndex + 1).toString()});
@@ -167,6 +168,7 @@ const BasicQuestion = ({
       <div className="content">
         <QuestionInfo
           currQuestion={currQuestion}
+          currQuestionIndex={currQuestionIndex}
           filteredQuestions={filteredQuestions}
         />
 
