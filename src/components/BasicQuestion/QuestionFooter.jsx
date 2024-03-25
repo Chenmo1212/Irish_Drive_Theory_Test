@@ -4,7 +4,7 @@ import {CLICK_SOUND, playSound, THEME_COLOR} from '../../common/common';
 import {useNavigate} from "react-router-dom";
 
 const QuestionFooter = ({
-                          toggleShowAnswer,
+                          toggleShowExplanation,
                           changeQuestion,
                           isShowAnswer,
                           filteredQuestions,
@@ -33,7 +33,7 @@ const QuestionFooter = ({
         <div className="menu-item all-question" onClick={toOverview}>
           {getIcon('fa_th')}
         </div>
-        <div className="menu-item show-answer" onClick={toggleShowAnswer}>
+        <div className="menu-item show-answer" onClick={toggleShowExplanation}>
           {getIcon(isShowAnswer ? 'eye_slash' : 'eye')}
         </div>
         <div className={`menu-item pre-question ${isFirstQuestion() ? 'disable' : ''}`}
