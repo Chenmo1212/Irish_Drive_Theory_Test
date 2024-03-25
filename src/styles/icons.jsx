@@ -19,8 +19,8 @@ import {
 
 const icons = new Map([
   ['back', <FaChevronLeft />],
-  ['fav', <FaRegStar />],
-  ['fav_fill', <FaStar />],
+  ['fav_reg', <FaRegStar />],
+  ['fav', <FaStar />],
   ['fa_th', <FaTh />],
   ['eye', <FaEye />],
   ['eye_slash', <FaEyeSlash />],

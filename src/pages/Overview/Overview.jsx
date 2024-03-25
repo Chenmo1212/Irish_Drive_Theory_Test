@@ -5,12 +5,14 @@ import {
   loadFromLocalStorage,
   playSound,
   questionsEN,
+  removeFromLocalStorage,
   saveToLocalStorage,
   THEME_COLOR
 } from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
+import PageHeader from "../../components/Header/PageHeader";
 
 const initializeLocalStorage = () => {
   const questions = questionsEN;
@@ -54,6 +56,7 @@ const getQuestionTypes = (questions) => {
   }, {});
   return Object.values(res);
 };
+
 const Overview = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
@@ -113,18 +116,15 @@ const Overview = () => {
   }
 
   const clearLocalAnswers = () => {
-    localStorage.removeItem("allAnswers");
+    removeFromLocalStorage(['allAnswers', 'userAnswers'])
     alert("All your answers have been cleared!");
     window.location.reload();
     playSound(DELETE_SOUND);
   }
 
   const clearLocalStorage = () => {
-    localStorage.removeItem("isAnswerStick");
-    localStorage.removeItem("isAnswerCheck");
-    localStorage.removeItem("currQuestionIdx");
-    localStorage.removeItem("userAnswers");
-    localStorage.removeItem("allQuestions");
+    removeFromLocalStorage(['isAnswerStick', 'isAnswerCheck', 'currQuestionIdx',
+      'userAnswers', 'allQuestions', 'questionsConfig']);
     alert("All data have been cleared!");
     window.location.reload();
     playSound(DELETE_SOUND);
@@ -166,32 +166,31 @@ const Overview = () => {
     return question && question.correct_answer !== answer;
   }
 
+  const rightIcons = [
+    {
+      name: 'wrong',
+      action: () => setShowWrong(!isShowWrong),
+      active: isShowWrong,
+    }, {
+      name: 'fav',
+      action: () => setShowFavorite(!isShowFavorite),
+      active: isShowFavorite,
+    }, {
+      name: 'clear',
+      action: clearLocalAnswers,
+    }, {
+      name: 'trash',
+      action: clearLocalStorage,
+    },
+  ]
+
   return (
     <div className="overview">
-      <div className="header">
-        <div className="return">
-          <div className="circle" style={{color: THEME_COLOR}} onClick={backDetail}>
-            {getIcon('arrow_left')}
-          </div>
-          <div className="page-title">
-            {isCN ? "总览" : "Overview"}
-          </div>
-        </div>
-
-        <div className={`wrong icon ${isShowWrong ? 'active' : ''}`} onClick={() => setShowWrong(!isShowWrong)}>
-          {getIcon('wrong')}
-        </div>
-        <div className={`favorite icon ${isShowFavorite ? 'active' : ''}`}
-             onClick={() => setShowFavorite(!isShowFavorite)}>
-          {getIcon('fav')}
-        </div>
-        <div className="clear icon" onClick={clearLocalAnswers}>
-          {getIcon('clear')}
-        </div>
-        <div className="trash icon" onClick={clearLocalStorage}>
-          {getIcon('trash')}
-        </div>
-      </div>
+      <PageHeader
+        pageTitle="Overview"
+        handleBack={backDetail}
+        rightIcons={rightIcons}
+      />
 
       <div className="container">
         {questionTypes.map((section, sectionIdx,) => (
@@ -208,7 +207,7 @@ const Overview = () => {
                     >
                       {question.index}
                       {getFavStatus(question) &&
-                        <div className='svg-box'>{getIcon('fav_fill')}</div>}
+                        <div className='svg-box'>{getIcon('fav')}</div>}
                     </div>
                   </div>
                 ))}

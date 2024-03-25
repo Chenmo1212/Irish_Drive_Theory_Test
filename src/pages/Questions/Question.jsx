@@ -19,6 +19,7 @@ import {
   updateDataIfNewVersion,
   WRONG_SOUND
 } from '../../common/common';
+import PageHeader from "../../components/Header/PageHeader";
 
 const initializeQuestions = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
@@ -260,7 +261,7 @@ const Question = () => {
     color: THEME_COLOR
   }
 
-  const handlerBack = () => {
+  const backHome = () => {
     navigate('/');
   }
 
@@ -274,28 +275,26 @@ const Question = () => {
     return filteredIndex === filteredQuestions.length - 1;
   }
 
+  const rightIcons = [
+    {
+      name: 'language',
+      action: toggleLanguage,
+      active: isCN,
+    }, {
+      name: 'fav',
+      inactiveName: "fav_reg",
+      action: toggleFavourite,
+      active: isFavourite,
+    }
+  ]
+
   return (
     <div className="question">
-      <div className="header">
-        <div className="return">
-          <div className="circle" onClick={handlerBack}>
-            {getIcon('back')}
-          </div>
-          <div className="page-title">
-            {isCN ? "问题" : "Question"}
-          </div>
-        </div>
-        <div className="icon-group">
-          <div className={`language ${isCN ? 'active' : ''}`}
-               onClick={toggleLanguage}>
-            {getIcon('language')}
-          </div>
-          <div className={`favourite ${isFavourite ? 'active' : ''}`}
-               onClick={toggleFavourite}>
-            {getIcon(`${isFavourite ? 'fav_fill' : 'fav'}`)}
-          </div>
-        </div>
-      </div>
+      <PageHeader
+        pageTitle={isCN ? "问题" : "Question"}
+        handleBack={backHome}
+        rightIcons={rightIcons}
+      />
 
       <div className="content">
         <div className="content-head">
@@ -341,7 +340,8 @@ const Question = () => {
                 <span>{OPTION_LABELS[currQuestion.correct_answer]}</span>
               </div>
               <div className="stick-box">
-                <div className={isShowAnswerInErrorMode ? 'active' : ''} onClick={handleIsShowAnswerInErrorMode}>{getIcon('eye_slash')}</div>
+                <div className={isShowAnswerInErrorMode ? 'active' : ''}
+                     onClick={handleIsShowAnswerInErrorMode}>{getIcon('eye_slash')}</div>
                 <div className={isCheck ? 'active' : ''} onClick={handleCheck}>{getIcon('check')}</div>
                 <div className={isStick ? 'active' : ''} onClick={handleStick}>{getIcon('thumb_tack')}</div>
               </div>
