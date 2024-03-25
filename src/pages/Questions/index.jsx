@@ -1,26 +1,25 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
-import './Question.css'
-import {getIcon} from "../../styles/icons";
+import './index.css'
 import {
   CLICK_SOUND,
   CORRECT_SOUND,
   DEFAULT_VERSION,
-  ERROR_COLOR,
   loadFromLocalStorage,
   NEW_VERSION,
   NORMAL_SOUND,
-  OPTION_LABELS,
   playSound,
   questionsCN,
   questionsEN,
   saveToLocalStorage,
-  THEME_COLOR,
   updateDataIfNewVersion,
   WRONG_SOUND
 } from '../../common/common';
-import PageHeader from "../../components/Header/PageHeader";
 import QuestionFooter from "./QuestionFooter";
+import QuestionContent from "./QuestionContent";
+import QuestionExplain from "./QuestionExplain";
+import QuestionInfo from "./QuestionInfo";
+import QuestionHeader from "./QuestionHeader";
 
 const initializeQuestions = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
@@ -113,10 +112,6 @@ const Question = () => {
     setIsError(userAnswer ? userAnswer.userAnswer !== correctAnswer : false);
     // eslint-disable-next-line
   }, [index, currQuestionIndex]);
-
-  const getOptionLabel = (idx) => {
-    return OPTION_LABELS[idx] + ": "
-  }
 
   const updateUserAnswers = (newValue, isFavoriteUpdate = false) => {
     const questionId = currQuestion.id;
@@ -247,96 +242,41 @@ const Question = () => {
     // eslint-disable-next-line
   }, [index, currQuestionIndex]);
 
-  const answerStyle = {
-    border: `1px solid ${isError ? ERROR_COLOR : THEME_COLOR}`,
-    color: isError ? ERROR_COLOR : THEME_COLOR
-  }
-
-  const chosenOptionStyle = {
-    border: `1px solid ${THEME_COLOR}`,
-    color: THEME_COLOR
-  }
-
-  const backHome = () => {
-    navigate('/');
-  }
-
-  const rightIcons = [
-    {
-      name: 'language',
-      action: toggleLanguage,
-      active: isCN,
-    }, {
-      name: 'fav',
-      inactiveName: "fav_reg",
-      action: toggleFavourite,
-      active: isFavourite,
-    }
-  ]
-
   return (
     <div className="question">
-      <PageHeader
-        pageTitle={isCN ? "问题" : "Question"}
-        handleBack={backHome}
-        rightIcons={rightIcons}
+      <QuestionHeader
+        isCN={isCN}
+        toggleLanguage={toggleLanguage}
+        toggleFavourite={toggleFavourite}
+        isFavourite={isFavourite}
       />
 
       <div className="content">
-        <div className="content-head">
-          <div className="question-type" style={{color: THEME_COLOR}}>
-            <span>{currQuestion.section}</span>
-          </div>
-          <div className="question-num">
-            <span className="question-index" style={{color: THEME_COLOR}}>
-              {currQuestionIndex + 1}
-            </span>
-            /
-            <span className="question-num-item">
-              {displayedQuestions.length}
-            </span>
-          </div>
-        </div>
+        <QuestionInfo
+          currQuestion={currQuestion}
+          currQuestionIndex={currQuestionIndex}
+          displayedQuestions={displayedQuestions}
+        />
 
         <div className="content-container">
-          <div className="question-text">
-            Q: {currQuestion.question}
+          <QuestionContent
+            currQuestion={currQuestion}
+            chosenAnswerIndex={chosenAnswerIndex}
+            handleOptionClick={handleOptionClick}
+          />
 
-            {currQuestion.question_img_url ?
-              <p className="question-img"><img src={currQuestion.question_img_url} alt=""/></p> : <></>}
-          </div>
-
-          <div className="options">
-            {currQuestion.options?.map((option, idx) => (
-              <div className={`btn c-button ${chosenAnswerIndex === idx ? " active" : ""}`}
-                   key={option + idx}
-                   style={chosenAnswerIndex === idx ? chosenOptionStyle : {}}
-                   onClick={() => handleOptionClick(idx)}
-              >
-                <span>{getOptionLabel(idx)}</span>
-                <span>{option}</span>
-              </div>
-            ))}
-          </div>
-
-          {isShowAnswer ? (<div className="answer" style={answerStyle}>
-            <div className="answer-content">
-              <div className="answer-text">
-                <span>{isCN ? "正确答案：" : "Answer: "}</span>
-                <span>{OPTION_LABELS[currQuestion.correct_answer]}</span>
-              </div>
-              <div className="stick-box">
-                <div className={isShowAnswerInErrorMode ? 'active' : ''}
-                     onClick={handleIsShowAnswerInErrorMode}>{getIcon('eye_slash')}</div>
-                <div className={isCheck ? 'active' : ''} onClick={handleCheck}>{getIcon('check')}</div>
-                <div className={isStick ? 'active' : ''} onClick={handleStick}>{getIcon('thumb_tack')}</div>
-              </div>
-            </div>
-
-            <div className="explanation">
-              {currQuestion.explanation}
-            </div>
-          </div>) : ""}
+          <QuestionExplain
+            isCN={isCN}
+            currQuestion={currQuestion}
+            isShowAnswer={isShowAnswer}
+            isCheck={isCheck}
+            handleCheck={handleCheck}
+            isStick={isStick}
+            isError={isError}
+            handleStick={handleStick}
+            isShowAnswerInErrorMode={isShowAnswerInErrorMode}
+            handleIsShowAnswerInErrorMode={handleIsShowAnswerInErrorMode}
+          />
         </div>
       </div>
 

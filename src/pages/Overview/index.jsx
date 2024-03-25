@@ -51,7 +51,7 @@ const getQuestionTypes = (questions) => {
   return Object.values(res);
 };
 
-const Index = () => {
+const Overview = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
   const [isShowWrong, setShowWrong] = useState(false);
@@ -134,4 +134,4 @@ const Index = () => {
   )
 }
 
-export default Index;
+export default Overview;
