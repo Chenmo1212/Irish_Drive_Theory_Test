@@ -20,6 +20,7 @@ import {
   WRONG_SOUND
 } from '../../common/common';
 import PageHeader from "../../components/Header/PageHeader";
+import QuestionFooter from "./QuestionFooter";
 
 const initializeQuestions = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
@@ -112,11 +113,6 @@ const Question = () => {
     setIsError(userAnswer ? userAnswer.userAnswer !== correctAnswer : false);
     // eslint-disable-next-line
   }, [index, currQuestionIndex]);
-
-  const toOverview = () => {
-    navigate('/overview');
-    playSound(CLICK_SOUND);
-  }
 
   const getOptionLabel = (idx) => {
     return OPTION_LABELS[idx] + ": "
@@ -265,16 +261,6 @@ const Question = () => {
     navigate('/');
   }
 
-  const isFirstQuestion = () => {
-    let filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
-    return filteredIndex === 0;
-  }
-
-  const isLastQuestion = () => {
-    let filteredIndex = filteredQuestions.findIndex(q => q.index === (currQuestionIndex + 1));
-    return filteredIndex === filteredQuestions.length - 1;
-  }
-
   const rightIcons = [
     {
       name: 'language',
@@ -354,32 +340,15 @@ const Question = () => {
         </div>
       </div>
 
-      <div className="question-footer">
-        <div className="menu-card" style={{color: THEME_COLOR}}>
-          <div className="menu-item all-question" onClick={toOverview}>
-            {getIcon('fa_th')}
-          </div>
-          <div className="menu-item show-answer" onClick={toggleShowAnswer}>
-            {getIcon(isShowAnswer ? 'eye_slash' : 'eye')}
-          </div>
-          <div className={`menu-item pre-question ${isFirstQuestion() ? 'disable' : ''}`}
-               onClick={() => {
-                 if (!isFirstQuestion()) changeQuestion(-1)
-               }}>
-            {getIcon('arrow_left')}
-          </div>
-          <div
-            className={`menu-item next-question ${isLastQuestion() ? 'disable' : ''}`}
-            onClick={() => {
-              if (!isLastQuestion()) changeQuestion(1)
-            }}>
-            {getIcon('arrow_right')}
-          </div>
-        </div>
-      </div>
+      <QuestionFooter
+        toggleShowAnswer={toggleShowAnswer}
+        changeQuestion={changeQuestion}
+        isShowAnswer={isShowAnswer}
+        filteredQuestions={filteredQuestions}
+        currQuestionIndex={currQuestionIndex}
+      />
     </div>
-  )
-    ;
+  );
 };
 
 
