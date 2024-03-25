@@ -54,7 +54,7 @@ function BeforeExam() {
             <div className="content-hd">考前须知</div>
             <div className="content-bd">
               <p>
-                1. 试题来源：模拟考试中的题目均从现有题库中随机抽取，题目总数为 <strong>40</strong>道，您需要答对35道以上才能通过考试。
+                1. 试题来源：模拟考试中的题目均从现有题库中随机抽取，题目总数为 <strong>40</strong> 道，您需要答对35道以上才能通过考试。
               </p>
               <p>
                 2. 题型分布：模拟考试的数量分布为：<strong>2:8:7:22:1</strong>。<br/>
