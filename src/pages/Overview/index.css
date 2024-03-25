@@ -2,6 +2,21 @@
   background-color: #f4f6f8;
 }
 
+.overview .page-header .icon.wrong,
+.overview .page-header .icon.fav {
+  color: #c9c9c9;
+}
+
+.overview .page-header .icon.wrong.active,
+.overview .page-header .icon.fav.active {
+  color: #ffbf73;
+}
+
+.overview .page-header .icon.clear,
+.overview .page-header .icon.trash {
+  color: #f56c6c;
+}
+
 .overview .page-body {
   height: calc(95vh - 20px);
   padding: 0 20px;

@@ -62,7 +62,7 @@ const Home = () => {
         </div>
         <div className="title">{isCN ? "爱尔兰驾照理论测试题" : "Irish Theory Test"}</div>
         <div className="question_type">
-          <span> {isCN ? "题目总数:" : "Question Amount:"} <span
+          <span> {isCN ? "题目总数:" : "Index Amount:"} <span
             className="text-blue">{allQuestions.length}</span></span>
         </div>
         <div className="progress">

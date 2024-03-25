@@ -1,18 +1,18 @@
 import React from 'react';
-import {
-  OPTION_LABELS,
-  THEME_COLOR,
-} from '../../common/common';
+import {CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, THEME_COLOR,} from '../../common/common';
 
 const QuestionContent = ({
+                           isExplain,
+                           isAnswerError,
                            currQuestion,
                            chosenAnswerIndex,
                            handleOptionClick
                          }) => {
 
+  const color = isExplain ? (isAnswerError ? ERROR_COLOR : CORRECT_COLOR) : THEME_COLOR;
   const chosenOptionStyle = {
-    border: `1px solid ${THEME_COLOR}`,
-    color: THEME_COLOR
+    border: `1px solid ${color}`,
+    color: color
   }
 
   const getOptionLabel = (idx) => {

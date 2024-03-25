@@ -5,6 +5,7 @@ import {QUESTIONS_CN} from "../data/questions_data_CN";
 export const NEW_VERSION = "1.3.7.240320";
 export const DEFAULT_VERSION = "1.0.0.240202";
 export const THEME_COLOR = "rgb(83, 109, 254)";
+export const CORRECT_COLOR = "rgb(103, 194, 58)";
 export const ERROR_COLOR = "rgb(245, 108, 108)";
 export const OPTION_LABELS = ['A', "B", "C", "D"];
 
