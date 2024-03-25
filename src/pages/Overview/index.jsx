@@ -1,16 +1,12 @@
 import React, {useEffect, useState} from "react"
 import {
-  DELETE_SOUND,
-  ERROR_COLOR,
   loadFromLocalStorage,
-  playSound,
   questionsEN,
-  saveToLocalStorage,
-  THEME_COLOR
+  saveToLocalStorage
 } from '../../common/common';
-import {getIcon} from "../../styles/icons";
-import "./Overview.css"
-import {useNavigate} from "react-router-dom";
+import "./index.css"
+import QuestionsSection from "./QuestionsSection";
+import HeaderSection from "./HeaderSection";
 
 const initializeLocalStorage = () => {
   const questions = questionsEN;
@@ -54,6 +50,7 @@ const getQuestionTypes = (questions) => {
   }, {});
   return Object.values(res);
 };
+
 const Overview = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
@@ -62,7 +59,6 @@ const Overview = () => {
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [questionTypes, setQuestionTypes] = useState([]);
   const [isCN, setIsCN] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const {isCN, questions, userAnswers, questionsConfig} = initializeLocalStorage();
@@ -81,54 +77,6 @@ const Overview = () => {
     if (allQuestions.length) updateQuestionConfig();
     // eslint-disable-next-line
   }, [isShowWrong, isShowFavorite, allQuestions]);
-
-  const getStyle = (question) => {
-    if (!filteredQuestions.length) return {};
-
-    const {id, correct_answer} = question;
-    const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
-
-    const isAnswered = userAnswerObj && userAnswerObj.userAnswer !== -1;
-    const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
-
-    return {
-      background: isAnswered ? (isError ? ERROR_COLOR : THEME_COLOR) : "",
-      color: isAnswered ? '#fff' : '#000'
-    };
-  };
-
-  const getFavStatus = (question) => {
-    if (!filteredQuestions.length) return {};
-
-    const {id} = question;
-    const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
-    return userAnswerObj && userAnswerObj.isFavorite;
-  }
-  const backDetail = () => {
-    navigate(-1);
-  }
-
-  const toDetail = (idx) => {
-    navigate(`/question/${idx}`);
-  }
-
-  const clearLocalAnswers = () => {
-    localStorage.removeItem("allAnswers");
-    alert("All your answers have been cleared!");
-    window.location.reload();
-    playSound(DELETE_SOUND);
-  }
-
-  const clearLocalStorage = () => {
-    localStorage.removeItem("isAnswerStick");
-    localStorage.removeItem("isAnswerCheck");
-    localStorage.removeItem("currQuestionIdx");
-    localStorage.removeItem("userAnswers");
-    localStorage.removeItem("allQuestions");
-    alert("All data have been cleared!");
-    window.location.reload();
-    playSound(DELETE_SOUND);
-  }
 
   const updateQuestionConfig = () => {
     const filteredQuestions = getFilteredQuestions();
@@ -168,55 +116,20 @@ const Overview = () => {
 
   return (
     <div className="overview">
-      <div className="header">
-        <div className="return">
-          <div className="circle" style={{color: THEME_COLOR}} onClick={backDetail}>
-            {getIcon('arrow_left')}
-          </div>
-          <div className="page-title">
-            {isCN ? "总览" : "Overview"}
-          </div>
-        </div>
+      <HeaderSection
+        isShowWrong={isShowWrong}
+        setShowWrong={setShowWrong}
+        isShowFavorite={isShowFavorite}
+        setShowFavorite={setShowFavorite}
+        isCN={isCN}
+      />
 
-        <div className={`wrong icon ${isShowWrong ? 'active' : ''}`} onClick={() => setShowWrong(!isShowWrong)}>
-          {getIcon('wrong')}
-        </div>
-        <div className={`favorite icon ${isShowFavorite ? 'active' : ''}`}
-             onClick={() => setShowFavorite(!isShowFavorite)}>
-          {getIcon('fav')}
-        </div>
-        <div className="clear icon" onClick={clearLocalAnswers}>
-          {getIcon('clear')}
-        </div>
-        <div className="trash icon" onClick={clearLocalStorage}>
-          {getIcon('trash')}
-        </div>
-      </div>
-
-      <div className="container">
-        {questionTypes.map((section, sectionIdx,) => (
-            <div className="section" key={sectionIdx}>
-              <div className="title" style={{color: THEME_COLOR}}>
-                <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
-              </div>
-              <div className="content">
-                {section.questions.map(question => (
-                  <div className="circle-box" key={question.id}>
-                    <div className={`circle active`}
-                         style={getStyle(question)}
-                         onClick={() => toDetail(question.index)}
-                    >
-                      {question.index}
-                      {getFavStatus(question) &&
-                        <div className='svg-box'>{getIcon('fav_fill')}</div>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )
-        )}
-      </div>
+      <QuestionsSection
+        questionTypes={questionTypes}
+        filteredQuestions={filteredQuestions}
+        userAnswers={userAnswers}
+        isCN={isCN}
+      />
     </div>
   )
 }

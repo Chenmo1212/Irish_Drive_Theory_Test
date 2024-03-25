@@ -1,0 +1,80 @@
+.overview {
+  background-color: #f4f6f8;
+}
+
+.overview .page-body {
+  height: calc(95vh - 20px);
+  padding: 0 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.overview .page-body .section {
+  margin-top: 5%;
+}
+
+.overview .page-body .title {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
+  margin-bottom: 5%;
+}
+
+.overview .page-body .content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.overview .page-body .content .circle-box {
+  width: 20%;
+  margin: 2% 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview .page-body .content .circle-box .circle {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: inset 3px 3px 10px #eaecee, inset -3px -3px 10px #feffff;
+}
+
+.overview .page-body .content .circle-box .active {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
+}
+
+.overview .page-body .content .circle-box .svg-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #f0a732;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview .page-body .content .circle-box .svg-box svg {
+  font-size: 9px;
+  color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .overview {
+    height: 100vh;
+  }
+}

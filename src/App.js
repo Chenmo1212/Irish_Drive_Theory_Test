@@ -1,8 +1,8 @@
 import './App.css';
 import {HashRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from "./pages/Home/Home";
-import Question from "./pages/Questions/Question";
-import Overview from "./pages/Overview/Overview";
+import Question from "./pages/Questions";
+import Overview from "./pages/Overview";
 
 function App() {
   return (
