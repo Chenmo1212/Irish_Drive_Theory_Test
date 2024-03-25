@@ -1,18 +1,16 @@
 import React, {useEffect, useState} from "react"
 import {
   DELETE_SOUND,
-  ERROR_COLOR,
   loadFromLocalStorage,
   playSound,
   questionsEN,
   removeFromLocalStorage,
-  saveToLocalStorage,
-  THEME_COLOR
+  saveToLocalStorage
 } from '../../common/common';
-import {getIcon} from "../../styles/icons";
 import "./Overview.css"
 import {useNavigate} from "react-router-dom";
 import PageHeader from "../../components/Header/PageHeader";
+import QuestionsSection from "./QuestionsSection";
 
 const initializeLocalStorage = () => {
   const questions = questionsEN;
@@ -85,34 +83,8 @@ const Overview = () => {
     // eslint-disable-next-line
   }, [isShowWrong, isShowFavorite, allQuestions]);
 
-  const getStyle = (question) => {
-    if (!filteredQuestions.length) return {};
-
-    const {id, correct_answer} = question;
-    const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
-
-    const isAnswered = userAnswerObj && userAnswerObj.userAnswer !== -1;
-    const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
-
-    return {
-      background: isAnswered ? (isError ? ERROR_COLOR : THEME_COLOR) : "",
-      color: isAnswered ? '#fff' : '#000'
-    };
-  };
-
-  const getFavStatus = (question) => {
-    if (!filteredQuestions.length) return {};
-
-    const {id} = question;
-    const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
-    return userAnswerObj && userAnswerObj.isFavorite;
-  }
   const backDetail = () => {
     navigate(-1);
-  }
-
-  const toDetail = (idx) => {
-    navigate(`/question/${idx}`);
   }
 
   const clearLocalAnswers = () => {
@@ -192,30 +164,12 @@ const Overview = () => {
         rightIcons={rightIcons}
       />
 
-      <div className="container">
-        {questionTypes.map((section, sectionIdx,) => (
-            <div className="section" key={sectionIdx}>
-              <div className="title" style={{color: THEME_COLOR}}>
-                <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
-              </div>
-              <div className="content">
-                {section.questions.map(question => (
-                  <div className="circle-box" key={question.id}>
-                    <div className={`circle active`}
-                         style={getStyle(question)}
-                         onClick={() => toDetail(question.index)}
-                    >
-                      {question.index}
-                      {getFavStatus(question) &&
-                        <div className='svg-box'>{getIcon('fav')}</div>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )
-        )}
-      </div>
+      <QuestionsSection
+        questionTypes={questionTypes}
+        filteredQuestions={filteredQuestions}
+        userAnswers={userAnswers}
+        isCN={isCN}
+      />
     </div>
   )
 }
