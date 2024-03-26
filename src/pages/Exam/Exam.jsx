@@ -125,7 +125,23 @@ function Exam() {
   }
 
   const handleSubmit = () => {
+    const exam = loadExamFromLocalStorage();
+    saveExamToLocalStorage({
+      ...exam,
+      score: calcScore()
+    })
+    navigate('/afterExam')
+  }
 
+  const calcScore = () => {
+    let score = 0;
+    answers.forEach(answer => {
+      const question = questions.find(q => q.id === answer.questionId);
+      if (question && question.correct_answer === answer.userAnswer) {
+        score += 1;
+      }
+    });
+    return score;
   }
 
   return (

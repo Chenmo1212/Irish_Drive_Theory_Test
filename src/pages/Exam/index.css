@@ -133,3 +133,15 @@
 .exam.overview .circle-box .active {
   background: rgb(83, 109, 254)!important;
 }
+
+.after-exam .result {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 100px auto;
+  border: 2px solid rgb(83, 109, 254);
+}
