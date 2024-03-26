@@ -26,11 +26,16 @@ function Exam() {
   const index = searchParams.get("i") || "0";
 
   useEffect(() => {
+    const newIndex = parseInt(index);
+    if (newIndex <= 0 || newIndex >= 40) {
+      navigate(`/exam?i=${newIndex <= 0 ? 1 : 40}`);
+    }
+  }, [index])
+
+  useEffect(() => {
     const exam = loadExamFromLocalStorage();
     const {questions, answers, currIdx} = exam;
     const idx = getQuestionIdx(questions, currIdx);
-    if (parseInt(index) <= 0) navigate('/exam?i=1');
-    if (parseInt(index) >= 40) navigate('/exam?i=40');
 
     setQuestions(questions);
     setCurrQuestionIndex(idx);
@@ -38,7 +43,8 @@ function Exam() {
 
     const {id} = questions[idx];
     const answer = answers.find(e => e.questionId === id);
-    setChosenAnswerIdx(answer?.userAnswer || -1);
+    const chosenAnswerIdx = answer ? (answer.userAnswer !== -1 ? answer.userAnswer : -1) : -1;
+    setChosenAnswerIdx(chosenAnswerIdx);
     setAnswers(answers);
   }, [index, currQuestionIndex]);
 
