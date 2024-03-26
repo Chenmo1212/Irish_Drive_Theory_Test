@@ -125,11 +125,6 @@
   align-items: center;
 }
 
-.exam .exam-header .submit.disable {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
 .exam.overview .circle-box .active {
   background: rgb(83, 109, 254)!important;
 }

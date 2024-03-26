@@ -146,7 +146,7 @@ function Exam() {
 
   return (
     <div className='exam mock'>
-      <ExamHeader answers={answers} handleSubmit={handleSubmit}/>
+      <ExamHeader handleSubmit={handleSubmit}/>
       <div className="main question">
         <div className="content">
           <QuestionInfo
