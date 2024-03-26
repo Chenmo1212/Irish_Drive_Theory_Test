@@ -5,6 +5,7 @@ import Question from "./pages/Questions";
 import Overview from "./pages/Overview";
 import BeforeExam from "./pages/Exam/BeforeExam";
 import Exam from "./pages/Exam/Exam";
+import ExamOverview from "./pages/Exam/ExamOverview";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/overview" element={<Overview/>}/>
             <Route path="/beforeExam" element={<BeforeExam/>}/>
             <Route path="/exam" element={<Exam/>}/>
+            <Route path="/examOverview" element={<ExamOverview/>}/>
           </Routes>
         </main>
       </div>

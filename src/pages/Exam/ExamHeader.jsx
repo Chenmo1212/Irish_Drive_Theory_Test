@@ -2,18 +2,23 @@ import React from 'react';
 import Timer from "../../components/Timer/Timer";
 import {THEME_COLOR} from "../../common/common";
 
-const ExamHeader = ({totalSeconds}) => {
+const ExamHeader = ({answers, handleSubmit}) => {
+  const isDisabled = answers.length !== 40;
+
   const submitBtnStyle = {
-    background: THEME_COLOR,
+    background: isDisabled ? '#ccd1d2' : THEME_COLOR,
     color: '#fff'
   }
 
   return (
     <div className="exam-header header">
       <div className="timer">
-        <Timer totalSeconds={totalSeconds}/>
+        <Timer/>
       </div>
-      <div className="submit rect-round-button" style={submitBtnStyle}>
+      <div className={`submit rect-round-button ${isDisabled ? 'disable' : ''}`}
+           style={submitBtnStyle}
+           onClick={() => isDisabled ? null : handleSubmit()}
+      >
         Submit
       </div>
     </div>

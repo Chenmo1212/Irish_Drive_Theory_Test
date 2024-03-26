@@ -1,16 +1,19 @@
 import React from 'react';
 import {getIcon} from "../../styles/icons";
 import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
-import {useNavigate} from "react-router-dom";
 
-const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN}) => {
-  const navigate = useNavigate();
+const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN, handleDetailPage}) => {
   const getFavStatus = (question) => {
     if (!filteredQuestions.length) return {};
 
     const {id} = question;
     const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
     return userAnswerObj && userAnswerObj.isFavorite;
+  }
+
+  const getIsAnswered = (id) => {
+    const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
+    return userAnswerObj && userAnswerObj.userAnswer !== -1;
   }
 
   const getStyle = (question) => {
@@ -28,23 +31,22 @@ const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN})
     };
   };
 
-
   const toDetail = (idx) => {
     const index = filteredQuestions.findIndex(q => q.index === idx);
-    navigate(`/question?i=${index + 1}`);
+    handleDetailPage(index + 1);
   }
 
   return (
     <div className="page-body">
       {questionTypes.map((section, sectionIdx) => (
         <div className="section" key={sectionIdx}>
-          <div className="title" style={{color: THEME_COLOR}}>
+          {section.sectionName && <div className="title" style={{color: THEME_COLOR}}>
             <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
-          </div>
+          </div>}
           <div className="content">
             {section.questions.map(question => (
               <div className="circle-box" key={question.id}>
-                <div className={`circle active`}
+                <div className={`circle ${getIsAnswered(question.id) ? 'active' : ''}`}
                      style={getStyle(question)}
                      onClick={() => toDetail(question.index)}
                 >

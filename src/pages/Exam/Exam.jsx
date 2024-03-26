@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {
   CLICK_SOUND,
   loadExamFromLocalStorage,
-  // loadFromLocalStorage,
   NORMAL_SOUND,
   playSound,
   saveExamToLocalStorage
@@ -14,29 +13,19 @@ import QuestionInfo from "../../components/BasicQuestion/QuestionInfo";
 import QuestionContent from "../../components/BasicQuestion/QuestionContent";
 import ExamFooter from "./ExamFooter";
 
-const initializeLocalStorage = () => {
-  // const isCN = loadFromLocalStorage('isCN', false);
-  const exam = loadExamFromLocalStorage()
-
-  return {
-    exam
-  };
-};
-
-
 function Exam() {
-  // const [isCN, setIsCN] = useState(false);
   const [questions, setQuestions] = useState([]);
   const [currQuestion, setCurrQuestion] = useState({});
   const [currQuestionIndex, setCurrQuestionIndex] = useState({});
   const [answers, setAnswers] = useState([]);
+  const [chosenAnswerIdx, setChosenAnswerIdx]= useState(-1);
 
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const index = searchParams.get("i") || "0";
 
   useEffect(() => {
-    const {exam} = initializeLocalStorage();
+    const exam = loadExamFromLocalStorage();
     const {questions, answers, currIdx} = exam;
     const idx = getQuestionIdx(questions, currIdx);
     if (parseInt(index) <= 0) navigate('/exam?i=1');
@@ -45,8 +34,53 @@ function Exam() {
     setQuestions(questions);
     setCurrQuestionIndex(idx);
     setCurrQuestion(questions[idx]);
+
+    const {id} = questions[idx];
+    const answer = answers.find(e=>e.questionId === id);
+    setChosenAnswerIdx(answer?.userAnswer || -1);
     setAnswers(answers);
-    // setIsCN(isCN);
+  }, [index, currQuestionIndex]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      switch (event.key) {
+        case '1':
+        case 'A':
+        case 'a':
+          handleOptionClick(0);
+          break;
+        case '2':
+        case 'B':
+        case 'b':
+          handleOptionClick(1);
+          break;
+        case '3':
+        case 'C':
+        case 'c':
+          handleOptionClick(2);
+          break;
+        case '4':
+        case 'D':
+        case 'd':
+          handleOptionClick(3);
+          break;
+        case 'ArrowLeft':
+          changeQuestion(-1);
+          break;
+        case 'ArrowRight':
+          changeQuestion(1);
+          break;
+        default:
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+    // eslint-disable-next-line
   }, [index, currQuestionIndex]);
 
   const getQuestionIdx = (questions, storedIdx) => {
@@ -58,9 +92,20 @@ function Exam() {
   }
 
   const handleOptionClick = (idx) => {
+    const {id} = currQuestion;
+    const answerIndex = answers.findIndex(answer => answer.questionId === id);
     let newAnswers = [...answers];
-    newAnswers[currQuestionIndex] = idx;
+
+    if (answerIndex > -1) {
+      newAnswers[answerIndex].userAnswer = idx;
+    } else {
+      newAnswers.push({
+        questionId: id,
+        userAnswer: idx
+      });
+    }
     setAnswers(newAnswers);
+    setChosenAnswerIdx(idx);
 
     const exam = loadExamFromLocalStorage();
     saveExamToLocalStorage({
@@ -79,9 +124,13 @@ function Exam() {
     playSound(CLICK_SOUND);
   }
 
+  const handleSubmit = () => {
+
+  }
+
   return (
     <div className='exam mock'>
-      <ExamHeader/>
+      <ExamHeader answers={answers} handleSubmit={handleSubmit}/>
       <div className="main question">
         <div className="content">
           <QuestionInfo
@@ -93,7 +142,7 @@ function Exam() {
           <div className="content-container">
             <QuestionContent
               currQuestion={currQuestion}
-              chosenAnswerIndex={answers[currQuestionIndex]}
+              chosenAnswerIndex={chosenAnswerIdx}
               handleOptionClick={handleOptionClick}
             />
           </div>

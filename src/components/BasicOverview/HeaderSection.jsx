@@ -1,9 +1,9 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
-import PageHeader from "../../components/Header/PageHeader";
+import PageHeader from "../Header/PageHeader";
 import {DELETE_SOUND, playSound, removeFromLocalStorage} from "../../common/common";
 
-const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavorite, isCN}) => {
+const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavorite, isCN, isShowRight=true}) => {
   const navigate = useNavigate();
 
   const backDetail = () => {
@@ -47,7 +47,7 @@ const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavori
     <PageHeader
       pageTitle={isCN ? '答题概览' : 'Overview'}
       handleBack={backDetail}
-      rightIcons={rightIcons}
+      rightIcons={isShowRight ? rightIcons : []}
     />
   );
 }

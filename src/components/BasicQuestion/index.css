@@ -109,7 +109,7 @@
 
 .question .question-footer {
   position: fixed;
-  bottom: 80px;
+  bottom: 0;
 }
 
 .question .question-footer .menu-card {
