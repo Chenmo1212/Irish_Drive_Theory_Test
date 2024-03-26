@@ -1,6 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {getIcon} from "../../styles/icons";
-import {loadFromLocalStorage, questionsEN, saveNewExamToLocalStorage} from "../../common/common";
+import {
+  loadFromLocalStorage,
+  questionsEN,
+  resetTimer,
+  saveNewExamToLocalStorage
+} from "../../common/common";
 import "./index.css"
 import ExamCover from '../../assets/svg/exam.svg'
 import {useNavigate} from "react-router-dom";
@@ -71,6 +76,7 @@ function BeforeExam() {
     saveNewExamToLocalStorage({
       questions: mockExamQuestions,
     });
+    resetTimer();
     navigate('/exam?i=1');
   };
 

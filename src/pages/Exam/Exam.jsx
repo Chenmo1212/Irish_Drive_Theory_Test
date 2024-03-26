@@ -4,7 +4,8 @@ import {
   loadExamFromLocalStorage,
   NORMAL_SOUND,
   playSound,
-  saveExamToLocalStorage
+  saveExamToLocalStorage,
+  stopTimer
 } from "../../common/common";
 import "./index.css"
 import {useNavigate, useSearchParams} from "react-router-dom";
@@ -18,7 +19,7 @@ function Exam() {
   const [currQuestion, setCurrQuestion] = useState({});
   const [currQuestionIndex, setCurrQuestionIndex] = useState({});
   const [answers, setAnswers] = useState([]);
-  const [chosenAnswerIdx, setChosenAnswerIdx]= useState(-1);
+  const [chosenAnswerIdx, setChosenAnswerIdx] = useState(-1);
 
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -36,7 +37,7 @@ function Exam() {
     setCurrQuestion(questions[idx]);
 
     const {id} = questions[idx];
-    const answer = answers.find(e=>e.questionId === id);
+    const answer = answers.find(e => e.questionId === id);
     setChosenAnswerIdx(answer?.userAnswer || -1);
     setAnswers(answers);
   }, [index, currQuestionIndex]);
@@ -130,7 +131,8 @@ function Exam() {
       ...exam,
       score: calcScore()
     })
-    navigate('/afterExam')
+    stopTimer();
+    navigate('/afterExam');
   }
 
   const calcScore = () => {

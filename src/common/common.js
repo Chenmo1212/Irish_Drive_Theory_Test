@@ -134,3 +134,13 @@ export const saveExamToLocalStorage = (exam) => {
 export const loadExamFromLocalStorage = () => {
   return loadFromLocalStorage('examResults', {});
 }
+
+export const resetTimer = () => {
+  saveToLocalStorage('secondsLeft', 40 * 60);
+  saveToLocalStorage('timerActive', true);
+}
+
+export const stopTimer = () => {
+  saveToLocalStorage('secondsLeft', 40 * 60);
+  saveToLocalStorage('timerActive', false);
+}
