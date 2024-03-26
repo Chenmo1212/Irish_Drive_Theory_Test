@@ -10706,7 +10706,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 0,
     "explanation": "Explanation: Many vehicles are fitted with various warning lights and gauges. A red zone or a warning light on a fuel gauge means the vehicle is low in fuel and should be refuelled as soon as possible.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 765
   },
   {
@@ -10720,7 +10720,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 0,
     "explanation": "Explanation: The speed rating of a tyre is the maximum speed for which the tyre is designed. This relates to the speed capability of the tyre. It does not relate to the speed at which the tyre should or could legally be driven.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 766
   },
   {
@@ -10734,7 +10734,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 1,
     "explanation": "Explanation: Use the hazard warning lights to warn other road users of a danger ahead. For example, if you have to slow down sharply because of a build-up of traffic ahead, you can use the hazard warning lights to warn following vehicles that they need to slow down.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 767
   },
   {
@@ -10748,7 +10748,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 0,
     "explanation": "Explanation: The fuel system can become air-locked if you let the fuel get too low or if there is a leak in the system. You should have the problem corrected before driving. The solution may be as simple as bleeding the fuel system to release the air.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 768
   },
   {
@@ -10762,7 +10762,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 3,
     "explanation": "Explanation: In general, you should fit the same type of tyres all round the vehicle. However if you need to fit a mix of cross-ply and radials, the tyres on any axle should be of the same type.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 769
   },
   {
@@ -10776,7 +10776,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 1,
     "explanation": "Explanation: A rapid clicking noise when you turn on an indicator is usually a sign that one of the indicator bulbs has failed. Drivers are responsible for making sure that their vehicle is roadworthy. This should include a regular check that all lights, reflectors and indicators, are working properly.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 770
   },
   {
@@ -10790,7 +10790,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 0,
     "explanation": "Explanation: Anti-lock braking system (ABS) is a type of braking system found in most modern cars. It comes into play automatically when the driver brakes harshly. In the wet it can help prevent the wheels from skidding so that, if necessary, the driver can continue to steer while braking. Be aware that ABS does not reduce the braking distance.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 771
   },
   {
@@ -10804,7 +10804,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 1,
     "explanation": "Explanation: When driving an automatic vehicle, it may not slow at the same rate as a vehicle with a manual gearbox when the driver releases the accelerator. Drivers should be aware of this, as they may need to apply the brake earlier in order to stop where required.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 772
   },
   {
@@ -10818,7 +10818,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 0,
     "explanation": "Explanation: When driving an automatic vehicle, it may not slow at the same rate as a vehicle with a manual gearbox when the driver releases the accelerator. Drivers should be aware of this, as they may need to apply the brake earlier in order to stop where required.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 773
   },
   {
@@ -10832,7 +10832,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: Drivers should check the oil level in their vehicle regularly, and if it is low, top it up. If it needs to be topped up very often, have the vehicle checked by a competent person to see if there is a problem.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 774
   },
   {
@@ -10846,7 +10846,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 0,
     "explanation": "Explanation: Engine oil becomes inefficient over time, losing its viscosity and lubricating qualities, and therefore must be changed as required in accordance with the manufacturer's recommendations. Failure to do so may result in costly and extensive engine damage. The oil change is usually done when the vehicle is being serviced.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 775
   },
   {
@@ -10860,7 +10860,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: Low oil pressure is usually related to low oil level or to a faulty oil pump. Low engine oil level should be topped up in accordance with the manufacturer's recommendations. Failure to do so may result in costly and extensive engine damage.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 776
   },
   {
@@ -10874,7 +10874,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 3,
     "explanation": "Explanation: Oil circulation is essential for the safe running of the vehicles engine. If the warning lights or gauges indicate that the oil or the oil-pressure is low, the driver should stop as soon as they can in safe place, check the oil level, and top up if necessary. Continuing to drive may damage the engine. If the problem is not just related to the oil level, have the vehicle checked by a competent person.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 777
   },
   {
@@ -10888,7 +10888,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: Drivers need a basic knowledge of the regular checks that should be carried out on their vehicle. Checking the engine oil level is important ? do this with the vehicle parked on level ground with the engine switched off and cold for a more accurate reading. Refer to the vehicle handbook for further information and guidance.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 778
   },
   {
@@ -10902,7 +10902,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: The purpose of engine oil is to lubricate and cool the moving parts of the engine. Refer to the vehicle handbook for further information and guidance.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 779
   },
   {
@@ -10916,7 +10916,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: The purpose of coolant is to keep the engine cool during operation. Coolant is usually a mixture of water and anti-freeze ? this ensures that the engine is kept cool and that the coolant does not freeze in very cold weather.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 780
   },
   {
@@ -10930,7 +10930,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 0,
     "explanation": "Explanation: All motor vehicles have a battery to supply power, primarily to start the engine. If the battery is flat, the driver will not be able to start the engine in the normal way. When the engine is running, it produces its own electricity to recharge the battery and run the various electrical components, including lights, heating, the radio and so on. If the battery is completely dead it will have to be replaced.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 781
   },
   {
@@ -10944,7 +10944,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 3,
     "explanation": "Explanation: The primary purpose of the battery is to start the engine. When the engine is running, it produces its own electricity to charge the battery and run the various electrical components, including lights, heating, radio and so on.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 782
   },
   {
@@ -10958,7 +10958,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: It might be difficult to start a car with a weak battery, but once the engine is running, it makes no difference. If the battery fails to charge or maintain its full charge seek advice from a competent person.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 783
   },
   {
@@ -10972,7 +10972,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 1,
     "explanation": "Explanation: A worn shock absorber can seriously affect the control of the vehicle especially on uneven surfaces or when cornering and can cause unnecessary wear and tear on tyres. It may increase stopping distance by not keeping the tyres in proper contact with the road under harsh braking.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 784
   },
   {
@@ -10986,7 +10986,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 1,
     "explanation": "Explanation: When fitting a new tubeless tyre to a vehicle it is recommended to change the valve. This is because the old valve has been on the wheel since the old tyre was fitted. The old valve may break down, leak or cause air to escape.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 785
   },
   {
@@ -11000,7 +11000,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: Incorrect tyre pressure adversely affects many of a vehicles systems, including suspension, steering and fuel consumption. In particular, under-inflated tyres can affect the vehicles braking ability and its effectiveness when cornering. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 786
   },
   {
@@ -11014,7 +11014,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 3,
     "explanation": "Explanation: Drivers should check their vehicle's tyre pressures (including the spare) regularly at least once a week. Under-inflated tyres adversely affect many of a vehicle's systems, including braking ability, suspension, steering, fuel consumption and premature tyre wear. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 787
   },
   {
@@ -11028,7 +11028,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: When driving a driver should rest their left foot on the floor or foot rest but not under the pedals. To do so may cause delayed response time in an emergency. Resting the foot on the pedal may result in coasting, which may inadvertently increase the speed of the vehicle, or clutch mechanism damage.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 788
   },
   {
@@ -11042,7 +11042,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 1,
     "explanation": "Explanation: If a driver feels a continuous vibration in the steering, particularly at higher speeds, this could typically indicate that the balance of the vehicle wheels is uneven. This can lead to instability in the handling of the vehicle. If this is the case, have it investigated by a competent person.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 789
   },
   {
@@ -11056,7 +11056,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: After changing a wheel on a vehicle, check the tightness of the wheel nuts or studs on the replacement wheel after driving a short distance to ensure they are securely fitted. If in doubt seek assistance from a competent person.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 790
   },
   {
@@ -11070,7 +11070,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 1,
     "explanation": "Explanation: Under-inflated tyres may adversely affect many of the vehicle's systems, including its braking ability, suspension, steering and fuel consumption. In particular, under-inflated tyres can affect the vehicles braking ability and can result in premature tyre wear. Tyres should always be inflated according to the vehicle manufacturers guidelines, information on which can be found in the vehicle handbook.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 791
   },
   {
@@ -11084,7 +11084,7 @@ export const QUESTIONS_EN = [
     "question_img_url": null,
     "correct_answer": 2,
     "explanation": "Explanation: Brakes must be fitted to a trailer if its gross vehicle weight exceeds either 750 kg or half the weight of the towing vehicle.",
-    "section": "Techincal Matters",
+    "section": "Technical Matters",
     "id": 792
   }
 ]

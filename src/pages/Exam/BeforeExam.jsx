@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {getIcon} from "../../styles/icons";
-import {loadFromLocalStorage} from "../../common/common";
+import {loadFromLocalStorage, questionsEN, saveNewExamToLocalStorage} from "../../common/common";
 import "./index.css"
 import ExamCover from '../../assets/svg/exam.svg'
 import {useNavigate} from "react-router-dom";
@@ -13,6 +13,44 @@ const initializeLocalStorage = () => {
   };
 };
 
+const generateMockExam = (questions, sectionDistribution) => {
+  const questionsBySection = questions.reduce((acc, question) => {
+    const {section} = question;
+    if (!acc[section]) acc[section] = [];
+    acc[section].push(question);
+    return acc;
+  }, {});
+
+  let mockExam = [];
+  Object.keys(sectionDistribution).forEach(section => {
+    const count = sectionDistribution[section];
+    const questionsInSection = questionsBySection[section] || [];
+    const selectedQuestions = questionsInSection.length > count
+      ? selectRandomQuestions(questionsInSection, count)
+      : questionsInSection;
+    mockExam.push(...selectedQuestions);
+  });
+  // Make mockExam randomly
+  mockExam = selectRandomQuestions(mockExam, mockExam.length);
+  return mockExam;
+}
+
+const selectRandomQuestions = (questions, count) => {
+  const shuffled = questions
+    .map(value => ({value, sort: Math.random()}))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({value}) => value);
+
+  return shuffled.slice(0, count);
+}
+
+const sectionDistribution = {
+  "Control of Vehicle": 2,
+  "Legal Matters/Rules of the Road": 8,
+  "Managing Risk": 7,
+  "Safe and Responsible Driving": 22,
+  "Technical Matters": 1,
+};
 
 function BeforeExam() {
   const [isCN, setIsCN] = useState(false);
@@ -29,11 +67,15 @@ function BeforeExam() {
   };
 
   const toExamDetail = () => {
-    navigate('/exam');
+    const mockExamQuestions = generateMockExam(questionsEN, sectionDistribution);
+    saveNewExamToLocalStorage({
+      questions: mockExamQuestions,
+    });
+    navigate('/exam?i=1');
   };
 
   return (
-    <div className='beforeExam mock'>
+    <div className='before-exam mock'>
       <div className="header">
         <div className="return">
           <div className="circle" onClick={backHome}>

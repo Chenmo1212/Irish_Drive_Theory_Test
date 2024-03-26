@@ -157,7 +157,7 @@ const BasicQuestion = ({
   };
 
   return (
-    <div className="question">
+    <div className="question normal">
       <QuestionHeader
         isCN={isCN}
         toggleLanguage={toggleLanguage}

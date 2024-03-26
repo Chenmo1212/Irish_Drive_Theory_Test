@@ -1,5 +1,6 @@
 .mock {
   background-color: #f4f6f8;
+  height: 100vh;
 }
 
 .mock .header {
@@ -55,7 +56,7 @@
   color: rgb(245, 108, 108);
 }
 
-.mock .btn {
+.mock .btn.begin {
   position: relative;
   width: 80%;
   height: 36px;
@@ -72,7 +73,7 @@
   border: none;
 }
 
-.mock .btn:after {
+.mock .btn.begin:after {
   content: "";
   position: absolute;
   left: 0;
@@ -83,32 +84,43 @@
   z-index: 2;
 }
 
-.mock .btn:active {
+.mock .btn.begin:active {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
 }
 
-.mock .btn:active:after {
+.mock .btn.begin:active:after {
   box-shadow: inset 0 -2px 5px white, inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.mock.beforeExam {
+.mock.before-exam {
   width: 100%;
 }
 
-.mock.beforeExam .card-cover img {
+.mock.before-exam .card-cover img {
   width: 60%;
   margin: 20% auto;
   display: block;
 }
 
-.mock.beforeExam .content .content-hd {
+.mock.before-exam .content .content-hd {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   margin: 20px 0;
 }
 
-.mock.beforeExam .content .content-bd {
+.mock.before-exam .content .content-bd {
   margin: 20px 0;
   padding: 0 10%;
+}
+
+.exam .exam-header {
+  padding: 0 20px;
+}
+
+.exam .exam-header .submit {
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
-
-const ExamTimer = () => {
-  const totalSeconds = 40 * 60;
+import React, {useEffect, useState} from 'react';
+const ExamTimer = ({totalSeconds = 40*60}) => {
   const [secondsLeft, setSecondsLeft] = useState(totalSeconds);
-  const [timerActive, setTimerActive] = useState(false);
+  const [timerActive, setTimerActive] = useState(true);
   const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {
@@ -39,12 +37,12 @@ const ExamTimer = () => {
     setTimerActive(!timerActive);
   };
 
-  const resetTimer = () => {
-    setSecondsLeft(totalSeconds);
-    setTimerActive(false);
-    localStorage.setItem('secondsLeft', totalSeconds.toString());
-    localStorage.setItem('timerActive', 'false');
-  };
+  // const resetTimer = () => {
+  //   setSecondsLeft(totalSeconds);
+  //   setTimerActive(false);
+  //   localStorage.setItem('secondsLeft', totalSeconds.toString());
+  //   localStorage.setItem('timerActive', 'false');
+  // };
 
   const formatTime = () => {
     const minutes = Math.floor(secondsLeft / 60);
@@ -54,9 +52,7 @@ const ExamTimer = () => {
 
   return (
     <div>
-      <p>{formatTime()}</p>
-      <button onClick={toggleTimer}>{timerActive ? 'Pause' : 'Resume'}</button>
-      <button onClick={resetTimer}>Reset</button>
+      <span onClick={toggleTimer}>{formatTime()}</span>
     </div>
   );
 };

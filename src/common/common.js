@@ -84,3 +84,26 @@ const updateQuestionIndex = (questions) => questions.map((q, i) => {
 
 export const questionsEN = updateQuestionIndex(QUESTIONS_EN);
 export const questionsCN = updateQuestionIndex(QUESTIONS_CN);
+
+
+// EXAM
+
+export const saveNewExamToLocalStorage = (exam) => {
+  const examData = {
+    createTime: new Date().toISOString(),
+    answers: [],
+    score: 0,
+    currIdx: 0,
+    ...exam
+  }
+  saveExamToLocalStorage(examData);
+}
+
+export const saveExamToLocalStorage = (exam) => {
+  let existingResults = loadFromLocalStorage('examResults', {});
+  saveToLocalStorage('examResults', {...existingResults, ...exam});
+}
+
+export const loadExamFromLocalStorage = () => {
+  return loadFromLocalStorage('examResults', {});
+}
