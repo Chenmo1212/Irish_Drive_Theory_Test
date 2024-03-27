@@ -42,6 +42,7 @@ function Exam() {
     if (newIndex <= 0 || newIndex >= 40) {
       navigate(`/exam?i=${newIndex <= 0 ? 1 : 40}`);
     }
+    // eslint-disable-next-line
   }, [index])
 
   useEffect(() => {
@@ -106,7 +107,7 @@ function Exam() {
   useEffect(() => {
     const {correct_answer} = currQuestion;
     setIsAnswerError(chosenAnswerIdx !== -1 && chosenAnswerIdx !== correct_answer);
-  }, [chosenAnswerIdx])
+  }, [chosenAnswerIdx, currQuestion])
 
   const getQuestionIdx = (questions, storedIdx) => {
     let idx = parseInt(index) - 1;
