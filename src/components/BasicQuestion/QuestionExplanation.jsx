@@ -3,14 +3,15 @@ import {CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, THEME_COLOR} from '../../comm
 import {getIcon} from "../../styles/icons";
 
 const QuestionExplanation = ({
-                               isCN,
                                currQuestion,
-                               isAnswerError,
-                               isExplain,
-                               isCheck,
-                               handleCheck,
-                               isStick,
-                               handleStick,
+                               isCN=false,
+                               isAnswerError=false,
+                               isExplain=false,
+                               isCheck=false,
+                               handleCheck=()=>{},
+                               isStick=false,
+                               handleStick=()=>{},
+                               isEdit = true
                              }) => {
 
   const color = isExplain ? (isAnswerError ? ERROR_COLOR : CORRECT_COLOR) : THEME_COLOR;
@@ -27,10 +28,14 @@ const QuestionExplanation = ({
             <span>{isCN ? "正确答案：" : "Answer: "}</span>
             <span>{OPTION_LABELS[currQuestion.correct_answer]}</span>
           </div>
-          <div className="stick-box">
-            <div className={isCheck ? 'active' : ''} onClick={handleCheck}>{getIcon('check')}</div>
-            <div className={isStick ? 'active' : ''} onClick={handleStick}>{getIcon('thumb_tack')}</div>
-          </div>
+          {
+            isEdit ? (
+              <div className="stick-box">
+                <div className={isCheck ? 'active' : ''} onClick={handleCheck}>{getIcon('check')}</div>
+                <div className={isStick ? 'active' : ''} onClick={handleStick}>{getIcon('thumb_tack')}</div>
+              </div>
+            ) : ""
+          }
         </div>
 
         <div className="explanation">

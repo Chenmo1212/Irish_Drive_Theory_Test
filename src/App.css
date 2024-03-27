@@ -92,6 +92,7 @@
   transition: all 200ms ease-out 0s;
 }
 
+.rect-round-button:active,
 .rect-round-button.active {
   background: linear-gradient(to top, #f4f6f8, #fafcfd);
   box-shadow: inset .4px .4px 1.5px #f4f6f8, inset 1.5px 1.5px 3px #aec5e4, inset -0.8px -0.8px 1.5px white;

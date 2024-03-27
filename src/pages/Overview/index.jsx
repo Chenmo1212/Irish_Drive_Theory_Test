@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from "react"
 import {
+  getQuestionTypes,
   loadFromLocalStorage,
   questionsEN,
   saveToLocalStorage
 } from '../../common/common';
 import "./index.css"
-import QuestionsSection from "./QuestionsSection";
-import HeaderSection from "./HeaderSection";
+import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
+import HeaderSection from "../../components/BasicOverview/HeaderSection";
+import {useNavigate} from "react-router-dom";
 
 const initializeLocalStorage = () => {
   const questions = questionsEN;
@@ -25,32 +27,6 @@ const initializeLocalStorage = () => {
   };
 };
 
-const sectionTranslations = {
-  "Control of Vehicle": "车辆控制",
-  "Legal Matters/Rules of the Road": "法律事务/交通规则",
-  "Managing Risk": "管理风险",
-  "Safe and Responsible Driving": "安全和负责任的驾驶",
-  "Technical Matters": "技术问题",
-};
-
-const getQuestionTypes = (questions) => {
-  const res = questions.reduce((acc, question) => {
-    const section = question.section;
-    if (!acc[section]) {
-      acc[section] = {
-        sectionName: section,
-        sectionNameCN: sectionTranslations[section] || "未知",
-        amount: 0,
-        questions: []
-      };
-    }
-    acc[section].amount++;
-    acc[section].questions.push(question);
-    return acc;
-  }, {});
-  return Object.values(res);
-};
-
 const Overview = () => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
@@ -59,6 +35,7 @@ const Overview = () => {
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [questionTypes, setQuestionTypes] = useState([]);
   const [isCN, setIsCN] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const {isCN, questions, userAnswers, questionsConfig} = initializeLocalStorage();
@@ -114,6 +91,10 @@ const Overview = () => {
     return question && question.correct_answer !== answer;
   }
 
+  const handleDetailPage = (index) => {
+    navigate(`/question?i=${index + 1}`);
+  }
+
   return (
     <div className="overview">
       <HeaderSection
@@ -129,6 +110,7 @@ const Overview = () => {
         filteredQuestions={filteredQuestions}
         userAnswers={userAnswers}
         isCN={isCN}
+        handleDetailPage={handleDetailPage}
       />
     </div>
   )

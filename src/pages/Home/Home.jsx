@@ -73,6 +73,17 @@ const Home = () => {
             </button>
           </div>
         </Link>
+
+        <Link to={`/beforeExam`}>
+          <div className="btn">
+            <button className="btn round-action-button begin text-blue">
+              <span className="icon-container">
+                <span>{getIcon('rocket')}</span>
+                <span>{isCN ? "模拟考试" : "Mock Exam"}</span>
+              </span>
+            </button>
+          </div>
+        </Link>
       </div>
 
       <Footer/>
