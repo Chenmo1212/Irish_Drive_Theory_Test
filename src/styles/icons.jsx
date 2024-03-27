@@ -15,6 +15,7 @@ import {
   FaRocket,
   FaTrashAlt,
   FaTimes,
+  FaHome,
 } from 'react-icons/fa';
 
 const icons = new Map([
@@ -33,6 +34,7 @@ const icons = new Map([
   ['rocket', <FaRocket />],
   ['trash', <FaTrashAlt />],
   ['wrong', <FaTimes />],
+  ['home', <FaHome />],
 ]);
 
 export function getIcon(iconName) {

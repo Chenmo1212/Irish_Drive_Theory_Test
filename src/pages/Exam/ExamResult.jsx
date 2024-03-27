@@ -36,6 +36,7 @@ const ExamResult = () => {
         pageTitle="Exam Result"
         handleBack={() => navigate('/')}
         rightIcons={[]}
+        leftIcon="home"
       />
 
       <div className="body">

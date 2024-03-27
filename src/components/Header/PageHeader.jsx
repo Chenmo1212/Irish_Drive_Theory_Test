@@ -3,12 +3,12 @@ import {THEME_COLOR} from '../../common/common';
 import {getIcon} from "../../styles/icons";
 import './PageHeader.css'
 
-const PageHeader = ({pageTitle, handleBack, rightIcons}) => {
+const PageHeader = ({pageTitle, handleBack, rightIcons, leftIcon='arrow_left'}) => {
   return (
     <div className="page-header header">
       <div className="return">
         <div className="circle" style={{color: THEME_COLOR}} onClick={handleBack}>
-          {getIcon('arrow_left')}
+          {getIcon(leftIcon)}
         </div>
         <div className="page-title">
           {pageTitle}
