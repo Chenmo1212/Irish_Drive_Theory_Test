@@ -1,0 +1,27 @@
+.console {
+  background-color: #f4f6f8;
+  height: 100vh;
+}
+
+.console .body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.console .body .btn {
+  padding: 5px;
+}
+
+.body .user-answers-ipt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.body .user-answers-ipt textarea {
+  width: 100%;
+  min-height: 200px;
+  max-height: 300px;
+}
