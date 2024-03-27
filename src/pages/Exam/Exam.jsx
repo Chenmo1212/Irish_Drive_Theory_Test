@@ -7,7 +7,7 @@ import {
   saveExamToLocalStorage,
   stopTimer
 } from "../../common/common";
-import "./index.css"
+import "./Exam.css"
 import {useNavigate, useSearchParams} from "react-router-dom";
 import ExamHeader from "./ExamHeader";
 import QuestionInfo from "../../components/BasicQuestion/QuestionInfo";

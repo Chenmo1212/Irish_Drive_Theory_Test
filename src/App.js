@@ -6,7 +6,7 @@ import Overview from "./pages/Overview";
 import BeforeExam from "./pages/Exam/BeforeExam";
 import Exam from "./pages/Exam/Exam";
 import ExamOverview from "./pages/Exam/ExamOverview";
-import AfterExam from "./pages/Exam/AfterExam";
+import ExamResult from "./pages/Exam/ExamResult";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route path="/beforeExam" element={<BeforeExam/>}/>
             <Route path="/exam" element={<Exam/>}/>
             <Route path="/examOverview" element={<ExamOverview/>}/>
-            <Route path="/afterExam" element={<AfterExam/>}/>
+            <Route path="/afterExam" element={<ExamResult/>}/>
           </Routes>
         </main>
       </div>

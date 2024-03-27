@@ -6,7 +6,7 @@ import {
   resetTimer,
   saveNewExamToLocalStorage
 } from "../../common/common";
-import "./index.css"
+import "./Exam.css"
 import ExamCover from '../../assets/svg/exam.svg'
 import {useNavigate} from "react-router-dom";
 
