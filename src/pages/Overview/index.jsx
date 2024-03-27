@@ -13,11 +13,9 @@ import {useNavigate} from "react-router-dom";
 const initializeLocalStorage = () => {
   const questions = questionsEN;
   const isCN = loadFromLocalStorage('isCN', false);
-  let questionsConfig = loadFromLocalStorage('questionsConfig', {
-    isShowWrong: false, isShowFavorite: false, filteredQuestions: [], questionTypes: []
-  });
-  questionsConfig.filteredQuestions = questionsConfig.filteredQuestions.length ? questionsConfig.filteredQuestions : questions;
-  questionsConfig.questionTypes = questionsConfig.questionTypes.length ? questionsConfig.questionTypes : getQuestionTypes(questions);
+  let questionsConfig = loadFromLocalStorage('questionsConfig', {});
+  questionsConfig.filteredQuestions = questionsConfig.filteredQuestions || questions;
+  questionsConfig.questionTypes = questionsConfig.questionTypes || getQuestionTypes(questions);
 
   return {
     isCN,
@@ -39,7 +37,7 @@ const Overview = () => {
 
   useEffect(() => {
     const {isCN, questions, userAnswers, questionsConfig} = initializeLocalStorage();
-    const {isShowWrong, isShowFavorite, filteredQuestions, questionTypes} = questionsConfig;
+    const {isShowWrong=false, isShowFavorite=false, filteredQuestions, questionTypes} = questionsConfig;
 
     setIsCN(isCN);
     setAllQuestions(questions);
