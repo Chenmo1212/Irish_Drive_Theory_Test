@@ -13,7 +13,7 @@ const ExamTimer = ({isActive, totalSeconds}) => {
     setTimerActive(isActive);
 
     return () => clearInterval(intervalId);
-  }, [intervalId]);
+  }, [intervalId, totalSeconds]);
 
   useEffect(() => {
     let intervalId;
@@ -32,7 +32,7 @@ const ExamTimer = ({isActive, totalSeconds}) => {
     setIntervalId(intervalId);
 
     return () => clearInterval(intervalId);
-  }, [timerActive, secondsLeft]);
+  }, [timerActive, secondsLeft, isActive]);
 
   const toggleTimer = () => {
     setTimerActive(!timerActive);

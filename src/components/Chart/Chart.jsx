@@ -10,7 +10,7 @@ const ExamResultChart = ({title, score}) => {
 
   useEffect(() => {
     setEndState(`${score / 40 * circumference} ${circumference}`)
-  }, [score])
+  }, [score, circumference])
 
   return (
     <div className="chart">
