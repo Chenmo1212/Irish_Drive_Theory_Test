@@ -73,9 +73,10 @@ const Question = () => {
     const idx = initializeCurrQuestionIndex(parseInt(index));
     const {id} = questions_EN[idx];
     const userAnswer = userAnswers.find(answer => answer.questionId === id);
-    const {filteredQuestions} = questionsConfig;
+    const questions = isCN ? questions_CN : questions_EN;
+    const filteredQuestions = questionsConfig?.filteredQuestions || questions;
 
-    setQuestions(isCN ? questions_CN : questions_EN);
+    setQuestions(questions);
     setQuestionsCN(questions_CN);
     setQuestionsEN(questions_EN);
     setFilteredQuestions(filteredQuestions);
