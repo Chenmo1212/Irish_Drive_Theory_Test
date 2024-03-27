@@ -3,10 +3,10 @@ import PageHeader from "../Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 
 const QuestionHeader = ({
-                        isCN,
-                        toggleLanguage,
-                        toggleFavourite,
-                        isFavourite,
+                        isCN=false,
+                        toggleLanguage=()=>{},
+                        toggleFavourite=()=>{},
+                        isFavourite=false,
                       }) => {
   const navigate = useNavigate();
 

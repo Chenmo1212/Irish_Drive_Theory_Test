@@ -92,7 +92,7 @@ const Overview = () => {
   }
 
   const handleDetailPage = (index) => {
-    navigate(`/question?i=${index + 1}`);
+    navigate(`/question?i=${index}`);
   }
 
   return (
