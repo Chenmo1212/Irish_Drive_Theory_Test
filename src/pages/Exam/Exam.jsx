@@ -60,6 +60,7 @@ function Exam() {
     const chosenAnswerIdx = answer ? (answer.userAnswer !== -1 ? answer.userAnswer : -1) : -1;
     setChosenAnswerIdx(chosenAnswerIdx);
     setAnswers(answers);
+    // eslint-disable-next-line
   }, [index, currQuestionIndex]);
 
   useEffect(() => {
