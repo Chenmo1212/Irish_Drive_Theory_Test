@@ -125,10 +125,6 @@
   align-items: center;
 }
 
-.exam.overview .circle-box .active {
-  background: rgb(83, 109, 254) !important;
-}
-
 .exam-result .body {
   padding: 20px;
   display: flex;
@@ -183,7 +179,7 @@
   font-size: 14px;
   border-radius: 5px;
   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background: linear-gradient(-90deg, #38d1bf, #00b0ff);;
+  background: linear-gradient(-90deg, rgb(83, 109, 254), #00b0ff);;
   box-shadow: 2px 2px 5px #c1d3ea, -2px -2px 5px white, -0.4px -0.4px 0.4px white;
   cursor: pointer;
   color: #fff !important;

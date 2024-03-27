@@ -121,6 +121,7 @@ export const saveNewExamToLocalStorage = (exam) => {
     answers: [],
     score: 0,
     currIdx: 0,
+    completed: false,
     ...exam
   }
   saveExamToLocalStorage(examData);
@@ -141,6 +142,5 @@ export const resetTimer = () => {
 }
 
 export const stopTimer = () => {
-  saveToLocalStorage('secondsLeft', 40 * 60);
   saveToLocalStorage('timerActive', false);
 }

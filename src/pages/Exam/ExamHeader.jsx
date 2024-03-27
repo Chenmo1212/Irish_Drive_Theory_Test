@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Timer from "../../components/Timer/Timer";
-import {THEME_COLOR} from "../../common/common";
+import {loadExamFromLocalStorage, loadFromLocalStorage, THEME_COLOR} from "../../common/common";
 
-const ExamHeader = ({handleSubmit}) => {
+const ExamHeader = ({handleSubmit, submitLabel}) => {
+  const [isActive, setIsActive] = useState(true);
+  const [secondsLeft, setSecondsLeft] = useState(true);
+
+  useEffect(() => {
+    const exam = loadExamFromLocalStorage();
+    const secondsLeft = loadFromLocalStorage('secondsLeft', 0);
+    setSecondsLeft(secondsLeft);
+    const {completed} = exam;
+    console.log(!completed)
+    setIsActive(!completed);
+  }, [])
+
   const submitBtnStyle = {
     background: THEME_COLOR,
     color: '#fff'
@@ -11,13 +23,13 @@ const ExamHeader = ({handleSubmit}) => {
   return (
     <div className="exam-header header">
       <div className="timer">
-        <Timer/>
+        <Timer isActive={isActive} totalSeconds={secondsLeft}/>
       </div>
       <div className={`submit rect-round-button`}
            style={submitBtnStyle}
            onClick={() => handleSubmit()}
       >
-        Submit
+        {submitLabel}
       </div>
     </div>
   );

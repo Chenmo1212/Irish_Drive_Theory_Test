@@ -2,7 +2,7 @@ import React from 'react';
 import {getIcon} from "../../styles/icons";
 import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
 
-const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN, handleDetailPage}) => {
+const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN, handleDetailPage, isCheckAnswer=true}) => {
   const getFavStatus = (question) => {
     if (!filteredQuestions.length) return {};
 
@@ -21,13 +21,18 @@ const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN, 
 
     const {id, correct_answer} = question;
     const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
-
     const isAnswered = userAnswerObj && userAnswerObj.userAnswer !== -1;
-    const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
+    let bgColor = isAnswered ? THEME_COLOR : "";
+    let textColor = isAnswered ? '#fff' : '#000';
+
+    if (isCheckAnswer) {
+      const isError = userAnswerObj && userAnswerObj.userAnswer !== correct_answer;
+      bgColor = isAnswered ? (isError ? ERROR_COLOR : CORRECT_COLOR) : "";
+    }
 
     return {
-      background: isAnswered ? (isError ? ERROR_COLOR : CORRECT_COLOR) : "",
-      color: isAnswered ? '#fff' : '#000'
+      background: bgColor,
+      color: textColor
     };
   };
 

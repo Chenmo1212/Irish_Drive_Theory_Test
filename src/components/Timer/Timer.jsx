@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-const ExamTimer = ({totalSeconds = 40*60}) => {
+
+const ExamTimer = ({isActive, totalSeconds}) => {
   const [secondsLeft, setSecondsLeft] = useState(totalSeconds);
-  const [timerActive, setTimerActive] = useState(true);
+  const [timerActive, setTimerActive] = useState(isActive);
   const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const ExamTimer = ({totalSeconds = 40*60}) => {
   useEffect(() => {
     let intervalId;
 
-    if (timerActive && secondsLeft > 0) {
+    if (isActive && timerActive && secondsLeft > 0) {
       intervalId = setInterval(() => {
         setSecondsLeft((prevSeconds) => {
           const newSeconds = prevSeconds - 1;
@@ -27,7 +28,7 @@ const ExamTimer = ({totalSeconds = 40*60}) => {
       }, 1000);
     }
 
-    localStorage.setItem('timerActive', timerActive.toString());
+    localStorage.setItem('timerActive', (isActive && timerActive).toString());
     setIntervalId(intervalId);
 
     return () => clearInterval(intervalId);

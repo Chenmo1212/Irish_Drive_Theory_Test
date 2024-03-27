@@ -13,6 +13,15 @@ import ExamHeader from "./ExamHeader";
 import QuestionInfo from "../../components/BasicQuestion/QuestionInfo";
 import QuestionContent from "../../components/BasicQuestion/QuestionContent";
 import ExamFooter from "./ExamFooter";
+import QuestionExplanation from "../../components/BasicQuestion/QuestionExplanation";
+
+const initializeLocalStorage = () => {
+  const exam = loadExamFromLocalStorage();
+
+  return {
+    exam,
+  };
+};
 
 function Exam() {
   const [questions, setQuestions] = useState([]);
@@ -20,6 +29,9 @@ function Exam() {
   const [currQuestionIndex, setCurrQuestionIndex] = useState({});
   const [answers, setAnswers] = useState([]);
   const [chosenAnswerIdx, setChosenAnswerIdx] = useState(-1);
+  const [isExamCompleted, setIsExamCompleted] = useState(false);
+
+  const [isAnswerError, setIsAnswerError] = useState(false);
 
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -33,13 +45,14 @@ function Exam() {
   }, [index])
 
   useEffect(() => {
-    const exam = loadExamFromLocalStorage();
-    const {questions, answers, currIdx} = exam;
+    const {exam} = initializeLocalStorage();
+    const {questions, answers, currIdx, completed} = exam;
     const idx = getQuestionIdx(questions, currIdx);
 
     setQuestions(questions);
     setCurrQuestionIndex(idx);
     setCurrQuestion(questions[idx]);
+    setIsExamCompleted(completed);
 
     const {id} = questions[idx];
     const answer = answers.find(e => e.questionId === id);
@@ -90,6 +103,11 @@ function Exam() {
     // eslint-disable-next-line
   }, [index, currQuestionIndex]);
 
+  useEffect(() => {
+    const {correct_answer} = currQuestion;
+    setIsAnswerError(chosenAnswerIdx !== -1 && chosenAnswerIdx !== correct_answer);
+  }, [chosenAnswerIdx])
+
   const getQuestionIdx = (questions, storedIdx) => {
     let idx = parseInt(index) - 1;
     if (!idx) idx = storedIdx
@@ -133,11 +151,23 @@ function Exam() {
 
   const handleSubmit = () => {
     const exam = loadExamFromLocalStorage();
-    saveExamToLocalStorage({
-      ...exam,
-      score: calcScore()
-    })
-    stopTimer();
+
+    if (!exam.completed) {
+      let newAnswers = [...answers];
+      newAnswers.map(answer => {
+        const question = questions.find(q => q.id === answer.questionId);
+        answer.isCorrect = question && question.correct_answer === answer.userAnswer
+        return answer
+      });
+
+      saveExamToLocalStorage({
+        ...exam,
+        answers: newAnswers,
+        score: calcScore(),
+        completed: true
+      })
+      stopTimer();
+    }
     navigate('/afterExam');
   }
 
@@ -154,7 +184,7 @@ function Exam() {
 
   return (
     <div className='exam mock'>
-      <ExamHeader handleSubmit={handleSubmit}/>
+      <ExamHeader handleSubmit={handleSubmit} submitLabel={isExamCompleted ? 'Result' : 'Submit'}/>
       <div className="main question">
         <div className="content">
           <QuestionInfo
@@ -169,6 +199,12 @@ function Exam() {
               chosenAnswerIndex={chosenAnswerIdx}
               handleOptionClick={handleOptionClick}
             />
+
+            {isExamCompleted
+              ? <QuestionExplanation currQuestion={currQuestion}
+                                     isExplain={true} isEdit={false}
+                                     isAnswerError={isAnswerError}/>
+              : ""}
           </div>
         </div>
 

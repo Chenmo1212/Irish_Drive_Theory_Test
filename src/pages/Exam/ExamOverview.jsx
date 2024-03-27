@@ -30,17 +30,19 @@ const ExamOverview = () => {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState([]);
   const [questionTypes, setQuestionTypes] = useState([]);
+  const [isExamCompleted, setIsExamCompleted] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     const {exam} = initializeLocalStorage();
-    const {questions, answers} = exam;
+    const {questions, answers, completed} = exam;
     const updatedQuestions = updateQuestionIndex(questions);
     const questionTypes = getQuestionTypes(updatedQuestions);
 
     setQuestions(updatedQuestions);
     setAnswers(answers);
     setQuestionTypes(questionTypes);
+    setIsExamCompleted(completed);
   }, []);
 
   const handleDetailPage = (index) => {
@@ -64,6 +66,7 @@ const ExamOverview = () => {
         userAnswers={answers}
         isCN={false}
         handleDetailPage={handleDetailPage}
+        isCheckAnswer={isExamCompleted}
       />
     </div>
   );
