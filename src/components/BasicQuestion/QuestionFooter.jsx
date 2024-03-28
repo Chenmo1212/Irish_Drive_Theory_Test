@@ -4,24 +4,17 @@ import {CLICK_SOUND, playSound, THEME_COLOR} from '../../common/common';
 import {useNavigate} from "react-router-dom";
 
 const QuestionFooter = ({
-                          toggleShowExplanation,
+                          isExplain,
+                          currQuestion,
                           changeQuestion,
-                          filteredQuestions,
-                          currQuestionIndex
+                          toggleExplanation
                         }) => {
+  const {isPrev, isNext} = currQuestion;
   const navigate = useNavigate();
 
   const toOverview = () => {
     navigate('/overview');
     playSound(CLICK_SOUND);
-  }
-
-  const isFirstQuestion = () => {
-    return currQuestionIndex === 0;
-  }
-
-  const isLastQuestion = () => {
-    return currQuestionIndex === filteredQuestions.length - 1;
   }
 
   const MENU_ITEM = [{
@@ -30,23 +23,24 @@ const QuestionFooter = ({
     activeIcon: 'fa_th',
   }, {
     name: 'explanation',
-    action: toggleShowExplanation,
+    action: toggleExplanation,
     activeIcon: 'eye_slash',
     inactiveIcon: 'eye',
+    active: isExplain
   }, {
     name: 'prev',
     action: () => {
-      if (!isFirstQuestion()) changeQuestion(-1)
+      if (isPrev) changeQuestion(-1)
     },
     activeIcon: 'arrow_left',
-    disabled: isFirstQuestion()
+    disabled: !isPrev
   }, {
     name: 'next',
     action: () => {
-      if (!isLastQuestion()) changeQuestion(1)
+      if (isNext) changeQuestion(1)
     },
     activeIcon: 'arrow_right',
-    disabled: isLastQuestion()
+    disabled: !isNext
   }]
 
   return (
@@ -55,7 +49,7 @@ const QuestionFooter = ({
         {MENU_ITEM.map((item, index) => (
           <div key={index} onClick={item.action}
                className={`menu-item ${item.name} ${item.disabled ? "disable" : ""}`}>
-            {getIcon(item.active ? item.activeIcon : (item.inactiveName || item.activeIcon))}
+            {getIcon(item.active ? item.activeIcon : (item.inactiveIcon || item.activeIcon))}
           </div>
         ))}
       </div>
