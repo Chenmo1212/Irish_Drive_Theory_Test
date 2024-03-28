@@ -43,17 +43,14 @@ const Question = () => {
   }, [index]);
 
   useEffect(() => {
-    handleQuestionLanguage(questionsConfig.isCN);
-    // eslint-disable-next-line
-  }, [questionsConfig.isCN]);
-
-  useEffect(() => {
+    const allQuestions = questionsConfig.isCN ? questionsCN : questionsEN;
+    const curr = allQuestions[currQuestionIndex]
     setCurrQuestion({
-      ...questions[currQuestionIndex],
+      ...curr,
       isPrev: currQuestionIndex > 0,
       isNext: currQuestionIndex < questions.length - 1
     })
-  }, [currQuestionIndex, questions])
+  }, [currQuestionIndex, questions, questionsConfig.isCN])
 
   const initSetting = () => {
     const storedQuestionsConfig = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG);
@@ -66,7 +63,8 @@ const Question = () => {
     const {isCN, filteredQuestions} = setting;
     let questions;
 
-    if (filteredQuestions && filteredQuestions.length > 0) questions = filteredQuestions; else questions = isCN ? questionsCN : questionsEN;
+    if (filteredQuestions && filteredQuestions.length > 0) questions = filteredQuestions;
+    else questions = isCN ? questionsCN : questionsEN;
 
     setQuestions(questions);
     return questions;
@@ -126,10 +124,9 @@ const Question = () => {
   }
 
   const handleQuestionLanguage = (isCN) => {
-    const questions = isCN ? questionsCN : questionsEN;
-    const curr = questions[currQuestionIndex]
-    setQuestions(questions);
-    setCurrQuestion({...currQuestion, ...curr});
+      const questions = isCN ? questionsCN : questionsEN;
+      const curr = questions[currQuestionIndex]
+      setCurrQuestion({...currQuestion, ...curr});
   }
 
   return (<div className="normal-mode">
@@ -142,7 +139,7 @@ const Question = () => {
       questionsConfig={questionsConfig}
       updateQuestionsConfig={updateQuestionsConfig}
       setSearchParams={setSearchParams}
-      handleQuestionLanguage={handleQuestionLanguage}
+      handleQuestionLanguage={(isCN) => handleQuestionLanguage(isCN)}
     />
   </div>);
 };
