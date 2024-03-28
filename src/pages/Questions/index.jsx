@@ -5,7 +5,7 @@ import {loadFromLocalStorage, questionsCN, questionsEN, saveToLocalStorage} from
 import BasicQuestion from "../../components/BasicQuestion";
 
 const CURR_QUESTION_CONFIG = {
-  questionId: 1, userAnswer: -1, isFavourite: false,
+  questionId: 1, userAnswer: -1, isFavorite: false,
 }
 
 const QUESTIONS_CONFIG = {
@@ -37,7 +37,7 @@ const Question = () => {
     const questions = initQuestions(setting);
     const idx = initCurrQuestionIdx();
     const curr = initCurrQuestion(questions, idx);
-    const userAnswers = initUserAnswers(curr);
+    const userAnswers = initUserAnswers();
     initCurrQuestionConfig(curr, userAnswers);
     // eslint-disable-next-line
   }, [index]);
@@ -96,7 +96,7 @@ const Question = () => {
   const initCurrQuestionConfig = (curr, userAnswers) => {
     const answer = userAnswers.find(answer => answer.questionId === curr.id);
     const config = {
-      questionId: curr.id, isFavourite: false, userAnswer: -1, ...answer
+      questionId: curr.id, isFavorite: false, userAnswer: -1, ...answer
     };
     setCurrQuestionConfig(config);
     return config;

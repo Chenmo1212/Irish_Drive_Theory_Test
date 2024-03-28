@@ -22,7 +22,7 @@ const BasicQuestion = ({
   const [isAnswerError, setIsAnswerError] = useState(false);
   const [isExplain, setIsExplain] = useState(false);
   const {isCN, isStick, isCheck} = questionsConfig;
-  const {isFavourite, userAnswer} = currQuestionConfig;
+  const {isFavorite, userAnswer} = currQuestionConfig;
   const {correct_answer: correctAnswer} = currQuestion;
 
   // Choose Option
@@ -96,7 +96,7 @@ const BasicQuestion = ({
   }
 
   const toggleFavourite = () => {
-    updateCurrQuestionConfig({isFavourite: !isFavourite})
+    updateCurrQuestionConfig({isFavorite: !isFavorite})
     playSound(CLICK_SOUND);
   }
 
@@ -136,7 +136,7 @@ const BasicQuestion = ({
         isCN={isCN}
         toggleLanguage={toggleLanguage}
         toggleFavourite={toggleFavourite}
-        isFavourite={isFavourite}
+        isFavorite={isFavorite}
       />
 
       <div className="content">

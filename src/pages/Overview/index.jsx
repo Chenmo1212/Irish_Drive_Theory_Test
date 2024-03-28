@@ -1,80 +1,75 @@
 import React, {useEffect, useState} from "react"
-import {
-  getQuestionTypes,
-  loadFromLocalStorage,
-  questionsEN,
-  saveToLocalStorage
-} from '../../common/common';
+import {getQuestionTypes, loadFromLocalStorage, questionsEN, saveToLocalStorage} from '../../common/common';
 import "./index.css"
-import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
 import HeaderSection from "../../components/BasicOverview/HeaderSection";
 import {useNavigate} from "react-router-dom";
+import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
 
-const initializeLocalStorage = () => {
-  const questions = questionsEN;
-  const isCN = loadFromLocalStorage('isCN', false);
-  let questionsConfig = loadFromLocalStorage('questionsConfig', {});
-  questionsConfig.filteredQuestions = questionsConfig.filteredQuestions || questions;
-  questionsConfig.questionTypes = questionsConfig.questionTypes || getQuestionTypes(questions);
-
-  return {
-    isCN,
-    questions: loadFromLocalStorage('allQuestions', questions),
-    userAnswers: loadFromLocalStorage('userAnswers', []),
-    questionsConfig
-  };
-};
+const QUESTIONS_CONFIG = {
+  appVersion: "",
+  isCN: false,
+  isExplain: false,
+  isStick: false,
+  isCheck: false,
+  filterByError: false,
+  filterByFavorite: false,
+  filteredQuestions: []
+}
 
 const Overview = () => {
-  const [allQuestions, setAllQuestions] = useState([]);
+  const [questions, setQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
-  const [isShowWrong, setShowWrong] = useState(false);
-  const [isShowFavorite, setShowFavorite] = useState(false);
-  const [filteredQuestions, setFilteredQuestions] = useState([]);
+  const [questionsConfig, setQuestionsConfig] = useState(QUESTIONS_CONFIG);
   const [questionTypes, setQuestionTypes] = useState([]);
-  const [isCN, setIsCN] = useState(false);
+
+  const [filterByError, setFilterByError] = useState(false);
+  const [filterByFavorite, setFilterByFavorite] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const {isCN, questions, userAnswers, questionsConfig} = initializeLocalStorage();
-    const {isShowWrong=false, isShowFavorite=false, filteredQuestions, questionTypes} = questionsConfig;
-
-    setIsCN(isCN);
-    setAllQuestions(questions);
-    setUserAnswers(userAnswers);
-    setShowWrong(isShowWrong);
-    setShowFavorite(isShowFavorite);
-    setFilteredQuestions(filteredQuestions);
-    setQuestionTypes(questionTypes);
-  }, []);
-
-  useEffect(() => {
-    if (allQuestions.length) updateQuestionConfig();
+    const questions = initQuestions();
+    const questionsConfig = initQuestionsConfig(questions);
+    initQuestionTypes(questionsConfig.filteredQuestions);
+    initUserAnswers();
     // eslint-disable-next-line
-  }, [isShowWrong, isShowFavorite, allQuestions]);
+  }, [questions]);
 
-  const updateQuestionConfig = () => {
-    const filteredQuestions = getFilteredQuestions();
-    const questionTypes = getQuestionTypes(filteredQuestions);
-    const updatedConfig = {
-      isShowWrong, isShowFavorite, filteredQuestions, questionTypes
-    };
-    setFilteredQuestions(filteredQuestions);
-    setQuestionTypes(questionTypes);
-    saveToLocalStorage('questionsConfig', updatedConfig);
+  const initQuestions = () => {
+    const questions = questionsEN;
+    setQuestions(questions);
+    return questions
   }
 
-  const getFilteredQuestions = () => {
-    if (!isShowWrong && !isShowFavorite) {
-      return allQuestions;
+  const initQuestionsConfig = (questions) => {
+    const storedQuestionsConfig = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG);
+    let updatedConfig = {...questionsConfig, ...storedQuestionsConfig};
+    const filteredQuestions = getFilteredQuestions(questions, updatedConfig);
+    updatedConfig = {...updatedConfig, filteredQuestions};
+    setFilterByError(updatedConfig.filterByError);
+    setFilterByFavorite(updatedConfig.filterByFavorite);
+    setQuestionsConfig(updatedConfig);
+    saveToLocalStorage('questionsConfig', updatedConfig);
+    return updatedConfig;
+  }
+
+  const initQuestionTypes = (questions) => {
+    const questionTypes = getQuestionTypes(questions);
+    setQuestionTypes(questionTypes);
+    return questionTypes;
+  }
+
+  const getFilteredQuestions = (questions, questionsConfig) => {
+    const {filterByError, filterByFavorite} = questionsConfig;
+    if (!filterByError && !filterByFavorite) {
+      return questions;
     }
     let filteredQuestions = userAnswers
       .filter(answer => {
-        return (isShowWrong && answer.userAnswer !== -1 && getUserAnswerStatus(answer.questionId, answer.userAnswer))
-          || (isShowFavorite && answer.isFavorite);
+        return (filterByError && answer.userAnswer !== -1 && getUserAnswerStatus(questions, answer.questionId, answer.userAnswer))
+          || (filterByFavorite && answer.isFavorite);
       })
       .map(answer => {
-        return allQuestions.find(question => question.id === answer.questionId);
+        return questions.find(question => question.id === answer.questionId);
       })
       .sort((a, b) => a.index - b.index)
     filteredQuestions = filteredQuestions.filter((question, index, self) =>
@@ -83,31 +78,62 @@ const Overview = () => {
     return filteredQuestions;
   }
 
-  const getUserAnswerStatus = (id, answer) => {
+  const getUserAnswerStatus = (questions, id, answer) => {
     if (!id) return false;
-    const question = allQuestions.find(q => q.id === id);
+    const question = questions.find(q => q.id === id);
     return question && question.correct_answer !== answer;
+  }
+
+  const initUserAnswers = () => {
+    const storedUserAnswers = loadFromLocalStorage('userAnswers', []);
+    setUserAnswers(storedUserAnswers);
+    return storedUserAnswers;
   }
 
   const handleDetailPage = (index) => {
     navigate(`/question?i=${index}`);
   }
 
+  const handleFilteredQuestions = (type) => {
+    if (type === 'error') setFilterByError(!filterByError);
+    if (type === 'favorite') setFilterByFavorite(!filterByFavorite);
+    let updatedConfig = {...questionsConfig}
+    if (type === 'error') {
+      updatedConfig.filterByError = !filterByError;
+    } else {
+      updatedConfig.filterByFavorite = !filterByFavorite;
+    }
+
+    const filteredQuestions = getFilteredQuestions(questions, updatedConfig);
+
+    const questionsType = getQuestionTypes(filteredQuestions);
+    setQuestionTypes(questionsType)
+
+    updatedConfig.filteredQuestions = filteredQuestions;
+    updateQuestionsConfig(updatedConfig);
+  }
+
+  const updateQuestionsConfig = (data) => {
+    const updated = {...questionsConfig, ...data};
+    setQuestionsConfig(updated);
+    saveToLocalStorage('questionsConfig', updated);
+  }
+
   return (
     <div className="overview">
       <HeaderSection
-        isShowWrong={isShowWrong}
-        setShowWrong={setShowWrong}
-        isShowFavorite={isShowFavorite}
-        setShowFavorite={setShowFavorite}
-        isCN={isCN}
+        isShowWrong={questionsConfig.filterByError}
+        setShowWrong={() => handleFilteredQuestions('error')}
+        isShowFavorite={questionsConfig.filterByFavorite}
+        setShowFavorite={() => handleFilteredQuestions('favorite')}
+        isCN={questionsConfig.isCN}
       />
 
       <QuestionsSection
         questionTypes={questionTypes}
-        filteredQuestions={filteredQuestions}
+        filteredQuestions={questionsConfig.filteredQuestions}
         userAnswers={userAnswers}
-        isCN={isCN}
+        isCN={questionsConfig.isCN}
         handleDetailPage={handleDetailPage}
       />
     </div>
