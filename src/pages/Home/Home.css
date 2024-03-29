@@ -96,7 +96,7 @@
 
 .home footer {
   position: absolute;
-  bottom: 2em;
+  bottom: calc(2.5% + 2em);
   font-size: 12px;
   opacity: .3;
 }
