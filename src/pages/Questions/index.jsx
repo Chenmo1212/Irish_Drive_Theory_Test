@@ -25,7 +25,7 @@ const Question = () => {
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
 
   const [currQuestion, setCurrQuestion] = useState({});
-  const [currQuestionConfig, setCurrQuestionConfig] = useState(CURR_QUESTION_CONFIG);
+  const [currQuestionConfig, setCurrQuestionConfig] = useState(CURR_QUESTION_CONFIG); // TODO: Seems like it could be merged into userAnswers
   const [questionsConfig, setQuestionsConfig] = useState(QUESTIONS_CONFIG);
 
   const [searchParams, setSearchParams] = useSearchParams();
@@ -97,7 +97,6 @@ const Question = () => {
       questionId: curr.id, isFavorite: false, userAnswer: -1, ...answer
     };
     setCurrQuestionConfig(config);
-    return config;
   }
 
   const updateQuestionsConfig = (data) => {

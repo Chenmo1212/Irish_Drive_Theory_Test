@@ -25,7 +25,6 @@ const BasicQuestion = ({
   const {isFavorite, userAnswer} = currQuestionConfig;
   const {correct_answer: correctAnswer} = currQuestion;
 
-  // Choose Option
   useEffect(() => {
     setIsAnswerError(userAnswer !== correctAnswer);
   }, [correctAnswer, userAnswer]);

@@ -11,7 +11,6 @@ const ExamHeader = ({handleSubmit, submitLabel}) => {
     const secondsLeft = loadFromLocalStorage('secondsLeft', 0);
     setSecondsLeft(secondsLeft);
     const {completed} = exam;
-    console.log(!completed)
     setIsActive(!completed);
   }, [])
 
