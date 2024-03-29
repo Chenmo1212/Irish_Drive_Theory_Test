@@ -16,7 +16,7 @@ const QuestionInfo = ({
         <span className="question-index" style={{color: THEME_COLOR}}>
           {currQuestionIndex + 1}
         </span>
-        /
+        &nbsp;/&nbsp;
         <span className="question-num-item">
           {questions.length}
         </span>
