@@ -11,18 +11,13 @@ const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavori
   }
 
   const clearLocalAnswers = () => {
-    removeFromLocalStorage(['allAnswers', 'userAnswers'])
-    alert("All your answers have been cleared!");
-    window.location.reload();
     playSound(DELETE_SOUND);
-  }
-
-  const clearLocalStorage = () => {
-    removeFromLocalStorage(['isAnswerStick', 'isAnswerCheck', 'currQuestionIdx',
-      'userAnswers', 'allQuestions', 'questionsConfig']);
-    alert("All data have been cleared!");
-    window.location.reload();
-    playSound(DELETE_SOUND);
+    const myConfirm = window.confirm;
+    if (myConfirm("Do you want to clear user data? This operation is irreversible.")) {
+      removeFromLocalStorage(['userAnswers'])
+      alert("All your answers have been cleared!");
+      window.location.reload();
+    }
   }
 
   const rightIcons = [
@@ -37,9 +32,6 @@ const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavori
     }, {
       name: 'clear',
       action: clearLocalAnswers,
-    }, {
-      name: 'trash',
-      action: clearLocalStorage,
     }
   ]
 

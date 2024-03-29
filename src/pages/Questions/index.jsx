@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useSearchParams} from 'react-router-dom';
 import './index.css'
-import {loadFromLocalStorage, questionsCN, questionsEN, saveToLocalStorage} from '../../common/common';
+import {loadFromLocalStorage, NEW_VERSION, questionsCN, questionsEN, saveToLocalStorage} from '../../common/common';
 import BasicQuestion from "../../components/BasicQuestion";
 
 const CURR_QUESTION_CONFIG = {
@@ -9,7 +9,7 @@ const CURR_QUESTION_CONFIG = {
 }
 
 const QUESTIONS_CONFIG = {
-  appVersion: "",
+  appVersion: NEW_VERSION,
   isCN: false,
   isExplain: false,
   isStick: false,
