@@ -1,143 +1,146 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useSearchParams} from 'react-router-dom';
 import './index.css'
-import {
-  DEFAULT_VERSION,
-  loadFromLocalStorage,
-  NEW_VERSION,
-  questionsCN,
-  questionsEN,
-  saveToLocalStorage,
-  updateDataIfNewVersion
-} from '../../common/common';
+import {loadFromLocalStorage, questionsCN, questionsEN, saveToLocalStorage} from '../../common/common';
 import BasicQuestion from "../../components/BasicQuestion";
 
-const initializeQuestions = () => {
-  const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
-  const isCN = loadFromLocalStorage('isCN', false);
-  let questions_EN = loadFromLocalStorage('allQuestions', questionsEN);
-  let questions_CN = loadFromLocalStorage('allQuestions_CN', questionsCN);
-  const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
+const CURR_QUESTION_CONFIG = {
+  questionId: 1, userAnswer: -1, isFavorite: false,
+}
 
-  return {
-    isCN,
-    questions_EN: isUpdate ? questionsEN : questions_EN,
-    questions_CN: isUpdate ? questionsCN : questions_CN,
-    questionsConfig: loadFromLocalStorage('questionsConfig', {}),
-    userAnswers: loadFromLocalStorage('userAnswers', []),
-    isShowAnswerInErrorMode: loadFromLocalStorage('isShowAnswerInErrorMode', true),
-    isAnswerCheck: loadFromLocalStorage('isAnswerCheck', false),
-    isAnswerStick: loadFromLocalStorage('isAnswerStick', false),
-  };
-};
-
-const initializeCurrQuestionIndex = (pageIdx) => {
-  const storedCurrQuestionIdx = loadFromLocalStorage('currQuestionIdx');
-  if (pageIdx) {
-    saveToLocalStorage('currQuestionIdx', pageIdx - 1);
-    return pageIdx - 1;
-  } else {
-    return storedCurrQuestionIdx >= 0 ? storedCurrQuestionIdx : 0;
-  }
-};
+const QUESTIONS_CONFIG = {
+  appVersion: "",
+  isCN: false,
+  isExplain: false,
+  isStick: false,
+  isCheck: false,
+  filterByError: false,
+  filterByFavorite: false,
+  filteredQuestions: []
+}
 
 const Question = () => {
   const [questions, setQuestions] = useState([]);
-  const [questionsCN, setQuestionsCN] = useState([]);
-  const [questionsEN, setQuestionsEN] = useState([]);
-  const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
-  const [chosenAnswerIndex, setChosenAnswerIndex] = useState(0);
-  const [isFavourite, setIsFavourite] = useState(false);
-  const [isExplain, setIsExplain] = useState(false);
-  const [isCheck, setIsCheck] = useState(false);
-  const [isStick, setIsStick] = useState(false);
-  const [isCN, setIsCN] = useState(false);
+
+  const [currQuestion, setCurrQuestion] = useState({});
+  const [currQuestionConfig, setCurrQuestionConfig] = useState(CURR_QUESTION_CONFIG); // TODO: Seems like it could be merged into userAnswers
+  const [questionsConfig, setQuestionsConfig] = useState(QUESTIONS_CONFIG);
 
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const index = searchParams.get("i") || "0"
 
   useEffect(() => {
-    const {
-      isCN,
-      questions_EN,
-      questions_CN,
-      questionsConfig,
-      userAnswers,
-      isAnswerCheck,
-      isAnswerStick
-    } = initializeQuestions();
-    if (parseInt(index) <= 0) navigate('/question?i=1')
-    const idx = initializeCurrQuestionIndex(parseInt(index));
-    const {id} = questions_EN[idx];
-    const userAnswer = userAnswers.find(answer => answer.questionId === id);
-    const questions = isCN ? questions_CN : questions_EN;
-    const filteredQuestions = questionsConfig?.filteredQuestions || questions;
+    const setting = initSetting();
+    const questions = initQuestions(setting);
+    const idx = initCurrQuestionIdx();
+    const curr = initCurrQuestion(questions, idx);
+    const userAnswers = initUserAnswers();
+    initCurrQuestionConfig(curr, userAnswers);
+    // eslint-disable-next-line
+  }, [index]);
+
+  useEffect(() => {
+    const allQuestions = questionsConfig.isCN ? questionsCN : questionsEN;
+    const curr = allQuestions[currQuestionIndex]
+    setCurrQuestion({
+      ...curr,
+      isPrev: currQuestionIndex > 0,
+      isNext: currQuestionIndex < questions.length - 1
+    })
+  }, [currQuestionIndex, questions, questionsConfig.isCN])
+
+  const initSetting = () => {
+    const storedQuestionsConfig = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG);
+    const updatedConfig = {...questionsConfig, ...storedQuestionsConfig}
+    setQuestionsConfig(updatedConfig);
+    return updatedConfig;
+  }
+
+  const initQuestions = (setting) => {
+    const {isCN, filteredQuestions} = setting;
+    let questions;
+
+    if (filteredQuestions && filteredQuestions.length > 0) questions = filteredQuestions;
+    else questions = isCN ? questionsCN : questionsEN;
 
     setQuestions(questions);
-    setQuestionsCN(questions_CN);
-    setQuestionsEN(questions_EN);
-    setFilteredQuestions(filteredQuestions);
-    setUserAnswers(userAnswers);
+    return questions;
+  }
+
+  const initCurrQuestionIdx = () => {
+    const idx = parseInt(index) - 1;
+    if (idx <= 0) navigate('/question?i=1');
     setCurrQuestionIndex(idx);
-    setChosenAnswerIndex(userAnswer ? userAnswer.userAnswer : -1);
-    setIsFavourite(userAnswer ? userAnswer.isFavorite : false);
-    setIsCheck(isAnswerCheck);
-    setIsStick(isAnswerStick);
-    setIsExplain(isAnswerStick);
-    setIsCN(isCN);
-    // eslint-disable-next-line
-  }, [index, currQuestionIndex]);
+    return idx
+  }
 
-  const updateUserAnswers = (id, newValue, isFavoriteUpdate = false) => {
-    const answerIndex = userAnswers.findIndex(answer => answer.questionId === id);
-    if (answerIndex > -1) {
-      if (!isFavoriteUpdate) {
-        userAnswers[answerIndex].userAnswer = newValue;
-      } else {
-        userAnswers[answerIndex].isFavorite = newValue;
-      }
-    } else {
-      userAnswers.push({
-        questionId: id,
-        userAnswer: isFavoriteUpdate ? -1 : newValue,
-        isFavorite: isFavoriteUpdate ? newValue : isFavourite,
-      });
+  const initCurrQuestion = (questions, idx) => {
+    const currQuestion = {
+      ...questions[idx], isPrev: idx > 0, isNext: idx < questions.length - 1
     }
-    setUserAnswers(userAnswers);
-    saveToLocalStorage('userAnswers', userAnswers);
+    setCurrQuestion(currQuestion);
+    return currQuestion;
   }
 
-  const handleQuestions = (isCN) => {
-    setQuestions(isCN ? questionsCN : questionsEN);
+  const initUserAnswers = () => {
+    const storedUserAnswers = loadFromLocalStorage('userAnswers', []);
+    setUserAnswers(storedUserAnswers);
+    return storedUserAnswers;
   }
 
-  return (
-    <div className="normal-mode">
-      <BasicQuestion
-        isCN={isCN}
-        setIsCN={setIsCN}
-        setSearchParams={setSearchParams}
-        isFavourite={isFavourite}
-        setIsFavourite={setIsFavourite}
-        questions={questions}
-        handleQuestions={handleQuestions}
-        currQuestionIndex={currQuestionIndex}
-        updateUserAnswers={updateUserAnswers}
-        chosenAnswerIndex={chosenAnswerIndex}
-        setChosenAnswerIndex={setChosenAnswerIndex}
-        isExplain={isExplain}
-        setIsExplain={setIsExplain}
-        isCheck={isCheck}
-        setIsCheck={setIsCheck}
-        isStick={isStick}
-        setIsStick={setIsStick}
-        filteredQuestions={filteredQuestions}
-      />
-    </div>
-  );
+  const initCurrQuestionConfig = (curr, userAnswers) => {
+    const answer = userAnswers.find(answer => answer.questionId === curr.id);
+    const config = {
+      questionId: curr.id, isFavorite: false, userAnswer: -1, ...answer
+    };
+    setCurrQuestionConfig(config);
+  }
+
+  const updateQuestionsConfig = (data) => {
+    const updated = {...questionsConfig, ...data};
+    setQuestionsConfig(updated);
+    saveToLocalStorage('questionsConfig', updated);
+  }
+
+  const updateCurrQuestionConfig = (data) => {
+    const updated = {...currQuestionConfig, ...data};
+    setCurrQuestionConfig(updated);
+    saveUserAnswersToLocal(updated);
+  }
+
+  const saveUserAnswersToLocal = (updatedCurrQuestionConfig) => {
+    let newUserAnswers = [...userAnswers];
+    const idx = newUserAnswers.findIndex(answer => answer.questionId === currQuestion.id);
+    if (idx > -1) {
+      newUserAnswers[idx] = updatedCurrQuestionConfig;
+    } else {
+      newUserAnswers.push(updatedCurrQuestionConfig);
+    }
+    saveToLocalStorage('userAnswers', newUserAnswers);
+  }
+
+  const handleQuestionLanguage = (isCN) => {
+      const questions = isCN ? questionsCN : questionsEN;
+      const curr = questions[currQuestionIndex]
+      setCurrQuestion({...currQuestion, ...curr});
+  }
+
+  return (<div className="normal-mode">
+    <BasicQuestion
+      questions={questions}
+      currQuestion={currQuestion}
+      currQuestionIndex={currQuestionIndex}
+      currQuestionConfig={currQuestionConfig}
+      updateCurrQuestionConfig={updateCurrQuestionConfig}
+      questionsConfig={questionsConfig}
+      updateQuestionsConfig={updateQuestionsConfig}
+      setSearchParams={setSearchParams}
+      handleQuestionLanguage={(isCN) => handleQuestionLanguage(isCN)}
+    />
+  </div>);
 };
 
 

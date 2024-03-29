@@ -4,7 +4,7 @@ import {THEME_COLOR} from '../../common/common';
 const QuestionInfo = ({
                         currQuestion,
                         currQuestionIndex,
-                        filteredQuestions,
+                        questions,
                       }) => {
 
   return (
@@ -18,7 +18,7 @@ const QuestionInfo = ({
         </span>
         /
         <span className="question-num-item">
-          {filteredQuestions.length}
+          {questions.length}
         </span>
       </div>
     </div>

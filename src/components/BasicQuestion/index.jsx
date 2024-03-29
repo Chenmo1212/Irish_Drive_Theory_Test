@@ -1,56 +1,37 @@
 import React, {useEffect, useState} from 'react';
+import './index.css'
+import QuestionHeader from "./QuestionHeader";
+import {CLICK_SOUND, CORRECT_SOUND, NORMAL_SOUND, playSound, WRONG_SOUND} from "../../common/common";
 import QuestionFooter from "./QuestionFooter";
+import QuestionInfo from "./QuestionInfo";
 import QuestionContent from "./QuestionContent";
 import QuestionExplanation from "./QuestionExplanation";
-import QuestionInfo from "./QuestionInfo";
-import QuestionHeader from "./QuestionHeader";
-import {
-  CLICK_SOUND,
-  CORRECT_SOUND,
-  NORMAL_SOUND,
-  playSound,
-  saveToLocalStorage,
-  WRONG_SOUND
-} from "../../common/common";
-import {useParams} from "react-router-dom";
-import './index.css'
 
 const BasicQuestion = ({
-                         isCN,
-                         setIsCN,
-                         setSearchParams,
-                         isFavourite,
-                         setIsFavourite,
                          questions,
-                         handleQuestions,
+                         currQuestion,
                          currQuestionIndex,
-                         updateUserAnswers,
-                         chosenAnswerIndex,
-                         setChosenAnswerIndex,
-                         isExplain,
-                         setIsExplain,
-                         isCheck,
-                         setIsCheck,
-                         isStick,
-                         setIsStick,
-                         filteredQuestions
+                         currQuestionConfig,
+                         updateCurrQuestionConfig,
+                         questionsConfig,
+                         updateQuestionsConfig,
+                         setSearchParams,
+                         handleQuestionLanguage,
                        }) => {
 
   const [isAnswerError, setIsAnswerError] = useState(false);
-  const [currQuestion, setCurrQuestion] = useState({});
-  const {index} = useParams();
+  const [isExplain, setIsExplain] = useState(false);
+  const {isCN, isStick, isCheck} = questionsConfig;
+  const {isFavorite, userAnswer} = currQuestionConfig;
+  const {correct_answer: correctAnswer} = currQuestion;
 
-  // Choose Option
   useEffect(() => {
-    let q = filteredQuestions.find(q => q.id === currQuestion?.id);
-    if (q) setIsAnswerError(q['correct_answer'] !== chosenAnswerIndex);
-  }, [filteredQuestions, chosenAnswerIndex, currQuestion])
+    setIsAnswerError(userAnswer !== correctAnswer);
+  }, [correctAnswer, userAnswer]);
 
-  // Toggle Language
   useEffect(() => {
-    const q = questions.find(q => q.id === filteredQuestions[currQuestionIndex].id);
-    setCurrQuestion(q);
-  }, [currQuestionIndex, questions, filteredQuestions])
+    if (isStick) setIsExplain(true);
+  }, [isStick, currQuestionIndex]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -100,42 +81,37 @@ const BasicQuestion = ({
       window.removeEventListener('keydown', handleKeyDown);
     };
     // eslint-disable-next-line
-  }, [index, currQuestionIndex]);
+  }, [currQuestionIndex]);
 
-  const toggleShowExplanation = () => {
+  const toggleExplanation = () => {
     setIsExplain(!isExplain);
     playSound(CLICK_SOUND);
   }
 
   const toggleLanguage = () => {
-    setIsCN(!isCN);
-    saveToLocalStorage('isCN', !isCN);
+    updateQuestionsConfig({isCN: !isCN});
+    handleQuestionLanguage(!isCN);
     playSound(CLICK_SOUND);
-    handleQuestions(!isCN);
   }
 
   const toggleFavourite = () => {
-    updateUserAnswers(currQuestion.id, !isFavourite, true);
-    setIsFavourite(!isFavourite);
+    updateCurrQuestionConfig({isFavorite: !isFavorite})
     playSound(CLICK_SOUND);
   }
 
   const handleStick = () => {
-    setIsStick(!isStick);
-    saveToLocalStorage('isAnswerStick', !isStick);
+    updateQuestionsConfig({isStick: !isStick})
     playSound(CLICK_SOUND);
   };
   const handleCheck = () => {
-    setIsCheck(!isCheck);
-    saveToLocalStorage('isAnswerCheck', !isCheck);
+    updateQuestionsConfig({isCheck: !isCheck})
     playSound(CLICK_SOUND);
   };
 
   const handleOptionClick = (idx) => {
-    setChosenAnswerIndex(idx);
-    const isError = idx !== currQuestion.correct_answer;
+    const isError = idx !== correctAnswer;
     setIsAnswerError(isError);
-    updateUserAnswers(currQuestion.id, idx);
+    updateCurrQuestionConfig({userAnswer: idx})
     if (isCheck) setIsExplain(true);
 
     let sound = NORMAL_SOUND;
@@ -146,12 +122,9 @@ const BasicQuestion = ({
   }
 
   const changeQuestion = (increment) => {
-    if (index <= 0 && increment === -1) return;
-    setChosenAnswerIndex(-1);
     setIsExplain(false);
+    if (currQuestionIndex <= 0 && increment === -1) return;
     let newIndex = currQuestionIndex + increment;
-    newIndex = newIndex <= 0 ? 0 : newIndex;
-    newIndex = newIndex >= filteredQuestions.length ? filteredQuestions.length : newIndex;
     setSearchParams({i: (newIndex + 1).toString()});
     playSound(CLICK_SOUND);
   };
@@ -162,14 +135,14 @@ const BasicQuestion = ({
         isCN={isCN}
         toggleLanguage={toggleLanguage}
         toggleFavourite={toggleFavourite}
-        isFavourite={isFavourite}
+        isFavorite={isFavorite}
       />
 
       <div className="content">
         <QuestionInfo
           currQuestion={currQuestion}
           currQuestionIndex={currQuestionIndex}
-          filteredQuestions={filteredQuestions}
+          questions={questions}
         />
 
         <div className="content-container">
@@ -177,7 +150,7 @@ const BasicQuestion = ({
             isExplain={isExplain}
             isAnswerError={isAnswerError}
             currQuestion={currQuestion}
-            chosenAnswerIndex={chosenAnswerIndex}
+            chosenAnswerIndex={userAnswer}
             handleOptionClick={handleOptionClick}
           />
 
@@ -195,11 +168,10 @@ const BasicQuestion = ({
       </div>
 
       <QuestionFooter
-        changeQuestion={changeQuestion}
         isExplain={isExplain}
-        toggleShowExplanation={toggleShowExplanation}
-        filteredQuestions={filteredQuestions}
-        currQuestionIndex={currQuestionIndex}
+        currQuestion={currQuestion}
+        changeQuestion={changeQuestion}
+        toggleExplanation={toggleExplanation}
       />
     </div>
   );

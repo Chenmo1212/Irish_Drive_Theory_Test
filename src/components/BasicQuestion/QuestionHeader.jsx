@@ -6,7 +6,7 @@ const QuestionHeader = ({
                         isCN=false,
                         toggleLanguage=()=>{},
                         toggleFavourite=()=>{},
-                        isFavourite=false,
+                        isFavorite=false,
                       }) => {
   const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ const QuestionHeader = ({
       name: 'fav',
       inactiveName: "fav_reg",
       action: toggleFavourite,
-      active: isFavourite,
+      active: isFavorite,
     }
   ]
 

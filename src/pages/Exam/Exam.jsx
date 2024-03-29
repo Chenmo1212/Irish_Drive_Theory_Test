@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {
   CLICK_SOUND,
-  loadExamFromLocalStorage,
-  NORMAL_SOUND,
+  loadFromLocalStorage, NORMAL_SOUND,
   playSound,
   saveExamToLocalStorage,
+  saveToLocalStorage,
   stopTimer
 } from "../../common/common";
 import "./Exam.css"
@@ -15,26 +15,32 @@ import QuestionContent from "../../components/BasicQuestion/QuestionContent";
 import ExamFooter from "./ExamFooter";
 import QuestionExplanation from "../../components/BasicQuestion/QuestionExplanation";
 
-const initializeLocalStorage = () => {
-  const exam = loadExamFromLocalStorage();
+const CURR_QUESTION_CONFIG = {
+  questionId: 1, userAnswer: -1
+}
 
-  return {
-    exam,
-  };
-};
+const EXAM_CONFIGS = {
+  answers: [],
+  completed: false,
+  createTime: "",
+  currIdx: 0,
+  questions: [],
+  score: 0
+}
 
 function Exam() {
   const [questions, setQuestions] = useState([]);
-  const [currQuestion, setCurrQuestion] = useState({});
-  const [currQuestionIndex, setCurrQuestionIndex] = useState({});
-  const [answers, setAnswers] = useState([]);
-  const [chosenAnswerIdx, setChosenAnswerIdx] = useState(-1);
-  const [isExamCompleted, setIsExamCompleted] = useState(false);
-
+  const [userAnswers, setUserAnswers] = useState([]);
+  const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
   const [isAnswerError, setIsAnswerError] = useState(false);
+  const [isExplain, setIsExplain] = useState(false);
 
-  const navigate = useNavigate();
+  const [currQuestion, setCurrQuestion] = useState({});
+  const [currQuestionConfig, setCurrQuestionConfig] = useState(CURR_QUESTION_CONFIG);
+  const [examConfig, setExamConfig] = useState(EXAM_CONFIGS)
+
   const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
   const index = searchParams.get("i") || "0";
 
   useEffect(() => {
@@ -46,22 +52,16 @@ function Exam() {
   }, [index])
 
   useEffect(() => {
-    const {exam} = initializeLocalStorage();
-    const {questions, answers, currIdx, completed} = exam;
-    const idx = getQuestionIdx(questions, currIdx);
-
+    const setting = initExamConfigs();
+    const {answers, questions} = setting;
     setQuestions(questions);
-    setCurrQuestionIndex(idx);
-    setCurrQuestion(questions[idx]);
-    setIsExamCompleted(completed);
+    setUserAnswers(answers);
 
-    const {id} = questions[idx];
-    const answer = answers.find(e => e.questionId === id);
-    const chosenAnswerIdx = answer ? (answer.userAnswer !== -1 ? answer.userAnswer : -1) : -1;
-    setChosenAnswerIdx(chosenAnswerIdx);
-    setAnswers(answers);
+    const idx = initCurrQuestionIdx();
+    const curr = initCurrQuestion(questions, idx);
+    initCurrQuestionConfig(curr, answers);
     // eslint-disable-next-line
-  }, [index, currQuestionIndex]);
+  }, [index])
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -107,55 +107,80 @@ function Exam() {
 
   useEffect(() => {
     const {correct_answer} = currQuestion;
-    setIsAnswerError(chosenAnswerIdx !== -1 && chosenAnswerIdx !== correct_answer);
-  }, [chosenAnswerIdx, currQuestion])
+    const {userAnswer} = currQuestionConfig;
+    setIsAnswerError(userAnswer !== correct_answer);
+    // eslint-disable-next-line
+  }, [currQuestionConfig, currQuestion]);
 
-  const getQuestionIdx = (questions, storedIdx) => {
-    let idx = parseInt(index) - 1;
-    if (!idx) idx = storedIdx
-    if (idx < 0) idx = 0;
-    if (idx > questions.length - 1) idx = questions.length - 1;
-    return idx
+  useEffect(() => {
+    if (examConfig.completed) setIsExplain(true);
+    // eslint-disable-next-line
+  }, [currQuestionIndex, examConfig.completed]);
+
+  const initExamConfigs = () => {
+    const storeExamConfigs = loadFromLocalStorage('examResults', EXAM_CONFIGS);
+    const updatedConfig = {...examConfig, ...storeExamConfigs}
+    setExamConfig(updatedConfig);
+    return updatedConfig;
+  }
+
+  const initCurrQuestionIdx = () => {
+    const idx = parseInt(index) - 1;
+    if (idx <= 0) navigate('/exam?i=1');
+    setCurrQuestionIndex(idx);
+    return idx;
+  }
+
+  const initCurrQuestion = (questions, idx) => {
+    const currQuestion = {
+      ...questions[idx], isPrev: idx > 0, isNext: idx < questions.length - 1
+    }
+    setCurrQuestion(currQuestion);
+    return currQuestion;
+  }
+
+  const initCurrQuestionConfig = (curr, userAnswers) => {
+    const answer = userAnswers.find(answer => answer.questionId === curr.id);
+    const config = {
+      questionId: curr.id, userAnswer: -1, ...answer
+    };
+    setCurrQuestionConfig(config);
   }
 
   const handleOptionClick = (idx) => {
-    const {id} = currQuestion;
-    const answerIndex = answers.findIndex(answer => answer.questionId === id);
-    let newAnswers = [...answers];
+    const updated = {...currQuestionConfig, userAnswer: idx};
+    setCurrQuestionConfig(updated);
 
-    if (answerIndex > -1) {
-      newAnswers[answerIndex].userAnswer = idx;
+    let newAnswers = [...userAnswers];
+    const answerIdx = newAnswers.findIndex(answer => answer.questionId === currQuestion.id);
+    if (answerIdx > -1) {
+      newAnswers[answerIdx] = updated;
     } else {
-      newAnswers.push({
-        questionId: id,
-        userAnswer: idx
-      });
+      newAnswers.push(updated);
     }
-    setAnswers(newAnswers);
-    setChosenAnswerIdx(idx);
 
-    const exam = loadExamFromLocalStorage();
-    saveExamToLocalStorage({
-      ...exam,
-      answers: newAnswers
-    })
+    saveExamConfigToLocal({answers: newAnswers});
     playSound(NORMAL_SOUND);
   }
 
-  const changeQuestion = (increment) => {
-    if (index <= 0 && increment === -1) return;
-    let newIndex = currQuestionIndex + increment;
-    newIndex = newIndex <= 0 ? 0 : newIndex;
-    newIndex = newIndex >= questions.length ? questions.length : newIndex;
-    setSearchParams({i: (newIndex + 1).toString()});
-    playSound(CLICK_SOUND);
+  const saveExamConfigToLocal = (data) => {
+    const updated = {...examConfig, ...data};
+    setExamConfig(updated);
+    saveToLocalStorage("examResults", updated);
   }
 
-  const handleSubmit = () => {
-    const exam = loadExamFromLocalStorage();
+  const changeQuestion = (increment) => {
+    setIsExplain(false);
+    if (currQuestionIndex <= 0 && increment === -1) return;
+    let newIndex = currQuestionIndex + increment;
+    setSearchParams({i: (newIndex + 1).toString()});
+    playSound(CLICK_SOUND);
+  };
 
-    if (!exam.completed) {
-      let newAnswers = [...answers];
+  const handleSubmit = () => {
+    const {completed} = examConfig;
+    if (!completed) {
+      let newAnswers = [...userAnswers];
       newAnswers.map(answer => {
         const question = questions.find(q => q.id === answer.questionId);
         answer.isCorrect = question && question.correct_answer === answer.userAnswer
@@ -163,7 +188,7 @@ function Exam() {
       });
 
       saveExamToLocalStorage({
-        ...exam,
+        ...examConfig,
         answers: newAnswers,
         score: calcScore(),
         completed: true
@@ -175,7 +200,7 @@ function Exam() {
 
   const calcScore = () => {
     let score = 0;
-    answers.forEach(answer => {
+    userAnswers.forEach(answer => {
       const question = questions.find(q => q.id === answer.questionId);
       if (question && question.correct_answer === answer.userAnswer) {
         score += 1;
@@ -186,23 +211,25 @@ function Exam() {
 
   return (
     <div className='exam mock'>
-      <ExamHeader handleSubmit={handleSubmit} submitLabel={isExamCompleted ? 'Result' : 'Submit'}/>
+      <ExamHeader handleSubmit={handleSubmit} submitLabel={examConfig.completed ? 'Result' : 'Submit'}/>
       <div className="main question">
         <div className="content">
           <QuestionInfo
             currQuestion={currQuestion}
             currQuestionIndex={currQuestionIndex}
-            filteredQuestions={questions}
+            questions={questions}
           />
 
           <div className="content-container">
             <QuestionContent
+              isExplain={isExplain}
+              isAnswerError={isAnswerError}
               currQuestion={currQuestion}
-              chosenAnswerIndex={chosenAnswerIdx}
+              chosenAnswerIndex={currQuestionConfig.userAnswer}
               handleOptionClick={handleOptionClick}
             />
 
-            {isExamCompleted
+            {examConfig.completed
               ? <QuestionExplanation currQuestion={currQuestion}
                                      isExplain={true} isEdit={false}
                                      isAnswerError={isAnswerError}/>
