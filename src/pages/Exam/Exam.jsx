@@ -236,13 +236,13 @@ function Exam() {
               : ""}
           </div>
         </div>
-
-        <ExamFooter
-          changeQuestion={changeQuestion}
-          filteredQuestions={questions}
-          currQuestionIndex={currQuestionIndex}
-        />
       </div>
+
+      <ExamFooter
+        changeQuestion={changeQuestion}
+        filteredQuestions={questions}
+        currQuestionIndex={currQuestionIndex}
+      />
     </div>
   );
 }
