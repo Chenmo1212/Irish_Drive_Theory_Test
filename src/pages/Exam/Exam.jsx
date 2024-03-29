@@ -178,9 +178,9 @@ function Exam() {
   };
 
   const handleSubmit = () => {
-    const {completed} = examConfig;
+    const {completed, answers} = examConfig;
     if (!completed) {
-      let newAnswers = [...userAnswers];
+      let newAnswers = [...answers];
       newAnswers.map(answer => {
         const question = questions.find(q => q.id === answer.questionId);
         answer.isCorrect = question && question.correct_answer === answer.userAnswer
