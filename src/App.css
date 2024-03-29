@@ -5,7 +5,8 @@
 }
 
 .App main {
-  width: 50%;
+  min-width: 50%;
+  max-width: 700px;
   height: 95vh;
   margin: 0 auto;
   border-radius: 7px;

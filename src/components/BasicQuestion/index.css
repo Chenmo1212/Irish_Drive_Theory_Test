@@ -1,8 +1,10 @@
 .question.normal {
+  position: relative;
   background-color: #f4f6f8;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 .question .content {
@@ -10,7 +12,7 @@
 }
 
 .question.normal .content {
-  height: calc(95vh - 150px);
+  height: calc(95vh - 100px);
 }
 
 .question .content .content-head {
@@ -57,7 +59,7 @@
 }
 
 .question .content .content-container .question-img img {
-  width: 40%;
+  width: 50%;
 }
 
 .question .content .content-container .options {
@@ -108,14 +110,14 @@
 }
 
 .question .question-footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  width: 100%;
 }
 
 .question .question-footer .menu-card {
   box-sizing: border-box;
   height: 50px;
-  width: 100vw;
   border-radius: 5px;
   display: flex;
   line-height: 50px;
@@ -130,22 +132,13 @@
   cursor: pointer;
 }
 
-.question .question-footer .menu-card .all-question {
-  border-right: 1px solid #eee;
+.question .question-footer .menu-card .explanation {
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
 }
 
-.question .question-footer .menu-card .show-answer {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-}
-
-.question .question-footer .menu-card .pre-question {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-}
-
-.question .question-footer .menu-card .next-question {
-  border-left: 1px solid #eee;
+.question .question-footer .menu-card .prev {
+  border-right: 2px solid #eee;
 }
 
 .question .question-footer .menu-card .disable {
@@ -155,6 +148,6 @@
 
 @media screen and (max-width: 400px) {
   .question.normal .content {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
   }
 }

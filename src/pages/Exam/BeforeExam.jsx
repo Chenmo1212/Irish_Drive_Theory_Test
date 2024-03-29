@@ -1,11 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {getIcon} from "../../styles/icons";
-import {
-  loadFromLocalStorage,
-  questionsEN,
-  resetTimer,
-  saveNewExamToLocalStorage
-} from "../../common/common";
+import {loadFromLocalStorage, questionsEN, resetTimer, saveNewExamToLocalStorage} from "../../common/common";
 import "./Exam.css"
 import ExamCover from '../../assets/svg/exam.svg'
 import {useNavigate} from "react-router-dom";
@@ -99,16 +94,20 @@ function BeforeExam() {
           </div>
 
           <div className="content">
-            <div className="content-hd">考前须知</div>
+            <div className="content-hd">Instructions</div>
             <div className="content-bd">
               <p>
-                1. 试题来源：模拟考试中的题目均从现有题库中随机抽取，题目总数为 <strong>40</strong> 道，您需要答对35道以上才能通过考试。
+                1. <b>Sources</b>: Questions are randomly selected from the available question bank.
+                The total number of questions is <b>40</b>, and you need to get at least <b>35</b> correct to pass
+                the exam.
               </p>
               <p>
-                2. 题型分布：模拟考试的数量分布为：<strong>2:8:7:22:1</strong>。<br/>
+                2. <b>Distribution</b>: The distribution of the number of mock exams
+                is：<strong>2:8:7:22:1</strong>.<br/>
               </p>
               <p>
-                3. 试题答案：模拟考试中的试题答案仅作为参考，若答案有误，务必进行反馈。
+                3. <b>Answers</b>: The answers to the questions in the practice exams are for reference only. Be
+                sure to provide feedback if the answer is incorrect.
               </p>
             </div>
           </div>
@@ -119,7 +118,7 @@ function BeforeExam() {
                 <span>
                   {getIcon('rocket')}
                 </span>
-                <span>开始考试</span>
+                <span>Start</span>
               </button>
             </div>
           </div>

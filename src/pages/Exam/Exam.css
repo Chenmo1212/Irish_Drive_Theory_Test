@@ -1,6 +1,15 @@
 .mock {
   background-color: #f4f6f8;
-  height: 100vh;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.exam .timer,
+.exam .question-index,
+.exam .question-type,
+.exam .question-footer .menu-item:not(.disable) {
+  color: #00b0ff!important;
 }
 
 .mock .header {
@@ -45,7 +54,7 @@
   text-overflow: ellipsis;
   width: 80%;
   margin-left: 2%;
-  text-align: left;
+  text-align: center;
 }
 
 .mock .header .icon {
@@ -62,8 +71,9 @@
   height: 36px;
   border-radius: 30px;
   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background: #fff;
+  background: #f4f6f8;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+  color: #00b0ff;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -97,8 +107,8 @@
 }
 
 .mock.before-exam .card-cover img {
-  width: 60%;
-  margin: 20% auto;
+  width: 50%;
+  margin: 10% auto;
   display: block;
 }
 
@@ -112,6 +122,7 @@
 .mock.before-exam .content .content-bd {
   margin: 20px 0;
   padding: 0 10%;
+  line-height: 1.5;
 }
 
 .exam .exam-header {
@@ -119,10 +130,50 @@
 }
 
 .exam .exam-header .submit {
-  height: 28px;
+  height: 26px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(-90deg, rgb(83, 109, 254), #00b0ff);
+  color: #fff;
+}
+
+.exam .exam-header .timer {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.exam .question-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.exam .question-footer .menu-card {
+  box-sizing: border-box;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  line-height: 50px;
+  background: #f4f6f8;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 2px 2px 5px #c1d3ea, -2px -2px 5px white, -0.4px -0.4px 0.4px white;
+}
+
+.exam .question-footer .menu-card .menu-item {
+  flex: 1 1;
+}
+
+.exam .question-footer .menu-card .disable {
+  color: #b9b9b9;
+  cursor: not-allowed;
+}
+
+.exam .question-footer .prev {
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
 }
 
 .exam-result .body {
@@ -170,8 +221,6 @@
   width: 1px;
 }
 
-
-
 .exam-result .body .btn {
   position: relative;
   width: 100%;
@@ -179,13 +228,21 @@
   font-size: 14px;
   border-radius: 5px;
   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background: linear-gradient(-90deg, rgb(83, 109, 254), #00b0ff);;
   box-shadow: 2px 2px 5px #c1d3ea, -2px -2px 5px white, -0.4px -0.4px 0.4px white;
+  border: 1px solid #ffffff;
   cursor: pointer;
-  color: #fff !important;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.exam-result .body .check-btn {
+  background: linear-gradient(-90deg, rgb(83, 109, 254), #00b0ff);
+  color: #fff;
+}
+
+.exam-result .body .save-btn {
+  color: #00b0ff;
 }
 
 .exam-result .body .btn:after {

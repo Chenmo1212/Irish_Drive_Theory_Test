@@ -5,7 +5,7 @@ import {
   CORRECT_COLOR,
   ERROR_COLOR,
   loadExamFromLocalStorage,
-  loadFromLocalStorage,
+  loadFromLocalStorage, NORMAL_SOUND, playSound,
   saveToLocalStorage
 } from "../../common/common";
 import ExamResultChart from "../../components/Chart/Chart";
@@ -66,6 +66,7 @@ const ExamResult = () => {
       }
     });
     saveToLocalStorage('userAnswers', newUserAnswers);
+    playSound(NORMAL_SOUND);
   }
 
   return (
@@ -94,12 +95,11 @@ const ExamResult = () => {
           </div>
         </div>
 
-        <div className="btn" onClick={() => navigate('/examOverview')}>
-          {getIcon('socket')}
-          Check incorrect answers
+        <div className="btn check-btn" onClick={() => navigate('/examOverview')}>
+          {getIcon('rocket')}&nbsp; Check incorrect answers
         </div>
-        <div className="btn" onClick={() => saveWrongQuestions()}>
-          Save all wrong questions
+        <div className="btn save-btn" onClick={() => saveWrongQuestions()}>
+          {getIcon('save')}&nbsp; Save all wrong questions
         </div>
       </div>
     </div>
