@@ -190,7 +190,7 @@ function Exam() {
       saveExamToLocalStorage({
         ...examConfig,
         answers: newAnswers,
-        score: calcScore(),
+        score: calcScore(newAnswers),
         completed: true
       })
       stopTimer();
@@ -198,9 +198,9 @@ function Exam() {
     navigate('/afterExam');
   }
 
-  const calcScore = () => {
+  const calcScore = (answers) => {
     let score = 0;
-    userAnswers.forEach(answer => {
+    answers.forEach(answer => {
       const question = questions.find(q => q.id === answer.questionId);
       if (question && question.correct_answer === answer.userAnswer) {
         score += 1;
