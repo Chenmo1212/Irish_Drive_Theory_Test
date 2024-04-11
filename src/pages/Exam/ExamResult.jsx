@@ -9,15 +9,18 @@ import {
   saveToLocalStorage
 } from "../../common/common";
 import ExamResultChart from "../../components/Chart/Chart";
+import LineChart from "../../components/LineChart/LineChart";
 import {getIcon} from "../../styles/icons";
 
 const initializeLocalStorage = () => {
   const exam = loadExamFromLocalStorage();
   const userAnswers = loadFromLocalStorage('userAnswers', []);
+  const examHistory = loadFromLocalStorage('examHistory', []);
 
   return {
     exam,
-    userAnswers
+    userAnswers,
+    examHistory,
   };
 };
 
@@ -26,15 +29,17 @@ const ExamResult = () => {
   const [isPass, setIsPass] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
   const [examAnswers, setExamAnswers] = useState([]);
+  const [chartData, setChartData] = useState([]);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    const {exam, userAnswers} = initializeLocalStorage();
+    const {exam, userAnswers, examHistory} = initializeLocalStorage();
     const {score, answers: examAnswers} = exam;
 
     setUserAnswers(userAnswers);
     setExamAnswers(examAnswers);
+    setChartData(examHistory.map((i,_) => i.score));
     setScore(score);
     setIsPass(score >= 35);
   }, []);
@@ -94,6 +99,8 @@ const ExamResult = () => {
             <div className="label">Time Used</div>
           </div>
         </div>
+
+        <LineChart data={chartData}/>
 
         <div className="btn check-btn" onClick={() => navigate('/examOverview')}>
           {getIcon('rocket')}&nbsp; Check incorrect answers
