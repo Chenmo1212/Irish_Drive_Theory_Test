@@ -182,7 +182,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .exam-result .body .section {
@@ -237,7 +237,7 @@
 }
 
 .exam-result .body .check-btn {
-  background: linear-gradient(-90deg, rgb(83, 109, 254), #00b0ff);
+  background: linear-gradient(-90deg, #536DFE, #00b0ff);
   color: #fff;
 }
 

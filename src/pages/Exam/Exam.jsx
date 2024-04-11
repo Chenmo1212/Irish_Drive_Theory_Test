@@ -186,13 +186,16 @@ function Exam() {
         answer.isCorrect = question && question.correct_answer === answer.userAnswer
         return answer
       });
-
-      saveExamToLocalStorage({
+      const exam = {
         ...examConfig,
         answers: newAnswers,
         score: calcScore(newAnswers),
         completed: true
-      })
+      }
+      saveExamToLocalStorage(exam);
+      const examHistory = loadFromLocalStorage("examHistory") || [];
+      examHistory.push(exam);
+      saveToLocalStorage("examHistory", examHistory);
       stopTimer();
     }
     navigate('/afterExam');
