@@ -1,0 +1,14 @@
+.chart__container {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f4f6f8;
+  width: 100%;
+  display: inline-block;
+  box-shadow: 2px 2px 5px #c1d3ea, -2px -2px 5px white, -0.4px -0.4px 0.4px white;
+}
+
+.line-chart {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
