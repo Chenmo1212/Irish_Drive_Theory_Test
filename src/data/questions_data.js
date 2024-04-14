@@ -6510,7 +6510,7 @@ export const QUESTIONS_EN = [
     "id": 465
   },
   {
-    "question": "In general, where two lanes are provided on the approach to a roundabout, which lane should a driver select when they intend taking an exit to the right (past the 12 o?clock position) of the roundabout?",
+    "question": "In general, where two lanes are provided on the approach to a roundabout, which lane should a driver select when they intend taking an exit to the right (past the 12 o'clock position) of the roundabout?",
     "options": [
       "By straddling both lanes.",
       "The left-hand lane.",
