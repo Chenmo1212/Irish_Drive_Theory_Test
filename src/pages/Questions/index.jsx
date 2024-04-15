@@ -43,7 +43,7 @@ const Question = () => {
   }, [index]);
 
   useEffect(() => {
-    if (!questions.length) return;
+    if (!questions.length || currQuestionIndex < 0) return;
     const question = questions[currQuestionIndex];
     const allQuestions = questionsConfig.isCN ? questionsCN : questionsEN;
     const curr = allQuestions.find(e => e.id === question.id);
