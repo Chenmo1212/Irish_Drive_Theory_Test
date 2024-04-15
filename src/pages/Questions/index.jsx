@@ -43,7 +43,7 @@ const Question = () => {
   }, [index]);
 
   useEffect(() => {
-    if (!questions.length || currQuestionIndex < -1) return;
+    if (!questions.length || currQuestionIndex < 0) return;
 
     const index = currQuestionIndex < questions.length ? currQuestionIndex : 0;
     const question = questions[index];
