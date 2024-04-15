@@ -63,19 +63,12 @@ const Overview = () => {
     if (!filterByError && !filterByFavorite) {
       return questions;
     }
-    let filteredQuestions = userAnswers
-      .filter(answer => {
-        return (filterByError && answer.userAnswer !== -1 && getUserAnswerStatus(questions, answer.questionId, answer.userAnswer))
-          || (filterByFavorite && answer.isFavorite);
-      })
-      .map(answer => {
-        return questions.find(question => question.id === answer.questionId);
-      })
-      .sort((a, b) => a.index - b.index)
-    filteredQuestions = filteredQuestions.filter((question, index, self) =>
-      index === self.findIndex((t) => t.id === question.id));
-
-    return filteredQuestions;
+    return userAnswers
+      .filter((obj, index) => index === userAnswers.findIndex(item => item.questionId === obj.questionId))  // Remove duplicates
+      .filter(answer => (filterByError && answer.userAnswer !== -1 && getUserAnswerStatus(questions, answer.questionId, answer.userAnswer))
+          || (filterByFavorite && answer.isFavorite))  // Filter answers by Error or Favorite
+      .map(answer => questions.find(question => question.id === answer.questionId)) // Get questionId
+      .sort((a, b) => a.index - b.index);  // Sort
   }
 
   const getUserAnswerStatus = (questions, id, answer) => {
