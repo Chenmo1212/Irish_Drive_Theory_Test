@@ -43,14 +43,16 @@ const Question = () => {
   }, [index]);
 
   useEffect(() => {
-    if (!questions.length || currQuestionIndex < 0) return;
-    const question = questions[currQuestionIndex];
+    if (!questions.length || currQuestionIndex < -1) return;
+
+    const index = currQuestionIndex < questions.length ? currQuestionIndex : 0;
+    const question = questions[index];
     const allQuestions = questionsConfig.isCN ? questionsCN : questionsEN;
     const curr = allQuestions.find(e => e.id === question.id);
     setCurrQuestion({
       ...curr,
-      isPrev: currQuestionIndex > 0,
-      isNext: currQuestionIndex < questions.length - 1
+      isPrev: index > 0,
+      isNext: index < questions.length - 1
     })
   }, [currQuestionIndex, questions, questionsConfig.isCN])
 
