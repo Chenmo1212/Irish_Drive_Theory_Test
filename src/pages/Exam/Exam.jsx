@@ -177,6 +177,24 @@ function Exam() {
     playSound(CLICK_SOUND);
   };
 
+  const updateCurrQuestionConfig = () => {
+    const updated = {...currQuestionConfig, isFavorite: !currQuestionConfig?.isFavorite};
+    setCurrQuestionConfig(updated);
+    saveUserAnswersToLocal(updated);
+    playSound(CLICK_SOUND);
+  }
+
+  const saveUserAnswersToLocal = (updatedCurrQuestionConfig) => {
+    let newAnswers = [...userAnswers];
+    const idx = newAnswers.findIndex(answer => answer.questionId === currQuestion.id);
+    if (idx > -1) {
+      newAnswers[idx] = updatedCurrQuestionConfig;
+    } else {
+      newAnswers.push(updatedCurrQuestionConfig);
+    }
+    saveExamConfigToLocal({answers: newAnswers})
+  }
+
   const handleSubmit = () => {
     const {completed, answers} = examConfig;
     if (!completed) {
@@ -244,6 +262,8 @@ function Exam() {
       <ExamFooter
         changeQuestion={changeQuestion}
         filteredQuestions={questions}
+        updateCurrQuestionConfig={updateCurrQuestionConfig}
+        currQuestionConfig={currQuestionConfig}
         currQuestionIndex={currQuestionIndex}
       />
     </div>

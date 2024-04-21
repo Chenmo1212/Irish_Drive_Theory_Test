@@ -1,0 +1,64 @@
+.basic-alert {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 6px #d1d3db, -5px -5px 6px #f4f4f6;
+  overflow: hidden;
+  display: none;
+}
+
+.basic-alert.active {
+  display: flex;
+  animation: slideIn 0.5s forwards;
+}
+
+.basic-alert.inactive {
+  animation: slideOut 0.5s forwards;
+}
+
+.chip__icon {
+  padding: 10px;
+  border-radius: 1rem;
+  margin: 0 0 0 .2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #82a5ff;
+}
+
+.chip p {
+  font-size: .9rem;
+  color: #9baacf;
+}
+
+.chip__close {
+  padding: 10px;
+  color: #bec8e4;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}

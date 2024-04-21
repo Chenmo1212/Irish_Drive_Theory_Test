@@ -9,7 +9,7 @@
 .exam .question-index,
 .exam .question-type,
 .exam .question-footer .menu-item:not(.disable) {
-  color: #00b0ff!important;
+  color: #00b0ff !important;
 }
 
 .mock .header {
@@ -169,6 +169,10 @@
 .exam .question-footer .menu-card .disable {
   color: #b9b9b9;
   cursor: not-allowed;
+}
+
+.exam .question-footer .fav {
+  border-left: 2px solid #eee;
 }
 
 .exam .question-footer .prev {

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import PageHeader from "../../components/Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 import {
@@ -11,6 +11,7 @@ import {
 import ExamResultChart from "../../components/Chart/Chart";
 import LineChart from "../../components/LineChart/LineChart";
 import {getIcon} from "../../styles/icons";
+import BasicAlert from "../../components/BasicAlert/BasicAlert";
 
 const initializeLocalStorage = () => {
   const exam = loadExamFromLocalStorage();
@@ -31,6 +32,7 @@ const ExamResult = () => {
   const [examAnswers, setExamAnswers] = useState([]);
   const [chartData, setChartData] = useState([]);
 
+  const alertRef = useRef();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -72,10 +74,14 @@ const ExamResult = () => {
     });
     saveToLocalStorage('userAnswers', newUserAnswers);
     playSound(NORMAL_SOUND);
+
+    alertRef.current.handleAlert();
   }
 
   return (
     <div className="exam-result mock">
+      <BasicAlert ref={alertRef} warning="Something important!"/>
+
       <PageHeader
         pageTitle="Exam Result"
         handleBack={() => navigate('/')}
