@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import Chart from 'chart.js/auto';
 import './LineChart.css'
+import {CORRECT_COLOR, ERROR_COLOR} from "../../common/common";
 
 const LineChart = ({data}) => {
   const chartRef = useRef(null);
@@ -23,6 +24,8 @@ const LineChart = ({data}) => {
     const gradientBkgrd = ctx.createLinearGradient(0, 100, 0, 400);
     gradientBkgrd.addColorStop(0, "rgba(83, 109, 254, 0.2)");
     gradientBkgrd.addColorStop(1, "rgba(0, 176, 255, 0)");
+
+    const pointBackgroundColors = data.map(value => (value < 35 ? ERROR_COLOR : CORRECT_COLOR));
 
     const options = {
       responsive: true,
@@ -57,13 +60,13 @@ const LineChart = ({data}) => {
         data: data,
         fill: true,
         pointBorderColor: "rgba(255,255,255,0)",
-        pointBackgroundColor: "rgba(255,255,255,0)",
-        pointBorderWidth: 0,
+        pointBackgroundColor: pointBackgroundColors,
+        pointBorderWidth: 3,
         pointHoverRadius: 4,
         pointHoverBackgroundColor: gradientStroke,
         pointHoverBorderColor: "rgba(220,220,220,1)",
         pointHoverBorderWidth: 2,
-        pointRadius: 1,
+        pointRadius: 4,
         borderWidth: 2,
         pointHitRadius: 6,
       }]
