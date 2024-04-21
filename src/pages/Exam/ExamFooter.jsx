@@ -6,7 +6,9 @@ import {useNavigate} from "react-router-dom";
 const ExamFooter = ({
                       changeQuestion,
                       filteredQuestions,
-                      currQuestionIndex
+                      updateCurrQuestionConfig,
+                      currQuestionIndex,
+                      currQuestionConfig
                     }) => {
   const navigate = useNavigate();
 
@@ -27,6 +29,12 @@ const ExamFooter = ({
     name: 'all',
     action: toOverview,
     activeIcon: 'fa_th',
+  }, {
+    name: 'fav',
+    action: updateCurrQuestionConfig,
+    inactiveIcon: 'fav_reg',
+    activeIcon: 'fav',
+    active: currQuestionConfig?.isFavorite
   }, {
     name: 'prev',
     action: () => {
@@ -49,7 +57,7 @@ const ExamFooter = ({
         {MENU_ITEM.map((item, index) => (
           <div key={index} onClick={item.action}
                className={`menu-item ${item.name} ${item.disabled ? "disable" : ""}`}>
-            {getIcon(item.active ? item.activeIcon : (item.inactiveName || item.activeIcon))}
+            {getIcon(item.active ? item.activeIcon : (item.inactiveIcon || item.activeIcon))}
           </div>
         ))}
       </div>
