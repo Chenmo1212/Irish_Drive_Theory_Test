@@ -14,6 +14,7 @@ import QuestionInfo from "../../components/BasicQuestion/QuestionInfo";
 import QuestionContent from "../../components/BasicQuestion/QuestionContent";
 import ExamFooter from "./ExamFooter";
 import QuestionExplanation from "../../components/BasicQuestion/QuestionExplanation";
+import BasicModal from "../../components/BasicModal/BasicModal";
 
 const CURR_QUESTION_CONFIG = {
   questionId: 1, userAnswer: -1
@@ -34,6 +35,7 @@ function Exam() {
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
   const [isAnswerError, setIsAnswerError] = useState(false);
   const [isExplain, setIsExplain] = useState(false);
+  const [isModalShow, setIsModalShow] = useState(false);
 
   const [currQuestion, setCurrQuestion] = useState({});
   const [currQuestionConfig, setCurrQuestionConfig] = useState(CURR_QUESTION_CONFIG);
@@ -42,6 +44,7 @@ function Exam() {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const index = searchParams.get("i") || "0";
+  const toggleModal = () => setIsModalShow(!isModalShow);
 
   useEffect(() => {
     const newIndex = parseInt(index);
@@ -196,26 +199,32 @@ function Exam() {
   }
 
   const handleSubmit = () => {
-    const {completed, answers} = examConfig;
-    if (!completed) {
-      let newAnswers = [...answers];
-      newAnswers.map(answer => {
-        const question = questions.find(q => q.id === answer.questionId);
-        answer.isCorrect = question && question.correct_answer === answer.userAnswer
-        return answer
-      });
-      const exam = {
-        ...examConfig,
-        answers: newAnswers,
-        score: calcScore(newAnswers),
-        completed: true
+    const {completed} = examConfig;
+    if (!completed) toggleModal();
+    else navigate('/afterExam');
+  }
+
+  const handleExamSubmit = () => {
+    const {answers, questions} = examConfig;
+    let newAnswers = questions.map((q, _) => {
+      const userAnswer = answers.find(a => a.questionId === q.id)?.userAnswer;
+      return {
+        questionId: q.id,
+        userAnswer: userAnswer || -1,
+        isCorrect: q.correct_answer === userAnswer
       }
-      saveExamToLocalStorage(exam);
-      const examHistory = loadFromLocalStorage("examHistory") || [];
-      examHistory.push(exam);
-      saveToLocalStorage("examHistory", examHistory);
-      stopTimer();
+    })
+    const exam = {
+      ...examConfig,
+      answers: newAnswers,
+      score: calcScore(newAnswers),
+      completed: true
     }
+    saveExamToLocalStorage(exam);
+    const examHistory = loadFromLocalStorage("examHistory") || [];
+    examHistory.push(exam);
+    saveToLocalStorage("examHistory", examHistory);
+    stopTimer();
     navigate('/afterExam');
   }
 
@@ -265,6 +274,16 @@ function Exam() {
         updateCurrQuestionConfig={updateCurrQuestionConfig}
         currQuestionConfig={currQuestionConfig}
         currQuestionIndex={currQuestionIndex}
+      />
+
+      <BasicModal
+        title='Warning'
+        text="Do you want to submit all your answers? This will end the exam!"
+        submitText='Submit'
+        cancelText='Cancel'
+        show={isModalShow}
+        onClose={toggleModal}
+        onSubmit={handleExamSubmit}
       />
     </div>
   );
