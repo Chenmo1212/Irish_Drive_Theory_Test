@@ -1,8 +1,16 @@
 import React from 'react';
 import {getIcon} from "../../styles/icons";
 import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
+import EMPTY from "../../assets/svg/empty.svg";
 
-const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN, handleDetailPage, isCheckAnswer=true}) => {
+const QuestionsSection = ({
+                            questionTypes,
+                            filteredQuestions,
+                            userAnswers,
+                            isCN,
+                            handleDetailPage,
+                            isCheckAnswer = true
+                          }) => {
   const getFavStatus = (question) => {
     if (!filteredQuestions.length) return {};
 
@@ -43,27 +51,28 @@ const QuestionsSection = ({questionTypes, filteredQuestions, userAnswers, isCN, 
 
   return (
     <div className="page-body">
-      {questionTypes.map((section, sectionIdx) => (
-        <div className="section" key={sectionIdx}>
-          {section.sectionName && <div className="title" style={{color: THEME_COLOR}}>
-            <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
-          </div>}
-          <div className="content">
-            {section.questions.map(question => (
-              <div className="circle-box" key={question.id}>
-                <div className={`circle ${getIsAnswered(question.id) ? 'active' : ''}`}
-                     style={getStyle(question)}
-                     onClick={() => toDetail(question.index)}
-                >
-                  {question.index}
-                  {getFavStatus(question) &&
-                    <div className='svg-box'>{getIcon('fav')}</div>}
+      {questionTypes.length ? questionTypes.map((section, sectionIdx) => (
+          <div className="section" key={sectionIdx}>
+            {section.sectionName && <div className="title" style={{color: THEME_COLOR}}>
+              <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
+            </div>}
+            <div className="content">
+              {section.questions.map(question => (
+                <div className="circle-box" key={question.id}>
+                  <div className={`circle ${getIsAnswered(question.id) ? 'active' : ''}`}
+                       style={getStyle(question)}
+                       onClick={() => toDetail(question.index)}
+                  >
+                    {question.index}
+                    {getFavStatus(question) &&
+                      <div className='svg-box'>{getIcon('fav')}</div>}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+        : <div className="empty"><img src={EMPTY} alt=""/></div>}
     </div>
   );
 }
