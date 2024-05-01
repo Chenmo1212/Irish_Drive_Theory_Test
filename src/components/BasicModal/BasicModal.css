@@ -53,7 +53,7 @@
 .modal .container .btn {
   border: 1px solid;
   width: 40%;
-  height: 36px;
+  height: 32px;
   margin: 0 auto;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #d1d9e6, -2px -2px 4px #f9f9f9;
@@ -64,6 +64,7 @@
   cursor: pointer;
   transition: 0.3s ease;
   color: #599efb;
+  font-size: 14px;
 }
 
 .modal .container .content .btn:active {
