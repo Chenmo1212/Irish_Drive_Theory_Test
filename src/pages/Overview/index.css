@@ -88,6 +88,17 @@
   color: #fff;
 }
 
+.overview .empty img {
+  display: block;
+  max-width: 300px;
+  overflow: hidden;
+  max-height: 300px;
+  height: 180px;
+  margin: 100px auto;
+  padding: 0;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 400px) {
   .overview {
     height: 100vh;
