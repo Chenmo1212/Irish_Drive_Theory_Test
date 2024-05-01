@@ -41,7 +41,7 @@ const ExamResult = () => {
 
     setUserAnswers(userAnswers);
     setExamAnswers(examAnswers);
-    setChartData(examHistory.map((i,_) => i.score));
+    setChartData(examHistory.map((i, _) => i.score));
     setScore(score);
     setIsPass(score >= 35);
   }, []);
@@ -65,10 +65,10 @@ const ExamResult = () => {
         const index = newUserAnswers.findIndex(userAnswer => userAnswer.questionId === examAnswer.questionId);
         if (index !== -1) {
           delete examAnswer.isCorrect
-          newUserAnswers[index] = {...newUserAnswers[index], ...examAnswer};
+          newUserAnswers[index] = {...newUserAnswers[index], ...examAnswer, isFavorite: true};
         } else {
           const {questionId, userAnswer} = examAnswer
-          newUserAnswers.push({questionId, userAnswer});
+          newUserAnswers.push({questionId, userAnswer, isFavorite: true});
         }
       }
     });
@@ -80,7 +80,7 @@ const ExamResult = () => {
 
   return (
     <div className="exam-result mock">
-      <BasicAlert ref={alertRef} warning="Something important!"/>
+      <BasicAlert ref={alertRef} warning="Saved all wrongs questions to favorite!"/>
 
       <PageHeader
         pageTitle="Exam Result"

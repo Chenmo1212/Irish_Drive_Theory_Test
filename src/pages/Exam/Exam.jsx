@@ -205,13 +205,15 @@ function Exam() {
   }
 
   const handleExamSubmit = () => {
-    const {answers} = examConfig;
-    let newAnswers = [...answers];
-    newAnswers.map(answer => {
-      const question = questions.find(q => q.id === answer.questionId);
-      answer.isCorrect = question && question.correct_answer === answer.userAnswer
-      return answer
-    });
+    const {answers, questions} = examConfig;
+    let newAnswers = questions.map((q, _) => {
+      const userAnswer = answers.find(a => a.questionId === q.id)?.userAnswer;
+      return {
+        questionId: q.id,
+        userAnswer: userAnswer || -1,
+        isCorrect: q.correct_answer === userAnswer
+      }
+    })
     const exam = {
       ...examConfig,
       answers: newAnswers,
