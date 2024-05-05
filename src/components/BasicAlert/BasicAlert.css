@@ -2,11 +2,11 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 5px 6px #d1d3db, -5px -5px 6px #f4f4f6;
+  box-shadow: var(--box-shadow);
   overflow: hidden;
   display: none;
 }
@@ -27,17 +27,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #82a5ff;
+  color: var(--theme-color);
 }
 
 .chip p {
   font-size: .9rem;
-  color: #9baacf;
+  color: var(--font-color);
 }
 
 .chip__close {
   padding: 10px;
-  color: #bec8e4;
+  color: var(--font-color);
   cursor: pointer;
 }
 

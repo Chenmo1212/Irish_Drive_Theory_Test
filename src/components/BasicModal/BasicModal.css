@@ -19,7 +19,7 @@
 .modal .container {
   position: absolute;
   width: 70%;
-  background-color: #f4f6f8;
+  background-color: var(--bg-color);
   left: 10%;
   top: 10vh;
   border-radius: 2%;
@@ -42,7 +42,7 @@
 .modal .container .title span {
   padding: 10px 20px;
   border-radius: 5px;
-  box-shadow: inset 5px 5px 10px #eaecee, inset -5px -5px 10px #feffff;
+  box-shadow: var(--circle-box-shadow);
 }
 
 .modal .container .text {
@@ -55,30 +55,30 @@
   width: 40%;
   height: 32px;
   margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #d1d9e6, -2px -2px 4px #f9f9f9;
-  justify-self: center;
   display: flex;
+  justify-self: center;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: 0.3s ease;
-  color: #599efb;
+  color: var(--theme-color);
   font-size: 14px;
+  border-radius: var(--sm-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .modal .container .content .btn:active {
-  box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+  box-shadow: var(--box-shadow-active);
 }
 
 .modal .container .btn-group {
   display: flex;
-  color: #599efb;
+  color: var(--theme-color);
 }
 
 .modal .container .content .submit {
-  background-color: #599efb;
-  color: #fff;
+  background-color: var(--theme-color);
+  color: var(--white-color);
 }
 
 .a-fadeinB {

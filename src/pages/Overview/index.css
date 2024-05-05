@@ -1,20 +1,20 @@
 .overview {
-  background-color: #f4f6f8;
+  background-color: var(--bg-color);
 }
 
 .overview .page-header .icon.wrong,
 .overview .page-header .icon.fav {
-  color: #c9c9c9;
+  color: var(--disabled-color);
 }
 
 .overview .page-header .icon.wrong.active,
 .overview .page-header .icon.fav.active {
-  color: #ffbf73;
+  color: var(--favorite-color);
 }
 
 .overview .page-header .icon.clear,
 .overview .page-header .icon.trash {
-  color: #f56c6c;
+  color: var(--wrong-color);
 }
 
 .overview .page-body {
@@ -34,9 +34,9 @@
   line-height: 30px;
   display: inline-block;
   padding: 0 10px;
-  border-radius: 5px;
-  border: 1px solid #fff;
-  box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
+  border-radius: var(--sm-border-radius);
+  border: var(--white-border);
+  box-shadow: var(--box-shadow);
   margin-bottom: 5%;
 }
 
@@ -62,12 +62,12 @@
   line-height: 40px;
   border-radius: 50%;
   border: 2px solid #fff;
-  box-shadow: inset 3px 3px 10px #eaecee, inset -3px -3px 10px #feffff;
+  box-shadow: var(--circle-box-shadow);
 }
 
 .overview .page-body .content .circle-box .active {
   border: 2px solid #e7e9ef40;
-  box-shadow: 5px 5px 10px #eaecee, -5px -5px 10px #feffff;
+  box-shadow: var(--circle-box-shadow-active);
 }
 
 .overview .page-body .content .circle-box .svg-box {
@@ -77,7 +77,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  background: #f0a732;
+  background: var(--favorite-color);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,4 @@
 .normal-mode .page-header .icon.language.active,
 .normal-mode .page-header .icon.fav.active {
-  color: #ffbf73;
+  color: var(--favorite-color);
 }
