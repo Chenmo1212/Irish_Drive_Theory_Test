@@ -56,10 +56,15 @@
 .question .content .content-container .question-img {
   display: flex;
   justify-content: center;
+  width: 50%;
+  margin: 20px auto;
 }
 
 .question .content .content-container .question-img img {
-  width: 50%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
 }
 
 .question .content .content-container .options {
