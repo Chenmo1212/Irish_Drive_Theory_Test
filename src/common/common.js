@@ -2,7 +2,7 @@ import {Howl} from "howler"
 import {QUESTIONS_EN} from "../data/questions_data";
 import {QUESTIONS_CN} from "../data/questions_data_CN";
 
-export const NEW_VERSION = "1.4.1.240501";
+export const NEW_VERSION = "1.4.1.240525";
 export const DEFAULT_VERSION = "1.0.0.240518";
 export const THEME_COLOR = "rgb(83, 109, 254)";
 export const CORRECT_COLOR = "rgb(103, 194, 58)";
