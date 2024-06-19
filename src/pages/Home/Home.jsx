@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react"
 import './Home.css'
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
+import Notification from '../../components/Notification/Notification'
 import {
   DEFAULT_VERSION,
   loadFromLocalStorage,
@@ -87,6 +88,8 @@ const Home = () => {
       </div>
 
       <Footer/>
+
+      <Notification/>
     </div>
   </div>
 }

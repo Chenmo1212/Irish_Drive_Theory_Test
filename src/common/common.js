@@ -9,17 +9,39 @@ export const CORRECT_COLOR = "rgb(103, 194, 58)";
 export const ERROR_COLOR = "rgb(245, 108, 108)";
 export const OPTION_LABELS = ['A', "B", "C", "D"];
 
-export const loadFromLocalStorage = (key, defaultValue) => {
-  const storedValue = localStorage.getItem(key);
-  if (storedValue) return JSON.parse(storedValue);
-  else {
-    saveToLocalStorage(key, defaultValue);
+export const loadFromLocalStorage = (key, defaultValue, ttl = null) => {
+  const storedItemStr = localStorage.getItem(key);
+
+  if (storedItemStr) {
+    let storedItem = JSON.parse(storedItemStr);
+
+    // If there is no expiry attribute, add the default expiration time
+    if (!storedItem.expiry) {
+      saveToLocalStorage(key, defaultValue, ttl);
+    }
+
+    // Check if it has expired
+    const now = new Date();
+    if (storedItem.expiry !== null && now.getTime() > storedItem.expiry) {
+      localStorage.removeItem(key);
+      saveToLocalStorage(key, defaultValue, ttl);
+      return defaultValue;
+    }
+
+    return storedItem.value;
+  } else {
+    saveToLocalStorage(key, defaultValue, ttl);
     return defaultValue;
   }
 };
 
-export const saveToLocalStorage = (key, value) => {
-  localStorage.setItem(key, JSON.stringify(value));
+export const saveToLocalStorage = (key, value, ttl = null) => {
+  const now = new Date();
+  const item = {
+    value: value,
+    expiry: ttl !== null ? now.getTime() + ttl : null,  // If ttl is null, it means it will never expire
+  };
+  localStorage.setItem(key, JSON.stringify(item));
 };
 
 export const removeFromLocalStorage = (keys) => {
@@ -99,10 +121,7 @@ export const getQuestionTypes = (questions) => {
     const section = question.section;
     if (!acc[section]) {
       acc[section] = {
-        sectionName: section,
-        sectionNameCN: sectionTranslations[section] || "未知",
-        amount: 0,
-        questions: []
+        sectionName: section, sectionNameCN: sectionTranslations[section] || "未知", amount: 0, questions: []
       };
     }
     acc[section].amount++;
@@ -117,12 +136,7 @@ export const getQuestionTypes = (questions) => {
 
 export const saveNewExamToLocalStorage = (exam) => {
   const examData = {
-    createTime: new Date().toISOString(),
-    answers: [],
-    score: 0,
-    currIdx: 0,
-    completed: false,
-    ...exam
+    createTime: new Date().toISOString(), answers: [], score: 0, currIdx: 0, completed: false, ...exam
   }
   saveExamToLocalStorage(examData);
 }
