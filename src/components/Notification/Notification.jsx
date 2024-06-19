@@ -19,7 +19,7 @@ const Notification = () => {
   }, []);
 
   const getNotificationContentEN = () => (<>
-    <p>According to the <a href="https://theorytest.ie/driver-theory-test-updated-for-2024/"
+    <p>According to the <a href="https://theorytest.ie/driver-theory-test-updated-for-2024/" rel="noreferrer"
                            target="_blank">RSA</a> website, the Driver Theory Test has been revised and will go live on
       the 1st of July 2024.</p>
     <p><b>Important information for all candidates:</b></p>
@@ -39,7 +39,7 @@ const Notification = () => {
   </>)
 
   const getNotificationContentCN = () => (<>
-    <p>据<a href="https://theorytest.ie/driver-theory-test-updated-for-2024/"
+    <p>据<a href="https://theorytest.ie/driver-theory-test-updated-for-2024/" rel="noreferrer"
             target="_blank">RSA</a>网站报道,驾驶员理论测试已修订，将于 2024 年 7 月 1 日上线。</p>
     <p><b>给所有备考理论驾考的考生的重要信息：</b></p>
     <ol>
