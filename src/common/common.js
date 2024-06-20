@@ -28,6 +28,7 @@ export const loadFromLocalStorage = (key, defaultValue, ttl = null) => {
       return defaultValue;
     }
 
+    storedItem = JSON.parse(localStorage.getItem(key));
     return storedItem.value;
   } else {
     saveToLocalStorage(key, defaultValue, ttl);
