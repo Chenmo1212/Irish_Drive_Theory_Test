@@ -54,7 +54,7 @@ const QuestionsSection = ({
       {questionTypes.length ? questionTypes.map((section, sectionIdx) => (
           <div className="section" key={sectionIdx}>
             {section.sectionName && <div className="title" style={{color: THEME_COLOR}}>
-              <span>{isCN ? section.sectionNameCN : section.sectionName}</span>
+              <span>{isCN ? section.sectionNameCN : section.sectionName} ({section.questions.length})</span>
             </div>}
             <div className="content">
               {section.questions.map(question => (
