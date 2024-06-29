@@ -4,7 +4,7 @@ import {loadFromLocalStorage, saveToLocalStorage} from "../../common/common";
 
 const initializeLocalStorage = () => {
   const isShowNotification = loadFromLocalStorage('appNotification', true, 3600 * 1000 * 24 * 7);
-  const isCN = loadFromLocalStorage('isCN', false);
+  const isCN = loadFromLocalStorage('questionsConfig', {})?.isCN || false;
   return {isCN, isShowNotification};
 };
 
