@@ -9,6 +9,17 @@ export const CORRECT_COLOR = "rgb(103, 194, 58)";
 export const ERROR_COLOR = "rgb(245, 108, 108)";
 export const OPTION_LABELS = ['A', "B", "C", "D"];
 
+export const QUESTIONS_CONFIG = {
+  appVersion: NEW_VERSION,
+  isCN: false,
+  isExplain: false,
+  isStick: false,
+  isCheck: false,
+  filterByError: false,
+  filterByFavorite: false,
+  filteredQuestions: []
+}
+
 export const loadFromLocalStorage = (key, defaultValue, ttl = null) => {
   const storedItemStr = localStorage.getItem(key);
 

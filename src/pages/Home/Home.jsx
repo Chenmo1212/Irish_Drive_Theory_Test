@@ -9,14 +9,15 @@ import {
   NEW_VERSION,
   questionsEN,
   THEME_COLOR,
-  updateDataIfNewVersion
+  updateDataIfNewVersion,
+  QUESTIONS_CONFIG
 } from '../../common/common';
 import {getIcon} from "../../styles/icons";
 
 const initializeLocalStorage = () => {
   const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
   const currQuestionIdx = loadFromLocalStorage('currQuestionIdx', 0);
-  const isCN = loadFromLocalStorage('isCN', false);
+  const isCN = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG);
   const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
   let allQuestions = loadFromLocalStorage('allQuestions', questionsEN);
   const userAnswers = loadFromLocalStorage('userAnswers', []);

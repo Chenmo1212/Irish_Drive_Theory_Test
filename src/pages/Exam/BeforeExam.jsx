@@ -1,12 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import {getIcon} from "../../styles/icons";
-import {loadFromLocalStorage, questionsEN, resetTimer, saveNewExamToLocalStorage} from "../../common/common";
+import {
+  loadFromLocalStorage,
+  QUESTIONS_CONFIG,
+  questionsEN,
+  resetTimer,
+  saveNewExamToLocalStorage
+} from "../../common/common";
 import "./Exam.css"
 import ExamCover from '../../assets/svg/exam.svg'
 import {useNavigate} from "react-router-dom";
 
 const initializeLocalStorage = () => {
-  const isCN = loadFromLocalStorage('isCN', false);
+  const isCN = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG)?.isCN || false;
 
   return {
     isCN

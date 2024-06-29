@@ -1,20 +1,15 @@
 import React, {useEffect, useState} from "react"
-import {getQuestionTypes, loadFromLocalStorage, questionsEN, saveToLocalStorage} from '../../common/common';
+import {
+  getQuestionTypes,
+  loadFromLocalStorage,
+  QUESTIONS_CONFIG,
+  questionsEN,
+  saveToLocalStorage
+} from '../../common/common';
 import "./index.css"
 import HeaderSection from "../../components/BasicOverview/HeaderSection";
 import {useNavigate} from "react-router-dom";
 import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
-
-const QUESTIONS_CONFIG = {
-  appVersion: "",
-  isCN: false,
-  isExplain: false,
-  isStick: false,
-  isCheck: false,
-  filterByError: false,
-  filterByFavorite: false,
-  filteredQuestions: []
-}
 
 const Overview = () => {
   const [questions, setQuestions] = useState([]);

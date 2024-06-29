@@ -1,22 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useSearchParams} from 'react-router-dom';
 import './index.css'
-import {loadFromLocalStorage, NEW_VERSION, questionsCN, questionsEN, saveToLocalStorage} from '../../common/common';
+import {
+  loadFromLocalStorage,
+  QUESTIONS_CONFIG,
+  questionsCN,
+  questionsEN,
+  saveToLocalStorage
+} from '../../common/common';
 import BasicQuestion from "../../components/BasicQuestion";
 
 const CURR_QUESTION_CONFIG = {
   questionId: 1, userAnswer: -1, isFavorite: false,
-}
-
-const QUESTIONS_CONFIG = {
-  appVersion: NEW_VERSION,
-  isCN: false,
-  isExplain: false,
-  isStick: false,
-  isCheck: false,
-  filterByError: false,
-  filterByFavorite: false,
-  filteredQuestions: []
 }
 
 const Question = () => {
