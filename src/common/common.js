@@ -17,7 +17,7 @@ export const loadFromLocalStorage = (key, defaultValue, ttl = null) => {
 
     // If there is no expiry attribute, add the default expiration time
     if (!storedItem.expiry) {
-      saveToLocalStorage(key, defaultValue, ttl);
+      saveToLocalStorage(key, storedItem.value, ttl);
     }
 
     // Check if it has expired

@@ -66,7 +66,7 @@ const Overview = () => {
     return userAnswers
       .filter((obj, index) => index === userAnswers.findIndex(item => item.questionId === obj.questionId))  // Remove duplicates
       .filter(answer => (filterByError && answer.userAnswer !== -1 && getUserAnswerStatus(questions, answer.questionId, answer.userAnswer))
-          || (filterByFavorite && answer.isFavorite))  // Filter answers by Error or Favorite
+        || (filterByFavorite && answer.isFavorite))  // Filter answers by Error or Favorite
       .map(answer => questions.find(question => question.id === answer.questionId)) // Get questionId
       .sort((a, b) => a.index - b.index);  // Sort
   }

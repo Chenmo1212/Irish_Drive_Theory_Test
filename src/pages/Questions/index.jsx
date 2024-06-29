@@ -127,9 +127,9 @@ const Question = () => {
   }
 
   const handleQuestionLanguage = (isCN) => {
-      const questions = isCN ? questionsCN : questionsEN;
-      const curr = questions[currQuestionIndex]
-      setCurrQuestion({...currQuestion, ...curr});
+    const questions = isCN ? questionsCN : questionsEN;
+    const curr = questions[currQuestionIndex]
+    setCurrQuestion({...currQuestion, ...curr});
   }
 
   return (<div className="normal-mode">
