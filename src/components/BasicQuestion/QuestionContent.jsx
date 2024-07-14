@@ -24,8 +24,9 @@ const QuestionContent = ({
       <div className="question-text">
         Q: {currQuestion?.question}
 
-        {currQuestion?.question_img_url ?
-          <p className="question-img"><img src={currQuestion?.question_img_url} alt=""/></p> : <></>}
+        {currQuestion?.image_name ?
+          <p className="question-img"><img src={require(`../../assets/images/${currQuestion?.image_name}`)} alt=""/>
+          </p> : <></>}
       </div>
 
       <div className="options">
