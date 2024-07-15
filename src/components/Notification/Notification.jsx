@@ -3,7 +3,7 @@ import BasicModal from "../BasicModal/BasicModal";
 import {loadFromLocalStorage, saveToLocalStorage} from "../../common/common";
 
 const initializeLocalStorage = () => {
-  const isShowNotification = loadFromLocalStorage('appNotification', true, 3600 * 1000 * 24 * 7);
+  const isShowNotification = loadFromLocalStorage('appNotification', true, 3600 * 1000 * 24);
   const isCN = loadFromLocalStorage('questionsConfig', {})?.isCN || false;
   return {isCN, isShowNotification};
 };
@@ -19,38 +19,16 @@ const Notification = () => {
   }, []);
 
   const getNotificationContentEN = () => (<>
-    <p>According to the <a href="https://theorytest.ie/driver-theory-test-updated-for-2024/" rel="noreferrer"
-                           target="_blank">RSA</a> website, the Driver Theory Test has been revised and will go live on
-      the 1st of July 2024.</p>
-    <p><b>Important information for all candidates:</b></p>
-    <ol>
-      <li><p>Candidates testing <b>BEFORE 1st July 2024</b> should use the June 2019 Edition of the Driver Theory Test
-        Questions.</p>
-      </li>
-      <li><p>Candidates testing <b>AFTER 1st July 2024</b> should use the May 2024 Edition of the Driver Theory Test
-        Questions.</p>
-      </li>
-    </ol>
-    <p>Note: The question bank currently used on this website is the driver theory test questions from the <b>June 2019
-      version</b>.</p>
-    <p>Since the new question bank has just been opened, there are no free question bank resources online.</p>
-    <p>If anyone has purchased the official question bank and is willing to provide a new version of question bank
-      resources for this website, please contact：<a href="mailto:chenmo991212@gmail.com">chenmo991212@gmail.com</a></p>
+    <p>All questions on this website have been updated to the <b>latest 2024 version</b> of the question bank.</p>
+    <p>Many thanks to <i><b>@Wwwan</b></i> and <i><b>@Melody</b></i> for their support during the update process.</p>
+    <p>If you have any other questions, please contact：<a
+      href="mailto:chenmo991212@gmail.com">chenmo991212@gmail.com</a></p>
   </>)
 
   const getNotificationContentCN = () => (<>
-    <p>据<a href="https://theorytest.ie/driver-theory-test-updated-for-2024/" rel="noreferrer"
-            target="_blank">RSA</a>网站报道,驾驶员理论测试已修订，将于 2024 年 7 月 1 日上线。</p>
-    <p><b>给所有备考理论驾考的考生的重要信息：</b></p>
-    <ol>
-      <li><p><b>2024 年 7 月 1 日之前</b>参加考试的考生应使用 2019 年 6 月版的驾驶员理论考试题。</p>
-      </li>
-      <li><p><b>2024 年 7 月 1 日之后</b>参加考试的考生应使用 2024 年 5 月版的驾驶员理论考试题。</p>
-      </li>
-    </ol>
-    <p>注意：本网站目前使用的题库为 <b>2019 年 6 月版</b>的驾驶员理论考试题。</p>
-    <p>由于新题库目前刚刚开放，因此网上并没有免费的题库资源。</p>
-    <p>如果有人购买了官方题库，并且有意愿为本网站提供新版本题库资源的朋友请联系：<a
+    <p>本网站上的所有问题均已更新至题库的<b>2024 年最新版本</b>。</p>
+    <p>非常感谢 <i><b>@Wwwan</b></i> 和 <i><b>@Melody</b></i> 在更新过程中的支持。</p>
+    <p>如果您还有其他疑问，请联系：<a
       href="mailto:chenmo991212@gmail.com">chenmo991212@gmail.com</a></p>
   </>)
 
