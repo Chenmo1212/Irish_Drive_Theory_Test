@@ -20,7 +20,7 @@ const Header = () => {
         </div>
         <div className="wrapper">
           <div className="typing-demo">
-            LITTLE COOKIE By ChenMo.
+            DDT 2024 By ChenMo.
           </div>
         </div>
       </div>
