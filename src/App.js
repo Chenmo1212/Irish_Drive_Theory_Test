@@ -8,6 +8,7 @@ import Exam from "./pages/Exam/Exam";
 import ExamOverview from "./pages/Exam/ExamOverview";
 import ExamResult from "./pages/Exam/ExamResult";
 import Console from "./pages/Console/Console";
+import Mine from "./pages/Mine/Mine";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/examOverview" element={<ExamOverview/>}/>
             <Route path="/afterExam" element={<ExamResult/>}/>
             <Route path="/console" element={<Console/>}/>
+            <Route path="/mine" element={<Mine/>}/>
           </Routes>
         </main>
       </div>

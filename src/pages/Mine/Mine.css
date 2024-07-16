@@ -1,0 +1,143 @@
+.mine {
+  padding: 7% 20px;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mine .header {
+  height: 35vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mine .header .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.mine .header .circle__avatar {
+  justify-self: center;
+  border-radius: 1rem;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.mine .header .circle__avatar .circle__btn {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  margin: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 300;
+  background: #E4EBF5;
+  box-shadow: 3px 3px 6px rgba(173, 195, 225, 0.8), -3px -3px 6px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  position: relative;
+  background: url("https://tiku.chenmo1212.cn/static/img/avatar.3348d87.png");
+  background-size: cover;
+  border: 2px solid;
+}
+
+.mine .header .circle__avatar .circle__btn .play {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.mine .header .circle__avatar .circle__btn .play.visibility {
+  opacity: 1;
+}
+
+.mine .header .circle__avatar .circle__btn .pause {
+  position: absolute;
+  transition: all 0.2s linear;
+}
+
+.mine .header .circle__avatar .circle__btn .pause.visibility {
+  opacity: 0;
+}
+
+.mine .header .circle__avatar .circle__back-1, .mine .header .circle__avatar .circle__back-2 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  filter: blur(1px);
+  z-index: 100;
+}
+
+.mine .header .circle__avatar .circle__back-1 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  background: linear-gradient(to bottom right, #c8d0e7 0%, #fff 100%);
+  animation: waves 4s linear infinite;
+}
+
+.mine .header .circle__avatar .circle__back-1.paused {
+  animation-play-state: paused;
+}
+
+.mine .header .circle__avatar .circle__back-2 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  animation: waves 4s linear 2s infinite;
+}
+
+.mine .header .circle__avatar .circle__back-2.paused {
+  animation-play-state: paused;
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.mine .header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.mine .header .wrapper .typing-demo {
+  width: 26ch;
+  animation: typing 3s steps(26), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: Poppins, serif;
+  font-size: 16px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+ 
