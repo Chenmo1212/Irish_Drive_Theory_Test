@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {
   CLICK_SOUND,
-  loadFromLocalStorage, NORMAL_SOUND,
+  loadFromLocalStorage,
+  NORMAL_SOUND,
   playSound,
   saveExamToLocalStorage,
   saveToLocalStorage,
@@ -261,8 +262,9 @@ function Exam() {
 
             {examConfig.completed
               ? <QuestionExplanation currQuestion={currQuestion}
-                                     isExplain={true} isEdit={false}
-                                     isAnswerError={isAnswerError}/>
+                                     isAnswerError={isAnswerError}
+                                     isEdit={false}
+              />
               : ""}
           </div>
         </div>

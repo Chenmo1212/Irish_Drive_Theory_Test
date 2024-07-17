@@ -1,24 +1,26 @@
 import React from 'react';
-import {CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, THEME_COLOR} from '../../common/common';
+import {CLICK_SOUND, CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, playSound, THEME_COLOR} from '../../common/common';
 import {getIcon} from "../../styles/icons";
+import {useLang, useQuestionConfig} from "../../store";
 
 const QuestionExplanation = ({
-                               currQuestion,
-                               isCN=false,
-                               isAnswerError=false,
-                               isExplain=false,
-                               isCheck=false,
-                               handleCheck=()=>{},
-                               isStick=false,
-                               handleStick=()=>{},
-                               isEdit = true
-                             }) => {
+  currQuestion,
+  isAnswerError = false,
+  isEdit = true
+}) => {
+  const {isCN} = useLang();
+  const {isCheck, isStick, isExplain, update} = useQuestionConfig();
 
   const color = isExplain ? (isAnswerError ? ERROR_COLOR : CORRECT_COLOR) : THEME_COLOR;
   const answerStyle = {
     border: `1px solid ${color}`,
     color: color
   }
+
+  const handleQuestionConfig = (config = {}) => {
+    update(config);
+    playSound(CLICK_SOUND);
+  };
 
   return (
     <>
@@ -31,8 +33,16 @@ const QuestionExplanation = ({
           {
             isEdit ? (
               <div className="stick-box">
-                <div className={isCheck ? 'active' : ''} onClick={handleCheck}>{getIcon('check')}</div>
-                <div className={isStick ? 'active' : ''} onClick={handleStick}>{getIcon('thumb_tack')}</div>
+                <div className={isCheck ? 'active' : ''}
+                     onClick={() => handleQuestionConfig({isCheck: !isCheck})}
+                >
+                  {getIcon('check')}
+                </div>
+                <div className={isStick ? 'active' : ''}
+                     onClick={() => handleQuestionConfig({isStick: !isStick})}
+                >
+                  {getIcon('thumb_tack')}
+                </div>
               </div>
             ) : ""
           }
