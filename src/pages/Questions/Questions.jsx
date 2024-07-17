@@ -28,7 +28,7 @@ const Questions = () => {
   const questions = useMemo(() => {
     const questions = isCN ? allQuestions_CN : allQuestions;
     if (filterQuestionIds && filterQuestionIds.length > 0) {
-      return questions.filter(question => filterQuestionIds.includes(question.questionId));
+      return questions.filter(question => filterQuestionIds.includes(question.id));
     }
     return questions
   }, [isCN, filterQuestionIds, allQuestions, allQuestions_CN]);

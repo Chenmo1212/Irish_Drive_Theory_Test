@@ -21,7 +21,7 @@ export const useFilterQuestions = create(
     filterByFavorite: false,
     filterQuestionIds: [],
 
-    updateQuestions: (ids) => set(() => ({filterQuestionIds: ids})),
+    updateQuestionIds: (ids) => set(() => ({filterQuestionIds: ids})),
     updateTypeByError: (bool) => set(() => ({filterByError: bool})),
     updateTypeByFavorite: (bool) => set(() => ({filterByFavorite: bool})),
   }), {

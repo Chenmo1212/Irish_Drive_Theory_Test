@@ -119,31 +119,6 @@ const updateQuestionIndex = (questions) => questions.map((q, i) => {
 export const questionsEN = updateQuestionIndex(QUESTIONS_EN);
 export const questionsCN = updateQuestionIndex(QUESTIONS_CN);
 
-
-const sectionTranslations = {
-  "Control of Vehicle": "车辆控制",
-  "Legal Matters/Rules of the Road": "法律事务/交通规则",
-  "Managing Risk": "管理风险",
-  "Safe and Responsible Driving": "安全和负责任的驾驶",
-  "Technical Matters": "技术问题",
-};
-
-export const getQuestionTypes = (questions) => {
-  const res = questions.reduce((acc, question) => {
-    const section = question.section;
-    if (!acc[section]) {
-      acc[section] = {
-        sectionName: section, sectionNameCN: sectionTranslations[section] || "未知", amount: 0, questions: []
-      };
-    }
-    acc[section].amount++;
-    acc[section].questions.push(question);
-    return acc;
-  }, {});
-  return Object.values(res);
-};
-
-
 // EXAM
 
 export const saveNewExamToLocalStorage = (exam) => {

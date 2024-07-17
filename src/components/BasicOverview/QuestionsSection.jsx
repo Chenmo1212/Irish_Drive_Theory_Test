@@ -2,17 +2,23 @@ import React from 'react';
 import {getIcon} from "../../styles/icons";
 import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
 import EMPTY from "../../assets/svg/empty.svg";
+import {useAnswers} from "../../store";
+import {useNavigate} from "react-router-dom";
 
 const QuestionsSection = ({
-                            questionTypes,
-                            filteredQuestions,
-                            userAnswers,
-                            isCN,
-                            handleDetailPage,
-                            isCheckAnswer = true
-                          }) => {
+  questionTypes,
+  filterQuestions,
+  isCheckAnswer = true
+}) => {
+  const {userAnswers} = useAnswers();
+  const navigate = useNavigate();
+
+  const handleDetailPage = (index) => {
+    navigate(`/question?i=${index}`);
+  }
+
   const getFavStatus = (question) => {
-    if (!filteredQuestions.length) return {};
+    if (!filterQuestions.length) return {};
 
     const {id} = question;
     const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
@@ -25,7 +31,7 @@ const QuestionsSection = ({
   }
 
   const getStyle = (question) => {
-    if (!filteredQuestions.length) return {};
+    if (!filterQuestions.length) return {};
 
     const {id, correct_answer} = question;
     const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
@@ -45,7 +51,7 @@ const QuestionsSection = ({
   };
 
   const toDetail = (idx) => {
-    const index = filteredQuestions.findIndex(q => q.index === idx);
+    const index = filterQuestions.findIndex(q => q.index === idx);
     handleDetailPage(index + 1);
   }
 
@@ -54,7 +60,7 @@ const QuestionsSection = ({
       {questionTypes.length ? questionTypes.map((section, sectionIdx) => (
           <div className="section" key={sectionIdx}>
             {section.sectionName && <div className="title" style={{color: THEME_COLOR}}>
-              <span>{isCN ? section.sectionNameCN : section.sectionName} ({section.questions.length})</span>
+              <span>{section.sectionName} ({section.questions.length})</span>
             </div>}
             <div className="content">
               {section.questions.map(question => (
