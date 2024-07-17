@@ -1,5 +1,5 @@
 .mine {
-  padding: 10% 20px;
+  padding: 20px;
   width: 100%;
   position: relative;
   height: 100%;
@@ -22,6 +22,7 @@
 }
 
 .mine .header .circle__avatar {
+  margin-top: 50px;
   justify-self: center;
   border-radius: 1rem;
   justify-items: center;
@@ -45,9 +46,9 @@
   box-shadow: 3px 3px 6px rgba(173, 195, 225, 0.8), -3px -3px 6px rgba(255, 255, 255, 0.8);
   cursor: pointer;
   position: relative;
-  background: url("https://tiku.chenmo1212.cn/static/img/avatar.3348d87.png");
+  background: url("https://cdn.chenmo1212.cn/img/avatar-spring.png?imageView2/0/w/200/h/200/q/75");
   background-size: cover;
-  border: 2px solid;
+  border: 2px solid #fff;
 }
 
 .mine .header .circle__avatar .circle__btn .play {
@@ -140,4 +141,15 @@
     border-color: transparent;
   }
 }
- 
+
+
+.mine footer {
+  position: absolute;
+  bottom: 2em;
+  font-size: 12px;
+  color: var(--secondary-font-color);
+}
+
+.mine footer a {
+  color: var(--secondary-font-color);
+}

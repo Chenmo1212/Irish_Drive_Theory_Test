@@ -1,16 +1,22 @@
 .home {
-  height: 100vh;
+  height: calc(100vh - 40px);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .project {
-  height: 100%;
+  margin-top: 50px;
+  width: 90%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: var(--white-bg-color);
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px #d1d3db, -2px -2px 3px #f4f4f6;
 }
 
 .project .cover {
@@ -93,15 +99,4 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
-}
-
-.home footer {
-  position: absolute;
-  bottom: calc(2.5% + 2em);
-  font-size: 12px;
-  color: var(--secondary-font-color);
-}
-
-.home footer a {
-  color: var(--secondary-font-color);
 }

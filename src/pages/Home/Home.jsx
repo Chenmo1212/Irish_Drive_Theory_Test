@@ -60,20 +60,9 @@ const Home = () => {
         </Link>
       </div>
 
-      <Footer/>
-
       <Notification/>
     </div>
   </div>
-}
-
-const Footer = () => {
-  const currYear = new Date().getFullYear();
-  return (<footer>
-    <p className="footer">All rights reserved ©{currYear} <a
-      href="https://chenmo1212.cn?f=irish-questions">ChenMo1212</a>
-    </p>
-  </footer>)
 }
 
 export default Home

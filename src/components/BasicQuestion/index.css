@@ -12,7 +12,7 @@
 }
 
 .question.normal .content {
-  height: calc(95vh - 100px);
+  height: calc(100vh - 100px);
 }
 
 .question .content .content-head {

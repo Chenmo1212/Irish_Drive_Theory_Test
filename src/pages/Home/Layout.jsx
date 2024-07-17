@@ -7,7 +7,6 @@ const Layout = () => {
   const [isActive, setIsActive] = useState(false);
   return (<>
     <div className="layout">
-
       <div className={`menu-nav ${isActive ? "" : 'inactive'}`}>
         <Mine/>
       </div>

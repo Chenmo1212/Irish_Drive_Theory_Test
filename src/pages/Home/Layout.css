@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-.menu-nav {
+.layout .menu-nav {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -14,11 +14,11 @@
   transition: 1s ease left;
 }
 
-.menu-nav.inactive {
+.layout .menu-nav.inactive {
   left: -76%;
 }
 
-.main {
+.layout .main {
   position: relative;
   right: -76%;
   left: 76%;
@@ -29,7 +29,7 @@
   transition: all 1s;
 }
 
-.main.inactive {
+.layout .main.inactive {
   right: 0;
   left: 0;
   box-shadow: none;
@@ -38,7 +38,9 @@
 }
 
 .layout .menu-circle {
-  margin: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   width: 40px;
   height: 40px;
   line-height: 40px;
