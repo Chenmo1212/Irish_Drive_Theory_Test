@@ -13,14 +13,20 @@ export const useVersion = create(persist((set) => ({
 
 
 const EXPIRATION_TIME = 60 * 60 * 24;
+const MAX_EXPIRATION_TIME = Number.MAX_SAFE_INTEGER;
 
 export const useNotification = create(persist((set, get) => ({
   isNotification: true,
   expiration: Date.now() + EXPIRATION_TIME * 1000,
 
-  update: (bool) => set(() => ({
+  reset: () => set(() => ({
+    isNotification: true,
+    expiration: Date.now()
+  })),
+
+  update: (bool, duration = EXPIRATION_TIME) => set(() => ({
     isNotification: bool,
-    expiration: Date.now() + EXPIRATION_TIME * 1000
+    expiration: duration === 0 ? MAX_EXPIRATION_TIME : Date.now() + duration * 1000
   })),
 
   isExpired: () => {

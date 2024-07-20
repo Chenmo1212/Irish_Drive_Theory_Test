@@ -1,22 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import BasicModal from "../BasicModal/BasicModal";
-import {loadFromLocalStorage, saveToLocalStorage} from "../../common/common";
-
-const initializeLocalStorage = () => {
-  const isShowNotification = loadFromLocalStorage('appNotification', true, 3600 * 1000 * 24);
-  const isCN = loadFromLocalStorage('questionsConfig', {})?.isCN || false;
-  return {isCN, isShowNotification};
-};
+import {useLang, useNotification} from "../../store/config.store";
 
 const Notification = () => {
-  const [isCN, setIsCN] = useState(false);
-  const [isShowNotification, setIsShowNotification] = useState(true);
-
-  useEffect(() => {
-    const {isCN, isShowNotification} = initializeLocalStorage();
-    setIsCN(isCN);
-    setIsShowNotification(isShowNotification);
-  }, []);
+  const {isCN} = useLang();
+  const {isNotification, isExpired, update} = useNotification();
 
   const getNotificationContentEN = () => (<>
     <p>All questions on this website have been updated to the <b>latest 2024 version</b> of the question bank.</p>
@@ -37,12 +25,9 @@ const Notification = () => {
     text={isCN ? getNotificationContentCN() : getNotificationContentEN()}
     submitText={isCN ? '确定' : 'Got it!'}
     cancelText={isCN ? '' : ''}
-    show={isShowNotification}
-    onClose={() => setIsShowNotification(false)}
-    onSubmit={() => {
-      setIsShowNotification(false);
-      saveToLocalStorage('appNotification', false, 3600 * 1000 * 24 * 7);
-    }}
+    show={isExpired() || isNotification}
+    onClose={() => update(false, 1)}
+    onSubmit={() => update(false, 0)}
     textAlign="left"
   />)
 };
