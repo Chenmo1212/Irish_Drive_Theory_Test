@@ -134,6 +134,7 @@ const BasicQuestion = ({
 
           <QuestionExplanation
             currQuestion={currQuestion}
+            isExplain={isExplain}
             isAnswerError={isAnswerError}
           />
         </div>

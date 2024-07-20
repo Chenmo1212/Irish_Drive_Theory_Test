@@ -130,6 +130,7 @@ function Exam() {
   const changeQuestion = (increment) => {
     if (isExplain) setExamIsExplain(false);
     if (currIdx <= 0 && increment === -1) return;
+    if (currIdx >= questionIds.length - 1 && increment === 1) return;
     setExamCurrIdx(currIdx + increment);
     playSound(CLICK_SOUND);
   };
@@ -144,13 +145,13 @@ function Exam() {
       const userAnswer = answers.find(a => a.questionId === q.id)?.userAnswer;
       return {
         questionId: q.id,
-        userAnswer: userAnswer || -1,
+        userAnswer: userAnswer !== -1 ? userAnswer : -1,
         isCorrect: q.correct_answer === userAnswer
       }
     });
-    const score = calcScore(newAnswers);
+    const score = newAnswers.filter(a => a.isCorrect).length;
     setExamAnswers(newAnswers);
-    setExamScore(calcScore(newAnswers));
+    setExamScore(score);
     setExamStatus(true);
     updateCountdownStatus(false);
 
@@ -163,17 +164,6 @@ function Exam() {
     }
     addExamToHistory(exam);
     navigate('/afterExam');
-  }
-
-  const calcScore = (answers) => {
-    let score = 0;
-    answers.forEach(answer => {
-      const question = questions.find(q => q.id === answer.questionId);
-      if (question && question.correct_answer === answer.userAnswer) {
-        score += 1;
-      }
-    });
-    return score;
   }
 
   return (
@@ -200,6 +190,7 @@ function Exam() {
               ? <QuestionExplanation
                 currQuestion={currQuestion}
                 isAnswerError={isAnswerError}
+                isExplain={true}
                 isEdit={false}
               />
               : ""}

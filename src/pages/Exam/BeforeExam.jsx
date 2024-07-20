@@ -47,8 +47,8 @@ const sectionDistribution = {
 const BeforeExam = () => {
   const navigate = useNavigate();
   const {allQuestions: questions} = useQuestions();
-  const {setExamQuestionIds, setCreatedTime} = useExam();
-  const {updateCountdownStatus} = useExamCountdown();
+  const {reset: resetExam, setExamQuestionIds} = useExam();
+  const {start: startCountdown} = useExamCountdown();
 
   const backHome = () => {
     navigate(-1);
@@ -56,9 +56,11 @@ const BeforeExam = () => {
 
   const toExamDetail = () => {
     const mockExamQuestionIds = generateMockExamQuestionIds(questions, sectionDistribution);
+
+    resetExam();
     setExamQuestionIds(mockExamQuestionIds);
-    setCreatedTime(Date.now());
-    updateCountdownStatus(true);
+
+    startCountdown();
     navigate('/exam?i=1');
   };
 

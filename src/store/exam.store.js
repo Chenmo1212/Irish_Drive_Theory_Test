@@ -16,10 +16,8 @@ export const useExam = create(persist((set) => ({
     isExplain: false,
     score: 0,
     currIdx: 0,
-    createdTime: null
+    createdTime: Date.now()
   })),
-
-  setCreatedTime: (time) => set(() => ({createdTime: time})),
 
   setExamQuestionIds: (questionIds) => set(() => ({questionIds})),
 
@@ -41,9 +39,9 @@ export const useExamCountdown = create(persist((set) => ({
   countdownActive: false,
   secondsLeft: ExamSeconds,
 
-  reset: () => set(() => ({
-    countdownActive: false,
-    secondsLeft: 0
+  start: () => set(() => ({
+    countdownActive: true,
+    secondsLeft: ExamSeconds
   })),
 
   updateCountdownStatus: (bool) => set(() => ({countdownActive: bool})),

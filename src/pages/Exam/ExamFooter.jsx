@@ -18,11 +18,11 @@ const ExamFooter = ({
   }
 
   const isFirstQuestion = () => {
-    return currIdx === 0;
+    return currIdx <= 0;
   }
 
   const isLastQuestion = () => {
-    return currIdx === questionIds.length - 1;
+    return currIdx >= questionIds.length - 1;
   }
 
   const MENU_ITEM = [{

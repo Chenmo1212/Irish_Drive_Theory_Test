@@ -5,11 +5,12 @@ import {useLang, useQuestionConfig} from "../../store";
 
 const QuestionExplanation = ({
   currQuestion,
+  isExplain = false,
   isAnswerError = false,
   isEdit = true
 }) => {
   const {isCN} = useLang();
-  const {isCheck, isStick, isExplain, update} = useQuestionConfig();
+  const {isCheck, isStick, update} = useQuestionConfig();
 
   const color = isExplain ? (isAnswerError ? ERROR_COLOR : CORRECT_COLOR) : THEME_COLOR;
   const answerStyle = {
