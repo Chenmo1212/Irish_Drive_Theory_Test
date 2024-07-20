@@ -1,6 +1,7 @@
 .layout {
   background-color: var(--bg-color);
   overflow: hidden;
+  position: relative;
 }
 
 .layout .menu-nav {

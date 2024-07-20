@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Mine.css'
+import {useLang} from "../../store";
 
 const Header = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -28,11 +29,32 @@ const Header = () => {
   );
 };
 
+const Settings = () => {
+  const {isCN, update} = useLang();
+  return (
+    <>
+      <div className="settings">
+        <div className="item">
+          <i className="fa fa-expand left"/>
+          <span>{isCN ? '切换语言' : 'Switch language'}</span>
+          <span className="switch-container">
+            <label className="switch" onClick={() => update(!isCN)}>
+              <input type="checkbox" checked={isCN} readOnly/>
+            </label>
+          </span>
+        </div>
+      </div>
+    </>
+  )
+}
+
 const Mine = () => {
   return (
     <>
       <div className="mine">
         <Header/>
+
+        <Settings/>
 
         <Footer/>
       </div>
