@@ -2,24 +2,27 @@ import React, {useState} from 'react';
 import PageHeader from "../../components/Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 import './Console.css'
-import {loadFromLocalStorage, saveToLocalStorage} from "../../common/common";
+import {useAnswers} from "../../store";
 
 const Console = () => {
   const [userAnswersIpt, setUserAnswersIpt] = useState("");
+  const {answers} = useAnswers();
   const navigate = useNavigate();
 
   const loadUserAnswers = () => {
-    const answers = loadFromLocalStorage('userAnswers', []);
     setUserAnswersIpt(JSON.stringify(answers));
   }
 
-  const saveUserAnswers = () => {
-    const answers = JSON.parse(userAnswersIpt);
+  const saveToLocalStorage = (key, value) => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }
 
-    if (isAnswersValid(answers)) {
-      const originalAnswers = loadFromLocalStorage('userAnswers', []);
-      saveToLocalStorage("userAnswers_Bak", originalAnswers);
-      saveToLocalStorage("userAnswers", answers);
+  const saveUserAnswers = () => {
+    const newAnswers = JSON.parse(userAnswersIpt);
+
+    if (isAnswersValid(newAnswers)) {
+      saveToLocalStorage("ddt-answers_Bak", answers);
+      saveToLocalStorage("ddt-answers", newAnswers);
     }
   }
 

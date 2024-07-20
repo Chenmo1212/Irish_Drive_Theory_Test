@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo} from 'react';
 import './index.css'
 import QuestionHeader from "./QuestionHeader";
-import {CLICK_SOUND, CORRECT_SOUND, NORMAL_SOUND, playSound, WRONG_SOUND} from "../../common/common";
+import {CLICK_SOUND, CORRECT_SOUND, NORMAL_SOUND, playSound, WRONG_SOUND} from "../../utils/helper";
 import QuestionFooter from "./QuestionFooter";
 import QuestionInfo from "./QuestionInfo";
 import QuestionContent from "./QuestionContent";

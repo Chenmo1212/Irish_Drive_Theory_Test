@@ -1,13 +1,13 @@
 import React from 'react';
-import {CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, THEME_COLOR,} from '../../common/common';
+import {CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, THEME_COLOR,} from '../../utils/helper';
 
 const QuestionContent = ({
-                           isExplain,
-                           isAnswerError,
-                           currQuestion,
-                           chosenAnswerIndex,
-                           handleOptionClick
-                         }) => {
+  isExplain,
+  isAnswerError,
+  currQuestion,
+  chosenAnswerIndex,
+  handleOptionClick
+}) => {
 
   const color = isExplain ? (isAnswerError ? ERROR_COLOR : CORRECT_COLOR) : THEME_COLOR;
   const chosenOptionStyle = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {CLICK_SOUND, CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, playSound, THEME_COLOR} from '../../common/common';
+import {CLICK_SOUND, CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, playSound, THEME_COLOR} from '../../utils/helper';
 import {getIcon} from "../../styles/icons";
 import {useLang, useQuestionConfig} from "../../store";
 

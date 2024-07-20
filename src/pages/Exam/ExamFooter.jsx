@@ -1,6 +1,6 @@
 import React from 'react';
 import {getIcon} from "../../styles/icons";
-import {CLICK_SOUND, playSound, THEME_COLOR} from '../../common/common';
+import {CLICK_SOUND, playSound, THEME_COLOR} from '../../utils/helper';
 import {useNavigate} from "react-router-dom";
 import {useExam} from "../../store";
 

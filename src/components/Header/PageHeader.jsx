@@ -1,9 +1,9 @@
 import React from 'react';
-import {THEME_COLOR} from '../../common/common';
+import {THEME_COLOR} from '../../utils/helper';
 import {getIcon} from "../../styles/icons";
 import './PageHeader.css'
 
-const PageHeader = ({pageTitle, handleBack, rightIcons, leftIcon='arrow_left'}) => {
+const PageHeader = ({pageTitle, handleBack, rightIcons, leftIcon = 'arrow_left'}) => {
   return (
     <div className="page-header header">
       <div className="return">

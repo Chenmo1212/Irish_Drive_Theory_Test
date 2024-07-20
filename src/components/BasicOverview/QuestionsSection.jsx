@@ -1,6 +1,6 @@
 import React from 'react';
 import {getIcon} from "../../styles/icons";
-import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
+import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../utils/helper';
 import EMPTY from "../../assets/svg/empty.svg";
 
 const QuestionsSection = ({

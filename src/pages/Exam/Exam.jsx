@@ -1,5 +1,5 @@
 import React, {useEffect, useMemo, useState} from 'react';
-import {CLICK_SOUND, playSound} from "../../common/common";
+import {CLICK_SOUND, playSound} from "../../utils/helper";
 import "./Exam.css"
 import {useNavigate, useSearchParams} from "react-router-dom";
 import ExamHeader from "./ExamHeader";

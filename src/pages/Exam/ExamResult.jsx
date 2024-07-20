@@ -1,7 +1,7 @@
 import React, {useMemo, useRef} from 'react';
 import PageHeader from "../../components/Header/PageHeader";
 import {useNavigate} from "react-router-dom";
-import {CORRECT_COLOR, ERROR_COLOR, NORMAL_SOUND, playSound} from "../../common/common";
+import {CORRECT_COLOR, ERROR_COLOR, NORMAL_SOUND, playSound} from "../../utils/helper";
 import ExamResultChart from "../../components/Chart/Chart";
 import LineChart from "../../components/LineChart/LineChart";
 import {getIcon} from "../../styles/icons";

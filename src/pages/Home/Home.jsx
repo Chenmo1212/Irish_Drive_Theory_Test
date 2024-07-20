@@ -3,7 +3,7 @@ import './Home.css'
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
 import Notification from '../../components/Notification/Notification'
-import {THEME_COLOR} from '../../common/common';
+import {THEME_COLOR} from '../../utils/helper';
 import {getIcon} from "../../styles/icons";
 import {useAnswers, useCurrQuestionIdx, useLang, useQuestions} from "../../store";
 

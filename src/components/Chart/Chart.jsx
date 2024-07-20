@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Chart.css'
-import {THEME_COLOR} from "../../common/common";
+import {THEME_COLOR} from "../../utils/helper";
 
 const ExamResultChart = ({title, score}) => {
   const r = 40;
