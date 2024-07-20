@@ -3,6 +3,7 @@ import "./index.css"
 import HeaderSection from "../../components/BasicOverview/HeaderSection";
 import {useAnswers, useFilterQuestions, useLang, useQuestions} from "../../store";
 import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
+import {useNavigate} from "react-router-dom";
 
 const Overview = () => {
   const {allQuestions, allQuestions_CN} = useQuestions();
@@ -15,6 +16,7 @@ const Overview = () => {
   } = useFilterQuestions()
   const {isCN} = useLang();
   const {userAnswers} = useAnswers();
+  const navigate = useNavigate();
 
   const questions = useMemo(() => {
     return isCN ? allQuestions_CN : allQuestions;
@@ -38,10 +40,10 @@ const Overview = () => {
       .sort((a, b) => a.index - b.index);  // Sort
   }, [getUserAnswerStatus]);
 
-  const filterQuestions = useMemo(() => {
-    const filteredQuestions = getFilteredQuestions(filterByError, filterByFavorite, userAnswers, questions);
-    updateQuestionIds(filteredQuestions.map(q => q.id));
-    return filteredQuestions;
+  const filteredQuestions = useMemo(() => {
+    const tmpFilteredQuestions = getFilteredQuestions(filterByError, filterByFavorite, userAnswers, questions);
+    updateQuestionIds(tmpFilteredQuestions.map(q => q.id));
+    return tmpFilteredQuestions;
   }, [filterByError, filterByFavorite, userAnswers, questions, getFilteredQuestions, updateQuestionIds]);
 
   const getQuestionTypes = (questions) => {
@@ -60,12 +62,16 @@ const Overview = () => {
   };
 
   const questionTypes = useMemo(() => {
-    return getQuestionTypes(filterQuestions);
-  }, [filterQuestions])
+    return getQuestionTypes(filteredQuestions);
+  }, [filteredQuestions])
 
   const handleFilteredQuestions = (type) => {
     if (type === 'error') updateTypeByError(!filterByError);
     if (type === 'favorite') updateTypeByFavorite(!filterByFavorite);
+  }
+
+  const handleDetailPage = (index) => {
+    navigate(`/question?i=${index}`);
   }
 
   return (
@@ -80,7 +86,8 @@ const Overview = () => {
 
       <QuestionsSection
         questionTypes={questionTypes}
-        filterQuestions={filterQuestions}
+        filteredQuestions={filteredQuestions}
+        handleDetailPage={handleDetailPage}
       />
     </div>
   )

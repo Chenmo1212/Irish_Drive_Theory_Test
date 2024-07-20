@@ -13,7 +13,7 @@ import QuestionExplanation from "../../components/BasicQuestion/QuestionExplanat
 function Exam() {
   const {allQuestions} = useQuestions();
   const {secondsLeft, updateCountdownStatus} = useExamCountdown();
-  const {addExamToHistory} = useExamHistory();
+  const {add: addExamToHistory} = useExamHistory();
   const {
     createdTime,
     questionIds,
@@ -47,7 +47,7 @@ function Exam() {
   }, [answers, currQuestion]);
 
   const isAnswerError = useMemo(() => {
-    return answer?.userAnswer !== currQuestion.correct_answer
+    return answer?.userAnswer !== currQuestion?.correct_answer
   }, [answer, currQuestion])
 
   useEffect(() => {

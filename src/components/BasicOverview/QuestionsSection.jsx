@@ -2,23 +2,17 @@ import React from 'react';
 import {getIcon} from "../../styles/icons";
 import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
 import EMPTY from "../../assets/svg/empty.svg";
-import {useAnswers} from "../../store";
-import {useNavigate} from "react-router-dom";
 
 const QuestionsSection = ({
   questionTypes,
-  filterQuestions,
+  filteredQuestions,
+  userAnswers,
+  handleDetailPage,
   isCheckAnswer = true
 }) => {
-  const {userAnswers} = useAnswers();
-  const navigate = useNavigate();
-
-  const handleDetailPage = (index) => {
-    navigate(`/question?i=${index}`);
-  }
 
   const getFavStatus = (question) => {
-    if (!filterQuestions.length) return {};
+    if (filteredQuestions && !filteredQuestions.length) return {};
 
     const {id} = question;
     const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
@@ -31,7 +25,7 @@ const QuestionsSection = ({
   }
 
   const getStyle = (question) => {
-    if (!filterQuestions.length) return {};
+    if (filteredQuestions && !filteredQuestions.length) return {};
 
     const {id, correct_answer} = question;
     const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
@@ -51,7 +45,7 @@ const QuestionsSection = ({
   };
 
   const toDetail = (idx) => {
-    const index = filterQuestions.findIndex(q => q.index === idx);
+    const index = filteredQuestions.findIndex(q => q.index === idx);
     handleDetailPage(index + 1);
   }
 
