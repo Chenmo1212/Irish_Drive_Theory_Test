@@ -7,6 +7,7 @@ import BeforeExam from "./pages/Exam/BeforeExam";
 import Exam from "./pages/Exam/Exam";
 import ExamOverview from "./pages/Exam/ExamOverview";
 import ExamResult from "./pages/Exam/ExamResult";
+import About from "./pages/About/About";
 import Console from "./pages/Console/Console";
 import {useVersion} from "./store/config.store";
 import {useQuestions} from "./store";
@@ -36,6 +37,7 @@ function App() {
           <Route path="/exam" element={<Exam/>}/>
           <Route path="/examOverview" element={<ExamOverview/>}/>
           <Route path="/afterExam" element={<ExamResult/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="/console" element={<Console/>}/>
         </Routes>
       </main>

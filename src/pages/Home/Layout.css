@@ -37,10 +37,17 @@
   transform: scale(1);
 }
 
-.layout .menu-circle {
+.layout .menu-icons {
   position: absolute;
+  width: calc(100% - 40px);
   top: 20px;
-  left: 20px;
+  justify-content: space-between;
+  padding: 0 20px;
+  display: flex;
+  color: var(--font-color-regular);
+}
+
+.layout .menu-circle {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -57,7 +64,7 @@
 }
 
 .m_button span {
-  background-color: #A2B1CA;
+  background-color: var(--font-color-regular);
   width: 15px;
   height: 2px;
   border-radius: 4px;

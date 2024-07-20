@@ -1,0 +1,54 @@
+.about {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.about .content {
+  padding: 15px 20px 10px;
+  text-align: left;
+}
+
+.about .content .card {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-color);
+  padding: 20px 15px;
+}
+
+
+.about .content .card p {
+  font-size: 12px;
+  color: var(--font-color-secondary);
+}
+
+.about .content .card p.english {
+  letter-spacing: -0.4px;
+  margin-bottom: -10px;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.about .content .card li.done {
+  text-decoration: line-through;
+}
+
+.about .content h4 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.about .content p {
+  text-indent: 2em;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.about .content .end {
+  margin: 0;
+  text-align: right;
+}

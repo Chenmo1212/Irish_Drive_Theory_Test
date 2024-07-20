@@ -2,6 +2,7 @@ import React from 'react';
 import {
   FaArrowLeft,
   FaArrowRight,
+  FaRegBell,
   FaBell,
   FaCheckCircle,
   FaChevronLeft,
@@ -21,6 +22,7 @@ import {
 } from 'react-icons/fa';
 
 const icons = new Map([
+  ['reg_bell', <FaRegBell/>],
   ['bell', <FaBell/>],
   ['back', <FaChevronLeft/>],
   ['fav_reg', <FaRegStar/>],
