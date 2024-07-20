@@ -27,7 +27,7 @@ const BasicQuestion = ({
 
   useEffect(() => {
     if (isStick) updateQuestionConfig({isExplain: true});
-  }, [isStick, currQuestionIdx]);
+  }, [isStick, updateQuestionConfig]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {

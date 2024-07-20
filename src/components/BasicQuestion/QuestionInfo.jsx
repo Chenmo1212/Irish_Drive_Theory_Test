@@ -2,10 +2,10 @@ import React from 'react';
 import {THEME_COLOR} from '../../common/common';
 
 const QuestionInfo = ({
-                        currQuestion,
-                        currQuestionIndex,
-                        questions,
-                      }) => {
+  currQuestion,
+  currQuestionIndex,
+  questions,
+}) => {
 
   return (
     <div className="content-head">

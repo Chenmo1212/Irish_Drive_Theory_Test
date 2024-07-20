@@ -23,6 +23,7 @@ const Questions = () => {
     } else {
       navigate('/question?i=1')
     }
+    // eslint-disable-next-line
   }, [searchIndex])
 
   const questions = useMemo(() => {
@@ -35,7 +36,7 @@ const Questions = () => {
 
   const currQuestion = useMemo(() => {
     return questions[currQuestionIdx];
-  }, [questions, currQuestionIdx, searchIndex]);
+  }, [questions, currQuestionIdx]);
 
   return (<div className="normal-mode">
     <BasicQuestion

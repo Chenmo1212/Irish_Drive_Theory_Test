@@ -1,23 +1,20 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Timer from "../../components/Timer/Timer";
-import {loadExamFromLocalStorage, loadFromLocalStorage} from "../../common/common";
+import {useExam, useExamCountdown} from "../../store";
 
+const TOTAL_EXAM_SECONDS = 60 * 40;
 const ExamHeader = ({handleSubmit, submitLabel}) => {
-  const [isActive, setIsActive] = useState(true);
-  const [secondsLeft, setSecondsLeft] = useState(true);
+  const {countdownActive, updateCountdownStatus} = useExamCountdown();
+  const {isCompleted} = useExam();
 
   useEffect(() => {
-    const exam = loadExamFromLocalStorage();
-    const secondsLeft = loadFromLocalStorage('secondsLeft', 0);
-    setSecondsLeft(secondsLeft);
-    const {completed} = exam;
-    setIsActive(!completed);
-  }, [])
+    updateCountdownStatus(!isCompleted);
+  }, [isCompleted, updateCountdownStatus])
 
   return (
     <div className="exam-header header">
       <div className="timer">
-        <Timer isActive={isActive} totalSeconds={secondsLeft}/>
+        <Timer isActive={countdownActive} totalSeconds={TOTAL_EXAM_SECONDS}/>
       </div>
       <div className={`submit rect-round-button`}
            onClick={() => handleSubmit()}

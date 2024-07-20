@@ -1,4 +1,4 @@
-import React, {useMemo} from "react"
+import React, {useCallback, useMemo} from "react"
 import "./index.css"
 import HeaderSection from "../../components/BasicOverview/HeaderSection";
 import {useAnswers, useFilterQuestions, useLang, useQuestions} from "../../store";
@@ -18,15 +18,15 @@ const Overview = () => {
 
   const questions = useMemo(() => {
     return isCN ? allQuestions_CN : allQuestions;
-  }, [isCN])
+  }, [isCN, allQuestions_CN, allQuestions])
 
-  const getUserAnswerStatus = (id, answer) => {
+  const getUserAnswerStatus = useCallback((id, answer) => {
     if (!id) return false;
     const question = questions.find(q => q.id === id);
     return question && question.correct_answer !== answer;
-  }
+  }, [questions]);
 
-  const getFilteredQuestions = (filterByError, filterByFavorite, userAnswers, questions) => {
+  const getFilteredQuestions = useCallback((filterByError, filterByFavorite, userAnswers, questions) => {
     if (!filterByError && !filterByFavorite) {
       return questions;
     }
@@ -36,13 +36,13 @@ const Overview = () => {
         || (filterByFavorite && answer.isFavorite))  // Filter answers by Error or Favorite
       .map(answer => questions.find(question => question.id === answer.questionId)) // Get questionId
       .sort((a, b) => a.index - b.index);  // Sort
-  }
+  }, [getUserAnswerStatus]);
 
   const filterQuestions = useMemo(() => {
     const filteredQuestions = getFilteredQuestions(filterByError, filterByFavorite, userAnswers, questions);
     updateQuestionIds(filteredQuestions.map(q => q.id));
     return filteredQuestions;
-  }, [filterByError, filterByFavorite, userAnswers, questions]);
+  }, [filterByError, filterByFavorite, userAnswers, questions, getFilteredQuestions, updateQuestionIds]);
 
   const getQuestionTypes = (questions) => {
     const res = questions.reduce((acc, question) => {

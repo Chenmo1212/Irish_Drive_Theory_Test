@@ -1,25 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {getIcon} from "../../styles/icons";
-import {
-  loadFromLocalStorage,
-  QUESTIONS_CONFIG,
-  questionsEN,
-  resetTimer,
-  saveNewExamToLocalStorage
-} from "../../common/common";
 import "./Exam.css"
 import ExamCover from '../../assets/svg/exam.svg'
 import {useNavigate} from "react-router-dom";
+import {useExam, useExamCountdown, useQuestions} from "../../store";
 
-const initializeLocalStorage = () => {
-  const isCN = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG)?.isCN || false;
-
-  return {
-    isCN
-  };
-};
-
-const generateMockExam = (questions, sectionDistribution) => {
+const generateMockExamQuestionIds = (questions, sectionDistribution) => {
   const questionsBySection = questions.reduce((acc, question) => {
     const {section} = question;
     if (!acc[section]) acc[section] = [];
@@ -38,7 +24,7 @@ const generateMockExam = (questions, sectionDistribution) => {
   });
   // Make mockExam randomly
   mockExam = selectRandomQuestions(mockExam, mockExam.length);
-  return mockExam;
+  return mockExam.map(question => question.id);
 }
 
 const selectRandomQuestions = (questions, count) => {
@@ -54,30 +40,25 @@ const sectionDistribution = {
   "Control of Vehicle": 2,
   "Legal Matters/Rules of the Road": 8,
   "Managing Risk": 7,
-  "Safe and Responsible Driving": 22,
+  "Safe and Socially Responsible Driving": 22,
   "Technical Matters": 1,
 };
 
-function BeforeExam() {
-  const [isCN, setIsCN] = useState(false);
+const BeforeExam = () => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const {isCN} = initializeLocalStorage();
-
-    setIsCN(isCN);
-  }, []);
+  const {allQuestions: questions} = useQuestions();
+  const {setExamQuestionIds, setCreatedTime} = useExam();
+  const {updateCountdownStatus} = useExamCountdown();
 
   const backHome = () => {
     navigate(-1);
   };
 
   const toExamDetail = () => {
-    const mockExamQuestions = generateMockExam(questionsEN, sectionDistribution);
-    saveNewExamToLocalStorage({
-      questions: mockExamQuestions,
-    });
-    resetTimer();
+    const mockExamQuestionIds = generateMockExamQuestionIds(questions, sectionDistribution);
+    setExamQuestionIds(mockExamQuestionIds);
+    setCreatedTime(Date.now());
+    updateCountdownStatus(true);
     navigate('/exam?i=1');
   };
 
@@ -89,7 +70,7 @@ function BeforeExam() {
             {getIcon('arrow_left')}
           </div>
           <div className="page-title">
-            {isCN ? "模拟考试" : "Mock Exam"}
+            {"Mock Exam"}
           </div>
         </div>
       </div>

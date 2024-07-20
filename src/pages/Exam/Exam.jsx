@@ -1,71 +1,67 @@
-import React, {useEffect, useState} from 'react';
-import {
-  CLICK_SOUND,
-  loadFromLocalStorage,
-  NORMAL_SOUND,
-  playSound,
-  saveExamToLocalStorage,
-  saveToLocalStorage,
-  stopTimer
-} from "../../common/common";
+import React, {useEffect, useMemo, useState} from 'react';
+import {CLICK_SOUND, playSound} from "../../common/common";
 import "./Exam.css"
 import {useNavigate, useSearchParams} from "react-router-dom";
 import ExamHeader from "./ExamHeader";
 import QuestionInfo from "../../components/BasicQuestion/QuestionInfo";
 import QuestionContent from "../../components/BasicQuestion/QuestionContent";
+import BasicModal from "../../components/BasicModal/BasicModal";
+import {useExam, useExamCountdown, useExamHistory, useQuestions} from "../../store";
 import ExamFooter from "./ExamFooter";
 import QuestionExplanation from "../../components/BasicQuestion/QuestionExplanation";
-import BasicModal from "../../components/BasicModal/BasicModal";
-
-const CURR_QUESTION_CONFIG = {
-  questionId: 1, userAnswer: -1
-}
-
-const EXAM_CONFIGS = {
-  answers: [],
-  completed: false,
-  createTime: "",
-  currIdx: 0,
-  questions: [],
-  score: 0
-}
 
 function Exam() {
-  const [questions, setQuestions] = useState([]);
-  const [userAnswers, setUserAnswers] = useState([]);
-  const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
-  const [isAnswerError, setIsAnswerError] = useState(false);
-  const [isExplain, setIsExplain] = useState(false);
+  const {allQuestions} = useQuestions();
+  const {secondsLeft, updateCountdownStatus} = useExamCountdown();
+  const {addExamToHistory} = useExamHistory();
+  const {
+    createdTime,
+    questionIds,
+    answers,
+    isCompleted,
+    isExplain,
+    currIdx,
+    setExamCurrIdx,
+    setExamAnswers,
+    setExamScore,
+    setExamStatus,
+    setExamIsExplain
+  } = useExam();
   const [isModalShow, setIsModalShow] = useState(false);
 
-  const [currQuestion, setCurrQuestion] = useState({});
-  const [currQuestionConfig, setCurrQuestionConfig] = useState(CURR_QUESTION_CONFIG);
-  const [examConfig, setExamConfig] = useState(EXAM_CONFIGS)
-
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const index = searchParams.get("i") || "0";
+  const searchIndex = parseInt(searchParams.get("i") || "0");
   const toggleModal = () => setIsModalShow(!isModalShow);
 
+  const questions = useMemo(() => {
+    return questionIds.map(id => allQuestions.find(question => question.id === id));
+  }, [questionIds, allQuestions]);
+
+  const currQuestion = useMemo(() => {
+    return questions[currIdx];
+  }, [questions, currIdx])
+
+  const answer = useMemo(() => {
+    return answers.filter(answer => answer.questionId === currQuestion?.id)[0];
+  }, [answers, currQuestion]);
+
+  const isAnswerError = useMemo(() => {
+    return answer?.userAnswer !== currQuestion.correct_answer
+  }, [answer, currQuestion])
+
   useEffect(() => {
-    const newIndex = parseInt(index);
-    if (newIndex <= 0 || newIndex >= 40) {
-      navigate(`/exam?i=${newIndex <= 0 ? 1 : 40}`);
+    if (searchIndex) {
+      const newIndex = searchIndex - 1;
+      if (newIndex <= 0 || newIndex >= 40) {
+        navigate(`/exam?i=${newIndex <= 0 ? 1 : 40}`);
+      }
+      setExamCurrIdx(newIndex);
+    } else {
+      navigate('/exam?i=1');
     }
     // eslint-disable-next-line
-  }, [index])
-
-  useEffect(() => {
-    const setting = initExamConfigs();
-    const {answers, questions} = setting;
-    setQuestions(questions);
-    setUserAnswers(answers);
-
-    const idx = initCurrQuestionIdx();
-    const curr = initCurrQuestion(questions, idx);
-    initCurrQuestionConfig(curr, answers);
-    // eslint-disable-next-line
-  }, [index])
+  }, [searchIndex])
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -73,22 +69,22 @@ function Exam() {
         case '1':
         case 'A':
         case 'a':
-          handleOptionClick(0);
+          updateAnswer({userAnswer: 0});
           break;
         case '2':
         case 'B':
         case 'b':
-          handleOptionClick(1);
+          updateAnswer({userAnswer: 1});
           break;
         case '3':
         case 'C':
         case 'c':
-          handleOptionClick(2);
+          updateAnswer({userAnswer: 2});
           break;
         case '4':
         case 'D':
         case 'd':
-          handleOptionClick(3);
+          updateAnswer({userAnswer: 3});
           break;
         case 'ArrowLeft':
           changeQuestion(-1);
@@ -107,125 +103,65 @@ function Exam() {
       window.removeEventListener('keydown', handleKeyDown);
     };
     // eslint-disable-next-line
-  }, [index, currQuestionIndex]);
+  }, [searchIndex, currIdx]);
 
   useEffect(() => {
-    const {correct_answer} = currQuestion;
-    const {userAnswer} = currQuestionConfig;
-    setIsAnswerError(userAnswer !== correct_answer);
+    if (isCompleted) setExamIsExplain(true);
     // eslint-disable-next-line
-  }, [currQuestionConfig, currQuestion]);
+  }, [currIdx, isCompleted]);
 
-  useEffect(() => {
-    if (examConfig.completed) setIsExplain(true);
-    // eslint-disable-next-line
-  }, [currQuestionIndex, examConfig.completed]);
+  const updateAnswer = (newAnswer) => {
+    const updatedAnswers = [...answers];
+    const answerIndex = answers.findIndex(answer => answer.questionId === currQuestion.id);
 
-  const initExamConfigs = () => {
-    const storeExamConfigs = loadFromLocalStorage('examResults', EXAM_CONFIGS);
-    const updatedConfig = {...examConfig, ...storeExamConfigs}
-    setExamConfig(updatedConfig);
-    return updatedConfig;
-  }
-
-  const initCurrQuestionIdx = () => {
-    const idx = parseInt(index) - 1;
-    if (idx <= 0) navigate('/exam?i=1');
-    setCurrQuestionIndex(idx);
-    return idx;
-  }
-
-  const initCurrQuestion = (questions, idx) => {
-    const currQuestion = {
-      ...questions[idx], isPrev: idx > 0, isNext: idx < questions.length - 1
-    }
-    setCurrQuestion(currQuestion);
-    return currQuestion;
-  }
-
-  const initCurrQuestionConfig = (curr, userAnswers) => {
-    const answer = userAnswers.find(answer => answer.questionId === curr.id);
-    const config = {
-      questionId: curr.id, userAnswer: -1, ...answer
-    };
-    setCurrQuestionConfig(config);
-  }
-
-  const handleOptionClick = (idx) => {
-    const updated = {...currQuestionConfig, userAnswer: idx};
-    setCurrQuestionConfig(updated);
-
-    let newAnswers = [...userAnswers];
-    const answerIdx = newAnswers.findIndex(answer => answer.questionId === currQuestion.id);
-    if (answerIdx > -1) {
-      newAnswers[answerIdx] = updated;
+    if (answerIndex === -1) {
+      updatedAnswers.push({
+        questionId: currQuestion.id,
+        ...newAnswer
+      });
     } else {
-      newAnswers.push(updated);
+      updatedAnswers[answerIndex] = {...updatedAnswers[answerIndex], ...newAnswer};
     }
 
-    saveExamConfigToLocal({answers: newAnswers});
-    playSound(NORMAL_SOUND);
-  }
-
-  const saveExamConfigToLocal = (data) => {
-    const updated = {...examConfig, ...data};
-    setExamConfig(updated);
-    saveToLocalStorage("examResults", updated);
+    setExamAnswers(updatedAnswers);
+    playSound(CLICK_SOUND);
   }
 
   const changeQuestion = (increment) => {
-    setIsExplain(false);
-    if (currQuestionIndex <= 0 && increment === -1) return;
-    let newIndex = currQuestionIndex + increment;
-    setSearchParams({i: (newIndex + 1).toString()});
+    if (isExplain) setExamIsExplain(false);
+    if (currIdx <= 0 && increment === -1) return;
+    setExamCurrIdx(currIdx + increment);
     playSound(CLICK_SOUND);
   };
 
-  const updateCurrQuestionConfig = () => {
-    const updated = {...currQuestionConfig, isFavorite: !currQuestionConfig?.isFavorite};
-    setCurrQuestionConfig(updated);
-    saveUserAnswersToLocal(updated);
-    playSound(CLICK_SOUND);
-  }
-
-  const saveUserAnswersToLocal = (updatedCurrQuestionConfig) => {
-    let newAnswers = [...userAnswers];
-    const idx = newAnswers.findIndex(answer => answer.questionId === currQuestion.id);
-    if (idx > -1) {
-      newAnswers[idx] = updatedCurrQuestionConfig;
-    } else {
-      newAnswers.push(updatedCurrQuestionConfig);
-    }
-    saveExamConfigToLocal({answers: newAnswers})
-  }
-
   const handleSubmit = () => {
-    const {completed} = examConfig;
-    if (!completed) toggleModal();
+    if (!isCompleted) toggleModal();
     else navigate('/afterExam');
   }
 
   const handleExamSubmit = () => {
-    const {answers, questions} = examConfig;
-    let newAnswers = questions.map((q, _) => {
+    const newAnswers = questions.map((q, _) => {
       const userAnswer = answers.find(a => a.questionId === q.id)?.userAnswer;
       return {
         questionId: q.id,
         userAnswer: userAnswer || -1,
         isCorrect: q.correct_answer === userAnswer
       }
-    })
+    });
+    const score = calcScore(newAnswers);
+    setExamAnswers(newAnswers);
+    setExamScore(calcScore(newAnswers));
+    setExamStatus(true);
+    updateCountdownStatus(false);
+
     const exam = {
-      ...examConfig,
+      createdTime: createdTime,
       answers: newAnswers,
-      score: calcScore(newAnswers),
-      completed: true
+      score: score,
+      questionIds: questionIds,
+      usedTime: 60 * 40 - secondsLeft,
     }
-    saveExamToLocalStorage(exam);
-    const examHistory = loadFromLocalStorage("examHistory") || [];
-    examHistory.push(exam);
-    saveToLocalStorage("examHistory", examHistory);
-    stopTimer();
+    addExamToHistory(exam);
     navigate('/afterExam');
   }
 
@@ -242,12 +178,12 @@ function Exam() {
 
   return (
     <div className='exam mock'>
-      <ExamHeader handleSubmit={handleSubmit} submitLabel={examConfig.completed ? 'Result' : 'Submit'}/>
+      <ExamHeader handleSubmit={handleSubmit} submitLabel={isCompleted ? 'Result' : 'Submit'}/>
       <div className="main question">
         <div className="content">
           <QuestionInfo
             currQuestion={currQuestion}
-            currQuestionIndex={currQuestionIndex}
+            currQuestionIndex={currIdx}
             questions={questions}
           />
 
@@ -256,14 +192,15 @@ function Exam() {
               isExplain={isExplain}
               isAnswerError={isAnswerError}
               currQuestion={currQuestion}
-              chosenAnswerIndex={currQuestionConfig.userAnswer}
-              handleOptionClick={handleOptionClick}
+              chosenAnswerIndex={answer?.userAnswer}
+              handleOptionClick={(idx) => updateAnswer({userAnswer: idx})}
             />
 
-            {examConfig.completed
-              ? <QuestionExplanation currQuestion={currQuestion}
-                                     isAnswerError={isAnswerError}
-                                     isEdit={false}
+            {isCompleted
+              ? <QuestionExplanation
+                currQuestion={currQuestion}
+                isAnswerError={isAnswerError}
+                isEdit={false}
               />
               : ""}
           </div>
@@ -271,11 +208,9 @@ function Exam() {
       </div>
 
       <ExamFooter
+        answer={answer}
         changeQuestion={changeQuestion}
-        filteredQuestions={questions}
-        updateCurrQuestionConfig={updateCurrQuestionConfig}
-        currQuestionConfig={currQuestionConfig}
-        currQuestionIndex={currQuestionIndex}
+        updateFavorite={(bool) => updateAnswer({isFavorite: bool})}
       />
 
       <BasicModal

@@ -1,49 +1,35 @@
 import React, {useEffect, useState} from 'react';
+import {useExamCountdown} from "../../store";
 
 const ExamTimer = ({isActive, totalSeconds}) => {
-  const [secondsLeft, setSecondsLeft] = useState(totalSeconds);
-  const [timerActive, setTimerActive] = useState(isActive);
+  const {secondsLeft, updateSecondsLeft, updateCountdownStatus} = useExamCountdown();
   const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {
-    const storedSeconds = localStorage.getItem('secondsLeft');
-    const isActive = localStorage.getItem('timerActive') === 'true';
-
-    setSecondsLeft(storedSeconds ? parseInt(storedSeconds, 10) : totalSeconds);
-    setTimerActive(isActive);
+    updateSecondsLeft(secondsLeft ? secondsLeft : totalSeconds);
+    updateCountdownStatus(isActive);
 
     return () => clearInterval(intervalId);
-  }, [intervalId, totalSeconds]);
+  }, [intervalId, secondsLeft, totalSeconds, isActive, updateSecondsLeft, updateCountdownStatus]);
 
   useEffect(() => {
     let intervalId;
 
-    if (isActive && timerActive && secondsLeft > 0) {
+    if (isActive && secondsLeft > 0) {
       intervalId = setInterval(() => {
-        setSecondsLeft((prevSeconds) => {
-          const newSeconds = prevSeconds - 1;
-          localStorage.setItem('secondsLeft', newSeconds.toString());
-          return newSeconds;
-        });
+        updateSecondsLeft(secondsLeft - 1);
       }, 1000);
     }
 
-    localStorage.setItem('timerActive', (isActive && timerActive).toString());
+    updateCountdownStatus(isActive);
     setIntervalId(intervalId);
 
     return () => clearInterval(intervalId);
-  }, [timerActive, secondsLeft, isActive]);
+  }, [secondsLeft, isActive, updateSecondsLeft, updateCountdownStatus]);
 
   const toggleTimer = () => {
-    setTimerActive(!timerActive);
+    updateCountdownStatus(!isActive);
   };
-
-  // const resetTimer = () => {
-  //   setSecondsLeft(totalSeconds);
-  //   setTimerActive(false);
-  //   localStorage.setItem('secondsLeft', totalSeconds.toString());
-  //   localStorage.setItem('timerActive', 'false');
-  // };
 
   const formatTime = () => {
     const minutes = Math.floor(secondsLeft / 60);
