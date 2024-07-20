@@ -1,53 +1,26 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useMemo, useRef} from 'react';
 import PageHeader from "../../components/Header/PageHeader";
 import {useNavigate} from "react-router-dom";
-import {
-  CORRECT_COLOR,
-  ERROR_COLOR,
-  loadExamFromLocalStorage,
-  loadFromLocalStorage, NORMAL_SOUND, playSound,
-  saveToLocalStorage
-} from "../../common/common";
+import {CORRECT_COLOR, ERROR_COLOR, NORMAL_SOUND, playSound} from "../../common/common";
 import ExamResultChart from "../../components/Chart/Chart";
 import LineChart from "../../components/LineChart/LineChart";
 import {getIcon} from "../../styles/icons";
 import BasicAlert from "../../components/BasicAlert/BasicAlert";
-
-const initializeLocalStorage = () => {
-  const exam = loadExamFromLocalStorage();
-  const userAnswers = loadFromLocalStorage('userAnswers', []);
-  const examHistory = loadFromLocalStorage('examHistory', []);
-
-  return {
-    exam,
-    userAnswers,
-    examHistory,
-  };
-};
+import {useAnswers, useExam, useExamCountdown, useExamHistory} from "../../store";
 
 const ExamResult = () => {
-  const [score, setScore] = useState(0);
-  const [isPass, setIsPass] = useState(false);
-  const [userAnswers, setUserAnswers] = useState([]);
-  const [examAnswers, setExamAnswers] = useState([]);
-  const [chartData, setChartData] = useState([]);
+  const {secondsLeft} = useExamCountdown();
+  const {answers, score} = useExam();
+  const {reset: resetAnswers} = useAnswers();
+  const {examHistory} = useExamHistory();
+  const chartData = useMemo(() => {
+    return examHistory.map((i, _) => i.score);
+  }, [examHistory])
 
   const alertRef = useRef();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const {exam, userAnswers, examHistory} = initializeLocalStorage();
-    const {score, answers: examAnswers} = exam;
-
-    setUserAnswers(userAnswers);
-    setExamAnswers(examAnswers);
-    setChartData(examHistory.map((i, _) => i.score));
-    setScore(score);
-    setIsPass(score >= 35);
-  }, []);
-
   const getUsedTime = () => {
-    const secondsLeft = loadFromLocalStorage('secondsLeft', 0);
     const secondsUsed = 40 * 60 - secondsLeft;
     return formatTime(secondsUsed);
   }
@@ -59,8 +32,8 @@ const ExamResult = () => {
   };
 
   const saveWrongQuestions = () => {
-    let newUserAnswers = [...userAnswers];
-    examAnswers.forEach(examAnswer => {
+    let newUserAnswers = [...answers];
+    answers.forEach(examAnswer => {
       if (!examAnswer.isCorrect) {
         const index = newUserAnswers.findIndex(userAnswer => userAnswer.questionId === examAnswer.questionId);
         if (index !== -1) {
@@ -72,7 +45,7 @@ const ExamResult = () => {
         }
       }
     });
-    saveToLocalStorage('userAnswers', newUserAnswers);
+    resetAnswers(newUserAnswers);
     playSound(NORMAL_SOUND);
 
     alertRef.current.handleAlert();
@@ -95,7 +68,7 @@ const ExamResult = () => {
         <div className="section">
           <div className="result">
             <div className="text"
-                 style={{color: isPass ? CORRECT_COLOR : ERROR_COLOR}}
+                 style={{color: score >= 35 ? CORRECT_COLOR : ERROR_COLOR}}
             >{score >= 35 ? 'PASS' : 'FAIL'}</div>
             <div className="label">Your Result</div>
           </div>

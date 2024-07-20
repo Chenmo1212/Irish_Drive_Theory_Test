@@ -58,7 +58,7 @@ export const useAnswers = create(
   persist((set) => ({
     userAnswers: [],
 
-    reset: () => set(() => ({userAnswers: []})),
+    reset: (answers = []) => set(() => ({userAnswers: answers})),
 
     add: (answer) => set((state) => ({userAnswers: [...state.userAnswers, answer]})),
 
