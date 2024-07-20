@@ -15,7 +15,7 @@ const Notification = () => {
 
   const getNotificationContentCN = () => (<>
     <p>本网站上的所有问题均已更新至题库的<b>2024 年最新版本</b>。</p>
-    <p>非常感谢 <i><b>@Wwwan</b></i> 和 <i><b>@Melody</b></i> 在更新过程中的支持。</p>
+    <p>非常感谢 <i><b>@万酱</b></i> 和 <i><b>@Melody</b></i> 在更新过程中的支持。</p>
     <p>如果您还有其他疑问，请联系：<a
       href="mailto:chenmo991212@gmail.com">chenmo991212@gmail.com</a></p>
   </>)
