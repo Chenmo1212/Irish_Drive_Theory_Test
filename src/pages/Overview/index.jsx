@@ -86,6 +86,7 @@ const Overview = () => {
 
       <QuestionsSection
         questionTypes={questionTypes}
+        userAnswers={userAnswers}
         filteredQuestions={filteredQuestions}
         handleDetailPage={handleDetailPage}
       />

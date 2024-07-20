@@ -11,7 +11,7 @@ import {useAnswers, useExam, useExamCountdown, useExamHistory} from "../../store
 const ExamResult = () => {
   const {secondsLeft} = useExamCountdown();
   const {answers, score} = useExam();
-  const {reset: resetAnswers} = useAnswers();
+  const {userAnswers, reset: resetAnswers} = useAnswers();
   const {examHistory} = useExamHistory();
   const chartData = useMemo(() => {
     return examHistory.map((i, _) => i.score);
@@ -32,7 +32,7 @@ const ExamResult = () => {
   };
 
   const saveWrongQuestions = () => {
-    let newUserAnswers = [...answers];
+    let newUserAnswers = [...userAnswers];
     answers.forEach(examAnswer => {
       if (!examAnswer.isCorrect || examAnswer.isFavorite) {
         const index = newUserAnswers.findIndex(userAnswer => userAnswer.questionId === examAnswer.questionId);

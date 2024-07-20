@@ -26,7 +26,7 @@ const Notification = () => {
     submitText={isCN ? '确定' : 'Got it!'}
     cancelText={isCN ? '' : ''}
     show={isExpired() || isNotification}
-    onClose={() => update(false, 1)}
+    onClose={() => update(false)}
     onSubmit={() => update(false, 0)}
     textAlign="left"
   />)
