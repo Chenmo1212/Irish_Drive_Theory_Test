@@ -34,7 +34,7 @@ const ExamResult = () => {
   const saveWrongQuestions = () => {
     let newUserAnswers = [...answers];
     answers.forEach(examAnswer => {
-      if (!examAnswer.isCorrect) {
+      if (!examAnswer.isCorrect || examAnswer.isFavorite) {
         const index = newUserAnswers.findIndex(userAnswer => userAnswer.questionId === examAnswer.questionId);
         if (index !== -1) {
           delete examAnswer.isCorrect
