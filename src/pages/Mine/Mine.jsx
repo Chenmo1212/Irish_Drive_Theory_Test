@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Mine.css'
 import {useLang} from "../../store";
+import {getIcon} from "../../styles/icons";
 
 const Header = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -35,12 +36,21 @@ const Settings = () => {
     <>
       <div className="settings">
         <div className="item">
-          <i className="fa fa-expand left"/>
+          <span className="left">{getIcon('language')}</span>
           <span>{isCN ? '切换语言' : 'Switch language'}</span>
           <span className="switch-container">
             <label className="switch" onClick={() => update(!isCN)}>
               <input type="checkbox" checked={isCN} readOnly/>
             </label>
+          </span>
+        </div>
+        <div className="item">
+          <span className="left">{getIcon('coffee')}</span>
+          <span>{isCN ? '给我买杯咖啡吧！' : 'Buy me a coffee!'}</span>
+          <span className="right-icon" onClick={() => window.open("https://www.buymeacoffee.com/chenmo")}>
+            <span className="circle">
+              {getIcon("arrow_right")}
+            </span>
           </span>
         </div>
       </div>

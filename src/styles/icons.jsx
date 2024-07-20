@@ -19,6 +19,7 @@ import {
   FaThumbtack,
   FaTimes,
   FaTrashAlt,
+  FaCoffee,
 } from 'react-icons/fa';
 
 const icons = new Map([
@@ -41,6 +42,7 @@ const icons = new Map([
   ['wrong', <FaTimes/>],
   ['home', <FaHome/>],
   ['save', <FaSave/>],
+  ['coffee', <FaCoffee/>],
 ]);
 
 export function getIcon(iconName) {

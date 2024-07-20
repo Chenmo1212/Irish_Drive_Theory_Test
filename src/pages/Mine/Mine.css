@@ -173,14 +173,12 @@
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.12);
-  border: 2px solid;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .12);
+  border: 2px solid #fff;
   position: absolute;
   top: 2px;
-}
-
-.settings .item .right-icon .circle i {
-  line-height: 28px;
+  font-size: 16px;
 }
 
 .switch-container {
