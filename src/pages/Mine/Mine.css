@@ -142,6 +142,10 @@
   }
 }
 
+.settings {
+  margin-top: 10px;
+}
+
 .settings .item {
   margin-bottom: 15px;
   height: 100%;
@@ -198,7 +202,7 @@
   -webkit-appearance: none;
   border-radius: 40px;
   box-shadow: inset .4px .4px 1.5px #f4f6f8, inset 1.5px 1.5px 3px #aec5e4, inset -.8px -.8px 1.5px #fff;
-  transition: .5s;
+  transition: 1s;
   outline: none;
 }
 
@@ -218,8 +222,7 @@
   left: 4px;
   border: 2px solid #fff;
   background-color: var(--theme-color);
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 1s;
   transform: scale(1.1);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .12);
   box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .12);

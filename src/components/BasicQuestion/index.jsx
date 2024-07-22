@@ -18,7 +18,7 @@ const BasicQuestion = ({
   const {userAnswers, update: updateAnswers} = useAnswers();
 
   const userAnswer = useMemo(() => {
-    return userAnswers.find(answers => answers.questionId === questions[currQuestionIdx].id) || {};
+    return userAnswers.find(answers => answers.questionId === questions[currQuestionIdx]?.id) || {};
   }, [userAnswers, questions, currQuestionIdx]);
 
   const isAnswerError = useMemo(() => {

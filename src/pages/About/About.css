@@ -29,6 +29,7 @@
   font-style: italic;
   font-size: 14px;
   color: var(--font-color);
+  word-break: break-word;
 }
 
 .about .content .card li.done {
