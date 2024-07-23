@@ -10,18 +10,36 @@
   gap: 20px;
 }
 
-.console .body .btn {
-  padding: 5px;
-}
-
-.body .user-answers-ipt {
+.local-storage-ipt {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.body .user-answers-ipt textarea {
+.console .body .btn {
+  padding: 5px;
+}
+
+.body .store-data-ipt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.body .store-data-ipt textarea {
   width: 100%;
   min-height: 200px;
   max-height: 300px;
+}
+
+.body .btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.body .btn-group .danger {
+  background: var(--wrong-color);
+  color: var(--white-color);
 }

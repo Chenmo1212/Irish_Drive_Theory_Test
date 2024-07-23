@@ -82,6 +82,6 @@ export const useAnswers = create(
       useAnswers: state.userAnswers.filter(answer => answer.questionId !== a.questionId)
     }))
   }), {
-    name: 'dtt-answers'
+    name: 'ddt-answers'
   })
 )
