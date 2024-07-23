@@ -22,8 +22,8 @@ const BasicQuestion = ({
   }, [userAnswers, questions, currQuestionIdx]);
 
   const isAnswerError = useMemo(() => {
-    return currQuestion.correct_answer !== userAnswer.userAnswer;
-  }, [currQuestion.correct_answer, userAnswer.userAnswer])
+    return currQuestion?.correct_answer !== userAnswer?.userAnswer;
+  }, [currQuestion, userAnswer])
 
   useEffect(() => {
     if (isStick) updateQuestionConfig({isExplain: true});
