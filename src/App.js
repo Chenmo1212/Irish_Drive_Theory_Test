@@ -13,7 +13,7 @@ import {useVersion} from "./store/config.store";
 import {useQuestions} from "./store";
 import {useEffect} from "react";
 
-const CURRENT_VERSION = "1.4.1.240526";
+const CURRENT_VERSION = "2.0.0.240724";
 
 function App() {
   const {version, update: updateVersion} = useVersion();
