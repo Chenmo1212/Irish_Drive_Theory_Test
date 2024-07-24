@@ -9,6 +9,8 @@
 
 .question .content {
   padding: 20px;
+  height: calc(100vh - 150px);
+  overflow-y: scroll;
 }
 
 .question.normal .content {
@@ -28,6 +30,9 @@
   border-radius: 5px;
   text-align: center;
   background: #f4f6f8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .question .content .content-container {

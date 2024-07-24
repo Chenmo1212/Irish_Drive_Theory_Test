@@ -38,10 +38,10 @@ const ExamResult = () => {
         const index = newUserAnswers.findIndex(userAnswer => userAnswer.questionId === examAnswer.questionId);
         if (index !== -1) {
           delete examAnswer.isCorrect
-          newUserAnswers[index] = {...newUserAnswers[index], ...examAnswer, isFavorite: true};
+          newUserAnswers[index] = {...newUserAnswers[index], ...examAnswer, isFavorite: examAnswer.isFavorite};
         } else {
           const {questionId, userAnswer} = examAnswer
-          newUserAnswers.push({questionId, userAnswer, isFavorite: true});
+          newUserAnswers.push({questionId, userAnswer, isFavorite: examAnswer.isFavorite});
         }
       }
     });

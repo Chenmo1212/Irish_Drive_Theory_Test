@@ -77,39 +77,37 @@ const BeforeExam = () => {
         </div>
       </div>
       <div className="main">
-        <div className="main-container">
-          <div className="card-cover">
-            <img src={ExamCover} alt=""/>
-          </div>
+        <div className="card-cover">
+          <img src={ExamCover} alt=""/>
+        </div>
 
-          <div className="content">
-            <div className="content-hd">Instructions</div>
-            <div className="content-bd">
-              <p>
-                1. <b>Sources</b>: Questions are randomly selected from the available question bank.
-                The total number of questions is <b>40</b>, and you need to get at least <b>35</b> correct to pass
-                the exam.
-              </p>
-              <p>
-                2. <b>Distribution</b>: The distribution of the number of mock exams
-                is：<strong>2:8:7:22:1</strong>.<br/>
-              </p>
-              <p>
-                3. <b>Answers</b>: The answers to the questions in the practice exams are for reference only. Be
-                sure to provide feedback if the answer is incorrect.
-              </p>
-            </div>
+        <div className="content">
+          <div className="content-hd">Instructions</div>
+          <div className="content-bd">
+            <p>
+              1. <b>Sources</b>: Questions are randomly selected from the available question bank.
+              The total number of questions is <b>40</b>, and you need to get at least <b>35</b> correct to pass
+              the exam.
+            </p>
+            <p>
+              2. <b>Distribution</b>: The distribution of the number of mock exams
+              is：<strong>2:8:7:22:1</strong>.<br/>
+            </p>
+            <p>
+              3. <b>Answers</b>: The answers to the questions in the practice exams are for reference only. Be
+              sure to provide feedback if the answer is incorrect.
+            </p>
           </div>
+        </div>
 
-          <div className="start-exam">
-            <div className="card-btn" onClick={toExamDetail}>
-              <button className="btn begin">
+        <div className="start-exam">
+          <div className="card-btn" onClick={toExamDetail}>
+            <button className="btn begin">
                 <span>
                   {getIcon('rocket')}
                 </span>
-                <span>Start</span>
-              </button>
-            </div>
+              <span>Start</span>
+            </button>
           </div>
         </div>
       </div>
