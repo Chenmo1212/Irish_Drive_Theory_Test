@@ -2,6 +2,7 @@ import React from 'react';
 import {
   FaArrowLeft,
   FaArrowRight,
+  FaRegBell,
   FaBell,
   FaCheckCircle,
   FaChevronLeft,
@@ -18,9 +19,11 @@ import {
   FaThumbtack,
   FaTimes,
   FaTrashAlt,
+  FaCoffee,
 } from 'react-icons/fa';
 
 const icons = new Map([
+  ['reg_bell', <FaRegBell/>],
   ['bell', <FaBell/>],
   ['back', <FaChevronLeft/>],
   ['fav_reg', <FaRegStar/>],
@@ -39,6 +42,7 @@ const icons = new Map([
   ['wrong', <FaTimes/>],
   ['home', <FaHome/>],
   ['save', <FaSave/>],
+  ['coffee', <FaCoffee/>],
 ]);
 
 export function getIcon(iconName) {

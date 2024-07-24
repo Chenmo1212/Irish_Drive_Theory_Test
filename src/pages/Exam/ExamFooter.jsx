@@ -1,15 +1,15 @@
 import React from 'react';
 import {getIcon} from "../../styles/icons";
-import {CLICK_SOUND, playSound, THEME_COLOR} from '../../common/common';
+import {CLICK_SOUND, playSound, THEME_COLOR} from '../../utils/helper';
 import {useNavigate} from "react-router-dom";
+import {useExam} from "../../store";
 
 const ExamFooter = ({
-                      changeQuestion,
-                      filteredQuestions,
-                      updateCurrQuestionConfig,
-                      currQuestionIndex,
-                      currQuestionConfig
-                    }) => {
+  answer,
+  changeQuestion,
+  updateFavorite
+}) => {
+  const {currIdx, questionIds} = useExam();
   const navigate = useNavigate();
 
   const toOverview = () => {
@@ -18,11 +18,11 @@ const ExamFooter = ({
   }
 
   const isFirstQuestion = () => {
-    return currQuestionIndex === 0;
+    return currIdx <= 0;
   }
 
   const isLastQuestion = () => {
-    return currQuestionIndex === filteredQuestions.length - 1;
+    return currIdx >= questionIds.length - 1;
   }
 
   const MENU_ITEM = [{
@@ -31,10 +31,10 @@ const ExamFooter = ({
     activeIcon: 'fa_th',
   }, {
     name: 'fav',
-    action: updateCurrQuestionConfig,
+    action: () => updateFavorite(!answer?.isFavorite),
     inactiveIcon: 'fav_reg',
     activeIcon: 'fav',
-    active: currQuestionConfig?.isFavorite
+    active: answer?.isFavorite
   }, {
     name: 'prev',
     action: () => {

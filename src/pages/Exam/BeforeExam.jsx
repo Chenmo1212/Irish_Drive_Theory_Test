@@ -1,25 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {getIcon} from "../../styles/icons";
-import {
-  loadFromLocalStorage,
-  QUESTIONS_CONFIG,
-  questionsEN,
-  resetTimer,
-  saveNewExamToLocalStorage
-} from "../../common/common";
 import "./Exam.css"
 import ExamCover from '../../assets/svg/exam.svg'
 import {useNavigate} from "react-router-dom";
+import {useExam, useExamCountdown, useQuestions} from "../../store";
 
-const initializeLocalStorage = () => {
-  const isCN = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG)?.isCN || false;
-
-  return {
-    isCN
-  };
-};
-
-const generateMockExam = (questions, sectionDistribution) => {
+const generateMockExamQuestionIds = (questions, sectionDistribution) => {
   const questionsBySection = questions.reduce((acc, question) => {
     const {section} = question;
     if (!acc[section]) acc[section] = [];
@@ -38,7 +24,7 @@ const generateMockExam = (questions, sectionDistribution) => {
   });
   // Make mockExam randomly
   mockExam = selectRandomQuestions(mockExam, mockExam.length);
-  return mockExam;
+  return mockExam.map(question => question.id);
 }
 
 const selectRandomQuestions = (questions, count) => {
@@ -54,30 +40,27 @@ const sectionDistribution = {
   "Control of Vehicle": 2,
   "Legal Matters/Rules of the Road": 8,
   "Managing Risk": 7,
-  "Safe and Responsible Driving": 22,
+  "Safe and Socially Responsible Driving": 22,
   "Technical Matters": 1,
 };
 
-function BeforeExam() {
-  const [isCN, setIsCN] = useState(false);
+const BeforeExam = () => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const {isCN} = initializeLocalStorage();
-
-    setIsCN(isCN);
-  }, []);
+  const {allQuestions: questions} = useQuestions();
+  const {reset: resetExam, setExamQuestionIds} = useExam();
+  const {start: startCountdown} = useExamCountdown();
 
   const backHome = () => {
     navigate(-1);
   };
 
   const toExamDetail = () => {
-    const mockExamQuestions = generateMockExam(questionsEN, sectionDistribution);
-    saveNewExamToLocalStorage({
-      questions: mockExamQuestions,
-    });
-    resetTimer();
+    const mockExamQuestionIds = generateMockExamQuestionIds(questions, sectionDistribution);
+
+    resetExam();
+    setExamQuestionIds(mockExamQuestionIds);
+
+    startCountdown();
     navigate('/exam?i=1');
   };
 
@@ -89,44 +72,42 @@ function BeforeExam() {
             {getIcon('arrow_left')}
           </div>
           <div className="page-title">
-            {isCN ? "模拟考试" : "Mock Exam"}
+            {"Mock Exam"}
           </div>
         </div>
       </div>
       <div className="main">
-        <div className="main-container">
-          <div className="card-cover">
-            <img src={ExamCover} alt=""/>
-          </div>
+        <div className="card-cover">
+          <img src={ExamCover} alt=""/>
+        </div>
 
-          <div className="content">
-            <div className="content-hd">Instructions</div>
-            <div className="content-bd">
-              <p>
-                1. <b>Sources</b>: Questions are randomly selected from the available question bank.
-                The total number of questions is <b>40</b>, and you need to get at least <b>35</b> correct to pass
-                the exam.
-              </p>
-              <p>
-                2. <b>Distribution</b>: The distribution of the number of mock exams
-                is：<strong>2:8:7:22:1</strong>.<br/>
-              </p>
-              <p>
-                3. <b>Answers</b>: The answers to the questions in the practice exams are for reference only. Be
-                sure to provide feedback if the answer is incorrect.
-              </p>
-            </div>
+        <div className="content">
+          <div className="content-hd">Instructions</div>
+          <div className="content-bd">
+            <p>
+              1. <b>Sources</b>: Questions are randomly selected from the available question bank.
+              The total number of questions is <b>40</b>, and you need to get at least <b>35</b> correct to pass
+              the exam.
+            </p>
+            <p>
+              2. <b>Distribution</b>: The distribution of the number of mock exams
+              is：<strong>2:8:7:22:1</strong>.<br/>
+            </p>
+            <p>
+              3. <b>Answers</b>: The answers to the questions in the practice exams are for reference only. Be
+              sure to provide feedback if the answer is incorrect.
+            </p>
           </div>
+        </div>
 
-          <div className="start-exam">
-            <div className="card-btn" onClick={toExamDetail}>
-              <button className="btn begin">
+        <div className="start-exam">
+          <div className="card-btn" onClick={toExamDetail}>
+            <button className="btn begin">
                 <span>
                   {getIcon('rocket')}
                 </span>
-                <span>Start</span>
-              </button>
-            </div>
+              <span>Start</span>
+            </button>
           </div>
         </div>
       </div>

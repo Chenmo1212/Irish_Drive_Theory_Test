@@ -1,13 +1,13 @@
 import React from 'react';
-import {CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, THEME_COLOR,} from '../../common/common';
+import {CORRECT_COLOR, ERROR_COLOR, OPTION_LABELS, THEME_COLOR,} from '../../utils/helper';
 
 const QuestionContent = ({
-                           isExplain,
-                           isAnswerError,
-                           currQuestion,
-                           chosenAnswerIndex,
-                           handleOptionClick
-                         }) => {
+  isExplain,
+  isAnswerError,
+  currQuestion,
+  chosenAnswerIndex,
+  handleOptionClick
+}) => {
 
   const color = isExplain ? (isAnswerError ? ERROR_COLOR : CORRECT_COLOR) : THEME_COLOR;
   const chosenOptionStyle = {
@@ -24,8 +24,9 @@ const QuestionContent = ({
       <div className="question-text">
         Q: {currQuestion?.question}
 
-        {currQuestion?.question_img_url ?
-          <p className="question-img"><img src={currQuestion?.question_img_url} alt=""/></p> : <></>}
+        {currQuestion?.image_name ?
+          <p className="question-img"><img src={require(`../../assets/images/${currQuestion?.image_name}`)} alt=""/>
+          </p> : <></>}
       </div>
 
       <div className="options">

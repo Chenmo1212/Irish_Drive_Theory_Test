@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 import PageHeader from "../Header/PageHeader";
-import {DELETE_SOUND, playSound, removeFromLocalStorage} from "../../common/common";
+import {DELETE_SOUND, playSound, removeFromLocalStorage} from "../../utils/helper";
 import BasicModal from "../BasicModal/BasicModal";
 import BasicAlert from "../BasicAlert/BasicAlert";
 
@@ -20,7 +20,7 @@ const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavori
     toggleModal();
   }
   const clearLocalAnswers = () => {
-    removeFromLocalStorage(['userAnswers']);
+    removeFromLocalStorage(['dtt-answers']);
     alertRef.current.handleAlert();
     toggleModal();
     setTimeout(() => window.location.reload(), 3000);

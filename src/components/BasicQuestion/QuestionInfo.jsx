@@ -1,11 +1,11 @@
 import React from 'react';
-import {THEME_COLOR} from '../../common/common';
+import {THEME_COLOR} from '../../utils/helper';
 
 const QuestionInfo = ({
-                        currQuestion,
-                        currQuestionIndex,
-                        questions,
-                      }) => {
+  currQuestion,
+  currQuestionIndex,
+  questions,
+}) => {
 
   return (
     <div className="content-head">

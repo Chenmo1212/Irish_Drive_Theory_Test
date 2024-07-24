@@ -1,15 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {loadExamFromLocalStorage} from "../../common/common";
+import React, {useMemo} from 'react';
 import HeaderSection from "../../components/BasicOverview/HeaderSection";
 import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
 import {useNavigate} from "react-router-dom";
-
-const initializeLocalStorage = () => {
-  const exam = loadExamFromLocalStorage()
-  return {
-    exam
-  };
-};
+import {useExam, useQuestions} from "../../store";
 
 const updateQuestionIndex = (questions) => {
   return questions.map((e, i) => {
@@ -27,23 +20,23 @@ const getQuestionTypes = (questions) => {
 }
 
 const ExamOverview = () => {
-  const [questions, setQuestions] = useState([]);
-  const [answers, setAnswers] = useState([]);
-  const [questionTypes, setQuestionTypes] = useState([]);
-  const [isExamCompleted, setIsExamCompleted] = useState(false);
+  const {allQuestions} = useQuestions();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const {exam} = initializeLocalStorage();
-    const {questions, answers, completed} = exam;
-    const updatedQuestions = updateQuestionIndex(questions);
-    const questionTypes = getQuestionTypes(updatedQuestions);
+  const {
+    answers,
+    questionIds,
+    isCompleted,
+  } = useExam();
 
-    setQuestions(updatedQuestions);
-    setAnswers(answers);
-    setQuestionTypes(questionTypes);
-    setIsExamCompleted(completed);
-  }, []);
+  const questions = useMemo(() => {
+    const tmpQuestions = questionIds.map(id => allQuestions.find(question => question.id === id)) || [];
+    return updateQuestionIndex(tmpQuestions);
+  }, [questionIds, allQuestions]);
+
+  const questionTypes = useMemo(() => {
+    return getQuestionTypes(questions);
+  }, [questions])
 
   const handleDetailPage = (index) => {
     navigate(`/exam?i=${index}`);
@@ -53,9 +46,11 @@ const ExamOverview = () => {
     <div className="exam overview">
       <HeaderSection
         isShowWrong={false}
-        setShowWrong={() => {}}
+        setShowWrong={() => {
+        }}
         isShowFavorite={false}
-        setShowFavorite={() => {}}
+        setShowFavorite={() => {
+        }}
         isCN={false}
         isShowRight={false}
       />
@@ -64,9 +59,8 @@ const ExamOverview = () => {
         questionTypes={questionTypes}
         filteredQuestions={questions}
         userAnswers={answers}
-        isCN={false}
         handleDetailPage={handleDetailPage}
-        isCheckAnswer={isExamCompleted}
+        isCheckAnswer={isCompleted}
       />
     </div>
   );

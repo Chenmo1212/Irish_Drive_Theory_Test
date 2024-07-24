@@ -1,44 +1,17 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
 import './Home.css'
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
 import Notification from '../../components/Notification/Notification'
-import {
-  DEFAULT_VERSION,
-  loadFromLocalStorage,
-  NEW_VERSION,
-  questionsEN,
-  THEME_COLOR,
-  updateDataIfNewVersion,
-  QUESTIONS_CONFIG
-} from '../../common/common';
+import {THEME_COLOR} from '../../utils/helper';
 import {getIcon} from "../../styles/icons";
-
-const initializeLocalStorage = () => {
-  const currentVersion = loadFromLocalStorage('appVersion', DEFAULT_VERSION);
-  const currQuestionIdx = loadFromLocalStorage('currQuestionIdx', 0);
-  const isCN = loadFromLocalStorage('questionsConfig', QUESTIONS_CONFIG);
-  const isUpdate = updateDataIfNewVersion(currentVersion, NEW_VERSION);
-  let allQuestions = loadFromLocalStorage('allQuestions', questionsEN);
-  const userAnswers = loadFromLocalStorage('userAnswers', []);
-
-  if (isUpdate) allQuestions = questionsEN;
-  return {isCN, allQuestions, userAnswers, currQuestionIdx};
-};
+import {useAnswers, useCurrQuestionIdx, useLang, useQuestions} from "../../store";
 
 const Home = () => {
-  const [allQuestions, setAllQuestions] = useState([]);
-  const [userAnswers, setUserAnswers] = useState([]);
-  const [currQuestionIdx, setCurrQuestionIdx] = useState(1);
-  const [isCN, setIsCN] = useState(false);
-
-  useEffect(() => {
-    const {isCN, allQuestions, userAnswers, currQuestionIdx} = initializeLocalStorage();
-    setIsCN(isCN);
-    setAllQuestions(allQuestions);
-    setUserAnswers(userAnswers);
-    setCurrQuestionIdx(currQuestionIdx);
-  }, []);
+  const {isCN} = useLang();
+  const {allQuestions} = useQuestions();
+  const {userAnswers} = useAnswers();
+  const {currQuestionIdx} = useCurrQuestionIdx()
 
   const getProgressWidth = () => {
     let userAnswerAmount = userAnswers.length;
@@ -60,12 +33,11 @@ const Home = () => {
         <div className="progress">
           <div className="card-progress__back"></div>
           <div className="card-progress__line" style={{
-            width: getProgressWidth(),
-            backgroundColor: THEME_COLOR
+            width: getProgressWidth(), backgroundColor: THEME_COLOR
           }}></div>
         </div>
 
-        <Link to={`/question?i=${currQuestionIdx}`}>
+        <Link to={`/question?i=${currQuestionIdx + 1}`}>
           <div className="btn">
             <button className="btn round-action-button begin text-blue">
               <span className="icon-container">
@@ -88,22 +60,9 @@ const Home = () => {
         </Link>
       </div>
 
-      <Footer/>
-
       <Notification/>
     </div>
   </div>
-}
-
-const Footer = () => {
-  const currYear = new Date().getFullYear();
-  return (
-    <footer>
-      <p className="footer">All rights reserved ©{currYear} <a
-        href="https://chenmo1212.cn?f=irish-questions">ChenMo1212</a>
-      </p>
-    </footer>
-  )
 }
 
 export default Home

@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import Chart from 'chart.js/auto';
 import './LineChart.css'
-import {CORRECT_COLOR, ERROR_COLOR} from "../../common/common";
+import {CORRECT_COLOR, ERROR_COLOR} from "../../utils/helper";
 
 const LineChart = ({data}) => {
   const chartRef = useRef(null);

@@ -1,16 +1,25 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import {getIcon} from "../../styles/icons";
-import {CLICK_SOUND, playSound, THEME_COLOR} from '../../common/common';
+import {CLICK_SOUND, playSound, THEME_COLOR} from '../../utils/helper';
 import {useNavigate} from "react-router-dom";
+import {useCurrQuestionIdx, useQuestionConfig} from "../../store";
 
-const QuestionFooter = ({
-                          isExplain,
-                          currQuestion,
-                          changeQuestion,
-                          toggleExplanation
-                        }) => {
-  const {isPrev, isNext} = currQuestion;
+const QuestionFooter = ({questions, changeQuestion}) => {
   const navigate = useNavigate();
+  const {isExplain, update} = useQuestionConfig();
+  const {currQuestionIdx} = useCurrQuestionIdx();
+
+  const isPrev = useMemo(() => {
+    return currQuestionIdx > 0
+  }, [currQuestionIdx]);
+  const isNext = useMemo(() => {
+    return currQuestionIdx < questions.length - 1
+  }, [questions, currQuestionIdx]);
+
+  const toggleExplanation = () => {
+    update({isExplain: !isExplain});
+    playSound(CLICK_SOUND);
+  }
 
   const toOverview = () => {
     navigate('/overview');

@@ -1,18 +1,18 @@
 import React from 'react';
 import {getIcon} from "../../styles/icons";
-import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../common/common';
+import {CORRECT_COLOR, ERROR_COLOR, THEME_COLOR} from '../../utils/helper';
 import EMPTY from "../../assets/svg/empty.svg";
 
 const QuestionsSection = ({
-                            questionTypes,
-                            filteredQuestions,
-                            userAnswers,
-                            isCN,
-                            handleDetailPage,
-                            isCheckAnswer = true
-                          }) => {
+  questionTypes,
+  filteredQuestions,
+  userAnswers,
+  handleDetailPage,
+  isCheckAnswer = true
+}) => {
+
   const getFavStatus = (question) => {
-    if (!filteredQuestions.length) return {};
+    if (filteredQuestions && !filteredQuestions.length) return {};
 
     const {id} = question;
     const userAnswerObj = userAnswers.find((answer) => answer.questionId === id);
@@ -25,7 +25,7 @@ const QuestionsSection = ({
   }
 
   const getStyle = (question) => {
-    if (!filteredQuestions.length) return {};
+    if (filteredQuestions && !filteredQuestions.length) return {};
 
     const {id, correct_answer} = question;
     const userAnswerObj = userAnswers.find(answer => answer.questionId === id);
@@ -54,7 +54,7 @@ const QuestionsSection = ({
       {questionTypes.length ? questionTypes.map((section, sectionIdx) => (
           <div className="section" key={sectionIdx}>
             {section.sectionName && <div className="title" style={{color: THEME_COLOR}}>
-              <span>{isCN ? section.sectionNameCN : section.sectionName} ({section.questions.length})</span>
+              <span>{section.sectionName} ({section.questions.length})</span>
             </div>}
             <div className="content">
               {section.questions.map(question => (

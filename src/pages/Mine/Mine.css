@@ -1,0 +1,267 @@
+.mine {
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mine .header {
+  height: 35vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mine .header .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.mine .header .circle__avatar {
+  margin-top: 50px;
+  justify-self: center;
+  border-radius: 1rem;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.mine .header .circle__avatar .circle__btn {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  margin: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 300;
+  background: #E4EBF5;
+  box-shadow: 3px 3px 6px rgba(173, 195, 225, 0.8), -3px -3px 6px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  position: relative;
+  background: url("https://cdn.chenmo1212.cn/img/avatar-spring.png?imageView2/0/w/200/h/200/q/75");
+  background-size: cover;
+  border: 2px solid #fff;
+}
+
+.mine .header .circle__avatar .circle__btn .play {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.mine .header .circle__avatar .circle__btn .play.visibility {
+  opacity: 1;
+}
+
+.mine .header .circle__avatar .circle__btn .pause {
+  position: absolute;
+  transition: all 0.2s linear;
+}
+
+.mine .header .circle__avatar .circle__btn .pause.visibility {
+  opacity: 0;
+}
+
+.mine .header .circle__avatar .circle__back-1, .mine .header .circle__avatar .circle__back-2 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  filter: blur(1px);
+  z-index: 100;
+}
+
+.mine .header .circle__avatar .circle__back-1 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  background: linear-gradient(to bottom right, #c8d0e7 0%, #fff 100%);
+  animation: waves 4s linear infinite;
+}
+
+.mine .header .circle__avatar .circle__back-1.paused {
+  animation-play-state: paused;
+}
+
+.mine .header .circle__avatar .circle__back-2 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  animation: waves 4s linear 2s infinite;
+}
+
+.mine .header .circle__avatar .circle__back-2.paused {
+  animation-play-state: paused;
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.mine .header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.mine .header .wrapper .typing-demo {
+  width: 20ch;
+  animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: Poppins, serif;
+  font-size: 16px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.settings {
+  margin-top: 10px;
+}
+
+.settings .item {
+  margin-bottom: 15px;
+  height: 100%;
+  line-height: 40px;
+  text-align: left;
+  padding: 0 10px;
+  color: #6c7885;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 5px #c1d3ea, -2px -2px 5px white, -0.4px -0.4px 0.4px white;
+}
+
+.settings .item .left {
+  margin-right: 10px;
+}
+
+.settings .item .right-icon {
+  float: right;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+}
+
+.settings .item .right-icon .circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .12);
+  border: 2px solid #fff;
+  position: absolute;
+  top: 2px;
+  font-size: 16px;
+}
+
+.switch-container {
+  height: 40px;
+  display: flex;
+  float: right;
+  width: 54px;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.switch-container input[type="checkbox"] {
+  position: relative;
+  top: 8px;
+  width: 54px;
+  height: 32px;
+  -webkit-appearance: none;
+  border-radius: 40px;
+  box-shadow: inset .4px .4px 1.5px #f4f6f8, inset 1.5px 1.5px 3px #aec5e4, inset -.8px -.8px 1.5px #fff;
+  transition: 1s;
+  outline: none;
+}
+
+.switch-container input:checked[type="checkbox"] {
+  border: 2px solid var(--theme-color);
+  background-color: var(--theme-color);
+  box-shadow: inset .4px .4px 1.5px #4fa8ff, inset 1.5px 1.5px 3px #a6caff, inset -.8px -.8px 1.5px #0ea6fd;
+}
+
+.switch-container input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: 3px;
+  left: 4px;
+  border: 2px solid #fff;
+  background-color: var(--theme-color);
+  transition: 1s;
+  transform: scale(1.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .12);
+}
+
+.switch-container input:checked[type="checkbox"]:before {
+  left: 23px;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #fff;
+}
+
+.switch-container input:checked[type="checkbox"]:after {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  font-family: monospace;
+  color: white;
+  animation: animate 1s ease;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mine footer {
+  position: absolute;
+  bottom: 2em;
+  font-size: 12px;
+  color: var(--secondary-font-color);
+}
+
+.mine footer a {
+  color: var(--secondary-font-color);
+}
