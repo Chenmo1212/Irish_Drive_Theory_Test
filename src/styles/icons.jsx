@@ -20,6 +20,7 @@ import {
   FaTimes,
   FaTrashAlt,
   FaCoffee,
+  FaPencilAlt,
 } from 'react-icons/fa';
 
 const icons = new Map([
@@ -43,6 +44,7 @@ const icons = new Map([
   ['home', <FaHome/>],
   ['save', <FaSave/>],
   ['coffee', <FaCoffee/>],
+  ['feedback', <FaPencilAlt/>],
 ]);
 
 export function getIcon(iconName) {

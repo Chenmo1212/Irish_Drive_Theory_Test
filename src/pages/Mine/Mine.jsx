@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Mine.css'
 import {useLang} from "../../store";
 import {getIcon} from "../../styles/icons";
+import {useNavigate} from "react-router-dom";
 
 const Header = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -32,6 +33,7 @@ const Header = () => {
 
 const Settings = () => {
   const {isCN, update} = useLang();
+  const navigate = useNavigate();
   return (
     <>
       <div className="settings">
@@ -42,6 +44,15 @@ const Settings = () => {
             <label className="switch" onClick={() => update(!isCN)}>
               <input type="checkbox" checked={isCN} readOnly/>
             </label>
+          </span>
+        </div>
+        <div className="item">
+          <span className="left">{getIcon('feedback')}</span>
+          <span>{isCN ? '反馈！' : 'Feedback'}</span>
+          <span className="right-icon" onClick={() => navigate('/feedback')}>
+            <span className="circle">
+              {getIcon("arrow_right")}
+            </span>
           </span>
         </div>
         <div className="item">

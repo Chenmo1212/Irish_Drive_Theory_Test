@@ -22,6 +22,7 @@ const Layout = () => {
             <span/>
             <span/>
           </div>
+          <span>Little Cookies</span>
           <div className='menu-circle' onClick={() => navigate('/about')}>
             {getIcon('reg_bell')}
           </div>
