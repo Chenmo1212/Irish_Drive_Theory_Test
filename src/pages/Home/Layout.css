@@ -43,9 +43,11 @@
   width: calc(100% - 40px);
   top: 20px;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   display: flex;
   color: var(--font-color-regular);
+  font-weight: 700;
 }
 
 .layout .menu-circle {

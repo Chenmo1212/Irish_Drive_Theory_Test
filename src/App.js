@@ -8,6 +8,7 @@ import Exam from "./pages/Exam/Exam";
 import ExamOverview from "./pages/Exam/ExamOverview";
 import ExamResult from "./pages/Exam/ExamResult";
 import About from "./pages/About/About";
+import Feedback from "./pages/Feedback/Feedback";
 import Console from "./pages/Console/Console";
 import {useVersion} from "./store/config.store";
 import {useQuestions} from "./store";
@@ -38,6 +39,7 @@ function App() {
           <Route path="/examOverview" element={<ExamOverview/>}/>
           <Route path="/afterExam" element={<ExamResult/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/feedback" element={<Feedback/>}/>
           <Route path="/console" element={<Console/>}/>
         </Routes>
       </main>
