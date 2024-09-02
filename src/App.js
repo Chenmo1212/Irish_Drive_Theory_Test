@@ -10,22 +10,24 @@ import ExamResult from "./pages/Exam/ExamResult";
 import About from "./pages/About/About";
 import Feedback from "./pages/Feedback/Feedback";
 import Console from "./pages/Console/Console";
-import {useVersion} from "./store/config.store";
+import {useNotification, useVersion} from "./store/config.store";
 import {useQuestions} from "./store";
 import {useEffect} from "react";
 
-const CURRENT_VERSION = "2.0.0.240724";
+const CURRENT_VERSION = "2.0.0.240903";
 
 function App() {
   const {version, update: updateVersion} = useVersion();
   const {reset: resetQuestions} = useQuestions();
+  const {reset: resetNotifications} = useNotification();
 
   useEffect(() => {
     if (version.localeCompare(CURRENT_VERSION) < 0) {
       updateVersion(CURRENT_VERSION);
+      resetNotifications();
       resetQuestions();
     }
-  }, [version, updateVersion, resetQuestions]);
+  }, [version, updateVersion, resetQuestions, resetNotifications]);
 
   return (<Router>
     <div className="App">
