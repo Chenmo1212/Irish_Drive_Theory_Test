@@ -1,8 +1,11 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import './Mine.css'
 import {useLang} from "../../store";
 import {getIcon} from "../../styles/icons";
 import {useNavigate} from "react-router-dom";
+import {DELETE_SOUND, playSound, removeFromLocalStorage} from "../../utils/helper";
+import BasicModal from "../../components/BasicModal/BasicModal";
+import BasicAlert from "../../components/BasicAlert/BasicAlert";
 
 const Header = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -32,8 +35,20 @@ const Header = () => {
 };
 
 const Settings = () => {
+  const [modalShow, setModalShow] = useState(false);
   const {isCN, update} = useLang();
+  const alertRef = useRef();
   const navigate = useNavigate();
+  const toggleModal = () => setModalShow(!modalShow);
+
+  const clearLocalAnswers = () => {
+    removeFromLocalStorage(['ddt-answers']);
+    alertRef.current.handleAlert();
+    playSound(DELETE_SOUND);
+    toggleModal();
+    setTimeout(() => window.location.reload(), 3000);
+  }
+
   return (
     <>
       <div className="settings">
@@ -44,6 +59,15 @@ const Settings = () => {
             <label className="switch" onClick={() => update(!isCN)}>
               <input type="checkbox" checked={isCN} readOnly/>
             </label>
+          </span>
+        </div>
+        <div className="item">
+          <span className="left">{getIcon('clear')}</span>
+          <span>{isCN ? '清空数据' : 'Clear data'}</span>
+          <span className="right-icon" onClick={() => toggleModal()}>
+            <span className="circle">
+              {getIcon("arrow_right")}
+            </span>
           </span>
         </div>
         <div className="item">
@@ -65,6 +89,18 @@ const Settings = () => {
           </span>
         </div>
       </div>
+
+      <BasicAlert ref={alertRef} warning={isCN ? "你的所有数据都已被清除！" : "All your answers have been cleared!"}/>
+
+      <BasicModal
+        title={isCN ? '警告' : 'Warning'}
+        text={isCN ? '您想清除用户数据吗？此操作是不可逆的!' : "Do you want to clear user data? This operation is irreversible."}
+        submitText={isCN ? '确定' : 'Submit'}
+        cancelText={isCN ? '取消' : 'Cancel'}
+        show={modalShow}
+        onClose={toggleModal}
+        onSubmit={clearLocalAnswers}
+      />
     </>
   )
 }

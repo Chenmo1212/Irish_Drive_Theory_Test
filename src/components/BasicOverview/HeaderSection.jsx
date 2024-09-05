@@ -16,12 +16,12 @@ const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavori
   }
 
   const handleClear = () => {
-    playSound(DELETE_SOUND);
     toggleModal();
   }
   const clearLocalAnswers = () => {
-    removeFromLocalStorage(['dtt-answers']);
+    removeFromLocalStorage(['ddt-answers']);
     alertRef.current.handleAlert();
+    playSound(DELETE_SOUND);
     toggleModal();
     setTimeout(() => window.location.reload(), 3000);
   }
