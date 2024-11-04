@@ -8418,7 +8418,7 @@ export const QUESTIONS_CN = [
       "3",
       "2"
     ],
-    "correct_answer": 0,
+    "correct_answer": 2,
     "explanation": "从主要道路向次要道路右转的正确位置是靠近中心线的左侧。您应该提前占据正确位置，避免切角或天鹅颈转弯-也就是过了转弯点，图片中显示汽车2。",
     "image_name": "ABMW0307R.png"
   },

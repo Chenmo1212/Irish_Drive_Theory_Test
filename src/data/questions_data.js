@@ -8423,7 +8423,7 @@ export const QUESTIONS_EN = [
       "3",
       "2"
     ],
-    "correct_answer": 0,
+    "correct_answer": 2,
     "explanation": "The correct position from which to turn right from a major road to a minor road is just left of centre. You should take up the correct position in good time and avoid cutting the corner or swan necking - that is going beyond the turning point as car 2 is in the picture.",
     "image_name": "ABMW0307R.png"
   },
