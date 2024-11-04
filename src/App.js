@@ -14,7 +14,7 @@ import {useNotification, useVersion} from "./store/config.store";
 import {useQuestions} from "./store";
 import {useEffect} from "react";
 
-const CURRENT_VERSION = "2.0.0.240903";
+const CURRENT_VERSION = "2.0.0.241104";
 
 function App() {
   const {version, update: updateVersion} = useVersion();
