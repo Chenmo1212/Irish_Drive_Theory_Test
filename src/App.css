@@ -98,7 +98,7 @@
 }
 
 /* Rect Round Button*/
-.intro-guide .introjs-button,
+.intro-guide .introjs-tooltipbuttons .introjs-button,
 .rect-round-button {
   position: relative;
   padding: 5px 10px;
@@ -112,7 +112,7 @@
   transition: all 200ms ease-out 0s;
 }
 
-.intro-guide .introjs-button:before,
+.intro-guide .introjs-tooltipbuttons .introjs-button:before,
 .rect-round-button:before {
   content: '';
   position: absolute;
@@ -126,7 +126,7 @@
   transition: all 200ms ease-out 0s;
 }
 
-.intro-guide .introjs-button:after,
+.intro-guide .introjs-tooltipbuttons .introjs-button:after,
 .rect-round-button:after {
   content: '';
   position: absolute;
@@ -138,9 +138,9 @@
   transition: all 200ms ease-out 0s;
 }
 
-.intro-guide .introjs-button:active,
+.intro-guide .introjs-tooltipbuttons .introjs-button:active,
 .rect-round-button:active,
-.intro-guide .introjs-button.active,
+.intro-guide .introjs-tooltipbuttons .introjs-button.active,
 .rect-round-button.active {
   background: linear-gradient(to top, var(--bg-color), #fafcfd);
   box-shadow: var(--box-shadow-active);

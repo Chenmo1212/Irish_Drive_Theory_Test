@@ -1,12 +1,24 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Mine from "../Mine/Mine";
 import Home from "./Home";
 import './Layout.css'
 import {getIcon} from "../../styles/icons";
 import {useNavigate} from "react-router-dom";
+import {useLang} from "../../store";
+import {useIntro} from "../../store/config.store";
+import {setMineIntro} from "../../utils/intro";
 
 const Layout = () => {
   const [isActive, setIsActive] = useState(false);
+  const {isCN} = useLang();
+  const {isMineIntro: isMineIntroFinished, update: updateIntro} = useIntro();
+
+  useEffect(() => {
+    if (!isMineIntroFinished && isActive) {
+      setMineIntro(isCN, updateIntro);
+    }
+  }, [isMineIntroFinished, isActive]);
+
   const navigate = useNavigate();
   return (<>
     <div className="layout">

@@ -52,7 +52,7 @@ const Settings = () => {
   return (
     <>
       <div className="settings">
-        <div className="item">
+        <div className="item item-language">
           <span className="left">{getIcon('language')}</span>
           <span>{isCN ? '切换语言' : 'Switch language'}</span>
           <span className="switch-container">
@@ -61,7 +61,7 @@ const Settings = () => {
             </label>
           </span>
         </div>
-        <div className="item">
+        <div className="item item-clear">
           <span className="left">{getIcon('clear')}</span>
           <span>{isCN ? '清空数据' : 'Clear data'}</span>
           <span className="right-icon" onClick={() => toggleModal()}>
@@ -70,7 +70,7 @@ const Settings = () => {
             </span>
           </span>
         </div>
-        <div className="item">
+        <div className="item item-feedback">
           <span className="left">{getIcon('feedback')}</span>
           <span>{isCN ? '反馈！' : 'Feedback'}</span>
           <span className="right-icon" onClick={() => navigate('/feedback')}>
@@ -79,7 +79,7 @@ const Settings = () => {
             </span>
           </span>
         </div>
-        <div className="item">
+        <div className="item item-coffee">
           <span className="left">{getIcon('coffee')}</span>
           <span>{isCN ? '给我买杯咖啡吧！' : 'Buy me a coffee!'}</span>
           <span className="right-icon" onClick={() => window.open("https://www.buymeacoffee.com/chenmo")}>
