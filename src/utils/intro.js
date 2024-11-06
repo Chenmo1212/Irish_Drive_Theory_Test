@@ -39,14 +39,14 @@ export function setHomeIntro(isCN = true, setIntroFinished) {
             : "Click the “Mock Exam” button to simulate the exam, check your learning results."
         },
         {
-          element: ".layout .i-about",
+          element: ".layout .icon-about",
           title: isCN ? "关于页面" : "About Page",
           intro: isCN
             ? "这是关于页面，你可以在此查看网站成立的相关背景"
             : "Here is the About page, you can view the background of the website."
         },
         {
-          element: ".layout .i-settings",
+          element: ".layout .icon-settings",
           title: isCN ? "设置页面" : "Settings Page",
           intro: isCN
             ? "这里是前往设置页面的入口，点击前往设置页面对网站进行设置。"
@@ -123,6 +123,111 @@ export function setMineIntro(isCN = true, setIntroFinished) {
     })
     .oncomplete(function () {
       setIntroFinished("isMineIntro", true);
+    })
+    .start();
+}
+
+export function setQuestionIntro(isCN = true, setIntroFinished) {
+  introJs()
+    .setOptions({
+      steps: [
+        {
+          title: isCN ? "欢迎来到 Little Cookies" : 'Welcome',
+          intro: isCN
+            ? "👋 欢迎来到 Little Cookies 的答题页面。"
+            : "👋 Welcome to the question page of Little Cookies."
+        },
+        {
+          element: ".question .icon-return",
+          title: isCN ? "返回上一页" : "Return to Previous Page",
+          intro: isCN
+            ? "点击这里返回到上一页。"
+            : "Click here to return to the previous page."
+        },
+        {
+          element: ".question .icon.language",
+          title: isCN ? "切换语言" : "Switch Language",
+          intro: isCN
+            ? "点击这里将页面切换到其他语言。"
+            : "Click here to switch the language of the page."
+        },
+        {
+          element: ".question .icon.fav",
+          title: isCN ? "标记为收藏" : "Mark as Favorite",
+          intro: isCN
+            ? "点击这里将此题标记为收藏，便于稍后复习。"
+            : "Click here to mark this question as a favorite, so that it can be reviewed later."
+        },
+        {
+          element: ".question .question-type",
+          title: isCN ? "问题类别" : "Question Type",
+          intro: isCN
+            ? "这里显示当前问题的类别，帮助你了解题目所属类别。"
+            : "Here shows the current question type, help you understand the category of the question."
+        },
+        {
+          element: ".question .question-num",
+          title: isCN ? "问题序号" : "Question Number",
+          intro: isCN
+            ? "这里显示当前题目的序号和总题数，方便你跟踪进度。"
+            : "Here shows the current question number and total number of questions, help you track your progress."
+        },
+        {
+          element: ".question .question-text",
+          title: isCN ? "问题内容" : "Question Content",
+          intro: isCN
+            ? "这是问题的内容，请仔细阅读后选择正确的答案。"
+            : "This is the question content, carefully read and select the correct answer."
+        },
+        {
+          element: ".question .options",
+          title: isCN ? "可选答案" : "Available Options",
+          intro: isCN
+            ? "这里是可选答案，点击一个选项来选择你的答案。"
+            : "Here are the available options, click one option to select your answer."
+        },
+        {
+          element: ".question .answer",
+          title: isCN ? "答案解析" : "Answer Explanation",
+          intro: isCN
+            ? "这里是答案解析，可以帮助你理解答案的含义。"
+            : "Here is the answer explanation, help you understand the meaning of the answer."
+        },
+        {
+          element: ".question .icon.check",
+          title: isCN ? "自动检查" : "Auto Check",
+          intro: isCN
+            ? "开启这个按钮将在每次选择选项后自动显示答案解析并检查答案。"
+            : "Enabling this button will automatically display the answer explanation and check the answer after each selection."
+        },
+        {
+          element: ".question .icon.stick",
+          title: isCN ? "固定解析" : "Stick Explanation",
+          intro: isCN
+            ? "开启这个按钮将固定显示答案解析。"
+            : "Enabling this button will fix the answer explanation."
+        },
+        {
+          element: ".question .question-footer",
+          title: isCN ? "题目操作" : "Question Footer",
+          intro: isCN
+            ? "使用这些按钮来查看题库、查看答案或者更换题目。"
+            : "Use these buttons to view questions, view the answer, or change questions."
+        },
+        {
+          title: isCN ? "用户指导完成" : "User Guide Completed",
+          intro: isCN
+            ? "恭喜你完成了该页面的用户指导，祝一切顺利。"
+            : "Congratulations on completing the user guide for this page, have a good day."
+        }
+      ],
+    })
+    .setOptions({
+      tooltipClass: 'intro-guide',
+      exitOnEscKey: true
+    })
+    .oncomplete(function () {
+      setIntroFinished("isQuestionIntro", true);
     })
     .start();
 }

@@ -33,13 +33,13 @@ const QuestionExplanation = ({
           </div>
           {
             isEdit ? (
-              <div className="stick-box">
-                <div className={isCheck ? 'active' : ''}
+              <div className="check-stick">
+                <div className={"icon check " + (isCheck ? "active" : "")}
                      onClick={() => handleQuestionConfig({isCheck: !isCheck})}
                 >
                   {getIcon('check')}
                 </div>
-                <div className={isStick ? 'active' : ''}
+                <div className={"icon stick " + (isStick ? "active" : "")}
                      onClick={() => handleQuestionConfig({isStick: !isStick})}
                 >
                   {getIcon('thumb_tack')}

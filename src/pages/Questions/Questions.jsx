@@ -2,7 +2,9 @@ import React, {useEffect, useMemo} from 'react';
 import {useNavigate, useSearchParams} from 'react-router-dom';
 import './Questions.css'
 import BasicQuestion from "../../components/BasicQuestion";
-import {useCurrQuestionIdx, useFilterQuestions, useLang, useQuestions} from "../../store";
+import {useCurrQuestionIdx, useFilterQuestions, useLang, useQuestionConfig, useQuestions} from "../../store";
+import {setQuestionIntro} from "../../utils/intro";
+import {useIntro} from "../../store/config.store";
 
 
 const Questions = () => {
@@ -10,6 +12,8 @@ const Questions = () => {
   const {filterQuestionIds} = useFilterQuestions()
   const {currQuestionIdx, update: updateCurrQuestionIdx} = useCurrQuestionIdx();
   const {isCN} = useLang();
+  const {update: updateQuestionConfig} = useQuestionConfig();
+  const {isQuestionIntro: isQuestionIntroFinished, update: updateIntro} = useIntro();
 
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -25,6 +29,13 @@ const Questions = () => {
     }
     // eslint-disable-next-line
   }, [searchIndex])
+
+  useEffect(() => {
+    if (!isQuestionIntroFinished) {
+      updateQuestionConfig({isExplain: true});
+      setQuestionIntro(isCN, updateIntro);
+    }
+  }, [isQuestionIntroFinished]);
 
   const questions = useMemo(() => {
     const questions = isCN ? allQuestions_CN : allQuestions;

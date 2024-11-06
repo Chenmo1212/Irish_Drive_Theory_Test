@@ -7,7 +7,7 @@ const PageHeader = ({pageTitle, handleBack, rightIcons, leftIcon = 'arrow_left'}
   return (
     <div className="page-header header">
       <div className="return">
-        <div className="circle" style={{color: THEME_COLOR}} onClick={handleBack}>
+        <div className="circle icon-return" style={{color: THEME_COLOR}} onClick={handleBack}>
           {getIcon(leftIcon)}
         </div>
         <div className="page-title">

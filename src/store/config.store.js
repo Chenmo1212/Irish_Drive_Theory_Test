@@ -48,6 +48,7 @@ export const useLang = create(persist((set) => ({
 export const useIntro = create(persist((set) => ({
   isHomeIntro: false,
   isMineIntro: false,
+  isQuestionIntro: false,
 
   update: (key, isIntroFinished) => set(() => ({[key]: isIntroFinished})),
 }), {

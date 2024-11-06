@@ -27,7 +27,7 @@ const Layout = () => {
       </div>
       <div className={`main ${isActive ? "" : 'inactive'}`}>
         <div className="menu-icons">
-          <div className={`menu-circle i-settings m_button ${isActive ? 'active' : ""}`}
+          <div className={`menu-circle icon-settings m_button ${isActive ? 'active' : ""}`}
                onClick={() => setIsActive(!isActive)}
                id="m_button">
             <span/>
@@ -35,7 +35,7 @@ const Layout = () => {
             <span/>
           </div>
           <span>Little Cookies</span>
-          <div className='menu-circle i-about' onClick={() => navigate('/about')}>
+          <div className='menu-circle icon-about' onClick={() => navigate('/about')}>
             {getIcon('reg_bell')}
           </div>
         </div>
