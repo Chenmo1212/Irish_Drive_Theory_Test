@@ -1,9 +1,11 @@
-import React, {useCallback, useMemo} from "react"
+import React, {useCallback, useEffect, useMemo} from "react"
 import "./index.css"
 import HeaderSection from "../../components/BasicOverview/HeaderSection";
 import {useAnswers, useFilterQuestions, useLang, useQuestions} from "../../store";
 import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
 import {useNavigate} from "react-router-dom";
+import {setOverviewIntro} from "../../utils/intro";
+import {useIntro} from "../../store/config.store";
 
 const Overview = () => {
   const {allQuestions, allQuestions_CN} = useQuestions();
@@ -16,7 +18,14 @@ const Overview = () => {
   } = useFilterQuestions()
   const {isCN} = useLang();
   const {userAnswers} = useAnswers();
+  const {isOverviewIntro: isOverviewIntroFinished, update: updateIntro} = useIntro();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isOverviewIntroFinished) {
+      setOverviewIntro(isCN, updateIntro);
+    }
+  }, [isOverviewIntroFinished]);
 
   const questions = useMemo(() => {
     return isCN ? allQuestions_CN : allQuestions;

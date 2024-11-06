@@ -231,3 +231,66 @@ export function setQuestionIntro(isCN = true, setIntroFinished) {
     })
     .start();
 }
+
+export function setOverviewIntro(isCN = true, setIntroFinished) {
+  introJs()
+    .setOptions({
+      steps: [
+        {
+          title: isCN ? "欢迎来到 Little Cookies" : 'Welcome',
+          intro: isCN
+            ? "👋 欢迎来到 Little Cookies 的总览页面。"
+            : "👋 Welcome to the overview page of Little Cookies."
+        },
+        {
+          element: ".overview .icon-return",
+          title: isCN ? "返回上一页" : "Return to Previous Page",
+          intro: isCN
+            ? "点击这里返回到上一页。"
+            : "Click here to return to the previous page."
+        },
+        {
+          element: ".overview .icon.wrong",
+          title: isCN ? "显示错题" : "Show Wrong",
+          intro: isCN
+            ? "启用这里显示所有错题。"
+            : "Enabling this button will show all wrong questions."
+        },
+        {
+          element: ".overview .icon.fav",
+          title: isCN ? "显示收藏" : "Show Favorite",
+          intro: isCN
+            ? "启用这里显示所有收藏的题目。"
+            : "Enabling this button will show all favorite questions."
+        },
+        {
+          element: ".overview .icon.clear",
+          title: isCN ? "清除数据" : "Clear Data",
+          intro: isCN
+            ? "点击这里清除用户数据。"
+            : "Click here to clear user data."
+        },
+        {
+          element: ".overview .page-body",
+          title: isCN ? "问题列表" : "Questions List",
+          intro: isCN
+            ? "这里是问题列表，可以查看所有题目的题号和题目。红色为错题，绿色为答对的题目，带一个五角星为收藏的题目。"
+            : "Here is the list of questions, you can view all the questions with their number and question. Red is wrong, green is the correct answer, and with a five stars is the favorite question."
+        },
+        {
+          title: isCN ? "用户指导完成" : "User Guide Completed",
+          intro: isCN
+            ? "恭喜你完成了该页面的用户指导，祝一切顺利。"
+            : "Congratulations on completing the user guide for this page, have a good day."
+        }
+      ],
+    })
+    .setOptions({
+      tooltipClass: 'intro-guide',
+      exitOnEscKey: true
+    })
+    .oncomplete(function () {
+      setIntroFinished("isOverviewIntro", true);
+    })
+    .start();
+}
