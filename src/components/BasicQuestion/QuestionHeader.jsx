@@ -1,14 +1,18 @@
 import React from 'react';
 import PageHeader from "../Header/PageHeader";
 import {useNavigate} from "react-router-dom";
+import {useIntro} from "../../store/config.store";
 
 const QuestionHeader = ({
-                        isCN=false,
-                        toggleLanguage=()=>{},
-                        toggleFavourite=()=>{},
-                        isFavorite=false,
-                      }) => {
+  isCN = false,
+  toggleLanguage = () => {
+  },
+  toggleFavourite = () => {
+  },
+  isFavorite = false,
+}) => {
   const navigate = useNavigate();
+  const {update: updateIntro} = useIntro();
 
   const backHome = () => {
     navigate('/');
@@ -16,6 +20,10 @@ const QuestionHeader = ({
 
   const rightIcons = [
     {
+      name: 'question',
+      action: () => updateIntro("isQuestionIntro", false),
+      active: false,
+    }, {
       name: 'language',
       action: toggleLanguage,
       active: isCN,

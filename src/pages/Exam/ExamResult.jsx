@@ -68,7 +68,7 @@ const ExamResult = () => {
       <PageHeader
         pageTitle="Exam Result"
         handleBack={() => navigate('/')}
-        rightIcons={[]}
+        rightIcons={[{name: 'question', action: () => updateIntro("isExamResultIntro", false)}]}
         leftIcon="home"
       />
 
