@@ -243,39 +243,53 @@ export function setOverviewIntro(isCN = true, setIntroFinished) {
             : "👋 Welcome to the overview page of Little Cookies."
         },
         {
-          element: ".overview .icon-return",
-          title: isCN ? "返回上一页" : "Return to Previous Page",
+          element: ".exam-result.mock .circle.icon-return",
+          title: isCN ? "返回主页" : "Return to Homepage",
           intro: isCN
-            ? "点击这里返回到上一页。"
-            : "Click here to return to the previous page."
+            ? "点击这里返回主页。"
+            : "Click here to return to the Homepage."
         },
         {
-          element: ".overview .icon.wrong",
-          title: isCN ? "显示错题" : "Show Wrong",
+          element: ".exam-result .chart",
+          title: isCN ? "考试分数" : "Exam Score",
           intro: isCN
-            ? "启用这里显示所有错题。"
-            : "Enabling this button will show all wrong questions."
+            ? "这里显示考试分数。"
+            : "Here shows the exam score."
         },
         {
-          element: ".overview .icon.fav",
-          title: isCN ? "显示收藏" : "Show Favorite",
+          element: ".exam-result .result",
+          title: isCN ? "考试结果" : "Exam Result",
           intro: isCN
-            ? "启用这里显示所有收藏的题目。"
-            : "Enabling this button will show all favorite questions."
+            ? "这里显示考试结果, PASS为通过，FAIL为未通过。"
+            : "Here shows the exam result, PASS is passed, and FAIL is not passed."
         },
         {
-          element: ".overview .icon.clear",
-          title: isCN ? "清除数据" : "Clear Data",
+          element: ".exam-result .time",
+          title: isCN ? "考试用时" : "Exam Time",
           intro: isCN
-            ? "点击这里清除用户数据。"
-            : "Click here to clear user data."
+            ? "这里显示考试用时。"
+            : "Here shows the exam time."
         },
         {
-          element: ".overview .page-body",
-          title: isCN ? "问题列表" : "Questions List",
+          element: ".exam-result .line-chart",
+          title: isCN ? "考试历史" : "Exam Histories",
           intro: isCN
-            ? "这里是问题列表，可以查看所有题目的题号和题目。红色为错题，绿色为答对的题目，带一个五角星为收藏的题目。"
-            : "Here is the list of questions, you can view all the questions with their number and question. Red is wrong, green is the correct answer, and with a five stars is the favorite question."
+            ? "这里显示历史考试历史分数绘制的折线图。"
+            : "Here shows the line chart of the history of exam scores."
+        },
+        {
+          element: ".exam-result .check-btn",
+          title: isCN ? "检查错题" : "Check Incorrect Answers",
+          intro: isCN
+            ? "点击这里本次考试的错题。"
+            : "Click here to check the wrong questions in this exam."
+        },
+        {
+          element: ".exam-result .save-btn",
+          title: isCN ? "收藏错题" : "Favorite Incorrect Answers",
+          intro: isCN
+            ? "点击这里收藏本次考试的所有错题。"
+            : "Click here to save all wrong questions in this exam."
         },
         {
           title: isCN ? "用户指导完成" : "User Guide Completed",
@@ -290,7 +304,84 @@ export function setOverviewIntro(isCN = true, setIntroFinished) {
       exitOnEscKey: true
     })
     .oncomplete(function () {
-      setIntroFinished("isOverviewIntro", true);
+      setIntroFinished("isExamResultIntro", true);
+    })
+    .start();
+}
+
+export function setExamResultIntro(isCN = true, setIntroFinished) {
+  introJs()
+    .setOptions({
+      steps: [
+        {
+          title: isCN ? "欢迎来到 Little Cookies" : 'Welcome',
+          intro: isCN
+            ? "👋 欢迎来到 Little Cookies 的考试结果页面。"
+            : "👋 Welcome to the exam result page of Little Cookies."
+        },
+        {
+          element: ".exam-result.mock .circle.icon-return",
+          title: isCN ? "返回主页" : "Return to Homepage",
+          intro: isCN
+            ? "点击这里返回主页。"
+            : "Click here to return to the Homepage."
+        },
+        {
+          element: ".exam-result .chart",
+          title: isCN ? "考试分数" : "Exam Score",
+          intro: isCN
+            ? "这里显示考试分数。"
+            : "Here shows the exam score."
+        },
+        {
+          element: ".exam-result .result",
+          title: isCN ? "考试结果" : "Exam Result",
+          intro: isCN
+            ? "这里显示考试结果, PASS为通过，FAIL为未通过。"
+            : "Here shows the exam result, PASS is passed, and FAIL is not passed."
+        },
+        {
+          element: ".exam-result .time",
+          title: isCN ? "考试用时" : "Exam Time",
+          intro: isCN
+            ? "这里显示考试用时。"
+            : "Here shows the exam time."
+        },
+        {
+          element: ".exam-result .line-chart",
+          title: isCN ? "考试历史" : "Exam Histories",
+          intro: isCN
+            ? "这里显示历史考试历史分数绘制的折线图。"
+            : "Here shows the line chart of the history of exam scores."
+        },
+        {
+          element: ".exam-result .check-btn",
+          title: isCN ? "检查错题" : "Check Incorrect Answers",
+          intro: isCN
+            ? "点击这里本次考试的错题。"
+            : "Click here to check the wrong questions in this exam."
+        },
+        {
+          element: ".exam-result .save-btn",
+          title: isCN ? "收藏错题" : "Favorite Incorrect Answers",
+          intro: isCN
+            ? "点击这里收藏本次考试的所有错题到题目预览中，你可以在题目预览中查看。"
+            : "Click here to save all wrong questions in this exam to the overview page of questions, you can view it in the overview page of questions."
+        },
+        {
+          title: isCN ? "用户指导完成" : "User Guide Completed",
+          intro: isCN
+            ? "恭喜你完成了该页面的用户指导，祝一切顺利。"
+            : "Congratulations on completing the user guide for this page, have a good day."
+        }
+      ],
+    })
+    .setOptions({
+      tooltipClass: 'intro-guide',
+      exitOnEscKey: true
+    })
+    .oncomplete(function () {
+      setIntroFinished("isExamResultIntro", true);
     })
     .start();
 }
