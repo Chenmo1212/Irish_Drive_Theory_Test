@@ -13,6 +13,7 @@ import Console from "./pages/Console/Console";
 import {useNotification, useVersion} from "./store/config.store";
 import {useQuestions} from "./store";
 import {useEffect} from "react";
+import 'intro.js/minified/introjs.min.css';
 
 const CURRENT_VERSION = "2.0.0.241104";
 

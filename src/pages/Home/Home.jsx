@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import './Home.css'
 import DRIVER from '../../assets/svg/driver.svg'
 import {Link} from "react-router-dom";
@@ -6,12 +6,22 @@ import Notification from '../../components/Notification/Notification'
 import {THEME_COLOR} from '../../utils/helper';
 import {getIcon} from "../../styles/icons";
 import {useAnswers, useCurrQuestionIdx, useLang, useQuestions} from "../../store";
+import {setHomeIntro} from "../../utils/intro";
+import {useIntro, useNotification} from "../../store/config.store";
 
 const Home = () => {
   const {isCN} = useLang();
   const {allQuestions} = useQuestions();
   const {userAnswers} = useAnswers();
-  const {currQuestionIdx} = useCurrQuestionIdx()
+  const {currQuestionIdx} = useCurrQuestionIdx();
+  const {isNotification} = useNotification();
+  const {isHomeIntro: isHomeIntroFinished, update: updateIntro} = useIntro();
+
+  useEffect(() => {
+    if (!isNotification && !isHomeIntroFinished) {
+      setHomeIntro(isCN, updateIntro);
+    }
+  }, [isNotification, isHomeIntroFinished]);
 
   const getProgressWidth = () => {
     let userAnswerAmount = userAnswers.length;
@@ -39,7 +49,7 @@ const Home = () => {
 
         <Link to={`/question?i=${currQuestionIdx + 1}`}>
           <div className="btn">
-            <button className="btn round-action-button begin text-blue">
+            <button className="btn round-action-button begin text-blue" data-intro='Hello step one!'>
               <span className="icon-container">
                 <span>{getIcon('rocket')}</span>
                 <span>{isCN ? "开始" : "Start"}</span>
@@ -50,7 +60,7 @@ const Home = () => {
 
         <Link to={`/beforeExam`}>
           <div className="btn">
-            <button className="btn round-action-button begin text-blue">
+            <button className="btn round-action-button mock-exam text-blue">
               <span className="icon-container">
                 <span>{getIcon('rocket')}</span>
                 <span>{isCN ? "模拟考试" : "Mock Exam"}</span>

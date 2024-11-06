@@ -98,6 +98,7 @@
 }
 
 /* Rect Round Button*/
+.intro-guide .introjs-button,
 .rect-round-button {
   position: relative;
   padding: 5px 10px;
@@ -111,6 +112,7 @@
   transition: all 200ms ease-out 0s;
 }
 
+.intro-guide .introjs-button:before,
 .rect-round-button:before {
   content: '';
   position: absolute;
@@ -124,6 +126,7 @@
   transition: all 200ms ease-out 0s;
 }
 
+.intro-guide .introjs-button:after,
 .rect-round-button:after {
   content: '';
   position: absolute;
@@ -135,8 +138,17 @@
   transition: all 200ms ease-out 0s;
 }
 
+.intro-guide .introjs-button:active,
 .rect-round-button:active,
+.intro-guide .introjs-button.active,
 .rect-round-button.active {
   background: linear-gradient(to top, var(--bg-color), #fafcfd);
   box-shadow: var(--box-shadow-active);
+}
+
+.intro-guide .introjs-button:focus {
+  border: 1px solid var(--theme-color);
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  color: var(--theme-color);
 }
