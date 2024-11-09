@@ -10,6 +10,8 @@ const QuestionHeader = ({
   toggleFavourite = () => {
   },
   isFavorite = false,
+  setIsShowIntro = () => {
+  }
 }) => {
   const navigate = useNavigate();
   const {update: updateIntro} = useIntro();
@@ -21,7 +23,10 @@ const QuestionHeader = ({
   const rightIcons = [
     {
       name: 'question',
-      action: () => updateIntro("isQuestionIntro", false),
+      action: () => {
+        updateIntro("isQuestionIntro", false);
+        setIsShowIntro(true);
+      },
       active: false,
     }, {
       name: 'language',

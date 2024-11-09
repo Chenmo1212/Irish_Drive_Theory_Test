@@ -127,7 +127,7 @@ export function setMineIntro(isCN = true, setIntroFinished) {
     .start();
 }
 
-export function setQuestionIntro(isCN = true, setIntroFinished) {
+export function setQuestionIntro(isCN = true, setIntroFinished, handleIntroAfterClose) {
   introJs()
     .setOptions({
       steps: [
@@ -229,6 +229,10 @@ export function setQuestionIntro(isCN = true, setIntroFinished) {
     .oncomplete(function () {
       setIntroFinished("isQuestionIntro", true);
     })
+    .onexit(function () {
+      setIntroFinished("isQuestionIntro", false);
+      handleIntroAfterClose();
+    })
     .start();
 }
 
@@ -304,7 +308,10 @@ export function setOverviewIntro(isCN = true, setIntroFinished) {
       exitOnEscKey: true
     })
     .oncomplete(function () {
-      setIntroFinished("isExamResultIntro", true);
+      setIntroFinished("isOverviewIntro", true);
+    })
+    .onexit(function () {
+      setIntroFinished("isOverviewIntro", false);
     })
     .start();
 }
@@ -382,6 +389,9 @@ export function setExamResultIntro(isCN = true, setIntroFinished) {
     })
     .oncomplete(function () {
       setIntroFinished("isExamResultIntro", true);
+    })
+    .onexit(function () {
+      setIntroFinished("isExamResultIntro", false);
     })
     .start();
 }
