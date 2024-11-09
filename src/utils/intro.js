@@ -317,7 +317,7 @@ export function setOverviewIntro(isCN = true, setIntroFinished, handleIntroAfter
     .start();
 }
 
-export function setExamResultIntro(isCN = true, setIntroFinished) {
+export function setExamResultIntro(isCN = true, setIntroFinished, handleIntroAfterClose) {
   introJs()
     .setOptions({
       steps: [
@@ -393,6 +393,7 @@ export function setExamResultIntro(isCN = true, setIntroFinished) {
     })
     .onexit(function () {
       setIntroFinished("isExamResultIntro", false);
+      handleIntroAfterClose();
     })
     .start();
 }

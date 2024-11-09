@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useRef} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 import PageHeader from "../../components/Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 import {CORRECT_COLOR, ERROR_COLOR, NORMAL_SOUND, playSound} from "../../utils/helper";
@@ -20,15 +20,27 @@ const ExamResult = () => {
   const chartData = useMemo(() => {
     return examHistory.map((i, _) => i.score);
   }, [examHistory])
-
   const alertRef = useRef();
   const navigate = useNavigate();
+  const [isShowIntro, setIsShowIntro] = useState(!isExamResultIntroFinished);
 
   useEffect(() => {
-    if (!isExamResultIntroFinished) {
-      setExamResultIntro(isCN, updateIntro);
+    if (isShowIntro) {
+      updateIntro("isExamResultIntro", false);
     }
-  }, [isExamResultIntroFinished]);
+    // eslint-disable-next-line
+  }, [isShowIntro]);
+
+  useEffect(() => {
+    if (isShowIntro && !isExamResultIntroFinished) {
+      setExamResultIntro(isCN, updateIntro, handleIntroAfterClose);
+    }
+    // eslint-disable-next-line
+  }, [isExamResultIntroFinished, isShowIntro]);
+
+  const handleIntroAfterClose = () => {
+    setIsShowIntro(false);
+  }
 
   const getUsedTime = () => {
     const secondsUsed = 40 * 60 - secondsLeft;
@@ -68,7 +80,12 @@ const ExamResult = () => {
       <PageHeader
         pageTitle="Exam Result"
         handleBack={() => navigate('/')}
-        rightIcons={[{name: 'question', action: () => updateIntro("isExamResultIntro", false)}]}
+        rightIcons={[{
+          name: 'question', action: () => {
+            updateIntro("isExamResultIntro", false);
+            setIsShowIntro(true);
+          }
+        }]}
         leftIcon="home"
       />
 
