@@ -4,11 +4,21 @@ import PageHeader from "../Header/PageHeader";
 import {DELETE_SOUND, playSound, removeFromLocalStorage} from "../../utils/helper";
 import BasicModal from "../BasicModal/BasicModal";
 import BasicAlert from "../BasicAlert/BasicAlert";
+import {useIntro} from "../../store/config.store";
 
-const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavorite, isCN, isShowRight = true}) => {
+const HeaderSection = ({
+  isShowWrong,
+  setShowWrong,
+  isShowFavorite,
+  setShowFavorite,
+  isCN,
+  isShowRight = true,
+  setIsShowIntro,
+}) => {
   const [modalShow, setModalShow] = useState(false);
   const alertRef = useRef();
   const navigate = useNavigate();
+  const {update: updateIntro} = useIntro();
 
   const toggleModal = () => setModalShow(!modalShow);
   const backDetail = () => {
@@ -28,6 +38,13 @@ const HeaderSection = ({isShowWrong, setShowWrong, isShowFavorite, setShowFavori
 
   const rightIcons = [
     {
+      name: 'question',
+      action: () => {
+        updateIntro("isOverviewIntro", false);
+        setIsShowIntro(true);
+      },
+      active: false,
+    }, {
       name: 'wrong',
       action: () => setShowWrong(!isShowWrong),
       active: isShowWrong,

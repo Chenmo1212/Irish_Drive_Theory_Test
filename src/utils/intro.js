@@ -236,7 +236,7 @@ export function setQuestionIntro(isCN = true, setIntroFinished, handleIntroAfter
     .start();
 }
 
-export function setOverviewIntro(isCN = true, setIntroFinished) {
+export function setOverviewIntro(isCN = true, setIntroFinished, handleIntroAfterClose) {
   introJs()
     .setOptions({
       steps: [
@@ -312,6 +312,7 @@ export function setOverviewIntro(isCN = true, setIntroFinished) {
     })
     .onexit(function () {
       setIntroFinished("isOverviewIntro", false);
+      handleIntroAfterClose();
     })
     .start();
 }

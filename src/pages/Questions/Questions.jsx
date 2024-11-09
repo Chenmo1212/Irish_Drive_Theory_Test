@@ -5,7 +5,6 @@ import BasicQuestion from "../../components/BasicQuestion";
 import {useCurrQuestionIdx, useFilterQuestions, useLang, useQuestionConfig, useQuestions} from "../../store";
 import {setQuestionIntro} from "../../utils/intro";
 import {useIntro} from "../../store/config.store";
-import {flushSync} from "react-dom";
 
 
 const Questions = () => {
@@ -37,13 +36,15 @@ const Questions = () => {
     if (isShowIntro) {
       updateIntro("isQuestionIntro", false);
     }
+    // eslint-disable-next-line
   }, [isShowIntro])
 
   useEffect(() => {
     if (isShowIntro && !isQuestionIntroFinished) {
-      flushSync(() => updateQuestionConfig({isExplain: true}));
+      updateQuestionConfig({isExplain: true});
       setQuestionIntro(isCN, updateIntro, handleIntroAfterClose);
     }
+    // eslint-disable-next-line
   }, [isQuestionIntroFinished, isShowIntro]);
 
   const handleIntroAfterClose = () => {
