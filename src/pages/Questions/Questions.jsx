@@ -12,7 +12,7 @@ const Questions = () => {
   const {filterQuestionIds} = useFilterQuestions()
   const {currQuestionIdx, update: updateCurrQuestionIdx} = useCurrQuestionIdx();
   const {isCN} = useLang();
-  const {update: updateQuestionConfig} = useQuestionConfig();
+  const {update: updateQuestionConfig, isExplain} = useQuestionConfig();
   const {isQuestionIntro: isQuestionIntroFinished, update: updateIntro} = useIntro();
 
   const [searchParams] = useSearchParams();
@@ -42,10 +42,9 @@ const Questions = () => {
   useEffect(() => {
     if (isShowIntro && !isQuestionIntroFinished) {
       updateQuestionConfig({isExplain: true});
-      setQuestionIntro(isCN, updateIntro, handleIntroAfterClose);
+      if (isExplain) setQuestionIntro(isCN, updateIntro, handleIntroAfterClose);
     }
-    // eslint-disable-next-line
-  }, [isQuestionIntroFinished, isShowIntro]);
+  }, [isQuestionIntroFinished, isShowIntro, isExplain]);
 
   const handleIntroAfterClose = () => {
     updateQuestionConfig({isExplain: false});
