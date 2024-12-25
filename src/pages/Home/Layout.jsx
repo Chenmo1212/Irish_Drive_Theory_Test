@@ -47,7 +47,7 @@ const Layout = () => {
             <span/>
             <span/>
           </div>
-          <div className="title">
+          <div className="site-title">
             <span>Little Cookies</span>
             <span className="question-icon"
                   onClick={() => handleHomeIntro(false)}>{getIcon('question')}</span>
