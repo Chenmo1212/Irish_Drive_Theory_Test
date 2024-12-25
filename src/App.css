@@ -112,6 +112,11 @@
   transition: all 200ms ease-out 0s;
 }
 
+/*hot fix missing tooltip on IOS 18*/
+.introjs-tooltipReferenceLayer {
+  visibility: visible !important;
+}
+
 .intro-guide .introjs-tooltipbuttons .introjs-button:before,
 .rect-round-button:before {
   content: '';
