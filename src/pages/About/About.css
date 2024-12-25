@@ -23,15 +23,6 @@
   color: var(--font-color-secondary);
 }
 
-.about .content .card p.english {
-  letter-spacing: -0.4px;
-  margin-bottom: -10px;
-  font-style: italic;
-  font-size: 14px;
-  color: var(--font-color);
-  word-break: break-word;
-}
-
 .about .content .card li.done {
   text-decoration: line-through;
 }

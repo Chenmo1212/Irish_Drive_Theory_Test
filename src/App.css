@@ -112,6 +112,21 @@
   transition: all 200ms ease-out 0s;
 }
 
+/* English Font */
+p.english {
+  letter-spacing: -0.4px;
+  margin: 0 0 -5px;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--font-color);
+  word-break: break-word;
+}
+
+p.chinese {
+  font-size: 12px;
+  color: var(--font-color-secondary);
+}
+
 /*hot fix missing tooltip on IOS 18*/
 .introjs-tooltipReferenceLayer {
   visibility: visible !important;
