@@ -66,6 +66,16 @@
   transition: box-shadow .6s cubic-bezier(.79, .21, .06, .81);
 }
 
+.layout .title {
+  display: flex;
+}
+
+.layout .question-icon {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
 .m_button span {
   background-color: var(--font-color-regular);
   width: 15px;

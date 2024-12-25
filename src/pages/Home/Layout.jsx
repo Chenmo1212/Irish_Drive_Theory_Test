@@ -6,12 +6,12 @@ import {getIcon} from "../../styles/icons";
 import {useNavigate} from "react-router-dom";
 import {useLang} from "../../store";
 import {useIntro} from "../../store/config.store";
-import {setMineIntro} from "../../utils/intro";
+import {setHomeIntro, setMineIntro} from "../../utils/intro";
 
 const Layout = () => {
   const [isActive, setIsActive] = useState(false);
   const {isCN} = useLang();
-  const {isMineIntro: isMineIntroFinished, update: updateIntro} = useIntro();
+  const {isMineIntro: isMineIntroFinished, isHomeIntro: isHomeIntroFinished, update: updateIntro} = useIntro();
 
   useEffect(() => {
     if (!isMineIntroFinished && isActive) {
@@ -19,7 +19,20 @@ const Layout = () => {
     }
   }, [isMineIntroFinished, isActive]);
 
+  useEffect(() => {
+    if (!isHomeIntroFinished) {
+      setHomeIntro(isCN, updateIntro);
+    }
+  }, [isHomeIntroFinished]);
+
+  const handleHomeIntro = (isCompleted) => {
+    if (!isCompleted) {
+      setHomeIntro(isCN, updateIntro);
+    }
+  }
+
   const navigate = useNavigate();
+
   return (<>
     <div className="layout">
       <div className={`menu-nav ${isActive ? "" : 'inactive'}`}>
@@ -34,7 +47,11 @@ const Layout = () => {
             <span/>
             <span/>
           </div>
-          <span>Little Cookies</span>
+          <div className="title">
+            <span>Little Cookies</span>
+            <span className="question-icon"
+                  onClick={() => handleHomeIntro(false)}>{getIcon('question')}</span>
+          </div>
           <div className='menu-circle icon-about' onClick={() => navigate('/about')}>
             {getIcon('reg_bell')}
           </div>
