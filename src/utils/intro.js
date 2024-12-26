@@ -219,46 +219,34 @@ export function setOverviewIntro(isCN = true, setIntroFinished, handleIntroAfter
             "<p class='chinese'>👋 欢迎来到 Little Cookies 的总览页面。</p>"
         },
         {
-          element: ".exam-result.mock .circle.icon-return",
-          title: isCN ? "返回主页" : "Return to Homepage",
-          intro: "<p class='english'>Click here to return to the Homepage.</p>" +
-            "<p class='chinese'>点击这里返回主页。</p>"
+          element: ".overview .icon-return",
+          title: isCN ? "返回上一页" : "Return to Previous Page",
+          intro: "<p class='english'>Click here to return to the previous page.</p>" +
+            "<p class='chinese'>点击这里返回到上一页。</p>"
         },
         {
-          element: ".exam-result .chart",
-          title: isCN ? "考试分数" : "Exam Score",
-          intro: "<p class='english'>Here shows the exam score.</p>" +
-            "<p class='chinese'>这里显示考试分数。</p>"
+          element: ".overview .icon.wrong",
+          title: isCN ? "显示错题" : "Show Wrong",
+          intro: "<p class='english'>Enabling this button will show all wrong questions.</p>" +
+            "<p class='chinese'>启用这里显示所有错题。</p>"
         },
         {
-          element: ".exam-result .result",
-          title: isCN ? "考试结果" : "Exam Result",
-          intro: "<p class='english'>Here shows the exam result, PASS is passed, and FAIL is not passed.</p>" +
-            "<p class='chinese'>这里显示考试结果, PASS为通过，FAIL为未通过。</p>"
+          element: ".overview .icon.fav",
+          title: isCN ? "显示收藏" : "Show Favorite",
+          intro: "<p class='english'>Enabling this button will show all favorite questions.</p>" +
+            "<p class='chinese'>启用这里显示所有收藏的题目。</p>"
         },
         {
-          element: ".exam-result .time",
-          title: isCN ? "考试用时" : "Exam Time",
-          intro: "<p class='english'>Here shows the exam time.</p>" +
-            "<p class='chinese'>这里显示考试用时。</p>"
+          element: ".overview .icon.clear",
+          title: isCN ? "清除数据" : "Clear Data",
+          intro: "<p class='english'>Click here to clear user data.</p>" +
+            "<p class='chinese'>点击这里清除用户数据。</p>"
         },
         {
-          element: ".exam-result .line-chart",
-          title: isCN ? "考试历史" : "Exam Histories",
-          intro: "<p class='english'>Here shows the line chart of the history of exam scores.</p>" +
-            "<p class='chinese'>这里显示历史考试历史分数绘制的折线图。</p>"
-        },
-        {
-          element: ".exam-result .check-btn",
-          title: isCN ? "检查错题" : "Check Incorrect Answers",
-          intro: "<p class='english'>Click here to check the wrong questions in this exam.</p>" +
-            "<p class='chinese'>点击这里本次考试的错题。</p>"
-        },
-        {
-          element: ".exam-result .save-btn",
-          title: isCN ? "收藏错题" : "Favorite Incorrect Answers",
-          intro: "<p class='english'>Click here to save all wrong questions in this exam.</p>" +
-            "<p class='chinese'>点击这里收藏本次考试的所有错题。</p>"
+          element: ".overview .page-body",
+          title: isCN ? "问题列表" : "Questions List",
+          intro: "<p class='english'>Here is the list of questions, you can view all the questions with their number and question. Red is wrong, green is the correct answer, and with a five stars is the favorite question.</p>" +
+            "<p class='chinese'>这里是问题列表，可以查看所有题目的题号和题目。红色为错题，绿色为答对的题目，带一个五角星为收藏的题目。</p>"
         },
         {
           title: isCN ? "用户指导完成" : "User Guide Completed",
