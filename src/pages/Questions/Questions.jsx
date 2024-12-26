@@ -1,10 +1,8 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useMemo} from 'react';
 import {useNavigate, useSearchParams} from 'react-router-dom';
 import './Questions.css'
 import BasicQuestion from "../../components/BasicQuestion";
-import {useCurrQuestionIdx, useFilterQuestions, useLang, useQuestionConfig, useQuestions} from "../../store";
-import {setQuestionIntro} from "../../utils/intro";
-import {useIntro} from "../../store/config.store";
+import {useCurrQuestionIdx, useFilterQuestions, useLang, useQuestions} from "../../store";
 
 
 const Questions = () => {
@@ -12,14 +10,10 @@ const Questions = () => {
   const {filterQuestionIds} = useFilterQuestions()
   const {currQuestionIdx, update: updateCurrQuestionIdx} = useCurrQuestionIdx();
   const {isCN} = useLang();
-  const {update: updateQuestionConfig, isExplain} = useQuestionConfig();
-  const {isQuestionIntro: isQuestionIntroFinished, update: updateIntro} = useIntro();
 
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const searchIndex = parseInt(searchParams.get("i") || "0");
-
-  const [isShowIntro, setIsShowIntro] = useState(!isQuestionIntroFinished);
 
   useEffect(() => {
     if (searchIndex) {
@@ -31,25 +25,6 @@ const Questions = () => {
     }
     // eslint-disable-next-line
   }, [searchIndex])
-
-  useEffect(() => {
-    if (isShowIntro) {
-      updateIntro("isQuestionIntro", false);
-    }
-    // eslint-disable-next-line
-  }, [isShowIntro])
-
-  useEffect(() => {
-    if (isShowIntro && !isQuestionIntroFinished) {
-      updateQuestionConfig({isExplain: true});
-      if (isExplain) setQuestionIntro(isCN, updateIntro, handleIntroAfterClose);
-    }
-  }, [isQuestionIntroFinished, isShowIntro, isExplain]);
-
-  const handleIntroAfterClose = () => {
-    updateQuestionConfig({isExplain: false});
-    setIsShowIntro(false);
-  }
 
   const questions = useMemo(() => {
     const questions = isCN ? allQuestions_CN : allQuestions;
@@ -67,7 +42,6 @@ const Questions = () => {
     <BasicQuestion
       questions={questions}
       currQuestion={currQuestion}
-      setIsShowIntro={setIsShowIntro}
     />
   </div>);
 };

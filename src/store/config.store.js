@@ -50,6 +50,7 @@ export const useIntro = create(persist((set) => ({
   isMineIntro: false,
   isOverviewIntro: false,
   isQuestionIntro: false,
+  isExamResultIntro: false,
 
   update: (key, isIntroFinished) => set(() => ({[key]: isIntroFinished})),
 }), {

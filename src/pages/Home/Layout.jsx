@@ -5,12 +5,13 @@ import './Layout.css'
 import {getIcon} from "../../styles/icons";
 import {useNavigate} from "react-router-dom";
 import {useLang} from "../../store";
-import {useIntro} from "../../store/config.store";
+import {useIntro, useNotification} from "../../store/config.store";
 import {setHomeIntro, setMineIntro} from "../../utils/intro";
 
 const Layout = () => {
   const [isActive, setIsActive] = useState(false);
   const {isCN} = useLang();
+  const {isNotification} = useNotification();
   const {isMineIntro: isMineIntroFinished, isHomeIntro: isHomeIntroFinished, update: updateIntro} = useIntro();
 
   useEffect(() => {
@@ -19,17 +20,15 @@ const Layout = () => {
     }
   }, [isMineIntroFinished, isActive]);
 
-  useEffect(() => {
-    if (!isHomeIntroFinished) {
-      setHomeIntro(isCN, updateIntro);
-    }
-  }, [isHomeIntroFinished]);
-
   const handleHomeIntro = (isCompleted) => {
-    if (!isCompleted) {
+    if (!isCompleted && !isNotification) {
       setHomeIntro(isCN, updateIntro);
     }
   }
+
+  useEffect(() => {
+    handleHomeIntro(isHomeIntroFinished)
+  }, [isHomeIntroFinished, handleHomeIntro, isNotification]);
 
   const navigate = useNavigate();
 

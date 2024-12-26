@@ -49,7 +49,7 @@ const Home = () => {
 
         <Link to={`/question?i=${currQuestionIdx + 1}`}>
           <div className="btn">
-            <button className="btn round-action-button begin text-blue" data-intro='Hello step one!'>
+            <button className="btn round-action-button begin text-blue">
               <span className="icon-container">
                 <span>{getIcon('rocket')}</span>
                 <span>{isCN ? "开始" : "Start"}</span>

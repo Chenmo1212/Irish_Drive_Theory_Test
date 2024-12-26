@@ -1,11 +1,9 @@
-import React, {useCallback, useEffect, useMemo, useState} from "react"
+import React, {useCallback, useMemo} from "react"
 import "./index.css"
 import HeaderSection from "../../components/BasicOverview/HeaderSection";
 import {useAnswers, useFilterQuestions, useLang, useQuestions} from "../../store";
 import QuestionsSection from "../../components/BasicOverview/QuestionsSection";
 import {useNavigate} from "react-router-dom";
-import {setOverviewIntro} from "../../utils/intro";
-import {useIntro} from "../../store/config.store";
 
 const Overview = () => {
   const {allQuestions, allQuestions_CN} = useQuestions();
@@ -18,28 +16,7 @@ const Overview = () => {
   } = useFilterQuestions()
   const {isCN} = useLang();
   const {userAnswers} = useAnswers();
-  const {isOverviewIntro: isOverviewIntroFinished, update: updateIntro} = useIntro();
   const navigate = useNavigate();
-
-  const [isShowIntro, setIsShowIntro] = useState(!isOverviewIntroFinished);
-
-  useEffect(() => {
-    if (isShowIntro) {
-      updateIntro("isOverviewIntro", false);
-    }
-    // eslint-disable-next-line
-  }, [isShowIntro])
-
-  useEffect(() => {
-    if (isShowIntro && !isOverviewIntroFinished) {
-      setOverviewIntro(isCN, updateIntro, handleIntroAfterClose);
-    }
-    // eslint-disable-next-line
-  }, [isOverviewIntroFinished, isShowIntro]);
-
-  const handleIntroAfterClose = () => {
-    setIsShowIntro(false);
-  }
 
   const questions = useMemo(() => {
     return isCN ? allQuestions_CN : allQuestions;
@@ -105,7 +82,6 @@ const Overview = () => {
         isShowFavorite={filterByFavorite}
         setShowFavorite={() => handleFilteredQuestions('favorite')}
         isCN={isCN}
-        setIsShowIntro={setIsShowIntro}
       />
 
       <QuestionsSection

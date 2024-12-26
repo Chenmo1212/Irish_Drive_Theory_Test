@@ -113,7 +113,7 @@ export function setMineIntro(isCN = true, setIntroFinished) {
     .start();
 }
 
-export function setQuestionIntro(isCN = true, setIntroFinished, handleIntroAfterClose) {
+export function setQuestionIntro(isCN = true, setIntroFinished) {
   introJs()
     .setOptions({
       steps: [
@@ -189,6 +189,7 @@ export function setQuestionIntro(isCN = true, setIntroFinished, handleIntroAfter
             "<p class='chinese'>使用这些按钮来查看题库、查看答案或者更换题目。</p>"
         },
         {
+          element: ".question",
           title: isCN ? "用户指导完成" : "User Guide Completed",
           intro: "<p class='english'>Congratulations on completing the user guide for this page, have a good day.</p>" +
             "<p class='chinese'>恭喜你完成了该页面的用户指导，祝一切顺利。</p>"
@@ -202,14 +203,10 @@ export function setQuestionIntro(isCN = true, setIntroFinished, handleIntroAfter
     .oncomplete(function () {
       setIntroFinished("isQuestionIntro", true);
     })
-    .onexit(function () {
-      setIntroFinished("isQuestionIntro", false);
-      handleIntroAfterClose();
-    })
     .start();
 }
 
-export function setOverviewIntro(isCN = true, setIntroFinished, handleIntroAfterClose) {
+export function setOverviewIntro(isCN = true, setIntroFinished) {
   introJs()
     .setOptions({
       steps: [
@@ -249,6 +246,7 @@ export function setOverviewIntro(isCN = true, setIntroFinished, handleIntroAfter
             "<p class='chinese'>这里是问题列表，可以查看所有题目的题号和题目。红色为错题，绿色为答对的题目，带一个五角星为收藏的题目。</p>"
         },
         {
+          element: ".overview",
           title: isCN ? "用户指导完成" : "User Guide Completed",
           intro: "<p class='english'>Congratulations on completing the user guide for this page, have a good day.</p>" +
             "<p class='chinese'>恭喜你完成了该页面的用户指导，祝一切顺利。</p>"
@@ -262,14 +260,10 @@ export function setOverviewIntro(isCN = true, setIntroFinished, handleIntroAfter
     .oncomplete(function () {
       setIntroFinished("isOverviewIntro", true);
     })
-    .onexit(function () {
-      setIntroFinished("isOverviewIntro", false);
-      handleIntroAfterClose();
-    })
     .start();
 }
 
-export function setExamResultIntro(isCN = true, setIntroFinished, handleIntroAfterClose) {
+export function setExamResultIntro(isCN = true, setIntroFinished) {
   introJs()
     .setOptions({
       steps: [
@@ -333,10 +327,6 @@ export function setExamResultIntro(isCN = true, setIntroFinished, handleIntroAft
     })
     .oncomplete(function () {
       setIntroFinished("isExamResultIntro", true);
-    })
-    .onexit(function () {
-      setIntroFinished("isExamResultIntro", false);
-      handleIntroAfterClose();
     })
     .start();
 }

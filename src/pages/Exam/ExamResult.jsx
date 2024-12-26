@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useRef, useState} from 'react';
+import React, {useEffect, useMemo, useRef} from 'react';
 import PageHeader from "../../components/Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 import {CORRECT_COLOR, ERROR_COLOR, NORMAL_SOUND, playSound} from "../../utils/helper";
@@ -22,25 +22,15 @@ const ExamResult = () => {
   }, [examHistory])
   const alertRef = useRef();
   const navigate = useNavigate();
-  const [isShowIntro, setIsShowIntro] = useState(!isExamResultIntroFinished);
-
-  useEffect(() => {
-    if (isShowIntro) {
-      updateIntro("isExamResultIntro", false);
+  const handleExamResultIntro = (isCompleted) => {
+    if (!isCompleted) {
+      setExamResultIntro(isCN, updateIntro);
     }
-    // eslint-disable-next-line
-  }, [isShowIntro]);
-
-  useEffect(() => {
-    if (isShowIntro && !isExamResultIntroFinished) {
-      setExamResultIntro(isCN, updateIntro, handleIntroAfterClose);
-    }
-    // eslint-disable-next-line
-  }, [isExamResultIntroFinished, isShowIntro]);
-
-  const handleIntroAfterClose = () => {
-    setIsShowIntro(false);
   }
+
+  useEffect(() => {
+    handleExamResultIntro(isExamResultIntroFinished)
+  }, [isExamResultIntroFinished, handleExamResultIntro]);
 
   const getUsedTime = () => {
     const secondsUsed = 40 * 60 - secondsLeft;
@@ -81,10 +71,8 @@ const ExamResult = () => {
         pageTitle="Exam Result"
         handleBack={() => navigate('/')}
         rightIcons={[{
-          name: 'question', action: () => {
-            updateIntro("isExamResultIntro", false);
-            setIsShowIntro(true);
-          }
+          name: 'question',
+          action: () => handleExamResultIntro()
         }]}
         leftIcon="home"
       />
