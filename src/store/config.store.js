@@ -44,3 +44,15 @@ export const useLang = create(persist((set) => ({
 }), {
   name: 'ddt-lang'
 }));
+
+export const useIntro = create(persist((set) => ({
+  isHomeIntro: false,
+  isMineIntro: false,
+  isOverviewIntro: false,
+  isQuestionIntro: false,
+  isExamResultIntro: false,
+
+  update: (key, isIntroFinished) => set(() => ({[key]: isIntroFinished})),
+}), {
+  name: 'ddt-intro'
+}));

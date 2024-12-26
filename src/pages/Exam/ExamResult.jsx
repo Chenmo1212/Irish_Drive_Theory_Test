@@ -1,4 +1,4 @@
-import React, {useMemo, useRef} from 'react';
+import React, {useEffect, useMemo, useRef} from 'react';
 import PageHeader from "../../components/Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 import {CORRECT_COLOR, ERROR_COLOR, NORMAL_SOUND, playSound} from "../../utils/helper";
@@ -6,19 +6,31 @@ import ExamResultChart from "../../components/Chart/Chart";
 import LineChart from "../../components/LineChart/LineChart";
 import {getIcon} from "../../styles/icons";
 import BasicAlert from "../../components/BasicAlert/BasicAlert";
-import {useAnswers, useExam, useExamCountdown, useExamHistory} from "../../store";
+import {useAnswers, useExam, useExamCountdown, useExamHistory, useLang} from "../../store";
+import {setExamResultIntro} from "../../utils/intro";
+import {useIntro} from "../../store/config.store";
 
 const ExamResult = () => {
+  const {isCN} = useLang();
   const {secondsLeft} = useExamCountdown();
   const {answers, score} = useExam();
   const {userAnswers, reset: resetAnswers} = useAnswers();
   const {examHistory} = useExamHistory();
+  const {isExamResultIntro: isExamResultIntroFinished, update: updateIntro} = useIntro();
   const chartData = useMemo(() => {
     return examHistory.map((i, _) => i.score);
   }, [examHistory])
-
   const alertRef = useRef();
   const navigate = useNavigate();
+  const handleExamResultIntro = (isCompleted) => {
+    if (!isCompleted) {
+      setExamResultIntro(isCN, updateIntro);
+    }
+  }
+
+  useEffect(() => {
+    handleExamResultIntro(isExamResultIntroFinished)
+  }, [isExamResultIntroFinished, handleExamResultIntro]);
 
   const getUsedTime = () => {
     const secondsUsed = 40 * 60 - secondsLeft;
@@ -58,7 +70,10 @@ const ExamResult = () => {
       <PageHeader
         pageTitle="Exam Result"
         handleBack={() => navigate('/')}
-        rightIcons={[]}
+        rightIcons={[{
+          name: 'question',
+          action: () => handleExamResultIntro()
+        }]}
         leftIcon="home"
       />
 

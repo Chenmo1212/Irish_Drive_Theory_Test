@@ -10,7 +10,7 @@ import {useAnswers, useCurrQuestionIdx, useLang, useQuestionConfig} from "../../
 
 const BasicQuestion = ({
   questions,
-  currQuestion
+  currQuestion,
 }) => {
   const {isCN, update: toggleTranslation} = useLang();
   const {isStick, isCheck, isExplain, update: updateQuestionConfig} = useQuestionConfig();
