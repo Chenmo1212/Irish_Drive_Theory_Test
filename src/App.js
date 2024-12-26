@@ -15,7 +15,7 @@ import {useQuestions} from "./store";
 import {useEffect} from "react";
 import 'intro.js/minified/introjs.min.css';
 
-const CURRENT_VERSION = "2.0.1.241225";
+const CURRENT_VERSION = "2.1.1.241225";
 
 function App() {
   const {version, update: updateVersion} = useVersion();
