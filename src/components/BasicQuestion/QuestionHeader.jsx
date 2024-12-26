@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import PageHeader from "../Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 import {useIntro} from "../../store/config.store";
+import {setQuestionIntro} from "../../utils/intro";
 
 const QuestionHeader = ({
   isCN = false,
@@ -10,12 +11,19 @@ const QuestionHeader = ({
   toggleFavourite = () => {
   },
   isFavorite = false,
-  setIsShowIntro = () => {
-  }
 }) => {
   const navigate = useNavigate();
-  const {update: updateIntro} = useIntro();
+  const {isQuestionIntro: isQuestionIntroFinished, update: updateIntro} = useIntro();
 
+  const handleQuestionIntro = (isCompleted) => {
+    if (!isCompleted) {
+      setQuestionIntro(isCN, updateIntro);
+    }
+  }
+
+  useEffect(() => {
+    handleQuestionIntro(isQuestionIntroFinished)
+  }, [isQuestionIntroFinished, handleQuestionIntro]);
   const backHome = () => {
     navigate('/');
   }
@@ -23,10 +31,7 @@ const QuestionHeader = ({
   const rightIcons = [
     {
       name: 'question',
-      action: () => {
-        updateIntro("isQuestionIntro", false);
-        setIsShowIntro(true);
-      },
+      action: () => handleQuestionIntro(false),
       active: false,
     }, {
       name: 'language',

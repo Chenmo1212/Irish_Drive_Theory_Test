@@ -1,10 +1,11 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 import PageHeader from "../Header/PageHeader";
 import {DELETE_SOUND, playSound, removeFromLocalStorage} from "../../utils/helper";
 import BasicModal from "../BasicModal/BasicModal";
 import BasicAlert from "../BasicAlert/BasicAlert";
 import {useIntro} from "../../store/config.store";
+import {setOverviewIntro} from "../../utils/intro";
 
 const HeaderSection = ({
   isShowWrong,
@@ -13,12 +14,21 @@ const HeaderSection = ({
   setShowFavorite,
   isCN,
   isShowRight = true,
-  setIsShowIntro,
 }) => {
   const [modalShow, setModalShow] = useState(false);
   const alertRef = useRef();
   const navigate = useNavigate();
-  const {update: updateIntro} = useIntro();
+  const {isOverviewIntro: isOverviewIntroFinished, update: updateIntro} = useIntro();
+
+  const handleOverviewIntro = (isCompleted) => {
+    if (!isCompleted) {
+      setOverviewIntro(isCN, updateIntro);
+    }
+  }
+
+  useEffect(() => {
+    handleOverviewIntro(isOverviewIntroFinished)
+  }, [isOverviewIntroFinished, handleOverviewIntro]);
 
   const toggleModal = () => setModalShow(!modalShow);
   const backDetail = () => {
@@ -39,10 +49,7 @@ const HeaderSection = ({
   const rightIcons = [
     {
       name: 'question',
-      action: () => {
-        updateIntro("isOverviewIntro", false);
-        setIsShowIntro(true);
-      },
+      action: () => handleOverviewIntro(false),
       active: false,
     }, {
       name: 'wrong',
