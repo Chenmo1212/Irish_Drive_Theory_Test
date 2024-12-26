@@ -1,8 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import PageHeader from "../Header/PageHeader";
 import {useNavigate} from "react-router-dom";
 import {useIntro} from "../../store/config.store";
 import {setQuestionIntro} from "../../utils/intro";
+import {useQuestionConfig} from "../../store";
 
 const QuestionHeader = ({
   isCN = false,
@@ -13,17 +14,29 @@ const QuestionHeader = ({
   isFavorite = false,
 }) => {
   const navigate = useNavigate();
+
+  const [isHandleIntro, setHandleIntro] = useState(false);
   const {isQuestionIntro: isQuestionIntroFinished, update: updateIntro} = useIntro();
+  const {isExplain, update: updateQuestionConfig} = useQuestionConfig();
 
   const handleQuestionIntro = (isCompleted) => {
     if (!isCompleted) {
-      setQuestionIntro(isCN, updateIntro);
+      setHandleIntro(true);
+      updateQuestionConfig({isExplain: true});
     }
   }
 
   useEffect(() => {
+    if (isExplain && isHandleIntro) {
+      setQuestionIntro(isCN, updateIntro);
+      setHandleIntro(false);
+    }
+  }, [isExplain, isHandleIntro]);
+
+  useEffect(() => {
     handleQuestionIntro(isQuestionIntroFinished)
-  }, [isQuestionIntroFinished, handleQuestionIntro]);
+  }, [isQuestionIntroFinished]);
+
   const backHome = () => {
     navigate('/');
   }
