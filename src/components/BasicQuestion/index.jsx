@@ -10,7 +10,8 @@ import {useAnswers, useCurrQuestionIdx, useLang, useQuestionConfig} from "../../
 
 const BasicQuestion = ({
   questions,
-  currQuestion
+  currQuestion,
+  setIsShowIntro
 }) => {
   const {isCN, update: toggleTranslation} = useLang();
   const {isStick, isCheck, isExplain, update: updateQuestionConfig} = useQuestionConfig();
@@ -114,6 +115,7 @@ const BasicQuestion = ({
         toggleLanguage={toggleLanguage}
         toggleFavourite={toggleFavourite}
         isFavorite={userAnswer?.isFavorite}
+        setIsShowIntro={setIsShowIntro}
       />
 
       <div className="content">

@@ -95,11 +95,11 @@
   align-items: center;
 }
 
-.question .content .content-container .answer .stick-box {
+.question .content .content-container .answer .check-stick {
   display: flex;
 }
 
-.question .content .content-container .answer .stick-box div {
+.question .content .content-container .answer .check-stick div {
   padding: 7px;
   margin: 0 5px;
   border-radius: 50%;
@@ -109,7 +109,7 @@
   line-height: 18px;
 }
 
-.question .content .content-container .answer .stick-box div {
+.question .content .content-container .answer .check-stick div {
   display: flex;
   justify-content: center;
   align-items: center;

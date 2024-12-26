@@ -98,6 +98,7 @@
 }
 
 /* Rect Round Button*/
+.intro-guide .introjs-tooltipbuttons .introjs-button,
 .rect-round-button {
   position: relative;
   padding: 5px 10px;
@@ -111,6 +112,27 @@
   transition: all 200ms ease-out 0s;
 }
 
+/* English Font */
+p.english {
+  letter-spacing: -0.4px;
+  margin: 0 0 -5px;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--font-color);
+  word-break: break-word;
+}
+
+p.chinese {
+  font-size: 12px;
+  color: var(--font-color-secondary);
+}
+
+/*hot fix missing tooltip on IOS 18*/
+.introjs-tooltipReferenceLayer {
+  visibility: visible !important;
+}
+
+.intro-guide .introjs-tooltipbuttons .introjs-button:before,
 .rect-round-button:before {
   content: '';
   position: absolute;
@@ -124,6 +146,7 @@
   transition: all 200ms ease-out 0s;
 }
 
+.intro-guide .introjs-tooltipbuttons .introjs-button:after,
 .rect-round-button:after {
   content: '';
   position: absolute;
@@ -135,8 +158,17 @@
   transition: all 200ms ease-out 0s;
 }
 
+.intro-guide .introjs-tooltipbuttons .introjs-button:active,
 .rect-round-button:active,
+.intro-guide .introjs-tooltipbuttons .introjs-button.active,
 .rect-round-button.active {
   background: linear-gradient(to top, var(--bg-color), #fafcfd);
   box-shadow: var(--box-shadow-active);
+}
+
+.intro-guide .introjs-button:focus {
+  border: 1px solid var(--theme-color);
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  color: var(--theme-color);
 }
